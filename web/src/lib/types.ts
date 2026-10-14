@@ -20,7 +20,10 @@ export interface Question {
   /** Four options in a fixed order that is shuffled once per question, not per visit. */
   choices: string[];
   answer: string;
+  /** Paragraphs separated by blank lines: the rule, how it applies here, and a tip. */
   explanation: string;
+  /** Why each wrong option is wrong, keyed by the option text. */
+  whyNot: Record<string, string>;
   source: SourceRef;
 }
 

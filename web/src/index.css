@@ -276,3 +276,6 @@ a { color: var(--accent); }
 @media (max-width: 560px) {
   .choices { grid-template-columns: 1fr; }
 }
+.options li .opt { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.options li .whynot { font-size: 14px; color: var(--muted); line-height: 1.45; }
+.why p { line-height: 1.55; }

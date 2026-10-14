@@ -74,6 +74,8 @@ export function stableShuffle<T>(items: T[], seed: string): T[] {
 
 const LEVELS: Record<string, Difficulty> = { E: "Easy", M: "Medium", H: "Hard" };
 
+type Wrong = [option: string, whyNot: string];
+
 /** Builds the question writer for one domain. The right answer is listed first and shuffled in. */
 export function domain(part: PartId, domainId: string) {
   let n = 0;
@@ -82,7 +84,7 @@ export function domain(part: PartId, domainId: string) {
     topic: string,
     prompt: string,
     right: string,
-    wrong: [string, string, string],
+    wrong: [Wrong, Wrong, Wrong],
     explanation: string,
     source: SourceKey,
     section: string,
@@ -95,9 +97,10 @@ export function domain(part: PartId, domainId: string) {
       topic,
       difficulty: LEVELS[level],
       prompt,
-      choices: stableShuffle([right, ...wrong], id),
+      choices: stableShuffle([right, ...wrong.map(([w]) => w)], id),
       answer: right,
       explanation,
+      whyNot: Object.fromEntries(wrong),
       source: { key: source, section },
     };
   };

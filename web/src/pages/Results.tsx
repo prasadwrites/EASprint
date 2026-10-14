@@ -21,7 +21,10 @@ function Explanation({ question, picked }: { question: Question; picked: string 
           return (
             <li key={c} className={right ? "right" : wrongPick ? "picked" : ""}>
               <span className="letter">{LETTERS[k]}</span>
-              <span>{c}</span>
+              <span className="opt">
+                {c}
+                {!right && question.whyNot[c] && <span className="whynot">{question.whyNot[c]}</span>}
+              </span>
               {right && <span className="tag">Correct answer</span>}
               {wrongPick && <span className="tag">Your answer</span>}
             </li>
@@ -29,7 +32,10 @@ function Explanation({ question, picked }: { question: Question; picked: string 
         })}
       </ul>
       <div className="why">
-        <p>{question.explanation}</p>
+        <span className="eyebrow">Why {LETTERS[question.choices.indexOf(question.answer)]} is right</span>
+        {question.explanation.split(/\n\n/).map((para, k) => (
+          <p key={k}>{para}</p>
+        ))}
         <p className="cite">
           IRS source:{" "}
           <a href={source.url} target="_blank" rel="noreferrer">

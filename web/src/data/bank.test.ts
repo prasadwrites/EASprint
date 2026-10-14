@@ -29,7 +29,8 @@ describe("question bank", () => {
       expect(source, q.id).toBeDefined();
       expect(source.url.startsWith("https://www.irs.gov/"), q.id).toBe(true);
       expect(q.source.section.length, q.id).toBeGreaterThan(0);
-      expect(q.explanation.length, q.id).toBeGreaterThan(40);
+      expect(q.explanation.length, q.id).toBeGreaterThan(250);
+      for (const c of q.choices) if (c !== q.answer) expect(q.whyNot[c]?.length ?? 0, `${q.id}: ${c}`).toBeGreaterThan(20);
     }
   });
 

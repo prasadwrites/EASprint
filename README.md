@@ -22,7 +22,7 @@ Questions are written to tax law through December 31, 2025 (tax year 2025), whic
 - **Part review**: what the exam covers by domain, the questions (answers hidden), and the IRS sources cited.
 - **Practice setup**: Learn (no clock), Practice (your own limit) or Exam pace (2:06 per question, which is 100 questions in 3.5 hours). Filter by domain, and take a random set, the outline order, the ones you haven't practiced, or the ones you missed last time.
 - **Timed practice**: one question at a time with the pressure tint, target marker and pace chip from MathSprint. Any question can be revisited.
-- **Results**: score, timing verdict, time per question against the target, and every question with the right answer, your answer, the explanation and the IRS source.
+- **Results**: score, timing verdict, time per question against the target, and every question with the right answer, your answer, why each wrong option is wrong, a fuller explanation (the rule, how it applies, and an exam tip) and the IRS source.
 
 ## How it fits together
 
@@ -46,14 +46,24 @@ d1(
   "Filing status",                       // topic chip
   "Question text…",
   "The right answer",                    // listed first; shuffled into a fixed position
-  ["Wrong", "Wrong", "Wrong"],
-  "Why the answer is right.",
+  [
+    ["Wrong option", "Why it is wrong"],
+    ["Wrong option", "Why it is wrong"],
+    ["Wrong option", "Why it is wrong"],
+  ],
+  "The rule.
+
+How it applies to these facts, with the working.
+
+Exam tip: …",
   "p501",                                // a key from data/sources.ts
   "Filing Status: Qualifying Surviving Spouse",   // where in that source
 ),
 ```
 
-Because options are shuffled, don't write "all of the above" or "both A and B". Add new IRS sources to `web/src/data/sources.ts`. `npm test` checks that every question has four distinct options, an explanation and a source on irs.gov.
+Because options are shuffled, don't write "all of the above" or "both A and B". Add new IRS sources to `web/src/data/sources.ts`. Separate explanation paragraphs with a blank line (`
+
+`). `npm test` checks that every question has four distinct options, a full explanation, a reason for each wrong option and a source on irs.gov.
 
 Dollar amounts change every year. When the exam moves to tax year 2026, search the data files for 2025 figures and update them from the new publications.
 
