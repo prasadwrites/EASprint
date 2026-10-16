@@ -4,21 +4,50 @@ service cloud.firestore {
   match /databases/{database}/documents {
     function signedIn() { return request.auth != null; }
     function owns(data) { return signedIn() && data.ownerId == request.auth.uid; }
+    // Keep in step with ADMIN_EMAIL in functions/accounts.py and web/src/lib/account.ts.
+    function isAdmin() {
+      return signedIn() && request.auth.token.email == "prasad.writes@gmail.com" && request.auth.token.email_verified == true;
+    }
+    function accountPath() { return /databases/$(database)/documents/accounts/$(request.auth.uid); }
+    function notSuspended() {
+      return !exists(accountPath()) || get(accountPath()).data.status != "suspended";
+    }
+
+    // One account per person. It is created on first sign-in with the Free plan; only the admin
+    // (through the admin_update_account function) can change the plan, status or deck count.
+    match /accounts/{uid} {
+      allow read: if (signedIn() && request.auth.uid == uid) || isAdmin();
+      allow create: if signedIn() && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(["email", "displayName", "plan", "status", "decksCreated", "createdAt", "lastSeenAt"])
+        && request.resource.data.plan == "free"
+        && request.resource.data.status == "active"
+        && request.resource.data.decksCreated == 0
+        && request.resource.data.email == request.auth.token.email;
+      allow update: if signedIn() && request.auth.uid == uid
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["lastSeenAt", "displayName"]);
+    }
+
+    // Per-account access codes for building decks. Only the admin can read them, so nobody can
+    // look up their own code; the generate_deck function reads them with admin access.
+    match /accessCodes/{uid} {
+      allow read: if isAdmin();
+    }
 
     // Decks built with Claude are written by the generate_deck function (admin access).
-    // Candidates can only see and delete their own. The three exam parts ship with the app.
+    // Reading a deck that doesn't exist yet is allowed, so the app can wait for a new deck to appear.
     match /decks/{deckId} {
-      allow read, delete: if owns(resource.data);
-      allow update: if owns(resource.data) && request.resource.data.ownerId == resource.data.ownerId;
+      allow get: if resource == null ? signedIn() : ((owns(resource.data) && notSuspended()) || isAdmin());
+      allow list: if (owns(resource.data) && notSuspended()) || isAdmin();
+      allow delete: if owns(resource.data);
 
       match /questions/{questionId} {
-        allow read: if signedIn() && get(/databases/$(database)/documents/decks/$(deckId)).data.ownerId == request.auth.uid;
+        allow read: if signedIn() && (get(/databases/$(database)/documents/decks/$(deckId)).data.ownerId == request.auth.uid || isAdmin());
       }
     }
 
     match /sessions/{sessionId} {
       allow read: if owns(resource.data);
-      allow create: if owns(request.resource.data) && request.resource.data.status == "active";
+      allow create: if owns(request.resource.data) && request.resource.data.status == "active" && notSuspended();
       // A finished session is a record; it can't be reopened or reassigned.
       allow update: if owns(resource.data)
         && resource.data.status == "active"

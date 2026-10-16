@@ -1,7 +1,8 @@
 import { signOut } from "firebase/auth";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useUser } from "../App";
+import { useAccount, useUser } from "../App";
+import { limitsFor } from "../lib/account";
 import { canBuildDecks } from "../lib/decks";
 import { auth } from "../lib/firebase";
 
@@ -32,6 +33,7 @@ export function Icon({ name, size = 18 }: { name: "back" | "play" | "check" | "n
 
 function ProfileMenu() {
   const user = useUser();
+  const { account, admin } = useAccount();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -51,7 +53,16 @@ function ProfileMenu() {
       </button>
       {open && (
         <div className="menu" role="menu">
-          <div className="who">{user.displayName || user.email}</div>
+          <div className="who">
+            {user.displayName || user.email}
+            <br />
+            {admin ? "Admin" : `${limitsFor(account, false).name} plan`}
+          </div>
+          {admin && (
+            <Link className="btn" role="menuitem" to="/admin" style={{ justifyContent: "flex-start", border: "none" }}>
+              Manage accounts
+            </Link>
+          )}
           <button role="menuitem" onClick={() => signOut(signedIn)}>
             Sign out
           </button>
@@ -63,6 +74,7 @@ function ProfileMenu() {
 
 /** Home gets the main navigation; inner pages get a back link. */
 export default function TopBar({ back }: { back?: { to: string; label: string } }) {
+  const { admin } = useAccount();
   const { pathname, hash } = useLocation();
   const current = (h: string) => (pathname === "/" && hash === h ? "page" : undefined);
   return (
@@ -84,6 +96,7 @@ export default function TopBar({ back }: { back?: { to: string; label: string } 
               <Link to="/#parts" aria-current={current("#parts")}>Exam parts</Link>
               {canBuildDecks && <Link to="/#decks" aria-current={current("#decks")}>My decks</Link>}
               <Link to="/#progress" aria-current={current("#progress")}>Progress</Link>
+              {admin && <Link to="/admin">Accounts</Link>}
             </nav>
             <ProfileMenu />
           </>

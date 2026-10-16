@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams, useSearchParams } from "react-router-dom";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { EXAM, sourceOf } from "../data/exam";
-import { loadDeck, loadQuestions } from "../lib/decks";
+import { loadDeck, loadQuestions, watchDeck } from "../lib/decks";
 import { formatClock } from "../lib/pace";
 import type { Deck, Question } from "../lib/types";
 
@@ -23,6 +23,11 @@ export default function DeckReview() {
       setQuestions(qs);
       setDeck(d);
     });
+    // A deck Claude is still building updates live, and its questions appear as each batch is saved.
+    return watchDeck(deckId, (d) => {
+      setDeck(d);
+      loadQuestions(deckId).then(setQuestions);
+    });
   }, [deckId]);
 
   const back = { to: "/#parts", label: "Home" };
@@ -30,7 +35,9 @@ export default function DeckReview() {
   if (deck === null) return <><TopBar back={back} /><main className="page"><p>That deck doesn't exist or isn't yours.</p></main></>;
 
   const ai = deck.source === "ai";
-  const dropped = Number(params.get("dropped") || 0);
+  const generating = deck.status === "generating";
+  const requested = deck.requested || deck.questionCount;
+  const dropped = Math.max(0, requested - questions.length);
   const spread = LEVELS.map(([l, c]) => ({ l, c, n: questions.filter((q) => q.difficulty === l).length }));
   const cited = [...new Map(questions.map((q) => sourceOf(q)).map((s) => [s.url, s])).values()].sort((a, b) => a.title.localeCompare(b.title));
   const examTotal = deck.domains.reduce((a, d) => a + d.examQuestions, 0);
@@ -41,7 +48,30 @@ export default function DeckReview() {
       <TopBar back={back} />
       <main className="page narrow">
         <div className="stack">
-          {ai && params.get("fresh") && (
+          {generating && (
+            <div className="panel stack" aria-live="polite">
+              <div className="row spread">
+                <h2>Claude is building this deck</h2>
+                <span className="mono">
+                  {deck.progress ?? 0} / {requested}
+                </span>
+              </div>
+              <div className="track">
+                <div className="fill" style={{ width: `${(100 * (deck.progress ?? 0)) / Math.max(1, requested)}%` }} />
+              </div>
+              <p className="muted">
+                Questions are written and checked ten at a time, and appear below as each batch passes. You can leave this page; the deck keeps building.
+                {questions.length >= 3 && " You can already practice the questions that are ready."}
+              </p>
+            </div>
+          )}
+          {deck.status === "failed" && (
+            <div className="verdict bad">
+              <h3>This deck couldn't be built</h3>
+              <p>{deck.error || "Something went wrong."} It doesn't count toward your plan's deck limit.</p>
+            </div>
+          )}
+          {ai && deck.status === "ready" && params.get("fresh") && (
             <div className="row">
               <Chip tone="good">
                 <Icon name="check" size={14} /> Deck ready · all {questions.length} questions passed the checks
@@ -69,7 +99,7 @@ export default function DeckReview() {
             </div>
           )}
           <div className="row">
-            <Link className="btn btn-primary btn-big" to={`/decks/${deck.id}/practice`}>
+            <Link className="btn btn-primary btn-big" to={`/decks/${deck.id}/practice`} style={questions.length ? undefined : { pointerEvents: "none", opacity: 0.5 }}>
               <Icon name="play" /> Start practice
             </Link>
           </div>

@@ -52,12 +52,18 @@ export interface Deck {
   difficulty?: string;
   topics?: string[];
   createdAt?: Date | null;
+  /** Claude-built decks are saved batch by batch while they generate. */
+  status?: "generating" | "ready" | "failed";
+  requested?: number;
+  progress?: number;
+  error?: string;
 }
 
 export interface AppUser {
   uid: string;
   displayName: string | null;
   email: string | null;
+  emailVerified?: boolean;
 }
 
 /** Times are milliseconds since the session started, so they survive clock changes and refreshes. */

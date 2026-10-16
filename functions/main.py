@@ -1,19 +1,25 @@
 """Cloud Functions for EASprint (Python runtime).
 
-generate_deck - Claude writes a deck of SEE questions, each one is checked (shape, a real irs.gov
-                source, and a blind answer check by a separate Claude call), and the deck is saved
-                to Firestore.
+generate_deck         - Claude writes a deck of SEE questions, each one is checked (shape, a real irs.gov
+                        source, and a blind answer check by a separate Claude call), and the deck is saved to
+                        Firestore batch by batch so the app can show progress. Plan limits, per-account access
+                        codes and suspension are enforced here.
+admin_update_account  - The admin changes an account's plan, suspends or restores it, or sets its access code.
 """
 
 from __future__ import annotations
 
 import os
 import random
+import re
+import secrets as pysecrets
+import threading
 
-from firebase_admin import firestore, initialize_app
+from firebase_admin import auth, firestore, initialize_app
 from firebase_functions import https_fn, options
 
 from access import access_code_ok
+from accounts import DEFAULT_PLAN, PLANS, LimitError, check_request, is_admin
 from generator import DeckRequest, GenerationError, generate_deck as _generate
 from schema import DOMAINS
 
@@ -26,11 +32,13 @@ PART_TITLES = {
     "part2": "Part 2: Businesses",
     "part3": "Part 3: Representation, Practices and Procedures",
 }
+DECK_ID = re.compile(r"^[A-Za-z0-9]{20}$")
+Err = https_fn.FunctionsErrorCode
 
 
 def _require_user(req: https_fn.CallableRequest) -> str:
     if req.auth is None:
-        raise https_fn.HttpsError(https_fn.FunctionsErrorCode.UNAUTHENTICATED, "Sign in to create decks.")
+        raise https_fn.HttpsError(Err.UNAUTHENTICATED, "Sign in to create decks.")
     return req.auth.uid
 
 
@@ -38,62 +46,164 @@ def _clean(text, limit: int) -> str:
     return str(text or "").strip()[:limit]
 
 
-@https_fn.on_call(secrets=["ANTHROPIC_API_KEY", "DECK_ACCESS_CODE"], timeout_sec=540, memory=options.MemoryOption.GB_1)
+def _new_account(token: dict) -> dict:
+    return {
+        "email": token.get("email", ""),
+        "displayName": token.get("name", ""),
+        "plan": DEFAULT_PLAN,
+        "status": "active",
+        "decksCreated": 0,
+        "createdAt": firestore.SERVER_TIMESTAMP,
+    }
+
+
+@https_fn.on_call(secrets=["ANTHROPIC_API_KEY", "DECK_ACCESS_CODE"], timeout_sec=3600, memory=options.MemoryOption.GB_2)
 def generate_deck(req: https_fn.CallableRequest) -> dict:
     uid = _require_user(req)
+    token = req.auth.token or {}
+    admin = is_admin(token)
     data = req.data or {}
-    if not access_code_ok(data.get("accessCode"), os.environ.get("DECK_ACCESS_CODE")):
-        raise https_fn.HttpsError(https_fn.FunctionsErrorCode.PERMISSION_DENIED, "That access code isn't right.")
+
+    deck_id = _clean(data.get("deckId"), 40)
+    if not DECK_ID.match(deck_id):
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Missing deck id.")
     topic = _clean(data.get("topic"), 200)
     if not topic:
-        raise https_fn.HttpsError(https_fn.FunctionsErrorCode.INVALID_ARGUMENT, "Tell me what to practice.")
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Tell me what to practice.")
     part = data.get("part") if data.get("part") in DOMAINS else "part1"
     try:
-        count = max(3, min(20, int(data.get("count", 10))))
+        count = max(3, int(data.get("count", 10)))
     except (TypeError, ValueError):
         count = 10
     difficulty = data.get("difficulty") if data.get("difficulty") in DIFFICULTIES else "Mixed"
     request = DeckRequest(topic=topic, part=part, count=count, difficulty=difficulty, notes=_clean(data.get("notes"), 600))
 
-    try:
-        result = _generate(request)
-    except GenerationError as e:
-        raise https_fn.HttpsError(https_fn.FunctionsErrorCode.FAILED_PRECONDITION, str(e))
-
     db = firestore.client()
-    deck_ref = db.collection("decks").document()
-    batch = db.batch()
-    batch.set(deck_ref, {
-        "ownerId": uid,
-        "title": result.deck.title,
-        "part": part,
-        "partTitle": PART_TITLES[part],
-        "topic": topic,
-        "difficulty": difficulty,
-        "topics": result.deck.topics,
-        "notes": request.notes,
-        "questionCount": len(result.deck.questions),
-        "source": "ai",
-        "createdAt": firestore.SERVER_TIMESTAMP,
-    })
-    rng = random.Random()
-    for i, q in enumerate(result.deck.questions):
-        choices = [q.right_answer] + [w.option for w in q.wrong_options]
-        rng.shuffle(choices)
-        batch.set(deck_ref.collection("questions").document(), {
-            "order": i,
-            "part": part,
-            "domain": q.domain,
-            "topic": q.topic,
-            "difficulty": q.difficulty,
-            "prompt": q.prompt,
-            "choices": choices,
-            "answer": q.right_answer,
-            "explanation": q.explanation,
-            "whyNot": {w.option: w.why_not for w in q.wrong_options},
-            "source": {"key": "", "section": q.source.section, "title": q.source.title, "url": q.source.url},
-            "verified": True,
-        })
-    batch.commit()
+    account_ref = db.collection("accounts").document(uid)
+    deck_ref = db.collection("decks").document(deck_id)
 
-    return {"deckId": deck_ref.id, "questionCount": len(result.deck.questions), "dropped": result.dropped}
+    # The admin doesn't need a code. Everyone else uses the code the admin gave their account,
+    # or the shared DECK_ACCESS_CODE if their account has none.
+    if not admin:
+        own = db.collection("accessCodes").document(uid).get()
+        expected = (own.to_dict() or {}).get("code") if own.exists else None
+        if not access_code_ok(data.get("accessCode"), expected or os.environ.get("DECK_ACCESS_CODE")):
+            raise https_fn.HttpsError(Err.PERMISSION_DENIED, "That access code isn't right.")
+
+    @firestore.transactional
+    def reserve(tx):
+        snap = account_ref.get(transaction=tx)
+        account = snap.to_dict() if snap.exists else _new_account(token)
+        check_request(account, admin, count)
+        if deck_ref.get(transaction=tx).exists:
+            raise LimitError("That deck already exists.")
+        if snap.exists:
+            tx.update(account_ref, {"decksCreated": firestore.Increment(1)})
+        else:
+            tx.set(account_ref, {**account, "decksCreated": 1})
+        tx.set(deck_ref, {
+            "ownerId": uid,
+            "title": topic,
+            "part": part,
+            "partTitle": PART_TITLES[part],
+            "topic": topic,
+            "difficulty": difficulty,
+            "topics": [],
+            "notes": request.notes,
+            "questionCount": 0,
+            "requested": count,
+            "progress": 0,
+            "status": "generating",
+            "source": "ai",
+            "createdAt": firestore.SERVER_TIMESTAMP,
+        })
+
+    try:
+        reserve(db.transaction())
+    except LimitError as e:
+        raise https_fn.HttpsError(Err.RESOURCE_EXHAUSTED, str(e))
+
+    lock = threading.Lock()
+    order = [0]
+    rng = random.Random()
+
+    def on_plan(plan):
+        deck_ref.update({"title": plan.title, "topics": plan.topics})
+
+    def on_batch(questions, finished):
+        batch = db.batch()
+        with lock:
+            for q in questions:
+                choices = [q.right_answer] + [w.option for w in q.wrong_options]
+                rng.shuffle(choices)
+                batch.set(deck_ref.collection("questions").document(), {
+                    "order": order[0],
+                    "part": part,
+                    "domain": q.domain,
+                    "topic": q.topic,
+                    "difficulty": q.difficulty,
+                    "prompt": q.prompt,
+                    "choices": choices,
+                    "answer": q.right_answer,
+                    "explanation": q.explanation,
+                    "whyNot": {w.option: w.why_not for w in q.wrong_options},
+                    "source": {"key": "", "section": q.source.section, "title": q.source.title, "url": q.source.url},
+                    "verified": True,
+                })
+                order[0] += 1
+        batch.update(deck_ref, {"progress": firestore.Increment(finished), "questionCount": firestore.Increment(len(questions))})
+        batch.commit()
+
+    try:
+        result = _generate(request, on_plan=on_plan, on_batch=on_batch)
+    except Exception as e:  # noqa: BLE001 - any failure refunds the deck
+        message = str(e) if isinstance(e, GenerationError) else "Something went wrong while building the deck. Try again."
+        deck_ref.update({"status": "failed", "error": message})
+        account_ref.update({"decksCreated": firestore.Increment(-1)})
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, message)
+
+    deck_ref.update({"status": "ready", "dropped": result.dropped, "questionCount": len(result.deck.questions)})
+    return {"deckId": deck_id, "questionCount": len(result.deck.questions), "dropped": result.dropped}
+
+
+@https_fn.on_call()
+def admin_update_account(req: https_fn.CallableRequest) -> dict:
+    if req.auth is None or not is_admin(req.auth.token):
+        raise https_fn.HttpsError(Err.PERMISSION_DENIED, "Only the admin can change accounts.")
+    data = req.data or {}
+    uid = _clean(data.get("uid"), 128)
+    if not uid:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which account?")
+    db = firestore.client()
+    account_ref = db.collection("accounts").document(uid)
+    if not account_ref.get().exists:
+        raise https_fn.HttpsError(Err.NOT_FOUND, "That account doesn't exist.")
+
+    changes: dict = {}
+    if "plan" in data:
+        if data["plan"] not in PLANS:
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Unknown plan.")
+        changes["plan"] = data["plan"]
+    if "status" in data:
+        if data["status"] not in ("active", "suspended"):
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Unknown status.")
+        if uid == req.auth.uid and data["status"] == "suspended":
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "You can't suspend your own account.")
+        changes["status"] = data["status"]
+        # Suspension also blocks sign-in, and signs the person out within the hour.
+        auth.update_user(uid, disabled=data["status"] == "suspended")
+        if data["status"] == "suspended":
+            auth.revoke_refresh_tokens(uid)
+
+    code_ref = db.collection("accessCodes").document(uid)
+    if data.get("accessCode") == "generate":
+        code = "-".join(pysecrets.token_hex(2) for _ in range(3))
+        code_ref.set({"code": code, "updatedAt": firestore.SERVER_TIMESTAMP})
+        changes["hasAccessCode"] = True
+    elif data.get("accessCode") == "clear":
+        code_ref.delete()
+        changes["hasAccessCode"] = False
+
+    if changes:
+        account_ref.update({**changes, "updatedAt": firestore.SERVER_TIMESTAMP})
+    return {"ok": True}

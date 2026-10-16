@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
-import { useNavigate, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useSearchParams } from "react-router-dom";
+import { useAccount } from "../App";
 import TopBar, { Icon } from "../components/TopBar";
 import { PARTS } from "../data/exam";
+import { limitsFor } from "../lib/account";
 import { generateDeck } from "../lib/decks";
 import type { PartId } from "../lib/types";
 
@@ -26,7 +28,8 @@ function storeCode(code: string | null) {
 }
 
 const steps = (count: number) => [
-  `Writing ${count} exam-style questions with Claude`,
+  `Planning ${count} different questions`,
+  "Writing them with Claude, ten at a time",
   "Writing explanations and citing IRS sources",
   "Checking every cited page exists on irs.gov",
   "A separate Claude check answers each question blind",
@@ -36,6 +39,10 @@ const steps = (count: number) => [
 
 export default function CreateDeck() {
   const navigate = useNavigate();
+  const { account, admin } = useAccount();
+  const limits = limitsFor(account, admin);
+  const used = account?.decksCreated ?? 0;
+  const atLimit = !admin && used >= limits.maxDecks;
   const [params] = useSearchParams();
   const [topic, setTopic] = useState(params.get("topic") ?? "");
   const [asked, setAsked] = useState(!!params.get("topic"));
@@ -61,9 +68,9 @@ export default function CreateDeck() {
     setBusy(true);
     setError("");
     try {
-      const res = await generateDeck({ topic, part, count, difficulty, notes, accessCode: accessCode.trim() });
-      storeCode(accessCode.trim());
-      navigate(`/decks/${res.deckId}?fresh=1${res.dropped ? `&dropped=${res.dropped}` : ""}`);
+      const deckId = await generateDeck({ topic, part, count, difficulty, notes, accessCode: accessCode.trim() });
+      if (!admin) storeCode(accessCode.trim());
+      navigate(`/decks/${deckId}?fresh=1`);
     } catch (e) {
       if ((e as { code?: string }).code === "functions/permission-denied") storeCode(null);
       setError((e as Error).message || "The deck couldn't be generated. Try again.");
@@ -71,13 +78,26 @@ export default function CreateDeck() {
     }
   };
 
-  const clamp = (n: number) => Math.max(3, Math.min(20, n || 3));
+  const clamp = (n: number) => Math.max(3, Math.min(limits.maxQuestions, n || 3));
 
   return (
     <>
       <TopBar back={{ to: "/", label: "Home" }} />
       <main className="page">
-        <h1>Build a practice deck with Claude</h1>
+        <div className="stack" style={{ gap: 6 }}>
+          <h1>Build a practice deck with Claude</h1>
+          <p className="muted">
+            {admin ? "Admin: no deck limit" : `${limits.name} plan: ${used} of ${limits.maxDecks} decks used`}, up to {limits.maxQuestions} questions per deck.
+          </p>
+        </div>
+        {atLimit && (
+          <div className="verdict warn">
+            <h3>You've used all {limits.maxDecks} decks on your plan</h3>
+            <p>
+              Ask the person who runs EASprint about a bigger plan. You can keep practicing <Link to="/#decks">the decks you have</Link>.
+            </p>
+          </div>
+        )}
         <div className="two-col">
           <div className="main stack">
             <div className="panel chat">
@@ -136,7 +156,7 @@ export default function CreateDeck() {
                       <button type="button" aria-label="Fewer questions" onClick={() => setCount(clamp(count - 1))}>
                         −
                       </button>
-                      <input id="count" type="number" min={3} max={20} value={count} onChange={(e) => setCount(Number(e.target.value))} onBlur={() => setCount(clamp(count))} />
+                      <input id="count" type="number" min={3} max={limits.maxQuestions} value={count} onChange={(e) => setCount(Number(e.target.value))} onBlur={() => setCount(clamp(count))} />
                       <button type="button" aria-label="More questions" onClick={() => setCount(clamp(count + 1))}>
                         +
                       </button>
@@ -164,28 +184,30 @@ export default function CreateDeck() {
                     onChange={(e) => setNotes(e.target.value)}
                   />
                 </div>
+                {!admin && (
                 <div>
                   <label htmlFor="access">Access code</label>
                   <input
                     id="access"
                     type="password"
                     autoComplete="off"
-                    required
+                    required={!admin}
                     placeholder="Ask the person who runs EASprint"
                     value={accessCode}
                     onChange={(e) => setAccessCode(e.target.value)}
                     style={{ maxWidth: 320 }}
                   />
                   <p className="muted" style={{ fontSize: 14, marginTop: 4 }}>
-                    Building decks uses AI credit, so it needs a code. This browser remembers it after the first deck.
+                    Building decks uses AI credit, so it needs the code you were given. This browser remembers it after the first deck.
                   </p>
                 </div>
+                )}
                 <div className="row">
-                  <button className="btn btn-primary btn-big" type="submit" disabled={busy}>
+                  <button className="btn btn-primary btn-big" type="submit" disabled={busy || atLimit}>
                     <Icon name="play" /> {busy ? "Generating…" : "Generate deck"}
                   </button>
                   {busy ? (
-                    <span className="muted">This can take a few minutes, because every question is checked</span>
+                    <span className="muted">Starting… you'll see progress on the deck page</span>
                   ) : (
                     <button type="button" className="btn-link" onClick={() => setAsked(false)}>
                       Change topic

@@ -1,7 +1,11 @@
-"""Deck generation pipeline: Claude writes, the questions are checked, Claude fixes what failed.
+"""Deck generation pipeline: Claude plans the deck, writes it in batches, the questions are checked,
+and Claude fixes what failed.
 
 The check has three parts (see validator.py): shape, a real irs.gov source, and a blind check in which
 a separate Claude call answers each question without seeing the key.
+
+Decks can have up to 200 questions, so Claude first plans one distinct idea per question, and the deck
+is then written and checked in batches of BATCH questions that run in parallel.
 """
 
 from __future__ import annotations
@@ -9,16 +13,19 @@ from __future__ import annotations
 import json
 import logging
 import random
+from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from typing import Callable
 
 import anthropic
 
-from schema import DOMAINS, BlindCheck, GeneratedDeck, GeneratedQuestion
+from schema import DOMAINS, BlindCheck, DeckPlan, GeneratedDeck, GeneratedQuestion
 from validator import check_shape, check_source, url_exists
 
 MODEL = "claude-opus-5-5"
 MAX_REPAIR_ROUNDS = 2
+BATCH = 10
+WORKERS = 5
 LETTERS = "ABCD"
 
 log = logging.getLogger(__name__)
@@ -93,12 +100,30 @@ def _domains_text(part: str) -> str:
     return "\n".join(f"  {k}: {v}" for k, v in DOMAINS[part].items())
 
 
-def _initial_prompt(req: DeckRequest) -> str:
-    mix = "a balanced mix of Easy, Medium and Hard" if req.difficulty == "Mixed" else f"all {req.difficulty}"
+def _mix(req: DeckRequest) -> str:
+    return "a balanced mix of Easy, Medium and Hard" if req.difficulty == "Mixed" else f"all {req.difficulty}"
+
+
+def _plan_prompt(req: DeckRequest) -> str:
     lines = [
-        f"Write a practice deck of exactly {req.count} questions on: {req.topic}.",
+        f"Plan a practice deck of exactly {req.count} questions on: {req.topic}.",
+        f"Exam part: {req.part}. Its domains are:\n{_domains_text(req.part)}",
+        f"Difficulty: {_mix(req)}.",
+        f"Return a title, 2 to 5 sub-topics, and exactly {req.count} ideas: one line each saying what that question "
+        "tests and from what angle (a rule, a calculation, an exception, a common trap). Every idea must be different "
+        "from the others, so no two questions end up testing the same point.",
+    ]
+    if req.notes.strip():
+        lines.append(f"Candidate's extra instructions: {req.notes.strip()}")
+    return "\n".join(lines)
+
+
+def _batch_prompt(req: DeckRequest, ideas: list[str]) -> str:
+    lines = [
+        f"Write exactly {len(ideas)} questions for a practice deck on: {req.topic}. One question for each idea, in order:",
+        *[f"{i + 1}. {idea}" for i, idea in enumerate(ideas)],
         f"Exam part: {req.part}. Set each question's domain to one of these ids:\n{_domains_text(req.part)}",
-        f"Difficulty: {mix}.",
+        f"Difficulty: {_mix(req)}.",
     ]
     if req.notes.strip():
         lines.append(f"Candidate's extra instructions: {req.notes.strip()}")
@@ -110,9 +135,9 @@ def _repair_prompt(req: DeckRequest, failed: list[tuple[GeneratedQuestion, str]]
     return (
         f"These questions for a {req.part} deck on {req.topic} failed an automatic check. Write "
         f"{len(failed)} corrected or replacement questions, one for each, in the same order, at the same "
-        f"difficulty and on the same topic. Domains must be one of:\n{_domains_text(req.part)}\n\n"
+        f"difficulty and on the same point. Domains must be one of:\n{_domains_text(req.part)}\n\n"
         + json.dumps(items, indent=2)
-        + "\n\nReturn them as a deck; the title and topics fields can repeat the original deck's."
+        + "\n\nReturn them as a deck; the title and topics fields can be anything."
     )
 
 
@@ -122,9 +147,7 @@ def _options(q: GeneratedQuestion, rng: random.Random) -> list[str]:
     return options
 
 
-def blind_check(
-    client: anthropic.Anthropic, questions: list[GeneratedQuestion], rng: random.Random
-) -> list[str]:
+def blind_check(client: anthropic.Anthropic, questions: list[GeneratedQuestion], rng: random.Random) -> list[str]:
     """Has Claude answer each question without the key. Returns '' for a pass, or the reason it failed."""
     if not questions:
         return []
@@ -176,16 +199,20 @@ def _check_all(
     return good, failed
 
 
-def generate_deck(
-    req: DeckRequest,
-    client: anthropic.Anthropic | None = None,
-    exists: Callable[[str], bool] = url_exists,
-    rng: random.Random | None = None,
-) -> DeckResult:
-    client = client or anthropic.Anthropic()
-    rng = rng or random.Random()
-    draft: GeneratedDeck = _parse(client, SYSTEM, _initial_prompt(req), GeneratedDeck, "high")
-    good, failed = _check_all(client, req, draft.questions[: req.count], exists, rng)
+@dataclass
+class BatchResult:
+    good: list[GeneratedQuestion]
+    failures: list[str]
+    repairs: int
+
+
+def generate_batch(
+    client: anthropic.Anthropic, req: DeckRequest, ideas: list[str], exists: Callable[[str], bool], rng: random.Random
+) -> BatchResult:
+    """Writes, checks and repairs the questions for one batch of ideas."""
+    draft: GeneratedDeck = _parse(client, SYSTEM, _batch_prompt(req, ideas), GeneratedDeck, "high")
+    written = draft.questions[: len(ideas)]
+    good, failed = _check_all(client, req, written, exists, rng)
 
     repairs = 0
     for _ in range(MAX_REPAIR_ROUNDS):
@@ -200,9 +227,44 @@ def generate_deck(
         more, failed = _check_all(client, req, replacements, exists, rng)
         good += more
         failed += unanswered
+    # A batch that came back short counts the missing questions as failures.
+    failures = [r for _, r in failed] + ["the question was never written"] * (len(ideas) - len(written))
+    return BatchResult(good, failures, repairs)
 
+
+def generate_deck(
+    req: DeckRequest,
+    client: anthropic.Anthropic | None = None,
+    exists: Callable[[str], bool] = url_exists,
+    rng: random.Random | None = None,
+    on_plan: Callable[[DeckPlan], None] | None = None,
+    on_batch: Callable[[list[GeneratedQuestion], int], None] | None = None,
+) -> DeckResult:
+    """Builds a deck. on_batch(questions, ideas_finished) runs as each batch finishes, so the caller can save
+    questions and report progress. It may be called from several threads at once."""
+    client = client or anthropic.Anthropic()
+    rng = rng or random.Random()
+    plan: DeckPlan = _parse(client, SYSTEM, _plan_prompt(req), DeckPlan, "medium")
+    ideas = [i for i in plan.ideas if i.strip()][: req.count]
+    if not ideas:
+        raise GenerationError("Claude couldn't plan questions on that topic. Try rewording it.")
+    if on_plan:
+        on_plan(plan)
+    batches = [ideas[i : i + BATCH] for i in range(0, len(ideas), BATCH)]
+    seeds = [rng.random() for _ in batches]
+
+    def run(k: int) -> BatchResult:
+        result = generate_batch(client, req, batches[k], exists, random.Random(seeds[k]))
+        if on_batch:
+            on_batch(result.good, len(batches[k]))
+        return result
+
+    with ThreadPoolExecutor(max_workers=min(WORKERS, len(batches))) as pool:
+        results = list(pool.map(run, range(len(batches))))
+
+    good = [q for r in results for q in r.good]
+    failures = [f for r in results for f in r.failures]
     if not good:
         raise GenerationError("None of the generated questions passed the checks. Try a narrower topic.")
-
-    deck = GeneratedDeck(title=draft.title, topics=draft.topics, questions=good)
-    return DeckResult(deck=deck, dropped=len(failed), repairs=repairs, failures=[r for _, r in failed])
+    deck = GeneratedDeck(title=plan.title, topics=plan.topics, questions=good)
+    return DeckResult(deck=deck, dropped=len(failures), repairs=sum(r.repairs for r in results), failures=failures)

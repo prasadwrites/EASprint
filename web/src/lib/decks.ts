@@ -1,4 +1,4 @@
-import { collection, doc, getDoc, getDocs, orderBy, query, Timestamp, where } from "firebase/firestore";
+import { collection, doc, getDoc, getDocs, onSnapshot, orderBy, query, Timestamp, where } from "firebase/firestore";
 import { httpsCallable } from "firebase/functions";
 import { DECKS, getDeck as builtinDeck, getQuestions as builtinQuestions } from "../data";
 import { PARTS } from "../data/exam";
@@ -26,7 +26,17 @@ function fromDoc(id: string, data: Record<string, unknown>): Deck {
     difficulty: String(data.difficulty ?? ""),
     topics: (data.topics as string[]) ?? [],
     createdAt: toDate(data.createdAt),
+    status: (data.status as Deck["status"]) ?? "ready",
+    requested: Number(data.requested ?? data.questionCount ?? 0),
+    progress: Number(data.progress ?? 0),
+    error: data.error ? String(data.error) : undefined,
   };
+}
+
+/** Live updates for a Claude-built deck, so its page can show progress while it generates. */
+export function watchDeck(id: string, cb: (d: Deck | null) => void): () => void {
+  if (builtinDeck(id) || !db) return () => undefined;
+  return onSnapshot(doc(db, "decks", id), (s) => cb(s.exists() ? fromDoc(s.id, s.data()) : null));
 }
 
 /** A built-in exam part, or one of the candidate's own decks. */
@@ -52,6 +62,7 @@ export async function listMyDecks(uid: string): Promise<Deck[]> {
 export const BUILTIN_DECKS = DECKS;
 
 export interface GenerateInput {
+  deckId?: string;
   topic: string;
   part: PartId;
   count: number;
@@ -60,9 +71,31 @@ export interface GenerateInput {
   accessCode: string;
 }
 
-export async function generateDeck(input: GenerateInput) {
-  const call = httpsCallable<GenerateInput, { deckId: string; questionCount: number; dropped: number }>(functions!, "generate_deck", {
-    timeout: 540_000,
+/**
+ * Starts building a deck and resolves with its id as soon as the server has accepted the request and
+ * created the deck, so the app can show progress. Problems found up front (a wrong access code, a plan
+ * limit) reject. Later failures are recorded on the deck itself.
+ */
+export function generateDeck(input: GenerateInput): Promise<string> {
+  const deckId = doc(collection(db!, "decks")).id;
+  const call = httpsCallable<GenerateInput, { deckId: string }>(functions!, "generate_deck", { timeout: 3_600_000 });
+  return new Promise((resolve, reject) => {
+    let settled = false;
+    const finish = (fn: () => void) => {
+      if (settled) return;
+      settled = true;
+      stop();
+      fn();
+    };
+    // The deck can only be read once it exists and is ours, so errors before then just mean "not yet".
+    const stop = onSnapshot(
+      doc(db!, "decks", deckId),
+      (s) => s.exists() && finish(() => resolve(deckId)),
+      () => undefined,
+    );
+    call({ ...input, deckId }).then(
+      () => finish(() => resolve(deckId)),
+      (e) => finish(() => reject(e)),
+    );
   });
-  return (await call(input)).data;
 }

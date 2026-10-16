@@ -31,6 +31,31 @@ Tax answers can't be solved by a math engine the way MathSprint's are, so the bl
 
 Building decks needs Firebase (it is hidden when the app runs without it).
 
+### Accounts and plans
+
+Every signed-in person gets an account on first sign-in, on the Free plan. The admin account is
+`prasad.writes@gmail.com` (it must sign in with a verified email, for example with Google). The admin sees
+**Accounts** in the menu, where they can:
+
+- change any account's plan;
+- give an account its own access code for building decks, show it, replace it or remove it (accounts
+  without their own code use the shared `DECK_ACCESS_CODE`);
+- suspend or restore an account. A suspended account can't sign in or build decks.
+
+| Plan | Decks | Questions per deck |
+| --- | --- | --- |
+| Free (default) | 5 | 20 |
+| Pro | 50 | 120 |
+| Pro Max | 100 | 200 |
+
+Limits are enforced in the `generate_deck` function (`functions/accounts.py`), and the Firestore rules
+stop people from changing their own plan, status or deck count. A deck that fails to build doesn't count
+toward the limit. The admin needs no access code and has Pro Max limits.
+
+Large decks are planned first (one distinct idea per question), then written and checked ten questions
+at a time, five batches in parallel. The deck page shows progress, and questions can be practiced as
+soon as a batch is saved.
+
 ### Screens
 
 - **Home**: the three parts with your best score, overall progress and pace, and the exam domains you are weakest in.

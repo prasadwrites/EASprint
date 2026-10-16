@@ -61,6 +61,12 @@ class GeneratedDeck(BaseModel):
     questions: List[GeneratedQuestion]
 
 
+class DeckPlan(BaseModel):
+    title: str = Field(description="A short deck title, e.g. 'Head of Household and Dependents'.")
+    topics: List[str] = Field(description="2 to 5 sub-topics the deck covers.")
+    ideas: List[str] = Field(description="One line per question: what it tests and from what angle. All different.")
+
+
 class BlindAnswer(BaseModel):
     number: int = Field(description="The question number as given.")
     letter: Literal["A", "B", "C", "D"] = Field(description="The option you believe is correct.")

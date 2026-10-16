@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useUser } from "../App";
+import { useAccount, useUser } from "../App";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { DECKS, domainName, partOfDomain } from "../data";
 import { EXAM } from "../data/exam";
 import { listSessions } from "../lib/db";
+import { limitsFor } from "../lib/account";
 import { canBuildDecks, listMyDecks } from "../lib/decks";
 import { paceSummary, weakestConcepts } from "../lib/insights";
 import { formatClock } from "../lib/pace";
@@ -24,6 +25,8 @@ export default function Dashboard() {
   const user = useUser();
   const { hash } = useLocation();
   const navigate = useNavigate();
+  const { account, admin } = useAccount();
+  const limits = limitsFor(account, admin);
   const [sessions, setSessions] = useState<PracticeSession[] | null>(null);
   const [myDecks, setMyDecks] = useState<Deck[]>([]);
   const [topic, setTopic] = useState("");
@@ -118,7 +121,7 @@ export default function Dashboard() {
             <div className="row spread">
               <h2>Your decks</h2>
               <span className="muted">
-                {myDecks.length} {myDecks.length === 1 ? "deck" : "decks"}
+                {admin ? `${myDecks.length} decks · admin` : `${account?.decksCreated ?? 0} of ${limits.maxDecks} decks used on the ${limits.name} plan`}
               </span>
             </div>
             {myDecks.length === 0 ? (
@@ -136,6 +139,8 @@ export default function Dashboard() {
                         <div className="meta">
                           {PART_SHORT[d.part]} · {d.difficulty} · {d.questionCount} questions
                         </div>
+                        {d.status === "generating" && <Chip tone="warn">Building {d.progress ?? 0} / {d.requested}</Chip>}
+                        {d.status === "failed" && <Chip tone="bad">Couldn't be built</Chip>}
                       </div>
                       <div className="row" style={{ flexWrap: "nowrap" }}>
                         <div className="bar">
