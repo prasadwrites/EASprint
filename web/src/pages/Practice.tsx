@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { Chip, Icon } from "../components/TopBar";
-import { domainName, getQuestions } from "../data";
+import { domainName } from "../data";
+import { loadQuestions } from "../lib/decks";
 import { finishSession, getSession, saveAnswer, saveNavigation } from "../lib/db";
 import { formatClock, pace, pressureBackground, stage } from "../lib/pace";
 import { moveTo, secondsOn } from "../lib/timing";
@@ -23,7 +24,7 @@ export default function Practice() {
       const s = await getSession(sessionId);
       if (!s) return navigate("/", { replace: true });
       if (s.status === "completed") return navigate(`/sessions/${s.id}/results`, { replace: true });
-      const byId = new Map(getQuestions(s.deckId).map((q) => [q.id, q]));
+      const byId = new Map((await loadQuestions(s.deckId)).map((q) => [q.id, q]));
       setQuestions(s.questionIds.map((id) => byId.get(id)!).filter(Boolean));
       setSession(s);
     })();

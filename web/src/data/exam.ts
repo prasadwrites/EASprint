@@ -17,7 +17,7 @@ export const EXAM = {
   window: "July 1, 2026 to February 28, 2027",
 };
 
-type PartMeta = Omit<Deck, "questionCount">;
+type PartMeta = Omit<Deck, "questionCount" | "source" | "part"> & { id: PartId };
 
 export const PARTS: PartMeta[] = [
   {
@@ -106,4 +106,5 @@ export function domain(part: PartId, domainId: string) {
   };
 }
 
-export const sourceOf = (q: Question) => SOURCES[q.source.key as SourceKey];
+export const sourceOf = (q: Question): { title: string; url: string } =>
+  q.source.url ? { title: q.source.title || q.source.url, url: q.source.url } : SOURCES[q.source.key as SourceKey];

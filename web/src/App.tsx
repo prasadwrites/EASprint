@@ -3,6 +3,7 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { auth } from "./lib/firebase";
 import type { AppUser } from "./lib/types";
+import CreateDeck from "./pages/CreateDeck";
 import Dashboard from "./pages/Dashboard";
 import DeckReview from "./pages/DeckReview";
 import Login from "./pages/Login";
@@ -33,6 +34,7 @@ export default function App() {
     <UserContext.Provider value={user}>
       <Routes>
         <Route path="/" element={<Dashboard />} />
+        <Route path="/create" element={<CreateDeck />} />
         <Route path="/decks/:deckId" element={<DeckReview />} />
         <Route path="/decks/:deckId/practice" element={<PracticeSetup />} />
         <Route path="/sessions/:sessionId" element={<Practice />} />

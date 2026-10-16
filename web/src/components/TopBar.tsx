@@ -2,6 +2,7 @@ import { signOut } from "firebase/auth";
 import { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useUser } from "../App";
+import { canBuildDecks } from "../lib/decks";
 import { auth } from "../lib/firebase";
 
 export function Brand({ small }: { small?: boolean }) {
@@ -81,6 +82,7 @@ export default function TopBar({ back }: { back?: { to: string; label: string } 
             <nav className="nav" aria-label="Main">
               <Link to="/" aria-current={current("")}>Home</Link>
               <Link to="/#parts" aria-current={current("#parts")}>Exam parts</Link>
+              {canBuildDecks && <Link to="/#decks" aria-current={current("#decks")}>My decks</Link>}
               <Link to="/#progress" aria-current={current("#progress")}>Progress</Link>
             </nav>
             <ProfileMenu />

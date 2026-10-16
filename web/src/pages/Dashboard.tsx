@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useUser } from "../App";
-import TopBar, { Chip } from "../components/TopBar";
+import TopBar, { Chip, Icon } from "../components/TopBar";
 import { DECKS, domainName, partOfDomain } from "../data";
 import { EXAM } from "../data/exam";
 import { listSessions } from "../lib/db";
+import { canBuildDecks, listMyDecks } from "../lib/decks";
 import { paceSummary, weakestConcepts } from "../lib/insights";
 import { formatClock } from "../lib/pace";
-import type { PracticeSession } from "../lib/types";
+import type { Deck, PracticeSession } from "../lib/types";
+
+const PART_SHORT = { part1: "Part 1", part2: "Part 2", part3: "Part 3" } as const;
 
 const tone = (pct: number) => (pct >= 80 ? "good" : pct >= 60 ? "warn" : "bad");
 
@@ -20,10 +23,14 @@ function formatHours(sec: number) {
 export default function Dashboard() {
   const user = useUser();
   const { hash } = useLocation();
+  const navigate = useNavigate();
   const [sessions, setSessions] = useState<PracticeSession[] | null>(null);
+  const [myDecks, setMyDecks] = useState<Deck[]>([]);
+  const [topic, setTopic] = useState("");
 
   useEffect(() => {
     listSessions(user.uid).then(setSessions);
+    listMyDecks(user.uid).then(setMyDecks);
   }, [user.uid]);
 
   useEffect(() => {
@@ -51,9 +58,27 @@ export default function Dashboard() {
             Practice questions for all three parts of the Special Enrollment Examination, written to tax law through {EXAM.taxLawThrough} (tax year {EXAM.taxYear}), the law
             tested in the {EXAM.window} window. Every answer comes with an explanation and a link to the IRS source.
           </p>
+          {canBuildDecks && (
+            <form
+              className="create-form"
+              onSubmit={(e) => {
+                e.preventDefault();
+                navigate(`/create${topic.trim() ? `?topic=${encodeURIComponent(topic.trim())}` : ""}`);
+              }}
+            >
+              <div>
+                <label htmlFor="topic">Build a practice deck with Claude</label>
+                <input id="topic" type="text" placeholder="Try “Head of household rules” or “Circular 230 conflicts of interest”" value={topic} onChange={(e) => setTopic(e.target.value)} />
+              </div>
+              <button className="btn btn-primary btn-big" type="submit">
+                <Icon name="play" /> Build my deck
+              </button>
+            </form>
+          )}
         </section>
 
         <section className="stack" id="parts">
+          <h2>Exam parts</h2>
           <div className="decks" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))" }}>
             {DECKS.map((d) => {
               const b = best(d.id);
@@ -87,6 +112,54 @@ export default function Dashboard() {
             })}
           </div>
         </section>
+
+        {canBuildDecks && (
+          <section className="stack" id="decks">
+            <div className="row spread">
+              <h2>Your decks</h2>
+              <span className="muted">
+                {myDecks.length} {myDecks.length === 1 ? "deck" : "decks"}
+              </span>
+            </div>
+            {myDecks.length === 0 ? (
+              <div className="panel">
+                <p>You haven't built a deck yet. Ask Claude for one on any topic above, and it shows up here.</p>
+              </div>
+            ) : (
+              <div className="decks">
+                {myDecks.map((d) => {
+                  const b = best(d.id);
+                  return (
+                    <article key={d.id} className="panel deck-card">
+                      <div>
+                        <h3>{d.title}</h3>
+                        <div className="meta">
+                          {PART_SHORT[d.part]} · {d.difficulty} · {d.questionCount} questions
+                        </div>
+                      </div>
+                      <div className="row" style={{ flexWrap: "nowrap" }}>
+                        <div className="bar">
+                          <i style={{ width: `${b ?? 0}%`, background: `var(--${b === null ? "muted" : tone(b)})` }} />
+                        </div>
+                        <span style={{ fontWeight: 700, fontSize: 14, whiteSpace: "nowrap", color: `var(--${b === null ? "muted" : tone(b)})` }}>
+                          {b === null ? "New" : `Best ${b}%`}
+                        </span>
+                      </div>
+                      <div className="row">
+                        <Link className="btn btn-primary" style={{ flexGrow: 1 }} to={`/decks/${d.id}/practice`}>
+                          Practice
+                        </Link>
+                        <Link className="btn" to={`/decks/${d.id}`}>
+                          Review
+                        </Link>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            )}
+          </section>
+        )}
 
         <section className="tiles" id="progress" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }}>
           <div className="panel stack">

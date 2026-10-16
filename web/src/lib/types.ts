@@ -4,9 +4,12 @@ export type PartId = "part1" | "part2" | "part3";
 
 /** Where a question's answer can be checked on irs.gov. */
 export interface SourceRef {
+  /** A key in data/sources.ts for built-in questions; empty for Claude-built decks, which carry their own title and url. */
   key: string;
   /** Chapter, section or heading inside the source. */
   section: string;
+  title?: string;
+  url?: string;
 }
 
 export interface Question {
@@ -34,14 +37,21 @@ export interface Domain {
   examQuestions: number;
 }
 
-/** One exam part. Called a deck so the practice flow reads the same as MathSprint's. */
+/** A practice deck: one of the three built-in exam parts, or a deck the candidate built with Claude. */
 export interface Deck {
-  id: PartId;
+  id: string;
+  /** The exam part the questions belong to. */
+  part: PartId;
   title: string;
   short: string;
   summary: string;
   domains: Domain[];
   questionCount: number;
+  source: "builtin" | "ai";
+  topic?: string;
+  difficulty?: string;
+  topics?: string[];
+  createdAt?: Date | null;
 }
 
 export interface AppUser {

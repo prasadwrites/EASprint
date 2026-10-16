@@ -6,3 +6,7 @@ dist/
 *-debug.log
 *.tsbuildinfo
 .claude/
+functions/venv/
+functions/.secret.local
+__pycache__/
+.pytest_cache/

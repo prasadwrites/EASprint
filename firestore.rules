@@ -5,7 +5,17 @@ service cloud.firestore {
     function signedIn() { return request.auth != null; }
     function owns(data) { return signedIn() && data.ownerId == request.auth.uid; }
 
-    // Questions ship with the app, so only practice sessions are stored.
+    // Decks built with Claude are written by the generate_deck function (admin access).
+    // Candidates can only see and delete their own. The three exam parts ship with the app.
+    match /decks/{deckId} {
+      allow read, delete: if owns(resource.data);
+      allow update: if owns(resource.data) && request.resource.data.ownerId == resource.data.ownerId;
+
+      match /questions/{questionId} {
+        allow read: if signedIn() && get(/databases/$(database)/documents/decks/$(deckId)).data.ownerId == request.auth.uid;
+      }
+    }
+
     match /sessions/{sessionId} {
       allow read: if owns(resource.data);
       allow create: if owns(request.resource.data) && request.resource.data.status == "active";

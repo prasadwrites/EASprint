@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 import { useUser } from "../App";
 import TopBar, { Icon } from "../components/TopBar";
-import { getDeck, getQuestions } from "../data";
+import { loadDeck, loadQuestions } from "../lib/decks";
 import { EXAM } from "../data/exam";
 import { listSessions, startSession } from "../lib/db";
 import { missedLastTime, practicedIds, selectQuestions, type Selection } from "../lib/insights";
 import { formatClock } from "../lib/pace";
-import type { Mode, PracticeSession } from "../lib/types";
+import type { Deck, Mode, PracticeSession, Question } from "../lib/types";
 
 const MODES: [Mode, string, string][] = [
   ["learn", "Learn", "No clock. Take your time and read every explanation."],
@@ -20,7 +20,8 @@ export default function PracticeSetup() {
   const navigate = useNavigate();
   const { deckId = "" } = useParams();
   const [params] = useSearchParams();
-  const deck = getDeck(deckId);
+  const [deck, setDeck] = useState<Deck | null | undefined>(undefined);
+  const [all, setAll] = useState<Question[]>([]);
   const [history, setHistory] = useState<PracticeSession[] | null>(null);
   const [mode, setMode] = useState<Mode>("practice");
   const [n, setN] = useState(10);
@@ -30,7 +31,10 @@ export default function PracticeSetup() {
   const [starting, setStarting] = useState(false);
 
   useEffect(() => {
-    listSessions(user.uid, deckId).then((hs) => {
+    Promise.all([loadDeck(deckId), loadQuestions(deckId), listSessions(user.uid, deckId)]).then(([d, qs, hs]) => {
+      setDeck(d);
+      setAll(qs);
+      if (qs.length < 10) setN(qs.length);
       setHistory(hs);
       const preset = params.get("select") === "missed" ? missedLastTime(hs).length : 0;
       if (preset) {
@@ -44,12 +48,12 @@ export default function PracticeSetup() {
     return (
       <>
         <TopBar back={{ to: "/#parts", label: "Exam parts" }} />
-        <main className="page">{deck ? <span className="spinner" /> : <p>That exam part doesn't exist.</p>}</main>
+        <main className="page">{deck === null ? <p>That deck doesn't exist or isn't yours.</p> : <span className="spinner" />}</main>
       </>
     );
   }
 
-  const questions = getQuestions(deckId).filter((q) => !domains.length || domains.includes(q.domain));
+  const questions = all.filter((q) => !domains.length || domains.includes(q.domain));
   const allIds = questions.map((q) => q.id);
   const seen = practicedIds(history);
   const missed = new Set(missedLastTime(history));
@@ -122,7 +126,7 @@ export default function PracticeSetup() {
               <button type="button" aria-pressed={!domains.length} onClick={() => setDomains([])}>
                 All domains
               </button>
-              {deck.domains.map((d) => (
+              {deck.domains.filter((d) => all.some((q) => q.domain === d.id)).map((d) => (
                 <button key={d.id} type="button" aria-pressed={domains.includes(d.id)} onClick={() => toggleDomain(d.id)}>
                   {d.name}
                 </button>
@@ -136,7 +140,7 @@ export default function PracticeSetup() {
                 <label htmlFor="n">Number of questions</label>
                 <input id="n" type="number" min={1} max={pool || 1} value={n} onChange={(e) => setN(Number(e.target.value))} />
                 <p className="muted" style={{ fontSize: 14, marginTop: 4 }}>
-                  {questions.length} available{domains.length ? " in the domains you picked" : " in this part"}
+                  {questions.length} available{domains.length ? " in the domains you picked" : deck.source === "ai" ? " in this deck" : " in this part"}
                 </p>
               </div>
               {mode === "practice" && (

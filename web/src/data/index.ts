@@ -6,7 +6,7 @@ import { PART3 } from "./part3";
 
 const BANK: Record<PartId, Question[]> = { part1: PART1, part2: PART2, part3: PART3 };
 
-export const DECKS: Deck[] = PARTS.map((p) => ({ ...p, questionCount: BANK[p.id].length }));
+export const DECKS: Deck[] = PARTS.map((p) => ({ ...p, part: p.id, source: "builtin", questionCount: BANK[p.id].length }));
 
 export const getDeck = (id: string): Deck | null => DECKS.find((d) => d.id === id) ?? null;
 

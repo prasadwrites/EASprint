@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import TopBar, { Chip } from "../components/TopBar";
-import { domainName, getQuestions } from "../data";
+import { domainName } from "../data";
+import { loadQuestions } from "../lib/decks";
 import { sourceOf } from "../data/exam";
 import { getSession } from "../lib/db";
 import { formatClock, verdict, type Verdict } from "../lib/pace";
@@ -54,9 +55,9 @@ export default function Results() {
   const [questions, setQuestions] = useState<Question[]>([]);
 
   useEffect(() => {
-    getSession(sessionId).then((sess) => {
+    getSession(sessionId).then(async (sess) => {
       if (!sess) return;
-      const byId = new Map(getQuestions(sess.deckId).map((q) => [q.id, q]));
+      const byId = new Map((await loadQuestions(sess.deckId)).map((q) => [q.id, q]));
       setQuestions(sess.questionIds.map((id) => byId.get(id)!).filter(Boolean));
       setS(sess);
     });
