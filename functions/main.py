@@ -213,7 +213,7 @@ def admin_update_account(req: https_fn.CallableRequest) -> dict:
 
 @https_fn.on_call()
 def delete_deck(req: https_fn.CallableRequest) -> dict:
-    """Deletes a Claude-built deck, its questions and the practice sessions taken on it.
+    """Deletes a Claude-built deck, its questions and every practice session taken on it.
 
     Deleting doesn't give back a deck on the plan: the limit counts decks built, not decks kept.
     """
@@ -232,7 +232,8 @@ def delete_deck(req: https_fn.CallableRequest) -> dict:
     if deck.get("status") == "generating":
         raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "This deck is still being built. Delete it once it finishes.")
 
-    sessions = db.collection("sessions").where("ownerId", "==", deck.get("ownerId")).where("deckId", "==", deck_id).stream()
+    # Includes sessions by people the deck was shared with, since the questions they point to are going.
+    sessions = db.collection("sessions").where("deckId", "==", deck_id).stream()
     batch, n = db.batch(), 0
     for s in sessions:
         batch.delete(s.reference)
@@ -243,3 +244,51 @@ def delete_deck(req: https_fn.CallableRequest) -> dict:
     batch.commit()
     db.recursive_delete(deck_ref)
     return {"ok": True, "sessionsDeleted": n}
+
+
+def _owned_deck(req: https_fn.CallableRequest):
+    """The deck named in the request, if the caller owns it (or is the admin)."""
+    uid = _require_user(req)
+    deck_id = _clean((req.data or {}).get("deckId"), 40)
+    if not DECK_ID.match(deck_id):
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which deck?")
+    deck_ref = firestore.client().collection("decks").document(deck_id)
+    snap = deck_ref.get()
+    if not snap.exists:
+        raise https_fn.HttpsError(Err.NOT_FOUND, "That deck doesn't exist.")
+    deck = snap.to_dict() or {}
+    if deck.get("ownerId") != uid and not is_admin(req.auth.token):
+        raise https_fn.HttpsError(Err.PERMISSION_DENIED, "Only the person who built this deck can share it.")
+    return deck_ref, deck
+
+
+@https_fn.on_call()
+def share_deck(req: https_fn.CallableRequest) -> dict:
+    """Shares a deck with another registered user, found by the email they signed up with."""
+    deck_ref, deck = _owned_deck(req)
+    email = _clean((req.data or {}).get("email"), 254).lower()
+    if "@" not in email:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Enter the email address the person signed up with.")
+    try:
+        user = auth.get_user_by_email(email)
+    except auth.UserNotFoundError:
+        raise https_fn.HttpsError(Err.NOT_FOUND, f"No one has signed up to EASprint with {email}. Ask them to sign in once, then share again.")
+    if user.uid == deck.get("ownerId"):
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "That's your own account.")
+    deck_ref.update({
+        "sharedWith": firestore.ArrayUnion([user.uid]),
+        f"sharedEmails.{user.uid}": user.email or email,
+        "ownerEmail": (req.auth.token or {}).get("email", "") if deck.get("ownerId") == req.auth.uid else deck.get("ownerEmail", ""),
+    })
+    return {"ok": True, "uid": user.uid, "email": user.email or email}
+
+
+@https_fn.on_call()
+def unshare_deck(req: https_fn.CallableRequest) -> dict:
+    """Stops sharing a deck with someone. Their past practice results on it are kept."""
+    deck_ref, _ = _owned_deck(req)
+    uid = _clean((req.data or {}).get("uid"), 128)
+    if not uid:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Who should lose access?")
+    deck_ref.update({"sharedWith": firestore.ArrayRemove([uid]), f"sharedEmails.{uid}": firestore.DELETE_FIELD})
+    return {"ok": True}

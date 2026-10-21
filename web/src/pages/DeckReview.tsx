@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { useUser } from "../App";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { EXAM, sourceOf } from "../data/exam";
-import { deleteDeck, DELETE_WARNING, loadDeck, loadQuestions, watchDeck } from "../lib/decks";
+import { deleteDeck, DELETE_WARNING, loadDeck, loadQuestions, shareDeck, unshareDeck, watchDeck } from "../lib/decks";
 import { formatClock } from "../lib/pace";
 import type { Deck, Question } from "../lib/types";
 
@@ -18,6 +19,10 @@ export default function DeckReview() {
   const [deck, setDeck] = useState<Deck | null | undefined>(undefined);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [deleting, setDeleting] = useState(false);
+  const user = useUser();
+  const [shareEmail, setShareEmail] = useState("");
+  const [shareBusy, setShareBusy] = useState(false);
+  const [shareMsg, setShareMsg] = useState<{ ok: boolean; text: string } | null>(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -37,6 +42,22 @@ export default function DeckReview() {
   if (deck === null) return <><TopBar back={back} /><main className="page"><p>That deck doesn't exist or isn't yours.</p></main></>;
 
   const ai = deck.source === "ai";
+  const mine = ai && deck.ownerId === user.uid;
+  const shared = Object.entries(deck.sharedEmails ?? {});
+
+  const share = async () => {
+    setShareBusy(true);
+    setShareMsg(null);
+    try {
+      const res = await shareDeck(deck.id, shareEmail.trim());
+      setShareEmail("");
+      setShareMsg({ ok: true, text: `Shared with ${res.email}. It now appears under "Shared with you" on their home page.` });
+    } catch (e) {
+      setShareMsg({ ok: false, text: (e as Error).message || "The deck couldn't be shared. Try again." });
+    } finally {
+      setShareBusy(false);
+    }
+  };
   const generating = deck.status === "generating";
   const requested = deck.requested || deck.questionCount;
   const dropped = Math.max(0, requested - questions.length);
@@ -93,6 +114,7 @@ export default function DeckReview() {
             <h1>{deck.title}</h1>
           </div>
           <p className="muted">{deck.summary}</p>
+          {ai && !mine && <p>Shared with you{deck.ownerEmail ? ` by ${deck.ownerEmail}` : ""}.</p>}
           {ai && !!deck.topics?.length && (
             <div className="row">
               {deck.topics.map((t) => (
@@ -104,7 +126,7 @@ export default function DeckReview() {
             <Link className="btn btn-primary btn-big" to={`/decks/${deck.id}/practice`} style={questions.length ? undefined : { pointerEvents: "none", opacity: 0.5 }}>
               <Icon name="play" /> Start practice
             </Link>
-            {ai && (
+            {mine && (
               <button
                 type="button"
                 className="btn btn-big"
@@ -128,6 +150,57 @@ export default function DeckReview() {
             )}
           </div>
         </div>
+
+        {mine && deck.status !== "failed" && (
+          <div className="panel stack">
+            <h2>Share this deck</h2>
+            <p className="muted">Anyone who has signed up to EASprint can practice it. Enter the email address they signed up with.</p>
+            <form
+              className="row"
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (shareEmail.trim()) share();
+              }}
+            >
+              <input
+                type="text"
+                inputMode="email"
+                aria-label="Email address to share with"
+                placeholder="name@example.com"
+                value={shareEmail}
+                onChange={(e) => setShareEmail(e.target.value)}
+                style={{ flex: "1 1 240px", minWidth: 0, maxWidth: 360 }}
+              />
+              <button className="btn btn-primary" type="submit" disabled={shareBusy || !shareEmail.trim()}>
+                {shareBusy ? "Sharing…" : "Share"}
+              </button>
+            </form>
+            {shareMsg && <p className={shareMsg.ok ? "muted" : "error"}>{shareMsg.text}</p>}
+            {shared.length > 0 && (
+              <ul className="checks" style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 8 }}>
+                {shared.map(([uid, email]) => (
+                  <li key={uid} className="row spread">
+                    <span>{email}</span>
+                    <button
+                      type="button"
+                      className="btn-link"
+                      style={{ color: "var(--bad)" }}
+                      onClick={async () => {
+                        try {
+                          await unshareDeck(deck.id, uid);
+                        } catch (e) {
+                          setShareMsg({ ok: false, text: (e as Error).message || "Couldn't stop sharing. Try again." });
+                        }
+                      }}
+                    >
+                      Stop sharing
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
 
         <div className="tiles">
           <div className="tile">

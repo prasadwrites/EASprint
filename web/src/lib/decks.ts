@@ -30,6 +30,9 @@ function fromDoc(id: string, data: Record<string, unknown>): Deck {
     requested: Number(data.requested ?? data.questionCount ?? 0),
     progress: Number(data.progress ?? 0),
     error: data.error ? String(data.error) : undefined,
+    ownerId: String(data.ownerId ?? ""),
+    ownerEmail: data.ownerEmail ? String(data.ownerEmail) : undefined,
+    sharedEmails: (data.sharedEmails as Record<string, string>) ?? {},
   };
 }
 
@@ -107,3 +110,22 @@ export async function deleteDeck(deckId: string): Promise<void> {
 
 export const DELETE_WARNING =
   "Delete this deck? Its questions and your practice results on it are removed for good. Deleting doesn't give back a deck on your plan.";
+
+/** Decks other people have shared with this user, newest first. */
+export async function listSharedDecks(uid: string): Promise<Deck[]> {
+  if (!db) return [];
+  const snap = await getDocs(query(collection(db, "decks"), where("sharedWith", "array-contains", uid)));
+  return snap.docs
+    .map((x) => fromDoc(x.id, x.data()))
+    .sort((a, b) => (b.createdAt?.getTime() ?? 0) - (a.createdAt?.getTime() ?? 0));
+}
+
+/** Shares a deck with another registered user, by the email they signed up with. */
+export async function shareDeck(deckId: string, email: string): Promise<{ uid: string; email: string }> {
+  const res = await httpsCallable<{ deckId: string; email: string }, { uid: string; email: string }>(functions!, "share_deck")({ deckId, email });
+  return res.data;
+}
+
+export async function unshareDeck(deckId: string, uid: string): Promise<void> {
+  await httpsCallable(functions!, "unshare_deck")({ deckId, uid });
+}

@@ -6,7 +6,7 @@ import { DECKS, domainName, partOfDomain } from "../data";
 import { EXAM } from "../data/exam";
 import { listSessions } from "../lib/db";
 import { limitsFor } from "../lib/account";
-import { canBuildDecks, deleteDeck, DELETE_WARNING, listMyDecks } from "../lib/decks";
+import { canBuildDecks, deleteDeck, DELETE_WARNING, listMyDecks, listSharedDecks } from "../lib/decks";
 import { paceSummary, weakestConcepts } from "../lib/insights";
 import { formatClock } from "../lib/pace";
 import type { Deck, PracticeSession } from "../lib/types";
@@ -29,6 +29,7 @@ export default function Dashboard() {
   const limits = limitsFor(account, admin);
   const [sessions, setSessions] = useState<PracticeSession[] | null>(null);
   const [myDecks, setMyDecks] = useState<Deck[]>([]);
+  const [sharedDecks, setSharedDecks] = useState<Deck[]>([]);
   const [topic, setTopic] = useState("");
   const [deleting, setDeleting] = useState("");
 
@@ -49,6 +50,7 @@ export default function Dashboard() {
   useEffect(() => {
     listSessions(user.uid).then(setSessions);
     listMyDecks(user.uid).then(setMyDecks);
+    listSharedDecks(user.uid).then(setSharedDecks).catch(() => setSharedDecks([]));
   }, [user.uid]);
 
   useEffect(() => {
@@ -156,6 +158,7 @@ export default function Dashboard() {
                         </div>
                         {d.status === "generating" && <Chip tone="warn">Building {d.progress ?? 0} / {d.requested}</Chip>}
                         {d.status === "failed" && <Chip tone="bad">Couldn't be built</Chip>}
+                        {Object.keys(d.sharedEmails ?? {}).length > 0 && <Chip>Shared with {Object.keys(d.sharedEmails ?? {}).length}</Chip>}
                       </div>
                       <div className="row" style={{ flexWrap: "nowrap" }}>
                         <div className="bar">
@@ -189,6 +192,43 @@ export default function Dashboard() {
                 })}
               </div>
             )}
+          </section>
+        )}
+
+        {sharedDecks.length > 0 && (
+          <section className="stack" id="shared">
+            <h2>Shared with you</h2>
+            <div className="decks">
+              {sharedDecks.map((d) => {
+                const b = best(d.id);
+                return (
+                  <article key={d.id} className="panel deck-card">
+                    <div>
+                      <h3>{d.title}</h3>
+                      <div className="meta">
+                        {PART_SHORT[d.part]} · {d.questionCount} questions{d.ownerEmail ? ` · from ${d.ownerEmail}` : ""}
+                      </div>
+                    </div>
+                    <div className="row" style={{ flexWrap: "nowrap" }}>
+                      <div className="bar">
+                        <i style={{ width: `${b ?? 0}%`, background: `var(--${b === null ? "muted" : tone(b)})` }} />
+                      </div>
+                      <span style={{ fontWeight: 700, fontSize: 14, whiteSpace: "nowrap", color: `var(--${b === null ? "muted" : tone(b)})` }}>
+                        {b === null ? "New" : `Best ${b}%`}
+                      </span>
+                    </div>
+                    <div className="row">
+                      <Link className="btn btn-primary" style={{ flexGrow: 1 }} to={`/decks/${d.id}/practice`}>
+                        Practice
+                      </Link>
+                      <Link className="btn" to={`/decks/${d.id}`}>
+                        Review
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
           </section>
         )}
 

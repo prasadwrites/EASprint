@@ -57,6 +57,10 @@ export interface Deck {
   requested?: number;
   progress?: number;
   error?: string;
+  /** Who built the deck, and the registered users it is shared with (uid → email). */
+  ownerId?: string;
+  ownerEmail?: string;
+  sharedEmails?: Record<string, string>;
 }
 
 export interface AppUser {

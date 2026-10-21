@@ -9,6 +9,9 @@ service cloud.firestore {
       return signedIn() && request.auth.token.email == "prasad.writes@gmail.com" && request.auth.token.email_verified == true;
     }
     function accountPath() { return /databases/$(database)/documents/accounts/$(request.auth.uid); }
+    function sharedWithMe(data) {
+      return signedIn() && request.auth.uid in data.get("sharedWith", []);
+    }
     function notSuspended() {
       return !exists(accountPath()) || get(accountPath()).data.status != "suspended";
     }
@@ -36,12 +39,14 @@ service cloud.firestore {
     // Decks built with Claude are written by the generate_deck function (admin access).
     // Reading a deck that doesn't exist yet is allowed, so the app can wait for a new deck to appear.
     match /decks/{deckId} {
-      allow get: if resource == null ? signedIn() : ((owns(resource.data) && notSuspended()) || isAdmin());
-      allow list: if (owns(resource.data) && notSuspended()) || isAdmin();
+      // The owner can also share a deck (through the share_deck function) with other registered users.
+      allow get: if resource == null ? signedIn() : (((owns(resource.data) || sharedWithMe(resource.data)) && notSuspended()) || isAdmin());
+      allow list: if ((owns(resource.data) || sharedWithMe(resource.data)) && notSuspended()) || isAdmin();
       allow delete: if owns(resource.data);
 
       match /questions/{questionId} {
-        allow read: if signedIn() && (get(/databases/$(database)/documents/decks/$(deckId)).data.ownerId == request.auth.uid || isAdmin());
+        function deck() { return get(/databases/$(database)/documents/decks/$(deckId)).data; }
+        allow read: if signedIn() && (deck().ownerId == request.auth.uid || sharedWithMe(deck()) || isAdmin());
       }
     }
 
