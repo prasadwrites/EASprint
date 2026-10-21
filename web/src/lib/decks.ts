@@ -99,3 +99,11 @@ export function generateDeck(input: GenerateInput): Promise<string> {
     );
   });
 }
+
+/** Deletes a Claude-built deck with its questions and the practice sessions taken on it. */
+export async function deleteDeck(deckId: string): Promise<void> {
+  await httpsCallable(functions!, "delete_deck")({ deckId });
+}
+
+export const DELETE_WARNING =
+  "Delete this deck? Its questions and your practice results on it are removed for good. Deleting doesn't give back a deck on your plan.";

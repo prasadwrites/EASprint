@@ -209,3 +209,37 @@ def admin_update_account(req: https_fn.CallableRequest) -> dict:
     if changes:
         account_ref.update({**changes, "updatedAt": firestore.SERVER_TIMESTAMP})
     return {"ok": True}
+
+
+@https_fn.on_call()
+def delete_deck(req: https_fn.CallableRequest) -> dict:
+    """Deletes a Claude-built deck, its questions and the practice sessions taken on it.
+
+    Deleting doesn't give back a deck on the plan: the limit counts decks built, not decks kept.
+    """
+    uid = _require_user(req)
+    deck_id = _clean((req.data or {}).get("deckId"), 40)
+    if not DECK_ID.match(deck_id):
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which deck?")
+    db = firestore.client()
+    deck_ref = db.collection("decks").document(deck_id)
+    snap = deck_ref.get()
+    if not snap.exists:
+        raise https_fn.HttpsError(Err.NOT_FOUND, "That deck doesn't exist.")
+    deck = snap.to_dict() or {}
+    if deck.get("ownerId") != uid and not is_admin(req.auth.token):
+        raise https_fn.HttpsError(Err.PERMISSION_DENIED, "You can only delete your own decks.")
+    if deck.get("status") == "generating":
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "This deck is still being built. Delete it once it finishes.")
+
+    sessions = db.collection("sessions").where("ownerId", "==", deck.get("ownerId")).where("deckId", "==", deck_id).stream()
+    batch, n = db.batch(), 0
+    for s in sessions:
+        batch.delete(s.reference)
+        n += 1
+        if n % 400 == 0:
+            batch.commit()
+            batch = db.batch()
+    batch.commit()
+    db.recursive_delete(deck_ref)
+    return {"ok": True, "sessionsDeleted": n}

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { EXAM, sourceOf } from "../data/exam";
-import { loadDeck, loadQuestions, watchDeck } from "../lib/decks";
+import { deleteDeck, DELETE_WARNING, loadDeck, loadQuestions, watchDeck } from "../lib/decks";
 import { formatClock } from "../lib/pace";
 import type { Deck, Question } from "../lib/types";
 
@@ -17,6 +17,8 @@ export default function DeckReview() {
   const [params] = useSearchParams();
   const [deck, setDeck] = useState<Deck | null | undefined>(undefined);
   const [questions, setQuestions] = useState<Question[]>([]);
+  const [deleting, setDeleting] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     Promise.all([loadDeck(deckId), loadQuestions(deckId)]).then(([d, qs]) => {
@@ -102,6 +104,28 @@ export default function DeckReview() {
             <Link className="btn btn-primary btn-big" to={`/decks/${deck.id}/practice`} style={questions.length ? undefined : { pointerEvents: "none", opacity: 0.5 }}>
               <Icon name="play" /> Start practice
             </Link>
+            {ai && (
+              <button
+                type="button"
+                className="btn btn-big"
+                disabled={deleting || generating}
+                title={generating ? "Wait until the deck finishes building" : undefined}
+                style={{ color: "var(--bad)" }}
+                onClick={async () => {
+                  if (!window.confirm(DELETE_WARNING)) return;
+                  setDeleting(true);
+                  try {
+                    await deleteDeck(deck.id);
+                    navigate("/#decks", { replace: true });
+                  } catch (e) {
+                    window.alert((e as Error).message || "The deck couldn't be deleted. Try again.");
+                    setDeleting(false);
+                  }
+                }}
+              >
+                {deleting ? "Deleting…" : "Delete deck"}
+              </button>
+            )}
           </div>
         </div>
 

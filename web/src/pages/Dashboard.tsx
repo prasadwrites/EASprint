@@ -6,7 +6,7 @@ import { DECKS, domainName, partOfDomain } from "../data";
 import { EXAM } from "../data/exam";
 import { listSessions } from "../lib/db";
 import { limitsFor } from "../lib/account";
-import { canBuildDecks, listMyDecks } from "../lib/decks";
+import { canBuildDecks, deleteDeck, DELETE_WARNING, listMyDecks } from "../lib/decks";
 import { paceSummary, weakestConcepts } from "../lib/insights";
 import { formatClock } from "../lib/pace";
 import type { Deck, PracticeSession } from "../lib/types";
@@ -30,6 +30,21 @@ export default function Dashboard() {
   const [sessions, setSessions] = useState<PracticeSession[] | null>(null);
   const [myDecks, setMyDecks] = useState<Deck[]>([]);
   const [topic, setTopic] = useState("");
+  const [deleting, setDeleting] = useState("");
+
+  const remove = async (deck: Deck) => {
+    if (!window.confirm(`${deck.title}\n\n${DELETE_WARNING}`)) return;
+    setDeleting(deck.id);
+    try {
+      await deleteDeck(deck.id);
+      setMyDecks((all) => all.filter((x) => x.id !== deck.id));
+      listSessions(user.uid).then(setSessions);
+    } catch (e) {
+      window.alert((e as Error).message || "The deck couldn't be deleted. Try again.");
+    } finally {
+      setDeleting("");
+    }
+  };
 
   useEffect(() => {
     listSessions(user.uid).then(setSessions);
@@ -157,6 +172,17 @@ export default function Dashboard() {
                         <Link className="btn" to={`/decks/${d.id}`}>
                           Review
                         </Link>
+                        <button
+                          type="button"
+                          className="btn"
+                          aria-label={`Delete ${d.title}`}
+                          disabled={deleting === d.id || d.status === "generating"}
+                          title={d.status === "generating" ? "Wait until the deck finishes building" : undefined}
+                          style={{ color: "var(--bad)" }}
+                          onClick={() => remove(d)}
+                        >
+                          {deleting === d.id ? "Deleting…" : "Delete"}
+                        </button>
                       </div>
                     </article>
                   );
