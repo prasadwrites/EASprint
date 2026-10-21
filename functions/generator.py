@@ -23,6 +23,9 @@ from schema import DOMAINS, BlindCheck, DeckPlan, GeneratedDeck, GeneratedQuesti
 from validator import check_shape, check_source, url_exists
 
 MODEL = "claude-opus-5-5"
+# Each call is a single non-streaming request. Without an explicit timeout the SDK refuses requests
+# whose max_tokens could take over 10 minutes, so give one that fits inside the function timeout.
+REQUEST_TIMEOUT_SEC = 900
 MAX_REPAIR_ROUNDS = 2
 BATCH = 10
 WORKERS = 5
@@ -85,6 +88,7 @@ def _parse(client: anthropic.Anthropic, system: str, prompt: str, schema, effort
         messages=[{"role": "user", "content": prompt}],
         output_format=schema,
         output_config={"effort": effort},
+        timeout=REQUEST_TIMEOUT_SEC,
         # If a request is declined by a safety classifier, retry on a fallback model.
         betas=["server-side-fallback-2026-07-01"],
         fallbacks="default",

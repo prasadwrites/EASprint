@@ -9,6 +9,7 @@ admin_update_account  - The admin changes an account's plan, suspends or restore
 
 from __future__ import annotations
 
+import logging
 import os
 import random
 import re
@@ -157,6 +158,7 @@ def generate_deck(req: https_fn.CallableRequest) -> dict:
     try:
         result = _generate(request, on_plan=on_plan, on_batch=on_batch)
     except Exception as e:  # noqa: BLE001 - any failure refunds the deck
+        logging.exception("deck %s failed", deck_id)
         message = str(e) if isinstance(e, GenerationError) else "Something went wrong while building the deck. Try again."
         deck_ref.update({"status": "failed", "error": message})
         account_ref.update({"decksCreated": firestore.Increment(-1)})
