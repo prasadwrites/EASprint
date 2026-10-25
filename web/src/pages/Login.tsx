@@ -1,14 +1,15 @@
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Brand } from "../components/TopBar";
 import { auth as maybeAuth, googleProvider } from "../lib/firebase";
 
-export default function Login() {
+export default function Login({ initialMode = "signin" }: { initialMode?: "signin" | "signup" }) {
   // Only shown when Firebase is configured.
   const auth = maybeAuth!;
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [mode, setMode] = useState<"signin" | "signup">("signin");
+  const [mode, setMode] = useState<"signin" | "signup">(initialMode);
   const [error, setError] = useState("");
 
   const run = async (fn: () => Promise<unknown>) => {
@@ -70,6 +71,7 @@ export default function Login() {
           </button>
           {error && <p className="error">{error}</p>}
         </form>
+        <Link to="/how-it-works">See how EASprint works</Link>
       </div>
     </div>
   );
