@@ -58,6 +58,11 @@ function ProfileMenu() {
             <br />
             {admin ? "Admin" : `${limitsFor(account, false).name} plan`}
           </div>
+          {!admin && account?.plan !== "promax" && (
+            <Link className="btn" role="menuitem" to="/upgrade" style={{ justifyContent: "flex-start", border: "none" }}>
+              Upgrade plan
+            </Link>
+          )}
           {admin && (
             <Link className="btn" role="menuitem" to="/admin" style={{ justifyContent: "flex-start", border: "none" }}>
               Manage accounts

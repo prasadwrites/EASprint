@@ -13,6 +13,7 @@ import Login from "./pages/Login";
 import Practice from "./pages/Practice";
 import PracticeSetup from "./pages/PracticeSetup";
 import Results from "./pages/Results";
+import Upgrade from "./pages/Upgrade";
 
 /** Stands in for a signed-in user when Firebase is not configured. */
 const LOCAL_USER: AppUser = { uid: "local", displayName: null, email: null };
@@ -78,6 +79,7 @@ export default function App() {
           <Route path="/decks/:deckId/practice" element={<PracticeSetup />} />
           <Route path="/sessions/:sessionId" element={<Practice />} />
           <Route path="/sessions/:sessionId/results" element={<Results />} />
+          {auth && <Route path="/upgrade" element={<Upgrade />} />}
           {admin && <Route path="/admin" element={<Admin />} />}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

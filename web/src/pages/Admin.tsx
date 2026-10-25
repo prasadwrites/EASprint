@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TopBar, { Chip } from "../components/TopBar";
 import { ADMIN_EMAIL, adminUpdate, getAccessCode, listAccounts, PLANS, type Account, type PlanId } from "../lib/account";
+import { closeRequest, listPendingRequests, type UpgradeRequest } from "../lib/upgrades";
 
 function formatDate(d: Date | null) {
   return d ? d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : "–";
@@ -68,11 +69,28 @@ export default function Admin() {
   const [error, setError] = useState("");
   const [busy, setBusy] = useState("");
   const [filter, setFilter] = useState("");
+  const [requests, setRequests] = useState<UpgradeRequest[]>([]);
 
-  const refresh = () =>
-    listAccounts()
+  const refresh = () => {
+    listPendingRequests().then(setRequests).catch(() => setRequests([]));
+    return listAccounts()
       .then(setAccounts)
       .catch(() => setError("Couldn't load accounts."));
+  };
+
+  const decide = async (r: UpgradeRequest, approve: boolean) => {
+    setBusy(r.uid);
+    setError("");
+    try {
+      if (approve) await adminUpdate({ uid: r.uid, plan: r.plan });
+      await closeRequest(r.uid, approve ? "approved" : "dismissed");
+      await refresh();
+    } catch (e) {
+      setError((e as Error).message || "That change didn't go through.");
+    } finally {
+      setBusy("");
+    }
+  };
   useEffect(() => {
     refresh();
   }, []);
@@ -104,6 +122,43 @@ export default function Admin() {
             {accounts &&
               ` · ${counts.free ?? 0} Free · ${counts.pro ?? 0} Pro · ${counts.promax ?? 0} Pro Max${counts.suspended ? ` · ${counts.suspended} suspended` : ""}`}
           </p>
+        </div>
+
+        <div className="panel stack">
+          <div className="row spread">
+            <h2>Upgrade requests</h2>
+            <span className="muted">{requests.length} waiting</span>
+          </div>
+          {requests.length === 0 ? (
+            <p className="muted">No one is waiting. When someone pays on the Upgrade page and confirms it, they show up here.</p>
+          ) : (
+            <>
+              <p className="muted" style={{ fontSize: 14 }}>
+                Check each one against the payments in your Square dashboard before approving. Approving changes the plan right away.
+              </p>
+              <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 12 }}>
+                {requests.map((r) => (
+                  <li key={r.uid} className="row spread" style={{ alignItems: "flex-start", borderTop: "1px solid var(--line)", paddingTop: 12 }}>
+                    <div>
+                      <b>{r.email}</b> paid for <b>{PLANS[r.plan].name}</b>
+                      <div className="muted" style={{ fontSize: 14 }}>
+                        {r.displayName || "No name"} · {formatDate(r.requestedAt)}
+                        {r.note && <> · “{r.note}”</>}
+                      </div>
+                    </div>
+                    <div className="row" style={{ gap: 8 }}>
+                      <button className="btn btn-primary" disabled={busy === r.uid} onClick={() => decide(r, true)}>
+                        Approve
+                      </button>
+                      <button className="btn" disabled={busy === r.uid} onClick={() => decide(r, false)}>
+                        Dismiss
+                      </button>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
 
         <div className="panel stack">

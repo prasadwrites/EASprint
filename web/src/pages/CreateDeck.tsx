@@ -94,7 +94,7 @@ export default function CreateDeck() {
           <div className="verdict warn">
             <h3>You've used all {limits.maxDecks} decks on your plan</h3>
             <p>
-              Ask the person who runs EASprint about a bigger plan. You can keep practicing <Link to="/#decks">the decks you have</Link>.
+              <Link to="/upgrade">Upgrade to Pro or Pro Max</Link> to build more. You can keep practicing <Link to="/#decks">the decks you have</Link>.
             </p>
           </div>
         )}

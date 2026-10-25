@@ -139,6 +139,12 @@ export default function Dashboard() {
               <h2>Your decks</h2>
               <span className="muted">
                 {admin ? `${myDecks.length} decks · admin` : `${account?.decksCreated ?? 0} of ${limits.maxDecks} decks used on the ${limits.name} plan`}
+                {!admin && account?.plan !== "promax" && (
+                  <>
+                    {" · "}
+                    <Link to="/upgrade">Upgrade</Link>
+                  </>
+                )}
               </span>
             </div>
             {myDecks.length === 0 ? (
