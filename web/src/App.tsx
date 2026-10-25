@@ -9,6 +9,7 @@ import Admin from "./pages/Admin";
 import CreateDeck from "./pages/CreateDeck";
 import Dashboard from "./pages/Dashboard";
 import DeckReview from "./pages/DeckReview";
+import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Practice from "./pages/Practice";
 import PracticeSetup from "./pages/PracticeSetup";
@@ -65,7 +66,17 @@ export default function App() {
       </div>
     );
   }
-  if (!user) return <Login />;
+  if (!user) {
+    // Signed out: the marketing page at "/", and sign-in everywhere else, so a link to /upgrade lands there after signing in.
+    return (
+      <Routes>
+        <Route path="/" element={<Landing signedIn={false} />} />
+        <Route path="/how-it-works" element={<Landing signedIn={false} />} />
+        <Route path="/signup" element={<Login key="signup" initialMode="signup" />} />
+        <Route path="*" element={<Login />} />
+      </Routes>
+    );
+  }
   const admin = !!auth && isAdmin(user);
   if (account?.status === "suspended" && !admin) return <Suspended />;
 
@@ -74,6 +85,9 @@ export default function App() {
       <AccountContext.Provider value={{ account, admin }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
+          <Route path="/how-it-works" element={<Landing signedIn />} />
+          <Route path="/login" element={<Navigate to="/" replace />} />
+          <Route path="/signup" element={<Navigate to="/" replace />} />
           <Route path="/create" element={<CreateDeck />} />
           <Route path="/decks/:deckId" element={<DeckReview />} />
           <Route path="/decks/:deckId/practice" element={<PracticeSetup />} />
