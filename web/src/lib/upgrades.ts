@@ -85,3 +85,36 @@ export async function listPendingRequests(): Promise<UpgradeRequest[]> {
 export async function closeRequest(uid: string, status: "approved" | "dismissed") {
   await updateDoc(doc(db!, "upgradeRequests", uid), { status, closedAt: serverTimestamp() });
 }
+
+/** A Square payment the webhook couldn't match to an account or a plan, kept for the admin. */
+export interface UnmatchedPayment {
+  id: string;
+  email: string;
+  plan: string | null;
+  items: string[];
+  amount: number | null;
+  currency: string;
+  receivedAt: Date | null;
+}
+
+export async function listUnmatchedPayments(): Promise<UnmatchedPayment[]> {
+  const snap = await getDocs(query(collection(db!, "squarePayments"), where("status", "==", "unmatched")));
+  return snap.docs
+    .map((d) => {
+      const x = d.data();
+      return {
+        id: d.id,
+        email: String(x.email ?? ""),
+        plan: x.plan ? String(x.plan) : null,
+        items: (x.items as string[]) ?? [],
+        amount: typeof x.amount === "number" ? x.amount : null,
+        currency: String(x.currency ?? ""),
+        receivedAt: toDate(x.receivedAt),
+      };
+    })
+    .sort((a, b) => (a.receivedAt?.getTime() ?? 0) - (b.receivedAt?.getTime() ?? 0));
+}
+
+export async function resolvePayment(id: string) {
+  await updateDoc(doc(db!, "squarePayments", id), { status: "resolved", resolvedAt: serverTimestamp() });
+}

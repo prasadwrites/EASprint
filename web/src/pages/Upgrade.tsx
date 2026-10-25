@@ -111,7 +111,7 @@ export default function Upgrade() {
           <div className="panel stack">
             <h2>Already paid?</h2>
             <p className="muted">
-              Square doesn't tell EASprint which account paid, so let us know here. Use the same email you'll see on your Square receipt if you can, or add a note.
+              If you paid with the email you use for EASprint, your plan switches on its own within a minute or two. If you used a different email, or it hasn't switched, let us know here.
             </p>
             <div className="pills" role="group" aria-label="Plan you paid for">
               {PAID.filter((p) => RANK[p] > RANK[current]).map((p) => (

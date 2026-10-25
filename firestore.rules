@@ -51,6 +51,14 @@ service cloud.firestore {
         && request.resource.data.status in ["approved", "dismissed"];
     }
 
+    // Payments reported by the Square webhook. Only the admin can see them, and can mark unmatched ones done.
+    match /squarePayments/{paymentId} {
+      allow read: if isAdmin();
+      allow update: if isAdmin()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["status", "resolvedAt"])
+        && request.resource.data.status == "resolved";
+    }
+
     // Decks built with Claude are written by the generate_deck function (admin access).
     // Reading a deck that doesn't exist yet is allowed, so the app can wait for a new deck to appear.
     match /decks/{deckId} {

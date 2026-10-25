@@ -5,10 +5,12 @@ generate_deck         - Claude writes a deck of SEE questions, each one is check
                         Firestore batch by batch so the app can show progress. Plan limits, per-account access
                         codes and suspension are enforced here.
 admin_update_account  - The admin changes an account's plan, suspends or restores it, or sets its access code.
+square_webhook        - Square payment events: upgrades the paying account automatically (see square.py).
 """
 
 from __future__ import annotations
 
+import json
 import logging
 import os
 import random
@@ -19,6 +21,7 @@ import threading
 from firebase_admin import auth, firestore, initialize_app
 from firebase_functions import https_fn, options
 
+import square
 from access import access_code_ok
 from accounts import DEFAULT_PLAN, PLANS, LimitError, check_request, is_admin
 from generator import DeckRequest, GenerationError, generate_deck as _generate
@@ -292,3 +295,74 @@ def unshare_deck(req: https_fn.CallableRequest) -> dict:
         raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Who should lose access?")
     deck_ref.update({"sharedWith": firestore.ArrayRemove([uid]), f"sharedEmails.{uid}": firestore.DELETE_FIELD})
     return {"ok": True}
+
+
+# The address Square sends events to. Square signs this exact URL, so it must match the subscription.
+SQUARE_WEBHOOK_URL = "https://us-central1-easprint-98625.cloudfunctions.net/square_webhook"
+
+
+def _set_plan(db, uid: str, plan: str, reason: str) -> None:
+    db.collection("accounts").document(uid).set({"plan": plan, "planSource": reason, "updatedAt": firestore.SERVER_TIMESTAMP}, merge=True)
+
+
+@https_fn.on_request(secrets=["SQUARE_ACCESS_TOKEN", "SQUARE_WEBHOOK_SIGNATURE_KEY"], timeout_sec=60)
+def square_webhook(req: https_fn.Request) -> https_fn.Response:
+    """Upgrades an account when Square reports a completed payment for Pro or Pro Max, and moves it back to
+    Free when its Square subscription is canceled. Payments that can't be matched to an account are kept
+    for the admin to approve by hand."""
+    body = req.get_data()
+    if not square.signature_ok(os.environ.get("SQUARE_WEBHOOK_SIGNATURE_KEY", ""), SQUARE_WEBHOOK_URL, body, req.headers.get("x-square-hmacsha256-signature")):
+        return https_fn.Response("bad signature", status=403)
+    event = json.loads(body or b"{}")
+    kind = event.get("type", "")
+    obj = (event.get("data") or {}).get("object") or {}
+    db = firestore.client()
+    client = square.SquareClient(os.environ.get("SQUARE_ACCESS_TOKEN", ""))
+
+    if kind in ("payment.created", "payment.updated"):
+        payment = obj.get("payment") or {}
+        if payment.get("status") != "COMPLETED" or not payment.get("id"):
+            return https_fn.Response("ignored")
+        record = db.collection("squarePayments").document(payment["id"])
+        if record.get().exists:
+            return https_fn.Response("already handled")
+        details = square.payment_details(payment, client)
+        uid = ""
+        if details["email"]:
+            try:
+                uid = auth.get_user_by_email(details["email"]).uid
+            except auth.UserNotFoundError:
+                uid = ""
+        account = db.collection("accounts").document(uid).get() if uid else None
+        if details["plan"] and account is not None and account.exists:
+            current = (account.to_dict() or {}).get("plan", "free")
+            rank = {"free": 0, "pro": 1, "promax": 2}
+            if rank.get(details["plan"], 0) > rank.get(current, 0):
+                _set_plan(db, uid, details["plan"], f"square:{payment['id']}")
+            status = "applied"
+            # Close any "I paid" request the person sent from the Upgrade page.
+            req_ref = db.collection("upgradeRequests").document(uid)
+            if req_ref.get().exists:
+                req_ref.update({"status": "approved", "closedAt": firestore.SERVER_TIMESTAMP})
+        else:
+            status = "unmatched"
+            logging.warning("Square payment %s not matched: plan=%s email=%s", payment["id"], details["plan"], details["email"])
+        record.set({**details, "uid": uid, "status": status, "receivedAt": firestore.SERVER_TIMESTAMP})
+        return https_fn.Response(status)
+
+    if kind == "subscription.updated":
+        sub = obj.get("subscription") or {}
+        if sub.get("status") not in ("CANCELED", "DEACTIVATED") or not sub.get("customer_id"):
+            return https_fn.Response("ignored")
+        email = (client.customer(sub["customer_id"]).get("email_address") or "").strip().lower()
+        try:
+            uid = auth.get_user_by_email(email).uid if email else ""
+        except auth.UserNotFoundError:
+            uid = ""
+        if uid and not is_admin({"email": email, "email_verified": True}):
+            _set_plan(db, uid, "free", f"square-subscription-{sub['status'].lower()}:{sub.get('id', '')}")
+            return https_fn.Response("downgraded")
+        logging.warning("Square subscription %s ended but no account matched %s", sub.get("id"), email)
+        return https_fn.Response("unmatched")
+
+    return https_fn.Response("ignored")

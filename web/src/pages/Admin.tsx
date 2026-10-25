@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import TopBar, { Chip } from "../components/TopBar";
 import { ADMIN_EMAIL, adminUpdate, getAccessCode, listAccounts, PLANS, type Account, type PlanId } from "../lib/account";
-import { closeRequest, listPendingRequests, type UpgradeRequest } from "../lib/upgrades";
+import { closeRequest, listPendingRequests, listUnmatchedPayments, resolvePayment, type UnmatchedPayment, type UpgradeRequest } from "../lib/upgrades";
 
 function formatDate(d: Date | null) {
   return d ? d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : "–";
@@ -70,9 +70,11 @@ export default function Admin() {
   const [busy, setBusy] = useState("");
   const [filter, setFilter] = useState("");
   const [requests, setRequests] = useState<UpgradeRequest[]>([]);
+  const [unmatched, setUnmatched] = useState<UnmatchedPayment[]>([]);
 
   const refresh = () => {
     listPendingRequests().then(setRequests).catch(() => setRequests([]));
+    listUnmatchedPayments().then(setUnmatched).catch(() => setUnmatched([]));
     return listAccounts()
       .then(setAccounts)
       .catch(() => setError("Couldn't load accounts."));
@@ -160,6 +162,41 @@ export default function Admin() {
             </>
           )}
         </div>
+
+        {unmatched.length > 0 && (
+          <div className="panel stack">
+            <div className="row spread">
+              <h2>Square payments to match</h2>
+              <span className="muted">{unmatched.length}</span>
+            </div>
+            <p className="muted" style={{ fontSize: 14 }}>
+              These payments came in, but no EASprint account uses the buyer's email (or the item wasn't Pro or Pro Max), so no plan was changed. Find the
+              person below, set their plan, then mark the payment done.
+            </p>
+            <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 12 }}>
+              {unmatched.map((p) => (
+                <li key={p.id} className="row spread" style={{ alignItems: "flex-start", borderTop: "1px solid var(--line)", paddingTop: 12 }}>
+                  <div>
+                    <b>{p.email || "No email on the payment"}</b> · {p.items.join(", ") || "Unknown item"}
+                    <div className="muted" style={{ fontSize: 14 }}>
+                      {p.amount !== null ? `${(p.amount / 100).toFixed(2)} ${p.currency} · ` : ""}
+                      {formatDate(p.receivedAt)} · Square payment {p.id}
+                    </div>
+                  </div>
+                  <button
+                    className="btn"
+                    onClick={async () => {
+                      await resolvePayment(p.id);
+                      setUnmatched((all) => all.filter((x) => x.id !== p.id));
+                    }}
+                  >
+                    Mark done
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className="panel stack">
           <h2>Plans</h2>
