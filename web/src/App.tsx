@@ -3,12 +3,14 @@ import { createContext, useContext, useEffect, useState } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Brand } from "./components/TopBar";
 import { ensureAccount, isAdmin, watchAccount, type Account } from "./lib/account";
+import { useActivityHeartbeat } from "./lib/activity";
 import { auth } from "./lib/firebase";
 import type { AppUser } from "./lib/types";
 import Admin from "./pages/Admin";
 import CreateDeck from "./pages/CreateDeck";
 import Dashboard from "./pages/Dashboard";
 import DeckReview from "./pages/DeckReview";
+import Engagement from "./pages/Engagement";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Practice from "./pages/Practice";
@@ -58,6 +60,7 @@ export default function App() {
       .finally(() => (stop = watchAccount(user.uid, setAccount)));
     return () => stop();
   }, [user]);
+  useActivityHeartbeat(!!auth && !!user && account?.status !== "suspended");
 
   if (user === undefined) {
     return (
@@ -95,6 +98,7 @@ export default function App() {
           <Route path="/sessions/:sessionId/results" element={<Results />} />
           {auth && <Route path="/upgrade" element={<Upgrade />} />}
           {admin && <Route path="/admin" element={<Admin />} />}
+          {admin && <Route path="/admin/engagement" element={<Engagement />} />}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AccountContext.Provider>

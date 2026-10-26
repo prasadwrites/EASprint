@@ -1,4 +1,4 @@
-import { collection, doc, getDoc, getDocs, onSnapshot, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
+import { doc, getDoc, onSnapshot, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 import { httpsCallable } from "firebase/functions";
 import { db, functions } from "./firebase";
 import type { AppUser } from "./types";
@@ -79,16 +79,11 @@ export function watchAccount(uid: string, cb: (a: Account | null) => void): () =
   );
 }
 
-export async function listAccounts(): Promise<Account[]> {
-  const snap = await getDocs(collection(db!, "accounts"));
-  return snap.docs.map((d) => fromData(d.id, d.data())).sort((a, b) => a.email.localeCompare(b.email));
-}
-
 export async function getAccessCode(uid: string): Promise<string> {
   const snap = await getDoc(doc(db!, "accessCodes", uid));
   return snap.exists() ? String(snap.data().code ?? "") : "";
 }
 
-export async function adminUpdate(change: { uid: string; plan?: PlanId; status?: "active" | "suspended"; accessCode?: "generate" | "clear" }) {
+export async function adminUpdate(change: { uid: string; plan?: PlanId; status?: "active" | "suspended"; resetDecks?: boolean; accessCode?: "generate" | "clear" }) {
   await httpsCallable(functions!, "admin_update_account")(change);
 }

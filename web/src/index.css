@@ -299,3 +299,54 @@ a { color: var(--accent); }
 @media (max-width: 820px) {
   .hero { grid-template-columns: 1fr; }
 }
+.promo { display: flex; flex-direction: column; align-items: center; gap: 18px; }
+.promo-frame { position: relative; width: 100%; border-radius: 16px; overflow: hidden; background: #000; box-shadow: 0 16px 40px rgba(0,0,0,.18); }
+.promo-frame.wide { max-width: 960px; aspect-ratio: 16 / 9; }
+.promo-frame.tall { max-width: 340px; aspect-ratio: 9 / 16; }
+.promo-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.promo-poster { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: none; border-radius: 0; background: #000; }
+.promo-poster img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s; }
+.promo-poster:hover img { transform: scale(1.03); }
+.promo-play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 84px; height: 84px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; box-shadow: 0 8px 24px rgba(0,0,0,.35); padding-left: 6px; box-sizing: border-box; }
+.promo-poster:hover .promo-play { filter: brightness(1.1); }
+
+/* Admin: Accounts and Engagement */
+.btn-small { padding: 6px 12px; font-size: 14px; border-radius: 8px; }
+.btn-small:disabled, .btn-link:disabled { opacity: .5; cursor: not-allowed; }
+.admin-tabs { display: flex; gap: 20px; border-bottom: 1px solid var(--line); font-weight: 700; font-size: 15px; }
+.admin-tabs a { color: var(--muted); text-decoration: none; padding: 6px 0 10px; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.admin-tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+.small { font-size: 13px; color: var(--muted); }
+.acct-list { display: flex; flex-direction: column; }
+.acct { display: grid; grid-template-columns: minmax(200px, 1.4fr) minmax(220px, 1fr) minmax(200px, 1fr) auto; gap: 16px 20px; align-items: center; padding: 16px 0; border-top: 1px solid var(--line); }
+.acct:first-child { border-top: none; padding-top: 0; }
+.acct.suspended .who-col { opacity: .7; }
+.acct .who-col { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.acct .who-col b { overflow-wrap: anywhere; }
+.acct .code { font-family: var(--f-mono); font-size: 14px; background: var(--chip); padding: 4px 8px; border-radius: 8px; overflow-wrap: anywhere; align-self: flex-start; }
+.acct .actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+.acct .seg button { padding: 6px 12px; font-size: 14px; }
+.usage { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.btn-danger { color: var(--bad); border-color: color-mix(in srgb, var(--bad) 45%, var(--line)); }
+.btn-danger-solid { background: var(--bad); border-color: var(--bad); color: #fff; }
+.confirm-delete { grid-column: 1 / -1; background: var(--bad-soft); border: 1px solid color-mix(in srgb, var(--bad) 40%, var(--line)); border-radius: 12px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+.confirm-delete label { margin: 0; }
+@media (max-width: 900px) {
+  .acct { grid-template-columns: 1fr; gap: 12px; }
+  .acct .actions { justify-content: flex-start; }
+}
+.tiles.four { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+.table-wrap { overflow-x: auto; }
+.eng-table { width: 100%; border-collapse: collapse; font-size: 15px; }
+.eng-table th, .eng-table td { text-align: right; padding: 10px 8px; border-top: 1px solid var(--line); vertical-align: middle; }
+.eng-table th[scope=row], .eng-table thead th:first-child { text-align: left; font-weight: 700; }
+.eng-table thead th { border-top: none; font-size: 13px; color: var(--muted); font-weight: 700; white-space: nowrap; }
+.eng-table .small { display: block; font-size: 12px; font-weight: 400; }
+.eng-rank thead th:nth-child(2), .eng-links thead th:nth-child(2), .eng-links thead th:nth-child(3) { text-align: left; }
+.eng-rank tbody tr { cursor: pointer; }
+.eng-rank tbody tr:hover, .eng-rank tbody tr[aria-selected=true] { background: color-mix(in srgb, var(--accent) 8%, var(--surface)); }
+.eng-rank th[scope=row] .btn-link, .eng-links th[scope=row] .btn-link { font-weight: 700; text-align: left; }
+.eng-points { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.eng-points li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.eng-points li:first-child { border-top: none; }
+.kv div b .small { display: inline; font-size: 13px; }
