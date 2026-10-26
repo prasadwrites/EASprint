@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Brand, Chip, Icon } from "../components/TopBar";
 import { DECKS } from "../data";
@@ -14,6 +15,68 @@ const EXAMPLE_WEAK = [
   { name: "Business Entities and Considerations", pct: 55 },
   { name: "Deductions and Credits", pct: 67 },
 ];
+
+/** The promo videos on YouTube: a wide one for desktop and a Short for phones. */
+const VIDEOS = {
+  wide: { id: "19dLUhNjEfo", watch: "https://youtu.be/19dLUhNjEfo", poster: "https://i.ytimg.com/vi/19dLUhNjEfo/maxresdefault.jpg" },
+  tall: { id: "J8W-OEop5Zg", watch: "https://youtube.com/shorts/J8W-OEop5Zg", poster: "https://i.ytimg.com/vi/J8W-OEop5Zg/hqdefault.jpg" },
+};
+const PHONE = "(max-width: 640px)";
+
+function usePhone() {
+  const [phone, setPhone] = useState(() => window.matchMedia(PHONE).matches);
+  useEffect(() => {
+    const mq = window.matchMedia(PHONE);
+    const on = () => setPhone(mq.matches);
+    mq.addEventListener("change", on);
+    return () => mq.removeEventListener("change", on);
+  }, []);
+  return phone;
+}
+
+/** Shows the video's poster with a play button, and loads YouTube's player (with fullscreen) only when clicked. */
+function PromoVideo() {
+  const phone = usePhone();
+  const v = phone ? VIDEOS.tall : VIDEOS.wide;
+  const [playing, setPlaying] = useState<string | null>(null);
+  return (
+    <section className="promo" aria-labelledby="promo-title">
+      <div className="stack" style={{ gap: 6, alignItems: "center", textAlign: "center" }}>
+        <span className="eyebrow">Watch</span>
+        <h2 id="promo-title" style={{ fontSize: "clamp(24px, 4vw, 32px)" }}>
+          See how EASprint finds and fixes your weak spots
+        </h2>
+      </div>
+      <div className={`promo-frame ${phone ? "tall" : "wide"}`}>
+        {playing === v.id ? (
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1&rel=0&playsinline=1`}
+            title="EASprint promo video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          />
+        ) : (
+          <button type="button" className="promo-poster" aria-label="Play the EASprint video" onClick={() => setPlaying(v.id)}>
+            <img
+              src={v.poster}
+              alt=""
+              onError={(e) => {
+                const img = e.currentTarget;
+                if (!img.src.includes("hqdefault")) img.src = `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`;
+              }}
+            />
+            <span className="promo-play">
+              <Icon name="play" size={34} />
+            </span>
+          </button>
+        )}
+      </div>
+      <a className="btn" href={v.watch} target="_blank" rel="noopener noreferrer">
+        Watch on YouTube
+      </a>
+    </section>
+  );
+}
 
 const tone = (pct: number) => (pct >= 80 ? "good" : pct >= 60 ? "warn" : "bad");
 
@@ -122,6 +185,8 @@ export default function Landing({ signedIn }: { signedIn: boolean }) {
             </figcaption>
           </figure>
         </section>
+
+        <PromoVideo />
 
         <section className="stack" id="how" style={{ gap: 28 }}>
           <div className="stack" style={{ gap: 6 }}>
