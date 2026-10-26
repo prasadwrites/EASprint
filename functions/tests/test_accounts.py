@@ -39,3 +39,31 @@ def test_admin_needs_a_verified_email():
     assert not is_admin({"email": "prasad.writes@gmail.com", "email_verified": False})
     assert not is_admin({"email": "someone@example.com", "email_verified": True})
     assert not is_admin(None)
+
+
+def test_clean_update():
+    from accounts import clean_update
+
+    assert clean_update({"plan": "pro", "resetDecks": True}) == {"plan": "pro", "decksCreated": 0}
+    assert clean_update({"status": "suspended"}) == {"status": "suspended"}
+    assert clean_update({"accessCode": "generate"}) == {}
+    with pytest.raises(ValueError):
+        clean_update({"plan": "gold"})
+    with pytest.raises(ValueError):
+        clean_update({"status": "gone"})
+
+
+def test_activity_heartbeats():
+    from accounts import DAY_MS, activity_summary, credit_activity, day_key
+
+    now = 1_790_000_000_000
+    first = credit_activity({}, now)
+    assert first["activeSeconds"] == 60 and first["activeDays"] == {day_key(now): 60}
+    # Another tab beating inside the same minute earns nothing.
+    assert credit_activity(first, now + 10_000) is None
+    old = {**first, "activeDays": {**first["activeDays"], day_key(now - 40 * DAY_MS): 300}}
+    second = credit_activity(old, now + 60_000)
+    assert second["activeSeconds"] == 120
+    assert day_key(now - 40 * DAY_MS) not in second["activeDays"]  # older than 35 days is dropped
+    summary = activity_summary({**second, "activeDays": {**second["activeDays"], day_key(now - 3 * DAY_MS): 600}}, now + 60_000)
+    assert summary["todaySeconds"] == 120 and summary["weekSeconds"] == 720 and summary["lastActiveAt"] == now + 60_000

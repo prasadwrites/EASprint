@@ -68,6 +68,11 @@ function ProfileMenu() {
               Manage accounts
             </Link>
           )}
+          {admin && (
+            <Link className="btn" role="menuitem" to="/admin/engagement" style={{ justifyContent: "flex-start", border: "none" }}>
+              Engagement
+            </Link>
+          )}
           <button role="menuitem" onClick={() => signOut(signedIn)}>
             Sign out
           </button>
@@ -102,6 +107,7 @@ export default function TopBar({ back }: { back?: { to: string; label: string } 
               {canBuildDecks && <Link to="/#decks" aria-current={current("#decks")}>My decks</Link>}
               <Link to="/#progress" aria-current={current("#progress")}>Progress</Link>
               {admin && <Link to="/admin">Accounts</Link>}
+              {admin && <Link to="/admin/engagement">Engagement</Link>}
             </nav>
             <ProfileMenu />
           </>

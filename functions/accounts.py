@@ -9,6 +9,7 @@ can't read their own code out of the database.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from datetime import datetime, timezone
 
 ADMIN_EMAIL = "prasad.writes@gmail.com"
 
@@ -55,3 +56,59 @@ def check_request(account: dict | None, admin: bool, count: int) -> Plan:
     if int(account.get("decksCreated", 0)) >= plan.max_decks:
         raise LimitError(f"You've built all {plan.max_decks} decks your {plan.name} plan allows.")
     return plan
+
+
+def clean_update(data: dict) -> dict:
+    """The plan, status and deck-count changes in an admin's edit to one account. Raises ValueError."""
+    out: dict = {}
+    if "plan" in data:
+        if data["plan"] not in PLANS:
+            raise ValueError("Unknown plan.")
+        out["plan"] = data["plan"]
+    if "status" in data:
+        if data["status"] not in ("active", "suspended"):
+            raise ValueError("Unknown status.")
+        out["status"] = data["status"]
+    if data.get("resetDecks"):
+        out["decksCreated"] = 0
+    return out
+
+
+# Time on site. The app sends one heartbeat for each minute someone is actively using it.
+HEARTBEAT_SECONDS = 60
+MIN_BEAT_GAP_MS = 50_000  # extra beats (other tabs, retries) inside a minute earn nothing
+KEEP_DAYS = 35
+DAY_MS = 86_400_000
+
+
+def day_key(ms: int) -> str:
+    """The UTC date of a time in milliseconds, as YYYY-MM-DD."""
+    return datetime.fromtimestamp(ms / 1000, tz=timezone.utc).strftime("%Y-%m-%d")
+
+
+def credit_activity(account: dict, now_ms: int) -> dict | None:
+    """The fields to write for one heartbeat, or None if it came too soon after the last one."""
+    last = account.get("lastBeatAt")
+    if isinstance(last, (int, float)) and 0 <= now_ms - last < MIN_BEAT_GAP_MS:
+        return None
+    today = day_key(now_ms)
+    oldest = day_key(now_ms - KEEP_DAYS * DAY_MS)
+    days = {k: int(v) for k, v in (account.get("activeDays") or {}).items() if k > oldest}
+    days[today] = days.get(today, 0) + HEARTBEAT_SECONDS
+    return {
+        "activeSeconds": int(account.get("activeSeconds", 0)) + HEARTBEAT_SECONDS,
+        "activeDays": days,
+        "lastBeatAt": now_ms,
+    }
+
+
+def activity_summary(account: dict, now_ms: int) -> dict:
+    """What the admin sees about someone's time on site."""
+    days = account.get("activeDays") or {}
+    week = {day_key(now_ms - i * DAY_MS) for i in range(7)}
+    return {
+        "activeSeconds": int(account.get("activeSeconds", 0)),
+        "todaySeconds": int(days.get(day_key(now_ms), 0)),
+        "weekSeconds": sum(int(v) for k, v in days.items() if k in week),
+        "lastActiveAt": account.get("lastBeatAt"),
+    }

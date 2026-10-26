@@ -4,7 +4,12 @@ generate_deck         - Claude writes a deck of SEE questions, each one is check
                         source, and a blind answer check by a separate Claude call), and the deck is saved to
                         Firestore batch by batch so the app can show progress. Plan limits, per-account access
                         codes and suspension are enforced here.
-admin_update_account  - The admin changes an account's plan, suspends or restores it, or sets its access code.
+admin_update_account  - The admin changes an account's plan, suspends or restores it, resets its deck count, or sets
+                        its access code.
+admin_list_accounts   - Every sign-in with its plan, usage and time on site, for the admin's Accounts page.
+admin_engagement      - Everyone ranked by an engagement score, for the admin's Engagement page (see engagement.py).
+admin_delete_account  - Deletes an account with its sign-in, decks and practice history.
+record_activity       - One heartbeat for each minute someone actively uses the app (time on site).
 square_webhook        - Square payment events: upgrades the paying account automatically (see square.py).
 """
 
@@ -17,10 +22,13 @@ import random
 import re
 import secrets as pysecrets
 import threading
+import time
 
 from firebase_admin import auth, firestore, initialize_app
 from firebase_functions import https_fn, options
 
+import accounts
+import engagement
 import square
 from access import access_code_ok
 from accounts import DEFAULT_PLAN, PLANS, LimitError, check_request, is_admin
@@ -171,33 +179,56 @@ def generate_deck(req: https_fn.CallableRequest) -> dict:
     return {"deckId": deck_id, "questionCount": len(result.deck.questions), "dropped": result.dropped}
 
 
+def _require_admin(req: https_fn.CallableRequest) -> str:
+    if req.auth is None or not is_admin(req.auth.token):
+        raise https_fn.HttpsError(Err.PERMISSION_DENIED, "Only the admin can do that.")
+    return req.auth.uid
+
+
+def _now_ms() -> int:
+    return int(time.time() * 1000)
+
+
+def _ms(dt) -> int | None:
+    return int(dt.timestamp() * 1000) if dt else None
+
+
+def _auth_users() -> list:
+    """Firebase Auth is the full list of sign-ins, including people who never opened the app after signing up."""
+    return list(auth.list_users().iterate_all())
+
+
+def _user_is_admin(user) -> bool:
+    return is_admin({"email": user.email or "", "email_verified": user.email_verified})
+
+
 @https_fn.on_call()
 def admin_update_account(req: https_fn.CallableRequest) -> dict:
-    if req.auth is None or not is_admin(req.auth.token):
-        raise https_fn.HttpsError(Err.PERMISSION_DENIED, "Only the admin can change accounts.")
+    admin_uid = _require_admin(req)
     data = req.data or {}
     uid = _clean(data.get("uid"), 128)
     if not uid:
         raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which account?")
+    try:
+        user = auth.get_user(uid)
+    except auth.UserNotFoundError:
+        raise https_fn.HttpsError(Err.NOT_FOUND, "That account doesn't exist.")
+    try:
+        changes = accounts.clean_update(data)
+    except ValueError as e:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, str(e))
+    if changes.get("status") == "suspended" and uid == admin_uid:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "You can't suspend your own account.")
+
     db = firestore.client()
     account_ref = db.collection("accounts").document(uid)
     if not account_ref.get().exists:
-        raise https_fn.HttpsError(Err.NOT_FOUND, "That account doesn't exist.")
-
-    changes: dict = {}
-    if "plan" in data:
-        if data["plan"] not in PLANS:
-            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Unknown plan.")
-        changes["plan"] = data["plan"]
-    if "status" in data:
-        if data["status"] not in ("active", "suspended"):
-            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Unknown status.")
-        if uid == req.auth.uid and data["status"] == "suspended":
-            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "You can't suspend your own account.")
-        changes["status"] = data["status"]
+        # Someone who signed up but never opened the app has no account yet.
+        account_ref.set(_new_account({"email": user.email or "", "name": user.display_name or ""}))
+    if "status" in changes:
         # Suspension also blocks sign-in, and signs the person out within the hour.
-        auth.update_user(uid, disabled=data["status"] == "suspended")
-        if data["status"] == "suspended":
+        auth.update_user(uid, disabled=changes["status"] == "suspended")
+        if changes["status"] == "suspended":
             auth.revoke_refresh_tokens(uid)
 
     code_ref = db.collection("accessCodes").document(uid)
@@ -212,6 +243,143 @@ def admin_update_account(req: https_fn.CallableRequest) -> dict:
     if changes:
         account_ref.update({**changes, "updatedAt": firestore.SERVER_TIMESTAMP})
     return {"ok": True}
+
+
+@https_fn.on_call()
+def admin_list_accounts(req: https_fn.CallableRequest) -> dict:
+    """Every sign-in, the admin first and then the newest, with plan, usage and time on site."""
+    _require_admin(req)
+    db = firestore.client()
+    stored = {d.id: d.to_dict() or {} for d in db.collection("accounts").stream()}
+    now = _now_ms()
+    rows = []
+    for user in _auth_users():
+        account = stored.get(user.uid) or {}
+        admin = _user_is_admin(user)
+        plan = accounts.plan_for(account, admin)
+        meta = user.user_metadata
+        rows.append({
+            "uid": user.uid,
+            "email": user.email or account.get("email", ""),
+            "displayName": user.display_name or account.get("displayName", ""),
+            "isAdmin": admin,
+            "plan": account.get("plan") if account.get("plan") in PLANS else DEFAULT_PLAN,
+            "status": "suspended" if account.get("status") == "suspended" else "active",
+            "decksCreated": int(account.get("decksCreated") or 0),
+            "maxDecks": plan.max_decks,
+            "maxQuestions": plan.max_questions,
+            "hasAccessCode": bool(account.get("hasAccessCode")),
+            "createdAt": meta.creation_timestamp if meta else None,
+            "lastSignInAt": meta.last_sign_in_timestamp if meta else None,
+            **accounts.activity_summary(account, now),
+        })
+    rows.sort(key=lambda r: (not r["isAdmin"], -(r["createdAt"] or 0)))
+    return {"accounts": rows}
+
+
+def _rows(collection, fields: list[str]) -> list[dict]:
+    """Every document in a collection with just the fields asked for, timestamps in milliseconds, and its id."""
+    out = []
+    for d in collection.select(fields).stream():
+        r = {k: (_ms(v) if hasattr(v, "timestamp") else v) for k, v in (d.to_dict() or {}).items()}
+        out.append({**r, "id": d.id})
+    return out
+
+
+@https_fn.on_call(timeout_sec=300, memory=options.MemoryOption.GB_1)
+def admin_engagement(req: https_fn.CallableRequest) -> dict:
+    """Admin only. Without a uid: everyone ranked by score. With one: that person's row with their decks."""
+    _require_admin(req)
+    db = firestore.client()
+    users = []
+    for user in _auth_users():
+        meta = user.user_metadata
+        users.append({
+            "uid": user.uid,
+            "email": user.email or "",
+            "displayName": user.display_name or "",
+            "createdAt": meta.creation_timestamp if meta else None,
+            "lastSignInAt": meta.last_sign_in_timestamp if meta else None,
+            "isAdmin": _user_is_admin(user),
+        })
+    rows, shared = engagement.build(
+        users,
+        account_docs={d.id: d.to_dict() or {} for d in db.collection("accounts").select(["activeSeconds", "activeDays", "lastBeatAt", "decksCreated"]).stream()},
+        decks={r["id"]: r for r in _rows(db.collection("decks"), ["ownerId", "title", "part", "status", "createdAt", "sharedWith"])},
+        sessions=_rows(db.collection("sessions"), ["ownerId", "deckId", "status", "answers"]),
+        now_ms=_now_ms(),
+    )
+    uid = _clean((req.data or {}).get("uid"), 128)
+    if uid:
+        if uid not in rows:
+            raise https_fn.HttpsError(Err.NOT_FOUND, "That account doesn't exist.")
+        return {"user": rows[uid], "scoring": engagement.scoring()}
+    users_out = [{k: v for k, v in r.items() if k != "decks"} for r in engagement.ranked(rows, include_admin=True)]
+    return {"users": users_out, "shared": engagement.top_shared(shared), "scoring": engagement.scoring()}
+
+
+@https_fn.on_call(timeout_sec=300)
+def admin_delete_account(req: https_fn.CallableRequest) -> dict:
+    """Deletes a sign-in with its account, access code, upgrade request, decks and practice sessions, and takes the
+    person off every deck shared with them. Can't be undone."""
+    admin_uid = _require_admin(req)
+    uid = _clean((req.data or {}).get("uid"), 128)
+    if not uid:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which account?")
+    if uid == admin_uid:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "You can't delete your own account.")
+    try:
+        user = auth.get_user(uid)
+    except auth.UserNotFoundError:
+        user = None  # Sign-in already gone; still clean up whatever data is left.
+    if user is not None and _user_is_admin(user):
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "The admin account can't be deleted.")
+
+    db = firestore.client()
+    # Remove the sign-in first so the person can't keep writing while their data is deleted.
+    if user is not None:
+        auth.delete_user(uid)
+    writer = db.bulk_writer()
+    decks = list(db.collection("decks").where("ownerId", "==", uid).stream())
+    for deck in decks:
+        # Sessions others took on the deck point to questions that are going too.
+        for s in db.collection("sessions").where("deckId", "==", deck.id).stream():
+            if s.get("ownerId") != uid:
+                writer.delete(s.reference)
+    sessions = list(db.collection("sessions").where("ownerId", "==", uid).stream())
+    for s in sessions:
+        writer.delete(s.reference)
+    for deck in db.collection("decks").where("sharedWith", "array_contains", uid).stream():
+        writer.update(deck.reference, {"sharedWith": firestore.ArrayRemove([uid]), f"sharedEmails.{uid}": firestore.DELETE_FIELD})
+    for ref in (db.collection("accounts").document(uid), db.collection("accessCodes").document(uid), db.collection("upgradeRequests").document(uid)):
+        writer.delete(ref)
+    writer.close()
+    for deck in decks:
+        db.recursive_delete(deck.reference)  # the deck and its questions
+    return {"ok": True, "decks": len(decks), "sessions": len(sessions)}
+
+
+@https_fn.on_call()
+def record_activity(req: https_fn.CallableRequest) -> dict:
+    """Counts one minute of active use. Extra beats inside the same minute (other tabs) earn nothing."""
+    uid = _require_user(req)
+    db = firestore.client()
+    ref = db.collection("accounts").document(uid)
+
+    @firestore.transactional
+    def run(tx) -> bool:
+        snap = ref.get(transaction=tx)
+        if not snap.exists:
+            return False  # the app creates the account on the first visit; the next minute counts
+        account = snap.to_dict() or {}
+        if account.get("status") == "suspended":
+            return False
+        changes = accounts.credit_activity(account, _now_ms())
+        if changes:
+            tx.update(ref, changes)
+        return bool(changes)
+
+    return {"counted": run(db.transaction())}
 
 
 @https_fn.on_call()
