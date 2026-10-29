@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useUser } from "../App";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import TopBar, { Chip, Icon } from "../components/TopBar";
@@ -33,10 +33,21 @@ export default function DeckReview() {
       setDeck(d);
     });
     // A deck Claude is still building updates live, and its questions appear as each batch is saved.
-    return watchDeck(deckId, (d) => {
+    const stop = watchDeck(deckId, (d) => {
       setDeck(d);
       loadQuestions(deckId).then(setQuestions);
     });
+    // Phones pause the live connection in the background, so catch up as soon as the page is visible again.
+    const refresh = () => {
+      if (document.visibilityState !== "visible") return;
+      loadDeck(deckId).then((d) => d && setDeck(d));
+      loadQuestions(deckId).then(setQuestions);
+    };
+    document.addEventListener("visibilitychange", refresh);
+    return () => {
+      stop();
+      document.removeEventListener("visibilitychange", refresh);
+    };
   }, [deckId]);
 
   // Ticks the elapsed-time readout while the deck builds.
@@ -45,6 +56,14 @@ export default function DeckReview() {
     if (!building) return;
     const t = setInterval(() => setNow(Date.now()), 1000);
     return () => clearInterval(t);
+  }, [building]);
+
+  // Arriving from the create form leaves the page scrolled down, so bring the progress card into view.
+  const progressRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (!building || !progressRef.current) return;
+    progressRef.current.scrollIntoView({ block: "start" });
+    progressRef.current.focus({ preventScroll: true });
   }, [building]);
 
   const toggle = (id: string) =>
@@ -80,6 +99,7 @@ export default function DeckReview() {
   const requested = deck.requested || deck.questionCount;
   const dropped = Math.max(0, requested - questions.length);
   const done = Math.min(requested, deck.progress ?? 0);
+  const written = Math.max(done, Math.min(requested, deck.written ?? 0));
   const spread = LEVELS.map(([l, c]) => ({ l, c, n: questions.filter((q) => q.difficulty === l).length }));
   const cited = [...new Map(questions.map((q) => sourceOf(q)).map((s) => [s.url, s])).values()].sort((a, b) => a.title.localeCompare(b.title));
   const examTotal = deck.domains.reduce((a, d) => a + d.examQuestions, 0);
@@ -91,7 +111,7 @@ export default function DeckReview() {
       <main className="page narrow">
         <div className="stack">
           {generating && (
-            <div className="panel stack" aria-live="polite">
+            <div className="panel stack progress-card" aria-live="polite" ref={progressRef} tabIndex={-1}>
               <div className="row" style={{ gap: 10, flexWrap: "nowrap" }}>
                 <span className="spinner" style={{ flex: "none" }} />
                 <h2>Generating your deck in the background</h2>
@@ -102,13 +122,20 @@ export default function DeckReview() {
               </p>
               <div className="row spread">
                 <strong>
-                  {done} of {requested} questions generated
+                  {done} of {requested} questions ready
                 </strong>
                 {deck.createdAt && <span className="mono muted">{formatClock((now - deck.createdAt.getTime()) / 1000)} elapsed</span>}
               </div>
               <div className="track">
-                <div className="fill busy" style={{ width: `${Math.max(3, (100 * done) / Math.max(1, requested))}%` }} />
+                <div className="fill busy" style={{ width: `${Math.max(3, (100 * (written + done)) / Math.max(1, 2 * requested))}%` }} />
               </div>
+              <p className="muted" style={{ fontSize: 14 }}>
+                {written === 0
+                  ? "Planning the questions and writing the first drafts…"
+                  : written > done
+                    ? `${written} drafted, ${written - done} being checked against irs.gov and by a second Claude.`
+                    : `${written} drafted and checked.`}
+              </p>
               {questions.length >= 3 && <p className="muted">You can already practice the {questions.length} questions that are ready.</p>}
             </div>
           )}

@@ -125,6 +125,7 @@ def generate_deck(req: https_fn.CallableRequest) -> dict:
             "questionCount": 0,
             "requested": count,
             "progress": 0,
+            "written": 0,
             "status": "generating",
             "source": "ai",
             "createdAt": firestore.SERVER_TIMESTAMP,
@@ -141,6 +142,9 @@ def generate_deck(req: https_fn.CallableRequest) -> dict:
 
     def on_plan(plan):
         deck_ref.update({"title": plan.title, "topics": plan.topics})
+
+    def on_written(n):
+        deck_ref.update({"written": firestore.Increment(n)})
 
     def on_batch(questions, finished):
         batch = db.batch()
@@ -167,7 +171,7 @@ def generate_deck(req: https_fn.CallableRequest) -> dict:
         batch.commit()
 
     try:
-        result = _generate(request, on_plan=on_plan, on_batch=on_batch)
+        result = _generate(request, on_plan=on_plan, on_batch=on_batch, on_written=on_written)
     except Exception as e:  # noqa: BLE001 - any failure refunds the deck
         logging.exception("deck %s failed", deck_id)
         message = str(e) if isinstance(e, GenerationError) else "Something went wrong while building the deck. Try again."

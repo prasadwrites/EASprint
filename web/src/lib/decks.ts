@@ -29,6 +29,7 @@ function fromDoc(id: string, data: Record<string, unknown>): Deck {
     status: (data.status as Deck["status"]) ?? "ready",
     requested: Number(data.requested ?? data.questionCount ?? 0),
     progress: Number(data.progress ?? 0),
+    written: Number(data.written ?? 0),
     error: data.error ? String(data.error) : undefined,
     ownerId: String(data.ownerId ?? ""),
     ownerEmail: data.ownerEmail ? String(data.ownerEmail) : undefined,

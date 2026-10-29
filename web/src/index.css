@@ -366,3 +366,5 @@ a { color: var(--accent); }
 .eng-points li { display: flex; justify-content: space-between; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); font-size: 15px; }
 .eng-points li:first-child { border-top: none; }
 .kv div b .small { display: inline; font-size: 13px; }
+.progress-card { scroll-margin-top: 80px; }
+.progress-card:focus { outline: 2px solid var(--accent); outline-offset: 2px; }
