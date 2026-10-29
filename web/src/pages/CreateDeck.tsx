@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate, useSearchParams } from "react-router-dom";
 import { useAccount } from "../App";
 import TopBar, { Icon } from "../components/TopBar";
@@ -27,16 +27,6 @@ function storeCode(code: string | null) {
   }
 }
 
-const steps = (count: number) => [
-  `Planning ${count} different questions`,
-  "Writing them with Claude, ten at a time",
-  "Writing explanations and citing IRS sources",
-  "Checking every cited page exists on irs.gov",
-  "A separate Claude check answers each question blind",
-  "Fixing anything that didn't check out",
-  "Saving your deck",
-];
-
 export default function CreateDeck() {
   const navigate = useNavigate();
   const { account, admin } = useAccount();
@@ -52,17 +42,7 @@ export default function CreateDeck() {
   const [notes, setNotes] = useState(params.get("notes") ?? "");
   const [accessCode, setAccessCode] = useState(storedCode);
   const [busy, setBusy] = useState(false);
-  const [step, setStep] = useState(0);
   const [error, setError] = useState("");
-  const STEPS = steps(count);
-
-  // The pipeline runs server-side in one call; advance the checklist so the wait is legible.
-  useEffect(() => {
-    if (!busy) return;
-    setStep(0);
-    const t = setInterval(() => setStep((s) => Math.min(s + 1, STEPS.length - 1)), 15000);
-    return () => clearInterval(t);
-  }, [busy, STEPS.length]);
 
   const submit = async () => {
     setBusy(true);
@@ -207,7 +187,9 @@ export default function CreateDeck() {
                     <Icon name="play" /> {busy ? "Generating…" : "Generate deck"}
                   </button>
                   {busy ? (
-                    <span className="muted">Starting… you'll see progress on the deck page</span>
+                    <span className="muted">
+                      <span className="spinner" /> Starting… you'll see progress on the deck page
+                    </span>
                   ) : (
                     <button type="button" className="btn-link" onClick={() => setAsked(false)}>
                       Change topic
@@ -220,22 +202,17 @@ export default function CreateDeck() {
           </div>
 
           <aside className="side panel stack" aria-live="polite">
-            <h2>{busy ? "Generating" : "Every question gets checked"}</h2>
+            <h2>Every question gets checked</h2>
             <p className="muted">
               Claude writes questions to tax law through December 31, 2025, with an explanation and an IRS source for each. A separate Claude check then answers each
               question without seeing the key, and anything it disagrees with, or that cites a page that doesn't exist, is rewritten or left out.
             </p>
-            <ul className="checklist">
-              {STEPS.map((s, i) => {
-                const state = !busy ? "" : i < step ? "done" : i === step ? "on" : "";
-                return (
-                  <li key={s} className={state}>
-                    <span className="dot">{state === "done" && <Icon name="check" size={14} />}</span>
-                    <span>{s}</span>
-                  </li>
-                );
-              })}
-            </ul>
+            {busy && (
+              <div className="verdict warn">
+                <h3>Running in the background</h3>
+                <p>Building a deck takes a few minutes, longer for big decks. You can leave the page while it runs.</p>
+              </div>
+            )}
           </aside>
         </div>
       </main>
