@@ -27,7 +27,8 @@ MODEL = "claude-opus-5-5"
 # whose max_tokens could take over 10 minutes, so give one that fits inside the function timeout.
 REQUEST_TIMEOUT_SEC = 900
 MAX_REPAIR_ROUNDS = 2
-BATCH = 10
+# Small batches keep the progress the app shows moving; the workers run them in parallel.
+BATCH = 5
 WORKERS = 5
 LETTERS = "ABCD"
 
@@ -211,11 +212,19 @@ class BatchResult:
 
 
 def generate_batch(
-    client: anthropic.Anthropic, req: DeckRequest, ideas: list[str], exists: Callable[[str], bool], rng: random.Random
+    client: anthropic.Anthropic,
+    req: DeckRequest,
+    ideas: list[str],
+    exists: Callable[[str], bool],
+    rng: random.Random,
+    on_written: Callable[[int], None] | None = None,
 ) -> BatchResult:
-    """Writes, checks and repairs the questions for one batch of ideas."""
+    """Writes, checks and repairs the questions for one batch of ideas. on_written(n) runs once the
+    first drafts are back, before the slower checks."""
     draft: GeneratedDeck = _parse(client, SYSTEM, _batch_prompt(req, ideas), GeneratedDeck, "high")
     written = draft.questions[: len(ideas)]
+    if on_written:
+        on_written(len(ideas))
     good, failed = _check_all(client, req, written, exists, rng)
 
     repairs = 0
@@ -243,9 +252,11 @@ def generate_deck(
     rng: random.Random | None = None,
     on_plan: Callable[[DeckPlan], None] | None = None,
     on_batch: Callable[[list[GeneratedQuestion], int], None] | None = None,
+    on_written: Callable[[int], None] | None = None,
 ) -> DeckResult:
-    """Builds a deck. on_batch(questions, ideas_finished) runs as each batch finishes, so the caller can save
-    questions and report progress. It may be called from several threads at once."""
+    """Builds a deck. on_written(ideas_drafted) runs as each batch's first drafts come back, and
+    on_batch(questions, ideas_finished) as each batch finishes, so the caller can save questions and
+    report progress. Both may be called from several threads at once."""
     client = client or anthropic.Anthropic()
     rng = rng or random.Random()
     plan: DeckPlan = _parse(client, SYSTEM, _plan_prompt(req), DeckPlan, "medium")
@@ -258,7 +269,7 @@ def generate_deck(
     seeds = [rng.random() for _ in batches]
 
     def run(k: int) -> BatchResult:
-        result = generate_batch(client, req, batches[k], exists, random.Random(seeds[k]))
+        result = generate_batch(client, req, batches[k], exists, random.Random(seeds[k]), on_written)
         if on_batch:
             on_batch(result.good, len(batches[k]))
         return result

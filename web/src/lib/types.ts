@@ -56,6 +56,8 @@ export interface Deck {
   status?: "generating" | "ready" | "failed";
   requested?: number;
   progress?: number;
+  /** Questions drafted so far, before the checks; progress counts those fully checked. */
+  written?: number;
   error?: string;
   /** Who built the deck, and the registered users it is shared with (uid → email). */
   ownerId?: string;

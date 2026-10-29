@@ -91,6 +91,12 @@ def test_good_questions_pass():
     assert saved == [(4, 4)]
 
 
+def test_drafts_are_reported_before_checks():
+    written = []
+    run(FakeClient(7), 7, on_written=written.append)
+    assert sorted(written) == [2, 5]
+
+
 def test_blind_check_disagreement_is_repaired():
     client = FakeClient(3, wrong_key={"Q2?"}, fix_after=1)
     result, _ = run(client, 3)
@@ -110,7 +116,7 @@ def test_unfixable_questions_are_dropped_after_two_repairs():
 def test_large_decks_are_built_in_batches():
     result, saved = run(FakeClient(25), 25)
     assert len(result.deck.questions) == 25
-    assert sorted(n for _, n in saved) == [5, 10, 10]
+    assert sorted(n for _, n in saved) == [5, 5, 5, 5, 5]
     assert len({q.prompt for q in result.deck.questions}) == 25
 
 
