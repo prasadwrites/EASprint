@@ -23,6 +23,8 @@ export default function DeckReview() {
   const [shareEmail, setShareEmail] = useState("");
   const [shareBusy, setShareBusy] = useState(false);
   const [shareMsg, setShareMsg] = useState<{ ok: boolean; text: string } | null>(null);
+  const [open, setOpen] = useState<Set<string>>(new Set());
+  const [now, setNow] = useState(Date.now());
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,6 +38,22 @@ export default function DeckReview() {
       loadQuestions(deckId).then(setQuestions);
     });
   }, [deckId]);
+
+  // Ticks the elapsed-time readout while the deck builds.
+  const building = deck?.status === "generating";
+  useEffect(() => {
+    if (!building) return;
+    const t = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(t);
+  }, [building]);
+
+  const toggle = (id: string) =>
+    setOpen((o) => {
+      const next = new Set(o);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
 
   const back = { to: "/#parts", label: "Home" };
   if (deck === undefined) return <><TopBar back={back} /><main className="page"><span className="spinner" /></main></>;
@@ -61,6 +79,7 @@ export default function DeckReview() {
   const generating = deck.status === "generating";
   const requested = deck.requested || deck.questionCount;
   const dropped = Math.max(0, requested - questions.length);
+  const done = Math.min(requested, deck.progress ?? 0);
   const spread = LEVELS.map(([l, c]) => ({ l, c, n: questions.filter((q) => q.difficulty === l).length }));
   const cited = [...new Map(questions.map((q) => sourceOf(q)).map((s) => [s.url, s])).values()].sort((a, b) => a.title.localeCompare(b.title));
   const examTotal = deck.domains.reduce((a, d) => a + d.examQuestions, 0);
@@ -73,19 +92,24 @@ export default function DeckReview() {
         <div className="stack">
           {generating && (
             <div className="panel stack" aria-live="polite">
-              <div className="row spread">
-                <h2>Claude is building this deck</h2>
-                <span className="mono">
-                  {deck.progress ?? 0} / {requested}
-                </span>
-              </div>
-              <div className="track">
-                <div className="fill" style={{ width: `${(100 * (deck.progress ?? 0)) / Math.max(1, requested)}%` }} />
+              <div className="row" style={{ gap: 10, flexWrap: "nowrap" }}>
+                <span className="spinner" style={{ flex: "none" }} />
+                <h2>Generating your deck in the background</h2>
               </div>
               <p className="muted">
-                Questions are written and checked ten at a time, and appear below as each batch passes. You can leave this page; the deck keeps building.
-                {questions.length >= 3 && " You can already practice the questions that are ready."}
+                This takes a few minutes, longer for big decks, because every question is written, then answered blind by a separate check and verified against irs.gov.
+                You can leave this page; the deck keeps building.
               </p>
+              <div className="row spread">
+                <strong>
+                  {done} of {requested} questions generated
+                </strong>
+                {deck.createdAt && <span className="mono muted">{formatClock((now - deck.createdAt.getTime()) / 1000)} elapsed</span>}
+              </div>
+              <div className="track">
+                <div className="fill busy" style={{ width: `${Math.max(3, (100 * done) / Math.max(1, requested))}%` }} />
+              </div>
+              {questions.length >= 3 && <p className="muted">You can already practice the {questions.length} questions that are ready.</p>}
             </div>
           )}
           {deck.status === "failed" && (
@@ -263,19 +287,36 @@ export default function DeckReview() {
         <div className="panel">
           <div className="row spread">
             <h2>Questions</h2>
-            <span className="muted">Answers stay hidden until after you practice</span>
+            <span className="muted">Tap a question to read it in full. Answers stay hidden until after you practice</span>
           </div>
           <ul className="qlist" style={{ marginTop: 12 }}>
-            {questions.map((q, i) => (
-              <li key={q.id}>
-                <span className="n">{i + 1}</span>
-                <span className="q">{q.prompt}</span>
-                <span className="row" style={{ gap: 6, justifyContent: "flex-end" }}>
-                  <Chip>{q.topic}</Chip>
-                  <Chip tone={q.difficulty === "Hard" ? "miss" : "neutral"}>{q.difficulty}</Chip>
-                </span>
-              </li>
-            ))}
+            {questions.map((q, i) => {
+              const expanded = open.has(q.id);
+              return (
+                <li key={q.id} className={expanded ? "open" : undefined}>
+                  <button type="button" className="qrow" aria-expanded={expanded} onClick={() => toggle(q.id)}>
+                    <span className="n">{i + 1}</span>
+                    <span className="q">{q.prompt}</span>
+                    <span className="row" style={{ gap: 6, justifyContent: "flex-end", flexWrap: "nowrap" }}>
+                      <Chip>{q.topic}</Chip>
+                      <Chip tone={q.difficulty === "Hard" ? "miss" : "neutral"}>{q.difficulty}</Chip>
+                      <span className="caret" aria-hidden>
+                        ▾
+                      </span>
+                    </span>
+                  </button>
+                  {expanded && (
+                    <ul className="qchoices">
+                      {q.choices.map((c, k) => (
+                        <li key={c}>
+                          <b>{String.fromCharCode(65 + k)}.</b> {c}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         </div>
 
