@@ -6,3 +6,5 @@ pydantic>=2.7
 numpy>=2.0
 Pillow>=11.0
 imageio-ffmpeg>=0.6
+# Windows has no system time zone data, which the daily reel's New York schedule needs when firebase analyzes the code.
+tzdata>=2024.1
