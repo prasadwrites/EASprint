@@ -56,6 +56,46 @@ Large decks are planned first (one distinct idea per question), then written and
 at a time, five batches in parallel. The deck page shows progress, and questions can be practiced as
 soon as a batch is saved.
 
+### Daily Instagram reel
+
+Every morning at 7am New York time the `daily_reel` function makes a 15 to 22 second vertical reel for
+EASprint's Instagram account. The admin sees it under **Admin → Instagram**, where they can watch it, edit the
+caption, post it, make a new version (in any format), or skip the day. With **Post automatically** turned on, the
+reel goes out at 7am without waiting.
+
+The formats take turns, and the exam parts rotate so all three get airtime:
+
+| Format | What happens on screen |
+| --- | --- |
+| Beat the clock | A bank question with a 10-second countdown, then the answer and why |
+| Myth or fact | A statement, a MYTH or FACT stamp, then the real rule |
+| Which part is it? | A topic and three cards for Parts 1, 2 and 3, then the answer |
+| Tax term of the day | A term with a highlighter swipe and its definition |
+| Exam countdown | Days left in the testing window and a study tip (March and April use Beat the clock) |
+
+Every reel is built on a question from the built-in bank, which `npm --prefix web run export:reel-bank` writes
+to `functions/reel_bank.json` (a test fails while the file is out of date). The answer, the options and the part
+come from the bank. Claude (`functions/reels.py`) writes only the hook, the wording on screen and the caption,
+using the question's own explanation, and a question isn't reused for 60 reels. `functions/reel_render.py` draws
+the frames with Pillow, synthesizes the music and sound effects with numpy, and encodes H.264 + AAC with the
+ffmpeg binary from the `imageio-ffmpeg` package, so it all runs inside the Cloud Function. Videos go to Firebase
+Storage under `reels/` and are deleted after 90 days.
+
+Posting uses the Instagram API with Instagram Login (`functions/instagram.py`): create a REELS container from the
+video's URL, wait until Instagram has processed it, then publish. The token lives in Firestore at
+`instagram/config`, which no security rule exposes, and is renewed weekly.
+
+To set it up once:
+
+1. Switch EASprint's Instagram account to a **Business** or **Creator** account in the Instagram app settings.
+2. At [developers.facebook.com](https://developers.facebook.com/apps) create an app (type **Business**) and add the
+   **Instagram** product. Under **API setup with Instagram login**, add the Instagram account, then **Generate token**
+   with `instagram_business_basic` and `instagram_business_content_publish`. Posting only to your own account
+   doesn't need App Review.
+3. In the Firebase console, open **Storage** and click **Get started** to create the default bucket.
+4. Deploy (`firebase deploy --only functions,hosting`). Then in Admin → Instagram, paste the token and click
+   **Connect**, and use **Make today's reel** to try it.
+
 ### Screens
 
 - **Home**: the three parts with your best score, overall progress and pace, and the exam domains you are weakest in.
@@ -103,7 +143,7 @@ Exam tip: …",
 
 Because options are shuffled, don't write "all of the above" or "both A and B". Add new IRS sources to `web/src/data/sources.ts`. Separate explanation paragraphs with a blank line (`
 
-`). `npm test` checks that every question has four distinct options, a full explanation, a reason for each wrong option and a source on irs.gov.
+`). `npm test` checks that every question has four distinct options, a full explanation, a reason for each wrong option and a source on irs.gov. After changing questions, run `npm --prefix web run export:reel-bank` so the daily Instagram reel uses them too.
 
 Dollar amounts change every year. When the exam moves to tax year 2026, search the data files for 2025 figures and update them from the new publications.
 
@@ -122,7 +162,7 @@ Then open the address Vite prints (http://localhost:5173 by default).
 
 ```bash
 npm --prefix web test                                      # grading, pace, timing and the question bank
-functions/venv/Scripts/python -m pytest functions/tests    # the deck generator and its checks
+functions/venv/Scripts/python -m pytest functions/tests    # the deck generator, the daily reel and their checks
 ```
 
 ### Optional: sync progress with Firebase

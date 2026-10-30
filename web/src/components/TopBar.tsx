@@ -73,6 +73,11 @@ function ProfileMenu() {
               Engagement
             </Link>
           )}
+          {admin && (
+            <Link className="btn" role="menuitem" to="/admin/instagram" style={{ justifyContent: "flex-start", border: "none" }}>
+              Instagram
+            </Link>
+          )}
           <button role="menuitem" onClick={() => signOut(signedIn)}>
             Sign out
           </button>
@@ -108,6 +113,7 @@ export default function TopBar({ back }: { back?: { to: string; label: string } 
               <Link to="/#progress" aria-current={current("#progress")}>Progress</Link>
               {admin && <Link to="/admin">Accounts</Link>}
               {admin && <Link to="/admin/engagement">Engagement</Link>}
+              {admin && <Link to="/admin/instagram">Instagram</Link>}
             </nav>
             <ProfileMenu />
           </>

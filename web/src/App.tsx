@@ -11,6 +11,7 @@ import CreateDeck from "./pages/CreateDeck";
 import Dashboard from "./pages/Dashboard";
 import DeckReview from "./pages/DeckReview";
 import Engagement from "./pages/Engagement";
+import Instagram from "./pages/Instagram";
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Practice from "./pages/Practice";
@@ -99,6 +100,7 @@ export default function App() {
           {auth && <Route path="/upgrade" element={<Upgrade />} />}
           {admin && <Route path="/admin" element={<Admin />} />}
           {admin && <Route path="/admin/engagement" element={<Engagement />} />}
+          {admin && <Route path="/admin/instagram" element={<Instagram />} />}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AccountContext.Provider>

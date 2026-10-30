@@ -11,6 +11,12 @@ admin_engagement      - Everyone ranked by an engagement score, for the admin's 
 admin_delete_account  - Deletes an account with its sign-in, decks and practice history.
 record_activity       - One heartbeat for each minute someone actively uses the app (time on site).
 square_webhook        - Square payment events: upgrades the paying account automatically (see square.py).
+daily_reel            - Every morning, makes the day's Instagram reel (reels.py, reel_render.py) for the admin to
+                        review, and posts it straight away if the admin turned on auto-post (instagram.py).
+admin_reels           - The admin's Instagram page: recent reels and the account connection.
+admin_reel_action     - The admin makes, regenerates, edits the caption of, skips or posts a reel.
+admin_instagram       - The admin connects the Instagram account (pastes a token), turns auto-post on or off,
+                        or disconnects.
 """
 
 from __future__ import annotations
@@ -21,15 +27,25 @@ import os
 import random
 import re
 import secrets as pysecrets
+import tempfile
 import threading
 import time
+import urllib.parse
+import uuid
+from datetime import date, datetime, timedelta, timezone
+from pathlib import Path
+from zoneinfo import ZoneInfo
 
-from firebase_admin import auth, firestore, initialize_app
-from firebase_functions import https_fn, options
+import anthropic
+from firebase_admin import auth, firestore, initialize_app, storage
+from firebase_functions import https_fn, options, scheduler_fn
 
 import accounts
 import engagement
+import reel_render
+import reels
 import square
+from instagram import Instagram, InstagramError
 from access import access_code_ok
 from accounts import DEFAULT_PLAN, PLANS, LimitError, check_request, is_admin
 from generator import DeckRequest, GenerationError, generate_deck as _generate
@@ -538,3 +554,302 @@ def square_webhook(req: https_fn.Request) -> https_fn.Response:
         return https_fn.Response("unmatched")
 
     return https_fn.Response("ignored")
+
+
+# ---------- the daily Instagram reel ----------
+
+REEL_TZ = "America/New_York"
+REEL_KEEP_DAYS = 90  # videos older than this are deleted from Storage; the record stays
+REFRESH_TOKEN_AFTER = timedelta(days=7)
+CAPTION_LIMIT = 2200  # Instagram's caption limit
+DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def _reel_today() -> date:
+    return datetime.now(ZoneInfo(REEL_TZ)).date()
+
+
+def _instagram_ref(db):
+    # Holds the access token. No Firestore rule matches it, so only the functions can read it.
+    return db.collection("instagram").document("config")
+
+
+def _reel_ref(db, day: str):
+    if not DATE.match(day or ""):
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which day's reel?")
+    return db.collection("reels").document(day)
+
+
+def _upload(bucket, local: Path, path: str, content_type: str) -> str:
+    """Uploads a file and returns a Firebase download URL, which Instagram can fetch without signing in."""
+    token = str(uuid.uuid4())
+    blob = bucket.blob(path)
+    blob.metadata = {"firebaseStorageDownloadTokens": token}
+    blob.upload_from_filename(str(local), content_type=content_type)
+    return f"https://firebasestorage.googleapis.com/v0/b/{bucket.name}/o/{urllib.parse.quote(path, safe='')}?alt=media&token={token}"
+
+
+def _delete_files(bucket, paths) -> None:
+    for path in paths:
+        if path:
+            try:
+                bucket.blob(path).delete()
+            except Exception:  # noqa: BLE001 - already gone is fine
+                logging.info("couldn't delete %s", path)
+
+
+def _make_reel(db, day: date, fmt: str | None = None) -> dict:
+    """Writes the script, renders the reel, uploads it and saves reels/{day} with status 'ready'."""
+    ref = db.collection("reels").document(day.isoformat())
+    old = ref.get()
+    old_doc = (old.to_dict() or {}) if old.exists else {}
+    if old_doc.get("status") in ("posted", "posting"):
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "That reel is already on Instagram.")
+    recent = [d.get("questionId") for d in db.collection("reels").order_by("date", direction=firestore.Query.DESCENDING).limit(reels.REUSE_AFTER).stream()]
+    attempt = int(old_doc.get("attempt") or 0) + 1
+    reel = reels.make(anthropic.Anthropic(), day, [r for r in recent if r], fmt, seed=str(attempt))
+    bucket = storage.bucket()
+    name = f"reels/{day.isoformat()}-{attempt}"
+    with tempfile.TemporaryDirectory() as tmp:
+        video, cover = Path(tmp) / "reel.mp4", Path(tmp) / "cover.jpg"
+        seconds = reel_render.render(reel, video, seed=random.randrange(2**32), cover_path=cover)
+        video_url = _upload(bucket, video, f"{name}.mp4", "video/mp4")
+        cover_url = _upload(bucket, cover, f"{name}.jpg", "image/jpeg")
+    _delete_files(bucket, [old_doc.get("videoPath"), old_doc.get("coverPath")])
+    q = reel.question
+    doc = {
+        "date": day.isoformat(),
+        "format": reel.format,
+        "formatName": reels.FORMAT_NAMES[reel.format],
+        "questionId": q["id"],
+        "part": q["part"],
+        "topic": q["topic"],
+        "hook": reel.script.hook,
+        "script": reel.script.model_dump(),
+        "caption": reel.caption,
+        "seconds": round(seconds, 1),
+        "videoUrl": video_url,
+        "videoPath": f"{name}.mp4",
+        "coverUrl": cover_url,
+        "coverPath": f"{name}.jpg",
+        "status": "ready",
+        "attempt": attempt,
+        "error": "",
+        "createdAt": firestore.SERVER_TIMESTAMP,
+    }
+    ref.set(doc)
+    return doc
+
+
+def _post_reel(db, day: str) -> dict:
+    """Posts a ready reel to Instagram. Only one post can run at a time for a reel."""
+    ref = db.collection("reels").document(day)
+    config = _instagram_ref(db).get().to_dict() or {}
+    if not config.get("token") or not config.get("userId"):
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "Connect the Instagram account first.")
+
+    @firestore.transactional
+    def claim(tx) -> dict:
+        snap = ref.get(transaction=tx)
+        doc = snap.to_dict() if snap.exists else None
+        if not doc:
+            raise https_fn.HttpsError(Err.NOT_FOUND, "There's no reel for that day.")
+        if doc.get("status") != "ready":
+            raise https_fn.HttpsError(Err.FAILED_PRECONDITION, f"This reel is {doc.get('status')}, so it can't be posted.")
+        tx.update(ref, {"status": "posting", "error": ""})
+        return doc
+
+    doc = claim(db.transaction())
+    try:
+        out = Instagram(config["token"], config["userId"]).publish_reel(doc["videoUrl"], doc["caption"], doc.get("coverUrl", ""))
+    except InstagramError as e:
+        ref.update({"status": "ready", "error": f"Instagram: {e}"})
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, f"Instagram said: {e}")
+    except Exception:
+        ref.update({"status": "ready", "error": "Posting failed. Try again."})
+        raise
+    ref.update({"status": "posted", "mediaId": out["id"], "permalink": out["permalink"], "postedAt": firestore.SERVER_TIMESTAMP})
+    return out
+
+
+def _refresh_token_if_due(db) -> None:
+    ref = _instagram_ref(db)
+    config = ref.get().to_dict() or {}
+    last = config.get("refreshedAt")
+    if not config.get("token") or (last and datetime.now(timezone.utc) - last < REFRESH_TOKEN_AFTER):
+        return
+    try:
+        token, expires_in = Instagram(config["token"]).refresh()
+    except InstagramError as e:
+        # A brand-new token can't be refreshed for a day; the next run tries again.
+        ref.update({"refreshError": str(e)})
+        return
+    ref.update({
+        "token": token,
+        "refreshedAt": firestore.SERVER_TIMESTAMP,
+        "expiresAt": datetime.now(timezone.utc) + timedelta(seconds=expires_in or 60 * 86400),
+        "refreshError": "",
+    })
+
+
+def _cleanup_old_videos(db) -> None:
+    cutoff = (_reel_today() - timedelta(days=REEL_KEEP_DAYS)).isoformat()
+    bucket = storage.bucket()
+    for snap in db.collection("reels").where("date", "<", cutoff).stream():
+        doc = snap.to_dict() or {}
+        if doc.get("videoPath"):
+            _delete_files(bucket, [doc.get("videoPath"), doc.get("coverPath")])
+            snap.reference.update({"videoPath": "", "coverPath": "", "videoUrl": "", "coverUrl": ""})
+
+
+@scheduler_fn.on_schedule(
+    schedule="0 7 * * *",
+    timezone=scheduler_fn.Timezone(REEL_TZ),
+    secrets=["ANTHROPIC_API_KEY"],
+    timeout_sec=1200,
+    memory=options.MemoryOption.GB_2,
+)
+def daily_reel(event: scheduler_fn.ScheduledEvent) -> None:
+    db = firestore.client()
+    day = _reel_today()
+    snap = db.collection("reels").document(day.isoformat()).get()
+    if not snap.exists or (snap.to_dict() or {}).get("status") == "failed":
+        try:
+            _make_reel(db, day)
+        except Exception as e:  # noqa: BLE001 - show the failure on the admin page instead
+            logging.exception("daily reel for %s failed", day)
+            message = str(e) if isinstance(e, (reels.ReelError, https_fn.HttpsError)) else "Making the reel failed. Try Regenerate."
+            db.collection("reels").document(day.isoformat()).set({"date": day.isoformat(), "status": "failed", "error": message, "createdAt": firestore.SERVER_TIMESTAMP}, merge=True)
+    _refresh_token_if_due(db)
+    config = _instagram_ref(db).get().to_dict() or {}
+    if config.get("autoPost") and (db.collection("reels").document(day.isoformat()).get().to_dict() or {}).get("status") == "ready":
+        try:
+            _post_reel(db, day.isoformat())
+        except Exception:  # noqa: BLE001 - the error is saved on the reel for the admin
+            logging.exception("auto-post for %s failed", day)
+    _cleanup_old_videos(db)
+
+
+def _instagram_status(config: dict) -> dict:
+    return {
+        "connected": bool(config.get("token") and config.get("userId")),
+        "username": config.get("username", ""),
+        "autoPost": bool(config.get("autoPost")),
+        "expiresAt": _ms(config.get("expiresAt")),
+        "refreshError": config.get("refreshError", ""),
+    }
+
+
+@https_fn.on_call()
+def admin_reels(req: https_fn.CallableRequest) -> dict:
+    _require_admin(req)
+    db = firestore.client()
+    out = []
+    for d in db.collection("reels").order_by("date", direction=firestore.Query.DESCENDING).limit(30).stream():
+        r = d.to_dict() or {}
+        out.append({
+            "date": d.id,
+            "status": r.get("status", ""),
+            "format": r.get("format", ""),
+            "formatName": r.get("formatName", ""),
+            "part": r.get("part", ""),
+            "topic": r.get("topic", ""),
+            "questionId": r.get("questionId", ""),
+            "hook": r.get("hook", ""),
+            "caption": r.get("caption", ""),
+            "seconds": r.get("seconds"),
+            "videoUrl": r.get("videoUrl", ""),
+            "coverUrl": r.get("coverUrl", ""),
+            "permalink": r.get("permalink", ""),
+            "error": r.get("error", ""),
+            "createdAt": _ms(r.get("createdAt")),
+            "postedAt": _ms(r.get("postedAt")),
+        })
+    config = _instagram_ref(db).get().to_dict() or {}
+    return {"reels": out, "today": _reel_today().isoformat(), "instagram": _instagram_status(config), "formats": reels.FORMAT_NAMES}
+
+
+@https_fn.on_call(secrets=["ANTHROPIC_API_KEY"], timeout_sec=900, memory=options.MemoryOption.GB_2)
+def admin_reel_action(req: https_fn.CallableRequest) -> dict:
+    """action: make (today's reel, optionally in a chosen format), regenerate, caption, skip, unskip or post."""
+    _require_admin(req)
+    data = req.data or {}
+    action = data.get("action")
+    db = firestore.client()
+    day = _clean(data.get("date"), 10) or _reel_today().isoformat()
+    ref = _reel_ref(db, day)
+    if action in ("make", "regenerate"):
+        fmt = data.get("format") if data.get("format") in reels.FORMATS else None
+        existing = ref.get()
+        if action == "make" and existing.exists and (existing.to_dict() or {}).get("status") != "failed":
+            raise https_fn.HttpsError(Err.ALREADY_EXISTS, "There's already a reel for that day. Use Regenerate.")
+        try:
+            _make_reel(db, date.fromisoformat(day), fmt)
+        except reels.ReelError as e:
+            raise https_fn.HttpsError(Err.FAILED_PRECONDITION, str(e))
+        return {"ok": True}
+    if action == "post":
+        return {"ok": True, **_post_reel(db, day)}
+
+    snap = ref.get()
+    doc = snap.to_dict() if snap.exists else None
+    if not doc:
+        raise https_fn.HttpsError(Err.NOT_FOUND, "There's no reel for that day.")
+    if doc.get("status") in ("posted", "posting"):
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "That reel is already on Instagram.")
+    if action == "caption":
+        caption = str(data.get("caption") or "").strip()
+        if not caption:
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "The caption can't be empty.")
+        if len(caption) > CAPTION_LIMIT:
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, f"Instagram captions can be at most {CAPTION_LIMIT} characters.")
+        ref.update({"caption": caption})
+    elif action == "skip" and doc.get("status") == "ready":
+        ref.update({"status": "skipped"})
+    elif action == "unskip" and doc.get("status") == "skipped":
+        ref.update({"status": "ready"})
+    else:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Unknown action.")
+    return {"ok": True}
+
+
+@https_fn.on_call()
+def admin_instagram(req: https_fn.CallableRequest) -> dict:
+    """Connects the account with a pasted long-lived token, turns auto-post on or off, or disconnects."""
+    _require_admin(req)
+    data = req.data or {}
+    db = firestore.client()
+    ref = _instagram_ref(db)
+    if data.get("disconnect"):
+        ref.delete()
+        return _instagram_status({})
+    if data.get("token"):
+        token = _clean(data.get("token"), 1000)
+        client = Instagram(token)
+        try:
+            me = client.me()
+        except InstagramError as e:
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, f"Instagram didn't accept that token: {e}")
+        if not me.get("user_id"):
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "That token didn't come with an Instagram account.")
+        config = {
+            "token": token,
+            "userId": str(me["user_id"]),
+            "username": me.get("username", ""),
+            "accountType": me.get("account_type", ""),
+            "connectedAt": firestore.SERVER_TIMESTAMP,
+            "expiresAt": datetime.now(timezone.utc) + timedelta(days=60),
+            "refreshError": "",
+        }
+        try:
+            # Gets the exact expiry, and works when the token is over a day old. A newer one refreshes on a later morning.
+            token, expires_in = client.refresh()
+            config.update({"token": token, "refreshedAt": firestore.SERVER_TIMESTAMP, "expiresAt": datetime.now(timezone.utc) + timedelta(seconds=expires_in or 60 * 86400)})
+        except InstagramError:
+            pass
+        ref.set(config, merge=True)
+    if "autoPost" in data:
+        if not (ref.get().to_dict() or {}).get("token"):
+            raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "Connect the Instagram account first.")
+        ref.set({"autoPost": bool(data.get("autoPost"))}, merge=True)
+    return _instagram_status(ref.get().to_dict() or {})

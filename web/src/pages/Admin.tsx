@@ -11,7 +11,7 @@ function formatDate(d: Date | null) {
   return d ? d.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }) : "–";
 }
 
-/** The two admin pages, as tabs. */
+/** The admin pages, as tabs. */
 export function AdminTabs() {
   const { pathname } = useLocation();
   return (
@@ -21,6 +21,9 @@ export function AdminTabs() {
       </Link>
       <Link to="/admin/engagement" aria-current={pathname === "/admin/engagement" ? "page" : undefined}>
         Engagement
+      </Link>
+      <Link to="/admin/instagram" aria-current={pathname === "/admin/instagram" ? "page" : undefined}>
+        Instagram
       </Link>
     </nav>
   );

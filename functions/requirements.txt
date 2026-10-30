@@ -2,3 +2,7 @@ firebase-functions>=0.4.2
 firebase-admin>=6.5.0
 anthropic>=1.12.0
 pydantic>=2.7
+# The daily Instagram reel: drawn with Pillow, music from numpy, encoded by the ffmpeg in imageio-ffmpeg.
+numpy>=2.0
+Pillow>=11.0
+imageio-ffmpeg>=0.6
