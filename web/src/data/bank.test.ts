@@ -1,6 +1,9 @@
 import { describe, expect, it } from "vitest";
+import { readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
 import { stableShuffle } from "./exam";
 import { DECKS, getQuestions } from "./index";
+import { reelBank } from "./reelBank";
 import { SOURCES } from "./sources";
 
 const all = DECKS.flatMap((d) => getQuestions(d.id));
@@ -46,5 +49,12 @@ describe("stableShuffle", () => {
     const items = ["a", "b", "c", "d"];
     expect(stableShuffle(items, "p1d1-01")).toEqual(stableShuffle(items, "p1d1-01"));
     expect([...stableShuffle(items, "p1d1-02")].sort()).toEqual(items);
+  });
+});
+
+describe("reel bank", () => {
+  it("matches functions/reel_bank.json (run npm run export:reel-bank after changing questions)", () => {
+    const file = readFileSync(fileURLToPath(new URL("../../../functions/reel_bank.json", import.meta.url)), "utf8");
+    expect(JSON.parse(file)).toEqual(reelBank());
   });
 });

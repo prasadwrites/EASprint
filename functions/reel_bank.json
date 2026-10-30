@@ -1,0 +1,2522 @@
+[
+ {
+  "id": "p1d1-01",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Filing status",
+  "difficulty": "Medium",
+  "prompt": "Dana's spouse died in 2023. Dana has not remarried, and her dependent son lived with her all of 2025 in a home she paid the full cost of keeping up. What is Dana's most favorable filing status for 2025?",
+  "choices": [
+   "Married filing jointly",
+   "Single",
+   "Qualifying surviving spouse",
+   "Head of household"
+  ],
+  "answer": "Qualifying surviving spouse",
+  "explanation": "A taxpayer can use qualifying surviving spouse status for the two tax years after the year the spouse died. To qualify, the taxpayer must not have remarried, must have been able to file jointly in the year of death, and must pay more than half the cost of keeping up a home that is the main home, for the whole year, of a child, stepchild or adopted child the taxpayer can claim as a dependent.\n\nDana's spouse died in 2023, so the two following years are 2024 and 2025. She has not remarried and kept up the home all year for her dependent son, so she qualifies for 2025. This status uses the joint return tax rates and the joint standard deduction of $31,500, which is better than head of household ($23,625).\n\nExam tip: count the years carefully. Year of death is a joint return, the next two years can be qualifying surviving spouse, and after that the taxpayer usually moves to head of household or single.",
+  "source": {
+   "title": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+   "url": "https://www.irs.gov/publications/p501",
+   "section": "Filing Status: Qualifying Surviving Spouse"
+  }
+ },
+ {
+  "id": "p1d1-02",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Standard deduction",
+  "difficulty": "Easy",
+  "prompt": "What is the 2025 standard deduction for a single taxpayer who is under 65 and not blind?",
+  "choices": [
+   "$15,750",
+   "$15,000",
+   "$14,600",
+   "$23,625"
+  ],
+  "answer": "$15,750",
+  "explanation": "The 2025 law change increased the standard deduction for 2025. The basic amounts are $15,750 for single or married filing separately, $31,500 for married filing jointly or qualifying surviving spouse, and $23,625 for head of household.\n\nA taxpayer who is 65 or older or blind adds an additional standard deduction on top of the basic amount: $2,000 for a single or head of household filer, and $1,600 for each qualifying condition for a married taxpayer. The question describes a single filer under 65 who is not blind, so only the basic $15,750 applies.\n\nExam tip: the exam tests the year shown in the question, here 2025. Watch for distractors that are last year's figure or the figure for a different filing status.",
+  "source": {
+   "title": "Publication 17, Your Federal Income Tax (2025)",
+   "url": "https://www.irs.gov/publications/p17",
+   "section": "What's New; Standard Deduction"
+  }
+ },
+ {
+  "id": "p1d1-03",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Dependents",
+  "difficulty": "Easy",
+  "prompt": "Which of the following is NOT one of the tests a person must meet to be a taxpayer's qualifying child?",
+  "choices": [
+   "The support test",
+   "The relationship test",
+   "The residency test",
+   "The gross income test"
+  ],
+  "answer": "The gross income test",
+  "explanation": "There are two kinds of dependents. A qualifying child must pass five tests: relationship, age, residency, support (the child did not provide more than half of their own support) and joint return. A qualifying relative must pass a different set: not a qualifying child of anyone, member of household or relationship, gross income, and support (the taxpayer provided more than half).\n\nThe gross income test belongs only to the qualifying relative rules. A qualifying child can earn any amount and still be a qualifying child.\n\nExam tip: the two support tests point in different directions. For a qualifying child, ask whether the child supported themselves. For a qualifying relative, ask whether the taxpayer provided more than half the support.",
+  "source": {
+   "title": "Publication 501, Dependents, Standard Deduction, and Filing Information",
+   "url": "https://www.irs.gov/publications/p501",
+   "section": "Dependents: Qualifying Child"
+  }
+ },
+ {
+  "id": "p1d1-04",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Residency status",
+  "difficulty": "Hard",
+  "prompt": "Lars, a citizen of Norway with no green card, was physically present in the United States for 120 days in each of 2023, 2024 and 2025. Does he meet the substantial presence test for 2025?",
+  "choices": [
+   "No. Counting all of 2025, one-third of 2024 and one-sixth of 2023 gives 180 days, which is fewer than 183",
+   "No. The test requires 183 days of presence in 2025 alone",
+   "Yes. Being present for at least 31 days in 2025 is enough",
+   "Yes. He was present for 360 days over the three years"
+  ],
+  "answer": "No. Counting all of 2025, one-third of 2024 and one-sixth of 2023 gives 180 days, which is fewer than 183",
+  "explanation": "A person who is not a green card holder is a U.S. resident for tax purposes in a year when they meet the substantial presence test. They must be present at least 31 days in the current year, and the weighted total must be at least 183 days. The weighted total counts every day in the current year, one-third of the days in the first year before, and one-sixth of the days in the second year before.\n\nFor Lars: 2025 counts 120 days, 2024 counts 120 ÷ 3 = 40 days, and 2023 counts 120 ÷ 6 = 20 days. The total is 180, three days short, so he is a nonresident alien for 2025 unless another rule applies.\n\nExam tip: write out the three lines of the calculation. Exam distractors often add the years at full weight or give the right answer with the wrong reason.",
+  "source": {
+   "title": "Publication 519, U.S. Tax Guide for Aliens",
+   "url": "https://www.irs.gov/publications/p519",
+   "section": "Chapter 1: Substantial Presence Test"
+  }
+ },
+ {
+  "id": "p1d1-05",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Kiddie tax",
+  "difficulty": "Medium",
+  "prompt": "For 2025, Form 8615 (the \"kiddie tax\") can apply to a child whose unearned income is more than what amount?",
+  "choices": [
+   "$15,750",
+   "$2,700",
+   "$1,350",
+   "$5,400"
+  ],
+  "answer": "$2,700",
+  "explanation": "The kiddie tax stops parents from shifting investment income to children in lower brackets. It applies when a child has unearned income (interest, dividends, capital gains and similar income) above $2,700 for 2025, the child is under 18 at year end (or a student under 24 or an 18-year-old whose earned income doesn't cover half their support), a parent is alive, and the child doesn't file a joint return.\n\nThe first $1,350 of unearned income is covered by the child's standard deduction and the next $1,350 is taxed at the child's own rate. Unearned income above $2,700 is taxed at the parent's rate if it is higher, which is figured on Form 8615.\n\nExam tip: if the child's only income is interest and dividends under $13,500, the parents may be able to report it on their own return using Form 8814 instead.",
+  "source": {
+   "title": "Instructions for Form 8615, Tax for Certain Children Who Have Unearned Income",
+   "url": "https://www.irs.gov/instructions/i8615",
+   "section": "Who Must File"
+  }
+ },
+ {
+  "id": "p1d1-06",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Foreign account reporting",
+  "difficulty": "Medium",
+  "prompt": "Which statement about the Report of Foreign Bank and Financial Accounts (FBAR) is correct?",
+  "choices": [
+   "It is filed electronically with FinCEN, separately from the tax return, when the combined value of foreign financial accounts was more than $10,000 at any time during the year",
+   "It is due June 30 and no extension is available",
+   "It is attached to Form 1040 and is required only if a single account held more than $50,000 on the last day of the year",
+   "It is required only for foreign accounts that earned taxable interest during the year"
+  ],
+  "answer": "It is filed electronically with FinCEN, separately from the tax return, when the combined value of foreign financial accounts was more than $10,000 at any time during the year",
+  "explanation": "A U.S. person (citizen, resident, or domestic entity) with a financial interest in or signature authority over foreign financial accounts must file FinCEN Form 114 when the total of the highest values of all those accounts was more than $10,000 at any time during the calendar year.\n\nThe FBAR is filed electronically through FinCEN's BSA E-Filing System, not with the IRS and not with Form 1040. It is due April 15 and is automatically extended to October 15 with no request needed. Penalties for not filing can be large, especially for willful violations.\n\nExam tip: the aggregate rule means several small accounts can trigger the requirement. Two accounts with top balances of $6,000 each add up to $12,000, so an FBAR is required.",
+  "source": {
+   "title": "Report of Foreign Bank and Financial Accounts (FBAR)",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar",
+   "section": "Who must file; When to file"
+  }
+ },
+ {
+  "id": "p1d1-07",
+  "part": "part1",
+  "domain": "Preliminary Work and Taxpayer Data",
+  "topic": "Due dates and extensions",
+  "difficulty": "Easy",
+  "prompt": "A taxpayer files Form 4868 by the April due date of the return. What does the extension do?",
+  "choices": [
+   "It removes the failure-to-pay penalty as long as the return is filed by October 15",
+   "It gives six more months to both file the return and pay the tax without interest",
+   "It gives four more months to file, and a second request adds two more",
+   "It gives six more months to file the return, but not more time to pay the tax"
+  ],
+  "answer": "It gives six more months to file the return, but not more time to pay the tax",
+  "explanation": "Form 4868 gives an automatic six-month extension of time to file Form 1040, moving the deadline for a calendar-year taxpayer from April 15 to October 15. No reason is needed, and filing it electronically or making a payment marked as an extension payment is enough.\n\nThe extension does not change when the tax is due. The taxpayer should estimate the tax and pay it by April 15. Interest is charged on any balance from April 15 until it is paid, and the 0.5% a month failure-to-pay penalty can apply unless at least 90% of the tax was paid by the original due date and the rest is paid with the return.\n\nExam tip: U.S. citizens living abroad get an automatic two-month extension to June 15 and can then use Form 4868 to reach October 15.",
+  "source": {
+   "title": "Publication 17, Your Federal Income Tax (2025)",
+   "url": "https://www.irs.gov/publications/p17",
+   "section": "Chapter 1: Extensions of Time To File"
+  }
+ },
+ {
+  "id": "p1d2-01",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Sale of a home",
+  "difficulty": "Medium",
+  "prompt": "Priya, who is single, sold her main home in 2025 for a gain of $310,000. She owned and lived in it for the last six years and has never excluded a gain before. How much of the gain is taxable?",
+  "choices": [
+   "$0",
+   "$60,000",
+   "$310,000",
+   "$185,000"
+  ],
+  "answer": "$60,000",
+  "explanation": "Under section 121, a taxpayer can exclude up to $250,000 of gain on the sale of a main home, or up to $500,000 for most married couples filing jointly. The taxpayer must have owned the home and used it as a main home for at least two years during the five years before the sale, and must not have excluded gain on another home sale in the two years before.\n\nPriya owned and lived in the home for six years, which satisfies both tests, and she has not used the exclusion before. Her taxable gain is $310,000 − $250,000 = $60,000, reported as a long-term capital gain on Form 8949 and Schedule D.\n\nExam tip: any part of the gain due to depreciation taken after May 6, 1997 (for example, for a home office) cannot be excluded, even when the total gain is under the limit.",
+  "source": {
+   "title": "Publication 523, Selling Your Home",
+   "url": "https://www.irs.gov/publications/p523",
+   "section": "Does Your Home Sale Qualify for the Exclusion of Gain?"
+  }
+ },
+ {
+  "id": "p1d2-02",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Capital losses",
+  "difficulty": "Easy",
+  "prompt": "After netting all of his 2025 sales, Omar, a single taxpayer, has a net capital loss of $11,000. How is the loss treated?",
+  "choices": [
+   "The full $11,000 is deducted against other income in 2025",
+   "$3,000 is deducted against other income in 2025 and $8,000 is carried forward",
+   "Nothing is deducted in 2025 and $11,000 is carried forward for up to five years",
+   "$3,000 is deducted in 2025 and the rest is lost"
+  ],
+  "answer": "$3,000 is deducted against other income in 2025 and $8,000 is carried forward",
+  "explanation": "Capital gains and losses are netted first: short-term against short-term, long-term against long-term, and then the two results against each other. If the result is a net loss, an individual can deduct up to $3,000 of it against other income such as wages ($1,500 if married filing separately).\n\nOmar deducts $3,000 in 2025. The remaining $11,000 − $3,000 = $8,000 carries forward to 2026, where it first offsets 2026 capital gains and then up to $3,000 of other income again. The carryover keeps its short-term or long-term character, and it continues until it is used up or the taxpayer dies.\n\nExam tip: corporations work differently. A corporation can only use capital losses against capital gains, carrying them back three years and forward five.",
+  "source": {
+   "title": "Topic no. 409, Capital gains and losses",
+   "url": "https://www.irs.gov/taxtopics/tc409",
+   "section": "Limit on the deduction and carryover of losses"
+  }
+ },
+ {
+  "id": "p1d2-03",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Basis of gifted property",
+  "difficulty": "Medium",
+  "prompt": "Mei received stock as a gift from her aunt. The aunt's adjusted basis was $4,000 and the stock was worth $9,000 on the date of the gift. No gift tax was paid. Mei later sold the stock for $12,000. What is her gain?",
+  "choices": [
+   "$12,000",
+   "$8,000",
+   "$0",
+   "$3,000"
+  ],
+  "answer": "$8,000",
+  "explanation": "Property received as a gift generally keeps the donor's adjusted basis (a carryover basis), increased by any gift tax paid on the appreciation. The special dual-basis rule applies only when the property's value at the time of the gift is less than the donor's basis, in which case the lower value is used to figure a loss.\n\nHere the value at the gift ($9,000) was more than the aunt's basis ($4,000), so Mei's basis is $4,000. Her gain is $12,000 − $4,000 = $8,000. Her holding period also includes her aunt's holding period, so the gain is likely long term.\n\nExam tip: compare gifts with inheritances. A gift carries over the donor's basis, while inherited property generally gets a basis equal to its value at the date of death.",
+  "source": {
+   "title": "Publication 551, Basis of Assets",
+   "url": "https://www.irs.gov/publications/p551",
+   "section": "Property Received as a Gift"
+  }
+ },
+ {
+  "id": "p1d2-04",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Basis of inherited property",
+  "difficulty": "Medium",
+  "prompt": "Ben inherited stock from his father. His father's basis was $20,000 and the stock was worth $50,000 on the date of death. No alternate valuation was elected. Ben sold the stock two months later for $53,000. What does he report?",
+  "choices": [
+   "A $33,000 short-term capital gain",
+   "A $3,000 short-term capital gain",
+   "A $33,000 long-term capital gain",
+   "A $3,000 long-term capital gain"
+  ],
+  "answer": "A $3,000 long-term capital gain",
+  "explanation": "The basis of property acquired from a decedent is generally its fair market value on the date of death, or on the alternate valuation date if the executor elects it on the estate tax return. This is often called a stepped-up basis, because any increase in value during the decedent's life is never taxed.\n\nBen's basis is $50,000, so his gain is $53,000 − $50,000 = $3,000. Even though he held the stock only two months, gain or loss on inherited property is automatically long term.\n\nExam tip: the step-up does not apply to income in respect of a decedent, such as a traditional IRA or unpaid wages. Those keep their character and are taxed to whoever receives them.",
+  "source": {
+   "title": "Publication 551, Basis of Assets",
+   "url": "https://www.irs.gov/publications/p551",
+   "section": "Inherited Property"
+  }
+ },
+ {
+  "id": "p1d2-05",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Early IRA distributions",
+  "difficulty": "Medium",
+  "prompt": "Which distribution from a traditional IRA taken before age 59½ is NOT subject to the 10% additional tax?",
+  "choices": [
+   "A withdrawal used as a down payment on a vacation home",
+   "A withdrawal used to pay off credit card debt after a job loss",
+   "Up to $10,000 used to buy, build or rebuild a first home",
+   "A withdrawal used to buy a car needed to commute to work"
+  ],
+  "answer": "Up to $10,000 used to buy, build or rebuild a first home",
+  "explanation": "Distributions from a traditional IRA before age 59½ are generally subject to a 10% additional tax on the taxable amount, on top of regular income tax. The law lists specific exceptions, including death, disability, a series of substantially equal periodic payments, unreimbursed medical expenses over 7.5% of AGI, health insurance premiums while unemployed, qualified higher education expenses, a qualified birth or adoption (up to $5,000), and up to $10,000 for a qualified first-time home purchase.\n\nA first-time homebuyer means someone who had no ownership interest in a main home during the two years before buying the new one. The $10,000 is a lifetime limit, and the money must be used within 120 days.\n\nExam tip: several exceptions apply to IRAs but not to 401(k)-type plans, and the reverse. Education and first-home exceptions are IRA-only, while the separation-from-service-at-55 exception is plan-only.",
+  "source": {
+   "title": "Publication 590b, Distributions from Individual Retirement Arrangements (IRAs)",
+   "url": "https://www.irs.gov/publications/p590b",
+   "section": "Early Distributions: Exceptions"
+  }
+ },
+ {
+  "id": "p1d2-06",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Canceled debt",
+  "difficulty": "Hard",
+  "prompt": "A credit card company canceled $20,000 of Rosa's personal debt in 2025. Immediately before the cancellation her liabilities were $12,000 more than the fair market value of her assets. No other exclusion applies. How much of the canceled debt is included in her income?",
+  "choices": [
+   "$8,000",
+   "$0",
+   "$20,000",
+   "$12,000"
+  ],
+  "answer": "$8,000",
+  "explanation": "Canceled debt is generally taxable income, and the lender usually reports it on Form 1099-C. One exclusion is insolvency: the taxpayer can exclude canceled debt up to the amount by which their total liabilities exceeded the fair market value of their total assets immediately before the cancellation.\n\nRosa was insolvent by $12,000, so she excludes $12,000 and includes the remaining $20,000 − $12,000 = $8,000 in income. She reports the exclusion on Form 982, and she must reduce certain tax attributes (such as loss carryovers or the basis of her property) by the amount excluded.\n\nExam tip: the insolvency worksheet counts all assets, including retirement accounts and pensions. Leaving them out can make a taxpayer look more insolvent than they are.",
+  "source": {
+   "title": "Publication 4681, Canceled Debts, Foreclosures, Repossessions, and Abandonments",
+   "url": "https://www.irs.gov/publications/p4681",
+   "section": "Exclusions: Insolvency"
+  }
+ },
+ {
+  "id": "p1d2-07",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Social Security benefits",
+  "difficulty": "Easy",
+  "prompt": "What is the largest share of a taxpayer's Social Security benefits that can be included in taxable income?",
+  "choices": [
+   "85%",
+   "100%",
+   "65%",
+   "50%"
+  ],
+  "answer": "85%",
+  "explanation": "To figure how much of Social Security benefits is taxable, start with provisional income: modified AGI plus one-half of the benefits. If it is below the base amount ($25,000 for single, $32,000 for married filing jointly), none of the benefits are taxable.\n\nBetween the base amount and the second threshold ($34,000 single, $44,000 joint), up to 50% of benefits is taxable. Above the second threshold, up to 85% is taxable. The formula never includes more than 85%. A married person filing separately who lived with their spouse at any time during the year generally has a base amount of zero, so up to 85% is usually taxable.\n\nExam tip: these thresholds are not adjusted for inflation, so they are the same every year.",
+  "source": {
+   "title": "Publication 915, Social Security and Equivalent Railroad Retirement Benefits",
+   "url": "https://www.irs.gov/publications/p915",
+   "section": "How Much Is Taxable?"
+  }
+ },
+ {
+  "id": "p1d2-08",
+  "part": "part1",
+  "domain": "Income and Assets",
+  "topic": "Health savings accounts",
+  "difficulty": "Medium",
+  "prompt": "Kofi, age 40, had self-only coverage under a high deductible health plan for all of 2025. What is the most that can be contributed to his HSA for 2025?",
+  "choices": [
+   "$4,150",
+   "$5,300",
+   "$8,550",
+   "$4,300"
+  ],
+  "answer": "$4,300",
+  "explanation": "To contribute to a health savings account, a person must be covered by a high deductible health plan, have no other disqualifying health coverage, not be enrolled in Medicare, and not be claimable as someone else's dependent.\n\nFor 2025 the contribution limit is $4,300 for self-only coverage and $8,550 for family coverage. People 55 or older can add a $1,000 catch-up contribution. Kofi is 40 with self-only coverage for the whole year, so his limit is $4,300. This includes contributions from his employer. Contributions he makes himself are deductible on Form 8889 whether or not he itemizes.\n\nExam tip: under the last-month rule, someone who is eligible on December 1 can contribute the full year's amount, but must then stay eligible through the following year or part of the contribution becomes taxable.",
+  "source": {
+   "title": "Publication 969, Health Savings Accounts and Other Tax-Favored Health Plans",
+   "url": "https://www.irs.gov/publications/p969",
+   "section": "Health Savings Accounts: Limit on Contributions"
+  }
+ },
+ {
+  "id": "p1d3-01",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "Medical expenses",
+  "difficulty": "Easy",
+  "prompt": "Tom's 2025 adjusted gross income is $60,000. He itemizes and paid $7,000 of unreimbursed qualifying medical expenses. How much can he deduct?",
+  "choices": [
+   "$2,500",
+   "$1,000",
+   "$7,000",
+   "$4,500"
+  ],
+  "answer": "$2,500",
+  "explanation": "Unreimbursed medical and dental expenses for the taxpayer, spouse and dependents are deductible as an itemized deduction only to the extent they exceed 7.5% of adjusted gross income.\n\nTom's floor is 7.5% × $60,000 = $4,500. His deduction is $7,000 − $4,500 = $2,500. Qualifying expenses include doctor and hospital fees, prescription drugs, insurance premiums paid with after-tax money, and certain long-term care premiums (subject to age-based limits). Over-the-counter drugs (other than insulin), cosmetic surgery and gym memberships don't count.\n\nExam tip: expenses reimbursed by insurance, or paid with tax-free HSA or FSA money, can't be deducted again.",
+  "source": {
+   "title": "Publication 502, Medical and Dental Expenses",
+   "url": "https://www.irs.gov/publications/p502",
+   "section": "How Much of the Expenses Can You Deduct?"
+  }
+ },
+ {
+  "id": "p1d3-02",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "State and local taxes",
+  "difficulty": "Hard",
+  "prompt": "A married couple filing jointly with modified AGI of $200,000 itemizes for 2025. They paid $18,000 of state income tax and $14,000 of real estate tax on their home. How much can they deduct for state and local taxes?",
+  "choices": [
+   "$10,000",
+   "$32,000",
+   "$20,000",
+   "$40,000"
+  ],
+  "answer": "$32,000",
+  "explanation": "For 2025 the total deduction for state and local income (or sales) taxes, real estate taxes and personal property taxes is limited to $40,000, or $20,000 for married filing separately. For taxpayers with modified AGI over $500,000 ($250,000 if married filing separately), the limit is reduced by 30% of the excess, but never below $10,000 ($5,000).\n\nThe couple paid $18,000 + $14,000 = $32,000. Their modified AGI of $200,000 is under $500,000, so the full $40,000 limit applies, and they deduct all $32,000.\n\nExam tip: taxpayers choose either state income tax or state sales tax, not both, and the choice counts toward the same overall limit. Foreign real property taxes are not deductible at all.",
+  "source": {
+   "title": "Publication 17, Your Federal Income Tax (2025)",
+   "url": "https://www.irs.gov/publications/p17",
+   "section": "What's New: State and local tax deduction limit"
+  }
+ },
+ {
+  "id": "p1d3-03",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "Charitable contributions",
+  "difficulty": "Medium",
+  "prompt": "What must a taxpayer have to deduct a single cash contribution of $250 or more to a qualified charity?",
+  "choices": [
+   "A qualified appraisal attached to the return",
+   "Form 8283 signed by an officer of the charity",
+   "Only a canceled check or bank statement showing the payment",
+   "A written acknowledgment from the charity, obtained by the time the return is filed, showing the amount and whether any goods or services were received in return"
+  ],
+  "answer": "A written acknowledgment from the charity, obtained by the time the return is filed, showing the amount and whether any goods or services were received in return",
+  "explanation": "Every cash contribution needs a record, such as a bank record or a receipt from the charity showing its name, the date and the amount. For any single contribution of $250 or more, the taxpayer also needs a contemporaneous written acknowledgment from the charity.\n\nThe acknowledgment must state the amount of cash, say whether the charity gave any goods or services in return, and describe and estimate their value if it did. It is contemporaneous if the taxpayer has it by the earlier of the date the return is filed or its due date including extensions. Without it, the deduction for that gift is disallowed entirely.\n\nExam tip: separate gifts are not added together for the $250 test. Ten separate $50 gifts don't need an acknowledgment, but one $500 gift does.",
+  "source": {
+   "title": "Publication 526, Charitable Contributions",
+   "url": "https://www.irs.gov/publications/p526",
+   "section": "Substantiation Requirements: Cash Contributions"
+  }
+ },
+ {
+  "id": "p1d3-04",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "Child tax credit",
+  "difficulty": "Medium",
+  "prompt": "For 2025, what is the maximum child tax credit for each qualifying child, and how much of it can be refunded as the additional child tax credit?",
+  "choices": [
+   "$2,200 credit, all of which is refundable",
+   "$2,500 credit, of which up to $1,400 can be refundable",
+   "$2,200 credit, of which up to $1,700 can be refundable",
+   "$2,000 credit, of which up to $1,700 can be refundable"
+  ],
+  "answer": "$2,200 credit, of which up to $1,700 can be refundable",
+  "explanation": "For 2025 the child tax credit is up to $2,200 for each qualifying child who is under 17 at the end of the year and has a Social Security number valid for employment, issued by the return's due date. The credit phases out by $50 for each $1,000 of modified AGI over $400,000 for joint filers and $200,000 for everyone else.\n\nIf the credit is more than the tax owed, the taxpayer may get part of it refunded as the additional child tax credit, up to $1,700 per child. The refundable amount is generally 15% of earned income over $2,500. Dependents who don't qualify for the child tax credit, such as a 17-year-old or a parent, may qualify for the $500 credit for other dependents, which isn't refundable.\n\nExam tip: under the 2025 law, the taxpayer (or at least one spouse on a joint return) must also have a valid Social Security number to claim the credit.",
+  "source": {
+   "title": "Instructions for Schedule 8812 (Form 1040), Credits for Qualifying Children and Other Dependents",
+   "url": "https://www.irs.gov/instructions/i1040s8",
+   "section": "What's New; General Instructions"
+  }
+ },
+ {
+  "id": "p1d3-05",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "Education credits",
+  "difficulty": "Medium",
+  "prompt": "Which statement about the American opportunity tax credit is correct?",
+  "choices": [
+   "It is worth up to $2,000 per return and none of it is refundable",
+   "It is available to students enrolled in a single course to improve job skills",
+   "It is worth up to $2,500 per eligible student, and 40% of it can be refundable",
+   "It can be claimed for any number of years of postsecondary education"
+  ],
+  "answer": "It is worth up to $2,500 per eligible student, and 40% of it can be refundable",
+  "explanation": "The American opportunity tax credit is 100% of the first $2,000 of qualified education expenses plus 25% of the next $2,000, for a maximum of $2,500 per eligible student. 40% of the credit, up to $1,000, is refundable.\n\nThe student must be pursuing a degree or other credential, be enrolled at least half time for at least one academic period during the year, not have finished the first four years of postsecondary education at the start of the year, not have claimed the credit for four earlier years, and have no felony drug conviction. Qualified expenses include tuition, required fees and course materials, but not room and board. The credit phases out between $80,000 and $90,000 of modified AGI ($160,000 to $180,000 joint).\n\nExam tip: the lifetime learning credit is 20% of up to $10,000 of expenses per return (so $2,000 at most), is nonrefundable, and has no limit on the number of years.",
+  "source": {
+   "title": "Publication 970, Tax Benefits for Education",
+   "url": "https://www.irs.gov/publications/p970",
+   "section": "Chapter 2: American Opportunity Credit"
+  }
+ },
+ {
+  "id": "p1d3-06",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "Earned income credit",
+  "difficulty": "Medium",
+  "prompt": "Each taxpayer below has earned income within the 2025 limits. Which one cannot claim the earned income credit?",
+  "choices": [
+   "A taxpayer with $13,000 of investment income",
+   "A 30-year-old taxpayer with no qualifying child",
+   "A married couple filing jointly with two qualifying children",
+   "A head of household whose qualifying child has a valid Social Security number"
+  ],
+  "answer": "A taxpayer with $13,000 of investment income",
+  "explanation": "The earned income credit is a refundable credit for workers with low to moderate income. Besides the earned income and AGI limits, every claimant must have a valid Social Security number, must not file as married filing separately (with a limited exception for separated spouses), must be a U.S. citizen or resident alien all year, and must have investment income of no more than $11,950 for 2025.\n\nInvestment income includes taxable and tax-exempt interest, dividends, capital gain net income, net rental and royalty income, and passive income. The taxpayer with $13,000 is over the limit and gets no credit at all, however low their other income is.\n\nExam tip: the investment income test is a cliff, not a phase-out. One dollar over the limit removes the entire credit.",
+  "source": {
+   "title": "Publication 596, Earned Income Credit (EIC)",
+   "url": "https://www.irs.gov/publications/p596",
+   "section": "Rule 6: Your Investment Income Must Be $11,950 or Less"
+  }
+ },
+ {
+  "id": "p1d3-07",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "Child and dependent care credit",
+  "difficulty": "Easy",
+  "prompt": "A working single parent paid $7,000 in 2025 for after-school care of her 9-year-old so she could work. What is the largest amount of expenses she can use to figure the child and dependent care credit?",
+  "choices": [
+   "$5,000",
+   "$7,000",
+   "$6,000",
+   "$3,000"
+  ],
+  "answer": "$3,000",
+  "explanation": "The child and dependent care credit applies to amounts paid for the care of a qualifying person so the taxpayer (and spouse, if married) can work or look for work. A qualifying person is a dependent child under 13, or a spouse or dependent who can't care for themselves.\n\nFor 2025 the expenses used to figure the credit are limited to $3,000 for one qualifying person and $6,000 for two or more, and also can't be more than the taxpayer's earned income. The credit is a percentage of those expenses, from 35% for AGI of $15,000 or less down to 20% for AGI over $43,000. This parent's credit is figured on $3,000, so it is between $600 and $1,050 depending on her AGI.\n\nExam tip: tax-free dependent care benefits from an employer reduce the $3,000 or $6,000 limit dollar for dollar.",
+  "source": {
+   "title": "Publication 503, Child and Dependent Care Expenses",
+   "url": "https://www.irs.gov/publications/p503",
+   "section": "How To Figure the Credit: Dollar Limit"
+  }
+ },
+ {
+  "id": "p1d3-08",
+  "part": "part1",
+  "domain": "Deductions and Credits",
+  "topic": "New deductions for 2025",
+  "difficulty": "Hard",
+  "prompt": "Ruth is 67, single, has modified AGI of $60,000 and claims the standard deduction for 2025. Which statement about the new deduction for seniors is correct?",
+  "choices": [
+   "It replaces the additional standard deduction for taxpayers 65 or older",
+   "It is available only on a joint return",
+   "She can deduct $6,000, in addition to her standard deduction and the existing additional standard deduction for age",
+   "She can claim it only if she itemizes deductions"
+  ],
+  "answer": "She can deduct $6,000, in addition to her standard deduction and the existing additional standard deduction for age",
+  "explanation": "For tax years 2025 through 2028, each taxpayer who is 65 or older by the end of the year can deduct an extra $6,000, or $12,000 when both spouses on a joint return qualify. The deduction is taken whether the taxpayer itemizes or claims the standard deduction. The qualifying person must have a valid Social Security number, and married taxpayers must file jointly.\n\nThe deduction is reduced by 6% of modified AGI over $75,000 ($150,000 joint). Ruth's $60,000 is under the threshold, so she gets the full $6,000. That is on top of her $15,750 standard deduction and the $2,000 additional standard deduction for being 65, for a total of $23,750.\n\nExam tip: the other new 2025 deductions (tips, overtime and car loan interest) are also available to non-itemizers, and each has its own income limits.",
+  "source": {
+   "title": "Working Families Tax Cuts: Tax deductions for working Americans and seniors",
+   "url": "https://www.irs.gov/newsroom/working-families-tax-cuts-tax-deductions-for-working-americans-and-seniors",
+   "section": "Deduction for Seniors"
+  }
+ },
+ {
+  "id": "p1d4-01",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Self-employment tax",
+  "difficulty": "Easy",
+  "prompt": "A self-employed person must file a return and pay self-employment tax when net earnings from self-employment are at least what amount?",
+  "choices": [
+   "$400",
+   "The amount of the standard deduction",
+   "$600",
+   "$1,000"
+  ],
+  "answer": "$400",
+  "explanation": "A taxpayer must file a return and pay self-employment tax if they have net earnings from self-employment of $400 or more, even if their total income is below the normal filing threshold. Net earnings are 92.35% of net profit from Schedule C or Schedule F, plus a partner's self-employment income from a partnership.\n\nThe $400 test applies to net earnings after expenses, not gross receipts. A freelancer who received $3,000 but had $2,800 of expenses has a $200 profit and no self-employment tax.\n\nExam tip: church employees who receive $108.28 or more in wages from an electing church or church-controlled organization also owe self-employment tax on those wages.",
+  "source": {
+   "title": "Topic no. 554, Self-employment tax",
+   "url": "https://www.irs.gov/taxtopics/tc554",
+   "section": "Self-employment tax"
+  }
+ },
+ {
+  "id": "p1d4-02",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Self-employment tax",
+  "difficulty": "Medium",
+  "prompt": "Which statement about self-employment tax is correct?",
+  "choices": [
+   "One-half of the self-employment tax is deducted as an adjustment to income",
+   "All of the self-employment tax is deducted on Schedule A",
+   "It is figured on gross receipts before business expenses",
+   "It does not apply to a taxpayer who already receives Social Security benefits"
+  ],
+  "answer": "One-half of the self-employment tax is deducted as an adjustment to income",
+  "explanation": "Self-employment tax is the self-employed person's version of Social Security and Medicare taxes. The rate is 15.3%: 12.4% for Social Security on net earnings up to the 2025 wage base of $176,100 (reduced by any wages), and 2.9% for Medicare on all net earnings. It is figured on Schedule SE using 92.35% of net profit.\n\nBecause an employer can deduct its half of payroll taxes, a self-employed person deducts one-half of the self-employment tax as an adjustment to income on Schedule 1. This lowers AGI and income tax, but it doesn't reduce the self-employment tax itself.\n\nExam tip: for a $50,000 net profit, net earnings are $46,175, self-employment tax is about $7,065, and the adjustment is about $3,532.",
+  "source": {
+   "title": "Topic no. 554, Self-employment tax",
+   "url": "https://www.irs.gov/taxtopics/tc554",
+   "section": "Self-employment tax"
+  }
+ },
+ {
+  "id": "p1d4-03",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Additional Medicare Tax",
+  "difficulty": "Easy",
+  "prompt": "The 0.9% Additional Medicare Tax applies to a married couple filing jointly when their combined wages and self-employment income are more than what amount?",
+  "choices": [
+   "$125,000",
+   "$400,000",
+   "$200,000",
+   "$250,000"
+  ],
+  "answer": "$250,000",
+  "explanation": "The Additional Medicare Tax is 0.9% of wages, compensation and self-employment income above a threshold based on filing status: $250,000 for married filing jointly, $125,000 for married filing separately, and $200,000 for all other filers. The thresholds are not indexed for inflation.\n\nEmployers must withhold the 0.9% once an employee's wages from that employer pass $200,000, regardless of filing status. Because a couple's threshold is based on their combined income, they may owe more or less than was withheld, and they settle the difference on Form 8959. There is no employer share of this tax.\n\nExam tip: don't confuse it with the 3.8% net investment income tax. That tax uses the same threshold amounts, but applies to investment income instead of wages.",
+  "source": {
+   "title": "Topic no. 560, Additional Medicare Tax",
+   "url": "https://www.irs.gov/taxtopics/tc560",
+   "section": "Additional Medicare Tax"
+  }
+ },
+ {
+  "id": "p1d4-04",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Net investment income tax",
+  "difficulty": "Hard",
+  "prompt": "Li is single with modified AGI of $230,000, which includes $50,000 of net investment income. What is her net investment income tax?",
+  "choices": [
+   "$8,740",
+   "$1,140",
+   "$270",
+   "$1,900"
+  ],
+  "answer": "$1,140",
+  "explanation": "The net investment income tax is 3.8% of the smaller of two amounts: net investment income, or the amount by which modified AGI exceeds the threshold. The thresholds are $200,000 for single and head of household filers, $250,000 for married filing jointly, and $125,000 for married filing separately.\n\nFor Li, the MAGI excess is $230,000 − $200,000 = $30,000, and net investment income is $50,000. The smaller amount is $30,000, so the tax is 3.8% × $30,000 = $1,140, figured on Form 8960.\n\nExam tip: net investment income includes interest, dividends, capital gains, rents, royalties and passive business income. It excludes wages, self-employment income, IRA and pension distributions, and gain on a home sale that is excluded under section 121.",
+  "source": {
+   "title": "Net Investment Income Tax",
+   "url": "https://www.irs.gov/individuals/net-investment-income-tax",
+   "section": "Net Investment Income Tax"
+  }
+ },
+ {
+  "id": "p1d4-05",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Estimated tax",
+  "difficulty": "Medium",
+  "prompt": "Ken's 2024 adjusted gross income was $220,000. To avoid an underpayment penalty for 2025, his withholding and timely estimated payments must generally be at least the smaller of 90% of his 2025 tax or what share of his 2024 tax?",
+  "choices": [
+   "110%",
+   "66⅔%",
+   "100%",
+   "90%"
+  ],
+  "answer": "110%",
+  "explanation": "A taxpayer generally avoids the underpayment of estimated tax penalty if they owe less than $1,000 after withholding and credits, or if their withholding and timely estimated payments are at least the smaller of 90% of this year's tax or 100% of last year's tax (provided last year's return covered 12 months).\n\nFor higher-income taxpayers, the prior-year safe harbor is 110% instead of 100% when the prior year's AGI was more than $150,000 ($75,000 if married filing separately). Ken's 2024 AGI was $220,000, so he needs 110% of his 2024 tax, paid in four equal installments by April 15, June 15, September 15 and January 15.\n\nExam tip: withholding is treated as paid evenly through the year, whatever date it was actually withheld. Increasing withholding late in the year can therefore fix an underpayment from earlier quarters.",
+  "source": {
+   "title": "Publication 505, Tax Withholding and Estimated Tax",
+   "url": "https://www.irs.gov/publications/p505",
+   "section": "Chapter 2: Estimated Tax"
+  }
+ },
+ {
+  "id": "p1d4-06",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Household employees",
+  "difficulty": "Medium",
+  "prompt": "A family paid their nanny, who is their household employee, $9,000 in cash wages during 2025. How do they report the Social Security and Medicare taxes on those wages?",
+  "choices": [
+   "On Schedule C, as a business expense",
+   "On Schedule H, filed with their Form 1040",
+   "On Schedule SE, as self-employment tax",
+   "On Form 1099-NEC, because no employment taxes apply"
+  ],
+  "answer": "On Schedule H, filed with their Form 1040",
+  "explanation": "A household employer who pays a household employee cash wages of $2,800 or more in 2025 must withhold the employee's Social Security and Medicare taxes (7.65%) and pay the matching employer share. A household employer who pays total cash wages of $1,000 or more in any calendar quarter also owes federal unemployment (FUTA) tax.\n\nThese taxes are reported on Schedule H and paid with the employer's Form 1040. Withholding or estimated payments can be increased to cover them and avoid an underpayment penalty. The family must also get an employer identification number, give the nanny a Form W-2 and file it with the Social Security Administration.\n\nExam tip: wages paid to the employer's spouse, to the employer's child under 21, to the employer's parent (in most cases), or to an employee under 18 who is a student aren't subject to Social Security and Medicare taxes.",
+  "source": {
+   "title": "Publication 926, Household Employer's Tax Guide",
+   "url": "https://www.irs.gov/publications/p926",
+   "section": "Social Security and Medicare Taxes; How Do You Make Tax Payments?"
+  }
+ },
+ {
+  "id": "p1d4-07",
+  "part": "part1",
+  "domain": "Taxation",
+  "topic": "Excess Social Security tax",
+  "difficulty": "Medium",
+  "prompt": "Ana worked for two unrelated employers in 2025. Each withheld Social Security tax correctly, but her combined wages were more than the $176,100 wage base. How does she recover the excess Social Security tax withheld?",
+  "choices": [
+   "She cannot recover it, but it increases her future benefits",
+   "She files Form 843 with the Social Security Administration",
+   "She claims it as a credit against her income tax on her Form 1040",
+   "She asks each employer to refund its share"
+  ],
+  "answer": "She claims it as a credit against her income tax on her Form 1040",
+  "explanation": "For 2025 the Social Security tax is 6.2% of wages up to $176,100, so the most an employee should pay is $10,918.20. Each employer must withhold on wages it pays up to the wage base, without considering what other employers paid. An employee who works for two or more employers can therefore end up with too much withheld.\n\nWhen the excess is caused by more than one employer, the employee claims it as a credit on Schedule 3 of Form 1040, which reduces the tax due or increases the refund. If a single employer withheld more than $10,918.20, the employee asks that employer to repay it, and files Form 843 only if the employer won't.\n\nExam tip: there is no wage base for Medicare tax, so excess Medicare withholding never happens this way.",
+  "source": {
+   "title": "Topic no. 608, Excess Social Security and RRTA tax withheld",
+   "url": "https://www.irs.gov/taxtopics/tc608",
+   "section": "Excess Social Security and RRTA tax withheld"
+  }
+ },
+ {
+  "id": "p1d5-01",
+  "part": "part1",
+  "domain": "Advising the Individual Taxpayer",
+  "topic": "Injured spouse",
+  "difficulty": "Medium",
+  "prompt": "A couple's joint refund was applied to the husband's past-due student loan, a debt from before the marriage. The wife had her own income and withholding. Which form does she file to get back her share of the refund?",
+  "choices": [
+   "Form 8857, Request for Innocent Spouse Relief",
+   "Form 1040-X, Amended U.S. Individual Income Tax Return",
+   "Form 8379, Injured Spouse Allocation",
+   "Form 911, Request for Taxpayer Advocate Service Assistance"
+  ],
+  "answer": "Form 8379, Injured Spouse Allocation",
+  "explanation": "When a joint refund is offset to pay one spouse's past-due federal tax, state income tax, child support, spousal support or federal nontax debt (such as a student loan), the other spouse is an injured spouse if they are not legally responsible for the debt and made payments or had refundable credits that went into the refund.\n\nThe injured spouse files Form 8379 to have the refund allocated between the spouses, so their share is returned. It can be filed with the joint return, which prevents the offset in the first place, or by itself after the offset happens. It generally must be filed within three years of the return's due date or two years after the tax was paid.\n\nExam tip: remember the difference as \"injured is about a refund, innocent is about a tax bill.\"",
+  "source": {
+   "title": "Reduced refund",
+   "url": "https://www.irs.gov/refunds/reduced-refund",
+   "section": "Injured spouse claim"
+  }
+ },
+ {
+  "id": "p1d5-02",
+  "part": "part1",
+  "domain": "Advising the Individual Taxpayer",
+  "topic": "Claims for refund",
+  "difficulty": "Easy",
+  "prompt": "In general, by when must a taxpayer file a claim for refund?",
+  "choices": [
+   "Within two years after the return was filed or three years after the tax was paid, whichever is earlier",
+   "Within three years after the return was filed or two years after the tax was paid, whichever is later",
+   "At any time, as long as the original return was filed on time",
+   "Within one year after the IRS processed the return"
+  ],
+  "answer": "Within three years after the return was filed or two years after the tax was paid, whichever is later",
+  "explanation": "A taxpayer generally must file a claim for credit or refund (usually Form 1040-X for an individual) within three years from the date the original return was filed or within two years from the date the tax was paid, whichever is later. A return filed before its due date is treated as filed on the due date.\n\nThe amount refundable is also limited by a lookback rule. A claim filed within three years can recover tax paid in the three years (plus any extension) before the claim. A claim filed under the two-year rule can recover only tax paid in the two years before the claim.\n\nExam tip: special longer periods apply to bad debts and worthless securities (seven years) and to foreign tax credits (ten years).",
+  "source": {
+   "title": "Publication 556, Examination of Returns, Appeal Rights, and Claims for Refund",
+   "url": "https://www.irs.gov/publications/p556",
+   "section": "Claims for Refund: Time for Filing a Claim for Refund"
+  }
+ },
+ {
+  "id": "p1d5-03",
+  "part": "part1",
+  "domain": "Advising the Individual Taxpayer",
+  "topic": "Divorce",
+  "difficulty": "Medium",
+  "prompt": "Under a divorce decree signed in 2021, Jay pays his former spouse $2,000 a month in alimony. How are the 2025 payments treated?",
+  "choices": [
+   "Jay cannot deduct them, and his former spouse does not include them in income",
+   "Jay cannot deduct them, but his former spouse includes them in income",
+   "Jay deducts them as an itemized deduction, and his former spouse does not include them in income",
+   "Jay deducts them as an adjustment to income, and his former spouse includes them in income"
+  ],
+  "answer": "Jay cannot deduct them, and his former spouse does not include them in income",
+  "explanation": "For a divorce or separation agreement executed after December 31, 2018, alimony and separate maintenance payments are not deductible by the payer and are not taxable to the recipient. Jay's decree was signed in 2021, so his payments have no tax effect for either of them.\n\nAgreements executed before 2019 still follow the old rule: the payer deducts the alimony as an adjustment to income, and the recipient reports it as income. A pre-2019 agreement switches to the new rule only if it is modified after 2018 and the modification expressly says the new rule applies.\n\nExam tip: child support is never deductible or taxable under either rule, and a property settlement between spouses in a divorce generally isn't taxable either.",
+  "source": {
+   "title": "Publication 504, Divorced or Separated Individuals",
+   "url": "https://www.irs.gov/publications/p504",
+   "section": "Alimony"
+  }
+ },
+ {
+  "id": "p1d5-04",
+  "part": "part1",
+  "domain": "Advising the Individual Taxpayer",
+  "topic": "Education planning",
+  "difficulty": "Medium",
+  "prompt": "A client asks about saving for a child's college costs in a section 529 plan. Which statement is correct?",
+  "choices": [
+   "Distributions are tax free only if the beneficiary also claims an education credit for the same expenses",
+   "The account must be fully distributed by the time the beneficiary turns 18",
+   "Contributions are deductible on the federal return up to the annual gift tax exclusion",
+   "Earnings are not taxed when distributions are used for the beneficiary's qualified education expenses"
+  ],
+  "answer": "Earnings are not taxed when distributions are used for the beneficiary's qualified education expenses",
+  "explanation": "A section 529 qualified tuition program lets a family save for education. Contributions are made with after-tax money and aren't deductible on the federal return, but the earnings grow tax deferred. Distributions are completely tax free when they are used for the beneficiary's qualified education expenses: college tuition, fees, books, supplies, equipment, and room and board for students enrolled at least half time, as well as up to $10,000 a year of K–12 tuition.\n\nIf a distribution is more than the qualified expenses, the earnings part of the excess is taxable and is generally subject to a 10% additional tax. Contributions are gifts for gift tax purposes, and a donor can elect to spread a large contribution over five years of annual exclusions.\n\nExam tip: when coordinating with the American opportunity credit, set aside $4,000 of expenses for the credit and use the 529 distribution for the rest, so the same expenses aren't counted twice.",
+  "source": {
+   "title": "Publication 970, Tax Benefits for Education",
+   "url": "https://www.irs.gov/publications/p970",
+   "section": "Qualified Tuition Program (QTP)"
+  }
+ },
+ {
+  "id": "p1d5-05",
+  "part": "part1",
+  "domain": "Advising the Individual Taxpayer",
+  "topic": "Joint and several liability",
+  "difficulty": "Medium",
+  "prompt": "A couple filed a joint return for 2023 and divorced in 2025. The IRS later assesses more tax on the 2023 return because of income the husband left off. From whom can the IRS collect?",
+  "choices": [
+   "Each spouse, for half of the amount",
+   "Either spouse, for the full amount, unless the wife qualifies for relief",
+   "Only the husband, because the income was his",
+   "Only the spouse the divorce decree makes responsible for the tax"
+  ],
+  "answer": "Either spouse, for the full amount, unless the wife qualifies for relief",
+  "explanation": "When spouses file a joint return, each is jointly and individually (severally) liable for the entire tax, interest and penalties on that return. This remains true after a divorce, and even if the decree assigns the tax debt to one of them.\n\nA spouse who didn't know about the error may be able to request relief on Form 8857. Innocent spouse relief applies when the requesting spouse did not know and had no reason to know of the understatement. Separation of liability relief divides the deficiency between divorced or separated spouses. Equitable relief covers other cases, including unpaid tax.\n\nExam tip: when advising on filing status, mention joint and several liability as a reason a spouse might choose married filing separately.",
+  "source": {
+   "title": "Publication 971, Innocent Spouse Relief",
+   "url": "https://www.irs.gov/publications/p971",
+   "section": "Joint and several liability"
+  }
+ },
+ {
+  "id": "p1d6-01",
+  "part": "part1",
+  "domain": "Specialized Returns for Individuals",
+  "topic": "Gift splitting",
+  "difficulty": "Medium",
+  "prompt": "A married couple elects gift splitting for 2025. What is the most they can give to one child during the year without using any of their lifetime exclusion?",
+  "choices": [
+   "$19,000",
+   "$36,000",
+   "$13,990,000",
+   "$38,000"
+  ],
+  "answer": "$38,000",
+  "explanation": "The annual gift tax exclusion for 2025 is $19,000 per recipient. Gifts up to that amount to any number of people don't use any of the donor's lifetime exclusion and don't require a gift tax return.\n\nWith gift splitting, a married couple treats every gift either spouse makes to a third party during the year as made one-half by each. That lets them give $19,000 × 2 = $38,000 to the child, even if all of it comes from one spouse's money. Both spouses must consent, both must be U.S. citizens or residents, and the election applies to all gifts both of them make that year.\n\nExam tip: electing gift splitting requires filing Form 709, even when the split gifts are fully covered by the annual exclusions.",
+  "source": {
+   "title": "Frequently asked questions on gift taxes",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/frequently-asked-questions-on-gift-taxes",
+   "section": "How many annual exclusions are available?"
+  }
+ },
+ {
+  "id": "p1d6-02",
+  "part": "part1",
+  "domain": "Specialized Returns for Individuals",
+  "topic": "Gift tax exclusions",
+  "difficulty": "Medium",
+  "prompt": "Which transfer is NOT a taxable gift, no matter how large it is?",
+  "choices": [
+   "Forgiving a $50,000 loan to a brother",
+   "Adding a daughter as a joint owner of a rental property",
+   "Tuition paid directly to a university for a grandchild",
+   "A check given to a grandchild to cover tuition"
+  ],
+  "answer": "Tuition paid directly to a university for a grandchild",
+  "explanation": "Some transfers are excluded from gift tax without any dollar limit: tuition paid directly to an educational organization for someone, medical expenses paid directly to the provider for someone, gifts to a U.S. citizen spouse, gifts to qualifying charities, and gifts to political organizations.\n\nThe tuition exclusion covers tuition only, not books, supplies or room and board, and the payment must go straight to the school. A grandparent can pay $80,000 of tuition directly and still give the same grandchild $19,000 under the annual exclusion.\n\nExam tip: if a question says the donor gave the money to the student or parent, the unlimited exclusion doesn't apply, even if the money ends up paying tuition.",
+  "source": {
+   "title": "Instructions for Form 709, United States Gift (and Generation-Skipping Transfer) Tax Return",
+   "url": "https://www.irs.gov/instructions/i709",
+   "section": "Transfers Not Subject to the Gift Tax: Educational exclusion"
+  }
+ },
+ {
+  "id": "p1d6-03",
+  "part": "part1",
+  "domain": "Specialized Returns for Individuals",
+  "topic": "Estate tax return",
+  "difficulty": "Easy",
+  "prompt": "When is Form 706, the estate tax return, due?",
+  "choices": [
+   "April 15 of the year after death",
+   "Nine months after the date of death",
+   "One year after an executor is appointed",
+   "Six months after the date of death"
+  ],
+  "answer": "Nine months after the date of death",
+  "explanation": "Form 706 is due nine months after the decedent's date of death, and any estate tax is due at the same time. The executor can request an automatic six-month extension of time to file on Form 4768. An extension of time to pay can be granted separately for reasonable cause.\n\nA return is required when the gross estate plus adjusted taxable gifts is more than the basic exclusion amount for the year of death: $13,990,000 for 2025 deaths ($15,000,000 for 2026). An executor may also file to elect portability even when no return is otherwise required.\n\nExam tip: keep the decedent's returns straight. The final Form 1040 is due April 15 of the year after death, Form 1041 is due on the estate's own schedule, and Form 706 is due nine months after death.",
+  "source": {
+   "title": "Instructions for Form 706, United States Estate (and Generation-Skipping Transfer) Tax Return",
+   "url": "https://www.irs.gov/instructions/i706",
+   "section": "When To File"
+  }
+ },
+ {
+  "id": "p1d6-04",
+  "part": "part1",
+  "domain": "Specialized Returns for Individuals",
+  "topic": "Portability",
+  "difficulty": "Hard",
+  "prompt": "Al died in 2025 with an estate well under the filing threshold. His widow wants to be able to use his unused exclusion amount at her own death. What has to happen?",
+  "choices": [
+   "Nothing. The unused exclusion passes to a surviving spouse automatically",
+   "The widow claims it on the couple's final joint Form 1040",
+   "Al's executor must file a complete Form 706 on time to elect portability",
+   "The widow files Form 709 within nine months of Al's death"
+  ],
+  "answer": "Al's executor must file a complete Form 706 on time to elect portability",
+  "explanation": "Portability lets a surviving spouse use the deceased spouse's unused exclusion (the DSUE amount) in addition to their own basic exclusion, both for lifetime gifts and at death. It is not automatic. The executor must elect it on a complete and properly prepared Form 706 filed on time, even if the estate is too small to otherwise require a return.\n\nFor estates that file only to elect portability, the IRS allows a simplified method that lets certain asset values be estimated, and Rev. Proc. 2022-32 allows a late election up to five years after the date of death in some cases.\n\nExam tip: the DSUE amount is fixed at the first spouse's death and is not indexed for inflation. If the survivor remarries, they can only use the DSUE amount from their most recent deceased spouse.",
+  "source": {
+   "title": "Instructions for Form 706, United States Estate (and Generation-Skipping Transfer) Tax Return",
+   "url": "https://www.irs.gov/instructions/i706",
+   "section": "Portability Election"
+  }
+ },
+ {
+  "id": "p1d6-05",
+  "part": "part1",
+  "domain": "Specialized Returns for Individuals",
+  "topic": "FBAR and Form 8938",
+  "difficulty": "Hard",
+  "prompt": "Which statement correctly compares Form 8938 with the FBAR?",
+  "choices": [
+   "Both are filed with FinCEN and share the same $10,000 threshold",
+   "A taxpayer who files Form 8938 does not have to file the FBAR for the same accounts",
+   "Form 8938 is required only from taxpayers who live outside the United States",
+   "Form 8938 is attached to the income tax return, the FBAR is filed separately with FinCEN, and filing one does not replace the other"
+  ],
+  "answer": "Form 8938 is attached to the income tax return, the FBAR is filed separately with FinCEN, and filing one does not replace the other",
+  "explanation": "Form 8938 reports specified foreign financial assets and is attached to the income tax return. For an unmarried taxpayer living in the U.S., it is required when those assets are worth more than $50,000 on the last day of the year or more than $75,000 at any time during the year. Thresholds are doubled for joint filers and much higher for taxpayers living abroad. It covers foreign accounts and also foreign stocks, partnership interests and similar assets held outside an account.\n\nThe FBAR (FinCEN Form 114) is filed electronically with FinCEN, has a $10,000 aggregate threshold, and covers foreign financial accounts, including accounts where the person only has signature authority.\n\nExam tip: because the rules differ in who files, what is reported and the dollar thresholds, a taxpayer may have to file both, either one, or neither.",
+  "source": {
+   "title": "Instructions for Form 8938, Statement of Specified Foreign Financial Assets",
+   "url": "https://www.irs.gov/instructions/i8938",
+   "section": "Comparison of Form 8938 and FBAR Requirements"
+  }
+ },
+ {
+  "id": "p2d1-01",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "LLC classification",
+  "difficulty": "Easy",
+  "prompt": "An individual forms a domestic LLC, is its only member, and files no entity classification election. How is the LLC treated for federal income tax?",
+  "choices": [
+   "As a partnership filing Form 1065",
+   "As a C corporation filing Form 1120",
+   "As a disregarded entity, with its activity reported on the owner's return",
+   "As an S corporation filing Form 1120-S"
+  ],
+  "answer": "As a disregarded entity, with its activity reported on the owner's return",
+  "explanation": "Under the check-the-box rules, a domestic LLC's default classification depends on how many members it has. With one member, it is disregarded as separate from its owner. With two or more members, it is a partnership.\n\nThis LLC has one individual owner and made no election, so it is disregarded. The owner reports its income and expenses on Schedule C (or Schedule E or F, depending on the activity) and pays self-employment tax on the profit. The LLC is still treated as a separate entity for employment taxes and certain excise taxes, so it may need its own EIN if it has employees.\n\nExam tip: an LLC can elect corporate treatment on Form 8832, or S corporation treatment directly on Form 2553, which also counts as the election to be taxed as a corporation.",
+  "source": {
+   "title": "Limited liability company (LLC)",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/limited-liability-company-llc",
+   "section": "Classifications"
+  }
+ },
+ {
+  "id": "p2d1-02",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Qualified joint venture",
+  "difficulty": "Medium",
+  "prompt": "A married couple who file jointly are the only owners of an unincorporated business, and both materially participate. They elect to treat it as a qualified joint venture. How do they report the business?",
+  "choices": [
+   "Each spouse files a separate Schedule C and Schedule SE for their share",
+   "They file Form 1120 and pay themselves wages",
+   "They file Form 1065 and give each other a Schedule K-1",
+   "One spouse reports everything on a single Schedule C"
+  ],
+  "answer": "Each spouse files a separate Schedule C and Schedule SE for their share",
+  "explanation": "A married couple who jointly own and operate an unincorporated business would normally have to file a partnership return. If they are the only members, both materially participate, and they file a joint return, they can elect to be a qualified joint venture instead.\n\nEach spouse then reports their share of the income, deductions and credits (usually by ownership percentage) on their own Schedule C and pays self-employment tax on their own Schedule SE. Each spouse earns Social Security credit for their share, without the extra work of a partnership return.\n\nExam tip: a business owned through a state-law LLC generally can't elect qualified joint venture status, but in a community property state the spouses can choose to treat an LLC as a disregarded entity or as a partnership.",
+  "source": {
+   "title": "Election for married couples unincorporated businesses",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/election-for-married-couples-unincorporated-businesses",
+   "section": "Election for married couples unincorporated businesses"
+  }
+ },
+ {
+  "id": "p2d1-03",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "S corporation eligibility",
+  "difficulty": "Medium",
+  "prompt": "Which fact would prevent a domestic corporation from electing S corporation status?",
+  "choices": [
+   "It has voting and nonvoting common stock with identical rights to distributions",
+   "One shareholder is a nonresident alien",
+   "One shareholder is the estate of a deceased shareholder",
+   "It has 75 shareholders"
+  ],
+  "answer": "One shareholder is a nonresident alien",
+  "explanation": "To elect S corporation status, a corporation must be a domestic corporation with no more than 100 shareholders (members of a family can be treated as one), have only eligible shareholders, and have only one class of stock. It must not be an ineligible corporation, such as certain banks and insurance companies.\n\nEligible shareholders are individuals who are U.S. citizens or residents, estates, and certain trusts and tax-exempt organizations. Partnerships, corporations and nonresident aliens can't be shareholders. A single nonresident alien shareholder makes the corporation ineligible, and if one acquires stock after the election, the election ends.\n\nExam tip: the one-class-of-stock test looks at rights to distributions and liquidation proceeds. Voting differences are allowed.",
+  "source": {
+   "title": "S corporations",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporations",
+   "section": "S corporations: who may elect"
+  }
+ },
+ {
+  "id": "p2d1-04",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "S corporation election",
+  "difficulty": "Medium",
+  "prompt": "A new calendar-year corporation wants its S election to take effect for its first tax year. By when must it file Form 2553?",
+  "choices": [
+   "By the last day of that tax year",
+   "By the due date of its first income tax return, including extensions",
+   "Within 75 days after the end of that tax year",
+   "No more than two months and 15 days after the start of that tax year"
+  ],
+  "answer": "No more than two months and 15 days after the start of that tax year",
+  "explanation": "An S election is made on Form 2553, signed by all shareholders. To take effect for a given tax year, it must be filed at any time during the year before, or no more than two months and 15 days after the beginning of the year it is to take effect.\n\nFor a new corporation, the tax year begins on the earliest of when it has shareholders, acquires assets or begins doing business. For an existing calendar-year corporation, the deadline is March 15. An election filed after the deadline generally takes effect the following year.\n\nExam tip: a corporation that misses the deadline but had reasonable cause can often get relief under Rev. Proc. 2013-30 by filing Form 2553 within three years and 75 days of the intended effective date with the required statement.",
+  "source": {
+   "title": "Instructions for Form 2553, Election by a Small Business Corporation",
+   "url": "https://www.irs.gov/instructions/i2553",
+   "section": "When To Make the Election"
+  }
+ },
+ {
+  "id": "p2d1-05",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Partnership return",
+  "difficulty": "Easy",
+  "prompt": "When is Form 1065 due for a calendar-year partnership?",
+  "choices": [
+   "April 15",
+   "January 31",
+   "March 15",
+   "May 15"
+  ],
+  "answer": "March 15",
+  "explanation": "A partnership must file Form 1065 by the 15th day of the third month after its tax year ends. For a calendar-year partnership that is March 15, the same as for an S corporation's Form 1120-S. Form 7004 gives an automatic six-month extension to September 15.\n\nThe March deadline exists so partners get their Schedules K-1 in time to file their own returns by April 15. Late filing carries a penalty for each month or part of a month (up to 12 months), multiplied by the number of partners: $245 per partner per month for returns due in 2025.\n\nExam tip: a weekend or legal holiday moves the deadline to the next business day.",
+  "source": {
+   "title": "Instructions for Form 1065, U.S. Return of Partnership Income",
+   "url": "https://www.irs.gov/instructions/i1065",
+   "section": "When To File"
+  }
+ },
+ {
+  "id": "p2d1-06",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Partner's basis",
+  "difficulty": "Medium",
+  "prompt": "Nia joins a partnership by contributing $10,000 in cash and equipment with an adjusted basis of $25,000 and a fair market value of $40,000. The partnership has no liabilities. What is the basis of her partnership interest?",
+  "choices": [
+   "$50,000",
+   "$35,000",
+   "$40,000",
+   "$25,000"
+  ],
+  "answer": "$35,000",
+  "explanation": "Generally, no gain or loss is recognized when a partner contributes property to a partnership in exchange for a partnership interest. The partner's starting basis is the money contributed plus the adjusted basis of the property contributed.\n\nNia's basis is $10,000 + $25,000 = $35,000. The partnership takes over her $25,000 basis in the equipment, and the $15,000 of built-in gain stays with her: if the partnership later sells the equipment, that gain is allocated to Nia.\n\nExam tip: liabilities change basis. When a contributing partner is relieved of debt, the relief is treated as a distribution of money that reduces basis, and gain results if it is more than basis.",
+  "source": {
+   "title": "Publication 541, Partnerships",
+   "url": "https://www.irs.gov/publications/p541",
+   "section": "Basis of Partner's Interest"
+  }
+ },
+ {
+  "id": "p2d1-07",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Guaranteed payments",
+  "difficulty": "Medium",
+  "prompt": "A partnership pays one partner $30,000 a year for services, whatever the partnership earns. How is the payment treated?",
+  "choices": [
+   "It is wages reported on Form W-2 with income tax withheld",
+   "The partnership deducts it, and the partner reports it as ordinary income subject to self-employment tax",
+   "The partnership cannot deduct it, and the partner reports it as a capital gain",
+   "It is a distribution that reduces the partner's basis and is not income"
+  ],
+  "answer": "The partnership deducts it, and the partner reports it as ordinary income subject to self-employment tax",
+  "explanation": "Guaranteed payments are payments to a partner for services or the use of capital that are figured without regard to partnership income. The partnership generally deducts them in figuring ordinary business income, unless they must be capitalized.\n\nThe partner includes the guaranteed payment in income for the partnership's tax year that ends with or within the partner's tax year. It is reported on Schedule K-1 and is subject to self-employment tax when paid for services. Partners aren't employees, so no income tax or FICA is withheld, and the partner generally pays estimated tax.\n\nExam tip: a partnership can report an ordinary loss after deducting guaranteed payments. The partner still includes the full guaranteed payment in income and then takes their share of the loss.",
+  "source": {
+   "title": "Publication 541, Partnerships",
+   "url": "https://www.irs.gov/publications/p541",
+   "section": "Guaranteed Payments"
+  }
+ },
+ {
+  "id": "p2d1-08",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Partnership distributions",
+  "difficulty": "Hard",
+  "prompt": "A partner's basis in his partnership interest is $15,000. The partnership distributes $22,000 in cash to him in a distribution that does not liquidate his interest. What is the result?",
+  "choices": [
+   "He recognizes a $22,000 gain, and his basis is unchanged",
+   "He recognizes $7,000 of ordinary income, and his basis is unchanged",
+   "He recognizes no gain, and his basis becomes negative $7,000",
+   "He recognizes a $7,000 gain, and his basis drops to zero"
+  ],
+  "answer": "He recognizes a $7,000 gain, and his basis drops to zero",
+  "explanation": "A distribution is generally a tax-free return of the partner's basis. A partner recognizes gain only when money distributed (including a decrease in their share of partnership liabilities) is more than the adjusted basis of their partnership interest just before the distribution.\n\nHere the partner receives $22,000 against a $15,000 basis. The first $15,000 reduces his basis to zero, and the remaining $22,000 − $15,000 = $7,000 is gain. The gain is treated as gain from selling a partnership interest, usually capital gain, though part can be ordinary if the partnership holds unrealized receivables or inventory items.\n\nExam tip: when figuring basis at year end, apply the year's income increases before distributions, and distributions before losses.",
+  "source": {
+   "title": "Publication 541, Partnerships",
+   "url": "https://www.irs.gov/publications/p541",
+   "section": "Partnership Distributions: Partner's Gain or Loss"
+  }
+ },
+ {
+  "id": "p2d1-09",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Corporate tax",
+  "difficulty": "Easy",
+  "prompt": "A C corporation has taxable income of $100,000 for 2025. What is its federal income tax?",
+  "choices": [
+   "$15,000",
+   "$22,250",
+   "$21,000",
+   "$35,000"
+  ],
+  "answer": "$21,000",
+  "explanation": "Since 2018, C corporations pay a flat 21% federal income tax on all taxable income. There are no brackets, and personal service corporations pay the same rate. The corporation's tax is $100,000 × 21% = $21,000.\n\nA calendar-year corporation files Form 1120 by April 15 (the 15th day of the fourth month after year end), and Form 7004 gives a six-month extension. A corporation generally must make quarterly estimated tax payments if it expects to owe $500 or more.\n\nExam tip: the profits of a C corporation can be taxed twice, once at the corporate level and again when shareholders receive dividends. This is the main tradeoff to discuss when choosing between a C corporation and a pass-through entity.",
+  "source": {
+   "title": "Publication 542, Corporations",
+   "url": "https://www.irs.gov/publications/p542",
+   "section": "Figuring Tax"
+  }
+ },
+ {
+  "id": "p2d1-10",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Dividends-received deduction",
+  "difficulty": "Medium",
+  "prompt": "A domestic C corporation owns 30% of the stock of another domestic corporation and receives a dividend from it. Before any taxable income limit, what percentage of the dividend can it deduct?",
+  "choices": [
+   "65%",
+   "50%",
+   "80%",
+   "100%"
+  ],
+  "answer": "65%",
+  "explanation": "A corporation that receives dividends from a domestic corporation can deduct a percentage of them, which reduces the effect of tax being charged several times as profits move between corporations. The percentage depends on how much of the paying corporation it owns: 50% for less than 20%, 65% for 20% or more, and 100% for members of the same affiliated group.\n\nWith 30% ownership, the corporation deducts 65% of the dividend. The deduction is generally limited to the same percentage of taxable income figured without the deduction, unless claiming the full deduction creates or increases a net operating loss.\n\nExam tip: the deduction isn't allowed if the corporation held the stock for 45 days or less during the 91-day period that starts 45 days before the ex-dividend date.",
+  "source": {
+   "title": "Publication 542, Corporations",
+   "url": "https://www.irs.gov/publications/p542",
+   "section": "Dividends-Received Deduction"
+  }
+ },
+ {
+  "id": "p2d1-11",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Forming a corporation",
+  "difficulty": "Medium",
+  "prompt": "Sam transfers land with an adjusted basis of $30,000 and a fair market value of $100,000 to a new corporation for 100% of its stock and nothing else. What is his basis in the stock?",
+  "choices": [
+   "$70,000",
+   "$100,000",
+   "$0",
+   "$30,000"
+  ],
+  "answer": "$30,000",
+  "explanation": "Under section 351, no gain or loss is recognized when one or more people transfer property to a corporation solely in exchange for its stock and, right after the exchange, they control the corporation. Control means owning at least 80% of the total combined voting power and at least 80% of each other class of stock.\n\nSam owns 100%, so the exchange is tax free. His stock takes the basis of the land he gave up, $30,000, and the corporation's basis in the land is also $30,000. The $70,000 of gain is postponed, not forgiven: it would be recognized if he later sold the stock, or by the corporation if it sold the land.\n\nExam tip: if a transferor also receives money or other property (boot), gain is recognized up to the boot received. Stock basis then becomes the property's basis, minus the boot received, plus the gain recognized.",
+  "source": {
+   "title": "Publication 542, Corporations",
+   "url": "https://www.irs.gov/publications/p542",
+   "section": "Property Exchanged for Stock"
+  }
+ },
+ {
+  "id": "p2d1-12",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Stock for services",
+  "difficulty": "Medium",
+  "prompt": "An engineer receives stock worth $20,000 from a new corporation in return for design services. How is this treated?",
+  "choices": [
+   "She has a $20,000 capital gain",
+   "She has no income until she sells the stock",
+   "She has $20,000 of ordinary income, and the stock is not counted as issued for property under the control test",
+   "She has no income, because transfers to a controlled corporation are tax free"
+  ],
+  "answer": "She has $20,000 of ordinary income, and the stock is not counted as issued for property under the control test",
+  "explanation": "Section 351 nonrecognition applies only to transfers of property. Services are not property, so a person who receives stock for services has compensation income equal to the fair market value of the stock. The engineer reports $20,000 of ordinary income, and her basis in the stock is $20,000.\n\nThis also affects the 80% control test. Stock issued for services doesn't count as stock issued for property, which can cause other transferors' exchanges to fail the control test if the service provider receives a large share.\n\nExam tip: if the stock is subject to a substantial risk of forfeiture, such as a vesting requirement, it is taxed when it vests, unless the person files a section 83(b) election within 30 days to be taxed at the time of transfer.",
+  "source": {
+   "title": "Publication 542, Corporations",
+   "url": "https://www.irs.gov/publications/p542",
+   "section": "Property Exchanged for Stock: Services rendered"
+  }
+ },
+ {
+  "id": "p2d1-13",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "Accumulated earnings tax",
+  "difficulty": "Hard",
+  "prompt": "Most C corporations can accumulate earnings up to what amount before they need to show a reasonable business need to avoid the accumulated earnings tax?",
+  "choices": [
+   "$100,000",
+   "$250,000",
+   "$500,000",
+   "$150,000"
+  ],
+  "answer": "$250,000",
+  "explanation": "The accumulated earnings tax is a 20% penalty tax on a C corporation that keeps earnings to avoid shareholder income tax on dividends, instead of distributing them. It applies to accumulated taxable income, which is taxable income with certain adjustments, minus dividends paid and the accumulated earnings credit.\n\nThe credit lets most corporations accumulate a total of $250,000 without showing a business need. For corporations whose main business is services in health, law, engineering, architecture, accounting, actuarial science, performing arts or consulting, the amount is $150,000. Beyond those amounts, the corporation must show the earnings are kept for reasonable business needs, such as planned expansion or working capital.\n\nExam tip: the tax isn't self-assessed on Form 1120. The IRS imposes it on examination.",
+  "source": {
+   "title": "Publication 542, Corporations",
+   "url": "https://www.irs.gov/publications/p542",
+   "section": "Accumulated Earnings Tax"
+  }
+ },
+ {
+  "id": "p2d1-14",
+  "part": "part2",
+  "domain": "Business Entities and Considerations",
+  "topic": "S corporation shareholder basis",
+  "difficulty": "Medium",
+  "prompt": "An S corporation shareholder starts the year with a stock basis of $10,000. Her share of ordinary business income is $6,000, and the corporation distributes $4,000 to her. What is her stock basis at year end?",
+  "choices": [
+   "$12,000",
+   "$16,000",
+   "$6,000",
+   "$10,000"
+  ],
+  "answer": "$12,000",
+  "explanation": "An S corporation shareholder's stock basis is adjusted each year in a set order. Increase it by income items (including tax-exempt income). Then decrease it by distributions, then by nondeductible expenses, and finally by losses and deductions. Basis can't go below zero.\n\nFor this shareholder: $10,000 + $6,000 = $16,000, and $16,000 − $4,000 = $12,000. Because the $4,000 distribution is less than her basis, it is a tax-free return of basis. A distribution that is more than stock basis is taxed as capital gain.\n\nExam tip: losses can be deducted against debt basis (loans the shareholder made directly to the corporation) once stock basis reaches zero, but distributions can only reduce stock basis. Shareholders attach Form 7203 to show their basis.",
+  "source": {
+   "title": "S corporation stock and debt basis",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/s-corporation-stock-and-debt-basis",
+   "section": "Computing stock basis"
+  }
+ },
+ {
+  "id": "p2d2-01",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Section 179",
+  "difficulty": "Medium",
+  "prompt": "For tax years beginning in 2025, what is the maximum section 179 deduction, and at what level of qualifying purchases does it begin to phase out?",
+  "choices": [
+   "$2,500,000, phasing out above $4,000,000",
+   "$2,500,000, with no phase-out",
+   "$1,250,000, phasing out above $3,130,000",
+   "$1,000,000, phasing out above $2,500,000"
+  ],
+  "answer": "$2,500,000, phasing out above $4,000,000",
+  "explanation": "Section 179 lets a business deduct the cost of qualifying property, such as machinery, equipment, off-the-shelf software and certain improvements to nonresidential real property, in the year it is placed in service instead of depreciating it. For tax years beginning in 2025, the maximum deduction is $2,500,000.\n\nThe limit is reduced by the amount the cost of section 179 property placed in service during the year exceeds $4,000,000, so it disappears entirely at $6,500,000. The deduction also can't be more than the taxable income from the active conduct of any trade or business, and the excess carries forward. SUVs have a separate limit of $31,300.\n\nExam tip: section 179 is elected property by property on Form 4562 and can't create a loss. Bonus depreciation, by contrast, can create or increase a loss.",
+  "source": {
+   "title": "Publication 946, How To Depreciate Property (2025)",
+   "url": "https://www.irs.gov/publications/p946",
+   "section": "What's New for 2025; Chapter 2"
+  }
+ },
+ {
+  "id": "p2d2-02",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Bonus depreciation",
+  "difficulty": "Hard",
+  "prompt": "A business bought new equipment under a contract signed in June 2025 and placed it in service in August 2025. What special depreciation allowance percentage applies if the business makes no election?",
+  "choices": [
+   "40%",
+   "100%",
+   "60%",
+   "80%"
+  ],
+  "answer": "100%",
+  "explanation": "The special depreciation allowance (bonus depreciation) was being phased down: 80% for 2023, 60% for 2024 and 40% for 2025. The 2025 tax law permanently restored 100% bonus depreciation for qualified property acquired after January 19, 2025.\n\nProperty is acquired on the date a written binding contract is signed. This equipment's contract was signed in June 2025 and it was placed in service in August 2025, so it gets 100% bonus depreciation, meaning the entire cost is deducted in 2025. Bonus depreciation is automatic unless the business elects out for a class of property.\n\nExam tip: for the first tax year ending after January 19, 2025, a taxpayer can elect to use 40% (60% for long production period property) instead of 100%. The acquisition date drives the percentage, not the date the property was placed in service.",
+  "source": {
+   "title": "Publication 946, How To Depreciate Property (2025)",
+   "url": "https://www.irs.gov/publications/p946",
+   "section": "What's New for 2025; Chapter 3"
+  }
+ },
+ {
+  "id": "p2d2-03",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Start-up costs",
+  "difficulty": "Hard",
+  "prompt": "A new business that opened in 2025 paid $53,000 of start-up costs. How much can it deduct in 2025 before amortizing the rest?",
+  "choices": [
+   "$0",
+   "$53,000",
+   "$5,000",
+   "$2,000"
+  ],
+  "answer": "$2,000",
+  "explanation": "Start-up costs are amounts paid to investigate or create a business before it begins operating, such as market surveys, advertising before opening, and employee training. A business can deduct up to $5,000 of start-up costs in the year it begins, but the $5,000 is reduced dollar for dollar by the amount total start-up costs exceed $50,000. The remainder is amortized evenly over 180 months, starting with the month the business begins.\n\nHere the costs exceed $50,000 by $3,000, so the immediate deduction is $5,000 − $3,000 = $2,000. The other $51,000 is amortized at $283.33 a month. If the business began in July, that adds about $1,700 more for 2025.\n\nExam tip: organizational costs for a corporation or partnership (legal and state filing fees to form the entity) follow the same rule, with a separate $5,000 deduction and $50,000 phase-out.",
+  "source": {
+   "title": "Instructions for Form 4562, Depreciation and Amortization",
+   "url": "https://www.irs.gov/instructions/i4562",
+   "section": "Part VI: Amortization"
+  }
+ },
+ {
+  "id": "p2d2-04",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Meals and entertainment",
+  "difficulty": "Medium",
+  "prompt": "A consultant takes a client to dinner to discuss a project ($200) and then to a basketball game ($300 for tickets). How much can she deduct?",
+  "choices": [
+   "$100",
+   "$200",
+   "$500",
+   "$250"
+  ],
+  "answer": "$100",
+  "explanation": "Since 2018, entertainment, amusement and recreation expenses, such as tickets to sporting events, concerts, golf and club dues, are not deductible, even when business is discussed. The $300 of basketball tickets is not deductible.\n\nBusiness meals are still 50% deductible when they aren't lavish, the taxpayer or an employee is present, and the meal is with a current or potential client, customer, consultant or similar business contact. Half of the $200 dinner is $100. If food is bought at an entertainment event, it can be deductible only when it is bought separately from the tickets or shown on a separate invoice.\n\nExam tip: some meals are fully deductible, including meals provided to the general public, meals included in employees' taxable compensation, and company-wide recreational events such as a holiday party.",
+  "source": {
+   "title": "Publication 463, Travel, Gift, and Car Expenses",
+   "url": "https://www.irs.gov/publications/p463",
+   "section": "Chapter 2: Meals and Entertainment"
+  }
+ },
+ {
+  "id": "p2d2-05",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Business gifts",
+  "difficulty": "Easy",
+  "prompt": "A business gives a customer a $90 gift basket during the year. Leaving aside incidental costs such as engraving or shipping, how much can it deduct?",
+  "choices": [
+   "$90",
+   "$25",
+   "$75",
+   "$45"
+  ],
+  "answer": "$25",
+  "explanation": "A business can deduct no more than $25 for business gifts it gives directly or indirectly to any one person during the year. The $25 limit has not changed in decades and isn't adjusted for inflation.\n\nThe $90 gift basket yields a $25 deduction. Incidental costs, such as engraving, packaging, insurance and mailing, don't count toward the $25. Items costing $4 or less that have the business name permanently imprinted and are handed out widely (such as pens), and signs or display racks used on the recipient's premises, are not treated as gifts.\n\nExam tip: a gift to a business that is meant for a particular person's use is treated as a gift to that person. A gift to a married couple is treated as one gift unless the spouse has a separate business relationship with the giver.",
+  "source": {
+   "title": "Publication 463, Travel, Gift, and Car Expenses",
+   "url": "https://www.irs.gov/publications/p463",
+   "section": "Chapter 3: Gifts"
+  }
+ },
+ {
+  "id": "p2d2-06",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Vehicle expenses",
+  "difficulty": "Easy",
+  "prompt": "A self-employed photographer drove 10,000 business miles in 2025 and uses the standard mileage rate. What is her deduction before parking and tolls?",
+  "choices": [
+   "$6,700",
+   "$6,550",
+   "$7,000",
+   "$2,100"
+  ],
+  "answer": "$7,000",
+  "explanation": "The 2025 standard mileage rate for business use of a car is 70 cents a mile. The photographer's deduction is 10,000 × $0.70 = $7,000. The rate covers gas, oil, repairs, insurance, depreciation and registration, so those can't be deducted separately. Business parking and tolls, and the business part of interest on a car loan for a self-employed person, are deductible in addition.\n\nTo use the standard rate, she must choose it in the first year the car is used for business. After that, she can switch between the standard rate and actual expenses in later years. She can't use the standard rate if she runs five or more cars at the same time, as in a fleet.\n\nExam tip: commuting from home to a regular place of business is never deductible. A written log of dates, destinations, business purpose and mileage is the expected substantiation.",
+  "source": {
+   "title": "Publication 463, Travel, Gift, and Car Expenses",
+   "url": "https://www.irs.gov/publications/p463",
+   "section": "Chapter 4: Standard Mileage Rate"
+  }
+ },
+ {
+  "id": "p2d2-07",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Home office",
+  "difficulty": "Medium",
+  "prompt": "Under the simplified method for the business use of a home, what is the largest deduction allowed for a year?",
+  "choices": [
+   "$500",
+   "$3,000",
+   "$5,000",
+   "$1,500"
+  ],
+  "answer": "$1,500",
+  "explanation": "The simplified method allows a home office deduction of $5 per square foot of the part of the home used regularly and exclusively for business, up to 300 square feet. The most it allows is 300 × $5 = $1,500.\n\nUnder this method, the taxpayer deducts no depreciation or actual home expenses for the office. Mortgage interest and real estate taxes are deducted in full on Schedule A instead, if the taxpayer itemizes. The deduction can't be more than the gross income from the business use of the home minus other business expenses, and any excess can't be carried over.\n\nExam tip: the regular method (Form 8829) allocates actual expenses, including depreciation, and lets disallowed amounts carry forward. A taxpayer can choose either method each year.",
+  "source": {
+   "title": "Publication 587, Business Use of Your Home",
+   "url": "https://www.irs.gov/publications/p587",
+   "section": "Using the Simplified Method"
+  }
+ },
+ {
+  "id": "p2d2-08",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Accounting methods",
+  "difficulty": "Hard",
+  "prompt": "For a tax year beginning in 2025, a C corporation that is not a tax shelter can use the cash method if its average annual gross receipts for the three prior tax years are not more than what amount?",
+  "choices": [
+   "$50 million",
+   "$31 million",
+   "$25 million",
+   "$5 million"
+  ],
+  "answer": "$31 million",
+  "explanation": "C corporations and partnerships that have a C corporation partner generally must use the accrual method. An exception lets them use the cash method if they meet the gross receipts test: average annual gross receipts for the three prior tax years of no more than $31 million for tax years beginning in 2025. The base amount of $25 million is indexed for inflation.\n\nTaxpayers that meet the same test are also excused from keeping inventories in the traditional way, from the uniform capitalization (UNICAP) rules, and from the business interest expense limit. Tax shelters can never use the cash method, whatever their size.\n\nExam tip: changing accounting method usually requires filing Form 3115. Many changes, including a switch to the cash method by a small business, are automatic changes that don't need advance IRS consent.",
+  "source": {
+   "title": "Publication 538, Accounting Periods and Methods",
+   "url": "https://www.irs.gov/publications/p538",
+   "section": "Accounting Methods: Cash Method"
+  }
+ },
+ {
+  "id": "p2d2-09",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Bad debts",
+  "difficulty": "Medium",
+  "prompt": "A cash-method consultant billed a client $5,000 for work finished in 2025. The client went out of business and will never pay. How much can the consultant deduct as a bad debt?",
+  "choices": [
+   "$0",
+   "$5,000",
+   "$3,000",
+   "$2,500"
+  ],
+  "answer": "$0",
+  "explanation": "A bad debt is deductible only if there was a true debtor-creditor relationship and the taxpayer has basis in the debt. Basis comes from money actually loaned or from an amount already included in income.\n\nA cash-method taxpayer reports income only when it is received. The consultant never included the $5,000 in income, so her basis in the receivable is zero and there is nothing to deduct. An accrual-method business would have reported the $5,000 as income when it was earned and could deduct it as a business bad debt when it became worthless.\n\nExam tip: business bad debts are ordinary deductions and can be partly written off. Nonbusiness bad debts, such as a personal loan to a friend, are short-term capital losses and are deductible only when completely worthless.",
+  "source": {
+   "title": "Publication 334, Tax Guide for Small Business",
+   "url": "https://www.irs.gov/publications/p334",
+   "section": "Business Expenses: Bad Debts"
+  }
+ },
+ {
+  "id": "p2d2-10",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Capitalization",
+  "difficulty": "Medium",
+  "prompt": "A business with no applicable financial statement elects the de minimis safe harbor. Up to what cost per invoice or item can it deduct tangible property instead of capitalizing it?",
+  "choices": [
+   "$10,000",
+   "$5,000",
+   "$2,500",
+   "$500"
+  ],
+  "answer": "$2,500",
+  "explanation": "The tangible property regulations generally require a business to capitalize amounts paid to acquire, produce or improve property. The de minimis safe harbor election lets it deduct lower-cost items instead. A taxpayer without an applicable financial statement can deduct up to $2,500 per invoice, or per item if the invoice lists items separately. A taxpayer with one can deduct up to $5,000.\n\nThe business must have an accounting procedure treating such amounts as expenses at the start of the year and follow it on its books. The election is made each year by attaching a statement to a timely filed return, including extensions.\n\nExam tip: the regulations also include a routine maintenance safe harbor and a small taxpayer safe harbor for buildings with an unadjusted basis of $1 million or less (the lesser of 2% of basis or $10,000).",
+  "source": {
+   "title": "Tangible property final regulations",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/tangible-property-final-regulations",
+   "section": "De minimis safe harbor election"
+  }
+ },
+ {
+  "id": "p2d2-11",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Like-kind exchanges",
+  "difficulty": "Medium",
+  "prompt": "Which exchange can qualify for like-kind exchange treatment under section 1031?",
+  "choices": [
+   "Lots held by a developer for sale to customers traded for an office building",
+   "An apartment building held for rental traded for vacant land held for investment",
+   "A delivery truck traded for a newer delivery truck",
+   "A personal residence traded for a rental condominium"
+  ],
+  "answer": "An apartment building held for rental traded for vacant land held for investment",
+  "explanation": "Since 2018, section 1031 applies only to exchanges of real property held for productive use in a business or for investment. All U.S. real property of that kind is like-kind with other U.S. real property, whether it is improved or not. An apartment building can be exchanged for raw land, a warehouse or farmland.\n\nIn a deferred exchange, the replacement property must be identified within 45 days and received within 180 days of transferring the old property (or by the due date of the return, if earlier). Gain is recognized to the extent of any boot received, such as cash or net debt relief, and the exchange is reported on Form 8824.\n\nExam tip: if the parties are related, both must generally keep the property for two years, or the deferred gain is triggered.",
+  "source": {
+   "title": "Publication 544, Sales and Other Dispositions of Assets",
+   "url": "https://www.irs.gov/publications/p544",
+   "section": "Chapter 1: Like-Kind Exchanges"
+  }
+ },
+ {
+  "id": "p2d2-12",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Depreciation recapture",
+  "difficulty": "Hard",
+  "prompt": "A business sells a machine for $45,000. It cost $50,000, and $30,000 of depreciation was allowed. How is the gain treated?",
+  "choices": [
+   "$45,000 gain, of which $30,000 is ordinary income",
+   "$25,000 gain, all ordinary income",
+   "$25,000 gain, all section 1231 gain",
+   "$5,000 loss, deductible as an ordinary loss"
+  ],
+  "answer": "$25,000 gain, all ordinary income",
+  "explanation": "First figure the gain. Adjusted basis is cost minus depreciation allowed: $50,000 − $30,000 = $20,000. Gain is $45,000 − $20,000 = $25,000.\n\nThe machine is section 1245 property (depreciable personal property). On a sale, gain is ordinary income up to the depreciation taken. Because the $25,000 gain is less than the $30,000 of depreciation, all of it is ordinary income, reported in Part III of Form 4797. Gain above the depreciation taken would be section 1231 gain, generally taxed as a long-term capital gain.\n\nExam tip: for buildings depreciated using the straight-line method, there's no section 1245-style recapture. For individuals, the gain from prior depreciation is unrecaptured section 1250 gain, taxed at up to 25%.",
+  "source": {
+   "title": "Publication 544, Sales and Other Dispositions of Assets",
+   "url": "https://www.irs.gov/publications/p544",
+   "section": "Chapter 3: Depreciation Recapture"
+  }
+ },
+ {
+  "id": "p2d2-13",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Qualified business income",
+  "difficulty": "Medium",
+  "prompt": "Which statement about the qualified business income deduction is correct?",
+  "choices": [
+   "A C corporation claims the deduction on Form 1120",
+   "Wages a taxpayer earns as an employee are qualified business income",
+   "The deduction reduces net earnings for self-employment tax",
+   "Income from a specified service business can qualify when the owner's taxable income is under the threshold"
+  ],
+  "answer": "Income from a specified service business can qualify when the owner's taxable income is under the threshold",
+  "explanation": "The section 199A deduction lets individuals (and some trusts and estates) deduct up to 20% of qualified business income from sole proprietorships, partnerships, S corporations and certain rentals, plus 20% of qualified REIT dividends and publicly traded partnership income. It is taken after AGI, whether the taxpayer itemizes or not.\n\nFor taxable income at or below the 2025 threshold ($197,300, or $394,600 on a joint return), the full 20% is generally available, even for a specified service trade or business such as law, health, accounting or consulting. Above the threshold, the W-2 wage and property limits phase in, and specified service income phases out completely over the next $50,000 ($100,000 joint).\n\nExam tip: qualified business income excludes employee wages, guaranteed payments, reasonable compensation from an S corporation, capital gains and most interest income.",
+  "source": {
+   "title": "Qualified business income deduction",
+   "url": "https://www.irs.gov/newsroom/qualified-business-income-deduction",
+   "section": "Qualified business income deduction"
+  }
+ },
+ {
+  "id": "p2d2-14",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Net operating losses",
+  "difficulty": "Hard",
+  "prompt": "A sole proprietor has a net operating loss that arose in 2025 from a retail business. How can it be used?",
+  "choices": [
+   "It is carried forward indefinitely and can offset up to 80% of taxable income in each later year",
+   "It is carried forward for up to five years with no income limit",
+   "It is carried back five years and then forward indefinitely",
+   "It is carried back two years and then forward 20 years"
+  ],
+  "answer": "It is carried forward indefinitely and can offset up to 80% of taxable income in each later year",
+  "explanation": "A net operating loss occurs when allowable business deductions are more than income in a year. For losses arising in tax years after 2020, most taxpayers can't carry the loss back. It carries forward with no time limit.\n\nIn each carryforward year, the NOL deduction for post-2017 losses is limited to 80% of taxable income figured without the NOL deduction (and without the QBI deduction). The unused part carries to the next year. Farming losses and certain insurance company losses can still be carried back two years.\n\nExam tip: for individuals, the excess business loss limit applies first. Business losses above $313,000 ($626,000 joint) for 2025 aren't allowed in the current year and become part of the NOL carryforward.",
+  "source": {
+   "title": "Net operating losses",
+   "url": "https://www.irs.gov/newsroom/net-operating-losses",
+   "section": "Net operating losses"
+  }
+ },
+ {
+  "id": "p2d2-15",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Federal unemployment tax",
+  "difficulty": "Medium",
+  "prompt": "Which statement about the federal unemployment (FUTA) tax is correct?",
+  "choices": [
+   "It is withheld from employees' pay and reported on Form 941",
+   "The employer pays it on the first $7,000 of each employee's wages and reports it on Form 940",
+   "It applies to all wages with no wage limit",
+   "It is split equally between the employer and the employee"
+  ],
+  "answer": "The employer pays it on the first $7,000 of each employee's wages and reports it on Form 940",
+  "explanation": "The federal unemployment tax is paid entirely by the employer. It is never withheld from employees' wages. The gross rate is 6.0% on the first $7,000 of wages paid to each employee during the year. Employers that pay their state unemployment taxes on time get a credit of up to 5.4%, so the usual net rate is 0.6%, or at most $42 per employee.\n\nThe employer files Form 940 once a year, by January 31. Deposits are required quarterly once the cumulative unpaid liability is more than $500. Employers in credit reduction states, which have unpaid federal loans, get a smaller credit and pay more.\n\nExam tip: an employer generally owes FUTA if it paid $1,500 or more in wages in any calendar quarter, or had at least one employee for some part of a day in 20 or more different weeks.",
+  "source": {
+   "title": "Publication 15, (Circular E), Employer's Tax Guide",
+   "url": "https://www.irs.gov/publications/p15",
+   "section": "Section 14: Federal Unemployment (FUTA) Tax"
+  }
+ },
+ {
+  "id": "p2d2-16",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Information returns",
+  "difficulty": "Medium",
+  "prompt": "During 2025 a business paid an unincorporated freelance designer $4,500 for services. What must the business file?",
+  "choices": [
+   "Form 1099-NEC, due to the designer and the IRS by January 31 of the following year",
+   "Form 1099-MISC, due to the IRS by March 31 of the following year",
+   "Form W-2, due by January 31 of the following year",
+   "Nothing, because the payments were under $5,000"
+  ],
+  "answer": "Form 1099-NEC, due to the designer and the IRS by January 31 of the following year",
+  "explanation": "A business must file Form 1099-NEC for each person it paid $600 or more during 2025 for services in the course of its trade or business, when that person isn't an employee. That includes payments to individuals, partnerships and LLCs taxed as partnerships. Payments to corporations are generally exempt, except for attorneys' fees and certain medical payments.\n\nForm 1099-NEC is due to both the recipient and the IRS by January 31, with no automatic extension for filing with the IRS. The business should get a Form W-9 from the contractor before paying, and must apply 24% backup withholding if the contractor doesn't provide a taxpayer identification number.\n\nExam tip: under the 2025 law, the threshold rises to $2,000 for payments made after December 31, 2025, and is indexed for inflation after 2026.",
+  "source": {
+   "title": "Instructions for Forms 1099-MISC and 1099-NEC",
+   "url": "https://www.irs.gov/instructions/i1099mec",
+   "section": "Form 1099-NEC: Nonemployee Compensation"
+  }
+ },
+ {
+  "id": "p2d2-17",
+  "part": "part2",
+  "domain": "Business Tax Preparation",
+  "topic": "Cash reporting",
+  "difficulty": "Medium",
+  "prompt": "A car dealer receives $14,000 in cash from a customer for a used car. What must the dealer do?",
+  "choices": [
+   "File a Currency Transaction Report with its bank by the end of the month",
+   "Nothing beyond recording the sale in its books",
+   "Report the sale on Form 1099-K by January 31",
+   "File Form 8300 within 15 days of receiving the cash"
+  ],
+  "answer": "File Form 8300 within 15 days of receiving the cash",
+  "explanation": "Any person in a trade or business who receives more than $10,000 in cash in a single transaction, or in two or more related transactions, must file Form 8300 within 15 days after receiving it. Cash includes U.S. and foreign currency and, for certain sales such as cars, cashier's checks, bank drafts, traveler's checks and money orders with a face amount of $10,000 or less.\n\nThe dealer must also give the customer a written statement by January 31 of the following year saying the payment was reported, and must keep a copy of each Form 8300 for five years. Form 8300 can be filed electronically through the FinCEN BSA E-Filing System.\n\nExam tip: splitting payments to stay under $10,000 (structuring) is itself illegal. Related transactions within 24 hours, or that the business knows are connected, must be added together.",
+  "source": {
+   "title": "Form 8300 and reporting cash payments of over $10,000",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/form-8300-and-reporting-cash-payments-of-over-10000",
+   "section": "Form 8300 and reporting cash payments of over $10,000"
+  }
+ },
+ {
+  "id": "p2d3-01",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Trust exemption",
+  "difficulty": "Medium",
+  "prompt": "A trust is required by its terms to distribute all of its income every year. What exemption amount does it deduct on Form 1041?",
+  "choices": [
+   "$100",
+   "$300",
+   "$5,000",
+   "$600"
+  ],
+  "answer": "$300",
+  "explanation": "Form 1041 allows a small exemption instead of a standard deduction. The amount depends on the type of entity: $600 for a decedent's estate, $300 for a trust required to distribute all its income currently (a simple trust), and $100 for all other trusts. A qualified disability trust can deduct a larger amount tied to the personal exemption.\n\nThe trust in the question must distribute all its income every year, so its exemption is $300. A simple trust also can't make charitable contributions or distribute principal during the year. If it does distribute principal, it is treated as a complex trust for that year and gets only the $100 exemption.\n\nExam tip: trusts and estates reach the top 37% bracket at only $15,650 of taxable income for 2025, which is why distributions to beneficiaries in lower brackets are often used to save tax.",
+  "source": {
+   "title": "Instructions for Form 1041 and Schedules A, B, G, J, and K-1",
+   "url": "https://www.irs.gov/instructions/i1041",
+   "section": "Line 21: Exemption"
+  }
+ },
+ {
+  "id": "p2d3-02",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Estate income tax",
+  "difficulty": "Medium",
+  "prompt": "Which statement about the income tax return of a decedent's estate is correct?",
+  "choices": [
+   "The estate can choose a fiscal year, as long as its first tax year ends within 12 months of the date of death",
+   "The estate files Form 1041 only if it distributes income to beneficiaries",
+   "The estate must use the calendar year, as most trusts do",
+   "The estate reports its income on the decedent's final Form 1040"
+  ],
+  "answer": "The estate can choose a fiscal year, as long as its first tax year ends within 12 months of the date of death",
+  "explanation": "A decedent's estate is a separate taxpayer from the date of death until the administration is finished. Its executor must file Form 1041 for any year in which the estate has gross income of $600 or more, or has a beneficiary who is a nonresident alien.\n\nAn estate can choose a calendar year or a fiscal year. Its first tax year can end on the last day of any month that is no more than 12 months after the date of death. Choosing a fiscal year can defer income for beneficiaries and make the timing of distributions easier to plan. Most trusts must use the calendar year, unless a section 645 election treats a revocable trust as part of the estate.\n\nExam tip: Form 1041 is due by the 15th day of the fourth month after the tax year ends (April 15 for a calendar year), and Form 7004 extends it by five and a half months.",
+  "source": {
+   "title": "Instructions for Form 1041 and Schedules A, B, G, J, and K-1",
+   "url": "https://www.irs.gov/instructions/i1041",
+   "section": "Who Must File; Period Covered"
+  }
+ },
+ {
+  "id": "p2d3-03",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Exempt organization filing",
+  "difficulty": "Easy",
+  "prompt": "A small tax-exempt charity normally has annual gross receipts of $30,000. What is the simplest annual filing that meets its requirement?",
+  "choices": [
+   "No filing is required",
+   "Form 990-EZ",
+   "Form 990-T",
+   "Form 990-N, the e-Postcard"
+  ],
+  "answer": "Form 990-N, the e-Postcard",
+  "explanation": "Most organizations exempt under section 501(c) must file an annual information return or notice. The form depends on size. Organizations whose gross receipts are normally $50,000 or less can file Form 990-N, a short electronic notice. Organizations with gross receipts under $200,000 and total assets under $500,000 can file Form 990-EZ. Larger organizations file the full Form 990, and private foundations always file Form 990-PF, whatever their size.\n\nThe charity normally has $30,000 of gross receipts, so the 990-N is enough. The returns are due by the 15th day of the fifth month after the organization's year end (May 15 for a calendar year).\n\nExam tip: churches, their integrated auxiliaries and conventions of churches don't have to file Form 990, 990-EZ or 990-N.",
+  "source": {
+   "title": "Annual exempt organization return: Who must file",
+   "url": "https://www.irs.gov/charities-non-profits/annual-exempt-organization-return-who-must-file",
+   "section": "Annual exempt organization return: Who must file"
+  }
+ },
+ {
+  "id": "p2d3-04",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Exempt organization filing",
+  "difficulty": "Medium",
+  "prompt": "What happens when a tax-exempt organization fails to file a required annual return or notice for three years in a row?",
+  "choices": [
+   "Nothing, as long as it had no unrelated business income",
+   "Its tax-exempt status is automatically revoked",
+   "It is put on probation and gets one more year to file",
+   "It pays a penalty of $100 a day until it files"
+  ],
+  "answer": "Its tax-exempt status is automatically revoked",
+  "explanation": "Under section 6033(j), an organization that is required to file Form 990, 990-EZ, 990-PF or 990-N and doesn't do so for three consecutive years automatically loses its tax-exempt status. The revocation takes effect on the original due date of the third missed return, and the IRS publishes the organization's name on its revocation list.\n\nAfter revocation, the organization may owe income tax, and donors' contributions may no longer be deductible. To get exemption back, it must apply again on Form 1023 or 1024 and pay the user fee, even if it was never required to apply originally. Retroactive reinstatement is available in some cases if the organization shows reasonable cause or applies promptly.\n\nExam tip: small organizations that forget to file the 990-N e-Postcard are the most common victims of automatic revocation.",
+  "source": {
+   "title": "Automatic revocation of exemption",
+   "url": "https://www.irs.gov/charities-non-profits/automatic-revocation-of-exemption",
+   "section": "Automatic revocation of exemption"
+  }
+ },
+ {
+  "id": "p2d3-05",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Unrelated business income",
+  "difficulty": "Medium",
+  "prompt": "An exempt organization must file Form 990-T when its gross income from an unrelated trade or business is at least what amount?",
+  "choices": [
+   "$50,000",
+   "$600",
+   "$1,000",
+   "$5,000"
+  ],
+  "answer": "$1,000",
+  "explanation": "Unrelated business income is income from a trade or business that is regularly carried on and isn't substantially related to the organization's exempt purpose. An example is a museum running a full restaurant open to the public. An exempt organization with gross income from unrelated businesses of $1,000 or more must file Form 990-T, in addition to its regular annual return.\n\nThe tax is figured at corporate rates (21%) for organizations set up as corporations, or at trust rates for trusts. A $1,000 specific deduction is allowed. The organization must make estimated tax payments if it expects to owe $500 or more.\n\nExam tip: common exclusions from unrelated business income include work done by volunteers, sales of donated goods, dividends, interest, royalties and most rents from real property.",
+  "source": {
+   "title": "Publication 598, Tax on Unrelated Business Income of Exempt Organizations",
+   "url": "https://www.irs.gov/publications/p598",
+   "section": "Returns and Filing Requirements"
+  }
+ },
+ {
+  "id": "p2d3-06",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "SEP plans",
+  "difficulty": "Medium",
+  "prompt": "Which statement about a simplified employee pension (SEP) plan is correct?",
+  "choices": [
+   "The employer must contribute the same percentage every year",
+   "Employees make salary deferrals of up to $23,500 for 2025",
+   "Only the employer contributes, up to the smaller of 25% of compensation or $70,000 for 2025",
+   "It must be set up by December 31 of the year for which contributions are made"
+  ],
+  "answer": "Only the employer contributes, up to the smaller of 25% of compensation or $70,000 for 2025",
+  "explanation": "A SEP lets an employer, including a self-employed person, contribute to traditional IRAs (SEP-IRAs) set up for each eligible employee. Only the employer contributes. For 2025, contributions for each employee can't be more than the smaller of 25% of compensation or $70,000, and compensation over $350,000 is ignored.\n\nContributions are discretionary from year to year, but in any year the employer contributes, it must use the same percentage of compensation for every eligible employee. Eligible employees are those who are at least 21, worked for the employer in at least three of the last five years, and received at least $750 in 2025. A self-employed person figures their own contribution on net earnings after the deduction for half of self-employment tax, which works out to about 20% of net profit.\n\nExam tip: a SEP can be set up and funded up to the due date of the business return, including extensions, so it is a useful planning tool after the year has ended.",
+  "source": {
+   "title": "Publication 560, Retirement Plans for Small Business",
+   "url": "https://www.irs.gov/publications/p560",
+   "section": "Chapter 2: Simplified Employee Pensions (SEPs)"
+  }
+ },
+ {
+  "id": "p2d3-07",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "SIMPLE IRA plans",
+  "difficulty": "Hard",
+  "prompt": "An employee under age 59½ takes a distribution from a SIMPLE IRA eight months after first participating in the employer's plan. No exception applies. What additional tax applies?",
+  "choices": [
+   "10%",
+   "50%",
+   "15%",
+   "25%"
+  ],
+  "answer": "25%",
+  "explanation": "Distributions from a SIMPLE IRA before age 59½ are generally subject to the 10% additional tax on early distributions, the same as other IRAs. If the distribution is made within the two years after the employee first took part in the employer's SIMPLE IRA plan, the additional tax rises to 25%.\n\nThe employee has participated for only eight months, so the 25% rate applies unless an exception (such as death or disability) is met. During those two years, money can be moved tax free only to another SIMPLE IRA. A rollover to a traditional IRA or employer plan is a taxable distribution.\n\nExam tip: a SIMPLE IRA plan is for employers with 100 or fewer employees who earned $5,000 or more, and the employer must contribute either a dollar-for-dollar match up to 3% of pay or a 2% nonelective contribution.",
+  "source": {
+   "title": "Publication 560, Retirement Plans for Small Business",
+   "url": "https://www.irs.gov/publications/p560",
+   "section": "Chapter 3: SIMPLE Plans, Distributions"
+  }
+ },
+ {
+  "id": "p2d3-08",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Farmers",
+  "difficulty": "Medium",
+  "prompt": "At least two-thirds of a calendar-year farmer's gross income is from farming. How can she avoid an estimated tax penalty without making quarterly payments?",
+  "choices": [
+   "Make one payment of 50% of the tax by June 15",
+   "File the return and pay all the tax due by March 1",
+   "Pay 90% of the tax in four equal installments",
+   "File the return and pay all the tax due by April 15"
+  ],
+  "answer": "File the return and pay all the tax due by March 1",
+  "explanation": "A taxpayer is a qualified farmer if at least two-thirds of their gross income in the current or prior year was from farming. Qualified farmers have special estimated tax rules. They can make a single estimated payment by January 15 of the following year, covering 66⅔% of the current year's tax or 100% of the prior year's tax. Or they can skip estimated payments entirely by filing their return and paying all the tax due by March 1.\n\nThis farmer meets the two-thirds test, so filing and paying in full by March 1 avoids any underpayment penalty. If she files after March 1 without having made the January payment, a penalty can apply, figured on Form 2210-F.\n\nExam tip: gross income from farming includes Schedule F income, farm rental income from Form 4835, and gains from selling livestock, but not gains from selling farmland.",
+  "source": {
+   "title": "Publication 225, Farmer's Tax Guide",
+   "url": "https://www.irs.gov/publications/p225",
+   "section": "Estimated Tax"
+  }
+ },
+ {
+  "id": "p2d3-09",
+  "part": "part2",
+  "domain": "Specialized Returns and Taxpayers",
+  "topic": "Rental real estate",
+  "difficulty": "Hard",
+  "prompt": "Hana actively participates in a rental house that lost $30,000 in 2025. Her modified AGI is $120,000, she has no other passive activities, and she is not a real estate professional. How much of the loss can she deduct this year?",
+  "choices": [
+   "$15,000",
+   "$25,000",
+   "$0",
+   "$30,000"
+  ],
+  "answer": "$15,000",
+  "explanation": "Rental activities are generally passive, and passive losses can only offset passive income. An exception lets an individual who actively participates in a rental real estate activity deduct up to $25,000 of losses against other income. Active participation is a low bar: owning at least 10% and making management decisions, such as approving tenants or setting rents.\n\nThe $25,000 is reduced by 50% of the amount modified AGI exceeds $100,000, and it is gone at $150,000. Hana's excess is $120,000 − $100,000 = $20,000. Half of that is $10,000, so her allowance is $25,000 − $10,000 = $15,000. The other $15,000 of loss is suspended and carried forward until she has passive income or sells the property.\n\nExam tip: a real estate professional (more than half of personal services and more than 750 hours in real property businesses) who materially participates isn't limited by the passive rules at all.",
+  "source": {
+   "title": "Publication 925, Passive Activity and At-Risk Rules",
+   "url": "https://www.irs.gov/publications/p925",
+   "section": "Special $25,000 allowance"
+  }
+ },
+ {
+  "id": "p3d1-01",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Who may practice",
+  "difficulty": "Easy",
+  "prompt": "Which group has unlimited rights to represent taxpayers before the IRS?",
+  "choices": [
+   "Anyone who holds a preparer tax identification number (PTIN)",
+   "Enrolled agents only, because their license is federal",
+   "Annual Filing Season Program participants",
+   "Attorneys, certified public accountants and enrolled agents"
+  ],
+  "answer": "Attorneys, certified public accountants and enrolled agents",
+  "explanation": "Circular 230 section 10.3 lists who may practice before the IRS. Attorneys and CPAs in good standing in any state, and enrolled agents, have unlimited representation rights. They can represent any taxpayer on any tax matter, at every level of the IRS (examination, collection and appeals).\n\nOthers have limited rights. Enrolled actuaries are limited to certain retirement plan matters. Enrolled retirement plan agents are limited to retirement plan issues. Annual Filing Season Program participants can represent only clients whose returns they prepared and signed, and only in limited settings. A PTIN alone gives no right to represent anyone.\n\nExam tip: enrolled agents earn their status from the federal government by passing the SEE or through qualifying IRS experience, so it applies in every state, while attorney and CPA rights come from state licenses.",
+  "source": {
+   "title": "Publication 947, Practice Before the IRS and Power of Attorney",
+   "url": "https://www.irs.gov/publications/p947",
+   "section": "Who Can Practice Before the IRS?"
+  }
+ },
+ {
+  "id": "p3d1-02",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Limited practice",
+  "difficulty": "Medium",
+  "prompt": "An unenrolled preparer holds a current Annual Filing Season Program Record of Completion. Whom can the preparer represent, and where?",
+  "choices": [
+   "No one. Only attorneys, CPAs and enrolled agents can represent taxpayers",
+   "Clients whose returns the preparer prepared and signed, before any IRS office including Appeals and Collection",
+   "Clients whose returns the preparer prepared and signed, before revenue agents, customer service representatives and the Taxpayer Advocate Service",
+   "Any taxpayer, but only in examinations"
+  ],
+  "answer": "Clients whose returns the preparer prepared and signed, before revenue agents, customer service representatives and the Taxpayer Advocate Service",
+  "explanation": "The Annual Filing Season Program is a voluntary program for unenrolled preparers who complete continuing education each year, including a refresher course and test (some preparers are exempt from the test). A participant who has a Record of Completion has limited representation rights.\n\nThey can represent clients only for returns they prepared and signed, and only before revenue agents, customer service representatives and similar IRS employees, including the Taxpayer Advocate Service. They can't represent clients before Appeals officers, revenue officers (Collection), counsel or similar officers. The rights cover returns prepared and signed after December 31, 2015, while the preparer held a Record of Completion for both the year the return was prepared and the year of representation.\n\nExam tip: unenrolled preparers who aren't in the program have no representation rights for returns prepared after 2015.",
+  "source": {
+   "title": "Publication 947, Practice Before the IRS and Power of Attorney",
+   "url": "https://www.irs.gov/publications/p947",
+   "section": "Who Can Practice Before the IRS?: Unenrolled return preparers"
+  }
+ },
+ {
+  "id": "p3d1-03",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Authorizations",
+  "difficulty": "Easy",
+  "prompt": "A client wants her bookkeeper to be able to receive and inspect her confidential tax information, but not to act for her before the IRS. Which form does she sign?",
+  "choices": [
+   "Form 2848, Power of Attorney and Declaration of Representative",
+   "Form 4506-T, Request for Transcript of Tax Return",
+   "Form 8821, Tax Information Authorization",
+   "Form 56, Notice Concerning Fiduciary Relationship"
+  ],
+  "answer": "Form 8821, Tax Information Authorization",
+  "explanation": "Form 8821 authorizes a person or organization (the designee) to inspect or receive the taxpayer's confidential tax information for the tax matters and periods listed. The designee doesn't need to be an attorney, CPA or enrolled agent, and can be anyone the taxpayer chooses.\n\nForm 8821 does not authorize the designee to speak for the taxpayer, sign agreements, advocate for them, or receive refund checks. For that, the taxpayer uses Form 2848, and the representative must be eligible to practice before the IRS. Both forms are recorded on the IRS Centralized Authorization File.\n\nExam tip: the question's wording matters. \"Receive or inspect information\" points to Form 8821. \"Represent,\" \"advocate\" or \"negotiate\" points to Form 2848.",
+  "source": {
+   "title": "Publication 947, Practice Before the IRS and Power of Attorney",
+   "url": "https://www.irs.gov/publications/p947",
+   "section": "Authorizing a Representative"
+  }
+ },
+ {
+  "id": "p3d1-04",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Refund checks",
+  "difficulty": "Medium",
+  "prompt": "Under Circular 230, which of these may a practitioner NOT do?",
+  "choices": [
+   "Endorse or cash a refund check issued to a client",
+   "Charge a fee for preparing an amended return",
+   "Receive a client's refund check at the practitioner's office when the power of attorney authorizes it",
+   "Represent a client at an Appeals conference"
+  ],
+  "answer": "Endorse or cash a refund check issued to a client",
+  "explanation": "Circular 230 section 10.31 says a practitioner who prepares returns may not endorse or otherwise negotiate (cash, deposit or transfer) any check, including a direct deposit, issued to a client by the government for a federal tax liability. A practitioner also may not direct or accept payment of a refund into the practitioner's own bank account or one they control.\n\nThe rule protects clients from losing control of their refunds. A practitioner can still receive the check on the client's behalf if Form 2848 authorizes it, as long as the check goes straight to the client.\n\nExam tip: a practitioner can't get around section 10.31 by having the client endorse the check over to the practitioner to pay fees. The client must handle the check and pay the fee separately.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.31 Negotiation of taxpayer checks"
+  }
+ },
+ {
+  "id": "p3d1-05",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Client errors",
+  "difficulty": "Medium",
+  "prompt": "While preparing this year's return, an enrolled agent finds that the client left income off a return filed two years ago. What does Circular 230 require the agent to do?",
+  "choices": [
+   "Withdraw from the engagement immediately",
+   "File an amended return for the client right away",
+   "Report the omission to the IRS within 30 days",
+   "Promptly tell the client about the omission and the consequences under the law"
+  ],
+  "answer": "Promptly tell the client about the omission and the consequences under the law",
+  "explanation": "Circular 230 section 10.21 says a practitioner who is retained by a client on a matter before the IRS, and who knows the client hasn't complied with the revenue laws or has made an error in or omission from any return, must promptly advise the client of the noncompliance, error or omission and of the consequences under the law.\n\nThe practitioner's duty is to inform. Correcting the earlier return by filing an amended return is the client's decision. If the client refuses and the omission affects the current return (for example, through a carryover), the practitioner must consider whether they can still prepare that return under the standards of section 10.34, and may need to withdraw.\n\nExam tip: the answer to \"what must the practitioner do?\" under section 10.21 is almost always \"advise the client,\" not \"notify the IRS\" or \"amend the return.\"",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.21 Knowledge of client's omission"
+  }
+ },
+ {
+  "id": "p3d1-06",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Client records",
+  "difficulty": "Medium",
+  "prompt": "A client fires her enrolled agent and asks for her records back, but she still owes the agent fees. In general, what must the agent do?",
+  "choices": [
+   "Send the records to her new preparer but not to her",
+   "Promptly return the records she needs to meet her federal tax obligations, even though the fee is unpaid",
+   "Return the records only if the IRS issues a summons for them",
+   "Keep all the records until the fee is paid in full"
+  ],
+  "answer": "Promptly return the records she needs to meet her federal tax obligations, even though the fee is unpaid",
+  "explanation": "Circular 230 section 10.28 requires a practitioner, at the client's request, to promptly return any and all records of the client that are necessary for the client to comply with federal tax obligations. The practitioner may keep copies. The existence of a fee dispute generally doesn't relieve the practitioner of this duty.\n\nThere is a narrow exception. If state law lets a practitioner keep records during a fee dispute, they need return only the records that must be attached to the client's return, and must give the client reasonable access to review and copy the rest.\n\nExam tip: \"records of the client\" include anything the client gave the practitioner and any return or document the practitioner prepared and gave to the client. Work papers the practitioner made for their own use are not client records, but a return prepared and not yet delivered because of unpaid fees may have to be handed over.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.28 Return of client's records"
+  }
+ },
+ {
+  "id": "p3d1-07",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Conflicts of interest",
+  "difficulty": "Hard",
+  "prompt": "A practitioner represents two clients despite a conflict of interest, after getting each client's informed consent in writing. How long must the practitioner keep the written consents?",
+  "choices": [
+   "At least 36 months after the representation ends",
+   "At least 10 years after the representation ends",
+   "At least 12 months after the consents are signed",
+   "Until the next enrollment renewal"
+  ],
+  "answer": "At least 36 months after the representation ends",
+  "explanation": "Circular 230 section 10.29 says a conflict of interest exists when representing one client is directly adverse to another client, or when there is a significant risk that the representation will be materially limited by responsibilities to another client, a former client, a third person, or the practitioner's own interest.\n\nThe practitioner may still represent a client if they reasonably believe they can provide competent and diligent representation to each affected client, the representation isn't prohibited by law, and each affected client gives informed consent, confirmed in writing at the time the conflict becomes known or within a reasonable period (no later than 30 days). Copies of the written consents must be kept for at least 36 months from the date the representation ends and be provided to the IRS on request.\n\nExam tip: 36 months also appears in section 10.30, for keeping copies of advertising and solicitations. Keep the 30-day and 36-month numbers straight.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.29 Conflicting interests"
+  }
+ },
+ {
+  "id": "p3d1-08",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Contingent fees",
+  "difficulty": "Hard",
+  "prompt": "Under the text of Circular 230 section 10.27, for which service may a practitioner charge a contingent fee?",
+  "choices": [
+   "Preparing an amended return to claim a larger refund, when no examination has begun",
+   "Representing a client in an IRS examination of an original return",
+   "Preparing an original income tax return",
+   "Giving advice on the tax treatment of a planned transaction"
+  ],
+  "answer": "Representing a client in an IRS examination of an original return",
+  "explanation": "A contingent fee is any fee based on whether a position is sustained, or that depends on the outcome, such as a percentage of the refund or tax saved. Section 10.27 as written generally bars contingent fees for services connected with matters before the IRS, with three exceptions.\n\nThe exceptions are: services in connection with the IRS examination of, or challenge to, an original return, or an amended return or claim for refund filed within 120 days of the taxpayer receiving written notice of the examination; a claim for credit or refund filed solely in connection with the determination of statutory interest or penalties; and services in connection with a judicial proceeding. A practitioner may never charge an unconscionable fee.\n\nExam tip: a federal court (Ridgely v. Lew, 2014) held that the IRS can't enforce the contingent fee limits for preparing ordinary refund claims, but the exam generally tests the text of Circular 230.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.27 Fees"
+  }
+ },
+ {
+  "id": "p3d1-09",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Advertising",
+  "difficulty": "Medium",
+  "prompt": "A practitioner publishes a written schedule of fees. For how long must the practitioner honor those fees?",
+  "choices": [
+   "Until the end of the calendar year",
+   "No minimum applies",
+   "At least 10 business days",
+   "At least 30 calendar days after the last date the schedule was published"
+  ],
+  "answer": "At least 30 calendar days after the last date the schedule was published",
+  "explanation": "Circular 230 section 10.30 lets practitioners advertise and publish fee information, such as fixed fees for specific services, hourly rates, the range of fees for particular services, and the fee for an initial consultation. A practitioner can't charge more than the published rates for at least 30 calendar days after the last date the fee information was published.\n\nAll advertising must be truthful and not misleading. An enrolled agent may describe themselves as \"enrolled to represent taxpayers before the Internal Revenue Service\" or \"enrolled to practice before the IRS\", but may not use the term \"certified\" or imply an employment relationship with the IRS. Copies of advertisements and a list of people sent direct-mail solicitations must be kept for at least 36 months.\n\nExam tip: uninvited in-person solicitation of tax shelter clients is banned, and practitioners may not use the IRS logo or suggest IRS endorsement.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.30 Solicitation"
+  }
+ },
+ {
+  "id": "p3d1-10",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Disreputable conduct",
+  "difficulty": "Medium",
+  "prompt": "Which of the following is incompetence or disreputable conduct for which a practitioner can be sanctioned?",
+  "choices": [
+   "Advising a client to take a position that has a reasonable basis and is disclosed",
+   "Declining to take on a new client during filing season",
+   "Charging hourly rates that are higher than other local practitioners charge",
+   "Willfully failing to file the practitioner's own federal income tax return"
+  ],
+  "answer": "Willfully failing to file the practitioner's own federal income tax return",
+  "explanation": "Circular 230 section 10.51 lists conduct that can lead to censure, suspension, disbarment or a monetary penalty. It includes conviction of a crime under the federal tax laws or involving dishonesty, giving false or misleading information to the IRS, soliciting business by false statements, willfully failing to file one's own federal tax return or willfully evading tax, misappropriating client funds meant for the government, bribing or trying to influence IRS employees, practicing while suspended, and willfully disclosing tax return information without authorization.\n\nWillfully failing to file one's own return is specifically listed. Practitioners are held to the same compliance standards as their clients, and the IRS checks practitioners' own filing during enrollment renewal.\n\nExam tip: \"willfully\" and \"knowingly\" are the key words in most section 10.51 items. Honest mistakes usually aren't disreputable conduct, though gross incompetence can be.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.51 Incompetence and disreputable conduct"
+  }
+ },
+ {
+  "id": "p3d1-11",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Sanctions",
+  "difficulty": "Easy",
+  "prompt": "Which of the following is NOT a sanction that can be imposed under Circular 230?",
+  "choices": [
+   "Imprisonment",
+   "Suspension from practice",
+   "Censure",
+   "A monetary penalty"
+  ],
+  "answer": "Imprisonment",
+  "explanation": "Under Circular 230 section 10.50, the Secretary of the Treasury can censure, suspend or disbar a practitioner who is incompetent or disreputable, fails to comply with the regulations, or willfully and knowingly misleads or threatens a client. A monetary penalty can be imposed in addition to, or instead of, those sanctions, up to the gross income derived from the conduct. An employer or firm can also be penalized if it knew or should have known of the conduct.\n\nThese are administrative sanctions handled by the Office of Professional Responsibility, after notice and an opportunity for a hearing before an administrative law judge. Imprisonment comes only from criminal prosecution in court under the Internal Revenue Code, such as section 7206 for false returns.\n\nExam tip: censure is a public reprimand, suspension is for a set period of time, and disbarment is the most severe. A disbarred practitioner can generally petition for reinstatement after five years.",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.50 Sanctions"
+  }
+ },
+ {
+  "id": "p3d1-12",
+  "part": "part3",
+  "domain": "Practices and Procedures",
+  "topic": "Continuing education",
+  "difficulty": "Easy",
+  "prompt": "What continuing education must an enrolled agent complete?",
+  "choices": [
+   "18 hours every year, including a 6-hour refresher course",
+   "40 hours every year, including 4 hours of ethics",
+   "72 hours every three years, with at least 16 hours each year including 2 hours of ethics",
+   "72 hours every three years, in any combination of years"
+  ],
+  "answer": "72 hours every three years, with at least 16 hours each year including 2 hours of ethics",
+  "explanation": "Enrolled agents must complete 72 hours of continuing education during each three-year enrollment cycle. At least 16 hours must be completed each year, and 2 of them must be on ethics or professional conduct. Courses must come from IRS-approved continuing education providers, who report the hours to the IRS using the agent's PTIN.\n\nEnrolled agents renew their enrollment every three years on Form 8554. The renewal cycle depends on the last digit of the agent's Social Security number. Someone newly enrolled partway through a cycle needs 2 hours for each month enrolled during that cycle, including 2 hours of ethics each year. Agents must keep records of completed CE for four years after the enrollment renewal.\n\nExam tip: the PTIN must also be renewed every year, separately from enrollment renewal. An enrolled agent who doesn't renew the PTIN becomes inactive.",
+  "source": {
+   "title": "Enrolled agents: Frequently asked questions",
+   "url": "https://www.irs.gov/tax-professionals/enrolled-agents/enrolled-agents-frequently-asked-questions",
+   "section": "Continuing education requirements"
+  }
+ },
+ {
+  "id": "p3d2-01",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Centralized Authorization File",
+  "difficulty": "Easy",
+  "prompt": "What is a CAF number?",
+  "choices": [
+   "The number that identifies a firm as an authorized e-file provider",
+   "The control number the IRS assigns to an examination",
+   "A taxpayer's identity protection PIN",
+   "A unique nine-digit number the IRS assigns to a representative or designee who files a third-party authorization"
+  ],
+  "answer": "A unique nine-digit number the IRS assigns to a representative or designee who files a third-party authorization",
+  "explanation": "The Centralized Authorization File (CAF) is the IRS database of authorizations from Forms 2848 and 8821. The first time a representative or designee files one of these forms, the IRS assigns them a nine-digit CAF number. They enter it on every later authorization, which lets the IRS process the forms and send copies of notices to them.\n\nThe CAF number only identifies the person in the system. It doesn't show they are eligible to practice before the IRS. A representative without a CAF number can leave the box blank on their first form, and the IRS will assign one.\n\nExam tip: keep the identifiers straight. A PTIN identifies a paid preparer, an EFIN identifies an e-file provider, a CAF number identifies an authorized representative, and an IP PIN protects a taxpayer.",
+  "source": {
+   "title": "Instructions for Form 2848, Power of Attorney and Declaration of Representative",
+   "url": "https://www.irs.gov/instructions/i2848",
+   "section": "Part I: Line 2, Representative(s)"
+  }
+ },
+ {
+  "id": "p3d2-02",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Power of attorney",
+  "difficulty": "Medium",
+  "prompt": "How must the tax matters be described on Form 2848?",
+  "choices": [
+   "By the notice number of the most recent IRS letter",
+   "By the type of tax, the tax form number and the specific years or periods",
+   "By the type of tax only, because the authorization covers every open year",
+   "By writing \"all taxes, all years\""
+  ],
+  "answer": "By the type of tax, the tax form number and the specific years or periods",
+  "explanation": "Line 3 of Form 2848 must describe each matter by the type of tax (such as income, employment or excise), the tax form number (such as 1040 or 941), and the specific years or periods (such as 2023 and 2024, or the quarters ended March 31 and June 30, 2025). The IRS returns forms that use general references such as \"all years\" or \"all taxes.\"\n\nA power of attorney can list future periods, but only those ending no later than three years after the date the IRS receives the form. Civil penalties can be described as \"civil penalties\" with the years involved, and the form can't be used for matters unrelated to federal taxes.\n\nExam tip: a Form 2848 that doesn't meet the requirements, including a missing signature or date, is returned to the taxpayer and the representative isn't recorded on the CAF.",
+  "source": {
+   "title": "Instructions for Form 2848, Power of Attorney and Declaration of Representative",
+   "url": "https://www.irs.gov/instructions/i2848",
+   "section": "Line 3: Acts Authorized"
+  }
+ },
+ {
+  "id": "p3d2-03",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Power of attorney",
+  "difficulty": "Medium",
+  "prompt": "A taxpayer files a new Form 2848 naming a new representative for the same tax matters and periods covered by an earlier one. What happens to the earlier power of attorney?",
+  "choices": [
+   "It is revoked only if the new form is filed in the same year",
+   "It is revoked, unless the taxpayer checks the box to keep it and attaches a copy",
+   "It stays in effect, and both representatives are authorized",
+   "It stays in effect until the earlier representative withdraws in writing"
+  ],
+  "answer": "It is revoked, unless the taxpayer checks the box to keep it and attaches a copy",
+  "explanation": "Filing a new Form 2848 automatically revokes all earlier powers of attorney on file with the IRS for the same tax matters and periods. To keep an earlier power of attorney in effect, the taxpayer checks the box on line 6 and attaches a copy of each one to remain in effect.\n\nA taxpayer can also revoke a power of attorney without naming a new representative by sending the IRS a copy of the earlier form with \"REVOKE\" written across the top, signed and dated. A representative can withdraw by sending a copy with \"WITHDRAW\" written across the top.\n\nExam tip: up to four representatives can be named on one Form 2848, and notices can be sent to up to two of them.",
+  "source": {
+   "title": "Instructions for Form 2848, Power of Attorney and Declaration of Representative",
+   "url": "https://www.irs.gov/instructions/i2848",
+   "section": "Line 6: Retention/Revocation of Prior Power(s) of Attorney"
+  }
+ },
+ {
+  "id": "p3d2-04",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Third party designee",
+  "difficulty": "Medium",
+  "prompt": "A taxpayer checks the \"Third Party Designee\" box on Form 1040 and names her preparer. What can the preparer do?",
+  "choices": [
+   "Sign a consent to extend the statute of limitations for her",
+   "Talk with the IRS about the processing of that return, for up to one year after its due date",
+   "Represent her in an examination of that return",
+   "Receive her refund check"
+  ],
+  "answer": "Talk with the IRS about the processing of that return, for up to one year after its due date",
+  "explanation": "The third party designee checkbox on the return lets the taxpayer authorize a person, often the preparer, to discuss that return with the IRS. The designee can give the IRS information missing from the return, call about the status of the return, refund or payments, ask for copies of notices, and respond to certain IRS notices about math errors, offsets and return preparation.\n\nThe authorization covers only that return and automatically ends one year after the return's due date (without extensions), though the taxpayer or designee can end it earlier. The designee can't receive refund checks, bind the taxpayer to anything, or represent the taxpayer before the IRS.\n\nExam tip: for representation, use Form 2848. To receive information for other years or tax matters, use Form 8821.",
+  "source": {
+   "title": "Publication 947, Practice Before the IRS and Power of Attorney",
+   "url": "https://www.irs.gov/publications/p947",
+   "section": "Third party designee"
+  }
+ },
+ {
+  "id": "p3d2-05",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Confidentiality privilege",
+  "difficulty": "Hard",
+  "prompt": "The confidentiality privilege for communications between a taxpayer and a federally authorized tax practitioner covers which of the following?",
+  "choices": [
+   "Advice given in a criminal tax investigation",
+   "Written advice promoting participation in a tax shelter",
+   "Communications made to prepare a tax return",
+   "Tax advice in a noncriminal tax matter before the IRS"
+  ],
+  "answer": "Tax advice in a noncriminal tax matter before the IRS",
+  "explanation": "Section 7525 gives communications between a taxpayer and a federally authorized tax practitioner (such as an enrolled agent or CPA) the same confidentiality protection that would apply to an attorney-client communication, but only for tax advice. Tax advice means advice given within the scope of practice before the IRS.\n\nThe privilege is limited. It applies only in noncriminal tax matters before the IRS and in noncriminal tax proceedings in federal court brought by or against the United States. It doesn't cover information gathered to prepare a return, communications in a criminal investigation, or written communications promoting a tax shelter.\n\nExam tip: if a civil examination turns into a criminal investigation, a non-attorney practitioner's privilege stops, so the client should consult a criminal tax attorney.",
+  "source": {
+   "title": "Publication 556, Examination of Returns, Appeal Rights, and Claims for Refund",
+   "url": "https://www.irs.gov/publications/p556",
+   "section": "Confidentiality privilege"
+  }
+ },
+ {
+  "id": "p3d2-06",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Assessment period",
+  "difficulty": "Medium",
+  "prompt": "A taxpayer filed her return on time but left off an amount that is more than 25% of the gross income shown on the return. There was no fraud. How long does the IRS have to assess more tax?",
+  "choices": [
+   "Six years from the date the return was filed",
+   "Ten years from the date the return was filed",
+   "There is no time limit",
+   "Three years from the date the return was filed"
+  ],
+  "answer": "Six years from the date the return was filed",
+  "explanation": "The IRS generally has three years after a return is filed to assess additional tax, and a return filed early is treated as filed on its due date. The period is extended to six years if the taxpayer omitted from gross income an amount that is more than 25% of the gross income stated on the return. It is also six years for certain unreported foreign financial assets income over $5,000.\n\nThere is no time limit when a return is false or fraudulent with intent to evade tax, when there is a willful attempt to evade tax, or when no return is filed. The taxpayer and the IRS can agree to extend the period, usually on Form 872.\n\nExam tip: for the 25% test, gross income from a business means gross receipts before cost of goods sold, which makes the test harder to meet for businesses.",
+  "source": {
+   "title": "Time IRS can assess tax",
+   "url": "https://www.irs.gov/filing/time-irs-can-assess-tax",
+   "section": "Time IRS can assess tax"
+  }
+ },
+ {
+  "id": "p3d2-07",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Collection period",
+  "difficulty": "Easy",
+  "prompt": "In general, how long does the IRS have to collect a tax after it is assessed?",
+  "choices": [
+   "20 years",
+   "3 years",
+   "10 years",
+   "6 years"
+  ],
+  "answer": "10 years",
+  "explanation": "Under section 6502, the IRS generally has 10 years from the date of assessment to collect a tax by levy or a court proceeding. The end of this period is called the collection statute expiration date (CSED). After it passes, the IRS generally can't collect the remaining balance, and any federal tax lien is released.\n\nCertain events suspend (toll) the 10-year period. These include a pending offer in compromise, a pending installment agreement request, a timely collection due process hearing request, bankruptcy, the taxpayer living outside the U.S. for six months or more, and a request for innocent spouse relief.\n\nExam tip: each assessment has its own CSED, so an additional tax assessed after an audit starts a new 10-year period for that amount.",
+  "source": {
+   "title": "Time IRS can collect tax",
+   "url": "https://www.irs.gov/filing/time-irs-can-collect-tax",
+   "section": "Time IRS can collect tax"
+  }
+ },
+ {
+  "id": "p3d2-08",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Notice of deficiency",
+  "difficulty": "Medium",
+  "prompt": "A taxpayer living in the United States receives a notice of deficiency. How long does she have to petition the Tax Court?",
+  "choices": [
+   "150 days from the date of the notice",
+   "30 days from the date of the notice",
+   "90 days from the date of the notice",
+   "One year from the date of the notice"
+  ],
+  "answer": "90 days from the date of the notice",
+  "explanation": "A notice of deficiency, often called the 90-day letter or statutory notice, is the IRS's formal notice of proposed additional tax. It gives the taxpayer 90 days from the date of mailing (150 days if addressed to a person outside the United States) to file a petition with the U.S. Tax Court. The notice states the last day to file.\n\nFiling on time lets the taxpayer dispute the tax in Tax Court without paying it first, and the IRS can't assess the tax while the case is pending. If the deadline passes, the IRS assesses the tax. The taxpayer's remaining option is then usually to pay and sue for a refund in district court or the Court of Federal Claims.\n\nExam tip: the 30-day letter (which offers Appeals) comes first, and the 90-day letter comes after. The IRS can't extend the 90-day deadline.",
+  "source": {
+   "title": "Publication 556, Examination of Returns, Appeal Rights, and Claims for Refund",
+   "url": "https://www.irs.gov/publications/p556",
+   "section": "Appeals to the Courts: Tax Court"
+  }
+ },
+ {
+  "id": "p3d2-09",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Tax Court",
+  "difficulty": "Medium",
+  "prompt": "A taxpayer may ask the Tax Court to use its simplified small tax case procedure when the amount in dispute for each tax year is not more than what amount?",
+  "choices": [
+   "$100,000",
+   "$10,000",
+   "$25,000",
+   "$50,000"
+  ],
+  "answer": "$50,000",
+  "explanation": "The Tax Court's small tax case procedure (an \"S case\") is available when the amount in dispute, including penalties, is $50,000 or less for any one tax year or period. For collection due process cases, the limit is the total unpaid tax of $50,000 or less.\n\nS cases are less formal. Taxpayers often represent themselves, the rules of evidence are relaxed, and trials are held in more cities. The tradeoff is that the decision is final and can't be appealed by either the taxpayer or the IRS, and it can't be used as precedent in other cases.\n\nExam tip: the Tax Court's filing fee is $60, and it can be waived for taxpayers who can't afford it.",
+  "source": {
+   "title": "Publication 556, Examination of Returns, Appeal Rights, and Claims for Refund",
+   "url": "https://www.irs.gov/publications/p556",
+   "section": "Appeals to the Courts: Tax Court"
+  }
+ },
+ {
+  "id": "p3d2-10",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Appeals",
+  "difficulty": "Hard",
+  "prompt": "After a field examination, a taxpayer disagrees with proposed changes of $40,000 for one tax period and wants a conference with Appeals. What must she send?",
+  "choices": [
+   "A petition to the Tax Court",
+   "A brief written statement on a small case request form",
+   "A formal written protest",
+   "Form 12153"
+  ],
+  "answer": "A formal written protest",
+  "explanation": "After an examination, the IRS usually sends a 30-day letter explaining the proposed changes and the taxpayer's right to appeal. To request an Appeals conference, the taxpayer must file a formal written protest when the total proposed additional tax, penalties and interest for any one tax period is more than $25,000. When it is $25,000 or less, a small case request is enough.\n\nThe formal protest must include the taxpayer's name, address and phone number; a statement that they want to appeal; a copy of the letter showing the proposed changes; the periods involved; the items they disagree with and why; the facts and law supporting their position; and a declaration under penalties of perjury. If a representative prepares it, the representative declares whether they know the facts are true.\n\nExam tip: field examinations always require a written protest. Even below $25,000, a small case request must be in writing for a field audit.",
+  "source": {
+   "title": "Publication 5, Your Appeal Rights and How To Prepare a Protest If You Disagree",
+   "url": "https://www.irs.gov/pub/irs-pdf/p5.pdf",
+   "section": "How To Prepare a Protest"
+  }
+ },
+ {
+  "id": "p3d2-11",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Taxpayer rights",
+  "difficulty": "Easy",
+  "prompt": "During an examination interview, a taxpayer says he wants to consult a representative before answering more questions. What must the IRS generally do?",
+  "choices": [
+   "Finish the interview, because he chose to attend without a representative",
+   "End the examination and issue a notice of deficiency",
+   "Require him to sign a waiver of his right to representation",
+   "Suspend the interview so he can consult a representative"
+  ],
+  "answer": "Suspend the interview so he can consult a representative",
+  "explanation": "The right to retain representation is one of the ten rights in the Taxpayer Bill of Rights and is explained in Publication 1. During an interview, if the taxpayer clearly asks to consult a representative, the IRS must stop the interview and reschedule it so the taxpayer can do so. The exception is an interview held because of an administrative summons.\n\nA taxpayer can also send an authorized representative (under Form 2848) to the interview instead of attending. The IRS can only require the taxpayer to attend in person if it issues a summons. The taxpayer may record the interview with advance notice, and the IRS can also record it.\n\nExam tip: if a representative is unreasonably delaying an examination, the IRS can bypass them and contact the taxpayer directly, with a supervisor's approval.",
+  "source": {
+   "title": "Publication 1, Your Rights as a Taxpayer",
+   "url": "https://www.irs.gov/pub/irs-pdf/p1.pdf",
+   "section": "Examinations (Audits): By Interview"
+  }
+ },
+ {
+  "id": "p3d2-12",
+  "part": "part3",
+  "domain": "Representation before the IRS",
+  "topic": "Return positions",
+  "difficulty": "Hard",
+  "prompt": "Under Circular 230, a practitioner may not advise a client to take a position on a return when the position:",
+  "choices": [
+   "Lacks a reasonable basis",
+   "Has substantial authority but is not disclosed on the return",
+   "Differs from a position taken in a prior year",
+   "Has less than a 90% chance of being sustained"
+  ],
+  "answer": "Lacks a reasonable basis",
+  "explanation": "Circular 230 section 10.34 says a practitioner may not willfully, recklessly or through gross incompetence sign a return or advise a client to take a position on a return that lacks a reasonable basis, is an unreasonable position under section 6694(a), or is a willful attempt to understate tax.\n\nIn practice: a position with substantial authority can be taken without disclosure. A position with only a reasonable basis (a relatively low standard, but more than merely arguable) must be adequately disclosed, usually on Form 8275. Positions on tax shelters and reportable transactions need a reasonable belief that they are more likely than not to be sustained. The practitioner must also inform the client of any penalties that are reasonably likely to apply and how disclosure can avoid them.\n\nExam tip: in order from lowest to highest, the standards are reasonable basis (about 20%), substantial authority (about 40%), and more likely than not (over 50%).",
+  "source": {
+   "title": "Treasury Department Circular No. 230, Regulations Governing Practice before the Internal Revenue Service",
+   "url": "https://www.irs.gov/pub/irs-pdf/pcir230.pdf",
+   "section": "§10.34 Standards with respect to tax returns and documents"
+  }
+ },
+ {
+  "id": "p3d3-01",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Late filing and payment",
+  "difficulty": "Hard",
+  "prompt": "A taxpayer files her return three months late with no extension, and pays the $10,000 balance due with it. No minimum penalty or relief applies. What is the combined penalty for filing and paying late?",
+  "choices": [
+   "$1,500",
+   "$2,500",
+   "$500",
+   "$1,650"
+  ],
+  "answer": "$1,500",
+  "explanation": "The failure-to-file penalty is 5% of the unpaid tax for each month or part of a month the return is late, up to 25%. The failure-to-pay penalty is 0.5% of the unpaid tax for each month or part of a month, also up to 25%. For any month when both apply, the failure-to-file penalty is reduced by the failure-to-pay penalty, so the combined rate is 5% a month.\n\nFor three months on $10,000: the failure-to-file penalty is 4.5% × 3 = 13.5%, or $1,350, and the failure-to-pay penalty is 0.5% × 3 = 1.5%, or $150. The total is $1,500, plus interest. If the return were more than 60 days late, a minimum failure-to-file penalty would apply ($510 for returns due in 2025, or 100% of the tax due if less). The question says no minimum applies.\n\nExam tip: first-time abatement can remove these penalties for a taxpayer with a clean compliance history for the past three years, even without reasonable cause.",
+  "source": {
+   "title": "Failure to file penalty",
+   "url": "https://www.irs.gov/payments/failure-to-file-penalty",
+   "section": "How we calculate the penalty"
+  }
+ },
+ {
+  "id": "p3d3-02",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Accuracy-related penalty",
+  "difficulty": "Medium",
+  "prompt": "For an individual, an understatement of income tax is \"substantial\" for the 20% accuracy-related penalty when it is more than:",
+  "choices": [
+   "The lesser of 10% of the tax required to be shown on the return or $5,000",
+   "$10,000, whatever the size of the correct tax",
+   "25% of the gross income shown on the return",
+   "The greater of 10% of the tax required to be shown on the return or $5,000"
+  ],
+  "answer": "The greater of 10% of the tax required to be shown on the return or $5,000",
+  "explanation": "The accuracy-related penalty under section 6662 is 20% of the part of an underpayment caused by negligence or disregard of the rules, a substantial understatement of income tax, a substantial valuation misstatement, and certain other causes. For gross valuation misstatements and undisclosed transactions lacking economic substance, the rate is 40%.\n\nFor an individual, an understatement is substantial if it is more than the greater of 10% of the correct tax or $5,000. Example: if the correct tax is $80,000 and the understatement is $7,000, the threshold is the greater of $8,000 or $5,000, which is $8,000, so the understatement isn't substantial. The understatement is reduced by items with substantial authority, and by adequately disclosed items with a reasonable basis.\n\nExam tip: the penalty doesn't apply to any part of an underpayment where the taxpayer shows reasonable cause and good faith.",
+  "source": {
+   "title": "Accuracy-related penalty",
+   "url": "https://www.irs.gov/payments/accuracy-related-penalty",
+   "section": "Substantial understatement of income tax"
+  }
+ },
+ {
+  "id": "p3d3-03",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Civil fraud penalty",
+  "difficulty": "Medium",
+  "prompt": "What is the civil penalty when part of an underpayment of tax is due to fraud?",
+  "choices": [
+   "20% of the whole underpayment",
+   "75% of the part of the underpayment due to fraud",
+   "50% of the part of the underpayment due to fraud",
+   "100% of the tax shown on the return"
+  ],
+  "answer": "75% of the part of the underpayment due to fraud",
+  "explanation": "Section 6663 imposes a civil fraud penalty of 75% of the part of an underpayment that is due to fraud. Fraud means intentional wrongdoing to evade a tax believed to be owed, such as hiding income, keeping two sets of books or making false entries.\n\nThe IRS must prove fraud by clear and convincing evidence. Once it shows that any part of the underpayment is due to fraud, the entire underpayment is treated as fraudulent unless the taxpayer proves which parts aren't. The 20% accuracy-related penalty doesn't apply to the part of the underpayment the fraud penalty covers. A fraudulent return also has no statute of limitations on assessment.\n\nExam tip: on a joint return, the fraud penalty applies to a spouse only if part of the underpayment is due to that spouse's own fraud.",
+  "source": {
+   "title": "Publication 17, Your Federal Income Tax (2025)",
+   "url": "https://www.irs.gov/publications/p17",
+   "section": "Chapter 1: Penalties, Fraud"
+  }
+ },
+ {
+  "id": "p3d3-04",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Trust fund recovery penalty",
+  "difficulty": "Medium",
+  "prompt": "A corporation's president decided to pay suppliers instead of depositing withheld payroll taxes. What is the amount of the trust fund recovery penalty that can be assessed against her personally?",
+  "choices": [
+   "$5,000 for each quarter",
+   "20% of the unpaid trust fund taxes",
+   "100% of the unpaid trust fund taxes",
+   "50% of all unpaid employment taxes, including the employer's share"
+  ],
+  "answer": "100% of the unpaid trust fund taxes",
+  "explanation": "Trust fund taxes are amounts an employer withholds from employees and holds in trust for the government: federal income tax withholding and the employees' share of Social Security and Medicare taxes. Under section 6672, any responsible person who willfully fails to collect, account for or pay over these taxes can be held personally liable for a penalty equal to 100% of the unpaid trust fund taxes.\n\nA responsible person has the duty and power to decide which bills get paid, such as an officer, owner or employee who signs checks. Willfully means knowing the taxes were due and choosing to pay other creditors instead. The president knew and chose to pay suppliers, so both tests are met. The employer's share of FICA and FUTA isn't part of the penalty.\n\nExam tip: before assessing the penalty, the IRS usually interviews potentially responsible people on Form 4180 and sends Letter 1153, which gives 60 days to appeal.",
+  "source": {
+   "title": "Employment taxes and the trust fund recovery penalty (TFRP)",
+   "url": "https://www.irs.gov/businesses/small-businesses-self-employed/employment-taxes-and-the-trust-fund-recovery-penalty-tfrp",
+   "section": "Figuring the TFRP amount"
+  }
+ },
+ {
+  "id": "p3d3-05",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Offer in compromise",
+  "difficulty": "Easy",
+  "prompt": "Which of the following is NOT a basis on which the IRS can accept an offer in compromise?",
+  "choices": [
+   "Doubt as to the taxpayer's willingness to pay",
+   "Doubt as to collectibility",
+   "Effective tax administration",
+   "Doubt as to liability"
+  ],
+  "answer": "Doubt as to the taxpayer's willingness to pay",
+  "explanation": "An offer in compromise is an agreement to settle a tax debt for less than the full amount owed. The IRS can accept an offer on three grounds. Doubt as to liability applies when there is a genuine dispute about whether the tax is owed. Doubt as to collectibility applies when the taxpayer's assets and future income are less than the amount owed. Effective tax administration applies when full collection is possible but would create economic hardship or be unfair and inequitable.\n\nFor doubt as to collectibility, the IRS generally expects an offer at least equal to the taxpayer's reasonable collection potential: the net equity in their assets plus their future disposable income. Offers are filed on Form 656 with Form 433-A (OIC) or 433-B (OIC), an application fee, and an initial payment (20% of a lump-sum offer, or the first monthly payment), unless low-income certification applies. Doubt as to liability offers use Form 656-L and need no fee.\n\nExam tip: while an offer is pending, the collection statute is suspended and the IRS generally can't levy.",
+  "source": {
+   "title": "Offer in compromise",
+   "url": "https://www.irs.gov/payments/offer-in-compromise",
+   "section": "Offer in compromise"
+  }
+ },
+ {
+  "id": "p3d3-06",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Collection due process",
+  "difficulty": "Medium",
+  "prompt": "A taxpayer receives a Final Notice of Intent to Levy and Notice of Your Right to a Hearing. What must he do to get a collection due process hearing?",
+  "choices": [
+   "Petition the Tax Court within 90 days of the date of the notice",
+   "File Form 9423 within 2 business days of a conference with the collection manager",
+   "Pay the tax and then file a claim for refund",
+   "File Form 12153 within 30 days of the date of the notice"
+  ],
+  "answer": "File Form 12153 within 30 days of the date of the notice",
+  "explanation": "A taxpayer is entitled to a collection due process (CDP) hearing with the IRS Independent Office of Appeals after receiving a Notice of Federal Tax Lien filing or a final notice of intent to levy. The request is made on Form 12153, and it must be filed within 30 days of the notice (for a levy notice) or by the date stated in the notice (for a lien notice).\n\nA timely request generally stops levy action for the periods covered, and suspends the collection statute while the hearing is pending. At the hearing, the taxpayer can raise collection alternatives, such as an installment agreement or offer in compromise, spousal defenses, and, in some cases, whether the tax is actually owed. Appeals issues a determination, which the taxpayer can challenge in Tax Court within 30 days.\n\nExam tip: a request made within one year of the notice gets an equivalent hearing, but it doesn't stop collection and its decision can't be taken to Tax Court.",
+  "source": {
+   "title": "Publication 1660, Collection Appeal Rights",
+   "url": "https://www.irs.gov/pub/irs-pdf/p1660.pdf",
+   "section": "Collection Due Process (CDP)"
+  }
+ },
+ {
+  "id": "p3d3-07",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Installment agreements",
+  "difficulty": "Medium",
+  "prompt": "An individual who has filed and paid on time for the past five years now owes $8,000 of income tax and can pay it within three years. What is true of his request for an installment agreement?",
+  "choices": [
+   "The IRS must accept it",
+   "The IRS can accept it only with a 20% down payment",
+   "The IRS can accept it only after he files a full financial statement",
+   "The IRS can accept it only if a federal tax lien is filed first"
+  ],
+  "answer": "The IRS must accept it",
+  "explanation": "Under section 6159(c), the IRS must accept an individual's installment agreement request (a guaranteed installment agreement) when the tax owed, not counting interest and penalties, is $10,000 or less; the taxpayer has filed all returns and paid all tax for the previous five years and hasn't had an installment agreement during that time; the taxpayer agrees to pay the full amount within three years; and the taxpayer agrees to comply with the tax laws while the agreement is in effect.\n\nThis taxpayer owes $8,000, has a clean five-year history and can pay within three years, so the IRS must accept. Taxpayers who owe more can still use a streamlined agreement, generally for balances up to $50,000 paid within 72 months, again without a full financial statement. Requests are made online or on Form 9465. Penalties and interest keep accruing, but the failure-to-pay penalty drops to 0.25% a month while an agreement is in effect (for a timely filed return).\n\nExam tip: an installment agreement is generally the first collection alternative to suggest before an offer in compromise.",
+  "source": {
+   "title": "Topic no. 202, Tax payment options",
+   "url": "https://www.irs.gov/taxtopics/tc202",
+   "section": "Installment agreements"
+  }
+ },
+ {
+  "id": "p3d3-08",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Innocent spouse relief",
+  "difficulty": "Hard",
+  "prompt": "By when must a taxpayer generally file Form 8857 to request innocent spouse relief from an understatement of tax on a joint return?",
+  "choices": [
+   "Within three years after the joint return was filed",
+   "Within two years after the IRS first begins collection activity against that taxpayer",
+   "Before the divorce becomes final",
+   "Within 90 days after the notice of deficiency"
+  ],
+  "answer": "Within two years after the IRS first begins collection activity against that taxpayer",
+  "explanation": "There are three kinds of relief from joint liability. Innocent spouse relief (section 6015(b)) is for an understatement caused by the other spouse's erroneous items when the requesting spouse didn't know and had no reason to know of it. Separation of liability relief (section 6015(c)) divides the understatement between spouses who are divorced, legally separated, widowed or haven't lived together for 12 months. Equitable relief (section 6015(f)) covers cases that don't qualify for the others, including tax that was reported but not paid.\n\nRequests for innocent spouse and separation of liability relief must be filed no later than two years after the IRS first began collection activity against the requesting spouse, such as a levy or offset. Equitable relief requests can be filed within the time the IRS has to collect the tax, or for a refund, within the refund claim period.\n\nExam tip: the IRS must notify the other spouse and let them take part. Domestic abuse is taken into account for the knowledge test.",
+  "source": {
+   "title": "Publication 971, Innocent Spouse Relief",
+   "url": "https://www.irs.gov/publications/p971",
+   "section": "When To File Form 8857"
+  }
+ },
+ {
+  "id": "p3d3-09",
+  "part": "part3",
+  "domain": "Specific Areas of Representation",
+  "topic": "Liens and levies",
+  "difficulty": "Easy",
+  "prompt": "What is the difference between a federal tax lien and a levy?",
+  "choices": [
+   "A lien applies to real estate only, and a levy applies to personal property only",
+   "A lien is a legal claim against the taxpayer's property that secures the debt, and a levy actually takes the property",
+   "There is no difference between the two",
+   "A lien takes wages, and a levy takes bank accounts"
+  ],
+  "answer": "A lien is a legal claim against the taxpayer's property that secures the debt, and a levy actually takes the property",
+  "explanation": "A federal tax lien arises automatically when the IRS assesses a tax, sends a notice and demand for payment, and the taxpayer doesn't pay in full. It is the government's legal claim against all of the taxpayer's current and future property. The IRS may file a public Notice of Federal Tax Lien to alert creditors, which can affect the taxpayer's ability to get credit or sell property.\n\nA levy is the legal seizure of property to satisfy the debt. The IRS can levy wages, bank accounts, Social Security benefits, accounts receivable, vehicles and other property. Before most levies, the IRS must send a final notice of intent to levy and notice of the right to a hearing at least 30 days ahead.\n\nExam tip: remedies for liens include release (after payment), discharge of specific property, subordination (to let another creditor go first) and withdrawal of the public notice.",
+  "source": {
+   "title": "Publication 594, The IRS Collection Process",
+   "url": "https://www.irs.gov/pub/irs-pdf/p594.pdf",
+   "section": "Federal tax lien; Levy"
+  }
+ },
+ {
+  "id": "p3d4-01",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "PTIN",
+  "difficulty": "Easy",
+  "prompt": "Who must have a preparer tax identification number (PTIN)?",
+  "choices": [
+   "Only preparers who file more than 10 returns a year",
+   "Only attorneys, CPAs and enrolled agents",
+   "Anyone who prepares a return, including unpaid volunteers",
+   "Anyone who prepares, or helps prepare, all or substantially all of a federal tax return for compensation"
+  ],
+  "answer": "Anyone who prepares, or helps prepare, all or substantially all of a federal tax return for compensation",
+  "explanation": "Anyone who, for compensation, prepares or helps prepare all or substantially all of any federal tax return or claim for refund must have a valid PTIN and enter it on the returns they sign. This includes attorneys, CPAs and enrolled agents as well as unenrolled preparers.\n\nPTINs are obtained and renewed online every year. Each PTIN expires on December 31, and renewal for the next year opens in mid-October. Supervised employees of attorneys, CPAs or enrolled agents who help prepare returns also need a PTIN, even though they don't sign the return.\n\nExam tip: paid preparers who fail to put their PTIN on a return they sign can be charged a penalty under section 6695(c) for each failure.",
+  "source": {
+   "title": "PTIN requirements for tax return preparers",
+   "url": "https://www.irs.gov/tax-professionals/ptin-requirements-for-tax-return-preparers",
+   "section": "PTIN requirements for tax return preparers"
+  }
+ },
+ {
+  "id": "p3d4-02",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "Preparer due diligence",
+  "difficulty": "Medium",
+  "prompt": "Form 8867, the paid preparer's due diligence checklist, is NOT required for a return that claims which of the following?",
+  "choices": [
+   "The American opportunity tax credit",
+   "The premium tax credit",
+   "Head of household filing status",
+   "The earned income credit"
+  ],
+  "answer": "The premium tax credit",
+  "explanation": "Under section 6695(g), a paid preparer who prepares a return claiming the earned income credit, the child tax credit, additional child tax credit or credit for other dependents, the American opportunity tax credit, or head of household filing status must meet four due diligence requirements.\n\nThe four requirements are: complete and submit Form 8867 with the return; figure the credits correctly and keep the computation worksheets; meet the knowledge requirement by asking the client questions, documenting the answers and not ignoring information that seems incorrect or incomplete; and keep records for three years. Each failure carries a separate inflation-adjusted penalty for each credit or status claimed on the return.\n\nExam tip: the premium tax credit is reconciled on Form 8962, but it isn't one of the benefits covered by preparer due diligence.",
+  "source": {
+   "title": "Instructions for Form 8867, Paid Preparer's Due Diligence Checklist",
+   "url": "https://www.irs.gov/instructions/i8867",
+   "section": "Purpose of Form"
+  }
+ },
+ {
+  "id": "p3d4-03",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "Preparer records",
+  "difficulty": "Medium",
+  "prompt": "For how long must a paid preparer keep a copy of each return prepared, or a list of the taxpayers' names and identification numbers?",
+  "choices": [
+   "Indefinitely",
+   "Three years after the close of the return period",
+   "One year after the return is filed",
+   "Six years after the return is filed"
+  ],
+  "answer": "Three years after the close of the return period",
+  "explanation": "Under section 6107(b), a signing tax return preparer must keep either a completed copy of each return or claim for refund they prepared, or a list of the taxpayers' names and identification numbers and the tax years, for three years after the close of the return period. The preparer must make it available to the IRS on request. The return period is generally the 12-month period beginning July 1 of each year.\n\nThe preparer must also give the taxpayer a completed copy of the return no later than when the return is presented for signature. A penalty under section 6695 applies for each failure to give the taxpayer a copy, or to keep the copy or list, unless the failure is due to reasonable cause.\n\nExam tip: separate three-year retention rules apply to Form 8867 due diligence records and to Form 8879 e-file signature forms.",
+  "source": {
+   "title": "Tax preparer penalties",
+   "url": "https://www.irs.gov/payments/tax-preparer-penalties",
+   "section": "IRC 6695(d): Failure to retain copy or list"
+  }
+ },
+ {
+  "id": "p3d4-04",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "E-file requirement",
+  "difficulty": "Medium",
+  "prompt": "A tax return preparer must generally e-file the individual, estate and trust income tax returns he prepares when he reasonably expects to file how many in a calendar year?",
+  "choices": [
+   "5 or more",
+   "11 or more",
+   "50 or more",
+   "250 or more"
+  ],
+  "answer": "11 or more",
+  "explanation": "Under section 6011(e)(3), a specified tax return preparer must file covered returns electronically. A specified tax return preparer is one who reasonably expects to file 11 or more individual income tax returns (Forms 1040 and 1040-SR) and trust and estate returns (Form 1041) during the calendar year. Members of a firm count the firm's returns together.\n\nA client can choose to file on paper. The preparer must then get a signed and dated statement from the client, keep it, and attach Form 8948 to the paper return explaining why it isn't being e-filed. Hardship waivers can be requested on Form 8944.\n\nExam tip: the 11-return threshold is separate from the rule for businesses, which must e-file information returns such as Forms W-2 and 1099 if they file 10 or more in total.",
+  "source": {
+   "title": "Frequently asked questions: E-file requirements for specified tax return preparers",
+   "url": "https://www.irs.gov/e-file-providers/frequently-asked-questions-e-file-requirements-for-specified-tax-return-preparers-sometimes-referred-to-as-the-e-file-mandate",
+   "section": "Who is a specified tax return preparer?"
+  }
+ },
+ {
+  "id": "p3d4-05",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "E-file signature authorization",
+  "difficulty": "Medium",
+  "prompt": "What does an electronic return originator (ERO) do with a signed Form 8879?",
+  "choices": [
+   "Attaches it to the electronic return as a PDF",
+   "Destroys it once the return is accepted",
+   "Mails it to the IRS within three business days",
+   "Keeps it for three years from the return due date or the date the IRS received the return, whichever is later"
+  ],
+  "answer": "Keeps it for three years from the return due date or the date the IRS received the return, whichever is later",
+  "explanation": "Form 8879, the IRS e-file Signature Authorization, lets the taxpayer authorize the ERO to enter or create their self-selected PIN, or to use the Practitioner PIN method, to sign the electronic return. The taxpayer signs Form 8879 after reviewing the return and before it is transmitted.\n\nThe ERO keeps the completed Form 8879 for three years from the return's due date or the date the IRS received it, whichever is later. It can be kept on paper or electronically, and it is provided to the IRS only on request. The ERO must not transmit the return before receiving the signed Form 8879.\n\nExam tip: if the return is changed after the taxpayer signs, and the amounts differ by more than $50 in total income or AGI or $14 in total tax, federal withholding, refund or amount owed, the taxpayer must sign a new Form 8879.",
+  "source": {
+   "title": "Publication 1345, Handbook for Authorized IRS e-file Providers of Individual Income Tax Returns",
+   "url": "https://www.irs.gov/pub/irs-pdf/p1345.pdf",
+   "section": "Electronic Signatures: IRS e-file Signature Authorization"
+  }
+ },
+ {
+  "id": "p3d4-06",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "Disclosure of return information",
+  "difficulty": "Hard",
+  "prompt": "A preparer knowingly sells a client list, with income details taken from the returns, to an insurance agent without the clients' consent. What criminal penalty applies under section 7216?",
+  "choices": [
+   "A $50 penalty for each disclosure, with no possibility of prison",
+   "None, because only civil penalties apply to preparers",
+   "A misdemeanor, with a fine of up to $1,000, up to one year in prison, or both",
+   "A felony, with a fine of up to $100,000 and up to five years in prison"
+  ],
+  "answer": "A misdemeanor, with a fine of up to $1,000, up to one year in prison, or both",
+  "explanation": "Section 7216 makes it a crime for a tax return preparer to knowingly or recklessly disclose or use tax return information for any purpose other than preparing the return, unless the regulations allow it or the taxpayer consents. Selling client information to an insurance agent without consent is a clear violation.\n\nThe crime is a misdemeanor punishable by a fine of up to $1,000, up to one year in prison, or both, plus the costs of prosecution. When the disclosure is connected with an identity theft crime, the fine can be up to $100,000. Section 6713 adds a civil penalty of $250 for each unauthorized disclosure or use, up to $10,000 a year. Consent must be in writing, signed by the taxpayer, and meet the format rules of Rev. Proc. 2013-14.\n\nExam tip: a preparer may use client information to offer the preparer's own tax-related services without consent, but needs consent to offer other products, such as insurance or investments.",
+  "source": {
+   "title": "Section 7216 information center",
+   "url": "https://www.irs.gov/tax-professionals/section-7216-information-center",
+   "section": "Section 7216 information center"
+  }
+ },
+ {
+  "id": "p3d4-07",
+  "part": "part3",
+  "domain": "Filing Process",
+  "topic": "Data security",
+  "difficulty": "Medium",
+  "prompt": "What must every professional tax preparer have in place under the Federal Trade Commission's Safeguards Rule?",
+  "choices": [
+   "A written information security plan",
+   "A cyber liability insurance policy",
+   "A bonded off-site storage provider",
+   "An annual security audit by the IRS"
+  ],
+  "answer": "A written information security plan",
+  "explanation": "Tax preparers are financial institutions under the Gramm-Leach-Bliley Act, so they must follow the FTC Safeguards Rule. The rule requires a written information security plan (WISP) to protect client data, sized for the firm and the sensitivity of its data.\n\nThe plan must name a qualified person to oversee it, assess risks, put safeguards in place (such as encryption, multi-factor authentication and access controls), train staff, monitor and test the safeguards, oversee service providers, have an incident response plan, and be updated regularly. Publication 4557 and Publication 5708 give the IRS's guidance and a sample plan.\n\nExam tip: preparers renewing their PTIN confirm that they know about their data security obligations, and e-file providers must report data thefts to the IRS promptly.",
+  "source": {
+   "title": "Publication 4557, Safeguarding Taxpayer Data",
+   "url": "https://www.irs.gov/pub/irs-pdf/p4557.pdf",
+   "section": "Create a Written Information Security Plan"
+  }
+ }
+]
