@@ -6,6 +6,7 @@ import { ensureAccount, isAdmin, watchAccount, type Account } from "./lib/accoun
 import { useActivityHeartbeat } from "./lib/activity";
 import { isReviewDeckId } from "./lib/reviewDecks";
 import { auth } from "./lib/firebase";
+import { acceptTerms, takePendingAcceptance, TERMS_VERSION } from "./lib/terms";
 import type { AppUser } from "./lib/types";
 import Admin from "./pages/Admin";
 import CreateDeck from "./pages/CreateDeck";
@@ -18,6 +19,7 @@ import Login from "./pages/Login";
 import Practice from "./pages/Practice";
 import PracticeSetup from "./pages/PracticeSetup";
 import Results from "./pages/Results";
+import Terms, { TermsText } from "./pages/Terms";
 import ReviewDeck from "./pages/ReviewDeck";
 import Upgrade from "./pages/Upgrade";
 
@@ -56,6 +58,52 @@ function Suspended() {
   );
 }
 
+/** Shown until the signed-in person has accepted the current Terms of Use (new Google sign-ups, older accounts, new versions). */
+function AcceptTerms({ uid, updated }: { uid: string; updated: boolean }) {
+  const [agreed, setAgreed] = useState(false);
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState("");
+  return (
+    <div className="wrap">
+      <div className="stack" style={{ paddingTop: "6vh" }}>
+        <Brand />
+        <h1>{updated ? "We've updated our Terms of Use." : "Before you start, please review our Terms of Use."}</h1>
+        <p className="muted">You need to accept the Terms of Use and Disclaimer to use EASprint.</p>
+        <div className="panel terms-box" tabIndex={0} aria-label="Terms of Use and Disclaimer">
+          <TermsText />
+        </div>
+        <label className="agree" htmlFor="accept-terms">
+          <input id="accept-terms" type="checkbox" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} />
+          <span>
+            I am 18 or older, and I have read and agree to the Terms of Use and Disclaimer. I understand EASprint is not affiliated with the IRS, is for study
+            only and is not tax or legal advice, and does not guarantee exam results.
+          </span>
+        </label>
+        <div className="row">
+          <button
+            className="btn-primary"
+            disabled={!agreed || busy}
+            onClick={async () => {
+              setBusy(true);
+              setError("");
+              try {
+                await acceptTerms(uid);
+              } catch {
+                setError("That didn't save. Try again in a moment.");
+                setBusy(false);
+              }
+            }}
+          >
+            Agree and continue
+          </button>
+          <button onClick={() => auth && signOut(auth)}>Decline and sign out</button>
+        </div>
+        {error && <p className="error">{error}</p>}
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const [user, setUser] = useState<AppUser | null | undefined>(auth ? undefined : LOCAL_USER);
   const [account, setAccount] = useState<Account | null>(null);
@@ -64,7 +112,7 @@ export default function App() {
   useEffect(() => {
     if (!auth || !user) return;
     let stop = () => undefined as void;
-    ensureAccount(user)
+    ensureAccount(user, takePendingAcceptance())
       .catch(() => undefined)
       .finally(() => (stop = watchAccount(user.uid, setAccount)));
     return () => stop();
@@ -85,12 +133,21 @@ export default function App() {
         <Route path="/" element={<Landing signedIn={false} />} />
         <Route path="/how-it-works" element={<Landing signedIn={false} />} />
         <Route path="/signup" element={<Login key="signup" initialMode="signup" />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="*" element={<Login />} />
       </Routes>
     );
   }
   const admin = !!auth && isAdmin(user);
   if (account?.status === "suspended" && !admin) return <Suspended />;
+  if (account && account.termsVersion !== TERMS_VERSION) {
+    return (
+      <Routes>
+        <Route path="/terms" element={<Terms />} />
+        <Route path="*" element={<AcceptTerms uid={user.uid} updated={!!account.termsVersion} />} />
+      </Routes>
+    );
+  }
 
   return (
     <UserContext.Provider value={user}>
@@ -98,6 +155,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/how-it-works" element={<Landing signedIn />} />
+          <Route path="/terms" element={<Terms />} />
           <Route path="/login" element={<Navigate to="/" replace />} />
           <Route path="/signup" element={<Navigate to="/" replace />} />
           <Route path="/create" element={<CreateDeck />} />
