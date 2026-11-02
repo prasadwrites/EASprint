@@ -37,7 +37,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 import anthropic
-from firebase_admin import auth, firestore, initialize_app, storage
+from firebase_admin import auth, firestore, get_app, initialize_app, storage
 from firebase_functions import https_fn, options, scheduler_fn
 
 import accounts
@@ -51,7 +51,12 @@ from accounts import DEFAULT_PLAN, PLANS, LimitError, check_request, is_admin
 from generator import DeckRequest, GenerationError, generate_deck as _generate
 from schema import DOMAINS
 
-initialize_app()
+# The Firebase CLI can load this module more than once in the same process while it reads the function
+# list during a deploy, so only set up the default app the first time.
+try:
+    get_app()
+except ValueError:
+    initialize_app()
 options.set_global_options(region="us-central1", max_instances=10)
 
 DIFFICULTIES = {"Easy", "Medium", "Hard", "Mixed"}
