@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useUser } from "../App";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
+import AddToReviewDeck from "../components/AddToReviewDeck";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { EXAM, sourceOf } from "../data/exam";
 import { deleteDeck, DELETE_WARNING, loadDeck, loadQuestions, shareDeck, unshareDeck, watchDeck } from "../lib/decks";
@@ -333,13 +334,18 @@ export default function DeckReview() {
                     </span>
                   </button>
                   {expanded && (
-                    <ul className="qchoices">
-                      {q.choices.map((c, k) => (
-                        <li key={c}>
-                          <b>{String.fromCharCode(65 + k)}.</b> {c}
-                        </li>
-                      ))}
-                    </ul>
+                    <>
+                      <ul className="qchoices">
+                        {q.choices.map((c, k) => (
+                          <li key={c}>
+                            <b>{String.fromCharCode(65 + k)}.</b> {c}
+                          </li>
+                        ))}
+                      </ul>
+                      <div className="qactions">
+                        <AddToReviewDeck deckId={deck.id} question={q} className="btn btn-small" />
+                      </div>
+                    </>
                   )}
                 </li>
               );

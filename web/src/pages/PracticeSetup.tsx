@@ -140,7 +140,7 @@ export default function PracticeSetup() {
                 <label htmlFor="n">Number of questions</label>
                 <input id="n" type="number" min={1} max={pool || 1} value={n} onChange={(e) => setN(Number(e.target.value))} />
                 <p className="muted" style={{ fontSize: 14, marginTop: 4 }}>
-                  {questions.length} available{domains.length ? " in the domains you picked" : deck.source === "ai" ? " in this deck" : " in this part"}
+                  {questions.length} available{domains.length ? " in the domains you picked" : deck.source !== "builtin" ? " in this deck" : " in this part"}
                 </p>
               </div>
               {mode === "practice" && (

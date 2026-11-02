@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import AddToReviewDeck from "../components/AddToReviewDeck";
 import { Chip, Icon } from "../components/TopBar";
 import { domainName } from "../data";
 import { loadQuestions } from "../lib/decks";
@@ -146,7 +147,10 @@ export default function Practice() {
         </nav>
 
         <div className="panel qcard">
-          <div className="eyebrow">{domainName(q.domain)}</div>
+          <div className="row spread" style={{ flexWrap: "nowrap", alignItems: "flex-start" }}>
+            <div className="eyebrow">{domainName(q.domain)}</div>
+            <AddToReviewDeck deckId={session.deckId} question={q} className="btn btn-small" />
+          </div>
           <div className="qtext">{q.prompt}</div>
           <div className="choices" role="group" aria-label="Choices">
             {q.choices.map((c, k) => (

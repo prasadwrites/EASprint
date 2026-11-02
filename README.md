@@ -31,6 +31,12 @@ Tax answers can't be solved by a math engine the way MathSprint's are, so the bl
 
 Building decks needs Firebase (it is hidden when the app runs without it).
 
+### Review decks
+
+Any question can be saved to a review deck with **+ Add to review deck**: on a deck's question list, during practice, and on the results page. If the candidate has no review deck yet, it asks for a name and creates one with that question in it; otherwise it lists their review decks (showing which already have the question) with an option to start a new one.
+
+Review decks are private to each candidate and show under "Your review decks" on the home page. Each one can be practiced like any deck (questions from different parts can be mixed), renamed, deleted, and have questions removed. They live in Firestore under `reviewDecks/{id}` with a copy of each question in `questions/`, so a review deck keeps working after the deck a question came from is deleted or unshared. The app writes them directly; `firestore.rules` keeps them owner-only. Without Firebase they are kept in the browser, like practice sessions.
+
 ### Accounts and plans
 
 Every signed-in person gets an account on first sign-in, on the Free plan. The admin account is

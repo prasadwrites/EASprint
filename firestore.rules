@@ -73,6 +73,35 @@ service cloud.firestore {
       }
     }
 
+    // Review decks: each person's own collections of questions saved from any deck. The app writes them
+    // directly. Each question is a copy, so a review deck keeps working after its source deck is gone.
+    match /reviewDecks/{deckId} {
+      function validName(d) { return d.name is string && d.name.size() >= 1 && d.name.size() <= 60; }
+      function validKeys(d) { return d.questionKeys is list && d.questionKeys.size() <= 1000; }
+      allow get: if resource == null ? signedIn() : owns(resource.data);
+      allow list: if owns(resource.data);
+      allow create: if owns(request.resource.data) && notSuspended()
+        && request.resource.data.keys().hasOnly(["ownerId", "name", "questionKeys", "createdAt", "updatedAt"])
+        && validName(request.resource.data) && validKeys(request.resource.data);
+      allow update: if owns(resource.data) && notSuspended()
+        && request.resource.data.ownerId == resource.data.ownerId
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["name", "questionKeys", "updatedAt"])
+        && validName(request.resource.data) && validKeys(request.resource.data);
+      allow delete: if owns(resource.data);
+
+      match /questions/{key} {
+        function deckBefore() { return get(/databases/$(database)/documents/reviewDecks/$(deckId)); }
+        function deckAfter() { return getAfter(/databases/$(database)/documents/reviewDecks/$(deckId)); }
+        allow read: if signedIn() && deckBefore().data.ownerId == request.auth.uid;
+        // Written in the same batch as the deck, so check the deck as it will be after the write.
+        allow create, update: if signedIn() && notSuspended() && deckAfter() != null && deckAfter().data.ownerId == request.auth.uid
+          && key in deckAfter().data.questionKeys
+          && request.resource.data.prompt is string && request.resource.data.prompt.size() <= 5000
+          && request.resource.data.explanation is string && request.resource.data.explanation.size() <= 20000;
+        allow delete: if signedIn() && deckBefore().data.ownerId == request.auth.uid;
+      }
+    }
+
     match /sessions/{sessionId} {
       allow read: if owns(resource.data);
       allow create: if owns(request.resource.data) && request.resource.data.status == "active" && notSuspended();
