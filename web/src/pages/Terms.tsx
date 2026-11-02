@@ -4,7 +4,7 @@ import { Brand } from "../components/TopBar";
 import { CONTACT_EMAIL, GOVERNING_STATE, TERMS_EFFECTIVE } from "../lib/terms";
 
 // TEMPLATE: general-purpose terms for a US online study service. Not legal advice. Have a lawyer review
-// this text and fill in GOVERNING_STATE in lib/terms.ts. When you change the wording, bump TERMS_VERSION
+// this text. Governing law (Texas) is set by GOVERNING_STATE in lib/terms.ts. When you change the wording, bump TERMS_VERSION
 // there so everyone is asked to accept the new version.
 
 function Section({ n, title, children }: { n: number; title: string; children: ReactNode }) {

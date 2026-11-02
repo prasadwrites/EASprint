@@ -7,14 +7,13 @@ import { db } from "./firebase";
  * agree to again: everyone whose account records an older version is asked to accept the new one.
  *
  * NOTE FOR THE OWNER: the Terms text in pages/Terms.tsx is a general template written for a US online
- * study service. It is not legal advice. Have a lawyer licensed in your state review it, and fill in
- * GOVERNING_STATE below, before relying on it.
+ * study service. It is not legal advice. Have a lawyer licensed in Texas review it before relying on it.
  */
 export const TERMS_VERSION = "2026-11-02";
 export const TERMS_EFFECTIVE = "November 2, 2026";
 
-/** The US state whose laws govern the Terms and whose courts hear disputes. Fill in before launch. */
-export const GOVERNING_STATE = "[STATE]";
+/** The US state whose laws govern the Terms and whose courts hear disputes. */
+export const GOVERNING_STATE = "the State of Texas";
 
 /** Where people send legal notices and questions about the Terms. */
 export const CONTACT_EMAIL = ADMIN_EMAIL;
