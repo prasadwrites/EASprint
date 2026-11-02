@@ -387,3 +387,9 @@ a { color: var(--accent); }
 .rd-count { flex: none; font-size: 14px; display: inline-flex; align-items: center; gap: 4px; }
 .btn-small { padding: 6px 12px; font-size: 14px; white-space: nowrap; flex: none; }
 .qlist .qactions { margin: 0 0 14px 42px; }
+.terms p, .terms li { line-height: 1.6; }
+.terms ul { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 4px; }
+.terms .caps { text-transform: uppercase; font-size: 14px; letter-spacing: 0.01em; }
+.terms-box { max-height: 50vh; overflow-y: auto; }
+.agree { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; cursor: pointer; }
+.agree input { width: 18px; height: 18px; margin-top: 3px; flex: none; accent-color: var(--accent); }

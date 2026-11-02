@@ -327,7 +327,7 @@ export default function Landing({ signedIn }: { signedIn: boolean }) {
 
         <p className="note">
           EASprint is a study aid and is not affiliated with the IRS. Check the linked IRS source before relying on any figure, because amounts change from year to
-          year.
+          year. See our <Link to="/terms">Terms of Use and Disclaimer</Link>.
         </p>
       </main>
     </>

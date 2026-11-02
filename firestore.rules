@@ -20,14 +20,23 @@ service cloud.firestore {
     // (through the admin_update_account function) can change the plan, status or deck count.
     match /accounts/{uid} {
       allow read: if (signedIn() && request.auth.uid == uid) || isAdmin();
+      // Terms of Use acceptance: the version is a short string and the time is the server's own clock.
+      function validTerms(d) {
+        return !("termsVersion" in d) || (d.termsVersion is string && d.termsVersion.size() <= 20 && d.termsAcceptedAt == request.time);
+      }
       allow create: if signedIn() && request.auth.uid == uid
-        && request.resource.data.keys().hasOnly(["email", "displayName", "plan", "status", "decksCreated", "createdAt", "lastSeenAt"])
+        && request.resource.data.keys().hasOnly(["email", "displayName", "plan", "status", "decksCreated", "createdAt", "lastSeenAt", "termsVersion", "termsAcceptedAt"])
         && request.resource.data.plan == "free"
         && request.resource.data.status == "active"
         && request.resource.data.decksCreated == 0
-        && request.resource.data.email == request.auth.token.email;
-      allow update: if signedIn() && request.auth.uid == uid
-        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(["lastSeenAt", "displayName"]);
+        && request.resource.data.email == request.auth.token.email
+        && ("termsVersion" in request.resource.data) == ("termsAcceptedAt" in request.resource.data)
+        && validTerms(request.resource.data);
+      allow update: if signedIn() && request.auth.uid == uid && (
+        request.resource.data.diff(resource.data).affectedKeys().hasOnly(["lastSeenAt", "displayName"])
+        || (request.resource.data.diff(resource.data).affectedKeys().hasOnly(["termsVersion", "termsAcceptedAt"])
+          && request.resource.data.termsVersion is string && request.resource.data.termsVersion.size() <= 20
+          && request.resource.data.termsAcceptedAt == request.time));
     }
 
     // Per-account access codes for building decks. Only the admin can read them, so nobody can

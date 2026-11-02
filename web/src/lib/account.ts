@@ -24,6 +24,9 @@ export interface Account {
   hasAccessCode?: boolean;
   createdAt: Date | null;
   lastSeenAt: Date | null;
+  /** The Terms of Use version this person accepted, and when (server time). Empty if never accepted. */
+  termsVersion: string;
+  termsAcceptedAt: Date | null;
 }
 
 export const isAdmin = (user: AppUser & { emailVerified?: boolean }) => user.email === ADMIN_EMAIL && user.emailVerified !== false;
@@ -44,11 +47,16 @@ function fromData(uid: string, d: Record<string, unknown>): Account {
     hasAccessCode: !!d.hasAccessCode,
     createdAt: toDate(d.createdAt),
     lastSeenAt: toDate(d.lastSeenAt),
+    termsVersion: String(d.termsVersion ?? ""),
+    termsAcceptedAt: toDate(d.termsAcceptedAt),
   };
 }
 
-/** Creates the account on first sign-in with the default plan, and records the visit after that. */
-export async function ensureAccount(user: AppUser): Promise<void> {
+/**
+ * Creates the account on first sign-in with the default plan, and records the visit after that.
+ * `acceptedTerms` is the Terms version ticked on the sign-up form, recorded with the new account.
+ */
+export async function ensureAccount(user: AppUser, acceptedTerms: string | null = null): Promise<void> {
   if (!db) return;
   const ref = doc(db, "accounts", user.uid);
   const snap = await getDoc(ref);
@@ -61,6 +69,7 @@ export async function ensureAccount(user: AppUser): Promise<void> {
       decksCreated: 0,
       createdAt: serverTimestamp(),
       lastSeenAt: serverTimestamp(),
+      ...(acceptedTerms ? { termsVersion: acceptedTerms, termsAcceptedAt: serverTimestamp() } : {}),
     });
   } else {
     await updateDoc(ref, { lastSeenAt: serverTimestamp(), displayName: user.displayName ?? "" });
