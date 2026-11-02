@@ -8,6 +8,7 @@ import { listSessions } from "../lib/db";
 import { limitsFor } from "../lib/account";
 import { canBuildDecks, deleteDeck, DELETE_WARNING, listMyDecks, listSharedDecks } from "../lib/decks";
 import { paceSummary, weakestConcepts } from "../lib/insights";
+import { listReviewDecks, type ReviewDeck } from "../lib/reviewDecks";
 import { formatClock } from "../lib/pace";
 import type { Deck, PracticeSession } from "../lib/types";
 
@@ -30,6 +31,7 @@ export default function Dashboard() {
   const [sessions, setSessions] = useState<PracticeSession[] | null>(null);
   const [myDecks, setMyDecks] = useState<Deck[]>([]);
   const [sharedDecks, setSharedDecks] = useState<Deck[]>([]);
+  const [reviewDecks, setReviewDecks] = useState<ReviewDeck[]>([]);
   const [topic, setTopic] = useState("");
   const [deleting, setDeleting] = useState("");
 
@@ -51,6 +53,7 @@ export default function Dashboard() {
     listSessions(user.uid).then(setSessions);
     listMyDecks(user.uid).then(setMyDecks);
     listSharedDecks(user.uid).then(setSharedDecks).catch(() => setSharedDecks([]));
+    listReviewDecks(user.uid).then(setReviewDecks).catch(() => setReviewDecks([]));
   }, [user.uid]);
 
   useEffect(() => {
@@ -237,6 +240,53 @@ export default function Dashboard() {
             </div>
           </section>
         )}
+
+        <section className="stack" id="review">
+          <h2>Your review decks</h2>
+          {reviewDecks.length === 0 ? (
+            <div className="panel">
+              <p>
+                Save questions you want to come back to. Tap <b>+ Add to review deck</b> on any question, in a deck, during practice or on your results, and
+                name your first review deck.
+              </p>
+            </div>
+          ) : (
+            <div className="decks">
+              {reviewDecks.map((d) => {
+                const b = best(d.id);
+                const n = d.questionKeys.length;
+                return (
+                  <article key={d.id} className="panel deck-card">
+                    <div>
+                      <h3>{d.name}</h3>
+                      <div className="meta">
+                        Review deck · {n} question{n === 1 ? "" : "s"}
+                      </div>
+                    </div>
+                    <div className="row" style={{ flexWrap: "nowrap" }}>
+                      <div className="bar">
+                        <i style={{ width: `${b ?? 0}%`, background: `var(--${b === null ? "muted" : tone(b)})` }} />
+                      </div>
+                      <span style={{ fontWeight: 700, fontSize: 14, whiteSpace: "nowrap", color: `var(--${b === null ? "muted" : tone(b)})` }}>
+                        {b === null ? "New" : `Best ${b}%`}
+                      </span>
+                    </div>
+                    <div className="row">
+                      {n > 0 && (
+                        <Link className="btn btn-primary" style={{ flexGrow: 1 }} to={`/decks/${d.id}/practice`}>
+                          Practice
+                        </Link>
+                      )}
+                      <Link className="btn" style={n > 0 ? undefined : { flexGrow: 1 }} to={`/decks/${d.id}`}>
+                        Review
+                      </Link>
+                    </div>
+                  </article>
+                );
+              })}
+            </div>
+          )}
+        </section>
 
         <section className="tiles" id="progress" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))" }}>
           <div className="panel stack">

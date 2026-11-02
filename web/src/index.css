@@ -374,3 +374,16 @@ a { color: var(--accent); }
 .reel-video { flex: 0 0 auto; width: 220px; max-width: 100%; }
 .reel-video video, .reel-empty { width: 100%; aspect-ratio: 9 / 16; border-radius: 12px; background: #0f141b; display: block; }
 .reel-empty { display: flex; align-items: center; justify-content: center; font-size: 14px; }
+
+/* Add to review deck */
+.sheet { border: 1px solid var(--line); border-radius: 16px; background: var(--surface); color: var(--ink); padding: 22px; width: min(440px, calc(100vw - 32px)); box-shadow: 0 16px 48px rgba(0,0,0,.25); }
+.sheet::backdrop { background: rgba(10, 14, 20, .5); }
+.sheet h2 { display: flex; align-items: center; gap: 8px; }
+.rd-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; max-height: 50vh; overflow-y: auto; }
+.rd-list button { width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 12px; text-align: left; }
+.rd-list button:not(:disabled):hover { border-color: var(--accent); }
+.rd-list button:disabled { cursor: default; opacity: .75; }
+.rd-name { min-width: 0; overflow-wrap: anywhere; }
+.rd-count { flex: none; font-size: 14px; display: inline-flex; align-items: center; gap: 4px; }
+.btn-small { padding: 6px 12px; font-size: 14px; white-space: nowrap; flex: none; }
+.qlist .qactions { margin: 0 0 14px 42px; }

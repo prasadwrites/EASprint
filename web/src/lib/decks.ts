@@ -3,6 +3,7 @@ import { httpsCallable } from "firebase/functions";
 import { DECKS, getDeck as builtinDeck, getQuestions as builtinQuestions } from "../data";
 import { PARTS } from "../data/exam";
 import { db, functions } from "./firebase";
+import { asDeck, getReviewDeck, isReviewDeckId, loadReviewQuestions } from "./reviewDecks";
 import type { Deck, PartId, Question } from "./types";
 
 /** Building decks needs Claude, which runs in a Cloud Function, so it needs Firebase. */
@@ -39,12 +40,16 @@ function fromDoc(id: string, data: Record<string, unknown>): Deck {
 
 /** Live updates for a Claude-built deck, so its page can show progress while it generates. */
 export function watchDeck(id: string, cb: (d: Deck | null) => void): () => void {
-  if (builtinDeck(id) || !db) return () => undefined;
+  if (builtinDeck(id) || isReviewDeckId(id) || !db) return () => undefined;
   return onSnapshot(doc(db, "decks", id), (s) => cb(s.exists() ? fromDoc(s.id, s.data()) : null));
 }
 
-/** A built-in exam part, or one of the candidate's own decks. */
+/** A built-in exam part, or one of the candidate's own decks (including review decks). */
 export async function loadDeck(id: string): Promise<Deck | null> {
+  if (isReviewDeckId(id)) {
+    const [r, qs] = await Promise.all([getReviewDeck(id), loadReviewQuestions(id)]);
+    return r ? asDeck(r, qs) : null;
+  }
   const builtin = builtinDeck(id);
   if (builtin || !db) return builtin;
   const d = await getDoc(doc(db, "decks", id));
@@ -52,6 +57,7 @@ export async function loadDeck(id: string): Promise<Deck | null> {
 }
 
 export async function loadQuestions(deckId: string): Promise<Question[]> {
+  if (isReviewDeckId(deckId)) return loadReviewQuestions(deckId);
   if (builtinDeck(deckId) || !db) return builtinQuestions(deckId);
   const snap = await getDocs(query(collection(db, "decks", deckId, "questions"), orderBy("order")));
   return snap.docs.map((d) => ({ ...d.data(), id: d.id }) as Question);

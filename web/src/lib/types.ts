@@ -28,6 +28,8 @@ export interface Question {
   /** Why each wrong option is wrong, keyed by the option text. */
   whyNot: Record<string, string>;
   source: SourceRef;
+  /** Set on questions saved in a review deck: the deck and question they were copied from. */
+  origin?: { deckId: string; questionId: string };
 }
 
 export interface Domain {
@@ -37,7 +39,7 @@ export interface Domain {
   examQuestions: number;
 }
 
-/** A practice deck: one of the three built-in exam parts, or a deck the candidate built with Claude. */
+/** A practice deck: one of the three built-in exam parts, a deck the candidate built with Claude, or one of their review decks. */
 export interface Deck {
   id: string;
   /** The exam part the questions belong to. */
@@ -47,7 +49,7 @@ export interface Deck {
   summary: string;
   domains: Domain[];
   questionCount: number;
-  source: "builtin" | "ai";
+  source: "builtin" | "ai" | "review";
   topic?: string;
   difficulty?: string;
   topics?: string[];

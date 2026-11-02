@@ -1,9 +1,10 @@
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { createContext, useContext, useEffect, useState } from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useParams } from "react-router-dom";
 import { Brand } from "./components/TopBar";
 import { ensureAccount, isAdmin, watchAccount, type Account } from "./lib/account";
 import { useActivityHeartbeat } from "./lib/activity";
+import { isReviewDeckId } from "./lib/reviewDecks";
 import { auth } from "./lib/firebase";
 import type { AppUser } from "./lib/types";
 import Admin from "./pages/Admin";
@@ -17,7 +18,14 @@ import Login from "./pages/Login";
 import Practice from "./pages/Practice";
 import PracticeSetup from "./pages/PracticeSetup";
 import Results from "./pages/Results";
+import ReviewDeck from "./pages/ReviewDeck";
 import Upgrade from "./pages/Upgrade";
+
+/** Review decks share the /decks/:id address with other decks, so practice and results links work for both. */
+function DeckPage() {
+  const { deckId = "" } = useParams();
+  return isReviewDeckId(deckId) ? <ReviewDeck key={deckId} /> : <DeckReview />;
+}
 
 /** Stands in for a signed-in user when Firebase is not configured. */
 const LOCAL_USER: AppUser = { uid: "local", displayName: null, email: null };
@@ -93,7 +101,7 @@ export default function App() {
           <Route path="/login" element={<Navigate to="/" replace />} />
           <Route path="/signup" element={<Navigate to="/" replace />} />
           <Route path="/create" element={<CreateDeck />} />
-          <Route path="/decks/:deckId" element={<DeckReview />} />
+          <Route path="/decks/:deckId" element={<DeckPage />} />
           <Route path="/decks/:deckId/practice" element={<PracticeSetup />} />
           <Route path="/sessions/:sessionId" element={<Practice />} />
           <Route path="/sessions/:sessionId/results" element={<Results />} />
