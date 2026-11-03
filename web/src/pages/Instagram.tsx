@@ -71,24 +71,13 @@ function Connection({ ig, onChange }: { ig: InstagramStatus; onChange: (s: Insta
           className="btn-link"
           style={{ fontSize: 14 }}
           disabled={busy}
-          onClick={() => confirm("Disconnect Instagram? Reels keep being made each morning, but nothing can be posted until you connect again.") && run({ disconnect: true })}
+          onClick={() => confirm("Disconnect Instagram? You can still make reels, but nothing can be posted until you connect again.") && run({ disconnect: true })}
         >
           Disconnect
         </button>
       </div>
-      <label className="row" style={{ gap: 10, alignItems: "flex-start" }}>
-        <input type="checkbox" checked={ig.autoPost} disabled={busy} onChange={(e) => run({ autoPost: e.target.checked })} style={{ marginTop: 4 }} />
-        <span>
-          <b>Post automatically each morning</b>
-          <span className="muted" style={{ display: "block", fontSize: 14 }}>
-            {ig.autoPost
-              ? "Each day's reel goes to Instagram at about 7am New York time without waiting for you."
-              : "Off: each morning's reel waits here until you post it. Turn this on once you trust what it makes."}
-          </span>
-        </span>
-      </label>
       <span className="small">
-        {daysLeft !== null && (daysLeft > 7 ? `Access renews automatically. Current token lasts ${daysLeft} more days.` : `The token runs out in ${Math.max(0, daysLeft)} days.`)}
+        {daysLeft !== null && (daysLeft > 7 ? `Access renews each time you open this page. Current token lasts ${daysLeft} more days.` : `The token runs out in ${Math.max(0, daysLeft)} days.`)}
         {ig.refreshError && daysLeft !== null && daysLeft <= 7 && <> Renewing it failed ({ig.refreshError}). Paste a new token if it runs out.</>}
       </span>
       {error && <p className="error">{error}</p>}
@@ -128,7 +117,7 @@ function ReelCard({ r, canPost, formats, onDone }: { r: AdminReel; canPost: bool
       </div>
       <div className="stack" style={{ flex: "1 1 300px", minWidth: 0 }}>
         <div className="row" style={{ gap: 8 }}>
-          <b>{dayLabel(r.date)}</b>
+          <b>{r.createdAt ? when(r.createdAt) : dayLabel(r.date)}</b>
           <Chip tone={status.tone}>{status.label}</Chip>
           {r.formatName && <Chip>{r.formatName}</Chip>}
           {r.part && <span className="small">{PART_LABELS[r.part] ?? r.part} · {r.topic}</span>}
@@ -152,10 +141,10 @@ function ReelCard({ r, canPost, formats, onDone }: { r: AdminReel; canPost: bool
         ) : (
           r.status !== "failed" && (
             <>
-              <label className="small" htmlFor={`cap-${r.date}`}>
+              <label className="small" htmlFor={`cap-${r.id}`}>
                 Caption ({caption.length}/2200)
               </label>
-              <textarea id={`cap-${r.date}`} rows={7} value={caption} disabled={!editable || !!busy} onChange={(e) => setCaption(e.target.value)} />
+              <textarea id={`cap-${r.id}`} rows={7} value={caption} disabled={!editable || !!busy} onChange={(e) => setCaption(e.target.value)} />
             </>
           )
         )}
@@ -170,8 +159,8 @@ function ReelCard({ r, canPost, formats, onDone }: { r: AdminReel; canPost: bool
                 onClick={() =>
                   confirm("Post this reel to Instagram now? It goes public right away.") &&
                   run("post", async () => {
-                    if (caption !== r.caption) await reelAction({ action: "caption", date: r.date, caption });
-                    await reelAction({ action: "post", date: r.date });
+                    if (caption !== r.caption) await reelAction({ action: "caption", id: r.id, caption });
+                    await reelAction({ action: "post", id: r.id });
                   })
                 }
               >
@@ -179,7 +168,7 @@ function ReelCard({ r, canPost, formats, onDone }: { r: AdminReel; canPost: bool
               </button>
             )}
             {editable && caption !== r.caption && (
-              <button className="btn" disabled={!!busy} onClick={() => run("caption", () => reelAction({ action: "caption", date: r.date, caption }))}>
+              <button className="btn" disabled={!!busy} onClick={() => run("caption", () => reelAction({ action: "caption", id: r.id, caption }))}>
                 Save caption
               </button>
             )}
@@ -191,16 +180,16 @@ function ReelCard({ r, canPost, formats, onDone }: { r: AdminReel; canPost: bool
                 </option>
               ))}
             </select>
-            <button className="btn" disabled={!!busy} onClick={() => run("regen", () => reelAction({ action: "regenerate", date: r.date, format: format || undefined }))}>
+            <button className="btn" disabled={!!busy} onClick={() => run("regen", () => reelAction({ action: "regenerate", id: r.id, format: format || undefined }))}>
               {busy === "regen" ? "Making a new one… (about a minute)" : "Regenerate"}
             </button>
             {r.status === "ready" && (
-              <button className="btn-link" disabled={!!busy} onClick={() => run("skip", () => reelAction({ action: "skip", date: r.date }))}>
+              <button className="btn-link" disabled={!!busy} onClick={() => run("skip", () => reelAction({ action: "skip", id: r.id }))}>
                 Skip
               </button>
             )}
             {r.status === "skipped" && (
-              <button className="btn-link" disabled={!!busy} onClick={() => run("unskip", () => reelAction({ action: "unskip", date: r.date }))}>
+              <button className="btn-link" disabled={!!busy} onClick={() => run("unskip", () => reelAction({ action: "unskip", id: r.id }))}>
                 Bring back
               </button>
             )}
@@ -228,7 +217,6 @@ export default function Instagram() {
     load();
   }, [load]);
 
-  const hasToday = !!page?.reels.some((r) => r.date === page.today && r.status !== "failed");
   const posted = page?.reels.filter((r) => r.status === "posted").length ?? 0;
 
   return (
@@ -241,50 +229,48 @@ export default function Instagram() {
           {page && <span className="muted">{posted} of the last {page.reels.length} reels posted</span>}
         </div>
         <p className="muted">
-          A new reel is made every morning at 7am New York time from a question in the EASprint bank, in one of five fun formats. Watch it, tweak the caption, then
-          post it, make a new version, or skip the day.
+          Make a reel whenever you want one. It's built from a question in the EASprint bank in one of five fun formats, and takes about a minute. Watch it, tweak
+          the caption, then post it, make a new version, or skip it. Nothing is made or posted unless you click.
         </p>
         {error && <p className="error">{error}</p>}
         {!page && !error && <span className="spinner" />}
         {page && (
           <>
             <Connection ig={page.instagram} onChange={(instagram) => setPage({ ...page, instagram })} />
-            {!hasToday && (
-              <div className="panel row spread">
-                <span>No reel for today yet{page.reels.length === 0 ? ". The first one is made tomorrow morning, or make one now." : "."}</span>
-                <div className="row" style={{ gap: 8 }}>
-                  <select aria-label="Format" value={format} disabled={making} onChange={(e) => setFormat(e.target.value as ReelFormat | "")} style={{ width: "auto" }}>
-                    <option value="">Today's format</option>
-                    {Object.entries(page.formats).map(([id, name]) => (
-                      <option key={id} value={id}>
-                        {name}
-                      </option>
-                    ))}
-                  </select>
-                  <button
-                    className="btn btn-primary"
-                    disabled={making}
-                    onClick={async () => {
-                      setMaking(true);
-                      setError("");
-                      try {
-                        await reelAction({ action: "make", date: page.today, format: format || undefined });
-                        await load();
-                      } catch (e) {
-                        setError(message(e));
-                      } finally {
-                        setMaking(false);
-                      }
-                    }}
-                  >
-                    {making ? "Making it… (about a minute)" : "Make today's reel"}
-                  </button>
-                </div>
+            <div className="panel row spread">
+              <span>{page.reels.length === 0 ? "No reels yet. Make your first one." : "Make a new reel."}</span>
+              <div className="row" style={{ gap: 8 }}>
+                <select aria-label="Format" value={format} disabled={making} onChange={(e) => setFormat(e.target.value as ReelFormat | "")} style={{ width: "auto" }}>
+                  <option value="">Next format in turn</option>
+                  {Object.entries(page.formats).map(([id, name]) => (
+                    <option key={id} value={id}>
+                      {name}
+                    </option>
+                  ))}
+                </select>
+                <button
+                  className="btn btn-primary"
+                  disabled={making}
+                  onClick={async () => {
+                    setMaking(true);
+                    setError("");
+                    try {
+                      await reelAction({ action: "make", format: format || undefined });
+                      await load();
+                    } catch (e) {
+                      setError(message(e));
+                    } finally {
+                      setMaking(false);
+                    }
+                  }}
+                >
+                  {making ? "Making it… (about a minute)" : "Make a reel"}
+                </button>
               </div>
-            )}
+            </div>
             <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: 16 }}>
               {page.reels.map((r) => (
-                <ReelCard key={`${r.date}-${r.createdAt}`} r={r} canPost={page.instagram.connected} formats={page.formats} onDone={load} />
+                <ReelCard key={r.id} r={r} canPost={page.instagram.connected} formats={page.formats} onDone={load} />
               ))}
             </ul>
             <p className="muted" style={{ fontSize: 14 }}>

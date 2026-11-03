@@ -162,3 +162,9 @@ def test_refresh_uses_the_unversioned_endpoint():
     opener, seen = fake_instagram([{"access_token": "new", "expires_in": 5184000}])
     assert Instagram("old", opener=opener).refresh() == ("new", 5184000)
     assert seen[0][1].startswith("https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token")
+
+
+def test_a_chosen_part_is_used():
+    bank = load_bank()
+    for part in ("part1", "part2", "part3"):
+        assert pick(date(2026, 11, 3), bank, [], "clock", part=part)[1]["part"] == part

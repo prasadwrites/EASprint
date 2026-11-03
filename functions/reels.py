@@ -79,13 +79,14 @@ def exam_window(day: date) -> tuple[bool, date]:
     return True, date(end_year, 2, 29 if leap else 28)
 
 
-def pick(day: date, bank: list[dict], recent_ids: list[str], fmt: str | None = None, seed: str = "") -> tuple[Format, dict]:
-    """The format and question for a day. Formats take turns; the question is random but not one used recently,
-    and the parts take turns so all three get airtime."""
+def pick(day: date, bank: list[dict], recent_ids: list[str], fmt: str | None = None, seed: str = "", part: str | None = None) -> tuple[Format, dict]:
+    """The format and question for a reel. Without a format or part, they follow the day so they take turns;
+    the question is random but not one used recently."""
     if fmt not in FORMATS:
         fmt = FORMATS[day.toordinal() % len(FORMATS)]
     rng = random.Random(f"{day.isoformat()}:{seed}")
-    part = ("part1", "part2", "part3")[day.toordinal() % 3]
+    if part not in PART_NAMES:
+        part = ("part1", "part2", "part3")[day.toordinal() % 3]
     avoid = set(recent_ids[:REUSE_AFTER])
     pool = [q for q in bank if q["part"] == part and q["id"] not in avoid] or [q for q in bank if q["id"] not in avoid] or bank
     if fmt == "clock":
@@ -211,14 +212,14 @@ def write_script(client: anthropic.Anthropic, fmt: Format, q: dict, days_left: i
     return check_script(fmt, response.parsed_output)
 
 
-def make(client: anthropic.Anthropic, day: date, recent_ids: list[str], fmt: str | None = None, seed: str = "") -> Reel:
+def make(client: anthropic.Anthropic, day: date, recent_ids: list[str], fmt: str | None = None, seed: str = "", part: str | None = None) -> Reel:
     bank = load_bank()
-    chosen, q = pick(day, bank, recent_ids, fmt, seed)
+    chosen, q = pick(day, bank, recent_ids, fmt, seed, part)
     days_left = None
     if chosen == "countdown":
         is_open, edge = exam_window(day)
         if not is_open:
-            chosen, q = pick(day, bank, recent_ids, "clock", seed)  # nothing to count down to in March and April
+            chosen, q = pick(day, bank, recent_ids, "clock", seed, part)  # nothing to count down to in March and April
         else:
             days_left = (edge - day).days
     return Reel(chosen, q, write_script(client, chosen, q, days_left), days_left)
