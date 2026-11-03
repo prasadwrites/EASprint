@@ -62,14 +62,13 @@ Large decks are planned first (one distinct idea per question), then written and
 at a time, five batches in parallel. The deck page shows progress, and questions can be practiced as
 soon as a batch is saved.
 
-### Daily Instagram reel
+### Instagram reels
 
-Every morning at 7am New York time the `daily_reel` function makes a 15 to 22 second vertical reel for
-EASprint's Instagram account. The admin sees it under **Admin → Instagram**, where they can watch it, edit the
-caption, post it, make a new version (in any format), or skip the day. With **Post automatically** turned on, the
-reel goes out at 7am without waiting.
+Under **Admin → Instagram** the admin clicks **Make a reel** whenever they want one, and about a minute later
+gets a 15 to 22 second vertical reel for EASprint's Instagram account. They can watch it, edit the caption, post
+it, make a new version (in any format), or skip it. Nothing is made or posted on a schedule.
 
-The formats take turns, and the exam parts rotate so all three get airtime:
+Unless the admin picks a format, the formats take turns, and the exam parts rotate so all three get airtime:
 
 | Format | What happens on screen |
 | --- | --- |
@@ -89,7 +88,7 @@ Storage under `reels/` and are deleted after 90 days.
 
 Posting uses the Instagram API with Instagram Login (`functions/instagram.py`): create a REELS container from the
 video's URL, wait until Instagram has processed it, then publish. The token lives in Firestore at
-`instagram/config`, which no security rule exposes, and is renewed weekly.
+`instagram/config`, which no security rule exposes, and is renewed (at most weekly) when the admin opens the Instagram page or posts. If the page goes unopened for 60 days, paste a new token.
 
 To set it up once:
 
@@ -100,7 +99,7 @@ To set it up once:
    doesn't need App Review.
 3. In the Firebase console, open **Storage** and click **Get started** to create the default bucket.
 4. Deploy (`firebase deploy --only functions,hosting`). Then in Admin → Instagram, paste the token and click
-   **Connect**, and use **Make today's reel** to try it.
+   **Connect**, and use **Make a reel** to try it.
 
 ### Screens
 

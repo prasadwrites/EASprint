@@ -4,8 +4,10 @@ import { functions } from "./firebase";
 export type ReelStatus = "ready" | "posting" | "posted" | "skipped" | "failed";
 export type ReelFormat = "clock" | "mythfact" | "whichpart" | "term" | "countdown";
 
-/** One day's Instagram reel as the admin's Instagram page sees it. Mirrors admin_reels in functions/main.py. */
+/** One Instagram reel as the admin's Instagram page sees it. Mirrors admin_reels in functions/main.py. */
 export interface AdminReel {
+  id: string;
+  /** The day it was made (New York time). */
   date: string;
   status: ReelStatus;
   format: ReelFormat | "";
@@ -27,15 +29,12 @@ export interface AdminReel {
 export interface InstagramStatus {
   connected: boolean;
   username: string;
-  autoPost: boolean;
   expiresAt: number | null;
   refreshError: string;
 }
 
 export interface ReelsPage {
   reels: AdminReel[];
-  /** Today in New York, which is the day the morning job works on. */
-  today: string;
   instagram: InstagramStatus;
   formats: Record<ReelFormat, string>;
 }
@@ -49,15 +48,15 @@ export async function adminReels(): Promise<ReelsPage> {
 }
 
 type Action =
-  | { action: "make"; date?: string; format?: ReelFormat }
-  | { action: "regenerate"; date: string; format?: ReelFormat }
-  | { action: "caption"; date: string; caption: string }
-  | { action: "skip" | "unskip" | "post"; date: string };
+  | { action: "make"; format?: ReelFormat }
+  | { action: "regenerate"; id: string; format?: ReelFormat }
+  | { action: "caption"; id: string; caption: string }
+  | { action: "skip" | "unskip" | "post"; id: string };
 
 export async function reelAction(a: Action): Promise<{ ok: boolean; permalink?: string }> {
   return (await call<Action, { ok: boolean; permalink?: string }>("admin_reel_action", LONG)(a)).data;
 }
 
-export async function instagramSettings(change: { token: string } | { autoPost: boolean } | { disconnect: true }): Promise<InstagramStatus> {
+export async function instagramSettings(change: { token: string } | { disconnect: true }): Promise<InstagramStatus> {
   return (await call<typeof change, InstagramStatus>("admin_instagram")(change)).data;
 }
