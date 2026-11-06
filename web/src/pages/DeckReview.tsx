@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { useUser } from "../App";
+import { useAccount, useUser } from "../App";
 import { Link, useNavigate, useParams, useSearchParams } from "react-router-dom";
 import AddToReviewDeck from "../components/AddToReviewDeck";
+import PublicLinkPanel from "../components/PublicLinkPanel";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { EXAM, sourceOf } from "../data/exam";
 import { deleteDeck, DELETE_WARNING, loadDeck, loadQuestions, shareDeck, unshareDeck, watchDeck } from "../lib/decks";
@@ -21,6 +22,7 @@ export default function DeckReview() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [deleting, setDeleting] = useState(false);
   const user = useUser();
+  const { admin } = useAccount();
   const [shareEmail, setShareEmail] = useState("");
   const [shareBusy, setShareBusy] = useState(false);
   const [shareMsg, setShareMsg] = useState<{ ok: boolean; text: string } | null>(null);
@@ -253,6 +255,8 @@ export default function DeckReview() {
             )}
           </div>
         )}
+
+        {admin && deck.status !== "failed" && deck.status !== "generating" && <PublicLinkPanel deckId={deck.id} />}
 
         <div className="tiles">
           <div className="tile">

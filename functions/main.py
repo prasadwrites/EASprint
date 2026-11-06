@@ -15,6 +15,9 @@ daily_reel            - Every morning, makes the day's Instagram reel (reels.py,
                         review, and posts it straight away if the admin turned on auto-post (instagram.py).
 admin_reels           - The admin's Instagram page: recent reels and the account connection.
 admin_reel_action     - The admin makes, regenerates, edits the caption of, skips or posts a reel.
+admin_public_link     - The admin makes, lists or turns off public test links (see public_tests.py).
+get_public_test       - Anyone with a public test link gets its questions, without signing in.
+public_test_finished  - Counts a finished attempt on a public test link, for the admin.
 admin_instagram       - The admin connects the Instagram account (pastes a token), turns auto-post on or off,
                         or disconnects.
 """
@@ -42,6 +45,7 @@ from firebase_functions import https_fn, options, scheduler_fn
 
 import accounts
 import engagement
+import public_tests
 import reel_render
 import reels
 import square
@@ -482,6 +486,115 @@ def unshare_deck(req: https_fn.CallableRequest) -> dict:
     if not uid:
         raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Who should lose access?")
     deck_ref.update({"sharedWith": firestore.ArrayRemove([uid]), f"sharedEmails.{uid}": firestore.DELETE_FIELD})
+    return {"ok": True}
+
+
+def _public_deck(db, deck_id: str, kind: str) -> dict | None:
+    """The title and part of a deck a public link can point at, or None if it's gone or not ready."""
+    if kind == "builtin":
+        return {"title": PART_TITLES[deck_id], "part": deck_id}
+    if kind == "review":
+        snap = db.collection("reviewDecks").document(deck_id).get()
+        if not snap.exists:
+            return None
+        d = snap.to_dict() or {}
+        return {"title": str(d.get("name") or "Review deck"), "part": ""}
+    snap = db.collection("decks").document(deck_id).get()
+    if not snap.exists:
+        return None
+    d = snap.to_dict() or {}
+    if d.get("status", "ready") != "ready":
+        return None
+    return {"title": str(d.get("title") or "Practice test"), "part": str(d.get("part") or "")}
+
+
+def _active_link(db, deck_id: str):
+    for s in db.collection("publicTests").where("deckId", "==", deck_id).where("active", "==", True).limit(1).stream():
+        return s
+    return None
+
+
+@https_fn.on_call()
+def admin_public_link(req: https_fn.CallableRequest) -> dict:
+    """The admin's public test links. action: "get" or "create" (for a deck), "disable" (a token), or "list"."""
+    uid = _require_admin(req)
+    data = req.data or {}
+    action = data.get("action")
+    db = firestore.client()
+    links = db.collection("publicTests")
+
+    if action == "list":
+        rows = [public_tests.summary(s.id, s.to_dict() or {}) for s in links.where("active", "==", True).stream()]
+        rows.sort(key=lambda r: r["createdAt"] or 0, reverse=True)
+        return {"links": rows}
+
+    if action == "disable":
+        token = data.get("token")
+        if not public_tests.valid_token(token):
+            raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which link?")
+        ref = links.document(token)
+        if ref.get().exists:
+            ref.update({"active": False, "disabledAt": firestore.SERVER_TIMESTAMP})
+        return {"ok": True}
+
+    deck_id = _clean(data.get("deckId"), 60)
+    kind = public_tests.deck_kind(deck_id)
+    if kind is None:
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Which deck?")
+    existing = _active_link(db, deck_id)
+    if action == "get":
+        return {"link": public_tests.summary(existing.id, existing.to_dict() or {}) if existing else None}
+    if action != "create":
+        raise https_fn.HttpsError(Err.INVALID_ARGUMENT, "Unknown action.")
+    if existing:
+        return {"link": public_tests.summary(existing.id, existing.to_dict() or {})}
+    deck = _public_deck(db, deck_id, kind)
+    if deck is None:
+        raise https_fn.HttpsError(Err.FAILED_PRECONDITION, "That deck doesn't exist or is still being built.")
+    token = public_tests.new_token()
+    doc = {**deck, "deckId": deck_id, "kind": kind, "active": True, "createdBy": uid, "createdAt": firestore.SERVER_TIMESTAMP, "opens": 0, "finishes": 0}
+    links.document(token).set(doc)
+    return {"link": public_tests.summary(token, {**doc, "createdAt": datetime.now(timezone.utc)})}
+
+
+def _public_link(token):
+    if not public_tests.valid_token(token):
+        raise https_fn.HttpsError(Err.NOT_FOUND, "This link isn't valid.")
+    ref = firestore.client().collection("publicTests").document(token)
+    snap = ref.get()
+    if not snap.exists or not (snap.to_dict() or {}).get("active"):
+        raise https_fn.HttpsError(Err.NOT_FOUND, "This test link has been turned off or doesn't exist.")
+    return ref, snap.to_dict() or {}
+
+
+@https_fn.on_call()
+def get_public_test(req: https_fn.CallableRequest) -> dict:
+    """A public test's questions, for anyone with the link. Built-in parts ship with the app, so only their id is sent."""
+    ref, link = _public_link((req.data or {}).get("token"))
+    db = firestore.client()
+    deck_id, kind = link.get("deckId", ""), link.get("kind", "")
+    deck = _public_deck(db, deck_id, kind)
+    if deck is None:
+        raise https_fn.HttpsError(Err.NOT_FOUND, "The deck behind this test has been deleted.")
+    questions = None
+    if kind == "ai":
+        snaps = db.collection("decks").document(deck_id).collection("questions").order_by("order").stream()
+        questions = [public_tests.public_question(s.id, s.to_dict() or {}) for s in snaps]
+    elif kind == "review":
+        keys = (db.collection("reviewDecks").document(deck_id).get().to_dict() or {}).get("questionKeys") or []
+        by_key = {s.id: s.to_dict() or {} for s in db.collection("reviewDecks").document(deck_id).collection("questions").stream()}
+        questions = [public_tests.public_question(k, by_key[k]) for k in keys if k in by_key]
+    ref.update({"opens": firestore.Increment(1), "lastOpenedAt": firestore.SERVER_TIMESTAMP})
+    return {"deckId": deck_id, "kind": kind, "title": deck["title"], "part": deck["part"], "questions": questions}
+
+
+@https_fn.on_call()
+def public_test_finished(req: https_fn.CallableRequest) -> dict:
+    """Counts a finished attempt, so the admin can see how far a link went. Nothing about the person is kept."""
+    data = req.data or {}
+    ref, _ = _public_link(data.get("token"))
+    if public_tests.finish_counts(data.get("score"), data.get("total")) is not None:
+        ref.update({"finishes": firestore.Increment(1), "lastFinishedAt": firestore.SERVER_TIMESTAMP})
     return {"ok": True}
 
 

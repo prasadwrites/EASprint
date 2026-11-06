@@ -18,6 +18,8 @@ import Landing from "./pages/Landing";
 import Login from "./pages/Login";
 import Practice from "./pages/Practice";
 import PracticeSetup from "./pages/PracticeSetup";
+import PublicLinks from "./pages/PublicLinks";
+import PublicTest from "./pages/PublicTest";
 import Results from "./pages/Results";
 import Terms, { TermsText } from "./pages/Terms";
 import ReviewDeck from "./pages/ReviewDeck";
@@ -134,6 +136,7 @@ export default function App() {
         <Route path="/how-it-works" element={<Landing signedIn={false} />} />
         <Route path="/signup" element={<Login key="signup" initialMode="signup" />} />
         <Route path="/terms" element={<Terms />} />
+        <Route path="/t/:token" element={<PublicTest signedIn={false} />} />
         <Route path="*" element={<Login />} />
       </Routes>
     );
@@ -144,6 +147,7 @@ export default function App() {
     return (
       <Routes>
         <Route path="/terms" element={<Terms />} />
+        <Route path="/t/:token" element={<PublicTest signedIn />} />
         <Route path="*" element={<AcceptTerms uid={user.uid} updated={!!account.termsVersion} />} />
       </Routes>
     );
@@ -156,6 +160,7 @@ export default function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/how-it-works" element={<Landing signedIn />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/t/:token" element={<PublicTest signedIn />} />
           <Route path="/login" element={<Navigate to="/" replace />} />
           <Route path="/signup" element={<Navigate to="/" replace />} />
           <Route path="/create" element={<CreateDeck />} />
@@ -167,6 +172,7 @@ export default function App() {
           {admin && <Route path="/admin" element={<Admin />} />}
           {admin && <Route path="/admin/engagement" element={<Engagement />} />}
           {admin && <Route path="/admin/instagram" element={<Instagram />} />}
+          {admin && <Route path="/admin/public-links" element={<PublicLinks />} />}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </AccountContext.Provider>
