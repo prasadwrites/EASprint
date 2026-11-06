@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import { useUser } from "../App";
+import { useAccount, useUser } from "../App";
 import AddToReviewDeck from "../components/AddToReviewDeck";
 import Explanation from "../components/Explanation";
+import PublicLinkPanel from "../components/PublicLinkPanel";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { domainName } from "../data";
 import { deleteReviewDeck, getReviewDeck, loadReviewQuestions, MAX_NAME, removeFromReviewDeck, renameReviewDeck, type ReviewDeck as RD } from "../lib/reviewDecks";
@@ -16,6 +17,7 @@ export const REVIEW_DELETE_WARNING = "Delete this review deck? The questions sta
 export default function ReviewDeck() {
   const { deckId = "" } = useParams();
   const user = useUser();
+  const { admin } = useAccount();
   const navigate = useNavigate();
   const [deck, setDeck] = useState<RD | null | undefined>(undefined);
   const [questions, setQuestions] = useState<Question[]>([]);
@@ -127,6 +129,8 @@ export default function ReviewDeck() {
           </div>
           {error && <p className="error">{error}</p>}
         </div>
+
+        {admin && questions.length > 0 && <PublicLinkPanel deckId={deck.id} />}
 
         <section className="panel">
           <h2>Questions</h2>

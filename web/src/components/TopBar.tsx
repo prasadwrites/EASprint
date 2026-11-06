@@ -78,6 +78,11 @@ function ProfileMenu() {
               Instagram
             </Link>
           )}
+          {admin && (
+            <Link className="btn" role="menuitem" to="/admin/public-links" style={{ justifyContent: "flex-start", border: "none" }}>
+              Public links
+            </Link>
+          )}
           <button role="menuitem" onClick={() => signOut(signedIn)}>
             Sign out
           </button>

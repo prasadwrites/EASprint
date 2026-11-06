@@ -25,6 +25,9 @@ export function AdminTabs() {
       <Link to="/admin/instagram" aria-current={pathname === "/admin/instagram" ? "page" : undefined}>
         Instagram
       </Link>
+      <Link to="/admin/public-links" aria-current={pathname === "/admin/public-links" ? "page" : undefined}>
+        Public links
+      </Link>
     </nav>
   );
 }
