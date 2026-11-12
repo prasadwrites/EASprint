@@ -37,6 +37,33 @@ Any question can be saved to a review deck with **+ Add to review deck**: on a d
 
 Review decks are private to each candidate and show under "Your review decks" on the home page. Each one can be practiced like any deck (questions from different parts can be mixed), renamed, deleted, and have questions removed. They live in Firestore under `reviewDecks/{id}` with a copy of each question in `questions/`, so a review deck keeps working after the deck a question came from is deleted or unshared. The app writes them directly; `firestore.rules` keeps them owner-only. Without Firebase they are kept in the browser, like practice sessions.
 
+### Study lessons (pilot)
+
+**Study** (`/study`) lists all 59 lesson topics: the IRS content outline's 13 domains split into study-sized
+units (`web/src/study/outline.ts`). One lesson is live as a pilot: Part 1, 2.5 *Basis, property sales and capital
+gains* (`/study/p1-basis`). Each lesson has:
+
+- a four-panel comic opener with the recurring cast: **Penny Pocket** (the taxpayer), **Ace** (the enrolled agent)
+  and **Hoot** (the IRS examiner, an owl in a green eyeshade);
+- picture cards, one rule each, with a button to copy the key point into the notes;
+- a memory hook, trap alerts, the IRS sources, and "Check yourself" questions taken from the built-in bank by topic;
+- a link into timed practice for the lesson's domain.
+
+The cast is drawn once as SVG in `web/src/study/cast.tsx` (moods, poses and props), and each lesson assembles its
+panels from them in `web/src/study/lessons/`. Speech bubbles are real text laid over the art, so wording can change
+without new artwork. To add a lesson, write a file like `lessons/basis.tsx`, register it in `study/index.ts`, and
+set `lessonId` on its topic in `outline.ts`; `npm test` checks the outline and every lesson.
+
+Each lesson has private notes for the signed-in person: they save as you type, take highlighted lesson text or a
+missed question, carry a "Got it / Shaky" mark, and download as Markdown or print (save as PDF). Study → All my
+notes downloads every lesson's notes in one file. Notes live in Firestore at `studyNotes/{uid}_{lessonId}`
+(owner-only), or in the browser without Firebase.
+
+Study is part of the Pro and Pro Max plans. Free accounts see each lesson's comic and an upgrade prompt. The
+Firestore rules only let paid accounts (and the admin) write notes; reading and deleting stay open to the owner so
+notes can still be downloaded after a downgrade. Lesson content ships in the web bundle, so the paywall on the
+lesson text itself is enforced in the app, not on the server.
+
 ### Accounts and plans
 
 Every signed-in person gets an account on first sign-in, on the Free plan. The admin account is

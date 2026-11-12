@@ -15,12 +15,14 @@ import DeckReview from "./pages/DeckReview";
 import Engagement from "./pages/Engagement";
 import Instagram from "./pages/Instagram";
 import Landing from "./pages/Landing";
+import LessonPage from "./pages/Lesson";
 import Login from "./pages/Login";
 import Practice from "./pages/Practice";
 import PracticeSetup from "./pages/PracticeSetup";
 import PublicLinks from "./pages/PublicLinks";
 import PublicTest from "./pages/PublicTest";
 import Results from "./pages/Results";
+import Study from "./pages/Study";
 import Terms, { TermsText } from "./pages/Terms";
 import ReviewDeck from "./pages/ReviewDeck";
 import Upgrade from "./pages/Upgrade";
@@ -168,6 +170,8 @@ export default function App() {
           <Route path="/decks/:deckId/practice" element={<PracticeSetup />} />
           <Route path="/sessions/:sessionId" element={<Practice />} />
           <Route path="/sessions/:sessionId/results" element={<Results />} />
+          <Route path="/study" element={<Study />} />
+          <Route path="/study/:lessonId" element={<LessonPage />} />
           {auth && <Route path="/upgrade" element={<Upgrade />} />}
           {admin && <Route path="/admin" element={<Admin />} />}
           {admin && <Route path="/admin/engagement" element={<Engagement />} />}

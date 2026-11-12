@@ -11,6 +11,8 @@ import { paceSummary, weakestConcepts } from "../lib/insights";
 import { listReviewDecks, type ReviewDeck } from "../lib/reviewDecks";
 import { formatClock } from "../lib/pace";
 import type { Deck, PracticeSession } from "../lib/types";
+import { hasStudyAccess } from "../study";
+import { CastPortrait } from "../study/cast";
 
 const PART_SHORT = { part1: "Part 1", part2: "Part 2", part3: "Part 3" } as const;
 
@@ -98,6 +100,28 @@ export default function Dashboard() {
               </button>
             </form>
           )}
+        </section>
+
+        <section className="panel study-cta" aria-labelledby="study-cta-h">
+          <div className="cast-art">
+            <CastPortrait />
+          </div>
+          <div className="stack" style={{ gap: 10 }}>
+            <div className="row" style={{ gap: 8 }}>
+              <h2 id="study-cta-h">Study lessons</h2>
+              <Chip tone="warn">New</Chip>
+              {!hasStudyAccess(account, admin) && <Chip>Pro</Chip>}
+            </div>
+            <p>Cartoon lessons with Penny, Ace and Hoot, one rule per picture, trap alerts, and your own notes on every topic. The first one is live: basis and capital gains.</p>
+            <div className="row">
+              <Link className="btn btn-primary" to="/study/p1-basis">
+                Start the lesson
+              </Link>
+              <Link className="btn" to="/study">
+                All topics
+              </Link>
+            </div>
+          </div>
         </section>
 
         <section className="stack" id="parts">

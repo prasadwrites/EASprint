@@ -114,6 +114,7 @@ export default function TopBar({ back }: { back?: { to: string; label: string } 
             <nav className="nav" aria-label="Main">
               <Link to="/" aria-current={current("")}>Home</Link>
               <Link to="/#parts" aria-current={current("#parts")}>Exam parts</Link>
+              <Link to="/study">Study</Link>
               {canBuildDecks && <Link to="/#decks" aria-current={current("#decks")}>My decks</Link>}
               <Link to="/#progress" aria-current={current("#progress")}>Progress</Link>
               {admin && <Link to="/admin">Accounts</Link>}
