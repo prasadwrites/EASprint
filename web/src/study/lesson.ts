@@ -37,6 +37,8 @@ export interface Lesson {
   domainId: string;
   /** The topic number in the Study outline, e.g. "2.5". */
   number: string;
+  /** The episode title in the Ledger Falls series (see the series bible). */
+  episode: string;
   title: string;
   minutes: number;
   /** Law the lesson is written to. */

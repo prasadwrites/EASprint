@@ -17,9 +17,10 @@ const LETTERS = ["A", "B", "C", "D"];
 function ComicStrip({ lesson }: { lesson: Lesson }) {
   return (
     <section className="stack" aria-labelledby="comic-h">
-      <h2 id="comic-h" className="sr-only">
-        Comic
-      </h2>
+      <div className="stack" style={{ gap: 2 }}>
+        <span className="eyebrow">Ledger Falls · Episode {lesson.number}</span>
+        <h2 id="comic-h">{lesson.episode}</h2>
+      </div>
       <div className="comic">
         {lesson.comic.map((p, i) => (
           <figure key={i} className="comic-panel">

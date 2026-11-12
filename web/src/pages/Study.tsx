@@ -63,7 +63,7 @@ export default function Study() {
             <CastPortrait />
           </div>
           <div className="stack" style={{ gap: 8 }}>
-            <h2 style={{ fontSize: 19 }}>Meet the cast</h2>
+            <h2 style={{ fontSize: 19 }}>Meet the cast of Ledger Falls</h2>
             {CAST.map((c) => (
               <p key={c.name}>
                 <strong>{c.name}</strong>, {c.role.toLowerCase()}. <span className="muted">{c.line}</span>
@@ -93,6 +93,7 @@ export default function Study() {
                           ) : (
                             <span className="topic-title">{t.title}</span>
                           )}
+                          {lesson && <span style={{ fontSize: 14, fontStyle: "italic" }}>Episode: {lesson.episode}</span>}
                           <span className="muted" style={{ fontSize: 14 }}>
                             {t.subtopics}
                           </span>

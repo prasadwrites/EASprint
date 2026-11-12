@@ -5,8 +5,8 @@ import type { ReactNode } from "react";
  * assembled from poses and props instead of new artwork for each lesson.
  *
  * - Penny Pocket: the taxpayer. Curious, impulsive, always buying, selling or inheriting something.
- * - Ace: the enrolled agent. Calm, a little dry, always has the rule ready.
- * - Hoot: the IRS examiner, an owl in a green eyeshade. Strict but fair, and never misses a detail.
+ * - Ace Okafor, EA: the enrolled agent next door. Calm, a little dry, always has the rule ready.
+ * - Examiner Horace "Hoot" Hootington: the IRS examiner, an owl in a green eyeshade. Strict but fair.
  *
  * Each character is drawn waist-up around (0, 0), the center of the head, about 150 units tall
  * (hair top near -45, waist at 100). Place them with x, y and scale.
@@ -445,10 +445,14 @@ export function Arrow({ d, color = INK, width = 3 }: { d: string; color?: string
   );
 }
 
+/**
+ * The Ledger Falls cast. Penny, Ace and Hoot are drawn above; the others join as their episodes are built.
+ * Characters call each other by name in dialogue, and Hoot uses full names.
+ */
 export const CAST = [
   { name: "Penny Pocket", role: "The taxpayer", line: "Buys, sells, inherits and asks “so what do I owe?” at the worst moment." },
-  { name: "Ace", role: "The enrolled agent", line: "Calm, a little dry, and always has the rule ready." },
-  { name: "Hoot", role: "The IRS examiner", line: "An owl in a green eyeshade. Strict but fair, and never misses a detail." },
+  { name: "Ace Okafor, EA", role: "The enrolled agent", line: "Penny's neighbor. Calm, a little dry, and always says “Penny, let's check the rule.”" },
+  { name: "Examiner Horace “Hoot” Hootington", role: "The IRS examiner", line: "An owl in a green eyeshade. Strict but fair, and never misses a detail." },
 ] as const;
 
 /** The three of them together, for the Study home page and the cast card. */

@@ -45,8 +45,8 @@ const comic: Lesson["comic"] = [
       </svg>
     ),
     bubbles: [
-      { who: "Penny", text: "I sold everything! Grandpa's stock, Aunt Rosa's gift and my comic books. What do I owe?", x: 3, y: 3, w: 56, tail: "down-left" },
-      { who: "Ace", text: "Great. What did each one cost you?", x: 60, y: 22, w: 38, tail: "down-right" },
+      { who: "Penny", text: "Ace! I sold everything! Grandpa Walt's stock, Aunt Rosa's gift and my comic books. What do I owe?", x: 3, y: 2, w: 58, tail: "down-left" },
+      { who: "Ace", text: "Great, Penny. What did each one cost you?", x: 63, y: 22, w: 35, tail: "down-right" },
     ],
   },
   {
@@ -68,8 +68,8 @@ const comic: Lesson["comic"] = [
       </svg>
     ),
     bubbles: [
-      { who: "Penny", text: "Cost me? Nothing! Two of them were free!", x: 3, y: 4, w: 50, tail: "down-left" },
-      { who: "Hoot", text: "Hoo-hoo. Nothing is free.", x: 56, y: 6, w: 40, tail: "down-right" },
+      { who: "Penny", text: "Cost me, Ace? Nothing! Two of them were free!", x: 3, y: 4, w: 50, tail: "down-left" },
+      { who: "Hoot", text: "Hoo-hoo, Penny Pocket. Nothing is free.", x: 56, y: 4, w: 41, tail: "down-right" },
     ],
   },
   {
@@ -81,7 +81,7 @@ const comic: Lesson["comic"] = [
         <Ace x={86} y={128} scale={0.78} mood="happy" pose="point" />
       </svg>
     ),
-    bubbles: [{ who: "Ace", text: "Everything you own wears an invisible price tag called basis. Your gain is what you sold it for, minus that tag.", x: 3, y: 3, w: 70, tail: "down-left" }],
+    bubbles: [{ who: "Ace", text: "Penny, everything you own wears an invisible price tag called basis. Your gain is what you sold it for, minus that tag.", x: 3, y: 3, w: 72, tail: "down-left" }],
   },
   {
     alt: "Penny is covered in price tags and looks shocked. Ace looks pleased.",
@@ -96,8 +96,8 @@ const comic: Lesson["comic"] = [
       </svg>
     ),
     bubbles: [
-      { who: "Penny", text: "So all my stuff has secret price tags?!", x: 3, y: 3, w: 46, tail: "down-left" },
-      { who: "Ace", text: "Yes. And how you got it decides what's written on the tag.", x: 54, y: 10, w: 44, tail: "down-right" },
+      { who: "Penny", text: "Ace, all my stuff has secret price tags?!", x: 3, y: 3, w: 46, tail: "down-left" },
+      { who: "Ace", text: "Yes, Penny. And how you got it decides what's written on the tag.", x: 52, y: 8, w: 46, tail: "down-right" },
     ],
   },
 ];
@@ -243,7 +243,7 @@ const cards: Lesson["cards"] = [
     ),
     body: [
       "Inherited property gets a new basis: its fair market value on the date of death. If the executor elects the alternate valuation date on the estate tax return, it's the value on that date instead, generally six months later.",
-      "It's always long-term, however briefly you held it. Grandpa paid $20,000; the stock was worth $50,000 when he died; Penny sells for $53,000 two months later. She has a $3,000 long-term gain.",
+      "It's always long-term, however briefly you held it. Grandpa Walt paid $20,000; the stock was worth $50,000 when he died; Penny sells for $53,000 two months later. She has a $3,000 long-term gain.",
     ],
     keyPoint: "Inherited: basis = FMV at date of death (or alternate valuation date). Always long-term.",
   },
@@ -438,6 +438,7 @@ const lesson: Lesson = {
   part: "part1",
   domainId: "p1d2",
   number: "2.5",
+  episode: "Everything Has a Price Tag",
   title: "Basis, property sales and capital gains",
   minutes: 12,
   lawAsOf: "tax year 2025 (law through December 31, 2025)",
