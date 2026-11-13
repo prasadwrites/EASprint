@@ -556,6 +556,44 @@ export function Dee(props: CharacterProps) {
   );
 }
 
+const ROSA = { skin: "#e9b896", hair: "#c9c6c2", dress: "#9c4f8a", apron: "#fdf6ea", chain: "#c9a24a" };
+
+/** Aunt Rosa Pocket, Walt's sister, who runs Rosa's Rolls bakery. Grey bun, glasses on a chain, flour-dusted apron. */
+export function Rosa(props: CharacterProps) {
+  const { mood = "happy", pose = "down", holding } = props;
+  const r = ROSA;
+  return (
+    <g transform={place(props)}>
+      <path d="M-38,100 Q-40,42 0,36 Q40,42 38,100 Z" fill={r.dress} {...OUT} />
+      <path d="M-24,100 L-22,52 L22,52 L24,100 Z" fill={r.apron} {...OUT} strokeWidth={2} />
+      <path d="M-22,52 L-12,40 M22,52 L12,40" stroke={r.apron} strokeWidth={4} strokeLinecap="round" />
+      <path d="M-14,70 h28" stroke="#e8505b" strokeWidth={2} />
+      <g fill="#fff" opacity={0.9}>
+        <circle cx={-10} cy={84} r={2} />
+        <circle cx={6} cy={78} r={1.6} />
+        <circle cx={12} cy={90} r={2.2} />
+      </g>
+      <rect x={-6} y={24} width={12} height={14} fill={r.skin} {...OUT} strokeWidth={2} />
+      <circle cx={0} cy={-38} r={15} fill={r.hair} {...OUT} />
+      <circle cx={0} cy={0} r={28} fill={r.skin} {...OUT} />
+      <path d="M-28,-2 Q-31,-32 0,-31 Q31,-32 28,-2 Q24,-18 10,-20 Q0,-14 -10,-20 Q-24,-18 -28,-2 Z" fill={r.hair} {...OUT} />
+      <path d="M-25,4 Q-30,22 -16,32 M25,4 Q30,22 16,32" fill="none" stroke={r.chain} strokeWidth={1.6} />
+      <circle cx={-15} cy={11} r={4.5} fill="#ef9a85" opacity={0.55} />
+      <circle cx={15} cy={11} r={4.5} fill="#ef9a85" opacity={0.55} />
+      <Eyes mood={mood} glasses />
+      <Mouth mood={mood} />
+      <Arms pose={pose} sleeve={r.dress} skin={r.skin} />
+      {holding && <g transform={`translate(0 62)${props.flip ? " scale(-1 1)" : ""}`}>{holding}</g>}
+      {pose === "hold" && (
+        <g fill={r.skin} {...OUT} strokeWidth={2.2}>
+          <circle cx={-14} cy={70} r={6.5} />
+          <circle cx={14} cy={70} r={6.5} />
+        </g>
+      )}
+    </g>
+  );
+}
+
 /**
  * A tablet on a video call with Dee on her oil rig. (x, y) is the screen's top-left corner; the screen is
  * 120 by 90 at scale 1. Signal bars and a "can you hear me?" wobble are part of the joke.
@@ -654,12 +692,12 @@ export function WaltPortrait({ x, y, scale = 1, mood = "happy" }: { x: number; y
   );
 }
 
-export type CastMember = "Penny" | "Ace" | "Hoot" | "Milo" | "Lulu" | "Dee" | "Biscuit" | "Walt";
+export type CastMember = "Penny" | "Ace" | "Hoot" | "Milo" | "Lulu" | "Dee" | "Biscuit" | "Walt" | "Rosa";
 
 /** A head-and-shoulders badge for a cast member, for game cards and lists. */
 export function Face({ who, mood, size = 56 }: { who: CastMember; mood?: Mood; size?: number }) {
   const clip = `face${useId().replace(/[^a-zA-Z0-9]/g, "")}`;
-  const bg: Record<CastMember, string> = { Penny: "#fff3c4", Ace: "#d8f0e2", Hoot: "#eaf6ef", Milo: "#eef0d8", Lulu: "#fde2e4", Dee: "#ffe4cc", Biscuit: "#f5e6d3", Walt: "#e6eef0" };
+  const bg: Record<CastMember, string> = { Penny: "#fff3c4", Ace: "#d8f0e2", Hoot: "#eaf6ef", Milo: "#eef0d8", Lulu: "#fde2e4", Dee: "#ffe4cc", Biscuit: "#f5e6d3", Walt: "#e6eef0", Rosa: "#f3e1ef" };
   const art: Record<CastMember, ReactNode> = {
     Penny: <Penny x={0} y={6} mood={mood ?? "happy"} />,
     Ace: <Ace x={0} y={6} mood={mood ?? "happy"} />,
@@ -669,6 +707,7 @@ export function Face({ who, mood, size = 56 }: { who: CastMember; mood?: Mood; s
     Dee: <Dee x={0} y={10} scale={0.9} mood={mood ?? "happy"} />,
     Biscuit: <Biscuit x={-6} y={4} scale={1.05} mood="happy" />,
     Walt: <WaltPortrait x={-32} y={-36} scale={1} mood={mood ?? "happy"} />,
+    Rosa: <Rosa x={0} y={8} mood={mood ?? "happy"} />,
   };
   return (
     <svg viewBox="-50 -50 100 100" width={size} height={size} aria-hidden className="cast-face">
@@ -696,6 +735,7 @@ export const CAST = [
   { name: "Milo Marsh", short: "Milo", role: "Penny's husband", line: "Freelance dog walker, keeper of the shoebox. “Wait, is that deductible?”" },
   { name: "Lulu Pocket", short: "Lulu", role: "Age 9, lives with Penny and Milo", line: "Dee's daughter, too smart for her age, owns stock. “I'm a dependent, not a dependable!”" },
   { name: "Cousin Dee Pocket", short: "Dee", role: "Lulu's mom, on an oil rig overseas", line: "Always on a video call with one bar of signal. “Can you hear me now?”" },
+  { name: "Aunt Rosa Pocket", short: "Rosa", role: "Grandpa Walt's sister, the baker", line: "Runs Rosa's Rolls on Main Street and gives everyone everything. “Take a roll. Take two. Take my car.”" },
   { name: "Biscuit", short: "Biscuit", role: "Milo's beagle", line: "The only resident of Ledger Falls with no tax problems. “Woof.”" },
 ] as const;
 

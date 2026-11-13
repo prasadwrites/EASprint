@@ -8,9 +8,10 @@ import lulu from "./lessons/lulu";
 import mailbox from "./lessons/mailbox";
 import marriage from "./lessons/marriage";
 import shoebox from "./lessons/shoebox";
+import raffle from "./lessons/raffle";
 import { STUDY_OUTLINE, type StudyTopic } from "./outline";
 
-export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis].map((l) => [l.id, l]));
+export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle].map((l) => [l.id, l]));
 
 /**
  * Study lessons are part of the paid plans (Pro and Pro Max). The admin always has them, and so does the app

@@ -35,7 +35,7 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p1d2",
       topics: [
-        t("2.1", "Everyday income", "Wages, interest, dividends, gambling, cancellation of debt, other income"),
+        t("2.1", "Everyday income", "Wages, interest, dividends, gambling, cancellation of debt, other income", "p1-everyday-income"),
         t("2.2", "Rental, royalty and pass-through income", "Rental and royalty income, K-1 income from partnerships, S corporations and trusts"),
         t("2.3", "Retirement and Social Security", "IRA and plan distributions, rollovers, taxable Social Security"),
         t("2.4", "Foreign income", "Foreign earned income and exclusions"),
