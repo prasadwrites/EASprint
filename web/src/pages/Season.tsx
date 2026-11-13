@@ -9,6 +9,7 @@ import { listNotes, type StudyNote } from "../lib/studyNotes";
 import type { PartId } from "../lib/types";
 import { episodes, hasStudyAccess, LESSONS } from "../study";
 import { Face, FamilyPortrait, Hoot } from "../study/cast";
+import { PracticePortrait } from "../study/office";
 import { SEASONS, STUDY_OUTLINE } from "../study/outline";
 import { bestScore } from "../study/progress";
 import { quizLink, UNIT_QUIZ } from "../study/quiz";
@@ -56,10 +57,8 @@ export default function Season({ part }: { part: PartId }) {
               )}
             </div>
           </div>
-          {part === "part1" && (
-            <div className="cast-art">
-              <FamilyPortrait />
-            </div>
+          {(part === "part1" || part === "part3") && (
+            <div className="cast-art">{part === "part1" ? <FamilyPortrait /> : <PracticePortrait />}</div>
           )}
         </header>
 

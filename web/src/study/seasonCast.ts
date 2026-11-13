@@ -64,6 +64,24 @@ export const SEASON_CAST: Partial<Record<PartId, SeasonCast>> = {
       { name: "Astrid", note: "Dee's godmother in Oslo", episodes: ["6.3"] },
     ],
   },
+  part3: {
+    intro:
+      "Season 3 moves into Ace's new office: one tiny room above Rosa's Rolls, rent paid in cinnamon rolls. His first big case is close to home, because Examiner Hoot has picked Penny and Milo's 2025 return for audit, and he keeps turning up in the strangest places.",
+    cast: [
+      { who: "Ace", arc: "Opens Okafor Tax Defense, signs up his first clients, files his first Form 2848 and takes the office electronic.", spotlight: ["1.1", "2.1", "4.1"] },
+      { who: "Hoot", arc: "Audits the Pockets and pops out of filing cabinets, shoeboxes, time machines and flour sacks. Thinks he's the judge.", spotlight: ["2.1", "2.3", "3.2", "4.2"] },
+      { who: "Milo", arc: "Self-appointed head of marketing. Buys a billboard, hides in the doghouse, builds a time machine and becomes the e-file mascot.", spotlight: ["1.2", "2.2", "3.1", "3.3"] },
+      { who: "Penny", arc: "Reads Hoot's report with a highlighter and takes her bakery mileage all the way to Appeals.", spotlight: ["2.1", "3.2"] },
+      { who: "Rosa", arc: "Ace's landlord. Files late from a hospital bed, then pays the oven repair man instead of her payroll deposits.", spotlight: ["3.3", "3.4"] },
+      { who: "Lulu", arc: "Reads the Taxpayer Bill of Rights for fun and gets the last word, usually.", spotlight: ["2.3", "3.2"] },
+      { who: "Dee", arc: "Calls in from the oil rig: someone filed a return as her, from the moon. Also, she likes paper.", spotlight: ["2.3", "4.1"] },
+      { who: "Biscuit", arc: "Eats documents. Loses his doghouse to Milo, then to Hoot. Saves his appetite for the finale.", spotlight: ["3.1", "4.2"] },
+    ],
+    guests: [
+      { name: "Quick Refund Rex", note: "The rival preparer across the street, never seen, only his billboards", episodes: ["1.3", "4.2"] },
+      { name: "Cousin Rudy", note: "Milo's cousin with an AFSP Record of Completion. Makes sandwiches", episodes: ["1.1"] },
+    ],
+  },
 };
 
 /** A season cast member with CAST's name, role and line filled in. */

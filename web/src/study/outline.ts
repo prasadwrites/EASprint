@@ -121,33 +121,33 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p3d1",
       topics: [
-        t("1.1", "Who can practice", "Practice before the IRS, EA requirements, PTINs, continuing education"),
-        t("1.2", "Circular 230 conduct", "Fees, advertising, conflicts of interest, due diligence"),
-        t("1.3", "When things go wrong", "Sanctionable conduct, return preparer penalties, signing returns"),
+        t("1.1", "Who can practice", "Practice before the IRS, EA requirements, PTINs, continuing education", "p3-who-can-practice"),
+        t("1.2", "Circular 230 conduct", "Fees, advertising, conflicts of interest, due diligence", "p3-circular-230"),
+        t("1.3", "When things go wrong", "Sanctionable conduct, return preparer penalties, signing returns", "p3-sanctions"),
       ],
     },
     {
       id: "p3d2",
       topics: [
-        t("2.1", "Power of attorney", "Forms 2848 and 8821, Centralized Authorization File, Publication 216"),
-        t("2.2", "Building the case", "Case preparation, the taxpayer's financial situation, supporting documents, legal authority"),
-        t("2.3", "Deadlines and protections", "Statute of limitations, Taxpayer Advocate Service, identity theft"),
+        t("2.1", "Power of attorney", "Forms 2848 and 8821, Centralized Authorization File, Publication 216", "p3-power-of-attorney"),
+        t("2.2", "Building the case", "Case preparation, the taxpayer's financial situation, supporting documents, legal authority", "p3-building-the-case"),
+        t("2.3", "Deadlines and protections", "Statute of limitations, Taxpayer Advocate Service, identity theft", "p3-deadlines-protections"),
       ],
     },
     {
       id: "p3d3",
       topics: [
-        t("3.1", "Collections", "Extensions, installment agreements, offers in compromise, levies, liens, currently not collectible, passport revocation"),
-        t("3.2", "Audits and appeals", "Exam types, appeal rights and process"),
-        t("3.3", "Fixing past returns", "Amended returns, refund claims, penalty abatement"),
-        t("3.4", "Trust fund recovery penalty", "Who is responsible and how the penalty is assessed"),
+        t("3.1", "Collections", "Extensions, installment agreements, offers in compromise, levies, liens, currently not collectible, passport revocation", "p3-collections"),
+        t("3.2", "Audits and appeals", "Exam types, appeal rights and process", "p3-audits-appeals"),
+        t("3.3", "Fixing past returns", "Amended returns, refund claims, penalty abatement", "p3-fixing-past-returns"),
+        t("3.4", "Trust fund recovery penalty", "Who is responsible and how the penalty is assessed", "p3-trust-fund-penalty"),
       ],
     },
     {
       id: "p3d4",
       topics: [
-        t("4.1", "E-file rules", "EFIN, ERO responsibilities, Forms 8879 and 8453, rejected returns"),
-        t("4.2", "Accuracy, records and security", "Return accuracy, record retention, data security"),
+        t("4.1", "E-file rules", "EFIN, ERO responsibilities, Forms 8879 and 8453, rejected returns", "p3-efile-rules"),
+        t("4.2", "Accuracy, records and security", "Return accuracy, record retention, data security", "p3-records-security"),
       ],
     },
   ],
