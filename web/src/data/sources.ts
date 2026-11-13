@@ -116,6 +116,8 @@ export const SOURCES = {
   i461: inst("i461", "Instructions for Form 461, Limitation on Business Losses"),
   i8582: inst("i8582", "Instructions for Form 8582, Passive Activity Loss Limitations"),
   i990t: inst("i990t", "Instructions for Form 990-T, Exempt Organization Business Income Tax Return"),
+  p557: pub("557", "Tax-Exempt Status for Your Organization"),
+  p1771: pub("1771", "Charitable Contributions: Substantiation and Disclosure Requirements"),
   i1120m3: inst("i1120sm3", "Instructions for Schedule M-3 (Form 1120)"),
   eofiling: page("Annual exempt organization return: Who must file", "charities-non-profits/annual-exempt-organization-return-who-must-file"),
   eorevoke: page("Automatic revocation of exemption", "charities-non-profits/automatic-revocation-of-exemption"),

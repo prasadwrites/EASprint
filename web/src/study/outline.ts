@@ -110,7 +110,7 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
       id: "p2d3",
       topics: [
         t("3.1", "Trusts and estates", "Form 1041, fiduciary income, distributable net income", "p2-trusts-estates"),
-        t("3.2", "Exempt organizations", "Form 990 series, unrelated business income"),
+        t("3.2", "Exempt organizations", "Form 990 series, unrelated business income", "p2-exempt-organizations"),
         t("3.3", "Business retirement plans", "SEP, SIMPLE, 401(k) and other employer plans"),
         t("3.4", "Farmers", "Schedule F and farm rules"),
         t("3.5", "Rental property as a business", "Rental activity rules, passive activity limits"),
