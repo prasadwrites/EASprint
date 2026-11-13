@@ -64,6 +64,34 @@ export const SEASON_CAST: Partial<Record<PartId, SeasonCast>> = {
       { name: "Astrid", note: "Dee's godmother in Oslo", episodes: ["6.3"] },
     ],
   },
+  part2: {
+    intro:
+      "Season 2 moves into Rosa's Rolls, the bakery Aunt Rosa owns with Penny (90% and 10%). Over tax year 2025 the partnership counts its rolls, buys an $80,000 oven named Bertha, hires a mascot, and decides to become an S corporation for 2026, while Milo tries to turn everything into a business.",
+    cast: [
+      { who: "Rosa", arc: "Wants a yacht, buys Bertha the oven, signs Form 2553, plans her retirement and rents the room upstairs to Ace.", spotlight: ["1.1", "1.4", "2.4", "2.9", "3.5"] },
+      { who: "Penny", arc: "Rosa's 10% partner and the bakery's bookkeeper. Opens her K-1, counts the rolls, and files Grandpa Walt's estate return as executor.", spotlight: ["1.2", "2.1", "2.8", "3.1"] },
+      { who: "Milo", arc: "Incorporates his dog-walking business for one week, becomes Rolly the cinnamon roll mascot, haunts the books as the NOL ghost, starts a foundation and a one-hen egg farm.", spotlight: ["1.3", "2.5", "2.6", "2.7", "3.2", "3.4"] },
+      { who: "Ace", arc: "The bakery's EA. Explains every form, then opens Okafor Tax Defense in the room above the bakery.", spotlight: ["2.9", "3.5"] },
+      { who: "Hoot", arc: "Pops out of crates, ovens and egg boxes with the rule nobody wanted to hear. Leaves a note about Season 3.", spotlight: ["2.5", "3.5"] },
+      { who: "Lulu", arc: "Hosts a book club about Schedule L and keeps missing her science project deadline.", spotlight: ["2.8"] },
+      {
+        who: "Walt",
+        name: "Grandpa Walt Pocket",
+        role: "Penny's late grandfather",
+        line: "Still on the bakery wall. Still getting mail.",
+        arc: "His estate files its own Form 1041, and he's furious about the 37% bracket.",
+        spotlight: ["3.1"],
+      },
+      { who: "Biscuit", arc: "Eats the inventory, rides on the van roof and votes to keep zero years of records.", spotlight: ["2.1", "2.9"] },
+    ],
+    guests: [
+      { name: "Gerald", note: "Rosa's sourdough starter, a jar with googly eyes. Family, not depreciable", episodes: ["1.1", "2.4", "2.8", "3.3"] },
+      { name: "Bertha", note: "The $80,000 oven. Hoot likes it in there", episodes: ["2.4", "2.7"] },
+      { name: "Deduction", note: "Milo's hen. Lays one egg a day, sometimes above the line", episodes: ["3.4"] },
+      { name: "Gus", note: "Still hasn't paid for his birthday cake", episodes: ["2.2"] },
+      { name: "Pastor Gail", note: "Runs the food pantry that gets Rosa's day-old bread", episodes: ["3.2"] },
+    ],
+  },
   part3: {
     intro:
       "Season 3 moves into Ace's new office: one tiny room above Rosa's Rolls, rent paid in cinnamon rolls. His first big case is close to home, because Examiner Hoot has picked Penny and Milo's 2025 return for audit, and he keeps turning up in the strangest places.",

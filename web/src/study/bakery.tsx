@@ -1,4 +1,5 @@
-import { Label } from "./cast";
+import { Ace, Biscuit, Hoot, Label, Lulu, Milo, Penny, Rosa } from "./cast";
+import { Sign } from "./office";
 
 // Props for Season 2, "Rosa's Rolls": the bakery's oven, Gerald the sourdough starter, the Rolly mascot suit,
 // the delivery van and a few farm friends. Same ink and line weight as props.tsx.
@@ -102,5 +103,27 @@ export function Crate({ x, y, scale = 1, label = "FLOUR" }: { x: number; y: numb
         {label}
       </Label>
     </g>
+  );
+}
+
+/** Season 2 title art: the whole cast at Rosa's Rolls, with Bertha, Gerald, Rolly and Hoot in a flour crate. */
+export function BakeryPortrait() {
+  return (
+    <svg viewBox="0 0 520 190" role="img" aria-label="The cast at Rosa's Rolls: Rosa, Penny, Milo in the Rolly suit, Lulu, Biscuit and Ace, with Bertha the oven, Gerald the sourdough jar, and Hoot popping out of a flour crate">
+      <rect x={0} y={0} width={520} height={190} rx={12} fill="#fde9e4" />
+      <rect x={0} y={166} width={520} height={24} fill="#efd9b8" />
+      <Sign x={160} y={18} w={200} h={30} text="ROSA'S ROLLS" color="#fff3c4" size={13} />
+      <Oven x={52} y={172} scale={0.82} label="BERTHA" />
+      <Rosa x={140} y={88} scale={0.72} mood="excited" pose="up" />
+      <Penny x={208} y={88} scale={0.72} mood="happy" />
+      <Milo x={276} y={88} scale={0.72} mood="excited" pose="wave" />
+      <RollySuit x={276} y={88} scale={0.72} />
+      <Lulu x={334} y={118} scale={0.5} mood="smug" />
+      <Gerald x={366} y={170} scale={0.7} mood="happy" />
+      <Biscuit x={396} y={150} scale={0.4} mood="happy" />
+      <Ace x={426} y={88} scale={0.7} mood="smug" pose="point" />
+      <Hoot x={486} y={112} scale={0.4} mood="excited" flip pose="up" />
+      <Crate x={486} y={176} scale={0.7} label="FLOUR" />
+    </svg>
   );
 }

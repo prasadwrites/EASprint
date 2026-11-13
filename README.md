@@ -43,8 +43,10 @@ Review decks are private to each candidate and show under "Your review decks" on
 cartoon series with one episode per lesson topic (59 topics from the IRS content outline's 13 domains, in
 `web/src/study/outline.ts`). Clicking a part opens its season page (`/study/part1`), which starts with a "Meet the cast" section for that
 season (`web/src/study/seasonCast.ts`; add an entry there for each new season) and then lists episodes by unit (exam domain).
-Live so far: all of Season 1 (Part 1, episodes 1.1 to 6.3, ending with the finale "Dee's Paperwork Avalanche") and all of
-Season 3 (Part 3, "Ace for the Defense", episodes 1.1 to 4.2, ending with the finale "Biscuit Ate the Records").
+All three seasons are live: Season 1 (Part 1, "Penny's Year", episodes 1.1 to 6.3, ending with the finale "Dee's
+Paperwork Avalanche"), Season 2 (Part 2, "Rosa's Rolls", episodes 1.1 to 3.5, ending with the finale "The Room Above
+the Bakery"; bakery props in `web/src/study/bakery.tsx`) and Season 3 (Part 3, "Ace for the Defense", episodes 1.1 to
+4.2, ending with the finale "Biscuit Ate the Records").
 Each episode has:
 
 - a six-panel comic with the recurring cast: **Penny Pocket**, **Milo Marsh**, **Lulu**, **Cousin Dee** (on a video

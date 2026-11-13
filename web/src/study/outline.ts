@@ -158,6 +158,6 @@ export const topicCount = () => Object.values(STUDY_OUTLINE).reduce((n, ds) => n
 /** Each exam part is a season of Ledger Falls (see the series bible). */
 export const SEASONS: Record<PartId, { number: number; name: string; blurb: string }> = {
   part1: { number: 1, name: "Penny's Year", blurb: "Penny marries at 11:59 PM, takes in Lulu, inherits Grandpa Walt's stock and side-hustles through every rule for individuals." },
-  part2: { number: 2, name: "Rosa's Rolls", blurb: "Aunt Rosa's bakery grows from a kitchen side gig to a partnership to an S corporation." },
+  part2: { number: 2, name: "Rosa's Rolls", blurb: "Aunt Rosa's bakery buys an $80,000 oven, hires a cinnamon roll mascot and heads for S corporation status, while Milo tries to turn everything into a business." },
   part3: { number: 3, name: "Ace for the Defense", blurb: "Ace's own practice, Circular 230, and the day Examiner Hoot audits the Pockets." },
 };
