@@ -12,6 +12,7 @@ import { Face, FamilyPortrait, Hoot } from "../study/cast";
 import { SEASONS, STUDY_OUTLINE } from "../study/outline";
 import { bestScore } from "../study/progress";
 import { quizLink, UNIT_QUIZ } from "../study/quiz";
+import { castCard, SEASON_CAST } from "../study/seasonCast";
 
 /** A season's contents: the part's units (exam domains), each with its episodes and a unit quiz at the end. */
 export default function Season({ part }: { part: PartId }) {
@@ -72,6 +73,8 @@ export default function Season({ part }: { part: PartId }) {
             </Link>
           </div>
         )}
+
+        <MeetTheCast part={part} />
 
         {STUDY_OUTLINE[part].map((d, ui) => {
           const live = d.topics.filter((t) => t.lessonId && LESSONS[t.lessonId]);
@@ -169,5 +172,67 @@ function UnitQuiz({ part, domainId, unit, complete }: { part: PartId; domainId: 
         </div>
       </div>
     </aside>
+  );
+}
+
+/** "Meet the cast" before a season's first unit: who's who this season, with links to each character's big episodes. */
+function MeetTheCast({ part }: { part: PartId }) {
+  const sc = SEASON_CAST[part];
+  if (!sc) return null;
+  const byNumber = new Map(episodes(part).map((l) => [l.number, l]));
+  const epLinks = (nums: string[]) =>
+    nums.map((n) => {
+      const l = byNumber.get(n);
+      return l ? (
+        <Link key={n} className="cast-ep" to={`/study/${l.id}`} title={l.episode}>
+          {n}
+        </Link>
+      ) : (
+        <span key={n} className="cast-ep">
+          {n}
+        </span>
+      );
+    });
+  return (
+    <section className="panel stack meet-cast" aria-labelledby="cast-h">
+      <div className="stack" style={{ gap: 4 }}>
+        <span className="eyebrow">Before episode 1.1</span>
+        <h2 id="cast-h">Meet the cast</h2>
+        <p className="muted">{sc.intro}</p>
+      </div>
+      <div className="cast-grid">
+        {sc.cast.map((m) => {
+          const c = castCard(m);
+          return (
+            <div key={c.who} className="cast-member">
+              <Face who={c.who} size={64} />
+              <div className="stack" style={{ gap: 4 }}>
+                <strong>{c.name}</strong>
+                <span className="cast-role">{c.role}</span>
+                <span className="muted" style={{ fontSize: 14 }}>{c.line}</span>
+                <span style={{ fontSize: 14 }}>{c.arc}</span>
+                {c.spotlight.length > 0 && (
+                  <span className="row" style={{ gap: 4, fontSize: 13 }}>
+                    <span className="muted">Big episodes:</span> {epLinks(c.spotlight)}
+                  </span>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      {sc.guests.length > 0 && (
+        <div className="stack" style={{ gap: 6 }}>
+          <h3 style={{ fontSize: 16 }}>Also in Ledger Falls</h3>
+          <ul className="cast-guests">
+            {sc.guests.map((g) => (
+              <li key={g.name}>
+                <strong>{g.name}</strong>: {g.note} <span className="row" style={{ display: "inline-flex", gap: 4 }}>{epLinks(g.episodes)}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </section>
   );
 }
