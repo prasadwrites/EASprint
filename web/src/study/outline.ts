@@ -137,10 +137,10 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p3d3",
       topics: [
-        t("3.1", "Collections", "Extensions, installment agreements, offers in compromise, levies, liens, currently not collectible, passport revocation"),
-        t("3.2", "Audits and appeals", "Exam types, appeal rights and process"),
-        t("3.3", "Fixing past returns", "Amended returns, refund claims, penalty abatement"),
-        t("3.4", "Trust fund recovery penalty", "Who is responsible and how the penalty is assessed"),
+        t("3.1", "Collections", "Extensions, installment agreements, offers in compromise, levies, liens, currently not collectible, passport revocation", "p3-collections"),
+        t("3.2", "Audits and appeals", "Exam types, appeal rights and process", "p3-audits-appeals"),
+        t("3.3", "Fixing past returns", "Amended returns, refund claims, penalty abatement", "p3-fixing-past-returns"),
+        t("3.4", "Trust fund recovery penalty", "Who is responsible and how the penalty is assessed", "p3-trust-fund-penalty"),
       ],
     },
     {
