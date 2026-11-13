@@ -48,10 +48,23 @@ import { STUDY_OUTLINE, type StudyTopic } from "./outline";
 export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar, amt, selfemployed, surtax, lastpaycheck, penalties, yearreview, planning, plea, estate, gifts, avalanche, shingle, billboard, rex, poa, shoebox3, statute3, cantpay, appeals3, doover, payroll3, efile3, records3].map((l) => [l.id, l]));
 
 /**
- * Study lessons are part of the paid plans (Pro and Pro Max). The admin always has them, and so does the app
- * when it runs without Firebase, where there are no accounts. The Firestore rules enforce the same for notes.
+ * Study is part of the paid plans (Pro and Pro Max). The admin always has it, and so does the app when it runs
+ * without Firebase, where there are no accounts. The Firestore rules enforce the same for notes.
  */
 export const hasStudyAccess = (account: Account | null, admin: boolean) => !db || admin || account?.plan === "pro" || account?.plan === "promax";
+
+/** The one unit free accounts get in full: Season 1, Unit 1. Keep in step with FREE_STUDY_LESSONS in firestore.rules. */
+export const FREE_UNIT = { part: "part1", domainId: "p1d1" } as const;
+
+export const isFreeUnit = (part: PartId, domainId: string) => part === FREE_UNIT.part && domainId === FREE_UNIT.domainId;
+
+export const isFreeLesson = (lesson: Lesson) => isFreeUnit(lesson.part, lesson.domainId);
+
+/** Whether this account can open the whole lesson (not just its opening comic) and keep notes on it. */
+export const canOpenLesson = (lesson: Lesson, account: Account | null, admin: boolean) => hasStudyAccess(account, admin) || isFreeLesson(lesson);
+
+/** Whether this account can open a unit's episodes and its unit quiz. */
+export const canOpenUnit = (part: PartId, domainId: string, account: Account | null, admin: boolean) => hasStudyAccess(account, admin) || isFreeUnit(part, domainId);
 
 /** The outline topic a lesson belongs to, for its "Part 1 · 2.5" label. */
 export function topicOf(lesson: Lesson): StudyTopic | undefined {

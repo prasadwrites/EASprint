@@ -111,12 +111,16 @@ service cloud.firestore {
       }
     }
 
-    // Study notes: one private document per person per lesson, id "{uid}_{lessonId}". Writing needs a paid plan
-    // (Study is part of Pro and Pro Max); reading and deleting stay open to the owner, so notes can still be
+    // Study notes: one private document per person per lesson, id "{uid}_{lessonId}". Writing needs a paid plan, except
+    // on the free Season 1, Unit 1 lessons (Study is part of Pro and Pro Max); reading and deleting stay open to the owner, so notes can still be
     // downloaded after a downgrade.
     match /studyNotes/{noteId} {
       function paid() {
         return isAdmin() || (exists(accountPath()) && get(accountPath()).data.plan in ["pro", "promax"]);
+      }
+      // Season 1, Unit 1 is free, notes included. Keep in step with FREE_UNIT in web/src/study/index.ts.
+      function freeLesson(d) {
+        return d.lessonId in ["p1-getting-started", "p1-filing-status", "p1-dependents", "p1-paper-trail", "p1-foreign-aca"];
       }
       function validNote(d) {
         return d.keys().hasOnly(["ownerId", "lessonId", "text", "confidence", "updatedAt"])
@@ -128,7 +132,7 @@ service cloud.firestore {
       }
       allow get: if resource == null ? signedIn() : owns(resource.data);
       allow list: if owns(resource.data);
-      allow create, update: if owns(request.resource.data) && notSuspended() && paid() && validNote(request.resource.data);
+      allow create, update: if owns(request.resource.data) && notSuspended() && (paid() || freeLesson(request.resource.data)) && validNote(request.resource.data);
       allow delete: if owns(resource.data);
     }
 

@@ -9,7 +9,7 @@ import { SOURCES } from "../data/sources";
 import { appendLine, downloadText, loadNote, MAX_NOTE, notesToMarkdown, saveNote, type Confidence } from "../lib/studyNotes";
 import type { Question } from "../lib/types";
 import { canBuildDecks } from "../lib/decks";
-import { hasStudyAccess, LESSONS, nextEpisode } from "../study";
+import { canOpenLesson, LESSONS, nextEpisode } from "../study";
 import { Ace, CAST, Face, Hoot, Penny, type CastMember } from "../study/cast";
 import { SEASONS } from "../study/outline";
 import { saveScore } from "../study/progress";
@@ -342,7 +342,7 @@ export default function LessonPage() {
   const lesson = LESSONS[lessonId];
   const user = useUser();
   const { account, admin } = useAccount();
-  const unlocked = hasStudyAccess(account, admin);
+  const unlocked = !!lesson && canOpenLesson(lesson, account, admin);
 
   const [text, setTextState] = useState("");
   const [confidence, setConfidenceState] = useState<Confidence>("");
@@ -459,9 +459,9 @@ export default function LessonPage() {
 
             {!unlocked ? (
               <div className="panel stack locked">
-                <h2>The rest of this lesson is on Pro</h2>
+                <h2>The rest of this episode is on Pro</h2>
                 <p>
-                  Study lessons, with the comic, picture cards, memory hooks, trap alerts and your own notes for every topic, come with the Pro and Pro Max plans.
+                  Season 1, Unit 1 is free to watch in full. Every other episode, with its picture cards, memory hooks, trap alerts, Ace vs. Hoot cases and your own notes, comes with the Pro and Pro Max plans.
                 </p>
                 <div>
                   <Link className="btn btn-primary" to="/upgrade">

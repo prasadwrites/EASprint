@@ -15,12 +15,12 @@ export default function Study() {
   const unlocked = hasStudyAccess(account, admin);
   const [notes, setNotes] = useState<StudyNote[] | null>(null);
 
+  // Free accounts can keep notes on Season 1, Unit 1, so everyone gets the notes list.
   useEffect(() => {
-    if (!unlocked) return;
     listNotes(user.uid)
       .then(setNotes)
       .catch(() => setNotes([]));
-  }, [unlocked, user.uid]);
+  }, [user.uid]);
 
   const written = (notes ?? []).filter((n) => n.text.trim() || n.confidence);
   const lessonTitle = (id: string) => {
@@ -48,7 +48,7 @@ export default function Study() {
           {!unlocked && (
             <div className="panel row spread">
               <span>
-                Study lessons are part of <strong>Pro</strong> and <strong>Pro Max</strong>. You can preview the opening comic of each lesson.
+                <strong>Season 1, Unit 1 is free</strong>, all five episodes. Every other unit and season is part of <strong>Pro</strong> and <strong>Pro Max</strong>; you can preview the opening comic of each episode.
               </span>
               <Link className="btn btn-primary" to="/upgrade">
                 See plans
@@ -79,7 +79,7 @@ export default function Study() {
           </div>
         </section>
 
-        {unlocked && (
+        {(unlocked || written.length > 0) && (
           <section className="panel stack" id="notes" aria-labelledby="notes-h">
             <h2 id="notes-h">All my notes</h2>
             {notes === null ? (

@@ -1,12 +1,17 @@
-import { describe, expect, it } from "vitest";
+import { describe, expect, it, vi } from "vitest";
 import { getQuestions } from "../data";
 import { PARTS } from "../data/exam";
 import { SOURCES } from "../data/sources";
 import { appendLine, notesToMarkdown } from "../lib/studyNotes";
-import { episodes, LESSONS, nextEpisode } from ".";
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+import { canOpenLesson, canOpenUnit, episodes, isFreeLesson, LESSONS, nextEpisode } from ".";
 import { STUDY_OUTLINE, topicCount } from "./outline";
 import { CAST_QUIZ_NOTES, quizLink, UNIT_QUIZ } from "./quiz";
 import { castCard, SEASON_CAST } from "./seasonCast";
+
+// Pretend Firebase is configured, so plan checks apply (without it, the app opens everything).
+vi.mock("../lib/firebase", () => ({ db: {}, auth: null }));
 
 describe("study outline", () => {
   it("covers every exam domain, in order, with 59 topics", () => {
@@ -145,5 +150,25 @@ describe("meet the cast", () => {
       for (const n of m.spotlight) expect(numbers).toContain(n);
     }
     for (const g of sc.guests) for (const n of g.episodes) expect(numbers).toContain(n);
+  });
+});
+
+describe("free plan", () => {
+  const free = { plan: "free" } as unknown as Parameters<typeof canOpenLesson>[1];
+
+  it("opens Season 1, Unit 1 in full and nothing else", () => {
+    const open = Object.values(LESSONS).filter((l) => isFreeLesson(l)).map((l) => l.id).sort();
+    expect(open).toEqual(STUDY_OUTLINE.part1[0].topics.map((t) => t.lessonId!).sort());
+    expect(open).toHaveLength(5);
+    for (const l of Object.values(LESSONS)) expect(canOpenLesson(l, free, false)).toBe(isFreeLesson(l));
+    expect(canOpenUnit("part1", "p1d1", free, false)).toBe(true);
+    expect(canOpenUnit("part1", "p1d2", free, false)).toBe(false);
+    expect(canOpenUnit("part3", "p3d1", free, false)).toBe(false);
+  });
+
+  it("matches the free lessons listed in firestore.rules", () => {
+    const rules = readFileSync(resolve(__dirname, "../../../firestore.rules"), "utf8");
+    const listed = [...rules.match(/function freeLesson\(d\) \{[^}]*\}/)![0].matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]).sort();
+    expect(listed).toEqual(Object.values(LESSONS).filter(isFreeLesson).map((l) => l.id).sort());
   });
 });
