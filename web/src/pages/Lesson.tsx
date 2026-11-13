@@ -14,7 +14,8 @@ import { Ace, CAST, Face, Hoot, Penny, type CastMember } from "../study/cast";
 import { SEASONS } from "../study/outline";
 import { saveScore } from "../study/progress";
 import { quizLink } from "../study/quiz";
-import type { Bubble, ConceptCard, Lesson } from "../study/lesson";
+import { ComicPanels } from "../study/Comic";
+import type { ConceptCard, Lesson } from "../study/lesson";
 
 const LETTERS = ["A", "B", "C", "D"];
 
@@ -32,31 +33,8 @@ function ComicStrip({ lesson }: { lesson: Lesson }) {
           </p>
         )}
       </div>
-      <div className="comic">
-        {lesson.comic.map((p, i) => (
-          <figure key={i} className="comic-panel">
-            <div role="img" aria-label={p.alt}>
-              {p.art}
-            </div>
-            {p.bubbles.map((b, k) => (
-              <SpeechBubble key={k} b={b} />
-            ))}
-            <span className="comic-num" aria-hidden>
-              {i + 1}
-            </span>
-          </figure>
-        ))}
-      </div>
+      <ComicPanels panels={lesson.comic} />
     </section>
-  );
-}
-
-function SpeechBubble({ b }: { b: Bubble }) {
-  return (
-    <p className={`bubble tail-${b.tail ?? "down"} who-${b.who.toLowerCase()}${b.shout ? " shout" : ""}`} style={{ left: `${b.x}%`, top: `${b.y}%`, width: `${b.w}%` }}>
-      <span className="sr-only">{b.who === "Walt" ? "Grandpa Walt" : b.who}: </span>
-      {b.text}
-    </p>
   );
 }
 

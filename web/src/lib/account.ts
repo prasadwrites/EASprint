@@ -14,6 +14,12 @@ export const PLANS: Record<PlanId, { name: string; maxDecks: number; maxQuestion
   promax: { name: "Pro Max", maxDecks: 100, maxQuestions: 200 },
 };
 
+/**
+ * Pro's monthly price as Square charges it, for example "$9.99". The pitch page shows it next to "less than a
+ * meal". Keep it in step with the Square payment link; while it's null the page leaves the number out.
+ */
+export const PRO_MONTHLY_PRICE: string | null = null;
+
 export interface Account {
   uid: string;
   email: string;
