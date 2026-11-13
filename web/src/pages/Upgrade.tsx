@@ -3,8 +3,13 @@ import { useAccount, useUser } from "../App";
 import TopBar, { Chip, Icon } from "../components/TopBar";
 import { limitsFor, PLANS, type PlanId } from "../lib/account";
 import { CHECKOUT_LINKS, openCheckout, requestUpgrade, watchMyRequest, type UpgradeRequest } from "../lib/upgrades";
+import { FREE_UNIT } from "../study";
+import { STUDY_OUTLINE, topicCount } from "../study/outline";
 
 const PAID: ("pro" | "promax")[] = ["pro", "promax"];
+const EPISODES = topicCount();
+const FREE_EPISODES = STUDY_OUTLINE[FREE_UNIT.part].find((d) => d.id === FREE_UNIT.domainId)?.topics.length ?? 0;
+
 const RANK: Record<PlanId, number> = { free: 0, pro: 1, promax: 2 };
 
 export default function Upgrade() {
@@ -43,7 +48,7 @@ export default function Upgrade() {
         <div className="stack" style={{ gap: 6 }}>
           <h1>Upgrade your plan</h1>
           <p className="muted">
-            You're on the <b>{admin ? "Admin" : limitsFor(account, false).name}</b> plan. Bigger plans let you build more decks with Claude, and bigger ones.
+            You're on the <b>{admin ? "Admin" : limitsFor(account, false).name}</b> plan. Paid plans unlock every Ledger Falls study episode and let you build more decks with Claude, and bigger ones.
           </p>
         </div>
 
@@ -89,7 +94,19 @@ export default function Upgrade() {
                   </li>
                   <li className="done">
                     <span className="dot"><Icon name="check" size={14} /></span>
-                    <span>All three built-in exam parts</span>
+                    <span>Practice questions for all three exam parts</span>
+                  </li>
+                  <li className="done">
+                    <span className="dot"><Icon name="check" size={14} /></span>
+                    {paid ? (
+                      <span>
+                        <b>Study:</b> all three seasons of Ledger Falls, {EPISODES} episodes, with your own notes
+                      </span>
+                    ) : (
+                      <span>
+                        <b>Study:</b> Season 1, Unit 1 only ({FREE_EPISODES} episodes)
+                      </span>
+                    )}
                   </li>
                 </ul>
                 {paid && !lower && (
