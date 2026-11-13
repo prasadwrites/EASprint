@@ -17,4 +17,8 @@ export function quizLink(part: PartId, topic: string): string {
 export const UNIT_QUIZ: Record<string, string> = {
   p1d1: "Part 1 Domain 1, preliminary work and taxpayer data: TINs, residency, filing requirements and status, dependents, kiddie tax, IRS notices, FBAR, Form 8938, ACA",
   p1d2: "Part 1 Domain 2, income and assets: wages, interest, dividends, rental, retirement, foreign income, basis, capital gains, special sales and adjustments",
+  p1d3: "Part 1 Domain 3, deductions and credits: standard vs itemized deductions, QBI, child and other dependent credits, education credits, EITC due diligence, energy and other credits",
+  p1d4: "Part 1 Domain 4, taxation: AMT, self-employment and household employment taxes, NIIT and Additional Medicare Tax, decedents, clergy, military, penalties and estimated tax",
+  p1d5: "Part 1 Domain 5, advising the individual: divorce, education savings, spousal IRA, tax planning moves, MFJ vs MFS, innocent and injured spouse, amended returns",
+  p1d6: "Part 1 Domain 6, specialized returns: estate tax and Form 706, portability, gift tax and Form 709, gift splitting, FBAR, Form 8938, Form 3520 and other foreign forms",
 };

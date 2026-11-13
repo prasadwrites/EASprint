@@ -158,7 +158,7 @@ interface Round {
   bank?: Question;
 }
 
-const NAMES: Record<CastMember, string> = { Penny: "Penny", Ace: "Ace", Hoot: "Hoot", Milo: "Milo", Lulu: "Lulu", Dee: "Dee", Biscuit: "Biscuit", Walt: "Grandpa Walt" };
+const NAMES: Record<CastMember, string> = { Penny: "Penny", Ace: "Ace", Hoot: "Hoot", Milo: "Milo", Lulu: "Lulu", Dee: "Dee", Biscuit: "Biscuit", Walt: "Grandpa Walt", Rosa: "Aunt Rosa" };
 
 /**
  * Ace vs. Hoot: the lesson's case files about the cast, then Hoot's bonus round of exam-style bank questions.

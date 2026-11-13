@@ -486,6 +486,8 @@ a { color: var(--accent); }
 .bubble.who-walt::after { background: #f4ead5; }
 .bubble.who-biscuit { background: #f5e6d3; }
 .bubble.who-biscuit::after { background: #f5e6d3; }
+.bubble.who-rosa { background: #f3e1ef; }
+.bubble.who-rosa::after { background: #f3e1ef; }
 @media (max-width: 380px) { .bubble.shout { font-size: 13px; } }
 
 .season-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 14px; }

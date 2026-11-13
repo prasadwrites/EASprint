@@ -8,9 +8,32 @@ import lulu from "./lessons/lulu";
 import mailbox from "./lessons/mailbox";
 import marriage from "./lessons/marriage";
 import shoebox from "./lessons/shoebox";
+import raffle from "./lessons/raffle";
+import spareroom from "./lessons/spareroom";
+import ira from "./lessons/ira";
+import offshore from "./lessons/offshore";
+import swapmeet from "./lessons/swapmeet";
+import aboveline from "./lessons/aboveline";
+import itemizing from "./lessons/itemizing";
+import qbi from "./lessons/qbi";
+import credits from "./lessons/credits";
+import school from "./lessons/school";
+import eitc from "./lessons/eitc";
+import solar from "./lessons/solar";
+import amt from "./lessons/amt";
+import selfemployed from "./lessons/selfemployed";
+import surtax from "./lessons/surtax";
+import lastpaycheck from "./lessons/lastpaycheck";
+import penalties from "./lessons/penalties";
+import yearreview from "./lessons/yearreview";
+import planning from "./lessons/planning";
+import plea from "./lessons/plea";
+import estate from "./lessons/estate";
+import gifts from "./lessons/gifts";
+import avalanche from "./lessons/avalanche";
 import { STUDY_OUTLINE, type StudyTopic } from "./outline";
 
-export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis].map((l) => [l.id, l]));
+export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar, amt, selfemployed, surtax, lastpaycheck, penalties, yearreview, planning, plea, estate, gifts, avalanche].map((l) => [l.id, l]));
 
 /**
  * Study lessons are part of the paid plans (Pro and Pro Max). The admin always has them, and so does the app
