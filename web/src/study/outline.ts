@@ -68,9 +68,9 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p1d5",
       topics: [
-        t("5.1", "Life events", "Marriage, divorce, education and estate planning, retirement planning"),
-        t("5.2", "Tax planning moves", "Timing of income and deductions, filing status comparison, carryovers, estimated tax"),
-        t("5.3", "Spouse relief and refunds", "Injured spouse, innocent spouse, refund claims, penalties of perjury"),
+        t("5.1", "Life events", "Marriage, divorce, education and estate planning, retirement planning", "p1-life-events"),
+        t("5.2", "Tax planning moves", "Timing of income and deductions, filing status comparison, carryovers, estimated tax", "p1-tax-planning"),
+        t("5.3", "Spouse relief and refunds", "Injured spouse, innocent spouse, refund claims, penalties of perjury", "p1-spouse-relief"),
       ],
     },
     {
