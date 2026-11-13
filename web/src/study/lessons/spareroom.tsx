@@ -37,13 +37,14 @@ function FontSpecimen({ x, y, scale = 1 }: { x: number; y: number; scale?: numbe
 
 const comic: Lesson["comic"] = [
   {
-    alt: "Milo stands outside his old condo holding a FOR RENT sign. Penny waves a set of keys.",
+    alt: "Milo cheers beside a FOR RENT sign outside his old condo. Penny, arms folded, looks doubtful.",
     art: (
       <svg {...PANEL}>
         <Backdrop wall="#e7f4fb" floor="#cfe8c4" />
-        <House x={250} y={190} scale={1.1} color="#d4ebfa" />
-        <Milo x={80} y={128} scale={0.78} mood="excited" pose="up" />
-        <RentSign x={160} y={198} />
+        <House x={226} y={196} scale={1.1} color="#d4ebfa" />
+        <Milo x={70} y={128} scale={0.76} mood="excited" pose="up" />
+        <Penny x={276} y={132} scale={0.66} mood="smug" flip />
+        <RentSign x={146} y={198} />
       </svg>
     ),
     bubbles: [
@@ -57,7 +58,7 @@ const comic: Lesson["comic"] = [
       <svg {...PANEL}>
         <Backdrop wall="#eef5f1" />
         <Milo x={80} y={128} scale={0.78} mood="shocked" pose="shrug" />
-        <Ace x={236} y={128} scale={0.78} mood="happy" flip pose="hold" holding={<Card x={-34} y={-30} w={68} h={44} lines={["Rent in", "minus costs"]} size={9} color="#fff3c4" />} />
+        <Ace x={236} y={128} scale={0.78} mood="happy" flip pose="hold" holding={<Card x={-34} y={-30} w={68} h={44} lines={["Rent in", "– costs"]} size={11} color="#fff3c4" />} />
       </svg>
     ),
     bubbles: [
@@ -193,7 +194,7 @@ const cards: Lesson["cards"] = [
         <House x={64} y={140} scale={1.1} color="#fff3c4" />
         <Step x={126} y={30} w={86} h={120} color="#d8f0e2" label="Rental" sub="days" />
         <Step x={222} y={70} w={86} h={80} color="#fde2e4" label="Personal" sub="days" />
-        <Label x={216} y={170} size={10} weight={700}>personal over 14 days or 10% → a residence</Label>
+        <Label x={160} y={170} size={10} weight={700}>personal use over 14 days or 10% = a residence</Label>
       </svg>
     ),
     body: [
@@ -209,9 +210,9 @@ const cards: Lesson["cards"] = [
       <svg {...CARD}>
         <rect width={320} height={180} fill="#eef5f1" />
         <Card x={10} y={60} w={86} h={50} lines={["Rental", "loss"]} size={12} color="#fde2e4" />
-        <rect x={130} y={14} width={20} height={150} fill="#9aa4b2" stroke={INK} strokeWidth={2} />
+        <rect x={130} y={14} width={20} height={106} fill="#9aa4b2" stroke={INK} strokeWidth={2} />
         <rect x={130} y={68} width={20} height={34} fill="#d8f0e2" stroke={INK} strokeWidth={2} />
-        <Label x={140} y={60} size={9}>$25K</Label>
+        <Label x={140} y={89} size={7}>$25K</Label>
         <Arrow d="M98,85 H126" />
         <Arrow d="M154,85 H190" />
         <Card x={194} y={60} w={116} h={50} lines={["Wages and", "other income"]} size={12} color="#d4ebfa" />

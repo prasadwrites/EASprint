@@ -30,13 +30,13 @@ const comic: Lesson["comic"] = [
     art: (
       <svg {...PANEL}>
         <Backdrop />
-        <WaltPortrait x={214} y={60} scale={1.05} mood="happy" />
-        <Penny x={96} y={128} scale={0.78} mood="excited" pose="hold" holding={<Envelope x={0} y={-8} label="IRA" />} />
+        <WaltPortrait x={40} y={70} scale={1.05} mood="happy" />
+        <Penny x={234} y={128} scale={0.78} mood="excited" flip pose="hold" holding={<Envelope x={0} y={-8} label="IRA" />} />
       </svg>
     ),
     bubbles: [
-      { who: "Walt", text: "Penny, I left you my IRA. Don't spend it all on comic books.", x: 52, y: 2, w: 45, tail: "down-right" },
-      { who: "Penny", text: "Grandpa! I'll roll it right into my own IRA!", x: 3, y: 3, w: 42, tail: "down-left" },
+      { who: "Walt", text: "Penny, I left you my IRA. Don't spend it all on comic books.", x: 3, y: 2, w: 45, tail: "down-left" },
+      { who: "Penny", text: "Grandpa! I'll roll it right into my own IRA!", x: 55, y: 3, w: 42, tail: "down-right" },
     ],
   },
   {
@@ -87,7 +87,7 @@ const comic: Lesson["comic"] = [
       <svg {...PANEL}>
         <Backdrop wall="#f3e1ef" />
         <Rosa x={84} y={128} scale={0.76} mood="excited" pose="up" />
-        <Heart x={160} y={70} s={2} />
+        <Heart x={160} y={128} s={1.6} />
         <Biscuit x={160} y={176} scale={0.32} mood="excited" />
         <Hoot x={248} y={128} scale={0.7} mood="happy" flip />
       </svg>
@@ -142,7 +142,7 @@ const cards: Lesson["cards"] = [
         <rect width={320} height={180} fill="#eef5f1" />
         <Piggy x={52} y={90} label="401k" />
         <Arrow d="M90,70 L200,36" color="#1d7a49" width={4} />
-        <Label x={146} y={36} size={11} color="#1d7a49">direct: no withholding</Label>
+        <Label x={150} y={20} size={11} color="#1d7a49">direct: no withholding</Label>
         <Arrow d="M90,110 L200,140" color="#a8321f" width={4} />
         <Label x={130} y={148} size={11} color="#a8321f">check: 20% withheld</Label>
         <Piggy x={256} y={44} label="IRA" color="#d8f0e2" scale={0.9} />
@@ -169,7 +169,7 @@ const cards: Lesson["cards"] = [
         <Calendar x={270} y={60} month="DEC" day="31" scale={0.9} />
         <Label x={196} y={118} size={10} weight={700}>first one</Label>
         <Label x={270} y={118} size={10} weight={700}>then yearly</Label>
-        <Label x={232} y={156} size={10} weight={700}>Miss it: 25% excise (10% if fixed fast)</Label>
+        <Label x={200} y={156} size={10} weight={700}>Miss it: 25% excise (10% if fixed)</Label>
       </svg>
     ),
     body: [
@@ -187,7 +187,7 @@ const cards: Lesson["cards"] = [
         <Piggy x={56} y={70} label="IRA" />
         <path d="M94,70 H220" stroke="#1d7a49" strokeWidth={8} />
         <Heart x={250} y={66} s={2.2} />
-        <Rosa x={150} y={110} scale={0.34} mood="excited" />
+        <Rosa x={150} y={126} scale={0.34} mood="excited" />
         <Label x={160} y={30} size={11}>Age 70½+, up to $108,000 for 2025</Label>
         <Label x={250} y={124} size={10} weight={700}>counts toward RMD</Label>
       </svg>

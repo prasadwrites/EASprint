@@ -1,6 +1,6 @@
 import { Ace, Arrow, Backdrop, Hoot, Label, Lulu, Penny, VideoCall } from "../cast";
 import type { Lesson } from "../lesson";
-import { Calendar, Card, CARD, Globe, HOOK, Mark, PANEL, Paper, Stamp, Step, Tick } from "../props";
+import { Calendar, Card, CARD, Globe, HOOK, Mark, PANEL, Paper, Step } from "../props";
 
 // Part 1, topic 2.4: foreign earned income. Written to the rules for tax year 2025 from Publication 54 and
 // the Form 2555 instructions as summarized there.
@@ -91,13 +91,12 @@ const comic: Lesson["comic"] = [
     ],
   },
   {
-    alt: "Dee on the tablet holds up a sign reading EITC? Hoot, arms crossed, stamps NO.",
+    alt: "Dee on the tablet cheers with her arms up. Hoot stands firm with his clipboard.",
     art: (
       <svg {...PANEL}>
         <Backdrop />
         <VideoCall x={24} y={92} scale={1} mood="excited" pose="up" bars={2} />
         <Hoot x={240} y={128} scale={0.72} mood="stern" flip clipboard />
-        <Stamp x={170} y={180} text="NO EITC" color="#a8321f" size={13} />
       </svg>
     ),
     bubbles: [
@@ -132,7 +131,7 @@ const cards: Lesson["cards"] = [
         <Globe x={80} y={90} r={50} />
         <Arrow d="M136,90 H200" width={4} />
         <Paper x={240} y={90} label="1040" sub="all income" scale={1.6} color="#fff3c4" />
-        <Label x={80} y={164} size={11}>Living abroad doesn't change that</Label>
+        <Label x={160} y={164} size={11}>Living abroad doesn't change that</Label>
       </svg>
     ),
     body: [
@@ -260,7 +259,6 @@ const cards: Lesson["cards"] = [
         <Card x={14} y={56} w={292} h={30} lines={["No foreign tax credit on excluded pay"]} size={11} color="#fde2e4" />
         <Card x={14} y={92} w={292} h={30} lines={["Other income taxed at higher (stacked) rates"]} size={11} color="#fde2e4" />
         <Card x={14} y={128} w={292} h={30} lines={["Revoke it? 5 years before using it again"]} size={11} color="#fde2e4" />
-        <Tick x={300} y={18} ok={false} s={0.6} />
       </svg>
     ),
     body: [
