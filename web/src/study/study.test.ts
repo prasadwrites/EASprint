@@ -80,6 +80,18 @@ describe("seasons", () => {
     expect(episodes("part1").map((l) => l.number).slice(0, 5)).toEqual(["1.1", "1.2", "1.3", "1.4", "1.5"]);
     expect(nextEpisode(LESSONS["p1-getting-started"])?.id).toBe("p1-filing-status");
   });
+
+  it("has all of Season 1: every Part 1 topic is an episode, numbered in order, ending with the finale", () => {
+    const topics = STUDY_OUTLINE.part1.flatMap((d) => d.topics.map((t) => t.number));
+    const season = episodes("part1");
+    expect(season.map((l) => l.number)).toEqual(topics);
+    expect(season).toHaveLength(29);
+    expect(nextEpisode(season[season.length - 1])).toBeUndefined();
+  });
+
+  it("has a unit quiz for every Part 1 domain", () => {
+    for (const d of STUDY_OUTLINE.part1) expect(UNIT_QUIZ[d.id]).toBeTruthy();
+  });
 });
 
 describe("study notes", () => {

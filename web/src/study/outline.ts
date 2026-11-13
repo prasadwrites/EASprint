@@ -76,9 +76,9 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p1d6",
       topics: [
-        t("6.1", "Estate tax", "Form 706, gross estate, deductions, portability"),
-        t("6.2", "Gift tax", "Form 709, annual exclusion, gift splitting"),
-        t("6.3", "International information returns", "FBAR (FinCEN 114), Form 8938 and related forms"),
+        t("6.1", "Estate tax", "Form 706, gross estate, deductions, portability", "p1-estate-tax"),
+        t("6.2", "Gift tax", "Form 709, annual exclusion, gift splitting", "p1-gift-tax"),
+        t("6.3", "International information returns", "FBAR (FinCEN 114), Form 8938 and related forms", "p1-international"),
       ],
     },
   ],

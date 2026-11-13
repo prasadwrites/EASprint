@@ -42,10 +42,12 @@ Review decks are private to each candidate and show under "Your review decks" on
 **Study** (`/study`, and the Study blocks on the home page) shows each exam part as a season of *Ledger Falls*, a
 cartoon series with one episode per lesson topic (59 topics from the IRS content outline's 13 domains, in
 `web/src/study/outline.ts`). Clicking a part opens its season page (`/study/part1`), listed by unit (exam domain).
-Live so far: Season 1, Unit 1 (episodes 1.1 to 1.5) and episode 2.5. Each episode has:
+Live so far: all of Season 1 (Part 1, episodes 1.1 to 6.3, ending with the finale "Dee's Paperwork Avalanche").
+Each episode has:
 
 - a six-panel comic with the recurring cast: **Penny Pocket**, **Milo Marsh**, **Lulu**, **Cousin Dee** (on a video
-  call), **Biscuit** the beagle, **Ace** the enrolled agent, **Hoot** the IRS examiner, and Grandpa Walt's portrait;
+  call), **Biscuit** the beagle, **Aunt Rosa** the baker, **Ace** the enrolled agent, **Hoot** the IRS examiner, and Grandpa
+  Walt's portrait;
 - picture cards, one rule each, with a button to copy the key point into the notes;
 - a memory hook, trap alerts and the IRS sources;
 - **Ace vs. Hoot**, a game of case files about the cast that test the topic's rules, plus bank questions as a bonus
