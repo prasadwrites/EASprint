@@ -439,7 +439,7 @@ export default function Landing({ signedIn }: { signedIn: boolean }) {
               <span className="eyebrow">Plans</span>
               <h2 style={{ fontSize: "clamp(24px, 4vw, 32px)" }}>Start free. Unlock Ledger Falls for less than a meal a month.</h2>
               <p className="muted" style={{ maxWidth: 720 }}>
-                Free gets you all three built-in practice parts with every explanation. Pro and Pro Max add every Ledger Falls episode, your study notes, and
+                Free gets you practice questions for all three exam parts with every explanation, plus the first unit of Ledger Falls Season 1. Pro and Pro Max add every Ledger Falls episode in all three seasons, your study notes, and
                 more decks built with Claude.{price ? ` Pro is ${price}.` : ""}
               </p>
             </div>
@@ -451,9 +451,13 @@ export default function Landing({ signedIn }: { signedIn: boolean }) {
                     {p === "pro" && price && <span className="muted" style={{ fontSize: 15, fontWeight: 600 }}> · {price}</span>}
                   </h3>
                   <ul className="checklist" style={{ gap: 8 }}>
-                    {p !== "free" && (
+                    {p !== "free" ? (
                       <Point>
                         <b>Every Ledger Falls episode</b> and your notes
+                      </Point>
+                    ) : (
+                      <Point>
+                        <b>Ledger Falls Season 1, Unit 1</b> and your notes
                       </Point>
                     )}
                     <Point>
@@ -462,7 +466,7 @@ export default function Landing({ signedIn }: { signedIn: boolean }) {
                     <Point>
                       Up to <b>{PLANS[p].maxQuestions}</b> questions per deck
                     </Point>
-                    <Point>All three built-in exam parts</Point>
+                    <Point>Practice questions for all three exam parts</Point>
                   </ul>
                 </article>
               ))}
