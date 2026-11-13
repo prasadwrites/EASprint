@@ -58,11 +58,11 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p1d4",
       topics: [
-        t("4.1", "Alternative minimum tax", "AMT calculation and triggers"),
-        t("4.2", "Self-employment and household employees", "Self-employment tax, household employee taxes"),
-        t("4.3", "Extra Medicare and investment taxes", "Net investment income tax, Additional Medicare Tax, excess Social Security withholding, uncollected taxes"),
-        t("4.4", "Special taxpayers", "Clergy, military, income in respect of a decedent"),
-        t("4.5", "Penalties and interest", "Underpayment, late filing and late payment penalties for individuals"),
+        t("4.1", "Alternative minimum tax", "AMT calculation and triggers", "p1-amt"),
+        t("4.2", "Self-employment and household employees", "Self-employment tax, household employee taxes", "p1-se-household"),
+        t("4.3", "Extra Medicare and investment taxes", "Net investment income tax, Additional Medicare Tax, excess Social Security withholding, uncollected taxes", "p1-niit-medicare"),
+        t("4.4", "Special taxpayers", "Clergy, military, income in respect of a decedent", "p1-special-taxpayers"),
+        t("4.5", "Penalties and interest", "Underpayment, late filing and late payment penalties for individuals", "p1-penalties"),
       ],
     },
     {
