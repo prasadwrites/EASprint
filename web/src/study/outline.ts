@@ -129,9 +129,9 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p3d2",
       topics: [
-        t("2.1", "Power of attorney", "Forms 2848 and 8821, Centralized Authorization File, Publication 216"),
-        t("2.2", "Building the case", "Case preparation, the taxpayer's financial situation, supporting documents, legal authority"),
-        t("2.3", "Deadlines and protections", "Statute of limitations, Taxpayer Advocate Service, identity theft"),
+        t("2.1", "Power of attorney", "Forms 2848 and 8821, Centralized Authorization File, Publication 216", "p3-power-of-attorney"),
+        t("2.2", "Building the case", "Case preparation, the taxpayer's financial situation, supporting documents, legal authority", "p3-building-the-case"),
+        t("2.3", "Deadlines and protections", "Statute of limitations, Taxpayer Advocate Service, identity theft", "p3-deadlines-protections"),
       ],
     },
     {
