@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import { useId, type ReactNode } from "react";
 
 /**
  * The Study cast. Every lesson uses the same three characters, drawn once here as SVG so panels can be
@@ -188,7 +188,7 @@ export function Penny(props: CharacterProps) {
       <Eyes mood={mood} />
       <Mouth mood={mood} />
       <Arms pose={pose} sleeve={p.top} skin={p.skin} />
-      {holding && <g transform="translate(0 62)">{holding}</g>}
+      {holding && <g transform={`translate(0 62)${props.flip ? " scale(-1 1)" : ""}`}>{holding}</g>}
       {pose === "hold" && (
         <g fill={p.skin} {...OUT} strokeWidth={2.2}>
           <circle cx={-14} cy={70} r={6.5} />
@@ -226,7 +226,7 @@ export function Ace(props: CharacterProps) {
       <Eyes mood={mood} glasses />
       <Mouth mood={mood} />
       <Arms pose={pose} sleeve={a.jacket} skin={a.skin} />
-      {holding && <g transform="translate(0 62)">{holding}</g>}
+      {holding && <g transform={`translate(0 62)${props.flip ? " scale(-1 1)" : ""}`}>{holding}</g>}
       {pose === "hold" && (
         <g fill={a.skin} {...OUT} strokeWidth={2.2}>
           <circle cx={-14} cy={70} r={6.5} />
@@ -445,17 +445,261 @@ export function Arrow({ d, color = INK, width = 3 }: { d: string; color?: string
   );
 }
 
+
+const MILO = { skin: "#eab38a", hair: "#c99a4e", hoodie: "#6f7f3c", hood: "#56632d" };
+
+/** Milo Marsh, Penny's husband (as of 11:59 PM, December 31) and a freelance dog walker. Olive hoodie, shaggy hair. */
+export function Milo(props: CharacterProps) {
+  const { mood = "happy", pose = "down", holding } = props;
+  const m = MILO;
+  return (
+    <g transform={place(props)}>
+      <path d="M-30,40 Q-42,14 -20,8 L20,8 Q42,14 30,40 Z" fill={m.hood} {...OUT} />
+      <path d="M-38,100 Q-40,42 0,36 Q40,42 38,100 Z" fill={m.hoodie} {...OUT} />
+      <path d="M-20,90 L-14,74 L14,74 L20,90 Z" fill={m.hood} {...OUT} strokeWidth={2} />
+      <path d="M-6,42 L-8,60 M6,42 L8,60" stroke="#f1ead2" strokeWidth={2.5} strokeLinecap="round" />
+      <rect x={-6} y={24} width={12} height={14} fill={m.skin} {...OUT} strokeWidth={2} />
+      <circle cx={0} cy={0} r={28} fill={m.skin} {...OUT} />
+      <g fill="#8a6a4a" opacity={0.5}>
+        {[
+          [-20, 12],
+          [-17, 17],
+          [-12, 21],
+          [-6, 24],
+          [0, 25],
+          [6, 24],
+          [12, 21],
+          [17, 17],
+          [20, 12],
+        ].map(([x, y]) => (
+          <circle key={`${x}${y}`} cx={x} cy={y} r={1.3} />
+        ))}
+      </g>
+      <path d="M-30,2 Q-36,-26 -14,-33 Q0,-41 14,-33 Q36,-26 30,2 L25,-11 L19,-3 L13,-16 L5,-7 L-3,-17 L-11,-7 L-18,-16 L-24,-3 Z" fill={m.hair} {...OUT} />
+      <Eyes mood={mood} />
+      <Mouth mood={mood} />
+      <Arms pose={pose} sleeve={m.hoodie} skin={m.skin} />
+      {holding && <g transform={`translate(0 62)${props.flip ? " scale(-1 1)" : ""}`}>{holding}</g>}
+      {pose === "hold" && (
+        <g fill={m.skin} {...OUT} strokeWidth={2.2}>
+          <circle cx={-14} cy={70} r={6.5} />
+          <circle cx={14} cy={70} r={6.5} />
+        </g>
+      )}
+    </g>
+  );
+}
+
+const LULU = { skin: "#c98d64", hair: "#4a2c1d", shirt: "#e8505b", overalls: "#3f7cc4", tie: "#f6d33c" };
+
+/** Lulu Pocket, 9, Dee's daughter, who lives with Penny and Milo. Pigtails, overalls. Draw her at about 70% of an adult's scale. */
+export function Lulu(props: CharacterProps) {
+  const { mood = "happy", pose = "down", holding } = props;
+  const l = LULU;
+  return (
+    <g transform={place(props)}>
+      <g fill={l.hair} {...OUT}>
+        <ellipse cx={-38} cy={4} rx={10} ry={15} />
+        <ellipse cx={38} cy={4} rx={10} ry={15} />
+      </g>
+      <g fill={l.tie} {...OUT} strokeWidth={2}>
+        <circle cx={-30} cy={-8} r={5} />
+        <circle cx={30} cy={-8} r={5} />
+      </g>
+      <path d="M-34,100 Q-36,44 0,38 Q36,44 34,100 Z" fill={l.shirt} {...OUT} />
+      <path d="M-33,62 L33,62 M-34,78 L34,78" stroke="#fff" strokeWidth={4} opacity={0.7} />
+      <path d="M-20,58 L20,58 L24,100 L-24,100 Z" fill={l.overalls} {...OUT} strokeWidth={2} />
+      <path d="M-18,58 L-24,42 M18,58 L24,42" stroke={l.overalls} strokeWidth={5} strokeLinecap="round" />
+      <circle cx={-14} cy={63} r={2.5} fill={l.tie} stroke={INK} strokeWidth={1} />
+      <circle cx={14} cy={63} r={2.5} fill={l.tie} stroke={INK} strokeWidth={1} />
+      <rect x={-8} y={70} width={16} height={12} rx={2} fill="none" stroke={INK} strokeWidth={1.6} />
+      <rect x={-6} y={26} width={12} height={14} fill={l.skin} {...OUT} strokeWidth={2} />
+      <circle cx={0} cy={0} r={28} fill={l.skin} {...OUT} />
+      <path d="M-28,-2 Q-29,-31 0,-32 Q29,-31 28,-2 Q24,-16 12,-17 L8,-11 L2,-18 Q-14,-20 -28,-2 Z" fill={l.hair} {...OUT} />
+      <Eyes mood={mood} />
+      <Mouth mood={mood} />
+      <Arms pose={pose} sleeve={l.shirt} skin={l.skin} />
+      {holding && <g transform={`translate(0 62)${props.flip ? " scale(-1 1)" : ""}`}>{holding}</g>}
+      {pose === "hold" && (
+        <g fill={l.skin} {...OUT} strokeWidth={2.2}>
+          <circle cx={-14} cy={70} r={6.5} />
+          <circle cx={14} cy={70} r={6.5} />
+        </g>
+      )}
+    </g>
+  );
+}
+
+const DEE = { skin: "#c98d64", hair: "#2b1a12", coverall: "#e8762c", hat: "#f2c230" };
+
+/** Cousin Dee Pocket, Lulu's mom, who works on an oil rig overseas: hard hat and orange coveralls. Usually seen in a VideoCall. */
+export function Dee(props: CharacterProps) {
+  const { mood = "happy", pose = "down", holding } = props;
+  const d = DEE;
+  return (
+    <g transform={place(props)}>
+      <path d="M-38,100 Q-40,42 0,36 Q40,42 38,100 Z" fill={d.coverall} {...OUT} />
+      <path d="M-14,38 L0,56 L14,38" fill="none" {...OUT} strokeWidth={2} />
+      <path d="M-38,74 L38,74" stroke="#d8f0ff" strokeWidth={5} />
+      <path d="M-38,74 L38,74" stroke="#9fb6c6" strokeWidth={1.5} strokeDasharray="4 3" />
+      <rect x={-6} y={24} width={12} height={14} fill={d.skin} {...OUT} strokeWidth={2} />
+      <path d="M-26,-6 Q-34,18 -24,26 L-20,4 Z M26,-6 Q34,18 24,26 L20,4 Z" fill={d.hair} {...OUT} strokeWidth={2} />
+      <circle cx={0} cy={0} r={28} fill={d.skin} {...OUT} />
+      <Eyes mood={mood} />
+      <Mouth mood={mood} />
+      <path d="M-33,-12 Q-32,-44 0,-44 Q32,-44 33,-12 Z" fill={d.hat} {...OUT} />
+      <path d="M-40,-12 L40,-12 L38,-6 L-38,-6 Z" fill={d.hat} {...OUT} strokeWidth={2} />
+      <path d="M0,-44 L0,-14 M-14,-40 L-10,-14 M14,-40 L10,-14" stroke={INK} strokeWidth={1.5} opacity={0.5} />
+      <Arms pose={pose} sleeve={d.coverall} skin={d.skin} />
+      {holding && <g transform={`translate(0 62)${props.flip ? " scale(-1 1)" : ""}`}>{holding}</g>}
+    </g>
+  );
+}
+
 /**
- * The Ledger Falls cast. Penny, Ace and Hoot are drawn above; the others join as their episodes are built.
- * Characters call each other by name in dialogue, and Hoot uses full names.
+ * A tablet on a video call with Dee on her oil rig. (x, y) is the screen's top-left corner; the screen is
+ * 120 by 90 at scale 1. Signal bars and a "can you hear me?" wobble are part of the joke.
+ */
+export function VideoCall({ x, y, scale = 1, mood = "happy", pose = "down", bars = 1 }: { x: number; y: number; scale?: number; mood?: Mood; pose?: Pose; bars?: number }) {
+  return (
+    <g transform={`translate(${x} ${y}) scale(${scale})`}>
+      <rect x={-8} y={-8} width={136} height={106} rx={10} fill="#2a2f3a" {...OUT} />
+      <rect x={0} y={0} width={120} height={90} fill="#bfe3f5" />
+      <rect x={0} y={62} width={120} height={28} fill="#3a7bb0" />
+      <g stroke={INK} strokeWidth={1.5} fill="#8a96a6" opacity={0.8}>
+        <path d="M86,62 L92,30 L100,30 L106,62 Z" />
+        <path d="M92,30 L96,18 L100,30" fill="none" />
+        <rect x={82} y={56} width={30} height={6} />
+      </g>
+      <Dee x={46} y={40} scale={0.56} mood={mood} pose={pose} />
+      <rect x={-8} y={90} width={136} height={14} rx={0} fill="#2a2f3a" />
+      <rect x={-8} y={90} width={136} height={8} fill="#2a2f3a" stroke={INK} strokeWidth={0} />
+      <path d="M-8,98 L128,98" stroke={INK} strokeWidth={2.5} />
+      <g fill="#fff">
+        {[0, 1, 2, 3].map((i) => (
+          <rect key={i} x={98 + i * 5} y={14 - i * 3} width={3} height={4 + i * 3} opacity={i < bars ? 1 : 0.3} />
+        ))}
+      </g>
+      <circle cx={8} cy={8} r={3.5} fill="#e8505b" />
+    </g>
+  );
+}
+
+/** Biscuit, Milo's beagle. Sits facing right around (0, 0), the middle of the head; about 80 units tall. */
+export function Biscuit({ x, y, scale = 1, flip, mood = "happy" }: { x: number; y: number; scale?: number; flip?: boolean; mood?: "happy" | "sad" | "excited" | "sleepy" }) {
+  const tan = "#c98a4b";
+  const brown = "#7a4a24";
+  return (
+    <g transform={`translate(${x} ${y}) scale(${flip ? -scale : scale} ${scale})`}>
+      <path d="M-20,58 Q-38,44 -34,22" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" />
+      <path d="M-20,58 Q-38,44 -34,22" fill="none" stroke={tan} strokeWidth={5} strokeLinecap="round" />
+      <circle cx={-34} cy={21} r={3.5} fill="#fff" {...OUT} strokeWidth={1.5} />
+      <path d="M-24,74 Q-32,32 -6,16 L14,16 Q32,34 26,74 Z" fill={tan} {...OUT} />
+      <path d="M-24,70 Q-28,40 -8,26 Q-2,44 -10,72 Z" fill="#2b2420" opacity={0.85} />
+      <path d="M4,22 Q18,32 16,72 L0,72 Q-2,42 4,22 Z" fill="#fff" stroke={INK} strokeWidth={1.5} />
+      <ellipse cx={4} cy={76} rx={8} ry={5} fill="#fff" {...OUT} strokeWidth={2} />
+      <ellipse cx={20} cy={76} rx={8} ry={5} fill="#fff" {...OUT} strokeWidth={2} />
+      <ellipse cx={2} cy={0} rx={20} ry={18} fill={tan} {...OUT} />
+      <path d="M8,-18 Q12,-4 12,6 L18,6 Q16,-6 12,-18 Z" fill="#fff" />
+      <ellipse cx={18} cy={9} rx={13} ry={9} fill="#fff" {...OUT} strokeWidth={2} />
+      <circle cx={30} cy={5} r={4} fill={INK} />
+      {mood === "happy" || mood === "excited" ? (
+        <path d="M18,14 Q20,26 26,24 Q28,18 26,14 Z" fill="#f28fb0" {...OUT} strokeWidth={1.5} />
+      ) : (
+        <path d="M14,15 Q20,12 26,15" fill="none" {...OUT} strokeWidth={2} />
+      )}
+      {mood === "sleepy" ? (
+        <path d="M6,-4 Q10,-1 14,-4" fill="none" {...OUT} strokeWidth={2} />
+      ) : mood === "sad" ? (
+        <g>
+          <circle cx={10} cy={-3} r={3} fill={INK} />
+          <path d="M5,-10 L14,-7" {...OUT} strokeWidth={2} />
+        </g>
+      ) : (
+        <g>
+          <circle cx={10} cy={-4} r={mood === "excited" ? 4 : 3.2} fill={INK} />
+          <circle cx={11} cy={-5.5} r={1} fill="#fff" />
+        </g>
+      )}
+      <path d="M-6,-14 Q-24,-10 -20,22 Q-8,26 -4,2 Z" fill={brown} {...OUT} />
+      <path d="M-10,72 L-18,68" stroke="#f2c230" strokeWidth={0} />
+      <path d="M-4,30 Q6,36 18,30" fill="none" stroke="#e8505b" strokeWidth={4} strokeLinecap="round" />
+      <circle cx={8} cy={36} r={3} fill="#f2c230" {...OUT} strokeWidth={1.2} />
+    </g>
+  );
+}
+
+/**
+ * Grandpa Walt Pocket's portrait, which comments from the wall. (x, y) is the frame's top-left; 64 by 78 at scale 1.
+ */
+export function WaltPortrait({ x, y, scale = 1, mood = "happy" }: { x: number; y: number; scale?: number; mood?: Mood }) {
+  const skin = "#f1c8a6";
+  return (
+    <g transform={`translate(${x} ${y}) scale(${scale})`}>
+      <rect x={-6} y={-6} width={76} height={90} rx={4} fill="#c9a24a" {...OUT} />
+      <rect x={0} y={0} width={64} height={78} fill="#5b7a6a" stroke={INK} strokeWidth={1.5} />
+      <g transform="translate(32 34) scale(0.72)">
+        <path d="M-38,64 Q-40,40 0,36 Q40,40 38,64 Z" fill="#4a3a5c" {...OUT} />
+        <path d="M-8,38 L0,52 L8,38" fill="#fff" {...OUT} strokeWidth={2} />
+        <circle cx={0} cy={0} r={28} fill={skin} {...OUT} />
+        <g fill="#f4f4f0" {...OUT} strokeWidth={2}>
+          <ellipse cx={-27} cy={-6} rx={8} ry={11} />
+          <ellipse cx={27} cy={-6} rx={8} ry={11} />
+        </g>
+        <Eyes mood={mood} glasses />
+        <path d="M-14,10 Q-7,4 0,8 Q7,4 14,10 Q8,16 0,12 Q-8,16 -14,10 Z" fill="#f4f4f0" {...OUT} strokeWidth={2} />
+        <Mouth mood={mood === "happy" ? "excited" : mood} />
+      </g>
+    </g>
+  );
+}
+
+export type CastMember = "Penny" | "Ace" | "Hoot" | "Milo" | "Lulu" | "Dee" | "Biscuit" | "Walt";
+
+/** A head-and-shoulders badge for a cast member, for game cards and lists. */
+export function Face({ who, mood, size = 56 }: { who: CastMember; mood?: Mood; size?: number }) {
+  const clip = `face${useId().replace(/[^a-zA-Z0-9]/g, "")}`;
+  const bg: Record<CastMember, string> = { Penny: "#fff3c4", Ace: "#d8f0e2", Hoot: "#eaf6ef", Milo: "#eef0d8", Lulu: "#fde2e4", Dee: "#ffe4cc", Biscuit: "#f5e6d3", Walt: "#e6eef0" };
+  const art: Record<CastMember, ReactNode> = {
+    Penny: <Penny x={0} y={6} mood={mood ?? "happy"} />,
+    Ace: <Ace x={0} y={6} mood={mood ?? "happy"} />,
+    Hoot: <Hoot x={0} y={10} scale={0.85} mood={mood ?? "stern"} />,
+    Milo: <Milo x={0} y={6} mood={mood ?? "happy"} />,
+    Lulu: <Lulu x={0} y={6} mood={mood ?? "happy"} />,
+    Dee: <Dee x={0} y={10} scale={0.9} mood={mood ?? "happy"} />,
+    Biscuit: <Biscuit x={-6} y={4} scale={1.05} mood="happy" />,
+    Walt: <WaltPortrait x={-32} y={-36} scale={1} mood={mood ?? "happy"} />,
+  };
+  return (
+    <svg viewBox="-50 -50 100 100" width={size} height={size} aria-hidden className="cast-face">
+      <defs>
+        <clipPath id={clip}>
+          <circle cx={0} cy={0} r={48} />
+        </clipPath>
+      </defs>
+      <circle cx={0} cy={0} r={49} fill={bg[who]} />
+      <g clipPath={`url(#${clip})`}>{art[who]}</g>
+      <circle cx={0} cy={0} r={48} fill="none" stroke={INK} strokeWidth={3} />
+    </svg>
+  );
+}
+
+/**
+ * The Ledger Falls cast. Characters call each other by name in dialogue, and Hoot uses full names.
+ * See the series bible for who's who: Dee and Penny are cousins, so Lulu is Penny's cousin's daughter
+ * (she calls Penny "Aunt Penny"), which matters for the dependent rules in episode 1.3.
  */
 export const CAST = [
-  { name: "Penny Pocket", role: "The taxpayer", line: "Buys, sells, inherits and asks “so what do I owe?” at the worst moment." },
-  { name: "Ace Okafor, EA", role: "The enrolled agent", line: "Penny's neighbor. Calm, a little dry, and always says “Penny, let's check the rule.”" },
-  { name: "Examiner Horace “Hoot” Hootington", role: "The IRS examiner", line: "An owl in a green eyeshade. Strict but fair, and never misses a detail." },
+  { name: "Penny Pocket", short: "Penny", role: "The taxpayer", line: "Buys, sells, inherits and asks “so what do I owe?” at the worst moment." },
+  { name: "Ace Okafor, EA", short: "Ace", role: "The enrolled agent", line: "Penny's neighbor. Calm, a little dry, and always says “Penny, let's check the rule.”" },
+  { name: "Examiner Horace “Hoot” Hootington", short: "Hoot", role: "The IRS examiner", line: "An owl in a green eyeshade. Strict but fair, terrible at parties. “Hoo-hoo! Nothing is free.”" },
+  { name: "Milo Marsh", short: "Milo", role: "Penny's husband", line: "Freelance dog walker, keeper of the shoebox. “Wait, is that deductible?”" },
+  { name: "Lulu Pocket", short: "Lulu", role: "Age 9, lives with Penny and Milo", line: "Dee's daughter, too smart for her age, owns stock. “I'm a dependent, not a dependable!”" },
+  { name: "Cousin Dee Pocket", short: "Dee", role: "Lulu's mom, on an oil rig overseas", line: "Always on a video call with one bar of signal. “Can you hear me now?”" },
+  { name: "Biscuit", short: "Biscuit", role: "Milo's beagle", line: "The only resident of Ledger Falls with no tax problems. “Woof.”" },
 ] as const;
 
-/** The three of them together, for the Study home page and the cast card. */
+/** The three leads together, for the Study home page. */
 export function CastPortrait() {
   return (
     <svg viewBox="0 0 360 170" role="img" aria-label="Penny Pocket, Ace and Hoot">
@@ -473,6 +717,24 @@ export function CastPortrait() {
       <Label x={290} y={163} size={12}>
         Hoot
       </Label>
+    </svg>
+  );
+}
+
+/** The whole Season 1 household plus Ace and Hoot, for the season page. */
+export function FamilyPortrait() {
+  return (
+    <svg viewBox="0 0 520 190" role="img" aria-label="The cast of Ledger Falls: Dee on a video call, Milo, Penny, Lulu, Biscuit, Ace and Hoot">
+      <rect x={0} y={0} width={520} height={190} rx={12} fill="#fdf3e1" />
+      <rect x={0} y={166} width={520} height={24} fill="#efd9b8" />
+      <WaltPortrait x={18} y={18} scale={0.62} mood="happy" />
+      <VideoCall x={78} y={22} scale={0.5} mood="excited" pose="wave" bars={1} />
+      <Milo x={170} y={88} scale={0.74} mood="happy" />
+      <Penny x={248} y={88} scale={0.74} mood="excited" pose="wave" />
+      <Lulu x={312} y={118} scale={0.5} mood="smug" />
+      <Biscuit x={124} y={128} scale={0.48} mood="happy" />
+      <Ace x={384} y={88} scale={0.72} mood="happy" />
+      <Hoot x={466} y={84} scale={0.66} mood="stern" clipboard />
     </svg>
   );
 }

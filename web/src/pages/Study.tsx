@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAccount, useUser } from "../App";
-import TopBar, { Chip } from "../components/TopBar";
-import { domainName } from "../data";
+import StudyParts from "../components/StudyParts";
+import TopBar from "../components/TopBar";
 import { PARTS } from "../data/exam";
 import { downloadText, listNotes, notesToMarkdown, type StudyNote } from "../lib/studyNotes";
 import { hasStudyAccess, LESSONS } from "../study";
-import { CAST, CastPortrait } from "../study/cast";
-import { STUDY_OUTLINE, topicCount } from "../study/outline";
+import { CAST, Face, FamilyPortrait } from "../study/cast";
+import { topicCount } from "../study/outline";
 
 export default function Study() {
   const user = useUser();
@@ -22,7 +22,6 @@ export default function Study() {
       .catch(() => setNotes([]));
   }, [unlocked, user.uid]);
 
-  const noteFor = (lessonId: string) => notes?.find((n) => n.lessonId === lessonId);
   const written = (notes ?? []).filter((n) => n.text.trim() || n.confidence);
   const lessonTitle = (id: string) => {
     const l = LESSONS[id];
@@ -43,7 +42,7 @@ export default function Study() {
           <span className="eyebrow">Study</span>
           <h1>Learn it once. Laugh. Never forget it.</h1>
           <p className="muted" style={{ fontSize: 17 }}>
-            Short cartoon lessons for every topic on the SEE: a comic to set it up, one rule per picture, a memory hook, the traps the exam sets, and a few questions to lock it in. Keep
+            Ledger Falls is a cartoon series with one episode for every topic on the SEE: a comic to set it up, one rule per picture, a memory hook, the traps the exam sets, and a game of Ace vs. Hoot to lock it in. Each exam part is a season. Keep
             your own notes on every lesson and download them any time.
           </p>
           {!unlocked && (
@@ -58,65 +57,27 @@ export default function Study() {
           )}
         </header>
 
+        <section className="stack" aria-labelledby="seasons-h">
+          <h2 id="seasons-h">Pick a part</h2>
+          <StudyParts />
+        </section>
+
         <section className="panel cast-card">
           <div className="cast-art">
-            <CastPortrait />
+            <FamilyPortrait />
           </div>
           <div className="stack" style={{ gap: 8 }}>
             <h2 style={{ fontSize: 19 }}>Meet the cast of Ledger Falls</h2>
             {CAST.map((c) => (
-              <p key={c.name}>
-                <strong>{c.name}</strong>, {c.role.toLowerCase()}. <span className="muted">{c.line}</span>
+              <p key={c.name} className="row" style={{ gap: 10, flexWrap: "nowrap", alignItems: "flex-start" }}>
+                <Face who={c.short} size={36} />
+                <span>
+                  <strong>{c.name}</strong>, {c.role.charAt(0).toLowerCase() + c.role.slice(1)}. <span className="muted">{c.line}</span>
+                </span>
               </p>
             ))}
           </div>
         </section>
-
-        {PARTS.map((p) => (
-          <section key={p.id} className="stack" aria-labelledby={`study-${p.id}`}>
-            <h2 id={`study-${p.id}`}>{p.title}</h2>
-            {STUDY_OUTLINE[p.id].map((d) => (
-              <div key={d.id} className="stack" style={{ gap: 8 }}>
-                <h3>{domainName(d.id)}</h3>
-                <ul className="topic-list">
-                  {d.topics.map((t) => {
-                    const lesson = t.lessonId ? LESSONS[t.lessonId] : undefined;
-                    const note = lesson && noteFor(lesson.id);
-                    return (
-                      <li key={t.number} className={lesson ? "live" : ""}>
-                        <span className="mono topic-num">{t.number}</span>
-                        <span className="stack" style={{ gap: 2, flexGrow: 1 }}>
-                          {lesson ? (
-                            <Link to={`/study/${lesson.id}`} className="topic-title">
-                              {t.title}
-                            </Link>
-                          ) : (
-                            <span className="topic-title">{t.title}</span>
-                          )}
-                          {lesson && <span style={{ fontSize: 14, fontStyle: "italic" }}>Episode: {lesson.episode}</span>}
-                          <span className="muted" style={{ fontSize: 14 }}>
-                            {t.subtopics}
-                          </span>
-                        </span>
-                        {lesson ? (
-                          <span className="row" style={{ gap: 6, flex: "none" }}>
-                            {note?.confidence === "got" && <Chip tone="good">Got it</Chip>}
-                            {note?.confidence === "shaky" && <Chip tone="miss">Shaky</Chip>}
-                            <Chip tone="warn">New</Chip>
-                          </span>
-                        ) : (
-                          <span className="muted" style={{ fontSize: 13, flex: "none" }}>
-                            Coming soon
-                          </span>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              </div>
-            ))}
-          </section>
-        ))}
 
         {unlocked && (
           <section className="panel stack" id="notes" aria-labelledby="notes-h">

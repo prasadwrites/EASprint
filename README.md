@@ -37,17 +37,21 @@ Any question can be saved to a review deck with **+ Add to review deck**: on a d
 
 Review decks are private to each candidate and show under "Your review decks" on the home page. Each one can be practiced like any deck (questions from different parts can be mixed), renamed, deleted, and have questions removed. They live in Firestore under `reviewDecks/{id}` with a copy of each question in `questions/`, so a review deck keeps working after the deck a question came from is deleted or unshared. The app writes them directly; `firestore.rules` keeps them owner-only. Without Firebase they are kept in the browser, like practice sessions.
 
-### Study lessons (pilot)
+### Study lessons: Ledger Falls
 
-**Study** (`/study`) lists all 59 lesson topics: the IRS content outline's 13 domains split into study-sized
-units (`web/src/study/outline.ts`). One lesson is live as a pilot: Part 1, 2.5 *Basis, property sales and capital
-gains* (`/study/p1-basis`). Each lesson has:
+**Study** (`/study`, and the Study blocks on the home page) shows each exam part as a season of *Ledger Falls*, a
+cartoon series with one episode per lesson topic (59 topics from the IRS content outline's 13 domains, in
+`web/src/study/outline.ts`). Clicking a part opens its season page (`/study/part1`), listed by unit (exam domain).
+Live so far: Season 1, Unit 1 (episodes 1.1 to 1.5) and episode 2.5. Each episode has:
 
-- a four-panel comic opener with the recurring cast: **Penny Pocket** (the taxpayer), **Ace** (the enrolled agent)
-  and **Hoot** (the IRS examiner, an owl in a green eyeshade);
+- a six-panel comic with the recurring cast: **Penny Pocket**, **Milo Marsh**, **Lulu**, **Cousin Dee** (on a video
+  call), **Biscuit** the beagle, **Ace** the enrolled agent, **Hoot** the IRS examiner, and Grandpa Walt's portrait;
 - picture cards, one rule each, with a button to copy the key point into the notes;
-- a memory hook, trap alerts, the IRS sources, and "Check yourself" questions taken from the built-in bank by topic;
-- a link into timed practice for the lesson's domain.
+- a memory hook, trap alerts and the IRS sources;
+- **Ace vs. Hoot**, a game of case files about the cast that test the topic's rules, plus bank questions as a bonus
+  round. Best scores are kept in the browser and shown on the season page;
+- a button that opens the deck builder prefilled with the topic and instructions to write every question as a cast
+  case (`web/src/study/quiz.ts`), and the same for the whole unit at the end of each unit on the season page.
 
 The cast is drawn once as SVG in `web/src/study/cast.tsx` (moods, poses and props), and each lesson assembles its
 panels from them in `web/src/study/lessons/`. Speech bubbles are real text laid over the art, so wording can change

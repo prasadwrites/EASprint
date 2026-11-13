@@ -8,8 +8,12 @@ import { PARTS } from "../data/exam";
 import { SOURCES } from "../data/sources";
 import { appendLine, downloadText, loadNote, MAX_NOTE, notesToMarkdown, saveNote, type Confidence } from "../lib/studyNotes";
 import type { Question } from "../lib/types";
-import { hasStudyAccess, LESSONS } from "../study";
-import { CAST } from "../study/cast";
+import { canBuildDecks } from "../lib/decks";
+import { hasStudyAccess, LESSONS, nextEpisode } from "../study";
+import { Ace, CAST, Face, Hoot, Penny, type CastMember } from "../study/cast";
+import { SEASONS } from "../study/outline";
+import { saveScore } from "../study/progress";
+import { quizLink } from "../study/quiz";
 import type { Bubble, ConceptCard, Lesson } from "../study/lesson";
 
 const LETTERS = ["A", "B", "C", "D"];
@@ -18,8 +22,15 @@ function ComicStrip({ lesson }: { lesson: Lesson }) {
   return (
     <section className="stack" aria-labelledby="comic-h">
       <div className="stack" style={{ gap: 2 }}>
-        <span className="eyebrow">Ledger Falls · Episode {lesson.number}</span>
+        <span className="eyebrow">
+          Ledger Falls · Season {SEASONS[lesson.part].number} · Episode {lesson.number}
+        </span>
         <h2 id="comic-h">{lesson.episode}</h2>
+        {lesson.previously && (
+          <p className="previously">
+            <strong>Previously in Ledger Falls:</strong> {lesson.previously}
+          </p>
+        )}
       </div>
       <div className="comic">
         {lesson.comic.map((p, i) => (
@@ -42,8 +53,8 @@ function ComicStrip({ lesson }: { lesson: Lesson }) {
 
 function SpeechBubble({ b }: { b: Bubble }) {
   return (
-    <p className={`bubble tail-${b.tail ?? "down"} who-${b.who.toLowerCase()}`} style={{ left: `${b.x}%`, top: `${b.y}%`, width: `${b.w}%` }}>
-      <span className="sr-only">{b.who}: </span>
+    <p className={`bubble tail-${b.tail ?? "down"} who-${b.who.toLowerCase()}${b.shout ? " shout" : ""}`} style={{ left: `${b.x}%`, top: `${b.y}%`, width: `${b.w}%` }}>
+      <span className="sr-only">{b.who === "Walt" ? "Grandpa Walt" : b.who}: </span>
       {b.text}
     </p>
   );
@@ -135,50 +146,148 @@ function Cards({ cards, onNote }: { cards: ConceptCard[]; onNote: (line: string)
   );
 }
 
-function CheckYourself({ questions, onNote }: { questions: Question[]; onNote: (line: string) => void }) {
+interface Round {
+  id: string;
+  who: CastMember;
+  title: string;
+  facts: string;
+  question: string;
+  choices: string[];
+  answer: string;
+  why?: string;
+  bank?: Question;
+}
+
+const NAMES: Record<CastMember, string> = { Penny: "Penny", Ace: "Ace", Hoot: "Hoot", Milo: "Milo", Lulu: "Lulu", Dee: "Dee", Biscuit: "Biscuit", Walt: "Grandpa Walt" };
+
+/**
+ * Ace vs. Hoot: the lesson's case files about the cast, then Hoot's bonus round of exam-style bank questions.
+ * Every right answer is a point for Ace (the student's side), every miss a point for Hoot.
+ */
+function CaseGame({ lesson, bank, onNote }: { lesson: Lesson; bank: Question[]; onNote: (line: string) => void }) {
+  const rounds = useMemo<Round[]>(
+    () => [
+      ...lesson.cases.map((c, i) => ({ ...c, id: `case${i}` })),
+      ...bank.map((q) => ({ id: q.id, who: "Hoot" as const, title: "Hoot's bonus: exam style", facts: "", question: q.prompt, choices: q.choices, answer: q.answer, bank: q })),
+    ],
+    [lesson, bank],
+  );
   const [picked, setPicked] = useState<Record<string, string>>({});
-  const answered = Object.keys(picked).length;
-  const right = questions.filter((q) => picked[q.id] === q.answer).length;
+  const [best, setBest] = useState(false);
+  const ace = rounds.filter((r) => picked[r.id] === r.answer).length;
+  const hoot = Object.keys(picked).length - ace;
+  const done = Object.keys(picked).length === rounds.length && rounds.length > 0;
+
+  const pick = (r: Round, c: string) => {
+    const next = { ...picked, [r.id]: c };
+    setPicked(next);
+    if (Object.keys(next).length === rounds.length) {
+      const right = rounds.filter((x) => next[x.id] === x.answer).length;
+      setBest(saveScore(lesson.id, { right, total: rounds.length }));
+    }
+  };
+
   return (
-    <section className="stack" aria-labelledby="check-h">
-      <div className="row spread">
-        <h2 id="check-h">Check yourself</h2>
-        {answered > 0 && (
-          <Chip tone={right === answered ? "good" : "miss"}>
-            {right} of {answered} right
-          </Chip>
-        )}
+    <section className="stack" aria-labelledby="game-h">
+      <div className="stack" style={{ gap: 4 }}>
+        <span className="eyebrow">The game</span>
+        <h2 id="game-h">Ace vs. Hoot: case files</h2>
+        <p className="muted">Solve each case for the cast. Every right answer is a point for Ace. Every miss, Hoot stamps it. Beat Hoot to close the episode.</p>
       </div>
-      {questions.map((q, n) => (
-        <article key={q.id} className="panel stack" style={{ gap: 12 }}>
-          <div className="row" style={{ gap: 8 }}>
-            <span className="eyebrow">Question {n + 1}</span>
-            <Chip>{q.topic}</Chip>
-          </div>
-          <p style={{ fontSize: 17 }}>{q.prompt}</p>
-          {picked[q.id] === undefined ? (
-            <div className="choice-list">
-              {q.choices.map((c, k) => (
-                <button key={c} className="choice" onClick={() => setPicked({ ...picked, [q.id]: c })}>
-                  <span className="letter">{LETTERS[k]}</span> {c}
-                </button>
-              ))}
+      <div className="scoreboard" aria-live="polite">
+        <span className="row" style={{ gap: 8 }}>
+          <Face who="Ace" mood={ace >= hoot ? "excited" : "worried"} size={44} />
+          <span className="stack" style={{ gap: 0 }}>
+            <span className="eyebrow">Ace (you)</span>
+            <strong className="score">{ace}</strong>
+          </span>
+        </span>
+        <span className="muted mono">
+          {Object.keys(picked).length} / {rounds.length}
+        </span>
+        <span className="row" style={{ gap: 8 }}>
+          <span className="stack" style={{ gap: 0, textAlign: "right" }}>
+            <span className="eyebrow">Hoot</span>
+            <strong className="score">{hoot}</strong>
+          </span>
+          <Face who="Hoot" mood={hoot > ace ? "smug" : "stern"} size={44} />
+        </span>
+      </div>
+      {rounds.map((r, n) => {
+        const choice = picked[r.id];
+        const right = choice === r.answer;
+        return (
+          <article key={r.id} className={`panel case-card${choice === undefined ? "" : right ? " won" : " lost"}`}>
+            <div className="row" style={{ gap: 10, flexWrap: "nowrap" }}>
+              <Face who={r.who} size={48} mood={choice === undefined ? undefined : r.who === "Hoot" ? (right ? "worried" : "smug") : right ? "excited" : "worried"} />
+              <div className="stack" style={{ gap: 0 }}>
+                <span className="eyebrow">
+                  Case {n + 1} · {NAMES[r.who]}
+                </span>
+                <h3 style={{ fontSize: 17 }}>{r.title}</h3>
+              </div>
             </div>
-          ) : (
-            <>
-              <p className={picked[q.id] === q.answer ? "verdict good" : "verdict miss"}>{picked[q.id] === q.answer ? "Right! Ace approves." : "Not quite. Hoot has made a note."}</p>
-              <Explanation question={q} picked={picked[q.id]} />
-              {picked[q.id] !== q.answer && (
-                <div>
-                  <button className="btn-link" onClick={() => onNote(`• Missed (${q.topic}): the answer was "${q.answer}".`)}>
-                    + Add this to my notes
+            {r.facts && <p>{r.facts}</p>}
+            <p style={{ fontSize: 17, fontWeight: 700 }}>{r.question}</p>
+            {choice === undefined ? (
+              <div className="choice-list">
+                {r.choices.map((c, k) => (
+                  <button key={c} className="choice" onClick={() => pick(r, c)}>
+                    <span className="letter">{LETTERS[k]}</span> {c}
                   </button>
-                </div>
-              )}
-            </>
-          )}
-        </article>
-      ))}
+                ))}
+              </div>
+            ) : (
+              <>
+                <p className={right ? "verdict good" : "verdict miss"}>
+                  {right ? "✓ APPROVED. Point to Ace!" : `HOO-HOO! Point to Hoot. The answer: ${r.answer}.`}
+                </p>
+                {r.bank ? <Explanation question={r.bank} picked={choice} /> : <p>{r.why}</p>}
+                {!right && (
+                  <div>
+                    <button className="btn-link" onClick={() => onNote(`• Missed (${r.title}): ${r.answer}.`)}>
+                      + Add this to my notes
+                    </button>
+                  </div>
+                )}
+              </>
+            )}
+          </article>
+        );
+      })}
+      {done && (
+        <div className={`panel game-end ${ace > hoot ? "won" : "lost"}`} role="status">
+          <svg viewBox="0 0 200 110" aria-hidden className="game-end-art">
+            <rect width={200} height={110} rx={10} fill={ace > hoot ? "#fff3c4" : "#eaf6ef"} />
+            {ace > hoot ? (
+              <>
+                <Penny x={62} y={52} scale={0.42} mood="excited" pose="up" />
+                <Ace x={140} y={52} scale={0.42} mood="excited" pose="wave" />
+              </>
+            ) : (
+              <Hoot x={100} y={48} scale={0.42} mood="smug" clipboard />
+            )}
+          </svg>
+          <div className="stack" style={{ gap: 6 }}>
+            <h3 style={{ fontSize: 22 }}>{ace > hoot ? `Case closed! Ace wins ${ace} to ${hoot}.` : ace === hoot ? `A tie, ${ace} all. Hoot demands a rematch.` : `Hoot wins this round, ${hoot} to ${ace}.`}</h3>
+            <p className="muted">
+              {ace === rounds.length ? "A perfect score. Hoot is filing a complaint about it." : ace > hoot ? "Penny's return is safe. For now." : "Hoo-hoo! Flip back through the cards, then try again."}
+              {best ? " New best score for this episode." : ""}
+            </p>
+            <div>
+              <button
+                onClick={() => {
+                  setPicked({});
+                  setBest(false);
+                  document.getElementById("game-h")?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Play again
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
@@ -240,6 +349,14 @@ function NotesPanel({
       </Link>
     </aside>
   );
+}
+
+/** The cast who appear in a lesson, by full name, in cast order. */
+function starring(lesson: Lesson): string {
+  const seen = new Set<string>([...lesson.comic.flatMap((p) => p.bubbles.map((b) => b.who)), ...lesson.cases.map((c) => c.who)]);
+  const names: string[] = CAST.filter((c) => seen.has(c.short)).map((c) => c.name);
+  if (seen.has("Walt")) names.push("Grandpa Walt Pocket (in his portrait)");
+  return names.join(", ");
 }
 
 export default function LessonPage() {
@@ -311,7 +428,8 @@ export default function LessonPage() {
 
   const questions = useMemo(() => (lesson ? getQuestions(lesson.part).filter((q) => lesson.quizTopics.includes(q.topic)) : []), [lesson]);
 
-  const back = { to: "/study", label: "Study" };
+  const next = lesson && nextEpisode(lesson);
+  const back = lesson ? { to: `/study/${lesson.part}`, label: `Season ${SEASONS[lesson.part].number}` } : { to: "/study", label: "Study" };
   if (!lesson) {
     return (
       <>
@@ -345,7 +463,7 @@ export default function LessonPage() {
           <div className="row" style={{ gap: 8 }}>
             <Chip>{lesson.minutes} min</Chip>
             <Chip>{lesson.cards.length} cards</Chip>
-            <Chip>{questions.length} questions</Chip>
+            <Chip>{lesson.cases.length + questions.length} cases</Chip>
             <span className="muted" style={{ fontSize: 13 }}>
               Written to {lesson.lawAsOf}
             </span>
@@ -413,19 +531,34 @@ export default function LessonPage() {
                   </div>
                 </section>
 
-                <CheckYourself questions={questions} onNote={addLine} />
+                <CaseGame lesson={lesson} bank={questions} onNote={addLine} />
 
                 <section className="panel stack" aria-labelledby="next-h">
-                  <h2 id="next-h">Keep going</h2>
-                  <p>Practice more {domainName(lesson.domainId)} questions under the clock, the same way the real exam asks them.</p>
+                  <h2 id="next-h">End of episode {lesson.number}</h2>
+                  <p>Want more? Have Claude write a fresh quiz on this topic, with every question a case about the Ledger Falls cast. It tests the rules from this episode, not the cartoons.</p>
                   <div className="row">
-                    <Link className="btn btn-primary" to={`/decks/${lesson.part}/practice?domain=${lesson.domainId}`}>
+                    {canBuildDecks ? (
+                      <Link className="btn btn-primary" to={quizLink(lesson.part, lesson.quizBrief)}>
+                        Build a quiz on this topic
+                      </Link>
+                    ) : null}
+                    <Link className={canBuildDecks ? "btn" : "btn btn-primary"} to={`/decks/${lesson.part}/practice?domain=${lesson.domainId}`}>
                       Practice {domainName(lesson.domainId)}
                     </Link>
-                    <Link className="btn" to="/study">
-                      All lessons
-                    </Link>
                   </div>
+                  {next ? (
+                    <Link to={`/study/${next.id}`} className="next-episode">
+                      <span className="eyebrow">Next episode · {next.number}</span>
+                      <strong>{next.episode} →</strong>
+                      <span className="muted">{next.title}</span>
+                    </Link>
+                  ) : (
+                    <Link to={`/study/${lesson.part}`} className="next-episode">
+                      <span className="eyebrow">That's the last episode so far</span>
+                      <strong>Back to Season {SEASONS[lesson.part].number} →</strong>
+                      <span className="muted">Take Hoot's unit exam at the end of the unit.</span>
+                    </Link>
+                  )}
                 </section>
 
                 <section className="stack" aria-labelledby="src-h">
@@ -446,7 +579,7 @@ export default function LessonPage() {
                     ))}
                   </ul>
                   <p className="muted" style={{ fontSize: 13 }}>
-                    Starring {CAST.map((c) => `${c.name} (${c.role.toLowerCase()})`).join(", ")}.
+                    Starring {starring(lesson)}.
                   </p>
                 </section>
               </>
