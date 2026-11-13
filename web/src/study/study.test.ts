@@ -95,8 +95,17 @@ describe("seasons", () => {
     expect(nextEpisode(season[season.length - 1])).toBeUndefined();
   });
 
-  it("has a unit quiz for every Part 1 and Part 3 domain", () => {
-    for (const d of [...STUDY_OUTLINE.part1, ...STUDY_OUTLINE.part3]) expect(UNIT_QUIZ[d.id]).toBeTruthy();
+  it("has a unit quiz for every domain in every season", () => {
+    for (const d of [...STUDY_OUTLINE.part1, ...STUDY_OUTLINE.part2, ...STUDY_OUTLINE.part3]) expect(UNIT_QUIZ[d.id]).toBeTruthy();
+  });
+
+  it("has all of Season 2: every Part 2 topic is an episode, numbered in order, ending with the finale", () => {
+    const topics = STUDY_OUTLINE.part2.flatMap((d) => d.topics.map((t) => t.number));
+    const season = episodes("part2");
+    expect(season.map((l) => l.number)).toEqual(topics);
+    expect(season).toHaveLength(18);
+    expect(season[season.length - 1].id).toBe("p2-rental-property");
+    expect(nextEpisode(season[season.length - 1])).toBeUndefined();
   });
 
   it("has all of Season 3: every Part 3 topic is an episode, numbered in order, ending with the finale", () => {
@@ -137,6 +146,7 @@ describe("study notes", () => {
 describe("meet the cast", () => {
   it.each([
     ["part1", ["Penny", "Milo", "Lulu", "Dee", "Ace", "Hoot", "Rosa", "Walt", "Biscuit"]],
+    ["part2", ["Rosa", "Penny", "Milo", "Ace", "Hoot", "Lulu", "Walt", "Biscuit"]],
     ["part3", ["Ace", "Hoot", "Milo", "Penny", "Rosa", "Lulu", "Dee", "Biscuit"]],
   ] as const)("introduces %s with every main character, linking only to real episodes", (part, main) => {
     const sc = SEASON_CAST[part]!;
