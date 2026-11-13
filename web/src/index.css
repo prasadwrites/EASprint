@@ -534,3 +534,19 @@ a { color: var(--accent); }
 .cast-ep { display: inline-block; padding: 1px 7px; border-radius: 999px; background: var(--good-soft); color: var(--ink); font-family: var(--f-mono); font-size: 12px; text-decoration: none; border: 1px solid var(--good); }
 a.cast-ep:hover { background: var(--good); color: var(--surface); }
 .cast-guests { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 14px; }
+
+/* Pitch page (Landing): Ledger Falls sample episode and "the old way" */
+.hero-comic { margin: 0; display: flex; flex-direction: column; gap: 8px; box-shadow: none; }
+.hero-comic .comic { grid-template-columns: minmax(0, 1fr); }
+.hero-comic .comic-panel { box-shadow: 6px 6px 0 rgba(23,32,44,.18); }
+.pitch-big { font-family: var(--f-display); font-weight: 800; font-size: 40px; line-height: 1; color: var(--bad); }
+.pitch-choice { justify-content: flex-start; text-align: left; white-space: normal; }
+.pitch-choice.is-right { border-color: var(--good); background: var(--good-soft); }
+.pitch-choice.is-wrong { border-color: var(--bad); background: var(--bad-soft); }
+.pitch-verdict { margin: 0; border-radius: 12px; padding: 12px 14px; }
+.pitch-verdict.good { background: var(--good-soft); }
+.pitch-verdict.bad { background: var(--bad-soft); }
+#seasons .chip { align-self: flex-start; }
+#why .steps-grid h2 { font-size: 20px; }
+#episode .steps-grid { align-items: start; }
+.hero-comic .comic-num { display: none; }
