@@ -60,9 +60,10 @@ import s2trusts from "./lessons/s2trusts";
 import s2charity from "./lessons/s2charity";
 import s2retire from "./lessons/s2retire";
 import s2farm from "./lessons/s2farm";
+import s2rental from "./lessons/s2rental";
 import { STUDY_OUTLINE, type StudyTopic } from "./outline";
 
-export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar, amt, selfemployed, surtax, lastpaycheck, penalties, yearreview, planning, plea, estate, gifts, avalanche, shingle, billboard, rex, poa, shoebox3, statute3, cantpay, appeals3, doover, payroll3, efile3, records3, s2entity, s2partners, s2ccorp, s2scorp, s2cogs, s2expenses, s2travel, s2oven, s2van, s2workers, s2losses, s2books, s2advice, s2trusts, s2charity, s2retire, s2farm].map((l) => [l.id, l]));
+export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar, amt, selfemployed, surtax, lastpaycheck, penalties, yearreview, planning, plea, estate, gifts, avalanche, shingle, billboard, rex, poa, shoebox3, statute3, cantpay, appeals3, doover, payroll3, efile3, records3, s2entity, s2partners, s2ccorp, s2scorp, s2cogs, s2expenses, s2travel, s2oven, s2van, s2workers, s2losses, s2books, s2advice, s2trusts, s2charity, s2retire, s2farm, s2rental].map((l) => [l.id, l]));
 
 /**
  * Study is part of the paid plans (Pro and Pro Max). The admin always has it, and so does the app when it runs
