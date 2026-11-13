@@ -48,7 +48,7 @@ export default function Study() {
           {!unlocked && (
             <div className="panel row spread">
               <span>
-                <strong>Season 1, Unit 1 is free</strong>, all five episodes. Every other unit and season is part of <strong>Pro</strong> and <strong>Pro Max</strong>; you can preview the opening comic of each episode.
+                <strong>Season 1, Unit 1 is free</strong>, all five episodes. Every other unit and season is part of <strong>Pro</strong> and <strong>Pro Max</strong>.
               </span>
               <Link className="btn btn-primary" to="/upgrade">
                 See plans

@@ -70,11 +70,11 @@ export default function Season({ part }: { part: PartId }) {
             <span>
               {part === FREE_UNIT.part ? (
                 <>
-                  Unit 1 is free. The other units are part of <strong>Pro</strong> and <strong>Pro Max</strong>; you can watch the opening comic of each episode.
+                  Unit 1 is free. The other units are part of <strong>Pro</strong> and <strong>Pro Max</strong>.
                 </>
               ) : (
                 <>
-                  This season is part of <strong>Pro</strong> and <strong>Pro Max</strong>. You can watch the opening comic of each episode. Season 1, Unit 1 is free.
+                  This season is part of <strong>Pro</strong> and <strong>Pro Max</strong>. Season 1, Unit 1 is free.
                 </>
               )}
             </span>
@@ -131,7 +131,7 @@ export default function Season({ part }: { part: PartId }) {
                       </span>
                       <span className="row" style={{ gap: 6, marginTop: "auto" }}>
                         <Chip>{l.minutes} min</Chip>
-                        {!open && <Chip>🔒 Comic preview</Chip>}
+                        {!open && <Chip>🔒 Pro</Chip>}
                         {best && (
                           <Chip tone={best.right * 2 > best.total ? "good" : "miss"}>
                             🏆 {best.right}/{best.total} cases

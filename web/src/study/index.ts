@@ -78,7 +78,7 @@ export const isFreeUnit = (part: PartId, domainId: string) => part === FREE_UNIT
 
 export const isFreeLesson = (lesson: Lesson) => isFreeUnit(lesson.part, lesson.domainId);
 
-/** Whether this account can open the whole lesson (not just its opening comic) and keep notes on it. */
+/** Whether this account can open the whole lesson and keep notes on it. */
 export const canOpenLesson = (lesson: Lesson, account: Account | null, admin: boolean) => hasStudyAccess(account, admin) || isFreeLesson(lesson);
 
 /** Whether this account can open a unit's episodes and its unit quiz. */
