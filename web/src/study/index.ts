@@ -43,9 +43,13 @@ import doover from "./lessons/doover";
 import payroll3 from "./lessons/payroll3";
 import efile3 from "./lessons/efile3";
 import records3 from "./lessons/records3";
+import s2entity from "./lessons/s2entity";
+import s2partners from "./lessons/s2partners";
+import s2ccorp from "./lessons/s2ccorp";
+import s2scorp from "./lessons/s2scorp";
 import { STUDY_OUTLINE, type StudyTopic } from "./outline";
 
-export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar, amt, selfemployed, surtax, lastpaycheck, penalties, yearreview, planning, plea, estate, gifts, avalanche, shingle, billboard, rex, poa, shoebox3, statute3, cantpay, appeals3, doover, payroll3, efile3, records3].map((l) => [l.id, l]));
+export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar, amt, selfemployed, surtax, lastpaycheck, penalties, yearreview, planning, plea, estate, gifts, avalanche, shingle, billboard, rex, poa, shoebox3, statute3, cantpay, appeals3, doover, payroll3, efile3, records3, s2entity, s2partners, s2ccorp, s2scorp].map((l) => [l.id, l]));
 
 /**
  * Study is part of the paid plans (Pro and Pro Max). The admin always has it, and so does the app when it runs

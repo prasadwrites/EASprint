@@ -86,10 +86,10 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p2d1",
       topics: [
-        t("1.1", "Picking an entity", "Entity types, default classifications, EINs, tax years, hobby versus business, information returns"),
-        t("1.2", "Partnerships", "Formation, income and deductions, partner basis, dispositions of interests, partnership audits"),
-        t("1.3", "C corporations", "Formation, filing, earnings and profits, distributions, liquidations, accumulated earnings tax, controlled groups"),
-        t("1.4", "S corporations", "Qualification, election, shareholder basis, distributions, termination"),
+        t("1.1", "Picking an entity", "Entity types, default classifications, EINs, tax years, hobby versus business, information returns", "p2-picking-an-entity"),
+        t("1.2", "Partnerships", "Formation, income and deductions, partner basis, dispositions of interests, partnership audits", "p2-partnerships"),
+        t("1.3", "C corporations", "Formation, filing, earnings and profits, distributions, liquidations, accumulated earnings tax, controlled groups", "p2-c-corporations"),
+        t("1.4", "S corporations", "Qualification, election, shareholder basis, distributions, termination", "p2-s-corporations"),
       ],
     },
     {

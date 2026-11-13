@@ -101,6 +101,13 @@ export const SOURCES = {
   qbi: page("Qualified business income deduction", "newsroom/qualified-business-income-deduction"),
   tpr: page("Tangible property final regulations", "businesses/small-businesses-self-employed/tangible-property-final-regulations"),
   f8300: page("Form 8300 and reporting cash payments of over $10,000", "businesses/small-businesses-self-employed/form-8300-and-reporting-cash-payments-of-over-10000"),
+  i1120: inst("i1120", "Instructions for Form 1120, U.S. Corporation Income Tax Return"),
+  i1120s: inst("i1120s", "Instructions for Form 1120-S, U.S. Income Tax Return for an S Corporation"),
+  i990: inst("i990", "Instructions for Form 990, Return of Organization Exempt From Income Tax"),
+  i940: inst("i940", "Instructions for Form 940, Employer's Annual Federal Unemployment (FUTA) Tax Return"),
+  p583: pub("583", "Starting a Business and Keeping Records"),
+  ein: page("Get an employer identification number", "businesses/small-businesses-self-employed/get-an-employer-identification-number"),
+  workers: page("Independent contractor (self-employed) or employee?", "businesses/small-businesses-self-employed/independent-contractor-self-employed-or-employee"),
   eofiling: page("Annual exempt organization return: Who must file", "charities-non-profits/annual-exempt-organization-return-who-must-file"),
   eorevoke: page("Automatic revocation of exemption", "charities-non-profits/automatic-revocation-of-exemption"),
 
