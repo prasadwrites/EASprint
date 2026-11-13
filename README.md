@@ -41,7 +41,8 @@ Review decks are private to each candidate and show under "Your review decks" on
 
 **Study** (`/study`, and the Study blocks on the home page) shows each exam part as a season of *Ledger Falls*, a
 cartoon series with one episode per lesson topic (59 topics from the IRS content outline's 13 domains, in
-`web/src/study/outline.ts`). Clicking a part opens its season page (`/study/part1`), listed by unit (exam domain).
+`web/src/study/outline.ts`). Clicking a part opens its season page (`/study/part1`), which starts with a "Meet the cast" section for that
+season (`web/src/study/seasonCast.ts`; add an entry there for each new season) and then lists episodes by unit (exam domain).
 Live so far: all of Season 1 (Part 1, episodes 1.1 to 6.3, ending with the finale "Dee's Paperwork Avalanche").
 Each episode has:
 

@@ -6,6 +6,7 @@ import { appendLine, notesToMarkdown } from "../lib/studyNotes";
 import { episodes, LESSONS, nextEpisode } from ".";
 import { STUDY_OUTLINE, topicCount } from "./outline";
 import { CAST_QUIZ_NOTES, quizLink, UNIT_QUIZ } from "./quiz";
+import { castCard, SEASON_CAST } from "./seasonCast";
 
 describe("study outline", () => {
   it("covers every exam domain, in order, with 59 topics", () => {
@@ -112,5 +113,21 @@ describe("study notes", () => {
     expect(md).toContain("Exported November 12, 2026");
     expect(md).toContain("## Part 1 · 2.5 Basis\n\nConfidence: Shaky\n\nGift: tag travels");
     expect(md).toContain("_No notes yet._");
+  });
+});
+
+describe("meet the cast", () => {
+  it("introduces Season 1 with every main character, linking only to real episodes", () => {
+    const sc = SEASON_CAST.part1!;
+    const numbers = new Set(episodes("part1").map((l) => l.number));
+    const who = sc.cast.map((m) => m.who);
+    for (const w of ["Penny", "Milo", "Lulu", "Dee", "Ace", "Hoot", "Rosa", "Walt", "Biscuit"]) expect(who).toContain(w);
+    expect(new Set(who).size).toBe(who.length);
+    for (const m of sc.cast) {
+      const c = castCard(m);
+      expect(c.name && c.role && c.line && c.arc).toBeTruthy();
+      for (const n of m.spotlight) expect(numbers).toContain(n);
+    }
+    for (const g of sc.guests) for (const n of g.episodes) expect(numbers).toContain(n);
   });
 });
