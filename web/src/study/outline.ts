@@ -121,9 +121,9 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p3d1",
       topics: [
-        t("1.1", "Who can practice", "Practice before the IRS, EA requirements, PTINs, continuing education"),
-        t("1.2", "Circular 230 conduct", "Fees, advertising, conflicts of interest, due diligence"),
-        t("1.3", "When things go wrong", "Sanctionable conduct, return preparer penalties, signing returns"),
+        t("1.1", "Who can practice", "Practice before the IRS, EA requirements, PTINs, continuing education", "p3-who-can-practice"),
+        t("1.2", "Circular 230 conduct", "Fees, advertising, conflicts of interest, due diligence", "p3-circular-230"),
+        t("1.3", "When things go wrong", "Sanctionable conduct, return preparer penalties, signing returns", "p3-sanctions"),
       ],
     },
     {
