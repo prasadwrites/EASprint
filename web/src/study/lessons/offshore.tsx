@@ -80,14 +80,14 @@ const comic: Lesson["comic"] = [
     art: (
       <svg {...PANEL}>
         <Backdrop />
-        <Calendar x={80} y={96} month="DAYS" day="330" scale={1.5} />
-        <Penny x={170} y={130} scale={0.72} mood="thinking" pose="point" flip />
-        <VideoCall x={196} y={36} scale={0.8} mood="worried" bars={1} />
+        <Penny x={64} y={130} scale={0.72} mood="thinking" pose="point" />
+        <Calendar x={146} y={140} month="DAYS" day="330" scale={1.2} />
+        <VideoCall x={196} y={100} scale={0.92} mood="worried" bars={1} />
       </svg>
     ),
     bubbles: [
-      { who: "Penny", text: "330 full days abroad in 12 months in a row. Dee, you came home for Lulu's birthday!", x: 3, y: 2, w: 54, tail: "down-right" },
-      { who: "Dee", text: "Only 20 days!", x: 66, y: 66, w: 31, tail: "up" },
+      { who: "Penny", text: "330 full days abroad in 12 months in a row. Dee, you came home for Lulu's birthday!", x: 3, y: 2, w: 56, tail: "down-left" },
+      { who: "Dee", text: "Only 20 days! Lulu needed cake!", x: 63, y: 4, w: 34, tail: "down-right" },
     ],
   },
   {
