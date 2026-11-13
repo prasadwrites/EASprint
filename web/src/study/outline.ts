@@ -97,8 +97,8 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
       topics: [
         t("2.1", "Business income and cost of goods sold", "Gross receipts, inventory, COGS, accounting methods", "p2-business-income"),
         t("2.2", "Business expenses", "Ordinary and necessary expenses, compensation, taxes, casualties, home office, capitalization", "p2-business-expenses"),
-        t("2.3", "Travel, meals and vehicles", "Travel, meals and vehicle expense rules"),
-        t("2.4", "Depreciation", "MACRS, section 179, bonus depreciation, recapture"),
+        t("2.3", "Travel, meals and vehicles", "Travel, meals and vehicle expense rules", "p2-travel-meals-vehicles"),
+        t("2.4", "Depreciation", "MACRS, section 179, bonus depreciation, recapture", "p2-depreciation"),
         t("2.5", "Assets and dispositions", "Asset basis, sales of business property, related-party transactions"),
         t("2.6", "Employment taxes and workers", "Payroll taxes, employee versus contractor, ACA employer compliance"),
         t("2.7", "Credits, losses and QBI", "General business credits, net operating losses, at-risk rules, QBI at the business level"),
