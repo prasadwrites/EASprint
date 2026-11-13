@@ -1,6 +1,6 @@
 import { Ace, Arrow, Backdrop, Hoot, Label, Milo, Penny, Rosa } from "../cast";
 import type { Lesson } from "../lesson";
-import { Bank, Burst, Card, CARD, Confetti, Envelope, HOOK, Mark, PANEL, Paper, Stamp, Step, Tick } from "../props";
+import { Bank, Burst, Card, CARD, Confetti, Envelope, HOOK, Mark, PANEL, Paper, Stamp, Step } from "../props";
 
 // Part 1, topic 2.1: everyday income. Written to the rules for tax year 2025 from Publications 17, 525,
 // 550 and 4681 and the IRS page on the 2025 deductions for tips and overtime.
@@ -61,7 +61,8 @@ const comic: Lesson["comic"] = [
         <Backdrop wall="#e7f4fb" floor="#cfe8c4" />
         <Penny x={80} y={128} scale={0.78} mood="worried" pose="shrug" />
         <EBike x={160} y={176} scale={0.8} />
-        <Hoot x={248} y={128} scale={0.72} mood="smug" pose="hold" holding={<Paper x={0} y={-8} label="W-2G" sub="$4,000" />} />
+        <Hoot x={256} y={128} scale={0.72} mood="smug" pose="point" flip />
+        <Paper x={206} y={150} label="W-2G" sub="$4,000" rotate={-10} scale={1.1} color="#fff3c4" />
       </svg>
     ),
     bubbles: [
@@ -120,11 +121,11 @@ const comic: Lesson["comic"] = [
         <Milo x={60} y={130} scale={0.7} mood="worried" />
         <Penny x={128} y={132} scale={0.68} mood="shocked" />
         <Hoot x={250} y={128} scale={0.72} mood="stern" flip pose="point" />
-        <Stamp x={190} y={70} text="REPORT IT ALL" color="#a8321f" size={12} />
+        <Stamp x={72} y={36} text="REPORT IT ALL" color="#a8321f" size={12} />
       </svg>
     ),
     bubbles: [
-      { who: "Hoot", text: "Hoo-hoo! Winnings go in full, Milo Marsh. Losses only as an itemized deduction, up to the winnings.", x: 38, y: 2, w: 59, tail: "down-right" },
+      { who: "Hoot", text: "Hoo-hoo! Winnings go in full, Milo Marsh. Losses only as an itemized deduction, up to the winnings.", x: 42, y: 2, w: 55, tail: "down-right" },
     ],
   },
 ];
@@ -180,8 +181,8 @@ const cards: Lesson["cards"] = [
     art: (
       <svg {...CARD}>
         <rect width={320} height={180} fill="#fdf3e1" />
-        <Bank x={80} y={110} label="SAVINGS" scale={1} />
-        <Bank x={240} y={110} label="CITY BOND" scale={1} color="#d4ebfa" />
+        <Bank x={80} y={110} label="BANK" scale={1} />
+        <Bank x={240} y={110} label="CITY" scale={1} color="#d4ebfa" />
         <Label x={80} y={136} size={12}>Taxable</Label>
         <Label x={240} y={136} size={12}>Tax-exempt</Label>
         <Label x={80} y={156} size={10} weight={700}>1099-INT, Schedule B</Label>
@@ -262,10 +263,10 @@ const cards: Lesson["cards"] = [
     art: (
       <svg {...CARD}>
         <rect width={320} height={180} fill="#fdf3e1" />
-        <Paper x={52} y={86} label="1099-G" scale={1.6} color="#fde2e4" />
+        <Paper x={52} y={66} label="1099-G" scale={1.4} color="#fde2e4" />
         <Card x={110} y={30} w={196} h={46} lines={["Unemployment:", "taxable"]} size={12} color="#fde2e4" />
         <Card x={110} y={92} w={196} h={58} lines={["State tax refund: taxable", "only if you itemized and", "deducted it last year"]} size={11} color="#d8f0e2" />
-        <Tick x={292} y={44} ok={false} s={0.8} />
+        <Penny x={52} y={150} scale={0.3} mood="thinking" />
       </svg>
     ),
     body: [
