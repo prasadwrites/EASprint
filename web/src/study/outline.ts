@@ -146,8 +146,8 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p3d4",
       topics: [
-        t("4.1", "E-file rules", "EFIN, ERO responsibilities, Forms 8879 and 8453, rejected returns"),
-        t("4.2", "Accuracy, records and security", "Return accuracy, record retention, data security"),
+        t("4.1", "E-file rules", "EFIN, ERO responsibilities, Forms 8879 and 8453, rejected returns", "p3-efile-rules"),
+        t("4.2", "Accuracy, records and security", "Return accuracy, record retention, data security", "p3-records-security"),
       ],
     },
   ],
