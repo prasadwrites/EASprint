@@ -19,6 +19,24 @@ import type { ConceptCard, Lesson } from "../study/lesson";
 
 const LETTERS = ["A", "B", "C", "D"];
 
+/** "+ Add to my notes" that turns into "✓ Added to my notes" once clicked, so the click is confirmed. */
+function AddToNotes({ line, label, onNote }: { line: string; label: string; onNote: (line: string) => void }) {
+  const [added, setAdded] = useState(false);
+  return (
+    <button
+      className="btn-link"
+      disabled={added}
+      aria-live="polite"
+      onClick={() => {
+        onNote(line);
+        setAdded(true);
+      }}
+    >
+      {added ? "✓ Added to my notes" : label}
+    </button>
+  );
+}
+
 function ComicStrip({ lesson }: { lesson: Lesson }) {
   return (
     <section className="stack" aria-labelledby="comic-h">
@@ -223,9 +241,7 @@ function CaseGame({ lesson, bank, onNote }: { lesson: Lesson; bank: Question[]; 
                 {r.bank ? <Explanation question={r.bank} picked={choice} /> : <p>{r.why}</p>}
                 {!right && (
                   <div>
-                    <button className="btn-link" onClick={() => onNote(`• Missed (${r.title}): ${r.answer}.`)}>
-                      + Add this to my notes
-                    </button>
+                    <AddToNotes key={r.title} line={`• Missed (${r.title}): ${r.answer}.`} label="+ Add this to my notes" onNote={onNote} />
                   </div>
                 )}
               </>
@@ -484,9 +500,7 @@ export default function LessonPage() {
                     <p className="hook-line">{lesson.hook.line}</p>
                     <p className="muted">{lesson.hook.more}</p>
                     <div>
-                      <button className="btn-link" onClick={() => addLine(`• ${lesson.hook.line}`)}>
-                        + Add to my notes
-                      </button>
+                      <AddToNotes key={lesson.id} line={`• ${lesson.hook.line}`} label="+ Add to my notes" onNote={addLine} />
                     </div>
                   </div>
                 </section>
