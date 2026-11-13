@@ -359,7 +359,7 @@ const lesson: Lesson = {
     },
   ],
   quizTopics: ["Medical expenses", "State and local taxes", "Charitable contributions", "New deductions for 2025"],
-  quizBrief: "Standard vs itemized deductions for 2025: standard amounts, medical over 7.5% of AGI, $40,000 SALT cap, mortgage interest limits, charitable limits and substantiation, casualty losses, senior deduction",
+  quizBrief: "Standard vs itemized for 2025: standard amounts, medical over 7.5% of AGI, $40,000 SALT cap, mortgage interest limits, charitable limits and substantiation, casualty losses, senior deduction",
 };
 
 export default lesson;

@@ -17,9 +17,12 @@ import aboveline from "./lessons/aboveline";
 import itemizing from "./lessons/itemizing";
 import qbi from "./lessons/qbi";
 import credits from "./lessons/credits";
+import school from "./lessons/school";
+import eitc from "./lessons/eitc";
+import solar from "./lessons/solar";
 import { STUDY_OUTLINE, type StudyTopic } from "./outline";
 
-export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits].map((l) => [l.id, l]));
+export const LESSONS: Record<string, Lesson> = Object.fromEntries([shoebox, marriage, lulu, mailbox, hearme, basis, raffle, spareroom, ira, offshore, swapmeet, aboveline, itemizing, qbi, credits, school, eitc, solar].map((l) => [l.id, l]));
 
 /**
  * Study lessons are part of the paid plans (Pro and Pro Max). The admin always has them, and so does the app

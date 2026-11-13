@@ -50,9 +50,9 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
         t("3.1", "Standard versus itemized", "Medical, taxes, interest, charitable, casualty and other itemized deductions", "p1-itemized"),
         t("3.2", "QBI deduction", "Qualified business income deduction for individuals", "p1-qbi"),
         t("3.3", "Family credits", "Child tax credit, child and dependent care credit, adoption credit", "p1-family-credits"),
-        t("3.4", "Education credits", "American Opportunity and Lifetime Learning credits"),
-        t("3.5", "Earned income credit", "EITC eligibility and due diligence"),
-        t("3.6", "Other credits", "Foreign tax credit, premium tax credit, energy and other credits"),
+        t("3.4", "Education credits", "American Opportunity and Lifetime Learning credits", "p1-education-credits"),
+        t("3.5", "Earned income credit", "EITC eligibility and due diligence", "p1-eitc"),
+        t("3.6", "Other credits", "Foreign tax credit, premium tax credit, energy and other credits", "p1-other-credits"),
       ],
     },
     {
