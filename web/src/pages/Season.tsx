@@ -7,7 +7,7 @@ import { PARTS } from "../data/exam";
 import { canBuildDecks } from "../lib/decks";
 import { listNotes, type StudyNote } from "../lib/studyNotes";
 import type { PartId } from "../lib/types";
-import { episodes, hasStudyAccess, LESSONS } from "../study";
+import { canOpenUnit, episodes, FREE_UNIT, hasStudyAccess, LESSONS } from "../study";
 import { Face, FamilyPortrait, Hoot } from "../study/cast";
 import { PracticePortrait } from "../study/office";
 import { SEASONS, STUDY_OUTLINE } from "../study/outline";
@@ -26,12 +26,14 @@ export default function Season({ part }: { part: PartId }) {
   const ready = episodes(part);
   const total = STUDY_OUTLINE[part].reduce((n, d) => n + d.topics.length, 0);
 
+  const anyOpen = unlocked || part === FREE_UNIT.part;
+
   useEffect(() => {
-    if (!unlocked) return;
+    if (!anyOpen) return;
     listNotes(user.uid)
       .then(setNotes)
       .catch(() => setNotes([]));
-  }, [unlocked, user.uid]);
+  }, [anyOpen, user.uid]);
 
   return (
     <>
@@ -65,7 +67,15 @@ export default function Season({ part }: { part: PartId }) {
         {!unlocked && (
           <div className="panel row spread">
             <span>
-              Episodes are part of <strong>Pro</strong> and <strong>Pro Max</strong>. You can watch the opening comic of each one.
+              {part === FREE_UNIT.part ? (
+                <>
+                  Unit 1 is free. The other units are part of <strong>Pro</strong> and <strong>Pro Max</strong>; you can watch the opening comic of each episode.
+                </>
+              ) : (
+                <>
+                  This season is part of <strong>Pro</strong> and <strong>Pro Max</strong>. You can watch the opening comic of each episode. Season 1, Unit 1 is free.
+                </>
+              )}
             </span>
             <Link className="btn btn-primary" to="/upgrade">
               See plans
@@ -77,11 +87,15 @@ export default function Season({ part }: { part: PartId }) {
 
         {STUDY_OUTLINE[part].map((d, ui) => {
           const live = d.topics.filter((t) => t.lessonId && LESSONS[t.lessonId]);
+          const open = canOpenUnit(part, d.id, account, admin);
           return (
             <section key={d.id} className="stack" aria-labelledby={`unit-${d.id}`}>
               <div className="stack" style={{ gap: 2 }}>
                 <span className="eyebrow">Unit {ui + 1}</span>
-                <h2 id={`unit-${d.id}`}>{domainName(d.id)}</h2>
+                <h2 id={`unit-${d.id}`} className="row" style={{ gap: 8 }}>
+                  {domainName(d.id)}
+                  {!unlocked && (open ? <Chip tone="good">Free</Chip> : <Chip>Pro</Chip>)}
+                </h2>
               </div>
               <div className="episode-grid">
                 {d.topics.map((t) => {
@@ -116,6 +130,7 @@ export default function Season({ part }: { part: PartId }) {
                       </span>
                       <span className="row" style={{ gap: 6, marginTop: "auto" }}>
                         <Chip>{l.minutes} min</Chip>
+                        {!open && <Chip>🔒 Comic preview</Chip>}
                         {best && (
                           <Chip tone={best.right * 2 > best.total ? "good" : "miss"}>
                             🏆 {best.right}/{best.total} cases
@@ -128,12 +143,26 @@ export default function Season({ part }: { part: PartId }) {
                   );
                 })}
               </div>
-              {live.length > 0 && <UnitQuiz part={part} domainId={d.id} unit={ui + 1} complete={live.length === d.topics.length} />}
+              {live.length > 0 && (open ? <UnitQuiz part={part} domainId={d.id} unit={ui + 1} complete={live.length === d.topics.length} /> : <LockedUnit unit={ui + 1} />)}
             </section>
           );
         })}
       </main>
     </>
+  );
+}
+
+/** The end of a unit a free account can't open: what Pro adds, and the way to get it. */
+function LockedUnit({ unit }: { unit: number }) {
+  return (
+    <aside className="panel row spread locked-unit">
+      <span>
+        🔒 Unit {unit} is on <strong>Pro</strong>: every episode in full, the rule cards, Ace vs. Hoot cases, your notes and Hoot's Unit {unit} exam.
+      </span>
+      <Link className="btn btn-primary" to="/upgrade">
+        Unlock with Pro
+      </Link>
+    </aside>
   );
 }
 

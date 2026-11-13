@@ -106,7 +106,7 @@ export default function Dashboard() {
           <div className="row" style={{ gap: 8 }}>
             <h2 id="study-cta-h">Study: the Ledger Falls cartoon lessons</h2>
             <Chip tone="warn">New</Chip>
-            {!hasStudyAccess(account, admin) && <Chip>Pro</Chip>}
+            {!hasStudyAccess(account, admin) && <Chip>Season 1, Unit 1 free</Chip>}
           </div>
           <p className="muted">Pick a part to open its episodes. Every topic is a funny cartoon episode with Penny, Ace, Hoot and the family, plus your own notes.</p>
           <StudyParts />
