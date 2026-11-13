@@ -102,7 +102,7 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
         t("2.5", "Assets and dispositions", "Asset basis, sales of business property, related-party transactions", "p2-assets-dispositions"),
         t("2.6", "Employment taxes and workers", "Payroll taxes, employee versus contractor, ACA employer compliance", "p2-employment-taxes"),
         t("2.7", "Credits, losses and QBI", "General business credits, net operating losses, at-risk rules, QBI at the business level", "p2-credits-losses-qbi"),
-        t("2.8", "Reading the books", "Financial statement analysis, book-to-tax reconciliation, pass-through items to owners"),
+        t("2.8", "Reading the books", "Financial statement analysis, book-to-tax reconciliation, pass-through items to owners", "p2-reading-the-books"),
         t("2.9", "Advising the business", "Entity selection, recordkeeping, tax planning"),
       ],
     },
