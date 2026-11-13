@@ -11,6 +11,8 @@ import { paceSummary, weakestConcepts } from "../lib/insights";
 import { listReviewDecks, type ReviewDeck } from "../lib/reviewDecks";
 import { formatClock } from "../lib/pace";
 import type { Deck, PracticeSession } from "../lib/types";
+import { hasStudyAccess } from "../study";
+import StudyParts from "../components/StudyParts";
 
 const PART_SHORT = { part1: "Part 1", part2: "Part 2", part3: "Part 3" } as const;
 
@@ -98,6 +100,16 @@ export default function Dashboard() {
               </button>
             </form>
           )}
+        </section>
+
+        <section className="stack" aria-labelledby="study-cta-h">
+          <div className="row" style={{ gap: 8 }}>
+            <h2 id="study-cta-h">Study: the Ledger Falls cartoon lessons</h2>
+            <Chip tone="warn">New</Chip>
+            {!hasStudyAccess(account, admin) && <Chip>Pro</Chip>}
+          </div>
+          <p className="muted">Pick a part to open its episodes. Every topic is a funny cartoon episode with Penny, Ace, Hoot and the family, plus your own notes.</p>
+          <StudyParts />
         </section>
 
         <section className="stack" id="parts">

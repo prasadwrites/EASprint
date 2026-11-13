@@ -111,6 +111,27 @@ service cloud.firestore {
       }
     }
 
+    // Study notes: one private document per person per lesson, id "{uid}_{lessonId}". Writing needs a paid plan
+    // (Study is part of Pro and Pro Max); reading and deleting stay open to the owner, so notes can still be
+    // downloaded after a downgrade.
+    match /studyNotes/{noteId} {
+      function paid() {
+        return isAdmin() || (exists(accountPath()) && get(accountPath()).data.plan in ["pro", "promax"]);
+      }
+      function validNote(d) {
+        return d.keys().hasOnly(["ownerId", "lessonId", "text", "confidence", "updatedAt"])
+          && d.lessonId is string && d.lessonId.size() >= 1 && d.lessonId.size() <= 60
+          && noteId == request.auth.uid + "_" + d.lessonId
+          && d.text is string && d.text.size() <= 20000
+          && d.confidence in ["", "got", "shaky"]
+          && d.updatedAt == request.time;
+      }
+      allow get: if resource == null ? signedIn() : owns(resource.data);
+      allow list: if owns(resource.data);
+      allow create, update: if owns(request.resource.data) && notSuspended() && paid() && validNote(request.resource.data);
+      allow delete: if owns(resource.data);
+    }
+
     match /sessions/{sessionId} {
       allow read: if owns(resource.data);
       allow create: if owns(request.resource.data) && request.resource.data.status == "active" && notSuspended();
