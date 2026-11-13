@@ -1,4 +1,4 @@
-import { Label } from "./cast";
+import { Ace, Biscuit, Hoot, Label, Lulu, Milo, Penny, Rosa } from "./cast";
 
 // Props for Season 3, "Ace for the Defense": Ace's office above Rosa's Rolls, Hoot's hiding places, and
 // Quick Refund Rex's billboards. Same ink and line weight as props.tsx.
@@ -136,5 +136,24 @@ export function TimeMachine({ x, y, scale = 1, year = "2023" }: { x: number; y: 
         DO NOT RECYCLE
       </Label>
     </g>
+  );
+}
+
+/** Season 3's title art: Ace's office above Rosa's Rolls, with Hoot in the filing cabinet. */
+export function PracticePortrait() {
+  return (
+    <svg viewBox="0 0 520 190" role="img" aria-label="Ace in his new office, Okafor Tax Defense, with Rosa, Milo, Penny, Lulu and Biscuit, and Hoot popping out of the filing cabinet">
+      <rect x={0} y={0} width={520} height={190} rx={12} fill="#e7e3f3" />
+      <rect x={0} y={166} width={520} height={24} fill="#efd9b8" />
+      <Sign x={150} y={18} w={190} h={30} text="OKAFOR TAX DEFENSE" color="#d8f0e2" size={12} />
+      <Rosa x={50} y={88} scale={0.7} mood="happy" />
+      <Milo x={124} y={88} scale={0.72} mood="excited" pose="wave" />
+      <Penny x={196} y={88} scale={0.72} mood="happy" />
+      <Lulu x={254} y={118} scale={0.5} mood="smug" />
+      <Biscuit x={298} y={134} scale={0.44} mood="happy" />
+      <Ace x={360} y={88} scale={0.74} mood="smug" pose="point" />
+      <Hoot x={466} y={44} scale={0.5} mood="excited" flip pose="up" />
+      <FilingCabinet x={436} y={78} scale={0.8} open label="AUDITS" />
+    </svg>
   );
 }

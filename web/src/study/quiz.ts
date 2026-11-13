@@ -21,4 +21,8 @@ export const UNIT_QUIZ: Record<string, string> = {
   p1d4: "Part 1 Domain 4, taxation: AMT, self-employment and household employment taxes, NIIT and Additional Medicare Tax, decedents, clergy, military, penalties and estimated tax",
   p1d5: "Part 1 Domain 5, advising the individual: divorce, education savings, spousal IRA, tax planning moves, MFJ vs MFS, innocent and injured spouse, amended returns",
   p1d6: "Part 1 Domain 6, specialized returns: estate tax and Form 706, portability, gift tax and Form 709, gift splitting, FBAR, Form 8938, Form 3520 and other foreign forms",
+  p3d1: "Part 3 Domain 1, practice before the IRS: who may practice, limited practice, Circular 230 duties, fees, advertising, conflicts of interest, disreputable conduct, sanctions, CE",
+  p3d2: "Part 3 Domain 2, representation: Forms 2848 and 8821, CAF, privilege, assessment and collection statutes, notices of deficiency, Tax Court, Appeals, taxpayer rights",
+  p3d3: "Part 3 Domain 3, specific types of representation: installment agreements, offers in compromise, liens, levies, CDP, penalties and abatement, trust fund recovery penalty",
+  p3d4: "Part 3 Domain 4, completion of the filing process: PTINs, e-file rules, Forms 8879 and 8948, due diligence, preparer records, disclosure rules and data security",
 };

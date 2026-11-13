@@ -90,8 +90,21 @@ describe("seasons", () => {
     expect(nextEpisode(season[season.length - 1])).toBeUndefined();
   });
 
-  it("has a unit quiz for every Part 1 domain", () => {
-    for (const d of STUDY_OUTLINE.part1) expect(UNIT_QUIZ[d.id]).toBeTruthy();
+  it("has a unit quiz for every Part 1 and Part 3 domain", () => {
+    for (const d of [...STUDY_OUTLINE.part1, ...STUDY_OUTLINE.part3]) expect(UNIT_QUIZ[d.id]).toBeTruthy();
+  });
+
+  it("has all of Season 3: every Part 3 topic is an episode, numbered in order, ending with the finale", () => {
+    const topics = STUDY_OUTLINE.part3.flatMap((d) => d.topics.map((t) => t.number));
+    const season = episodes("part3");
+    expect(season.map((l) => l.number)).toEqual(topics);
+    expect(season).toHaveLength(12);
+    expect(season[season.length - 1].id).toBe("p3-records-security");
+    expect(nextEpisode(season[season.length - 1])).toBeUndefined();
+  });
+
+  it("keeps every unit quiz brief to 200 characters", () => {
+    for (const brief of Object.values(UNIT_QUIZ)) expect(brief.length).toBeLessThanOrEqual(200);
   });
 });
 
@@ -117,11 +130,14 @@ describe("study notes", () => {
 });
 
 describe("meet the cast", () => {
-  it("introduces Season 1 with every main character, linking only to real episodes", () => {
-    const sc = SEASON_CAST.part1!;
-    const numbers = new Set(episodes("part1").map((l) => l.number));
+  it.each([
+    ["part1", ["Penny", "Milo", "Lulu", "Dee", "Ace", "Hoot", "Rosa", "Walt", "Biscuit"]],
+    ["part3", ["Ace", "Hoot", "Milo", "Penny", "Rosa", "Lulu", "Dee", "Biscuit"]],
+  ] as const)("introduces %s with every main character, linking only to real episodes", (part, main) => {
+    const sc = SEASON_CAST[part]!;
+    const numbers = new Set(episodes(part).map((l) => l.number));
     const who = sc.cast.map((m) => m.who);
-    for (const w of ["Penny", "Milo", "Lulu", "Dee", "Ace", "Hoot", "Rosa", "Walt", "Biscuit"]) expect(who).toContain(w);
+    for (const w of main) expect(who).toContain(w);
     expect(new Set(who).size).toBe(who.length);
     for (const m of sc.cast) {
       const c = castCard(m);
