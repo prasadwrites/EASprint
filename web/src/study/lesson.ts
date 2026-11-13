@@ -1,10 +1,11 @@
 import type { ReactNode } from "react";
 import type { SourceKey } from "../data/sources";
 import type { PartId } from "../lib/types";
+import type { CastName } from "./cast";
 
 /** A speech bubble laid over a comic panel. Position and width are percentages of the panel. */
 export interface Bubble {
-  who: "Penny" | "Ace" | "Hoot" | "Narrator";
+  who: "Penny" | "Ace" | "Hoot" | "Milo" | "Biscuit" | "Narrator";
   text: string;
   x: number;
   y: number;
@@ -51,4 +52,32 @@ export interface Lesson {
   sources: { key: SourceKey; section: string }[];
   /** Built-in bank questions (by topic chip) used for "Check yourself". */
   quizTopics: string[];
+  /** The end-of-episode game. Lessons without one end with "Check yourself". */
+  game?: Game;
+  /** A one-panel joke after the game, like a post-credits scene. */
+  stinger?: ComicPanel;
+  /** What the "Generate a questionnaire" button asks the deck builder for. */
+  deck?: { topic: string; rules: string };
+}
+
+/**
+ * One round of the end-of-episode game. A cast member brings a situation; the player answers as Ace.
+ * Rounds test the rules the lesson teaches, never the comic's plot.
+ */
+export interface GameRound {
+  who: CastName;
+  /** The situation, told in character. */
+  prompt: string;
+  answer: string;
+  /** Wrong options with why each is wrong. */
+  wrong: [option: string, whyNot: string][];
+  /** The rule, in one or two sentences, shown after answering. */
+  rule: string;
+}
+
+export interface Game {
+  title: string;
+  /** One or two sentences that set up the game. */
+  setup: string;
+  rounds: GameRound[];
 }

@@ -25,11 +25,11 @@ export const STUDY_OUTLINE: Record<PartId, StudyDomain[]> = {
     {
       id: "p1d1",
       topics: [
-        t("1.1", "Getting started", "Return prep steps, prior-year returns, taxpayer biographical and residency data"),
-        t("1.2", "Who must file and how", "Filing requirements, filing status, special filing rules"),
-        t("1.3", "Dependents and the family", "Dependency rules, kiddie tax"),
-        t("1.4", "The taxpayer's paper trail", "Sources of income, adjustments, credits and payments; IRS notices; extra filings"),
-        t("1.5", "Foreign accounts and ACA", "Foreign account reporting triggers, Affordable Care Act requirements"),
+        t("1.1", "Getting started", "Return prep steps, prior-year returns, taxpayer biographical and residency data", "p1-getting-started"),
+        t("1.2", "Who must file and how", "Filing requirements, filing status, special filing rules", "p1-who-files"),
+        t("1.3", "Dependents and the family", "Dependency rules, kiddie tax", "p1-dependents"),
+        t("1.4", "The taxpayer's paper trail", "Sources of income, adjustments, credits and payments; IRS notices; extra filings", "p1-paper-trail"),
+        t("1.5", "Foreign accounts and ACA", "Foreign account reporting triggers, Affordable Care Act requirements", "p1-foreign-aca"),
       ],
     },
     {

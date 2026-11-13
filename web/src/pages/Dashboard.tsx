@@ -112,13 +112,16 @@ export default function Dashboard() {
               <Chip tone="warn">New</Chip>
               {!hasStudyAccess(account, admin) && <Chip>Pro</Chip>}
             </div>
-            <p>Cartoon lessons with Penny, Ace and Hoot, one rule per picture, trap alerts, and your own notes on every topic. The first one is live: basis and capital gains.</p>
+            <p>
+              Cartoon lessons with Penny, Milo, Biscuit, Ace and Hoot: a comic, one rule per picture, trap alerts, a game where the cast test you, and your own notes. Season 1,
+              Unit 1 (Part 1: Individuals, topics 1.1 to 1.5) is live.
+            </p>
             <div className="row">
-              <Link className="btn btn-primary" to="/study/p1-basis">
-                Start the lesson
+              <Link className="btn btn-primary" to="/study/p1-getting-started">
+                Watch the pilot
               </Link>
-              <Link className="btn" to="/study">
-                All topics
+              <Link className="btn" to="/study?part=part1">
+                Part 1: Individuals
               </Link>
             </div>
           </div>

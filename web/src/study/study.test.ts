@@ -3,7 +3,7 @@ import { getQuestions } from "../data";
 import { PARTS } from "../data/exam";
 import { SOURCES } from "../data/sources";
 import { appendLine, notesToMarkdown } from "../lib/studyNotes";
-import { LESSONS } from ".";
+import { LESSONS, lessonsInPart, nextLesson, questionnaireLink } from ".";
 import { STUDY_OUTLINE, topicCount } from "./outline";
 
 describe("study outline", () => {
@@ -40,6 +40,52 @@ describe("lessons", () => {
     it(`${l.id} checks itself with bank questions on each quiz topic`, () => {
       const qs = getQuestions(l.part);
       for (const topic of l.quizTopics) expect(qs.some((q) => q.topic === topic && q.domain === l.domainId)).toBe(true);
+    });
+  }
+});
+
+describe("Season 1, Unit 1", () => {
+  const unit1 = ["p1-getting-started", "p1-who-files", "p1-dependents", "p1-paper-trail", "p1-foreign-aca"];
+
+  it("has a lesson for every topic from 1.1 to 1.5, in order", () => {
+    expect(STUDY_OUTLINE.part1[0].topics.map((t) => t.lessonId)).toEqual(unit1);
+    expect(lessonsInPart("part1").slice(0, 5).map((l) => l.id)).toEqual(unit1);
+    expect(nextLesson(LESSONS["p1-getting-started"])?.id).toBe("p1-who-files");
+    expect(nextLesson(LESSONS["p1-foreign-aca"])?.id).toBe("p1-basis");
+  });
+
+  for (const id of unit1) {
+    const l = LESSONS[id];
+    it(`${id} is a full episode with plenty of cartoons, a game and a questionnaire`, () => {
+      expect(l.comic.length).toBeGreaterThanOrEqual(5);
+      expect(l.cards.length).toBeGreaterThanOrEqual(8);
+      expect(l.stinger).toBeTruthy();
+      expect(l.deck).toBeTruthy();
+      expect(l.game?.rounds.length).toBeGreaterThanOrEqual(5);
+      for (const b of l.stinger!.bubbles) expect(b.x + b.w).toBeLessThanOrEqual(100);
+    });
+
+    it(`${id} game rounds each have one right answer, three distinct wrong ones, and a reason for each`, () => {
+      for (const r of l.game!.rounds) {
+        expect(r.wrong).toHaveLength(3);
+        const options = [r.answer, ...r.wrong.map(([w]) => w)];
+        expect(new Set(options).size).toBe(4);
+        for (const [, why] of r.wrong) expect(why.length).toBeGreaterThan(15);
+        expect(r.rule.length).toBeGreaterThan(20);
+      }
+      // The cast take turns asking.
+      expect(new Set(l.game!.rounds.map((r) => r.who)).size).toBeGreaterThanOrEqual(3);
+    });
+
+    it(`${id} questionnaire link fits the deck builder's limits and asks about rules, not the story`, () => {
+      const url = new URL(questionnaireLink(l), "https://x.test");
+      expect(url.pathname).toBe("/create");
+      expect(url.searchParams.get("part")).toBe("part1");
+      expect(url.searchParams.get("topic")!.length).toBeLessThanOrEqual(200);
+      const notes = url.searchParams.get("notes")!;
+      expect(notes.length).toBeLessThanOrEqual(600);
+      expect(notes).toContain("Test only these rules");
+      expect(notes).toContain("Never ask about the cartoon");
     });
   }
 });

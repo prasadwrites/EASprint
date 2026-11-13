@@ -4,13 +4,13 @@ import { useAccount, useUser } from "../App";
 import Explanation from "../components/Explanation";
 import TopBar, { Chip } from "../components/TopBar";
 import { domainName, getQuestions } from "../data";
-import { PARTS } from "../data/exam";
+import { PARTS, stableShuffle } from "../data/exam";
 import { SOURCES } from "../data/sources";
 import { appendLine, downloadText, loadNote, MAX_NOTE, notesToMarkdown, saveNote, type Confidence } from "../lib/studyNotes";
 import type { Question } from "../lib/types";
-import { hasStudyAccess, LESSONS } from "../study";
-import { CAST } from "../study/cast";
-import type { Bubble, ConceptCard, Lesson } from "../study/lesson";
+import { hasStudyAccess, LESSONS, nextLesson, questionnaireLink, SEASON, unitOf } from "../study";
+import { CAST, Mugshot } from "../study/cast";
+import type { Bubble, ComicPanel, ConceptCard, Game, Lesson } from "../study/lesson";
 
 const LETTERS = ["A", "B", "C", "D"];
 
@@ -18,25 +18,33 @@ function ComicStrip({ lesson }: { lesson: Lesson }) {
   return (
     <section className="stack" aria-labelledby="comic-h">
       <div className="stack" style={{ gap: 2 }}>
-        <span className="eyebrow">Ledger Falls · Episode {lesson.number}</span>
+        <span className="eyebrow">
+          Ledger Falls · Season {SEASON[lesson.part]} · Episode {lesson.number}
+        </span>
         <h2 id="comic-h">{lesson.episode}</h2>
       </div>
       <div className="comic">
         {lesson.comic.map((p, i) => (
-          <figure key={i} className="comic-panel">
-            <div role="img" aria-label={p.alt}>
-              {p.art}
-            </div>
-            {p.bubbles.map((b, k) => (
-              <SpeechBubble key={k} b={b} />
-            ))}
-            <span className="comic-num" aria-hidden>
-              {i + 1}
-            </span>
-          </figure>
+          <PanelView key={i} p={p} label={String(i + 1)} />
         ))}
       </div>
     </section>
+  );
+}
+
+function PanelView({ p, label }: { p: ComicPanel; label: string }) {
+  return (
+    <figure className="comic-panel">
+      <div role="img" aria-label={p.alt}>
+        {p.art}
+      </div>
+      {p.bubbles.map((b, k) => (
+        <SpeechBubble key={k} b={b} />
+      ))}
+      <span className="comic-num" aria-hidden>
+        {label}
+      </span>
+    </figure>
   );
 }
 
@@ -135,14 +143,147 @@ function Cards({ cards, onNote }: { cards: ConceptCard[]; onNote: (line: string)
   );
 }
 
-function CheckYourself({ questions, onNote }: { questions: Question[]; onNote: (line: string) => void }) {
+const REACTIONS = {
+  right: ["Stamped! Ace approves.", "Correct. Hoot grudgingly nods.", "Nailed it. Penny does a victory dance.", "Right! Biscuit wags approvingly.", "Textbook. Even Hoot is impressed."],
+  miss: ["Hoo. That goes in the notebook.", "Not quite. Hoot scribbles something.", "Close, but Hoot's eyeshade just twitched.", "Penny says it was a trick question. It wasn't."],
+};
+
+/** The end-of-episode game: the cast bring situations, the player answers as Ace, and Hoot keeps score. */
+function CastGame({ lesson, game, onNote }: { lesson: Lesson; game: Game; onNote: (line: string) => void }) {
+  const [run, setRun] = useState(0);
+  const [i, setI] = useState(0);
+  const [picked, setPicked] = useState<string | null>(null);
+  const [results, setResults] = useState<boolean[]>([]);
+  const rounds = game.rounds;
+  const done = results.length === rounds.length && picked === null;
+  const stamps = results.filter(Boolean).length;
+  const round = rounds[i];
+  const choices = useMemo(() => stableShuffle([round.answer, ...round.wrong.map(([w]) => w)], `${lesson.id}-${i}-${run}`), [round, lesson.id, i, run]);
+
+  const pick = (c: string) => {
+    if (picked !== null) return;
+    setPicked(c);
+    setResults([...results, c === round.answer]);
+  };
+  const next = () => {
+    setPicked(null);
+    if (i < rounds.length - 1) setI(i + 1);
+  };
+  const restart = () => {
+    setRun(run + 1);
+    setI(0);
+    setPicked(null);
+    setResults([]);
+  };
+  const right = picked === round.answer;
+  const why = picked && !right ? round.wrong.find(([w]) => w === picked)?.[1] : undefined;
+  const ending = stamps === rounds.length ? "perfect" : stamps >= Math.ceil(rounds.length * 0.6) ? "pass" : "retry";
+
+  return (
+    <section className="stack game" aria-labelledby="game-h">
+      <div className="row spread">
+        <div className="stack" style={{ gap: 2 }}>
+          <span className="eyebrow">Episode game</span>
+          <h2 id="game-h">{game.title}</h2>
+        </div>
+        <div className="row game-score" aria-label={`${stamps} stamps, ${results.length - stamps} notebook marks`}>
+          {rounds.map((_, k) => (
+            <span key={k} className={`pip ${k < results.length ? (results[k] ? "good" : "miss") : ""}`} aria-hidden>
+              {k < results.length ? (results[k] ? "EA" : "✗") : ""}
+            </span>
+          ))}
+        </div>
+      </div>
+      <p className="muted">{game.setup}</p>
+
+      {done ? (
+        <article className="panel game-end">
+          <div className="game-end-art">
+            <Mugshot who={ending === "retry" ? "Hoot" : "Ace"} mood={ending === "perfect" ? "excited" : ending === "pass" ? "happy" : "smug"} size={96} />
+            <Mugshot who="Penny" mood={ending === "retry" ? "worried" : "excited"} size={72} />
+            <Mugshot who="Biscuit" mood={ending === "retry" ? "worried" : "excited"} size={60} />
+          </div>
+          <div className="stack" style={{ gap: 8 }}>
+            <h3 style={{ fontSize: 22 }}>
+              {ending === "perfect" ? "Case closed: no change!" : ending === "pass" ? "You survived Hoot." : "Hoot wants a word."}
+            </h3>
+            <p>
+              {stamps} of {rounds.length} EA stamps.{" "}
+              {ending === "perfect"
+                ? "Hoot closes the file and, for one second, almost smiles."
+                : ending === "pass"
+                  ? "A couple of notebook marks, but Penny's return goes through."
+                  : "Hoot is sharpening his pencil. Flip back through the cards and try again."}
+            </p>
+            <div className="row">
+              <button onClick={restart}>Play again</button>
+            </div>
+          </div>
+        </article>
+      ) : (
+        <article className="panel stack game-round" style={{ gap: 12 }}>
+          <div className="row" style={{ gap: 8 }}>
+            <span className="eyebrow">
+              Round {i + 1} of {rounds.length}
+            </span>
+          </div>
+          <div className="game-ask">
+            <Mugshot who={round.who} mood={round.who === "Hoot" ? "stern" : round.who === "Ace" ? "thinking" : "excited"} />
+            <p className="game-bubble">
+              <strong>{round.who}:</strong> {round.prompt}
+            </p>
+          </div>
+          {picked === null ? (
+            <div className="choice-list">
+              {choices.map((c, k) => (
+                <button key={c} className="choice" onClick={() => pick(c)}>
+                  <span className="letter">{LETTERS[k]}</span> {c}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="stack" style={{ gap: 10 }}>
+              <div className={`game-react ${right ? "good" : "miss"}`}>
+                <Mugshot who={right ? "Ace" : "Hoot"} mood={right ? "excited" : "smug"} size={56} />
+                <div className="stack" style={{ gap: 4 }}>
+                  <p className={right ? "verdict good" : "verdict miss"}>{REACTIONS[right ? "right" : "miss"][(i + run) % REACTIONS[right ? "right" : "miss"].length]}</p>
+                  {!right && (
+                    <p>
+                      <strong>Answer:</strong> {round.answer}
+                    </p>
+                  )}
+                  {why && <p className="muted">Why not “{picked}”: {why}</p>}
+                  <p>
+                    <strong>The rule:</strong> {round.rule}
+                  </p>
+                </div>
+              </div>
+              <div className="row">
+                <button className="btn-primary" onClick={next}>
+                  {i < rounds.length - 1 ? "Next round →" : "See how Hoot rules"}
+                </button>
+                {!right && (
+                  <button className="btn-link" onClick={() => onNote(`• ${round.rule}`)}>
+                    + Add the rule to my notes
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
+        </article>
+      )}
+    </section>
+  );
+}
+
+function CheckYourself({ questions, onNote, title = "Check yourself" }: { questions: Question[]; onNote: (line: string) => void; title?: string }) {
   const [picked, setPicked] = useState<Record<string, string>>({});
   const answered = Object.keys(picked).length;
   const right = questions.filter((q) => picked[q.id] === q.answer).length;
   return (
     <section className="stack" aria-labelledby="check-h">
       <div className="row spread">
-        <h2 id="check-h">Check yourself</h2>
+        <h2 id="check-h">{title}</h2>
         {answered > 0 && (
           <Chip tone={right === answered ? "good" : "miss"}>
             {right} of {answered} right
@@ -242,8 +383,16 @@ function NotesPanel({
   );
 }
 
+/** Keyed by lesson, so "Next episode" starts fresh: notes, cards and the game all reset with the lesson. */
 export default function LessonPage() {
   const { lessonId = "" } = useParams();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [lessonId]);
+  return <LessonBody key={lessonId} lessonId={lessonId} />;
+}
+
+function LessonBody({ lessonId }: { lessonId: string }) {
   const lesson = LESSONS[lessonId];
   const user = useUser();
   const { account, admin } = useAccount();
@@ -311,7 +460,8 @@ export default function LessonPage() {
 
   const questions = useMemo(() => (lesson ? getQuestions(lesson.part).filter((q) => lesson.quizTopics.includes(q.topic)) : []), [lesson]);
 
-  const back = { to: "/study", label: "Study" };
+  const back = { to: lesson ? `/study?part=${lesson.part}` : "/study", label: "Study" };
+  const next = lesson ? nextLesson(lesson) : undefined;
   if (!lesson) {
     return (
       <>
@@ -336,7 +486,7 @@ export default function LessonPage() {
       <main className="page lesson-page">
         <header className="stack" style={{ gap: 8 }}>
           <span className="eyebrow">
-            {part.short} · {domainName(lesson.domainId)} · Topic {lesson.number}
+            {part.short} · Unit {unitOf(lesson)}: {domainName(lesson.domainId)} · Topic {lesson.number}
           </span>
           <h1>{lesson.title}</h1>
           <p className="muted" style={{ fontSize: 17, maxWidth: 680 }}>
@@ -344,8 +494,9 @@ export default function LessonPage() {
           </p>
           <div className="row" style={{ gap: 8 }}>
             <Chip>{lesson.minutes} min</Chip>
+            <Chip>{lesson.comic.length}-panel comic</Chip>
             <Chip>{lesson.cards.length} cards</Chip>
-            <Chip>{questions.length} questions</Chip>
+            {lesson.game ? <Chip>{lesson.game.rounds.length}-round game</Chip> : <Chip>{questions.length} questions</Chip>}
             <span className="muted" style={{ fontSize: 13 }}>
               Written to {lesson.lawAsOf}
             </span>
@@ -413,17 +564,67 @@ export default function LessonPage() {
                   </div>
                 </section>
 
-                <CheckYourself questions={questions} onNote={addLine} />
+                {lesson.game ? (
+                  <>
+                    <CastGame lesson={lesson} game={lesson.game} onNote={addLine} />
+                    {questions.length > 0 && <CheckYourself questions={questions} onNote={addLine} title="Bonus round: exam-style questions" />}
+                  </>
+                ) : (
+                  <CheckYourself questions={questions} onNote={addLine} />
+                )}
+
+                <section className="panel questionnaire" aria-labelledby="quiz-h">
+                  <div className="questionnaire-art" aria-hidden>
+                    <Mugshot who="Hoot" mood="smug" size={64} />
+                    <Mugshot who="Penny" mood="excited" size={64} />
+                    <Mugshot who="Milo" mood="smug" size={64} />
+                  </div>
+                  <div className="stack" style={{ gap: 8 }}>
+                    <span className="eyebrow">Your turn</span>
+                    <h2 id="quiz-h">Generate a questionnaire on this topic</h2>
+                    <p>
+                      Build a fresh practice deck with Claude on {lesson.title.toLowerCase()}. The questions test the tax rules you just learned, not the cartoon, and the cast
+                      play the taxpayers. Every question is checked and comes with an explanation and an IRS source.
+                    </p>
+                    <div className="row">
+                      <Link className="btn btn-primary" to={questionnaireLink(lesson)}>
+                        Generate a questionnaire
+                      </Link>
+                    </div>
+                  </div>
+                </section>
+
+                {lesson.stinger && (
+                  <section className="stack" aria-labelledby="stinger-h">
+                    <span className="eyebrow" id="stinger-h">
+                      After the credits
+                    </span>
+                    <div className="stinger">
+                      <PanelView p={lesson.stinger} label="★" />
+                    </div>
+                  </section>
+                )}
 
                 <section className="panel stack" aria-labelledby="next-h">
                   <h2 id="next-h">Keep going</h2>
-                  <p>Practice more {domainName(lesson.domainId)} questions under the clock, the same way the real exam asks them.</p>
+                  {next ? (
+                    <p>
+                      Next episode: <strong>{next.number} {next.title}</strong>, “{next.episode}”.
+                    </p>
+                  ) : (
+                    <p>Practice more {domainName(lesson.domainId)} questions under the clock, the same way the real exam asks them.</p>
+                  )}
                   <div className="row">
-                    <Link className="btn btn-primary" to={`/decks/${lesson.part}/practice?domain=${lesson.domainId}`}>
+                    {next && (
+                      <Link className="btn btn-primary" to={`/study/${next.id}`}>
+                        Next episode →
+                      </Link>
+                    )}
+                    <Link className={next ? "btn" : "btn btn-primary"} to={`/decks/${lesson.part}/practice?domain=${lesson.domainId}`}>
                       Practice {domainName(lesson.domainId)}
                     </Link>
-                    <Link className="btn" to="/study">
-                      All lessons
+                    <Link className="btn" to={`/study?part=${lesson.part}`}>
+                      All episodes
                     </Link>
                   </div>
                 </section>

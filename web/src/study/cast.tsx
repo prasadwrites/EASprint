@@ -237,7 +237,82 @@ export function Ace(props: CharacterProps) {
   );
 }
 
-const HOOT = { body: "#7a6a58", belly: "#d9c8a9", disc: "#f1e7d3", ring: "#f2c230", beak: "#e8892c", visor: "#2f9e6a" };
+const MILO = { skin: "#e9b48c", hair: "#4a2f1f", top: "#5aa9e6", cap: "#e8505b" };
+
+/** Milo, Penny's 15-year-old nephew. He lives with her, owns a lemonade stand and three shares of stock. Drawn smaller than the adults. */
+export function Milo(props: CharacterProps) {
+  const { mood = "happy", pose = "down", holding } = props;
+  const m = MILO;
+  return (
+    <g transform={place({ ...props, scale: (props.scale ?? 1) * 0.86 })}>
+      <path d="M-34,100 Q-36,44 0,38 Q36,44 34,100 Z" fill={m.top} {...OUT} />
+      <path d="M-14,40 Q0,60 14,40" fill="none" {...OUT} strokeWidth={2} />
+      <path d="M-8,62 h16 v10 h-16 Z" fill="#7cc0f2" {...OUT} strokeWidth={1.8} />
+      <rect x={-6} y={24} width={12} height={14} fill={m.skin} {...OUT} strokeWidth={2} />
+      <circle cx={-26} cy={4} r={5.5} fill={m.skin} {...OUT} strokeWidth={2} />
+      <circle cx={26} cy={4} r={5.5} fill={m.skin} {...OUT} strokeWidth={2} />
+      <circle cx={0} cy={0} r={27} fill={m.skin} {...OUT} />
+      {/* spiky hair under a backwards cap */}
+      <path d="M-27,-4 L-30,-14 L-22,-12 L-24,-22 L-14,-17 L-8,-26 L0,-18 L10,-26 L14,-16 L24,-22 L22,-12 L30,-14 L27,-4 Q14,-14 0,-12 Q-14,-14 -27,-4 Z" fill={m.hair} {...OUT} strokeWidth={2} />
+      <path d="M-24,-14 Q0,-44 24,-14 Q0,-22 -24,-14 Z" fill={m.cap} {...OUT} strokeWidth={2} />
+      <path d="M-24,-14 L-40,-10 L-38,-4 L-22,-10 Z" fill={m.cap} {...OUT} strokeWidth={2} />
+      <Eyes mood={mood} />
+      <Mouth mood={mood} />
+      <Arms pose={pose} sleeve={m.top} skin={m.skin} />
+      {holding && <g transform="translate(0 62)">{holding}</g>}
+      {pose === "hold" && (
+        <g fill={m.skin} {...OUT} strokeWidth={2.2}>
+          <circle cx={-14} cy={70} r={6.5} />
+          <circle cx={14} cy={70} r={6.5} />
+        </g>
+      )}
+    </g>
+  );
+}
+
+/** Biscuit, Penny's beagle, who would very much like to be claimed as a dependent. Sits on the floor; (0, 0) is the head. */
+export function Biscuit(props: Omit<CharacterProps, "pose" | "holding">) {
+  const { mood = "happy" } = props;
+  const fur = "#c98b52";
+  const white = "#fff6ea";
+  const wide = mood === "shocked" || mood === "excited";
+  return (
+    <g transform={place(props)}>
+      {/* tail and body */}
+      <path d="M30,70 Q58,52 52,30" fill="none" stroke={INK} strokeWidth={9} strokeLinecap="round" />
+      <path d="M30,70 Q58,52 52,30" fill="none" stroke={fur} strokeWidth={5} strokeLinecap="round" />
+      <ellipse cx={8} cy={66} rx={34} ry={36} fill={fur} {...OUT} />
+      <ellipse cx={-2} cy={72} rx={18} ry={26} fill={white} {...OUT} strokeWidth={2} />
+      <path d="M-20,100 h14 M2,100 h14" stroke={INK} strokeWidth={3} strokeLinecap="round" />
+      <ellipse cx={-13} cy={96} rx={9} ry={6} fill={white} {...OUT} strokeWidth={2} />
+      <ellipse cx={9} cy={96} rx={9} ry={6} fill={white} {...OUT} strokeWidth={2} />
+      {/* collar and tag */}
+      <path d="M-22,30 Q0,40 22,30" fill="none" stroke="#e8505b" strokeWidth={6} />
+      <circle cx={0} cy={41} r={5} fill="#f2c230" {...OUT} strokeWidth={1.6} />
+      {/* head */}
+      <path d="M-26,-6 Q-40,10 -32,34 Q-22,30 -18,8 Z" fill="#8a5a3c" {...OUT} />
+      <path d="M26,-6 Q40,10 32,34 Q22,30 18,8 Z" fill="#8a5a3c" {...OUT} />
+      <circle cx={0} cy={0} r={24} fill={fur} {...OUT} />
+      <path d="M-6,-24 Q0,-4 -10,14 L10,14 Q0,-4 6,-24 Z" fill={white} />
+      <ellipse cx={0} cy={16} rx={14} ry={10} fill={white} {...OUT} strokeWidth={2} />
+      <ellipse cx={0} cy={10} rx={5} ry={3.6} fill={INK} />
+      {mood === "happy" || mood === "excited" ? (
+        <path d="M-5,20 Q0,34 5,20 Z" fill="#e8737b" {...OUT} strokeWidth={1.6} />
+      ) : (
+        <path d={mood === "worried" ? "M-6,22 Q0,18 6,22" : "M-6,20 Q0,24 6,20"} fill="none" {...OUT} strokeWidth={2} />
+      )}
+      <g fill={INK}>
+        <circle cx={-9} cy={-4} r={wide ? 4 : 3} />
+        <circle cx={9} cy={-4} r={wide ? 4 : 3} />
+      </g>
+      <circle cx={-8} cy={-5.2} r={1} fill="#fff" />
+      <circle cx={10} cy={-5.2} r={1} fill="#fff" />
+      {mood === "worried" && <path d="M-14,-12 L-5,-9 M14,-12 L5,-9" stroke={INK} strokeWidth={2} />}
+    </g>
+  );
+}
+
+const HOOT = { body:"#7a6a58", belly: "#d9c8a9", disc: "#f1e7d3", ring: "#f2c230", beak: "#e8892c", visor: "#2f9e6a" };
 
 /** Hoot, the IRS examiner: an owl in a green eyeshade. Pose "hold" holds a clipboard; "point" raises a wing. */
 export function Hoot(props: CharacterProps & { clipboard?: boolean }) {
@@ -446,31 +521,67 @@ export function Arrow({ d, color = INK, width = 3 }: { d: string; color?: string
 }
 
 /**
- * The Ledger Falls cast. Penny, Ace and Hoot are drawn above; the others join as their episodes are built.
+ * The Ledger Falls cast, all drawn above. Others (Grandpa Walt, Aunt Rosa) are only mentioned, never drawn.
  * Characters call each other by name in dialogue, and Hoot uses full names.
  */
 export const CAST = [
   { name: "Penny Pocket", role: "The taxpayer", line: "Buys, sells, inherits and asks “so what do I owe?” at the worst moment." },
   { name: "Ace Okafor, EA", role: "The enrolled agent", line: "Penny's neighbor. Calm, a little dry, and always says “Penny, let's check the rule.”" },
   { name: "Examiner Horace “Hoot” Hootington", role: "The IRS examiner", line: "An owl in a green eyeshade. Strict but fair, and never misses a detail." },
+  { name: "Milo Pocket", role: "Penny's nephew", line: "15, lives with Penny, runs a lemonade stand and owns three shares of stock. Thinks he's a tax shelter." },
+  { name: "Biscuit", role: "Penny's beagle", line: "Very good boy. Would like to be claimed as a dependent. Has no Social Security number and no thumbs." },
 ] as const;
+
+export type CastName = "Penny" | "Ace" | "Hoot" | "Milo" | "Biscuit";
+
+/** A head-and-shoulders portrait in a circle, for game rounds and reactions. */
+export function Mugshot({ who, mood, size = 64 }: { who: CastName; mood?: Mood; size?: number }) {
+  const bg: Record<CastName, string> = { Penny: "#fff1d6", Ace: "#dff1ea", Hoot: "#eaf6ef", Milo: "#e3f0fb", Biscuit: "#fbeee0" };
+  const id = `mug-${who}-${mood ?? "d"}`;
+  return (
+    <svg viewBox="0 0 100 100" width={size} height={size} role="img" aria-label={who}>
+      <defs>
+        <clipPath id={id}>
+          <circle cx={50} cy={50} r={47} />
+        </clipPath>
+      </defs>
+      <circle cx={50} cy={50} r={47} fill={bg[who]} />
+      <g clipPath={`url(#${id})`}>
+        {who === "Penny" && <Penny x={50} y={50} scale={0.82} mood={mood ?? "happy"} />}
+        {who === "Ace" && <Ace x={50} y={50} scale={0.82} mood={mood ?? "happy"} />}
+        {who === "Hoot" && <Hoot x={50} y={54} scale={0.7} mood={mood ?? "stern"} />}
+        {who === "Milo" && <Milo x={50} y={50} scale={0.95} mood={mood ?? "happy"} />}
+        {who === "Biscuit" && <Biscuit x={50} y={44} scale={0.95} mood={mood ?? "happy"} />}
+      </g>
+      <circle cx={50} cy={50} r={47} fill="none" stroke={INK} strokeWidth={3} />
+    </svg>
+  );
+}
 
 /** The three of them together, for the Study home page and the cast card. */
 export function CastPortrait() {
   return (
-    <svg viewBox="0 0 360 170" role="img" aria-label="Penny Pocket, Ace and Hoot">
+    <svg viewBox="0 0 360 170" role="img" aria-label="Penny Pocket, Milo, Biscuit the beagle, Ace and Hoot">
       <rect x={0} y={0} width={360} height={170} rx={12} fill="#fdf3e1" />
       <rect x={0} y={150} width={360} height={20} fill="#efd9b8" />
-      <Penny x={70} y={70} scale={0.78} mood="excited" pose="wave" />
-      <Ace x={180} y={70} scale={0.78} mood="happy" pose="down" />
-      <Hoot x={290} y={64} scale={0.74} mood="stern" clipboard />
-      <Label x={70} y={163} size={12}>
+      <Penny x={52} y={70} scale={0.72} mood="excited" pose="wave" />
+      <Milo x={114} y={84} scale={0.62} mood="smug" />
+      <Biscuit x={170} y={112} scale={0.36} mood="happy" />
+      <Ace x={226} y={70} scale={0.72} mood="happy" pose="down" />
+      <Hoot x={310} y={64} scale={0.68} mood="stern" clipboard />
+      <Label x={52} y={163} size={12}>
         Penny
       </Label>
-      <Label x={180} y={163} size={12}>
+      <Label x={114} y={163} size={12}>
+        Milo
+      </Label>
+      <Label x={172} y={163} size={12}>
+        Biscuit
+      </Label>
+      <Label x={226} y={163} size={12}>
         Ace
       </Label>
-      <Label x={290} y={163} size={12}>
+      <Label x={310} y={163} size={12}>
         Hoot
       </Label>
     </svg>

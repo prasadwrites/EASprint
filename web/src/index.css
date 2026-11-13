@@ -415,14 +415,14 @@ a { color: var(--accent); }
 .comic-panel { position: relative; margin: 0; border: 3px solid #17202c; border-radius: 6px; overflow: hidden; background: #fdf3e1; }
 .comic-panel svg { width: 100%; height: auto; display: block; }
 .comic-num { position: absolute; right: 6px; bottom: 4px; font: 800 12px var(--f-mono); color: #17202c; opacity: .55; }
-.bubble { position: absolute; margin: 0; background: #fff; color: #17202c; border: 2px solid #17202c; border-radius: 16px; padding: 7px 10px; font-size: 13.5px; line-height: 1.3; font-weight: 700; box-shadow: 2px 2px 0 rgba(23,32,44,.15); }
-.bubble::after { content: ""; position: absolute; bottom: -8px; width: 13px; height: 13px; background: #fff; border-right: 2px solid #17202c; border-bottom: 2px solid #17202c; transform: rotate(45deg); }
-.bubble.tail-down-left::after { left: 24px; }
-.bubble.tail-down-right::after { right: 24px; }
-.bubble.tail-down::after { left: calc(50% - 7px); }
-.bubble.who-hoot { background: #eaf6ef; }
-.bubble.who-hoot::after { background: #eaf6ef; }
-@media (max-width: 380px) { .bubble { font-size: 12px; padding: 5px 8px; } }
+.comic-panel .bubble { position: absolute; margin: 0; background: #fff; color: #17202c; border: 2px solid #17202c; border-radius: 16px; padding: 7px 10px; font-size: 13.5px; line-height: 1.3; font-weight: 700; box-shadow: 2px 2px 0 rgba(23,32,44,.15); }
+.comic-panel .bubble::after { content: ""; position: absolute; bottom: -8px; width: 13px; height: 13px; background: #fff; border-right: 2px solid #17202c; border-bottom: 2px solid #17202c; transform: rotate(45deg); }
+.comic-panel .bubble.tail-down-left::after { left: 24px; }
+.comic-panel .bubble.tail-down-right::after { right: 24px; }
+.comic-panel .bubble.tail-down::after { left: calc(50% - 7px); }
+.comic-panel .bubble.who-hoot { background: #eaf6ef; }
+.comic-panel .bubble.who-hoot::after { background: #eaf6ef; }
+@media (max-width: 380px) { .comic-panel .bubble { font-size: 12px; padding: 5px 8px; } }
 
 .concept-card { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; outline-offset: 3px; }
 @media (min-width: 760px) { .concept-card { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; } }
@@ -476,3 +476,39 @@ a { color: var(--accent); }
   html.print-notes .notes-print pre { white-space: pre-wrap; font-family: Georgia, serif; font-size: 12pt; line-height: 1.5; }
 }
 @media (min-width: 1000px) { .notes-jump { display: none; } }
+
+/* ---- Study: seasons, the cast game and the questionnaire ---- */
+.season-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.season { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; padding: 0 0 14px; border-radius: 14px; border: 2px solid var(--line); background: var(--surface); overflow: hidden; font-weight: 400; }
+.season > :not(.season-art) { margin: 0 14px; }
+.season:hover { border-color: var(--accent); }
+.season.on { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft, rgba(0,0,0,.06)); }
+.season-art { display: block; width: 100%; border-bottom: 2px solid #17202c; }
+.season-art svg { width: 100%; height: auto; display: block; }
+.season-title { font-family: var(--f-display); font-weight: 800; font-size: 19px; line-height: 1.2; }
+.season-open { font-weight: 700; font-size: 14px; color: var(--accent); }
+.season-body { scroll-margin-top: 16px; }
+
+.game { border-top: 3px dashed var(--line); padding-top: 20px; }
+.game-score { gap: 4px; flex-wrap: wrap; }
+.pip { width: 26px; height: 26px; border-radius: 999px; border: 2px dashed var(--field-line); display: inline-flex; align-items: center; justify-content: center; font: 800 10px var(--f-mono); }
+.pip.good { border-style: solid; border-color: var(--good); background: var(--good-soft); color: var(--good); }
+.pip.miss { border-style: solid; border-color: var(--miss); background: var(--miss-soft); color: var(--miss-ink); }
+.game-ask { display: flex; gap: 12px; align-items: flex-start; }
+.game-ask svg { flex: none; }
+.game-bubble { position: relative; margin: 0; padding: 12px 14px; border: 2px solid #17202c; border-radius: 16px; background: #fff; color: #17202c; font-size: 17px; line-height: 1.4; }
+.game-react { display: flex; gap: 12px; align-items: flex-start; padding: 12px; border-radius: 12px; }
+.game-react svg { flex: none; }
+.game-react.good { background: var(--good-soft); }
+.game-react.miss { background: var(--miss-soft); }
+.game-end { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: center; border: 2px solid var(--warn); background: var(--warn-soft); }
+@media (min-width: 640px) { .game-end { grid-template-columns: auto minmax(0, 1fr); } }
+.game-end-art { display: flex; align-items: flex-end; gap: 4px; }
+
+.questionnaire { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; align-items: center; border: 2px solid var(--accent); }
+@media (min-width: 640px) { .questionnaire { grid-template-columns: auto minmax(0, 1fr); } }
+.questionnaire-art { display: flex; gap: 4px; }
+.stinger { max-width: 420px; }
+/* Speech bubbles scale with their panel, so narrow panels don't drown the art. */
+.comic-panel { container-type: inline-size; }
+.comic-panel .bubble { font-size: clamp(9.5px, 3.9cqi, 14px); padding: 0.4em 0.65em; border-radius: 1.1em; line-height: 1.22; }
