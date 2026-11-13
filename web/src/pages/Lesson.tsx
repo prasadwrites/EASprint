@@ -471,13 +471,13 @@ export default function LessonPage() {
 
         <div className={unlocked ? "lesson-grid" : "stack"}>
           <div className="stack lesson-main" ref={mainRef} style={{ gap: 32 }}>
-            <ComicStrip lesson={lesson} />
+            {unlocked && <ComicStrip lesson={lesson} />}
 
             {!unlocked ? (
               <div className="panel stack locked">
-                <h2>The rest of this episode is on Pro</h2>
+                <h2>This episode is on Pro</h2>
                 <p>
-                  Season 1, Unit 1 is free to watch in full. Every other episode, with its picture cards, memory hooks, trap alerts, Ace vs. Hoot cases and your own notes, comes with the Pro and Pro Max plans.
+                  Season 1, Unit 1 is free to watch in full. Every other episode, with its comic, picture cards, memory hook, trap alerts, Ace vs. Hoot cases and your own notes, comes with the Pro and Pro Max plans.
                 </p>
                 <div>
                   <Link className="btn btn-primary" to="/upgrade">

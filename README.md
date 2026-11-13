@@ -69,7 +69,7 @@ missed question, carry a "Got it / Shaky" mark, and download as Markdown or prin
 notes downloads every lesson's notes in one file. Notes live in Firestore at `studyNotes/{uid}_{lessonId}`
 (owner-only), or in the browser without Firebase.
 
-Study is part of the Pro and Pro Max plans. Free accounts see each lesson's comic and an upgrade prompt. The
+Study is part of the Pro and Pro Max plans. Free accounts get Season 1, Unit 1 in full; every other episode shows only its title, intro and an upgrade prompt. The
 Firestore rules only let paid accounts (and the admin) write notes; reading and deleting stay open to the owner so
 notes can still be downloaded after a downgrade. Lesson content ships in the web bundle, so the paywall on the
 lesson text itself is enforced in the app, not on the server.
