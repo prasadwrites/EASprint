@@ -49,8 +49,8 @@ const comic: Lesson["comic"] = [
     art: (
       <svg {...PANEL}>
         <Backdrop wall="#eef5f1" />
-        <Scale x={160} y={96} left="Itemized" right="$31,500" tilt={-6} />
-        <Ace x={50} y={128} scale={0.64} mood="happy" pose="point" />
+        <Scale x={200} y={96} left="Itemized" right="$31,500" tilt={-6} />
+        <Ace x={46} y={128} scale={0.62} mood="happy" pose="point" />
       </svg>
     ),
     bubbles: [

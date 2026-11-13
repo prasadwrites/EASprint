@@ -98,7 +98,7 @@ const comic: Lesson["comic"] = [
         <Penny x={60} y={130} scale={0.7} mood="worried" />
         <Milo x={130} y={132} scale={0.68} mood="worried" />
         <Hoot x={250} y={128} scale={0.72} mood="smug" flip pose="point" />
-        <Mark x={190} y={110} text="MFS = $0" color="#a8321f" size={16} />
+        <Mark x={180} y={206} text="MFS: $0" color="#a8321f" size={13} />
       </svg>
     ),
     bubbles: [

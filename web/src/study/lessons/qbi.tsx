@@ -86,9 +86,9 @@ const comic: Lesson["comic"] = [
     art: (
       <svg {...PANEL}>
         <Backdrop wall="#eef5f1" />
-        <rect x={120} y={60} width={70} height={130} rx={4} fill="#8a5a3c" stroke={INK} strokeWidth={2.5} />
-        <Card x={126} y={80} w={58} h={30} lines={["OKAFOR", "TAX"]} size={8} color="#fff3c4" />
-        <Ace x={66} y={128} scale={0.72} mood="worried" pose="point" />
+        <rect x={140} y={104} width={64} height={90} rx={4} fill="#8a5a3c" stroke={INK} strokeWidth={2.5} />
+        <Card x={146} y={114} w={52} h={30} lines={["OKAFOR", "TAX"]} size={8} color="#fff3c4" />
+        <Ace x={62} y={128} scale={0.72} mood="worried" pose="point" />
         <Hoot x={256} y={128} scale={0.7} mood="smug" flip />
       </svg>
     ),
@@ -241,7 +241,7 @@ const cards: Lesson["cards"] = [
         <Card x={100} y={20} w={208} h={44} lines={["50% of W-2 wages"]} size={12} color="#d8f0e2" />
         <Label x={204} y={82} size={13}>or</Label>
         <Card x={100} y={92} w={208} h={50} lines={["25% of W-2 wages +", "2.5% of property (UBIA)"]} size={11} color="#d4ebfa" />
-        <Label x={204} y={160} size={10} weight={700}>the greater one caps it, above the threshold</Label>
+        <Label x={204} y={160} size={10} weight={700}>the greater one is the cap</Label>
       </svg>
     ),
     body: [

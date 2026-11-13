@@ -151,11 +151,10 @@ const cards: Lesson["cards"] = [
         <path d="M70,80 L70,24 A56,56 0 1,1 17,98 Z" fill="#9fd8a8" stroke={INK} strokeWidth={2.5} />
         <Label x={84} y={96} size={11}>$1,700</Label>
         <Label x={84} y={110} size={8} weight={700}>refundable</Label>
-        <Label x={70} y={156} size={9} weight={700}>15% of earned income over $2,500</Label>
+        <Label x={80} y={160} size={9} weight={700}>15% of earnings over $2,500</Label>
         <path d="M150,50 H210 L300,140" fill="none" stroke={INK} strokeWidth={4} />
         <Label x={190} y={40} size={10}>$200K / $400K MFJ</Label>
-        <Label x={250} y={80} size={10} anchor="start">–$50 per</Label>
-        <Label x={250} y={94} size={10} anchor="start">$1,000</Label>
+        <Label x={170} y={110} size={10} anchor="start">–$50 per $1,000</Label>
       </svg>
     ),
     body: [

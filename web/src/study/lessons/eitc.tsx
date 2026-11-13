@@ -223,7 +223,7 @@ const cards: Lesson["cards"] = [
         <Label x={80} y={76} size={11}>incorrect?</Label>
         <Label x={80} y={92} size={11}>inconsistent?</Label>
         <Label x={80} y={108} size={11}>incomplete?</Label>
-        <Paper x={234} y={84} label="ASK" sub="and write it down" scale={2} color="#fff" />
+        <Paper x={234} y={84} label="ASK" sub="note it" scale={2} color="#fff" />
       </svg>
     ),
     body: [

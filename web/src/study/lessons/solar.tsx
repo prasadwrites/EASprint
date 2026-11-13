@@ -151,7 +151,7 @@ const cards: Lesson["cards"] = [
         <SolarPanel x={56} y={66} w={50} h={16} />
         <Sun x={30} y={30} r={12} />
         <Card x={170} y={20} w={138} h={60} lines={["30% of cost", "no dollar cap"]} size={12} color="#d8f0e2" />
-        <Calendar x={238} y={130} month="LAST DAY" day="12/31/25" scale={0.9} />
+        <Calendar x={238} y={130} month="DEC 31" day="2025" scale={0.9} />
       </svg>
     ),
     body: [
@@ -230,7 +230,7 @@ const cards: Lesson["cards"] = [
     art: (
       <svg {...CARD}>
         <rect width={320} height={180} fill="#fff7dc" />
-        <Paper x={60} y={84} label="1099-DIV" sub="foreign tax $80" scale={1.7} />
+        <Paper x={60} y={84} label="1099-DIV" sub="tax $80" scale={1.7} />
         <path d="M110,60 Q180,0 250,60" fill="none" stroke="#1d7a49" strokeWidth={4} />
         <Paper x={180} y={120} label="1116" scale={1.2} color="#fde2e4" />
         <path d="M156,96 L204,144 M204,96 L156,144" stroke="#a8321f" strokeWidth={4} />
@@ -249,14 +249,14 @@ const cards: Lesson["cards"] = [
     art: (
       <svg {...CARD}>
         <rect width={320} height={180} fill="#f3e1ef" />
-        <Step x={14} y={40} w={80} h={120} color="#d8f0e2" label="50%" />
-        <Step x={100} y={80} w={80} h={80} color="#fff3c4" label="20%" />
-        <Step x={186} y={110} w={80} h={50} color="#d4ebfa" label="10%" />
+        <Step x={14} y={40} w={70} h={120} color="#d8f0e2" label="50%" />
+        <Step x={90} y={80} w={70} h={80} color="#fff3c4" label="20%" />
+        <Step x={166} y={110} w={70} h={50} color="#d4ebfa" label="10%" />
         <Label x={160} y={24} size={11}>of up to $2,000 ($4,000 joint)</Label>
-        <Label x={292} y={60} size={9} weight={700}>max AGI:</Label>
-        <Label x={292} y={76} size={9} weight={700}>$39,500</Label>
-        <Label x={292} y={90} size={9} weight={700}>$59,250 HOH</Label>
-        <Label x={292} y={104} size={9} weight={700}>$79,000 MFJ</Label>
+        <Label x={278} y={60} size={9} weight={700}>max AGI:</Label>
+        <Label x={278} y={76} size={9} weight={700}>$39,500</Label>
+        <Label x={278} y={90} size={9} weight={700}>$59,250 HOH</Label>
+        <Label x={278} y={104} size={9} weight={700}>$79,000 MFJ</Label>
       </svg>
     ),
     body: [
