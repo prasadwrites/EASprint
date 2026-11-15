@@ -1,0 +1,130 @@
+# Season 2, Unit 1: Rosa Wants a Yacht
+(Season 2. Ledger Falls Unplugged now records at Rosa's Rolls after closing time, at the table by the window. Gerald, the sourdough starter with googly eyes, sits by the microphone.)
+[theme]
+MILO: Ledger Falls! Unplugged is back for Season 2, and we've moved up in the world. We record at Rosa's Rolls now. There are pastries! And Wi-Fi! I'm Milo Marsh, host, producer, head of marketing.
+ROSA: And I'm Rosa, owner of Rosa's Rolls, ninety percent. Welcome to my bakery, everyone. Milo, take your elbow out of the butter.
+MILO: Sorry, Aunt Rosa.
+PENNY: I'm Penny Pocket, ten percent owner. I own ten percent of every roll in this room.
+MILO: Can I eat your ten percent of that one?
+PENNY: Only if you report it.
+ACE: And I'm Ace Okafor, enrolled agent. Season 2 is Part 2 of the exam: businesses. Unit 1 is entities. Sole proprietorships, partnerships, C corporations and S corporations.
+ROSA: And Gerald is here.
+MILO: Gerald is Aunt Rosa's sourdough starter. He's a jar. With googly eyes.
+ROSA: He's family, Milo. He's older than you, and he rises more.
+MILO: Ouch.
+ROSA: Episode 1.1! I want a yacht. The bakery is booming. I want a yacht, and I want the bakery to buy it.
+ACE: Before the yacht, let's talk about what the bakery is. A sole proprietorship reports on Schedule C. A partnership files Form 1065 and gives each partner a K-1, due March 15 for a calendar year. An S corporation files Form 1120-S with K-1s, also March 15. A C corporation files Form 1120 and pays a flat twenty-one percent tax, due April 15 for a calendar year.
+PENNY: One owner: Schedule C. Two: Form 1065. Corp: 1120. S: 1120-S.
+[pop]
+(The bakery's bread box springs open. Examiner Hoot climbs out, a baguette under one wing like a sword.)
+HOOT: Hoo-hoo-HOLD it. Nobody buys a yacht without a classification.
+ROSA: Hoot! You were in my bread box!
+HOOT: Examiner Hoot. I was inspecting the inventory. Your baguettes are in excellent compliance. This one is coming with me as evidence.
+ROSA: Put down my baguette, Hoot.
+HOOT: ...Very well. LLCs. The default classification. One member: disregarded entity. Two or more members: partnership. To be taxed as a corporation, file Form 8832. For S status, file Form 2553. After an elective change, there is a sixty-month wait before changing again.
+ACE: And a special case: a qualified joint venture. Spouses who file a joint return, both materially participate, and the business isn't a state-law entity like an LLC. They can file two Schedules C instead of a Form 1065.
+MILO: Penny! We could be a qualified joint venture!
+PENNY: For what business, Milo?
+MILO: Milo and Penny's Mugs and More.
+PENNY: The "more" is what scares me.
+ACE: Employer identification numbers. An EIN is free from the IRS, online or with Form SS-4. Partnerships, corporations, employers, and anyone filing excise or employment tax returns need one. A sole proprietor without employees can use their SSN. And a new structure, like incorporating, means a new EIN.
+MILO: Free? I paid a website $199 for mine.
+HOOT: Then you paid $199 for something free, Milo Marsh. That is the least deductible feeling in the world.
+HOOT: Required tax years. A partnership uses the tax year of its majority-interest partners. If none, the year of its principal partners. If none, the year with the least aggregate deferral. An S corporation or personal service corporation uses a calendar year, unless it has a business purpose, or makes a section 444 election on Form 8716, for up to three months of deferral.
+ROSA: And the yacht? Can the bakery deduct it if I call it a "floating bakery"?
+ACE: That's the for-profit question. The IRS looks at the facts and circumstances: whether you run it in a businesslike manner, the time and effort you put in, your expertise, whether you depend on the income, your history of income and losses, and whether there's personal pleasure involved.
+HOOT: An activity is presumed to be for profit if it shows a profit in three of the last five years. For horses, two of seven. Otherwise, if it's a hobby, the income is taxable and the expenses are not deductible.
+ROSA: So if my yacht is a hobby...
+HOOT: The yacht is a hobby, Rosa. I can tell by the way you said "yacht." You said it like a woman who wants to wear a captain's hat.
+ROSA: I have the hat already.
+PENNY: She has the hat. It has an anchor on it.
+ROSA: Fine. No yacht. Just the hat.
+[ding]
+MILO: Segment two! Penny's Ten Percent! The 2025 K-1s came out, and Penny opened hers.
+PENNY: And it says I made $9,000 from the bakery. But Aunt Rosa only gave me $2,000 in cash. And a lot of cinnamon rolls.
+ACE: That's the big partnership rule. Partners are taxed on their distributive share of income, whether it's distributed or not. And separately stated items, like capital gains or charitable contributions, keep their character on the partner's return.
+PENNY: Taxed on my share, paid or not.
+ACE: Exactly. Now go back to the beginning. Under section 721, there's no gain or loss when you contribute property to a partnership for an interest. The partnership takes a carryover basis. The partner's outside basis is money contributed, plus the adjusted basis of property contributed, adjusted for shifts in liabilities. But if you receive an interest for services, that's ordinary income at fair market value.
+ROSA: Penny paid for her ten percent with $20,000 and a mixing bowl.
+HOOT: I would like to see the mixing bowl.
+ROSA: It's the one you're sitting in.
+HOOT: ...So it is. Proceeding. Form 1065 is due March 15 for a calendar year partnership. The late filing penalty is charged per partner, per month.
+ACE: Guaranteed payments are payments to a partner that don't depend on profit, like Rosa's salary for running the bakery. They're deductible by the partnership, and ordinary income to the partner. For services, they're also self-employment income.
+HOOT: Outside basis. It goes UP with contributions, your share of income including tax-exempt income, and your share of liabilities. It goes DOWN with distributions, losses, nondeductible expenses and decreases in your share of liabilities. It never goes below zero.
+ACE: And losses are limited to basis, with the excess carried forward. Then the at-risk, passive activity and excess business loss limits apply, in that order.
+PENNY: And distributions?
+ACE: Distributions are tax-free to the extent of your basis. Money in excess of basis is gain. Property you receive takes a carryover basis, limited to your outside basis. And if you sell your interest, it's generally capital gain or loss, except for section 751 hot assets, unrealized receivables and inventory, which are ordinary. And relief from debt counts as amount realized.
+HOOT: Partnership audits. Under the Bipartisan Budget Act centralized audit rules, adjustments and the imputed underpayment are determined at the partnership level, unless the partnership pushes them out to the partners. The partnership representative doesn't have to be a partner, but must have a substantial presence in the U.S., and binds everyone. A partnership with one hundred or fewer eligible partners can elect out, every year, on a timely return.
+ROSA: Who's our partnership representative?
+PENNY: Gerald.
+ROSA: Gerald doesn't have a substantial presence in the U.S.
+MILO: He's got a substantial presence on the counter.
+HOOT: The partnership representative must be a person or entity, not a jar.
+ROSA: Don't listen to him, Gerald. You're a very important jar.
+[stamp]
+MILO: Segment three! Milo's Mutts, Incorporated! I heard the word "corporation," and I haven't stopped saying it.
+PENNY: He's been saying it for two weeks. He says it in his sleep.
+MILO: Corporation.
+PENNY: Like that.
+ACE: To form a corporation without tax, section 351 applies. If you transfer property for stock, and the transferors have at least eighty percent control right after the exchange, there's no gain or loss. If you receive boot, gain is recognized up to the boot. Your stock basis is the basis of the property, plus gain recognized, minus boot. And stock received for services is ordinary income at fair market value.
+MILO: I put in my golf cart, the Mutt Mobile, and three leashes for one hundred percent of the stock.
+ACE: Then section 351 applies. No gain or loss.
+HOOT: The C corporation. Form 1120, due the fifteenth day of the fourth month after year-end. Form 7004 gives six more months. The tax rate is a flat twenty-one percent. Estimated tax is required if the tax is $500 or more. Capital losses only offset capital gains, carried back three years and forward five. The charitable deduction is capped at ten percent of taxable income for 2025, with a five-year carryforward. And dividends paid are NOT deductible.
+MILO: And when Milo's Mutts pays me dividends?
+ACE: Distributions are dividends to the extent of current earnings and profits, then accumulated earnings and profits. After that, a return of your stock basis. After that, capital gain. If the corporation distributes appreciated property, it recognizes gain as if it sold it at fair market value, and your basis is fair market value. And qualified dividends get the 0, 15 or 20 percent rates for individuals.
+PENNY: So the corporation pays twenty-one percent, and then Milo pays tax again on dividends.
+ACE: That's double taxation. Eighty percent to form. Twenty-one percent to pay. Dividends taxed twice.
+HOOT: The dividends received deduction. For corporate shareholders only. Fifty percent if the corporation owns less than twenty percent of the payer. Sixty-five percent if it owns twenty percent to less than eighty percent. One hundred percent for affiliated corporations, eighty percent or more. The fifty and sixty-five percent deductions are limited to that percent of taxable income, unless the deduction creates an NOL. And there's a forty-five day holding period.
+ACE: The accumulated earnings tax is twenty percent on accumulated taxable income held beyond the reasonable needs of the business. There's a credit of $250,000, or $150,000 for personal service corporations. Controlled groups share certain limits, like the accumulated earnings tax credit and section 179.
+HOOT: And liquidation. When a corporation liquidates, it is taxed as if it sold its assets at fair market value. Shareholders have capital gain or loss. And the liquidation of an eighty percent owned subsidiary into its parent is generally tax-free.
+MILO: Which brings me to the sad news. Milo's Mutts, Incorporated, lasted one week.
+PENNY: The dogs unionized.
+MILO: Biscuit organized them.
+[bark]
+HOOT: I have spoken to Biscuit. He is not sorry.
+ROSA: Milo, honey, it's okay. Bert started a pretzel company in 1981. It lasted one afternoon.
+MILO: What happened?
+ROSA: He ate the inventory.
+[ding]
+MILO: Final segment! S Is for Special! Aunt Rosa watched my corporation fail, took notes, and made a decision.
+ROSA: I want the bakery to become an S corporation. Starting January 1, 2026.
+ACE: Then let's check eligibility. An S corporation must be a domestic corporation with no more than one hundred shareholders, and family members can count as one. Shareholders are limited to U.S. citizen or resident individuals, estates, certain trusts, like grantor trusts, QSSTs and ESBTs, and certain exempt organizations. No partnerships, no corporations, no nonresident aliens. And only one class of stock, though differences in voting rights are okay.
+HOOT: One hundred people, one class, March 15, everybody signs.
+ACE: That's the memory hook. Form 2553 needs every shareholder's consent. It's filed during the prior year, or by the fifteenth day of the third month of the year, which is March 15 for a calendar year, to be effective that year. Otherwise, it's effective the next year. There's late election relief for reasonable cause, generally within three years and seventy-five days. After that, the S corporation files Form 1120-S with K-1s by March 15.
+ROSA: Then for 2026, we file Form 2553 by March 15, and every shareholder signs. I'll sign everything.
+PENNY: Me too. In my good pen.
+HOOT: Shareholder stock basis. UP with contributions and income, including tax-exempt income. DOWN with distributions, nondeductible expenses and losses. Losses are limited to stock basis plus DEBT basis. And debt basis means direct loans from the shareholder to the S corporation. Guarantees and entity-level debt do NOT count. Excess losses carry forward. Form 7203.
+ACE: Distributions. If the S corporation has no earnings and profits from C corporation years, distributions are tax-free up to stock basis, and the excess is capital gain. If it does have old C corporation E and P, distributions come from the accumulated adjustments account first, then are dividends from E and P.
+ACE: And reasonable compensation. Shareholder-employees, like Rosa, must take a reasonable W-2 salary for their work before taking distributions. If the salary is too low, the IRS can recharacterize distributions as wages. And health insurance for more-than-two-percent shareholders goes in their W-2 wages.
+ROSA: So I have to pay myself a salary? From my own bakery?
+ACE: A reasonable one. What you'd pay someone else to run Rosa's Rolls.
+ROSA: Nobody else could run Rosa's Rolls. Gerald wouldn't allow it.
+HOOT: And termination. An S election ends by revocation, with consent of shareholders holding more than fifty percent of the shares. Or when the corporation stops qualifying, effective that day. Or when it has passive investment income over twenty-five percent of gross receipts for three consecutive years while it has C corporation E and P. After termination, there's generally a five-year wait to re-elect without IRS consent. And a converted C corporation can owe built-in gains tax on assets sold within five years.
+MILO: What if I become a shareholder? Can I own one share? A tiny share?
+ROSA: You can own a cinnamon roll, Milo.
+MILO: I'll take it.
+[theme]
+MILO: Lightning round! Hoot, go.
+HOOT: A two-member LLC with no elections. Classification?
+PENNY: Partnership!
+HOOT: Correct. Penny's K-1 shows $9,000 of income, and she received $2,000. How much is taxed to her?
+PENNY: All $9,000. Taxed on my share, paid or not.
+HOOT: Correct. Milo forms a corporation with property. What control percentage does section 351 require?
+MILO: Eighty percent! Which I had. For a week.
+HOOT: Correct. The C corporation rate?
+ROSA: Twenty-one percent, flat.
+HOOT: Correct. Can a partnership own S corporation stock?
+ACE: No. Partnerships and corporations can't be S corporation shareholders.
+HOOT: Correct. A shareholder guarantees the S corporation's bank loan. Does that create debt basis?
+PENNY: No, only direct loans from the shareholder.
+HOOT: Correct. Everyone is correct. I came here to stop a yacht, and I have stopped a yacht. It has been a good day.
+ROSA: Then you'll have a cinnamon roll, Hoot.
+HOOT: I will have a cinnamon roll. I am not here for the cinnamon rolls.
+ACE: You've been here for every cinnamon roll this season.
+HOOT: That is a coincidence, which I have documented. Next time: Unit 2, business income and expenses. Good day.
+[pop]
+ROSA: He climbed back into the bread box.
+PENNY: Does he live in there?
+ROSA: I think he just likes the smell, dear.
+MILO: Honestly, same.
+[theme]

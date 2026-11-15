@@ -1,0 +1,137 @@
+# Unit 5: The Year in Review, Penny Plans Ahead and Dee's Plea
+(Season 1. December 2025 in the story. Studio A has a tiny Christmas tree made of rolled-up W-2s.)
+[theme]
+MILO: Happy holidays, Ledger Falls! This is Unplugged, Unit 5, and the closet is festive! I'm Milo Marsh.
+PENNY: And I'm Penny Pocket. The tree is made of old W-2s. Milo, those are from 2019. You need those... actually, no. You don't. Three years.
+ACE: Unless there's an open issue. I'm Ace Okafor, enrolled agent. This unit is life events, tax planning, and spouse relief. And it's December, so I'm hosting my annual year-in-review.
+MILO: Ace's year-in-review is famous. There are snacks, and handouts, and a laser pointer.
+ACE: There's a pop quiz too.
+PENNY: At a party?
+ACE: It's a festive pop quiz. The questions have little hats on.
+[pop]
+(The W-2 Christmas tree shakes. Examiner Hoot climbs out of the top, wearing it like a cone.)
+HOOT: Hoo-hoo-HOLD it. This tree contains personal information.
+MILO: Hooty! You're the angel on top!
+HOOT: I am NOT an angel. I am an examiner. Angels do not carry clipboards. And do not call me Hooty during the holidays. Or the other days.
+PENNY: Are you staying for the party, Hoot?
+HOOT: I do not attend parties. I attend events, for monitoring purposes. Is there eggnog?
+ACE: There's eggnog.
+HOOT: Then I will monitor the eggnog.
+MILO: Episode 5.1, the Year in Review! Dee's divorce from Vince was final this year. Dee, you there?
+DEE: Can you hear me now? I'm here! Vince is keeping the boat, and I'm keeping the house!
+ACE: Then that's a transfer incident to divorce. Property transfers between spouses, or incident to a divorce, have no gain or loss. The person who receives the property takes a carryover basis: the transferor's adjusted basis.
+DEE: So I don't pay tax on getting the house?
+ACE: No tax, and you keep the old basis.
+HOOT: Alimony. For divorce agreements after 2018, alimony is NOT deductible by the payer and NOT income to the recipient. For agreements before 2019, it is deductible by the payer and income to the recipient. Child support is never deductible and never income.
+DEE: My agreement is from 2025! So Vince can't deduct his alimony! Ha!
+PENNY: Dee, that's a very happy thing to say about alimony.
+DEE: Vince took the boat, Penny. Let me have this.
+ACE: Divorce transfers: no tax, old basis. New alimony: no deduction, no income.
+ACE: Now, kids after divorce. The custodial parent is the one the child spent more nights with. Form 8332 lets the custodial parent release the dependency claim, along with the child tax credit or the $500 credit, to the noncustodial parent. But head of household, the EITC, and the dependent care credit stay with the custodial parent.
+DEE: So Vince could claim our kid if I sign Form 8332?
+ACE: He could get the dependency and the child tax credit. Not head of household, not the EITC, not the dependent care credit.
+LULU: I'd like to point out that I live with Penny. Not Vince. Not even Mom.
+DEE: Lulu, baby, Mommy's on an oil rig.
+LULU: I'm aware. I made a diorama.
+HOOT: Retirement plans in divorce. A QDRO, a qualified domestic relations order, for an employer plan. Payments to the ex-spouse are taxed to the ex-spouse, there is no ten percent early-distribution tax, and they can be rolled over. An IRA transferred under a divorce decree is tax-free. BUT, the QDRO exception to the ten percent tax does NOT apply to IRAs.
+ACE: Then education savings. A 529 plan has no federal deduction, but growth and qualified distributions are tax-free. That includes K-12 tuition, up to $10,000 a year for 2025. A nonqualified distribution's earnings are taxed, plus ten percent. And if the account has been open fifteen years, up to $35,000, over the beneficiary's lifetime, can roll to the beneficiary's Roth IRA.
+HOOT: The Coverdell ESA. $2,000 a year per beneficiary, from all contributors combined. It phases out between $95,000 and $110,000 of modified AGI, $190,000 to $220,000 joint. Contributions before the beneficiary turns eighteen. Use it by thirty. Tax-free for K-12 and college costs.
+LULU: Can I have a 529? For science camp?
+PENNY: We'll talk about it, sweetie.
+LULU: That's what adults say when the answer is no.
+ACE: And retirement planning. A spouse with little or no income can contribute to a spousal IRA on a joint return, as long as combined compensation covers both contributions. For 2025, $7,000 each, or $8,000 at fifty or older.
+MILO: Penny, we should both do IRAs!
+PENNY: With what money, Milo? You bought a golf cart for dogs.
+MILO: The Mutt Mobile is an investment.
+PENNY: It's an investment in being honked at.
+[ding]
+MILO: Segment two! Penny Plans Ahead! For the first time in recorded history!
+PENNY: Excuse me. I plan. I plan coupon routes.
+MILO: But you've never planned taxes before December 31.
+PENNY: That's... fair.
+ACE: Most individuals use the cash method. Income counts when it's actually or constructively received. Constructive receipt means it's credited to your account, set apart, or made available without substantial restriction. Holding a check until January doesn't defer the income.
+MILO: Wait, so my client paid me with a check on December 28, and I put it in a drawer until January...
+HOOT: A December check is December income, cashed or not, Milo Marsh. Putting it in a drawer is not tax planning. It is furniture.
+PENNY: A December check is December income, cashed or not.
+ACE: The basic cash-method strategy: defer income and accelerate deductions when rates will be the same or lower next year. Reverse it when rates are going up. And check phase-outs for both years.
+HOOT: Bunching. Stack itemized deductions into one year to beat the standard deduction, then take the standard deduction the next year. And note, for 2026: a charitable deduction for non-itemizers of $1,000, or $2,000 married filing jointly. And for itemizers, a floor of one-half of one percent of AGI on charitable gifts.
+PENNY: So I could give two years of church donations in December and itemize, then take the standard deduction next year?
+ACE: That's bunching. Your property tax, mortgage interest and two years of giving might beat $31,500 in one year.
+PENNY: Oh, I'm going to make a spreadsheet. With conditional formatting.
+ACE: Penny, that's the most beautiful thing anyone's said all season.
+MILO: Are you two having a moment over a spreadsheet?
+ACE: We are.
+PENNY: We absolutely are.
+ACE: Tax-loss harvesting. Capital losses offset gains, then up to $3,000 of ordinary income, or $1,500 married filing separately. The excess carries forward indefinitely. But watch the wash sale rule: if you buy substantially identical stock within thirty days before or after the loss sale, the loss is disallowed and added to the new shares' basis.
+HOOT: Filing status comparison. Married filing jointly usually wins. Married filing separately loses the education credits and the student loan interest deduction, and the EITC and the dependent care credit except in narrow cases. And if one spouse itemizes, the other must. Filing separately CAN help when one spouse has big medical costs, or to avoid joint liability.
+MILO: Should we file separately, babe?
+PENNY: Do you have big medical costs?
+MILO: No.
+PENNY: Are you hiding a debt?
+MILO: Just Gus's debt. He still owes ME money.
+PENNY: Then we're filing jointly.
+ACE: Carryovers. Capital losses carry forward indefinitely. Excess charitable gifts carry forward five years. NOLs from after 2020 carry forward indefinitely, limited to eighty percent of taxable income. And estimated tax payments are due April 15, June 15, September 15 and January 15.
+MILO: Those dates are weird. Why is there a two-month quarter?
+HOOT: Because the calendar does not consult with me, Milo Marsh. If it did, every month would end on the fifteenth.
+PENNY: And every day would be April 15.
+HOOT: A man can dream.
+MILO: You're an owl.
+HOOT: An owl can also dream.
+[stamp]
+MILO: Final segment. Dee's Plea. Dee got an IRS letter about her ex-husband Vince.
+DEE: Can you hear me now? Okay. Vince didn't report $30,000 from his boat business on our 2023 joint return, and now the IRS wants me to pay it!
+ACE: I'm sorry, Dee. A joint return means joint and several liability. Each spouse owes the full tax, interest and penalties. Even after divorce. And even if the divorce decree says the other spouse will pay.
+DEE: The decree says Vince pays everything!
+HOOT: The decree binds Vince and you. It does not bind the IRS. I was not at your divorce. I was not invited.
+DEE: Nobody invited you, Hoot. It was a divorce.
+HOOT: I would have brought a gift. A highlighter.
+ACE: But there's relief, Dee. You request it on Form 8857. There are three kinds. Innocent spouse relief: for an understatement of tax on the joint return, where you didn't know and had no reason to know. Separation of liability: if you're divorced, widowed, legally separated, or have lived apart for twelve months, it allocates the understatement between you. And equitable relief, for anything else, including tax that was reported but never paid.
+HOOT: The first two must be requested within two years after the IRS's first collection activity against you.
+DEE: I didn't know about the boat business! Vince told me it was a "fishing hobby"!
+ACE: That's exactly the kind of fact that goes on Form 8857.
+PENNY: Dee, make sure you're not confusing it with injured spouse.
+DEE: Oh, I'm definitely injured. Emotionally.
+ACE: Injured spouse is different. That's Form 8379. It's for when a joint refund was taken to pay the OTHER spouse's past-due debt, like back taxes, child support, a student loan, or state unemployment debt. The injured spouse gets their share of the refund back.
+HOOT: Innocent spouse: about tax OWED. Injured spouse: about a REFUND taken.
+DEE: Innocent, owed. Injured, refund. Got it.
+ACE: Then refund claims. You claim a refund on Form 1040-X within three years of filing the return, or two years of paying the tax, whichever is later. A return filed early counts as filed on the due date. The refund is limited to tax paid within that lookback period. And there's seven years for bad debts and worthless securities.
+HOOT: And penalties of perjury. Every return is signed under penalties of perjury, declaring it true, correct and complete. Both spouses sign a joint return. An unsigned return is not a valid return. A preparer's declaration is based on all information the preparer knows.
+MILO: So when I signed our return with a smiley face...
+PENNY: Milo, you did not.
+MILO: I added a smiley face NEXT to my signature.
+HOOT: The smiley face is not the issue. The smiley face is noted.
+ACE: Dee, you'll get through this. Your facts are good.
+DEE: Thanks, Ace. You're the best. When I'm back from the rig, I'm going to bake you...
+[glitch]
+DEE: ...a casserole.
+PENNY: The signal cut out at the exact moment of a casserole. That's the most Dee thing ever.
+[theme]
+MILO: Lightning round! Ace's festive pop quiz! Questions wearing little hats!
+ACE: Hoot, you want to read them?
+HOOT: I will read them. I will not wear a hat.
+ACE: There's a hat for you.
+HOOT: ...It is beige. Very well. Question one. Dee keeps the house in the divorce. Her basis?
+DEE: Vince's old basis! Carryover!
+HOOT: Correct. Alimony under a 2025 agreement. Deductible?
+PENNY: No, and not income either!
+HOOT: Correct. A client gets a check on December 28 and holds it until January 3. Which year's income?
+MILO: The drawer year! I mean, 2025. December.
+HOOT: Correct, eventually. Your refund was taken to pay your spouse's old student loan. Which form?
+LULU: Form 8379. Injured spouse. I've been listening.
+HOOT: Correct. The QDRO ten percent exception. Does it apply to IRAs?
+ACE: No. Employer plans only.
+HOOT: Correct. Estimated tax payment dates?
+PENNY: April 15, June 15, September 15, January 15!
+HOOT: Correct. Everyone has passed. It is the worst holiday I have ever had.
+ROSA: Then have some eggnog, Hoot. I made it with nutmeg.
+HOOT: Aunt Rosa. When did you arrive?
+ROSA: I'm always here when there's eggnog, dear. Gerald, say hello.
+HOOT: Gerald is a jar.
+ROSA: Gerald is a jar who loves you, Hoot. Drink your eggnog.
+HOOT: ...It is excellent eggnog. I will deny saying that.
+MILO: That's Unit 5! Happy holidays from Ace, Penny, Lulu, Dee, Aunt Rosa, Gerald, and the owl who lives in our Christmas tree!
+HOOT: Examiner Hoot. Plan before December 31. A drawer is not a deferral. See you in Unit 6.
+[pop]
+PENNY: Milo, he took the tree.
+MILO: Good. It was a security risk.
+[theme]

@@ -1,0 +1,140 @@
+# Season 3, Unit 2: Hoot Audits the Pockets
+(Season 3. Okafor Tax Defense, above Rosa's Rolls. A letter from the IRS sits on the desk, unopened. Penny is staring at it.)
+[theme]
+MILO: Ledger Falls, this is Unplugged, Season 3, Unit 2. I'm Milo Marsh, and today's episode is brought to you by fear.
+PENNY: I'm Penny Pocket. I got a letter. Hoot is auditing our 2025 return. Our FIRST joint return. The one he STAMPED.
+ACE: I'm Ace Okafor, enrolled agent. Penny, breathe. An exam is not an accusation. It's a conversation with paperwork.
+PENNY: A conversation with Hoot is a deposition, Ace.
+ROSA: And I'm Rosa. I'm here for moral support, and I brought stress rolls.
+MILO: What's a stress roll?
+ROSA: It's a regular cinnamon roll, but you eat it faster.
+MILO: Episode 2.1! Hoot Audits the Pockets! Ace, how do we let you talk to Hoot for us?
+ACE: Form 2848, power of attorney and declaration of representative. The taxpayer and an eligible representative both sign. It lists the specific tax matters, forms and periods. Future periods can go up to three years after the IRS receives it. You can't write "all years." And spouses each file their own 2848, even on a joint return.
+PENNY: So we need two 2848s. One for me, one for Milo.
+MILO: I signed mine already.
+ACE: Milo, it's chewed.
+MILO: Biscuit was helping.
+[bark]
+ACE: It's still legible. Barely. There's a tooth mark through "Milo."
+[pop]
+(The roof of Biscuit's doghouse, which Milo carried upstairs for the episode, pops open. Examiner Hoot climbs out.)
+HOOT: Hoo-hoo-HOLD it. The chewed 2848 is acceptable. I have reviewed the bite pattern.
+PENNY: Hoot! You were in BISCUIT'S HOUSE?
+HOOT: Examiner Hoot. Biscuit offered. We have an arrangement. He does not eat my files, and I do not audit his treats.
+[bark]
+HOOT: He says the arrangement is under review.
+ACE: With a 2848, a representative can receive confidential information and act for the taxpayer, including signing agreements, consents and statute extensions. What a representative can't do: endorse or cash a refund check, sign the return except in narrow cases, or add or substitute representatives unless the 2848 authorizes it.
+HOOT: Form 8821, tax information authorization. Any person or organization can be named to inspect or receive tax information. NO representation. It must reach the IRS within 120 days of the taxpayer signing it.
+ROSA: So if I want to see Penny's tax information, to worry properly...
+ACE: Penny could sign an 8821 for you. You could look, but not represent her.
+ROSA: Looking is all I need, dear. Worrying is a spectator sport.
+HOOT: The CAF. The Centralized Authorization File records 2848s and 8821s, and representatives get a CAF number. A new 2848 for the same matters revokes prior ones, unless you check the box to retain them. To revoke, the taxpayer sends a copy marked "REVOKE," signed. To withdraw, the representative sends a copy marked "WITHDRAW," signed.
+ACE: And the third party designee checkbox on the return. It lets someone discuss that one return's processing, like refunds, math errors and notices. It ends at the due date, without extensions, of next year's return. No representation.
+PENNY: 2848 speaks for you. 8821 only looks. The checkbox only asks about one return.
+HOOT: Publication 216. A representative must have a valid authorization on file before discussing confidential information, and be prepared, prompt and courteous. A representative who unreasonably delays can be bypassed, with supervisor approval, and the IRS contacts the taxpayer directly.
+ACE: I'm never late, Hoot.
+HOOT: I know. It is very annoying.
+[ding]
+MILO: Episode 2.2! The Shoebox Strikes Back! Hoot wants proof of my business expenses. I have a box.
+PENNY: It's my old shoebox. He stole my shoebox.
+MILO: I borrowed it. With love.
+ACE: First, the types of exams. Correspondence exams are by mail. Office exams are at an IRS office. Field exams have a revenue agent at your home or business. Hoot sends requests for records on Form 4564, an information document request. With a 2848, I can attend instead of you.
+MILO: Can I come anyway?
+ACE: Please don't.
+PENNY: He'll bring snacks and say something.
+MILO: I'll bring snacks and say NOTHING.
+PENNY: Milo, you narrate your own sandwiches.
+HOOT: Burden of proof. The TAXPAYER carries the burden of substantiating deductions, credits and basis, with receipts, statements and logs. Milo Marsh, where is your mileage log?
+MILO: It's in the box!
+HOOT: This is a napkin. It says "drove places. a lot."
+MILO: That's a summary.
+ACE: We organize by issue and answer exactly what the IDR asks. Keep copies of everything we send.
+HOOT: Ability to pay. If it comes to that: Form 433-A for individuals, 433-B for businesses, and 433-F, the short form. Income, expenses, assets, equity and debts. Allowable expenses use IRS national and local standards.
+ACE: And then authority. When I argue a position, the Internal Revenue Code comes first. Then Treasury regulations, where final beats temporary, and temporary beats proposed. Then revenue rulings and revenue procedures. And court decisions; the Supreme Court binds everyone. A private letter ruling binds only the taxpayer who requested it. And IRS publications aren't authority.
+MILO: What about a blog? I found a great blog. "Deduct Your Dog dot com."
+ACE: Code first. Then regs, rulings and cases. A blog is never authority.
+HOOT: "Deduct Your Dog dot com" is run by Quick Refund Rex. I have a file on it.
+[bark]
+HOOT: Biscuit has also read it. He was very disappointed.
+ACE: Section 7525 gives a confidentiality privilege, like attorney-client privilege, for tax advice from federally authorized practitioners, like CPAs and enrolled agents, in noncriminal matters before the IRS or in federal court. It doesn't cover criminal matters, tax shelter promotion, or information for preparing a return.
+HOOT: And return positions, Circular 230 section 10.34. A position with substantial authority needs no disclosure. A position with only a reasonable basis must be disclosed, on Form 8275, or 8275-R if it's contrary to a regulation. A tax shelter needs more likely than not. And you advise the client of possible penalties and the chance to avoid them by disclosing.
+PENNY: Ace, do we have substantial authority for Milo's mileage?
+ACE: We have a napkin, Penny.
+PENNY: Is the napkin authority?
+ACE: The napkin is a cry for help.
+ROSA: Have a stress roll, Penny.
+PENNY: I'm having two.
+[stamp]
+MILO: Episode 2.3! Ten Years of Hoot! Ace has the shoebox sorted by issue, and Hoot found a new toy. An hourglass.
+HOOT: It is not a toy. It is a statute of limitations visualizer.
+(Hoot sets a large hourglass on the desk. The sand begins to fall.)
+HOOT: The assessment statute. Three years after the return is filed, and a return filed early is treated as filed on the due date. Six years if gross income is understated by more than twenty-five percent. And unlimited for fraud, evasion, or no return at all.
+ACE: The statute can be extended only by agreement, on Form 872. The agreement can be limited to certain issues, or the taxpayer can refuse. And the IRS will often issue a notice of deficiency if the taxpayer refuses.
+HOOT: The collection statute. Ten years from assessment. That date is the CSED. It is suspended while an offer in compromise or installment agreement request is pending, during a collection due process hearing, during bankruptcy, or while the taxpayer is outside the U.S. for six or more continuous months.
+PENNY: Three years to assess. Ten years to collect.
+MILO: Ten years of Hoot.
+HOOT: Ten years of me. It sounds like a television series.
+ACE: It sounds like a horror series, Hoot.
+HOOT: A documentary. With me as the narrator.
+ACE: Now the good part. The Taxpayer Bill of Rights, in Publication 1. Ten rights. The right to be informed. To quality service. To pay no more than the correct amount of tax. To challenge the IRS's position and be heard. To appeal in an independent forum. To finality. To privacy. To confidentiality. To retain representation. And to a fair and just tax system.
+MILO: Penny, we have rights!
+PENNY: Ten of them!
+HOOT: You have always had them. I keep a laminated copy in my eyeshade.
+ACE: You laminate?
+HOOT: You are not the only one with a laminator, Ace Okafor.
+(A long, meaningful silence between Ace and Hoot.)
+ACE: ...What brand?
+HOOT: We will discuss it at another time.
+ACE: The Taxpayer Advocate Service is an independent organization within the IRS. It's free. It helps with financial hardship, a threatened adverse action, or when the normal IRS channels have failed. You ask for help on Form 911. Low income taxpayer clinics are separate and independent.
+HOOT: And identity theft. A taxpayer who is a victim files Form 14039, the identity theft affidavit, unless they are responding to an IRS identity-verification letter. Keep filing, on paper if the e-file is rejected. And the IP PIN: six digits, new every year, available to anyone who can verify their identity.
+DEE: Can you hear me now? Penny, someone filed a return in my name! With a dog as a dependent!
+PENNY: Dee! You're back on the rig?
+DEE: One more contract! And someone claimed a beagle named "Biscuit Two"!
+ACE: Dee, file Form 14039, keep filing your own return, on paper if it's rejected, and get an IP PIN.
+HOOT: And tell Biscuit Two he is not a dependent.
+[bark]
+HOOT: Biscuit agrees. He finds Biscuit Two offensive.
+DEE: Thanks, Ace! I'm getting the PIN right...
+[glitch]
+DEE: ...now!
+[ding]
+MILO: Bonus segment! While we wait for Hoot's report: Penny and Milo's audit survival tips!
+PENNY: Tip one. Open the letter. Don't put it in the freezer.
+MILO: That was one time.
+PENNY: It was three times, Milo. Tip two. Call your enrolled agent.
+ACE: Tip three. Read what the letter actually asks for, and answer that.
+MILO: Tip four. Don't hire Quick Refund Rex.
+REX: Did someone say Quick Refund Rex? Audit problems? I'll make 'em vanish! I don't do paperwork! I don't do PTINs! I barely do Tuesdays!
+(Ace calmly unplugs the radio.)
+ACE: Tip five. Unplug Rex.
+HOOT: Tip six. Never, ever ignore Examiner Hoot.
+ROSA: Tip seven. Eat something. You can't think on an empty stomach.
+HOOT: Rosa's tip is correct. It is not in the Internal Revenue Manual, but it is correct.
+[theme]
+MILO: Lightning round! Hoot, with the hourglass.
+HOOT: The sand is falling. Answer quickly. Married couple, joint return. How many 2848s?
+PENNY: Two! One each!
+HOOT: Correct. Can a 2848 representative cash the client's refund check?
+ACE: No. Never.
+HOOT: Correct. An 8821 gives representation rights. True or false?
+ROSA: False. It only looks. Like me.
+HOOT: Correct. Is an IRS publication legal authority?
+MILO: No! And neither is "Deduct Your Dog dot com."
+HOOT: Correct. Gross income understated by thirty percent. Assessment statute?
+PENNY: Six years.
+HOOT: Correct. The collection statute?
+ACE: Ten years from assessment, with suspensions.
+HOOT: Correct. Which form asks for help from the Taxpayer Advocate Service?
+DEE: Form 911! The signal came back for that!
+HOOT: Correct. Everyone has passed. The audit, however, continues.
+PENNY: Hoot, how is it going? Just tell us.
+HOOT: I cannot discuss an open examination on a podcast. I can only say: it is going.
+MILO: Is it going well?
+HOOT: It is going, Milo Marsh. Bring your mileage log next time. A real one. Not a napkin.
+MILO: What about a placemat?
+HOOT: Good day. See you in Unit 3.
+[pop]
+(The doghouse roof slams shut.)
+PENNY: He's still in the doghouse.
+MILO: Honestly, Penny? That's where I usually end up, too.
+[theme]

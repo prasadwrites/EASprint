@@ -1,0 +1,655 @@
+{
+"id": "p3d4",
+"title": "Season 3, Unit 4: The E-File Gauntlet and Biscuit Ate the Records",
+"seconds": 726,
+"lines": [
+{
+"t": 0.3,
+"stage": "Series finale. Okafor Tax Defense. A new laptop sits on the desk, covered in labels. Hoot's cardboard boxes are stacked by the door. He is packing up."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Ledger Falls, this is it. The Season 3 finale of Unplugged. I'm Milo Marsh, and I'm emotional."
+},
+{
+"t": 8.55,
+"who": "Penny",
+"text": "He's been emotional since breakfast. He cried at the toaster."
+},
+{
+"t": 12.16,
+"who": "Milo",
+"text": "It popped, Penny. It popped like Hoot. It reminded me that everything ends."
+},
+{
+"t": 16.43,
+"who": "Penny",
+"text": "I'm Penny Pocket. Hoot is packing up his file on us."
+},
+{
+"t": 19.63,
+"who": "Ace",
+"text": "And I'm Ace Okafor, enrolled agent. This unit is e-file rules, and accuracy, records and data security. And I spent my whole rolls budget on a laptop."
+},
+{
+"t": 31.6,
+"who": "Rosa",
+"text": "So he hasn't paid rent this month. I'm Rosa. I'm letting it go, because it's the finale."
+},
+{
+"t": 37.01,
+"who": "Ace",
+"text": "I'll pay you in rolls next month, Rosa. Double rolls."
+},
+{
+"t": 40.79,
+"who": "Rosa",
+"text": "You'll buy the rolls from me to pay me in rolls."
+},
+{
+"t": 43.77,
+"who": "Ace",
+"text": "It's a very efficient economy."
+},
+{
+"t": 46.14,
+"who": "Milo",
+"text": "Episode 4.1! The E-File Gauntlet! Ace, how does an office become an e-file provider?"
+},
+{
+"t": 52.38,
+"who": "Ace",
+"text": "You apply online through IRS e-Services. The IRS does a suitability check, and if you pass, you get an EFIN, an electronic filing identification number. Enrolled agents, CPAs and attorneys can give their professional credentials instead of fingerprints. The roles are electronic return originator, transmitter, software developer, and intermediate service provider. And you update the application within thirty days of any changes."
+},
+{
+"t": 82.25,
+"who": "Penny",
+"text": "What's an ERO?"
+},
+{
+"t": 83.66,
+"who": "Ace",
+"text": "An electronic return originator. That's me. The firm that originates the electronic submission of a return to the IRS."
+},
+{
+"t": 92.79,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 93.19,
+"stage": "A stack of moving boxes topples over. Examiner Hoot climbs out of the bottom one, holding a roll of packing tape."
+},
+{
+"t": 93.19,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. Nobody transmits anything until the taxpayer has signed."
+},
+{
+"t": 99.01,
+"who": "Penny",
+"text": "Hoot! You packed yourself?"
+},
+{
+"t": 100.62,
+"who": "Hoot",
+"text": "Examiner Hoot. I was testing the box. It is a good box. I would recommend it to a friend, if I had one."
+},
+{
+"t": 108.61,
+"who": "Rosa",
+"text": "You have us, Hoot."
+},
+{
+"t": 110.33,
+"who": "Hoot",
+"text": "...I will make a note of that."
+},
+{
+"t": 112.51,
+"who": "Hoot",
+"text": "Form 8879, the IRS e-file signature authorization. The taxpayer signs BEFORE transmission. The ERO keeps it for three years from the later of the due date or the date the IRS received the return. It is NOT sent to the IRS unless requested. And Form 8453 is used to transmit required paper documents that go with an e-filed return."
+},
+{
+"t": 140.23,
+"who": "Penny",
+"text": "Sign first. Send second."
+},
+{
+"t": 142.28,
+"who": "Ace",
+"text": "Now the e-file mandate. A preparer who reasonably expects to file eleven or more individual or trust returns in a calendar year must e-file them. The count is firm-wide. Exceptions: the taxpayer chooses to file on paper, and you keep their signed statement; returns that can't be e-filed; and a hardship waiver, on Form 8944. Paper returns prepared by a specified preparer attach Form 8948."
+},
+{
+"t": 171.15,
+"who": "Milo",
+"text": "Eleven! I prepared ten returns once."
+},
+{
+"t": 173.45,
+"who": "Penny",
+"text": "For your bandmates. In crayon."
+},
+{
+"t": 175.56,
+"who": "Milo",
+"text": "They were very colorful returns."
+},
+{
+"t": 177.53,
+"who": "Hoot",
+"text": "They were rejected, Milo Marsh. All ten. One of them was signed \"Kazoo Steve.\""
+},
+{
+"t": 183.55,
+"who": "Milo",
+"text": "That's his legal name!"
+},
+{
+"t": 185.0,
+"who": "Hoot",
+"text": "It is not. I checked. It is Steven."
+},
+{
+"t": 188.25,
+"who": "Ace",
+"text": "And rejects. If a return is rejected, the ERO must notify the taxpayer within twenty-four hours, with the reject code and an explanation. Then there's a perfection period. Retransmit within five calendar days, or file on paper within ten calendar days with an explanation, and the return is treated as timely filed."
+},
+{
+"t": 211.13,
+"who": "Penny",
+"text": "Sign first. Send second. Reject? Twenty-four hours, then five days."
+},
+{
+"t": 216.05,
+"who": "Hoot",
+"text": "The PTIN. Required for anyone paid to prepare, or substantially help prepare, federal returns. That includes enrolled agents, CPAs and attorneys. Renewed every year, it expires December 31, with a fee, and entered on every return the preparer signs. PTIN is the person. EFIN is the e-file firm."
+},
+{
+"t": 239.84,
+"who": "Ace",
+"text": "Our first batch went out yesterday. Every return was accepted."
+},
+{
+"t": 244.28,
+"who": "Milo",
+"text": "Even Rosa's?"
+},
+{
+"t": 245.46,
+"who": "Rosa",
+"text": "Even mine. I made Ace print me the acceptance. I framed it next to Bert."
+},
+{
+"t": 250.23,
+"who": "Rex",
+"text": "Hey, Ledger Falls! Quick Refund Rex here! I e-file without signatures! I e-file without PTINs! I e-file from a van!"
+},
+{
+"t": 258.04,
+"stage": "Ace sighs and unplugs the radio again."
+},
+{
+"t": 258.04,
+"who": "Ace",
+"text": "I'm going to have to get rid of that radio."
+},
+{
+"t": 260.88,
+"who": "Hoot",
+"text": "Leave it. Every time Rex speaks, my binder grows. It is very satisfying."
+},
+{
+"t": 266.7,
+"cue": "Ding!"
+},
+{
+"t": 267.75,
+"who": "Milo",
+"text": "Bonus segment! Ace's new laptop! Ace, show the people!"
+},
+{
+"t": 271.08,
+"who": "Ace",
+"text": "It has a label on the lid that says \"laptop,\" a label on the keyboard that says \"keyboard,\" and a label on the screen that says \"do not label the screen.\""
+},
+{
+"t": 281.62,
+"who": "Penny",
+"text": "Ace, that IS a label on the screen."
+},
+{
+"t": 283.86,
+"who": "Ace",
+"text": "It's a transitional label, Penny."
+},
+{
+"t": 286.34,
+"who": "Hoot",
+"text": "Your laptop has a password, I assume."
+},
+{
+"t": 289.73,
+"who": "Ace",
+"text": "It has multi-factor authentication, encryption, and a password with forty characters."
+},
+{
+"t": 295.91,
+"who": "Hoot",
+"text": "Hoo. I have misjudged you. That is beautiful."
+},
+{
+"t": 299.48,
+"who": "Ace",
+"text": "Thank you, Hoot."
+},
+{
+"t": 300.91,
+"who": "Hoot",
+"text": "Do not let it go to your head. Your crayons are still labeled."
+},
+{
+"t": 305.32,
+"cue": "Hoot stamps something"
+},
+{
+"t": 305.77,
+"who": "Milo",
+"text": "Final episode. Biscuit Ate the Records. Everything is accepted, Hoot is packing up, and Biscuit has been eyeing the records box all week."
+},
+{
+"t": 314.24,
+"cue": "Biscuit barks"
+},
+{
+"t": 314.9,
+"who": "Penny",
+"text": "He ate the box, Ace. He ate a corner of the 2023 folder."
+},
+{
+"t": 319.06,
+"who": "Ace",
+"text": "That's why we have backups. Let's talk about what a preparer must keep. Section 6107: give the taxpayer a copy of the return, and keep a copy, or a list with the taxpayer's name, TIN, tax year and type of return, for three years after the close of the return period. The penalty is $50 per failure, up to $25,000 per period. Section 6060 requires a list of the preparers employed, kept for three years. And Circular 230 requires returning client records on request."
+},
+{
+"t": 355.41,
+"who": "Hoot",
+"text": "Form 8867 due diligence. For the EITC, the child tax credit, additional child tax credit and credit for other dependents, the AOTC, and head of household status. Four requirements. Submit Form 8867. Compute the credit and keep the worksheets. Knowledge: make reasonable inquiries, and document them. Retain records for three years. An inflation-adjusted penalty applies for each failure."
+},
+{
+"t": 384.08,
+"who": "Penny",
+"text": "Keep it three years."
+},
+{
+"t": 385.55,
+"who": "Ace",
+"text": "Then data security. Under the FTC Safeguards Rule, part of the Gramm-Leach-Bliley Act, tax preparers must keep a written information security plan. It includes a qualified individual to run it, a risk assessment, multi-factor authentication, encryption, access controls, staff training, and testing. IRS guidance is in Publication 4557, and Publication 5708 has a template."
+},
+{
+"t": 413.95,
+"who": "Milo",
+"text": "Does Biscuit count as an access control?"
+},
+{
+"t": 416.24,
+"who": "Ace",
+"text": "Biscuit is a security threat, Milo."
+},
+{
+"t": 419.04,
+"cue": "Biscuit barks"
+},
+{
+"t": 419.7,
+"who": "Hoot",
+"text": "Biscuit is not a qualified individual. I have reviewed his credentials. He has none. Only a collar."
+},
+{
+"t": 427.44,
+"who": "Milo",
+"text": "The collar is very official. It has a tag."
+},
+{
+"t": 430.02,
+"who": "Hoot",
+"text": "The tag says \"If found, please return to Milo.\" That is not encryption."
+},
+{
+"t": 435.61,
+"who": "Ace",
+"text": "If there's a data theft, report it quickly to your IRS Stakeholder Liaison, to state agencies, and to law enforcement. And notify the FTC within thirty days if unencrypted information of 500 or more consumers is involved."
+},
+{
+"t": 453.21,
+"who": "Penny",
+"text": "Lock it up."
+},
+{
+"t": 454.41,
+"who": "Hoot",
+"text": "And confidentiality. A preparer may use or disclose return information only to prepare the return, under a specific exception in the regulations, or with the taxpayer's prior written, signed consent. Under section 7216, the criminal penalty is up to $1,000 and up to one year in prison. Under section 6713, the civil penalty is $250 per disclosure, up to $10,000 a year."
+},
+{
+"t": 484.03,
+"who": "Rosa",
+"text": "So Ace can't tell me how much Penny made last year?"
+},
+{
+"t": 487.41,
+"who": "Ace",
+"text": "Not without her signed consent, Rosa."
+},
+{
+"t": 490.07,
+"who": "Rosa",
+"text": "I'll just ask her, then. Penny, how much did you make?"
+},
+{
+"t": 493.38,
+"who": "Penny",
+"text": "Aunt Rosa!"
+},
+{
+"t": 494.54,
+"who": "Rosa",
+"text": "I'm her aunt, Hoot. I'm allowed to ask. I'm not a preparer."
+},
+{
+"t": 498.33,
+"who": "Hoot",
+"text": "That is true. Aunts are not covered by section 7216. Aunts are covered by nothing. Aunts are a force of nature."
+},
+{
+"t": 507.3,
+"who": "Penny",
+"text": "Keep it three years. Lock it up. Share it only with consent."
+},
+{
+"t": 510.82,
+"who": "Milo",
+"text": "And the 2023 folder?"
+},
+{
+"t": 512.73,
+"who": "Ace",
+"text": "We have a scanned copy. Electronic records are fine. Biscuit ate paper, not the backup."
+},
+{
+"t": 518.85,
+"cue": "Biscuit barks"
+},
+{
+"t": 519.51,
+"who": "Milo",
+"text": "He says he's sorry."
+},
+{
+"t": 520.9,
+"who": "Hoot",
+"text": "He is not sorry. He is still chewing."
+},
+{
+"t": 523.95,
+"cue": "Ding!"
+},
+{
+"t": 525.0,
+"who": "Milo",
+"text": "Our very last segment. Hoot is closing his file."
+},
+{
+"t": 527.99,
+"stage": "Hoot places the last folder in the last box. He seals it with packing tape. It takes a very long time."
+},
+{
+"t": 527.99,
+"who": "Hoot",
+"text": "Penny Pocket and Milo Marsh. Your 2025 examination is closed. You paid what you owed. You appealed what you disagreed with, and you won. You are on a payment plan, and you are current. Your representative was prepared, prompt and courteous. Very courteous. Annoyingly courteous."
+},
+{
+"t": 547.96,
+"who": "Ace",
+"text": "Thank you, Hoot."
+},
+{
+"t": 549.39,
+"who": "Hoot",
+"text": "Rosa. Your penalty was abated. Your trust fund payments are designated and on schedule. Your oven, Bertha, is fixed. Your sourdough starter, Gerald, remains not a dependent."
+},
+{
+"t": 562.99,
+"who": "Rosa",
+"text": "He's still family."
+},
+{
+"t": 564.85,
+"who": "Hoot",
+"text": "He is still family. On that, I yield."
+},
+{
+"t": 568.26,
+"who": "Milo",
+"text": "Hoot. Before you go. Can I ask you something?"
+},
+{
+"t": 570.72,
+"who": "Hoot",
+"text": "You may ask, Milo Marsh."
+},
+{
+"t": 573.31,
+"who": "Milo",
+"text": "Do you have a first name?"
+},
+{
+"t": 574.77,
+"stage": "A long pause."
+},
+{
+"t": 574.77,
+"who": "Hoot",
+"text": "I do."
+},
+{
+"t": 576.06,
+"who": "Milo",
+"text": "What is it?"
+},
+{
+"t": 576.97,
+"who": "Hoot",
+"text": "That information is confidential under section 6103."
+},
+{
+"t": 582.37,
+"who": "Penny",
+"text": "Hoot, it's on the Meet the Cast page. It's Horace. Horace Hootington."
+},
+{
+"t": 586.43,
+"who": "Hoot",
+"text": "That page has been referred to my supervisor."
+},
+{
+"t": 590.34,
+"who": "Milo",
+"text": "Horace!"
+},
+{
+"t": 591.18,
+"who": "Hoot",
+"text": "Examiner Hoot."
+},
+{
+"t": 593.09,
+"who": "Rosa",
+"text": "Will you come back, Hoot? You can always visit. The bread box is yours."
+},
+{
+"t": 597.34,
+"who": "Hoot",
+"text": "I will visit the bread box. Professionally."
+},
+{
+"t": 600.68,
+"who": "Ace",
+"text": "Hoot, it's been an honor. Truly."
+},
+{
+"t": 603.16,
+"who": "Hoot",
+"text": "Ace Okafor. You are the most irritatingly compliant person I have ever examined. I mean that as the highest compliment I possess. I keep a file of compliments. You are now most of it."
+},
+{
+"t": 616.51,
+"cue": "Theme music"
+},
+{
+"t": 618.36,
+"who": "Milo",
+"text": "The final lightning round of Ledger Falls Unplugged. Hoot, one last time."
+},
+{
+"t": 622.99,
+"who": "Hoot",
+"text": "One last time. Who signs Form 8879, and when?"
+},
+{
+"t": 628.09,
+"who": "Penny",
+"text": "The taxpayer, before transmission!"
+},
+{
+"t": 630.21,
+"who": "Hoot",
+"text": "Correct. How long does the ERO keep it?"
+},
+{
+"t": 633.47,
+"who": "Ace",
+"text": "Three years from the later of the due date or the IRS received date."
+},
+{
+"t": 638.57,
+"who": "Hoot",
+"text": "Correct. How many returns trigger the e-file mandate?"
+},
+{
+"t": 642.47,
+"who": "Milo",
+"text": "Eleven! Firm-wide! Not counting crayon!"
+},
+{
+"t": 644.82,
+"who": "Hoot",
+"text": "Correct. A return is rejected. How quickly must the ERO notify the taxpayer?"
+},
+{
+"t": 651.35,
+"who": "Rosa",
+"text": "Twenty-four hours."
+},
+{
+"t": 653.29,
+"who": "Hoot",
+"text": "Correct. And to retransmit?"
+},
+{
+"t": 655.78,
+"who": "Lulu",
+"text": "Five calendar days. Or paper within ten, with an explanation."
+},
+{
+"t": 659.67,
+"who": "Penny",
+"text": "Lulu! When did you get here?"
+},
+{
+"t": 661.45,
+"who": "Lulu",
+"text": "I've been here the whole season. I was under the desk. Working on my science project."
+},
+{
+"t": 666.1,
+"who": "Hoot",
+"text": "Correct, young lady. How long does a preparer keep a copy or list of returns?"
+},
+{
+"t": 672.04,
+"who": "Lulu",
+"text": "Three years."
+},
+{
+"t": 673.41,
+"who": "Hoot",
+"text": "Correct. Can a preparer disclose return information without consent, just because it's family?"
+},
+{
+"t": 680.42,
+"who": "Lulu",
+"text": "No. Prior written signed consent, unless an exception applies."
+},
+{
+"t": 684.17,
+"who": "Hoot",
+"text": "Correct. That child will be an examiner one day. I am very afraid."
+},
+{
+"t": 689.38,
+"who": "Lulu",
+"text": "Thank you."
+},
+{
+"t": 690.56,
+"who": "Hoot",
+"text": "Everyone correct. Every single one. Three seasons. Not one penalty I could keep."
+},
+{
+"t": 696.96,
+"who": "Milo",
+"text": "That's Ledger Falls Unplugged! Thank you to Ace, Penny, Aunt Rosa, Gerald, Lulu, Cousin Dee, Biscuit, Grandpa Walt's portrait, and the owl who taught us everything."
+},
+{
+"t": 707.01,
+"who": "Hoot",
+"text": "Examiner Hoot. File on time. Keep your records. Sign under penalties of perjury, and mean it. And never, ever, call me Hooty."
+},
+{
+"t": 716.53,
+"who": "Milo",
+"text": "Bye, Hooty."
+},
+{
+"t": 717.66,
+"who": "Hoot",
+"text": "...Bye, Milo."
+},
+{
+"t": 719.27,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 719.67,
+"stage": "The box by the door is empty. Then the lid lifts, just a little."
+},
+{
+"t": 719.67,
+"who": "Hoot",
+"text": "Same time next year?"
+},
+{
+"t": 722.03,
+"who": "Ace, Penny, Milo and Rosa",
+"text": "NO!"
+},
+{
+"t": 723.36,
+"cue": "Theme music"
+}
+]
+}

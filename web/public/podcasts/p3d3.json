@@ -1,0 +1,635 @@
+{
+"id": "p3d3",
+"title": "Season 3, Unit 3: Milo Can't Pay, Penny Takes It to Appeals",
+"seconds": 901,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 3. Okafor Tax Defense. Hoot's audit report is finished. It is very thick. Milo is wearing a sweater that says \"Payment Plan Pal.\""
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Ledger Falls, this is Unplugged, Season 3, Unit 3. I'm Milo Marsh, and I'm wearing a sweater I made myself. It says \"Payment Plan Pal.\""
+},
+{
+"t": 11.41,
+"who": "Penny",
+"text": "Because Hoot finished the audit, and we owe $14,000."
+},
+{
+"t": 15.29,
+"who": "Milo",
+"text": "Which is a lot of cinnamon rolls."
+},
+{
+"t": 17.22,
+"who": "Rosa",
+"text": "About seven thousand, dear. I did the math."
+},
+{
+"t": 20.43,
+"who": "Ace",
+"text": "I'm Ace Okafor, enrolled agent. This unit is collections, audits and appeals, fixing past returns, and the trust fund recovery penalty. In other words, what happens after."
+},
+{
+"t": 32.99,
+"who": "Penny",
+"text": "After the audit, the fun begins."
+},
+{
+"t": 35.21,
+"who": "Ace",
+"text": "Nothing in this unit is fun, Penny."
+},
+{
+"t": 37.65,
+"who": "Penny",
+"text": "I know. I was being brave."
+},
+{
+"t": 39.61,
+"who": "Milo",
+"text": "Episode 3.1! Milo Can't Pay! Ace, I can't pay $14,000 today. I have $212 and a hen."
+},
+{
+"t": 48.19,
+"who": "Ace",
+"text": "You have options. A short-term payment plan, up to 180 days. A guaranteed installment agreement, if you owe $10,000 or less of tax, have a clean five-year filing and payment history, and can pay within three years. A streamlined installment agreement, if you owe $50,000 or less, for up to seventy-two months, with no financial statement. Interest and penalties continue, and the failure-to-pay penalty drops to a quarter percent a month during an installment agreement."
+},
+{
+"t": 82.4,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 82.8,
+"stage": "The office shredder whirs, then spits out Examiner Hoot instead of paper."
+},
+{
+"t": 82.8,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. Milo Marsh may not shred his way out of $14,000."
+},
+{
+"t": 88.71,
+"who": "Milo",
+"text": "Hoot! You came out of the SHREDDER?"
+},
+{
+"t": 90.31,
+"who": "Hoot",
+"text": "Examiner Hoot. The shredder is a time-honored hiding place. Also, it was off. I check. I always check."
+},
+{
+"t": 97.99,
+"who": "Penny",
+"text": "He's in one piece."
+},
+{
+"t": 99.46,
+"who": "Hoot",
+"text": "I am always in one piece, Penny Pocket. I am government issue."
+},
+{
+"t": 104.6,
+"who": "Hoot",
+"text": "The offer in compromise. Form 656, with Form 433-A or 433-B, the OIC versions. A $205 application fee. Twenty percent of a lump-sum offer, or the first periodic payment, paid with the offer. The fee and payment are waived for low income taxpayers. The offer is accepted if it meets reasonable collection potential. No levy while it's pending. The collection statute is suspended. And all returns must be filed."
+},
+{
+"t": 140.54,
+"who": "Milo",
+"text": "Can I offer the hen?"
+},
+{
+"t": 141.83,
+"who": "Hoot",
+"text": "The hen walked away in Season 2, Milo Marsh. You no longer have the hen."
+},
+{
+"t": 147.65,
+"who": "Milo",
+"text": "I have the memory of the hen."
+},
+{
+"t": 149.29,
+"who": "Hoot",
+"text": "Memories are not reasonable collection potential."
+},
+{
+"t": 153.13,
+"who": "Ace",
+"text": "Liens and levies. A lien is a legal claim against property. The Notice of Federal Tax Lien is the public notice, and it's released within thirty days after the tax is paid. A levy is an actual seizure of property. It requires notice and demand for payment, plus a Final Notice of Intent to Levy at least thirty days before. And a bank holds levied funds for twenty-one days before sending them."
+},
+{
+"t": 179.93,
+"who": "Penny",
+"text": "Lien equals a claim. Levy equals a grab."
+},
+{
+"t": 182.89,
+"who": "Hoot",
+"text": "Collection due process. Form 12153, within thirty days of the final levy notice, or within the thirty days after the lien notice's five-business-day window. A hearing with Appeals, the levy generally suspended, and Tax Court review available. Missed it? An equivalent hearing within one year, but no Tax Court review."
+},
+{
+"t": 207.25,
+"who": "Ace",
+"text": "Currently not collectible status pauses collection when the taxpayer can't pay basic living expenses. The debt, interest and penalties still continue, refunds are offset, and the collection statute keeps running. Form 1127 asks for an extension to pay for undue hardship. And seriously delinquent tax debt, over an inflation-adjusted $60,000 or so, can lead to passport denial or revocation, unless you're in an installment agreement, an offer in compromise, a collection due process hearing, or an innocent spouse claim."
+},
+{
+"t": 245.99,
+"who": "Milo",
+"text": "My passport! I need it for my European kazoo tour!"
+},
+{
+"t": 249.09,
+"who": "Penny",
+"text": "Milo, you don't have a European kazoo tour."
+},
+{
+"t": 251.78,
+"who": "Milo",
+"text": "Not with that attitude, Penny."
+},
+{
+"t": 253.46,
+"who": "Ace",
+"text": "You owe $14,000, Milo. Not $60,000. Your passport is fine. We'll set up a streamlined installment agreement."
+},
+{
+"t": 263.6,
+"who": "Milo",
+"text": "Payment Plan Pal!"
+},
+{
+"t": 264.88,
+"who": "Hoot",
+"text": "Your sweater is noted."
+},
+{
+"t": 267.25,
+"cue": "Ding!"
+},
+{
+"t": 268.3,
+"who": "Milo",
+"text": "Episode 3.2! Penny Takes It to Appeals! Penny reread Hoot's report with a highlighter, and one adjustment is very, very yellow."
+},
+{
+"t": 276.94,
+"who": "Penny",
+"text": "Hoot disallowed my mileage driving to Rosa's Rolls for partnership work. And I had a REAL log. In a binder. With tabs."
+},
+{
+"t": 284.71,
+"who": "Ace",
+"text": "Penny's log is beautiful. Three colors."
+},
+{
+"t": 287.72,
+"who": "Hoot",
+"text": "I have reviewed the tabs. They are excellent tabs. I disallowed it anyway, because I believed the trips were commuting."
+},
+{
+"t": 296.05,
+"who": "Penny",
+"text": "They were not commuting! I was going to partnership meetings!"
+},
+{
+"t": 299.24,
+"who": "Ace",
+"text": "Let's go through the process. Exams can be correspondence, office or field, and contact starts by mail. An exam ends with proposed changes, or a no-change letter. With proposed changes, the taxpayer gets a thirty-day letter, and can request Appeals, which is independent of Exam."
+},
+{
+"t": 319.46,
+"who": "Hoot",
+"text": "For more than $25,000 for any period, a formal written protest. Publication 5 explains it. For $25,000 or less per period, a small case request."
+},
+{
+"t": 333.26,
+"who": "Penny",
+"text": "The mileage was about $3,000. Small case request."
+},
+{
+"t": 337.45,
+"who": "Ace",
+"text": "If Appeals doesn't settle, or you skip Appeals, the IRS issues a notice of deficiency, the ninety-day letter. You can petition the Tax Court within ninety days, or 150 days if the notice is addressed to someone outside the U.S. And you don't have to pay first. Miss the deadline, and the tax is assessed."
+},
+{
+"t": 359.64,
+"who": "Hoot",
+"text": "Thirty days to Appeals. Ninety days to Tax Court."
+},
+{
+"t": 364.02,
+"who": "Ace",
+"text": "The small tax case procedure, for $50,000 or less per year, including penalties. It's informal, but the decision is final. It can't be appealed and it sets no precedent. Regular Tax Court decisions can be appealed to a U.S. Court of Appeals."
+},
+{
+"t": 381.66,
+"who": "Ace",
+"text": "Or the refund route. Pay the tax, file a claim for refund, then sue in U.S. District Court or the Court of Federal Claims, after the claim is denied or six months pass without action, and within two years of the notice of disallowance."
+},
+{
+"t": 398.35,
+"who": "Penny",
+"text": "And Appeals?"
+},
+{
+"t": 399.51,
+"who": "Ace",
+"text": "You won, Penny. Appeals agreed your trips to the partnership were business travel, not commuting."
+},
+{
+"t": 405.95,
+"who": "Penny",
+"text": "I WON!"
+},
+{
+"t": 406.94,
+"who": "Rosa",
+"text": "She won! Free rolls for everyone!"
+},
+{
+"t": 409.43,
+"who": "Hoot",
+"text": "Appeals is independent of Exam. It is their right to disagree with me. It is my right to sulk."
+},
+{
+"t": 416.83,
+"who": "Milo",
+"text": "Hoot, are you sulking?"
+},
+{
+"t": 418.16,
+"who": "Hoot",
+"text": "I am processing. In the corner. With my clipboard."
+},
+{
+"t": 422.32,
+"who": "Rosa",
+"text": "Have a roll, Hoot. A victory roll."
+},
+{
+"t": 424.99,
+"who": "Hoot",
+"text": "It is not MY victory."
+},
+{
+"t": 427.22,
+"who": "Rosa",
+"text": "It's a consolation roll, then."
+},
+{
+"t": 429.66,
+"who": "Hoot",
+"text": "...I will accept a consolation roll."
+},
+{
+"t": 432.34,
+"cue": "Hoot stamps something"
+},
+{
+"t": 432.79,
+"who": "Milo",
+"text": "Episode 3.3! Do-Over! Penny won in Appeals. Inspired, I've decided to fix the past too. I have a cardboard box and a plan."
+},
+{
+"t": 441.82,
+"who": "Penny",
+"text": "The box says \"TIME MACHINE\" in marker."
+},
+{
+"t": 444.23,
+"who": "Milo",
+"text": "Because we're going back to fix 2023!"
+},
+{
+"t": 446.99,
+"stage": "Milo climbs into the box. Something inside it pops."
+},
+{
+"t": 446.99,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 447.39,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. There is no room in the time machine."
+},
+{
+"t": 451.39,
+"who": "Milo",
+"text": "Hoot! You were already in my time machine!"
+},
+{
+"t": 453.61,
+"who": "Hoot",
+"text": "Examiner Hoot. I have been in every time machine. They are all boxes."
+},
+{
+"t": 458.97,
+"who": "Ace",
+"text": "To amend a return, file Form 1040-X. For a refund, the claim must be filed by the later of three years from filing, where early returns count as filed on the due date, or two years from paying the tax. The refund is limited to tax paid during the lookback period. And Form 843 asks to abate penalties, interest and certain other taxes."
+},
+{
+"t": 483.04,
+"who": "Hoot",
+"text": "The penalties. Failure to file: five percent per month, up to twenty-five percent. A minimum penalty applies if the return is more than sixty days late. Failure to pay: one-half percent per month, up to twenty-five percent. A quarter percent during an installment agreement. One percent after a levy notice. If both apply in a month, the filing penalty is reduced by the paying penalty, so five percent combined. And interest on top."
+},
+{
+"t": 510.87,
+"who": "Ace",
+"text": "The accuracy-related penalty is twenty percent of the underpayment for negligence, a substantial understatement or a valuation misstatement. Forty percent for a gross valuation misstatement. For individuals, a substantial understatement is more than the larger of ten percent of the correct tax or $5,000. Defenses include reasonable cause and good faith, and disclosure with a reasonable basis."
+},
+{
+"t": 538.28,
+"who": "Hoot",
+"text": "The civil fraud penalty. Seventy-five percent of the underpayment due to fraud. The IRS must prove fraud by clear and convincing evidence. There is no time limit on assessment. On a joint return, it applies only to the spouse who committed the fraud. And fraudulent failure to file: fifteen percent a month, up to seventy-five percent."
+},
+{
+"t": 562.59,
+"who": "Penny",
+"text": "Five percent to file late. Half a percent to pay late. Twenty percent if wrong. Seventy-five percent if fraud."
+},
+{
+"t": 569.8,
+"who": "Ace",
+"text": "And penalty relief. First-time abatement applies to failure to file, failure to pay and failure to deposit, if there were no penalties in the prior three years, all returns are filed, and the tax is paid or arranged. Reasonable cause means you used ordinary business care and prudence, but something like illness, a death, a disaster or no access to records prevented compliance. You can ask by phone, by letter or on Form 843. And interest on tax is abated only for IRS ministerial or managerial delay."
+},
+{
+"t": 607.62,
+"who": "Rosa",
+"text": "That's me. I filed late because I was in the hospital."
+},
+{
+"t": 611.12,
+"who": "Ace",
+"text": "Rosa's late filing penalty was abated for reasonable cause. Serious illness. She had the hospital records."
+},
+{
+"t": 618.98,
+"who": "Rosa",
+"text": "I had my gallbladder out. I named it Gerald Two."
+},
+{
+"t": 622.43,
+"who": "Penny",
+"text": "Aunt Rosa, you can't name everything Gerald."
+},
+{
+"t": 625.23,
+"who": "Rosa",
+"text": "I can name my organs whatever I like, Penny."
+},
+{
+"t": 628.28,
+"who": "Hoot",
+"text": "Gerald Two is not on any return either."
+},
+{
+"t": 631.92,
+"who": "Milo",
+"text": "So the time machine didn't work?"
+},
+{
+"t": 633.67,
+"who": "Hoot",
+"text": "A 1040-X is the only time machine the IRS recognizes, Milo Marsh."
+},
+{
+"t": 640.67,
+"cue": "Ding!"
+},
+{
+"t": 641.72,
+"who": "Milo",
+"text": "Final episode! Rosa's Payroll Panic! Rosa's penalty got abated, she celebrated with free rolls, and then the oven exploded. Mostly."
+},
+{
+"t": 650.68,
+"who": "Rosa",
+"text": "Bertha had a bad day. I needed a new part, fast, so I used the payroll tax money. Just for a little while."
+},
+{
+"t": 657.58,
+"who": "Ace",
+"text": "Rosa. That's trust fund money."
+},
+{
+"t": 659.82,
+"who": "Rosa",
+"text": "I know that NOW, dear."
+},
+{
+"t": 661.86,
+"who": "Ace",
+"text": "Trust fund taxes are the income tax withheld from employees' pay, plus the employees' share of Social Security and Medicare, plus collected excise taxes. They're held in trust for the government. They don't include the employer's matching share of FICA, or FUTA."
+},
+{
+"t": 679.95,
+"who": "Hoot",
+"text": "The trust fund recovery penalty. One hundred percent of the unpaid trust fund taxes, assessed personally against each responsible person who acted willfully. Responsible means status, duty and authority over which bills get paid. Willful means you knew about the unpaid taxes and paid others instead, or recklessly disregarded them. No bad motive is required."
+},
+{
+"t": 706.26,
+"who": "Penny",
+"text": "Their money, held in trust. Spend it and it's one hundred percent on you."
+},
+{
+"t": 710.5,
+"who": "Rosa",
+"text": "I paid the oven repairman instead of the IRS. I'm responsible, and I knew."
+},
+{
+"t": 715.67,
+"who": "Ace",
+"text": "Then you're the responsible person. Here's the process. The IRS interviews you on Form 4180. Then it sends Letter 1153, the proposed assessment. You have sixty days to appeal, or seventy-five if you're outside the U.S. Form 2751 is how you agree. If you don't respond, it's assessed."
+},
+{
+"t": 738.52,
+"who": "Hoot",
+"text": "The penalty is joint and several among all responsible persons, but the total is collected only once. A person who pays can seek contribution from others. And voluntary payments by the business can be designated to the trust fund portion."
+},
+{
+"t": 756.2,
+"who": "Ace",
+"text": "Timing. Forms 941 for a year are deemed filed on April 15 of the next year, and the trust fund recovery penalty generally must be assessed within three years after that. Defenses are lack of authority, meaning you weren't responsible, or lack of knowledge, meaning you weren't willful."
+},
+{
+"t": 776.11,
+"who": "Penny",
+"text": "Am I a responsible person? I own part of the bakery."
+},
+{
+"t": 779.72,
+"who": "Ace",
+"text": "Do you sign the checks, or decide which bills get paid?"
+},
+{
+"t": 783.31,
+"who": "Penny",
+"text": "No. I just eat the rolls."
+},
+{
+"t": 785.16,
+"who": "Ace",
+"text": "Then you likely lack the authority. Rosa signs the checks."
+},
+{
+"t": 789.11,
+"who": "Rosa",
+"text": "I'll pay it. Ace, set up the payments, and designate them to the trust fund portion."
+},
+{
+"t": 794.14,
+"who": "Ace",
+"text": "Already drafted."
+},
+{
+"t": 795.83,
+"who": "Rosa",
+"text": "I'm so proud of you, dear. You used to be a little boy who labeled his crayons."
+},
+{
+"t": 800.66,
+"who": "Ace",
+"text": "I still label my crayons, Rosa."
+},
+{
+"t": 803.27,
+"who": "Milo",
+"text": "Hoot, do you have crayons?"
+},
+{
+"t": 804.83,
+"who": "Hoot",
+"text": "I have one crayon. It is beige. It is for signing penalty notices."
+},
+{
+"t": 810.53,
+"cue": "Theme music"
+},
+{
+"t": 812.38,
+"who": "Milo",
+"text": "Lightning round! Hoot, from the time machine."
+},
+{
+"t": 814.82,
+"who": "Hoot",
+"text": "It is roomier than it looks. Streamlined installment agreement, maximum balance?"
+},
+{
+"t": 820.76,
+"who": "Milo",
+"text": "$50,000! Payment Plan Pal!"
+},
+{
+"t": 823.32,
+"who": "Hoot",
+"text": "Correct. The offer in compromise application fee?"
+},
+{
+"t": 827.33,
+"who": "Penny",
+"text": "$205, waived for low income."
+},
+{
+"t": 830.68,
+"who": "Hoot",
+"text": "Correct. Lien or levy: which one grabs?"
+},
+{
+"t": 834.19,
+"who": "Rosa",
+"text": "The levy. The lien just claims."
+},
+{
+"t": 836.67,
+"who": "Hoot",
+"text": "Correct. Days to petition the Tax Court after a ninety-day letter, addressed in the U.S.?"
+},
+{
+"t": 843.41,
+"who": "Ace",
+"text": "Ninety days. No prepayment required."
+},
+{
+"t": 846.37,
+"who": "Hoot",
+"text": "Correct. A small tax case decision. Can it be appealed?"
+},
+{
+"t": 850.77,
+"who": "Penny",
+"text": "No. It's final and sets no precedent."
+},
+{
+"t": 853.41,
+"who": "Hoot",
+"text": "Correct. The civil fraud penalty?"
+},
+{
+"t": 856.29,
+"who": "Milo",
+"text": "Seventy-five percent! Which I have never done!"
+},
+{
+"t": 858.79,
+"who": "Hoot",
+"text": "Correct, and noted. Does the TFRP include the employer's share of FICA?"
+},
+{
+"t": 864.73,
+"who": "Rosa",
+"text": "No, dear. Only the employees' money. The trust fund part."
+},
+{
+"t": 868.77,
+"who": "Hoot",
+"text": "Correct. Everyone correct. Milo Marsh is on a payment plan. Penny Pocket won in Appeals. Rosa Rolls is paying her penalty. This is the most compliant room in Ledger Falls."
+},
+{
+"t": 882.34,
+"who": "Rosa",
+"text": "It's Rosa, Hoot. Not Rosa Rolls."
+},
+{
+"t": 885.15,
+"who": "Hoot",
+"text": "I am aware. It is a term of endearment. Do not tell anyone. See you in Unit 4, the finale."
+},
+{
+"t": 892.35,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 892.75,
+"who": "Penny",
+"text": "He went back in the shredder."
+},
+{
+"t": 894.44,
+"who": "Milo",
+"text": "Should we... turn it on?"
+},
+{
+"t": 895.87,
+"who": "Ace, Penny and Rosa",
+"text": "NO."
+},
+{
+"t": 897.35,
+"who": "Milo",
+"text": "I was kidding! Mostly."
+},
+{
+"t": 898.89,
+"cue": "Theme music"
+}
+]
+}

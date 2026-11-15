@@ -1,0 +1,974 @@
+{
+"id": "p1d1",
+"title": "Unit 1: Shoebox Day and the One-Minute Marriage",
+"seconds": 1392,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 1. January 2026. The hall closet of Penny and Milo's house, now \"Studio A\". The walls are padded with Penny's coupon binders."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Hello, Ledger Falls! You're listening to Ledger Falls Unplugged, the only tax podcast recorded in a closet, by a man who is also its head of marketing. I'm Milo Marsh."
+},
+{
+"t": 13.18,
+"who": "Penny",
+"text": "And I'm Penny Pocket, his wife of one year and about forty seconds. Milo, why is the microphone duct-taped to a mop?"
+},
+{
+"t": 20.63,
+"who": "Milo",
+"text": "Studio budget, babe. Our first sponsor fell through."
+},
+{
+"t": 23.66,
+"who": "Penny",
+"text": "Your first sponsor was Milo's Mutts. You were the owner."
+},
+{
+"t": 27.01,
+"who": "Milo",
+"text": "And I'm still not returning my own calls. Very professional. Our expert today is Ace Okafor, enrolled agent. Ace, say hi to the people."
+},
+{
+"t": 36.44,
+"who": "Ace",
+"text": "Hi, everyone. Fun fact: an enrolled agent is licensed by the IRS and can represent taxpayers before it."
+},
+{
+"t": 44.96,
+"who": "Penny",
+"text": "Ace, you say \"fun fact\" right before the least fun facts in America."
+},
+{
+"t": 49.2,
+"who": "Ace",
+"text": "That's not true. I laminated a card of fun facts. It's in my bag, between the teal highlighter and the backup teal highlighter."
+},
+{
+"t": 57.55,
+"who": "Milo",
+"text": "Today is Unit 1. Getting started, filing status, dependents, the mailbox, and foreign accounts. Ace, where does a tax return start?"
+},
+{
+"t": 65.85,
+"who": "Ace",
+"text": "With people. Before any money, you find out who is on the return. Name, taxpayer identification number and date of birth for the taxpayer, the spouse and every dependent, and they need to match Social Security's records."
+},
+{
+"t": 81.15,
+"who": "Penny",
+"text": "People first. Papers second. Numbers last. I embroidered that on a pillow. It was on sale."
+},
+{
+"t": 86.8,
+"who": "Milo",
+"text": "Of course it was."
+},
+{
+"t": 88.13,
+"who": "Ace",
+"text": "Every person needs a number. A Social Security number comes from the Social Security Administration. If someone can't get one, they apply for an ITIN on Form W-7. And a child in a pending adoption can get an ATIN on Form W-7A."
+},
+{
+"t": 105.69,
+"who": "Milo",
+"text": "My bandmate Sven has an ITIN! So he can work at the music store now."
+},
+{
+"t": 110.02,
+"who": "Ace",
+"text": "No. An ITIN is for tax filing only. It doesn't authorize work in the U.S., and it doesn't make anyone eligible for Social Security benefits."
+},
+{
+"t": 120.88,
+"who": "Milo",
+"text": "I'm going to need to un-tell Sven some things."
+},
+{
+"t": 123.48,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 123.88,
+"stage": "The laundry hamper lid flies open. Examiner Hoot climbs out, adjusting his green eyeshade."
+},
+{
+"t": 123.88,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. Nobody un-tells anything until I have reviewed it."
+},
+{
+"t": 129.38,
+"who": "Penny",
+"text": "Hoot! Were you in our laundry the whole time?"
+},
+{
+"t": 131.78,
+"who": "Hoot",
+"text": "Examiner Hoot. And I was conducting an observation. Your hamper is very poorly organized, Penny Pocket."
+},
+{
+"t": 139.95,
+"who": "Milo",
+"text": "Hooty! Welcome to the show!"
+},
+{
+"t": 141.52,
+"who": "Hoot",
+"text": "Do not call me Hooty. I have a clipboard and a federal mandate. I will be checking every statement on this program for accuracy."
+},
+{
+"t": 150.6,
+"who": "Ace",
+"text": "That's fair. Hoot, do you want to do birthdays?"
+},
+{
+"t": 153.44,
+"who": "Hoot",
+"text": "I live for birthdays. Not for cake. For ages. A person reaches an age on the day BEFORE their birthday. Someone born on January 1, 1961 is sixty-five for tax year 2025. Not 2026. 2025."
+},
+{
+"t": 171.97,
+"who": "Penny",
+"text": "So you celebrate a day early?"
+},
+{
+"t": 173.74,
+"who": "Hoot",
+"text": "I do not celebrate. I note it."
+},
+{
+"t": 176.54,
+"who": "Ace",
+"text": "And being sixty-five matters because it adds an extra standard deduction. For 2025, that's $2,000 if you're unmarried, and $1,600 for each married spouse who's sixty-five or older."
+},
+{
+"t": 192.12,
+"who": "Milo",
+"text": "Aunt Rosa was born on January 1! She's going to love being old a whole year sooner."
+},
+{
+"t": 197.86,
+"who": "Penny",
+"text": "Do not say it like that to Aunt Rosa. She will put you in a pie."
+},
+{
+"t": 201.38,
+"who": "Ace",
+"text": "Next, last year's return. It's a treasure map. You look for carryovers, like a capital loss or charitable contributions you couldn't use, an overpayment applied to this year, depreciation that's still running, state refunds, and last year's AGI, which you need to sign an e-filed return."
+},
+{
+"t": 221.6,
+"who": "Milo",
+"text": "Wait. My leftover capital loss from the Great Kazoo Investment carries over?"
+},
+{
+"t": 226.28,
+"who": "Ace",
+"text": "It does. A capital loss you couldn't use carries forward to the next year."
+},
+{
+"t": 230.76,
+"who": "Milo",
+"text": "Finally, the kazoos pay off."
+},
+{
+"t": 232.56,
+"who": "Penny",
+"text": "They paid off negative eight thousand dollars, Milo."
+},
+{
+"t": 235.76,
+"who": "Ace",
+"text": "Then residency. Citizens and resident aliens report worldwide income on Form 1040. Nonresident aliens report mostly U.S. income on Form 1040-NR. You're a resident alien if you pass the green card test or the substantial presence test."
+},
+{
+"t": 255.19,
+"who": "Hoot",
+"text": "The substantial presence test. My favorite fraction party."
+},
+{
+"t": 259.74,
+"who": "Penny",
+"text": "You have a favorite fraction party?"
+},
+{
+"t": 261.81,
+"who": "Hoot",
+"text": "I have three. Listen carefully. You must be in the U.S. at least thirty-one days this year, AND this year's days plus one-third of last year's days plus one-sixth of the year before must add up to at least 183."
+},
+{
+"t": 278.2,
+"who": "Ace",
+"text": "And people love to add all three years at full weight. That's the trap. One-third, one-sixth. Also, days as an exempt individual, like many students on F or J visas, don't count."
+},
+{
+"t": 291.96,
+"who": "Hoot",
+"text": "And if a person holds a green card, they are a resident alien for that year, even if they visited for only a few days. Do not run the day count when the green card already answered the question. I will know."
+},
+{
+"t": 306.4,
+"who": "Milo",
+"text": "How will you know?"
+},
+{
+"t": 307.5,
+"who": "Hoot",
+"text": "I am always in the hamper, Milo Marsh."
+},
+{
+"t": 310.93,
+"cue": "Ba-dum-tss"
+},
+{
+"t": 311.83,
+"who": "Milo",
+"text": "Okay, sponsor break! Today's episode is brought to you by Penny's Shoebox. Penny, tell the people about the shoebox."
+},
+{
+"t": 319.13,
+"who": "Penny",
+"text": "It's not a shoebox, it's an archive. It has every receipt from 2025, a gum wrapper from 2019 and a coupon for soup that expires in 2031."
+},
+{
+"t": 329.71,
+"who": "Ace",
+"text": "Here's how I sort a shoebox. Four piles. Who: the people. Money in: the income. Money out: deductions and credits. Already paid: withholding and estimated payments. And a missing pile is a question, not a zero."
+},
+{
+"t": 344.88,
+"who": "Penny",
+"text": "Ace made labels for each pile."
+},
+{
+"t": 346.99,
+"who": "Ace",
+"text": "I made labels for the labels. Lamination is a love language."
+},
+{
+"t": 351.43,
+"who": "Hoot",
+"text": "The IP PIN. Hoo. Listen. An Identity Protection PIN is six digits, and it's new every year. Anyone can opt in. If one has been issued, it must be on the return, or the e-file is rejected."
+},
+{
+"t": 366.39,
+"who": "Milo",
+"text": "Six digits. Penny, what's ours?"
+},
+{
+"t": 368.36,
+"who": "Penny",
+"text": "I'm not saying it on a podcast, Milo!"
+},
+{
+"t": 370.69,
+"who": "Hoot",
+"text": "Correct answer. Penny Pocket gets a gold star. I do not give gold stars. That was a beige star."
+},
+{
+"t": 378.03,
+"cue": "Ding!"
+},
+{
+"t": 379.08,
+"who": "Milo",
+"text": "Segment two! Filing status. Also known as the night I got married at 11:59 PM on New Year's Eve."
+},
+{
+"t": 386.63,
+"who": "Penny",
+"text": "Which was romantic."
+},
+{
+"t": 388.17,
+"who": "Milo",
+"text": "Which was romantic, and ALSO, according to Ace, means we were married for the whole year."
+},
+{
+"t": 393.21,
+"who": "Ace",
+"text": "Right. Marital status is decided on December 31. Married on that day, even at 11:59 PM, means married for the entire year. A final decree of divorce or separate maintenance by December 31 means unmarried for the whole year."
+},
+{
+"t": 411.98,
+"who": "Hoot",
+"text": "We only check December 31. Love is a one-day audit."
+},
+{
+"t": 417.48,
+"who": "Penny",
+"text": "That's the least romantic thing anyone has ever said in this closet."
+},
+{
+"t": 421.25,
+"who": "Hoot",
+"text": "The closet has heard worse. I have been in it."
+},
+{
+"t": 424.73,
+"who": "Milo",
+"text": "Let's get Cousin Dee on the line from the oil rig. Dee, can you hear us?"
+},
+{
+"t": 428.69,
+"who": "Dee",
+"text": "Can you hear me now? Hi, cuz! Congrats again on the wedding! Guess what, my divorce was final the same day!"
+},
+{
+"t": 434.86,
+"who": "Ace",
+"text": "Then you're unmarried for all of 2025, Dee."
+},
+{
+"t": 438.66,
+"who": "Dee",
+"text": "Great, so I file as... as..."
+},
+{
+"t": 441.52,
+"cue": "The video call glitches"
+},
+{
+"t": 442.17,
+"who": "Dee",
+"text": "...ingle!"
+},
+{
+"t": 443.62,
+"who": "Penny",
+"text": "Single. She said single. The signal ate the S."
+},
+{
+"t": 446.74,
+"who": "Ace",
+"text": "One more rule there. If a spouse dies during the year, the survivor is still considered married for that year and can file a joint return."
+},
+{
+"t": 456.4,
+"who": "Milo",
+"text": "Ace, give us the five statuses with the 2025 standard deductions. Hoot, do a drumroll."
+},
+{
+"t": 462.68,
+"who": "Hoot",
+"text": "I do not do drumrolls. I do audits."
+},
+{
+"t": 465.88,
+"cue": "Drumroll"
+},
+{
+"t": 467.63,
+"who": "Hoot",
+"text": "That was not me."
+},
+{
+"t": 469.52,
+"who": "Ace",
+"text": "Single or married filing separately, $15,750. Head of household, $23,625. Married filing jointly or qualifying surviving spouse, $31,500. Those numbers include the July 2025 law change. And if more than one status fits, the taxpayer can choose the one with the lowest tax."
+},
+{
+"t": 496.57,
+"who": "Penny",
+"text": "So should Milo and I file together or apart?"
+},
+{
+"t": 499.42,
+"who": "Ace",
+"text": "Most couples file jointly. On a joint return you both sign, and each of you is responsible for the whole tax, even the part only one of you earned."
+},
+{
+"t": 509.79,
+"who": "Penny",
+"text": "So I'm responsible for the kazoos."
+},
+{
+"t": 511.96,
+"who": "Milo",
+"text": "We're a team, babe."
+},
+{
+"t": 513.22,
+"who": "Ace",
+"text": "Married filing separately usually costs more. If one spouse itemizes, the other must itemize too, so their standard deduction is zero. And separate filers can't take the education credits or the student loan interest deduction."
+},
+{
+"t": 529.59,
+"who": "Hoot",
+"text": "Head of household. Three keys. Unmarried or considered unmarried on the last day of the year. Paid more than half the cost of keeping up a home for the year. And a qualifying person lived there more than half the year. One exception: a dependent parent does not have to live with you, as long as you pay more than half the cost of the parent's home."
+},
+{
+"t": 552.15,
+"who": "Ace",
+"text": "And a married person can be \"considered unmarried\" for head of household if they file separately, pay more than half the cost of the home, their spouse didn't live there during the last six months of the year, and the home was their child's main home for more than half the year, a child they can claim as a dependent."
+},
+{
+"t": 571.74,
+"who": "Milo",
+"text": "And the qualifying surviving spouse?"
+},
+{
+"t": 573.88,
+"who": "Ace",
+"text": "In the year a spouse dies, the survivor can usually file jointly. For the next two years, they can use qualifying surviving spouse if they haven't remarried, could have filed jointly in the year of death, and keep up a home where their dependent child or stepchild lived all year. It uses the joint rates and the $31,500 standard deduction."
+},
+{
+"t": 597.77,
+"who": "Hoot",
+"text": "Who must file. For 2025, a taxpayer under sixty-five generally must file if gross income is at least the standard deduction for their status. Single, $15,750. Head of household, $23,625. Married filing jointly, $31,500. And married filing separately, any age: five dollars."
+},
+{
+"t": 624.38,
+"who": "Milo",
+"text": "Five dollars?! Penny found five dollars in the couch!"
+},
+{
+"t": 627.35,
+"who": "Penny",
+"text": "If I filed separately, I'd have to file a return because of the couch."
+},
+{
+"t": 631.51,
+"who": "Hoot",
+"text": "The couch is income. I have always suspected the couch."
+},
+{
+"t": 635.94,
+"who": "Ace",
+"text": "Some people must file no matter what. Net earnings from self-employment of $400 or more. Advance premium tax credit paid for them or a family member. Owing a special tax, like the extra tax on an IRA or HSA, or household employment taxes. Or church employee income of $108.28 or more."
+},
+{
+"t": 660.45,
+"who": "Hoot",
+"text": "And deadlines. A 2025 return is due April 15, 2026. Form 4868 gives an automatic six-month extension, to October 15, 2026. It is an extension of time to file. NOT to pay."
+},
+{
+"t": 678.75,
+"who": "Milo",
+"text": "Not to pay?"
+},
+{
+"t": 679.8,
+"who": "Hoot",
+"text": "Interest runs on any tax unpaid after April 15. Say it with me. Extension to file, not to pay."
+},
+{
+"t": 688.29,
+"who": "Milo and Penny",
+"text": "Extension to file, not to pay."
+},
+{
+"t": 690.51,
+"who": "Milo",
+"text": "Wait, I don't think I'm allowed to be two people. Hold on."
+},
+{
+"t": 693.72,
+"who": "Penny",
+"text": "Just say it, Milo."
+},
+{
+"t": 695.19,
+"who": "Milo",
+"text": "Extension to file, not to pay."
+},
+{
+"t": 697.2,
+"who": "Ace",
+"text": "And U.S. citizens and residents living abroad get an automatic two months, to June 15. Dee, that's you."
+},
+{
+"t": 705.33,
+"who": "Dee",
+"text": "Can you hear me now? I heard June!"
+},
+{
+"t": 707.96,
+"cue": "Hoot stamps something"
+},
+{
+"t": 708.41,
+"who": "Milo",
+"text": "Segment three! Dependents. Lulu, come in, you're on the air."
+},
+{
+"t": 711.54,
+"who": "Lulu",
+"text": "Hello. I am Lulu. I am nine. I am a qualifying relative, not a qualifying child, and I would like that on the record."
+},
+{
+"t": 718.21,
+"who": "Hoot",
+"text": "It is on the record. I have a record of everything, young lady."
+},
+{
+"t": 723.07,
+"who": "Lulu",
+"text": "I know. You have forty identical eyeshades. I counted them during my science project."
+},
+{
+"t": 728.11,
+"who": "Hoot",
+"text": "They are regulation."
+},
+{
+"t": 730.16,
+"who": "Lulu",
+"text": "There's no regulation about eyeshades. I checked."
+},
+{
+"t": 733.05,
+"who": "Ace",
+"text": "Lulu's right about the dependent part. A dependent is either a qualifying child or a qualifying relative. Two separate clubs. You only need to get into one."
+},
+{
+"t": 744.45,
+"who": "Lulu",
+"text": "The qualifying child tests are Relationship, Age, Residency, Support and Joint return. Really Annoying Relatives Steal Juice. Milo steals my juice."
+},
+{
+"t": 753.39,
+"who": "Milo",
+"text": "Allegedly."
+},
+{
+"t": 754.52,
+"who": "Ace",
+"text": "The relationship list is your son, daughter, stepchild, eligible foster child, brother, sister, half-sibling, step-sibling, or a descendant of any of them, like a grandchild, niece or nephew."
+},
+{
+"t": 767.86,
+"who": "Penny",
+"text": "And Lulu's my niece!"
+},
+{
+"t": 769.29,
+"who": "Lulu",
+"text": "I'm your cousin's daughter, Penny. Cousins aren't on the list. And their kids aren't either."
+},
+{
+"t": 773.68,
+"who": "Penny",
+"text": "Families say niece. The tax code doesn't."
+},
+{
+"t": 776.45,
+"who": "Ace",
+"text": "Exactly. For age, the child must be under nineteen at the end of the year, or under twenty-four and a full-time student, or any age if permanently and totally disabled. And younger than the taxpayer or spouse, unless disabled. Residency: lived with you more than half the year, and temporary absences, like school, count as time at home. The child didn't provide more than half of their own support. And no joint return, except one filed only to claim a refund."
+},
+{
+"t": 805.02,
+"who": "Lulu",
+"text": "So how am I a qualifying relative?"
+},
+{
+"t": 807.44,
+"who": "Ace",
+"text": "Four tests. You're not anyone's qualifying child. You lived with Penny and Milo all year as a member of the household. Your gross income was under $5,200 for 2025. And they provided more than half your support."
+},
+{
+"t": 824.36,
+"who": "Lulu",
+"text": "My dividends were $4,000. That's under $5,200. I'm in."
+},
+{
+"t": 829.63,
+"who": "Hoot",
+"text": "Note the trap. A qualifying child can earn any amount. The $5,200 gross income test applies only to qualifying relatives."
+},
+{
+"t": 841.34,
+"cue": "Biscuit barks"
+},
+{
+"t": 842.01,
+"who": "Milo",
+"text": "Biscuit wants to know if he's a dependent. I spent $3,000 on him. Food, vet, a very small sweater."
+},
+{
+"t": 849.28,
+"who": "Hoot",
+"text": "Hoo-hoo-NO. A dependent must be a person who is a U.S. citizen, U.S. national, U.S. resident alien, or a resident of Canada or Mexico. A beagle is none of those."
+},
+{
+"t": 863.02,
+"who": "Milo",
+"text": "What if he moved to Canada?"
+},
+{
+"t": 864.56,
+"who": "Hoot",
+"text": "He would still be a beagle, Milo Marsh."
+},
+{
+"t": 867.81,
+"who": "Ace",
+"text": "Tie-breakers, quickly. If a child is the qualifying child of more than one person, a parent beats a non-parent. Between two parents who don't file jointly, the one the child lived with longer wins, then the higher AGI if the time was equal. And a non-parent can claim the child only if their AGI is higher than any parent who could."
+},
+{
+"t": 891.19,
+"who": "Lulu",
+"text": "And then there's my kiddie tax."
+},
+{
+"t": 893.26,
+"who": "Ace",
+"text": "For 2025, the kiddie tax applies when a child's unearned income is more than $2,700. Lulu's first $1,350 is covered by her standard deduction, the next $1,350 is taxed at her rate, and the rest, $1,300, at a parent's rate on Form 8615."
+},
+{
+"t": 918.69,
+"who": "Lulu",
+"text": "My mom's rate. Not Penny's. Penny's not my parent."
+},
+{
+"t": 921.9,
+"who": "Ace",
+"text": "Right. It's always a parent's rate, never an aunt's or a guardian's."
+},
+{
+"t": 926.36,
+"who": "Dee",
+"text": "Can you hear me now? Did somebody say my tax rate?"
+},
+{
+"t": 929.73,
+"cue": "The video call glitches"
+},
+{
+"t": 930.38,
+"cue": "Ding!"
+},
+{
+"t": 931.43,
+"who": "Milo",
+"text": "Segment four! The Mailbox of Doom. Penny, what came in the mail?"
+},
+{
+"t": 935.02,
+"who": "Penny",
+"text": "A W-2 from Gadget Works, a 1099-INT from the bank, a 1099-DIV for Lulu, and a 1099-NEC for Milo's weekend gigs."
+},
+{
+"t": 946.1,
+"who": "Ace",
+"text": "Those are the income forms. W-2 for wages. 1099-INT, DIV and B for investments. 1099-NEC for nonemployee pay. 1099-MISC for rents and royalties. 1099-R for retirement. SSA-1099 for Social Security. 1099-G, W-2G, and K-1s. And the IRS gets a copy of every one."
+},
+{
+"t": 973.36,
+"who": "Milo",
+"text": "Okay, but some of my gig clients paid in cash. And one paid me in a lasagna. No form, no income, right?"
+},
+{
+"t": 980.26,
+"who": "Ace, Hoot and Penny",
+"text": "Wrong."
+},
+{
+"t": 981.44,
+"who": "Ace",
+"text": "Income is taxable whether or not anyone sends a form. Cash, tips, app payments, and barter. Including lasagna."
+},
+{
+"t": 989.72,
+"who": "Hoot",
+"text": "I would like the lasagna entered at fair market value."
+},
+{
+"t": 993.97,
+"who": "Milo",
+"text": "It was a really good lasagna, Hoot."
+},
+{
+"t": 995.96,
+"who": "Hoot",
+"text": "Then it was a really good income."
+},
+{
+"t": 998.98,
+"who": "Ace",
+"text": "Then money out: Form 1098 for mortgage interest, 1098-E for student loan interest, 1098-T for tuition, charity receipts, and the care provider's name, address and TIN for the dependent care credit. Form 5498 for IRA contributions often arrives after filing, so don't wait for it."
+},
+{
+"t": 1021.81,
+"who": "Penny",
+"text": "And already paid. Withholding, every estimated payment with its date and amount, last year's overpayment applied, and any extension payment."
+},
+{
+"t": 1030.32,
+"who": "Ace",
+"text": "Perfect. Verify them all against records."
+},
+{
+"t": 1033.35,
+"who": "Hoot",
+"text": "Now. My letters. A CP2000 means the income the IRS has on file doesn't match your return. It proposes a change. It is NOT a bill, and NOT an audit. But you must answer by the deadline. A CP14 is a bill for a balance due. A CP12 means we corrected an error and your refund changed. And a 5071C means verify your identity."
+},
+{
+"t": 1059.57,
+"who": "Ace",
+"text": "And to answer any notice: read it, compare it to the return, agree or explain in writing with documents, respond by the deadline, and keep a copy. Never ignore it."
+},
+{
+"t": 1071.35,
+"who": "Milo",
+"text": "Hold on, my phone's ringing. It says \"IRS Urgent Gift Card Department.\""
+},
+{
+"t": 1076.08,
+"who": "Hoot",
+"text": "HANG UP. The IRS starts with mail. It never demands gift cards or wire transfers, threatens arrest, or asks for personal information by text, email or social media."
+},
+{
+"t": 1089.48,
+"who": "Milo",
+"text": "But he sounded so nice."
+},
+{
+"t": 1091.1,
+"who": "Hoot",
+"text": "I am the IRS, Milo Marsh. Do I sound nice?"
+},
+{
+"t": 1095.59,
+"who": "Milo",
+"text": "No."
+},
+{
+"t": 1096.42,
+"who": "Hoot",
+"text": "Exactly."
+},
+{
+"t": 1097.9,
+"who": "Ace",
+"text": "And records. Keep them three years after filing, or two years after paying the tax if that's later. Six years if income was understated by more than twenty-five percent. Seven years for a bad debt or worthless securities. Four years for employment tax records. And forever if no return was filed or there was fraud."
+},
+{
+"t": 1119.86,
+"who": "Penny",
+"text": "So my gum wrapper from 2019..."
+},
+{
+"t": 1122.18,
+"who": "Ace",
+"text": "Can go."
+},
+{
+"t": 1123.34,
+"who": "Penny",
+"text": "It has sentimental value."
+},
+{
+"t": 1125.21,
+"cue": "Hoot stamps something"
+},
+{
+"t": 1125.66,
+"who": "Milo",
+"text": "Final segment! Dee, the bank account news."
+},
+{
+"t": 1128.18,
+"who": "Dee",
+"text": "Can you hear me now? I opened a bank account in Norway! And my godmother Astrid gave me signature authority on hers!"
+},
+{
+"t": 1135.02,
+"who": "Ace",
+"text": "Then you're in FBAR territory. That's FinCEN Form 114. A U.S. person must file it if they have a financial interest in, or signature authority over, foreign financial accounts whose combined maximum values exceeded $10,000 at any time during the year."
+},
+{
+"t": 1155.18,
+"who": "Hoot",
+"text": "Combined. Three accounts at $4,000 each are $12,000. File."
+},
+{
+"t": 1161.74,
+"who": "Dee",
+"text": "Even Astrid's account? I just sign!"
+},
+{
+"t": 1164.56,
+"who": "Ace",
+"text": "Signature authority counts for the FBAR, even with no ownership. You and the owner both report it. Ten grand, all added up, even if you just sign."
+},
+{
+"t": 1175.49,
+"who": "Milo",
+"text": "Do I staple the FBAR to the 1040?"
+},
+{
+"t": 1178.2,
+"who": "Hoot",
+"text": "Hoo-hoo-NO stapling. The FBAR is filed electronically with FinCEN, not with the 1040. It is due April 15, with an automatic extension to October 15. Schedule B, Part III asks about foreign accounts."
+},
+{
+"t": 1194.91,
+"who": "Ace",
+"text": "Then there's Form 8938, which IS attached to the 1040. The FBAR and Form 8938 don't replace each other. If both apply, file both. For someone single or married filing separately living in the U.S., Form 8938 applies above $50,000 on the last day of the year or $75,000 at any time. Married filing jointly in the U.S., $100,000 or $150,000. Living abroad, single, $200,000 or $300,000. Abroad, married filing jointly, $400,000 or $600,000. And signature authority alone doesn't count for 8938, only assets you have an interest in."
+},
+{
+"t": 1246.15,
+"who": "Dee",
+"text": "So I file the FBAR because of the..."
+},
+{
+"t": 1249.08,
+"cue": "The video call glitches"
+},
+{
+"t": 1249.73,
+"who": "Dee",
+"text": "...and I'm under fifty..."
+},
+{
+"t": 1251.95,
+"cue": "The video call glitches"
+},
+{
+"t": 1252.6,
+"who": "Penny",
+"text": "She's fine. She's always fine. She just lives in a weather balloon."
+},
+{
+"t": 1256.54,
+"who": "Ace",
+"text": "And the Affordable Care Act. Form 1095-A comes from the Marketplace, and it feeds Form 8962. Forms 1095-B and 1095-C are records only. Don't attach them, and don't wait for them."
+},
+{
+"t": 1272.63,
+"who": "Hoot",
+"text": "Form 8962 reconciles the advance premium tax credit with the actual credit. If you got too much in advance, you repay the excess, with limits that may apply. If you got too little, you claim the rest. Anyone with advance payments must file, whatever their income, and married people generally must file jointly to claim the credit."
+},
+{
+"t": 1295.97,
+"who": "Milo",
+"text": "And the penalty for not having health insurance?"
+},
+{
+"t": 1298.6,
+"who": "Ace",
+"text": "The federal penalty has been zero dollars since 2019. Some states have their own mandates, but that's on the state return only."
+},
+{
+"t": 1307.77,
+"who": "Milo",
+"text": "Zero dollars! Finally, a number I can afford."
+},
+{
+"t": 1310.74,
+"cue": "Theme music"
+},
+{
+"t": 1312.59,
+"who": "Milo",
+"text": "Lightning round! Hoot asks, we answer. Go."
+},
+{
+"t": 1315.15,
+"who": "Hoot",
+"text": "Born January 1, 1961. Sixty-five for which year?"
+},
+{
+"t": 1320.7,
+"who": "Penny",
+"text": "2025!"
+},
+{
+"t": 1322.07,
+"who": "Hoot",
+"text": "Correct. Married at 11:59 PM on December 31. Status for the year?"
+},
+{
+"t": 1329.1,
+"who": "Milo",
+"text": "Married! All year! Babe!"
+},
+{
+"t": 1330.52,
+"who": "Hoot",
+"text": "Correct. Lulu. Your mother's cousin claims you as a qualifying child. Yes or no?"
+},
+{
+"t": 1336.91,
+"who": "Lulu",
+"text": "No. Cousins' kids fail relationship. I'm a qualifying relative. I've been saying this all episode."
+},
+{
+"t": 1342.64,
+"who": "Hoot",
+"text": "Correct. A CP2000 is a bill. True or false?"
+},
+{
+"t": 1347.3,
+"who": "Ace",
+"text": "False. It's a proposed change. Answer it by the deadline."
+},
+{
+"t": 1351.32,
+"who": "Hoot",
+"text": "Three foreign accounts at $4,000 each. FBAR?"
+},
+{
+"t": 1356.14,
+"who": "Dee",
+"text": "Yes! Twelve thousand is over ten!"
+},
+{
+"t": 1358.84,
+"who": "Penny",
+"text": "The signal came back just for that!"
+},
+{
+"t": 1360.83,
+"who": "Hoot",
+"text": "Correct. All correct. This is very upsetting."
+},
+{
+"t": 1364.46,
+"who": "Ace",
+"text": "Why is it upsetting?"
+},
+{
+"t": 1366.2,
+"who": "Hoot",
+"text": "I prepared a penalty. Now I have nowhere to put it."
+},
+{
+"t": 1370.45,
+"who": "Milo",
+"text": "That's our show! Thanks to Ace, Penny, Lulu, Cousin Dee, Biscuit, and the man in our hamper."
+},
+{
+"t": 1375.78,
+"who": "Hoot",
+"text": "Examiner. Hoot. And I am leaving through the hamper. Do not follow me. Keep your records three years. See you in Unit 2."
+},
+{
+"t": 1384.41,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 1384.81,
+"who": "Penny",
+"text": "Milo, he took the fabric softener."
+},
+{
+"t": 1387.18,
+"who": "Milo",
+"text": "I'll be honest, Penny, I think he needed it."
+},
+{
+"t": 1389.55,
+"cue": "Theme music"
+}
+]
+}

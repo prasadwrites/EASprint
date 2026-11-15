@@ -1,0 +1,134 @@
+# Season 3, Unit 4: The E-File Gauntlet and Biscuit Ate the Records
+(Series finale. Okafor Tax Defense. A new laptop sits on the desk, covered in labels. Hoot's cardboard boxes are stacked by the door. He is packing up.)
+[theme]
+MILO: Ledger Falls, this is it. The Season 3 finale of Unplugged. I'm Milo Marsh, and I'm emotional.
+PENNY: He's been emotional since breakfast. He cried at the toaster.
+MILO: It popped, Penny. It popped like Hoot. It reminded me that everything ends.
+PENNY: I'm Penny Pocket. Hoot is packing up his file on us.
+ACE: And I'm Ace Okafor, enrolled agent. This unit is e-file rules, and accuracy, records and data security. And I spent my whole rolls budget on a laptop.
+ROSA: So he hasn't paid rent this month. I'm Rosa. I'm letting it go, because it's the finale.
+ACE: I'll pay you in rolls next month, Rosa. Double rolls.
+ROSA: You'll buy the rolls from me to pay me in rolls.
+ACE: It's a very efficient economy.
+MILO: Episode 4.1! The E-File Gauntlet! Ace, how does an office become an e-file provider?
+ACE: You apply online through IRS e-Services. The IRS does a suitability check, and if you pass, you get an EFIN, an electronic filing identification number. Enrolled agents, CPAs and attorneys can give their professional credentials instead of fingerprints. The roles are electronic return originator, transmitter, software developer, and intermediate service provider. And you update the application within thirty days of any changes.
+PENNY: What's an ERO?
+ACE: An electronic return originator. That's me. The firm that originates the electronic submission of a return to the IRS.
+[pop]
+(A stack of moving boxes topples over. Examiner Hoot climbs out of the bottom one, holding a roll of packing tape.)
+HOOT: Hoo-hoo-HOLD it. Nobody transmits anything until the taxpayer has signed.
+PENNY: Hoot! You packed yourself?
+HOOT: Examiner Hoot. I was testing the box. It is a good box. I would recommend it to a friend, if I had one.
+ROSA: You have us, Hoot.
+HOOT: ...I will make a note of that.
+HOOT: Form 8879, the IRS e-file signature authorization. The taxpayer signs BEFORE transmission. The ERO keeps it for three years from the later of the due date or the date the IRS received the return. It is NOT sent to the IRS unless requested. And Form 8453 is used to transmit required paper documents that go with an e-filed return.
+PENNY: Sign first. Send second.
+ACE: Now the e-file mandate. A preparer who reasonably expects to file eleven or more individual or trust returns in a calendar year must e-file them. The count is firm-wide. Exceptions: the taxpayer chooses to file on paper, and you keep their signed statement; returns that can't be e-filed; and a hardship waiver, on Form 8944. Paper returns prepared by a specified preparer attach Form 8948.
+MILO: Eleven! I prepared ten returns once.
+PENNY: For your bandmates. In crayon.
+MILO: They were very colorful returns.
+HOOT: They were rejected, Milo Marsh. All ten. One of them was signed "Kazoo Steve."
+MILO: That's his legal name!
+HOOT: It is not. I checked. It is Steven.
+ACE: And rejects. If a return is rejected, the ERO must notify the taxpayer within twenty-four hours, with the reject code and an explanation. Then there's a perfection period. Retransmit within five calendar days, or file on paper within ten calendar days with an explanation, and the return is treated as timely filed.
+PENNY: Sign first. Send second. Reject? Twenty-four hours, then five days.
+HOOT: The PTIN. Required for anyone paid to prepare, or substantially help prepare, federal returns. That includes enrolled agents, CPAs and attorneys. Renewed every year, it expires December 31, with a fee, and entered on every return the preparer signs. PTIN is the person. EFIN is the e-file firm.
+ACE: Our first batch went out yesterday. Every return was accepted.
+MILO: Even Rosa's?
+ROSA: Even mine. I made Ace print me the acceptance. I framed it next to Bert.
+REX: Hey, Ledger Falls! Quick Refund Rex here! I e-file without signatures! I e-file without PTINs! I e-file from a van!
+(Ace sighs and unplugs the radio again.)
+ACE: I'm going to have to get rid of that radio.
+HOOT: Leave it. Every time Rex speaks, my binder grows. It is very satisfying.
+[ding]
+MILO: Bonus segment! Ace's new laptop! Ace, show the people!
+ACE: It has a label on the lid that says "laptop," a label on the keyboard that says "keyboard," and a label on the screen that says "do not label the screen."
+PENNY: Ace, that IS a label on the screen.
+ACE: It's a transitional label, Penny.
+HOOT: Your laptop has a password, I assume.
+ACE: It has multi-factor authentication, encryption, and a password with forty characters.
+HOOT: Hoo. I have misjudged you. That is beautiful.
+ACE: Thank you, Hoot.
+HOOT: Do not let it go to your head. Your crayons are still labeled.
+[stamp]
+MILO: Final episode. Biscuit Ate the Records. Everything is accepted, Hoot is packing up, and Biscuit has been eyeing the records box all week.
+[bark]
+PENNY: He ate the box, Ace. He ate a corner of the 2023 folder.
+ACE: That's why we have backups. Let's talk about what a preparer must keep. Section 6107: give the taxpayer a copy of the return, and keep a copy, or a list with the taxpayer's name, TIN, tax year and type of return, for three years after the close of the return period. The penalty is $50 per failure, up to $25,000 per period. Section 6060 requires a list of the preparers employed, kept for three years. And Circular 230 requires returning client records on request.
+HOOT: Form 8867 due diligence. For the EITC, the child tax credit, additional child tax credit and credit for other dependents, the AOTC, and head of household status. Four requirements. Submit Form 8867. Compute the credit and keep the worksheets. Knowledge: make reasonable inquiries, and document them. Retain records for three years. An inflation-adjusted penalty applies for each failure.
+PENNY: Keep it three years.
+ACE: Then data security. Under the FTC Safeguards Rule, part of the Gramm-Leach-Bliley Act, tax preparers must keep a written information security plan. It includes a qualified individual to run it, a risk assessment, multi-factor authentication, encryption, access controls, staff training, and testing. IRS guidance is in Publication 4557, and Publication 5708 has a template.
+MILO: Does Biscuit count as an access control?
+ACE: Biscuit is a security threat, Milo.
+[bark]
+HOOT: Biscuit is not a qualified individual. I have reviewed his credentials. He has none. Only a collar.
+MILO: The collar is very official. It has a tag.
+HOOT: The tag says "If found, please return to Milo." That is not encryption.
+ACE: If there's a data theft, report it quickly to your IRS Stakeholder Liaison, to state agencies, and to law enforcement. And notify the FTC within thirty days if unencrypted information of 500 or more consumers is involved.
+PENNY: Lock it up.
+HOOT: And confidentiality. A preparer may use or disclose return information only to prepare the return, under a specific exception in the regulations, or with the taxpayer's prior written, signed consent. Under section 7216, the criminal penalty is up to $1,000 and up to one year in prison. Under section 6713, the civil penalty is $250 per disclosure, up to $10,000 a year.
+ROSA: So Ace can't tell me how much Penny made last year?
+ACE: Not without her signed consent, Rosa.
+ROSA: I'll just ask her, then. Penny, how much did you make?
+PENNY: Aunt Rosa!
+ROSA: I'm her aunt, Hoot. I'm allowed to ask. I'm not a preparer.
+HOOT: That is true. Aunts are not covered by section 7216. Aunts are covered by nothing. Aunts are a force of nature.
+PENNY: Keep it three years. Lock it up. Share it only with consent.
+MILO: And the 2023 folder?
+ACE: We have a scanned copy. Electronic records are fine. Biscuit ate paper, not the backup.
+[bark]
+MILO: He says he's sorry.
+HOOT: He is not sorry. He is still chewing.
+[ding]
+MILO: Our very last segment. Hoot is closing his file.
+(Hoot places the last folder in the last box. He seals it with packing tape. It takes a very long time.)
+HOOT: Penny Pocket and Milo Marsh. Your 2025 examination is closed. You paid what you owed. You appealed what you disagreed with, and you won. You are on a payment plan, and you are current. Your representative was prepared, prompt and courteous. Very courteous. Annoyingly courteous.
+ACE: Thank you, Hoot.
+HOOT: Rosa. Your penalty was abated. Your trust fund payments are designated and on schedule. Your oven, Bertha, is fixed. Your sourdough starter, Gerald, remains not a dependent.
+ROSA: He's still family.
+HOOT: He is still family. On that, I yield.
+MILO: Hoot. Before you go. Can I ask you something?
+HOOT: You may ask, Milo Marsh.
+MILO: Do you have a first name?
+(A long pause.)
+HOOT: I do.
+MILO: What is it?
+HOOT: That information is confidential under section 6103.
+PENNY: Hoot, it's on the Meet the Cast page. It's Horace. Horace Hootington.
+HOOT: That page has been referred to my supervisor.
+MILO: Horace!
+HOOT: Examiner Hoot.
+ROSA: Will you come back, Hoot? You can always visit. The bread box is yours.
+HOOT: I will visit the bread box. Professionally.
+ACE: Hoot, it's been an honor. Truly.
+HOOT: Ace Okafor. You are the most irritatingly compliant person I have ever examined. I mean that as the highest compliment I possess. I keep a file of compliments. You are now most of it.
+[theme]
+MILO: The final lightning round of Ledger Falls Unplugged. Hoot, one last time.
+HOOT: One last time. Who signs Form 8879, and when?
+PENNY: The taxpayer, before transmission!
+HOOT: Correct. How long does the ERO keep it?
+ACE: Three years from the later of the due date or the IRS received date.
+HOOT: Correct. How many returns trigger the e-file mandate?
+MILO: Eleven! Firm-wide! Not counting crayon!
+HOOT: Correct. A return is rejected. How quickly must the ERO notify the taxpayer?
+ROSA: Twenty-four hours.
+HOOT: Correct. And to retransmit?
+LULU: Five calendar days. Or paper within ten, with an explanation.
+PENNY: Lulu! When did you get here?
+LULU: I've been here the whole season. I was under the desk. Working on my science project.
+HOOT: Correct, young lady. How long does a preparer keep a copy or list of returns?
+LULU: Three years.
+HOOT: Correct. Can a preparer disclose return information without consent, just because it's family?
+LULU: No. Prior written signed consent, unless an exception applies.
+HOOT: Correct. That child will be an examiner one day. I am very afraid.
+LULU: Thank you.
+HOOT: Everyone correct. Every single one. Three seasons. Not one penalty I could keep.
+MILO: That's Ledger Falls Unplugged! Thank you to Ace, Penny, Aunt Rosa, Gerald, Lulu, Cousin Dee, Biscuit, Grandpa Walt's portrait, and the owl who taught us everything.
+HOOT: Examiner Hoot. File on time. Keep your records. Sign under penalties of perjury, and mean it. And never, ever, call me Hooty.
+MILO: Bye, Hooty.
+HOOT: ...Bye, Milo.
+[pop]
+(The box by the door is empty. Then the lid lifts, just a little.)
+HOOT: Same time next year?
+ACE+PENNY+MILO+ROSA: NO!
+[theme]

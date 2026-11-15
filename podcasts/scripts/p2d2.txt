@@ -1,0 +1,179 @@
+# Season 2, Unit 2: Bertha, the Disco Ball and the Ghost of Losses Past
+(Season 2. Rosa's Rolls after closing. Bertha, the bakery's enormous $80,000 oven, hums in the background.)
+[theme]
+MILO: Ledger Falls, welcome back to Unplugged, Season 2, Unit 2! I'm Milo Marsh. This is the biggest unit of the season: nine episodes about running a business. Income, expenses, travel, depreciation, selling assets, workers, losses, the books, and advice.
+PENNY: I'm Penny Pocket, and I brought a thermos of coffee, because nine episodes.
+ROSA: And I'm Rosa. I brought rolls, because nine episodes is a lot of episodes to do hungry.
+ACE: I'm Ace Okafor, enrolled agent. I brought nine color-coded folders.
+MILO: What color is depreciation?
+ACE: Bertha orange.
+ROSA: Aww. He named a color after my oven.
+ACE: She deserves it.
+MILO: Episode 2.1! Cost of Goods Eaten! It's year end, and somebody has to count the rolls.
+ROSA: Milo counted them. And now there are fewer of them.
+MILO: Inventory shrinkage, Aunt Rosa.
+ROSA: Inventory chewing, Milo.
+ACE: Gross receipts are all income: cash, checks, cards, and barter at fair market value, reported whether or not there's a form. For 2025, third-party payment networks issue Form 1099-K over $20,000 and 200 transactions. Card payments are always reported. And you reconcile the 1099-K to the books.
+HOOT: Hoo-hoo-HOLD it.
+[pop]
+(Bertha's door swings open with a puff of steam. Examiner Hoot steps out, eyeshade slightly toasted.)
+ROSA: Hoot! You were in BERTHA?
+HOOT: Examiner Hoot. Bertha was off. I checked. Mostly.
+ROSA: She was on warm!
+HOOT: Warm is fine. I have a high tolerance for heat. It is from years of being an examiner. Cost of goods sold. Beginning inventory, plus purchases, minus items withdrawn for personal use, plus labor, plus materials and supplies, plus other costs, minus ending inventory. Gross profit equals net receipts minus cost of goods sold. And ending inventory becomes next year's beginning inventory.
+PENNY: Start, plus bought, minus left, equals sold.
+HOOT: The rolls Milo Marsh ate are personal withdrawals. They come out of purchases.
+MILO: I was quality testing.
+HOOT: You tested forty-one rolls.
+MILO: Quality is important, Hoot.
+ACE: A small business taxpayer, with average annual gross receipts of $31 million or less for 2025 and not a tax shelter, can use the cash method, can skip formal inventories by treating them as non-incidental materials and supplies or following its books, and is exempt from UNICAP. Others value inventory at cost or the lower of cost or market, using FIFO, LIFO with Form 970, or specific identification.
+ACE: The cash method counts income when actually or constructively received, and expenses when paid, with a twelve-month rule for prepaid expenses. The accrual method uses the all-events test plus economic performance. C corporations and partnerships with C corporation partners must use accrual unless they're small business taxpayers. Tax shelters can't use cash. A change in method goes on Form 3115.
+HOOT: Form 8300. A business that receives more than $10,000 in cash in one transaction, or related transactions, files within fifteen days. Related means within twenty-four hours, or otherwise connected. Send the payer a written notice by January 31, and keep a copy for five years. Cash can include cashier's checks and money orders of $10,000 or less in designated sales.
+ROSA: Somebody paid $12,000 cash for a wedding cake once. Fifteen days?
+ACE: Fifteen days. Start plus bought minus left equals sold. Over $10,000 cash? Fifteen days.
+[ding]
+MILO: Episode 2.2! The Disco Ball! Aunt Rosa went shopping with the business card.
+ROSA: The bakery needed sparkle.
+PENNY: It's a six-foot disco ball, Aunt Rosa. It's in the bathroom.
+ROSA: Customers deserve to dance while they wash their hands.
+ACE: Section 162 allows a deduction for ordinary and necessary business expenses. Ordinary means common in the trade. Necessary means helpful and appropriate. Personal and capital costs aren't deductible. Compensation must be reasonable and for services performed. Business real estate taxes, payroll taxes and personal property taxes are deductible. Federal income tax and government fines are not.
+HOOT: The disco ball is personal. It is not ordinary in the baking trade. I have visited four hundred bakeries. None had a disco ball.
+ROSA: Then they were sad bakeries, Hoot.
+ACE: Start-up costs, and separately, organizational costs. You can deduct up to $5,000 in the year the business begins, reduced by start-up costs over $50,000, so it's zero at $55,000. The rest is amortized over 180 months from the month the business starts. And if the business never begins, nothing is deductible as start-up costs.
+ACE: Business bad debts are an ordinary deduction when they're wholly or partly worthless, using the specific charge-off method, but only if the amount was previously included in income or actually loaned. A cash-method business can't deduct unpaid receivables. Nonbusiness bad debts are short-term capital losses, only when totally worthless.
+MILO: Gus never paid for his cake.
+ROSA: The cash-method bakery never counted it as income. So no deduction. I know, dear. It still hurts.
+HOOT: The home office. Regular and exclusive use, as the principal place of business, a place to meet clients, or a separate structure. Exceptions for inventory storage and day care. Simplified method: five dollars per square foot, up to 300 square feet, so $1,500 maximum. Regular method: actual costs on Form 8829. Limited to business income. And NO deduction for employees.
+PENNY: The de minimis safe harbor?
+ACE: Businesses can elect each year to expense items of $2,500 or less per invoice or item, or $5,000 with an applicable financial statement. Repairs and maintenance are deductible. Improvements, which are betterments, restorations or adaptations, like a new roof, are capitalized and depreciated.
+ROSA: The roof leaked, so we got a new roof.
+ACE: A new roof is a restoration. Capitalize it. Ordinary plus necessary equals deductible. Better, restore, adapt equals capitalize.
+[stamp]
+MILO: Episode 2.3! Road trip to the Big Bread Expo! We packed the van!
+ROSA: I won a trophy. Best Sourdough. Gerald was a judge's favorite.
+MILO: Gerald rode shotgun.
+ACE: Travel. You're away from your tax home overnight, long enough to need sleep or rest, for business. Transportation and lodging are one hundred percent deductible, and meals are fifty percent. On a domestic trip that's primarily business, the full round-trip fare is deductible, but personal side trips aren't. A temporary assignment must be one year or less. And a companion's costs aren't deductible unless the companion is a bona fide employee.
+ROSA: Gerald isn't an employee.
+HOOT: Gerald is a jar.
+ROSA: Gerald is a jar with a TROPHY, Hoot.
+HOOT: Meals. Fifty percent if not lavish, with the taxpayer or an employee present, with a business contact. Entertainment: ZERO percent, though food at an entertainment event is fifty percent if it's separately stated. One hundred percent for employee recreational and social events, meals sold to customers, and meals reported as compensation. Meals for the convenience of the employer: fifty percent through 2025, zero after.
+ACE: Cars. The 2025 standard mileage rate is seventy cents a business mile, plus parking and tolls. You must choose it in the car's first business year, and you can't use it for five or more cars at once or after claiming MACRS, section 179 or bonus. The actual method is the business-use percentage of costs, plus depreciation, and you need more than fifty percent business use for section 179 or bonus. Commuting is never deductible. Keep a mileage log.
+MILO: What about the gifts I gave the judges? Four mugs.
+HOOT: Business gifts. $25 per recipient per year. Incidental costs, like wrapping, engraving and mailing, are excluded from the limit. Branded items of $4 or less and display materials aren't gifts. And gifts to a contact's family count as gifts to the contact.
+PENNY: Milo, you gave a judge a mug that leaks.
+MILO: It's a business gift with character.
+HOOT: Substantiation for travel, meals, gifts and vehicles: the amount, the time, the place, and the business purpose, plus the business relationship. Records made at or near the time. And receipts for all lodging, and for any expense of $75 or more.
+ROSA: Sleep away equals travel. Meals half. Fun zero. Seventy cents a mile.
+[ding]
+MILO: Episode 2.4! Bertha the Oven! Aunt Rosa came home from the Expo and bought something enormous.
+ROSA: Bertha! $80,000, March 2025. She bakes four hundred rolls an hour, and she plays a little song when she's done.
+[timer]
+ROSA: That's her. That's Bertha.
+ACE: MACRS, the general depreciation system. Five-year property, like cars and computers. Seven-year property, like furniture, most equipment, and property with no class life. Fifteen-year for land improvements. 27.5-year for residential rental, 39-year for nonresidential real property. Land is never depreciated. Personal property uses 200 percent declining balance and a half-year convention, or mid-quarter if more than forty percent was placed in service in the fourth quarter. Real property uses straight line with mid-month.
+HOOT: Section 179 for 2025. Elect up to $2,500,000, phased out dollar for dollar over $4,000,000 of purchases. Limited to business taxable income, with the excess carried forward. More than fifty percent business use. Heavy SUVs are capped at $31,300. It covers equipment, off-the-shelf software, and certain nonresidential improvements: roofs, HVAC and security systems. Form 4562.
+ACE: Bonus depreciation for 2025: one hundred percent for qualified property acquired after January 19, 2025, and that's permanent now. Forty percent if acquired before January 20, 2025 and placed in service in 2025. New or used property with a recovery period of twenty years or less. It's automatic unless you elect out by class, and there's no income limit, so it can create an NOL. The order is section 179, then bonus, then regular MACRS.
+ROSA: Bertha was bought in March. After January 19.
+ACE: So she qualifies for one hundred percent bonus. 179 first, bonus next, MACRS last.
+HOOT: Listed property, like cars and other transportation property, needs more than fifty percent qualified business use for section 179, bonus, and accelerated MACRS. Otherwise, ADS straight line. If business use later drops to fifty percent or less, the excess over straight line is recaptured as ordinary income. Passenger cars also face the luxury auto caps.
+ACE: And depreciation, including 179 and bonus, reduces basis. For section 1245 property, gain up to the depreciation taken is ordinary income, and any remainder is section 1231. For real property depreciated straight line, unrecaptured section 1250 gain is taxed at a maximum of twenty-five percent for individuals. Form 4797.
+MILO: Can we depreciate Gerald?
+ROSA: Milo Marsh, you do NOT depreciate family.
+HOOT: Gerald is not depreciable. On that, Rosa and I agree.
+[stamp]
+MILO: Episode 2.5! Trading up the van. I fell in love with a food truck, so I traded in the bakery van and painted FOOD TRUCK on the side.
+PENNY: It's still a van. It just says FOOD TRUCK.
+MILO: It's a lifestyle, Penny.
+ACE: Adjusted basis is cost, including sales tax, freight and installation, plus improvements, minus depreciation allowed or allowable, including 179 and bonus, minus casualty losses. Gain is amount realized, meaning cash, plus fair market value of property received, plus liabilities assumed by the buyer, minus selling costs, minus adjusted basis.
+HOOT: Section 1231 property is depreciable business property and land held more than one year. Section 1245 recapture is ordinary first. A net section 1231 gain is long-term capital gain, except it's ordinary to the extent of unrecaptured net section 1231 losses from the prior five years. A net section 1231 loss is ordinary. Held one year or less: ordinary. Form 4797.
+MILO: And the trade-in is a 1031 exchange!
+ACE: No. Section 1031 is for real property only, held for business or investment. Not inventory, and U.S. real property isn't like-kind to foreign real property. Wheels aren't like-kind. Only land and buildings are.
+ACE: For a real 1031, in a deferred exchange you identify the replacement in forty-five days and receive it within 180 days, or by the return due date if earlier. Gain recognized is the lesser of realized gain or boot, which includes cash, other property and net liability relief. Basis carries over. Form 8824.
+HOOT: Related parties. Section 267 disallows a loss on a sale between related persons: a spouse, siblings, ancestors, descendants, and entities more than fifty percent owned, directly or indirectly. NOT aunts, uncles, cousins or in-laws. The buyer may use the disallowed loss to offset a later gain. Section 1239 makes gain on depreciable property sold to a related person ordinary. And in a related-party 1031, there's a two-year holding requirement.
+ROSA: So if I sold some of my stock to Penny at a loss?
+ACE: Penny isn't your sibling, your ancestor or your descendant. She's Walt's granddaughter, so she's not on the list, and the loss can count. Sell it to your sister at a loss, and it's disallowed.
+ROSA: My sister Mildred would never buy my stock. She doesn't even buy my rolls.
+HOOT: Installment sales. At least one payment after the year of sale. Gain recognized equals payment times gross profit percentage, which is gross profit divided by contract price. Depreciation recapture is all taxed in the year of sale. Not for inventory, dealer sales, or losses. You can elect out. Form 6252.
+[ding]
+MILO: Episode 2.6! Employee or not? Rosa needs help, and I have a costume!
+ROSA: Milo is Rolly, the cinnamon roll mascot.
+MILO: I'm a six-foot pastry. I wave at cars.
+ACE: The common-law test is about the right to control what work is done and how. The evidence is behavioral, like instructions and training. Financial, like investment, profit or loss, and how they're paid. And the relationship, like contracts, benefits, permanence, and whether the work is a key activity of the business. Form SS-8 asks for an IRS determination. Section 530 relief and the Voluntary Classification Settlement Program can help. And there are statutory employees and statutory nonemployees.
+ROSA: I tell Milo when to wave, how to wave, and I bought the costume.
+HOOT: Then Rolly is an employee. Control the how, and they're your employee.
+MILO: I'm on payroll! Finally! A real job!
+PENNY: Milo, you're a cinnamon roll.
+MILO: An EMPLOYED cinnamon roll.
+HOOT: FICA for 2025. Six point two percent Social Security, on a wage base of $176,100, plus one point four five percent Medicare, from each side. Seven point six five percent each. The Additional Medicare Tax of nine-tenths of a percent is withheld over $200,000, employee only. Form 941 quarterly, due April 30, July 31, October 31 and January 31. Deposits: monthly if the lookback period total is $50,000 or less, otherwise semiweekly. And the $100,000 next-day rule. Form 944 for very small employers.
+ACE: FUTA. Employer only. Six percent of the first $7,000 per employee, with a state credit up to five point four percent, so usually zero point six percent, or $42 per employee. A smaller credit in credit reduction states. It applies if you paid $1,500 or more in wages in a quarter, or had an employee in twenty or more weeks. Form 940 annually by January 31, or February 10 if fully deposited. Deposit when the liability is more than $500.
+HOOT: W-2s to employees and the SSA by January 31. 1099-NEC to contractors, generally not corporations, but attorneys always, by January 31. The threshold is $600 for 2025 payments, and $2,000 for payments after December 31, 2025, indexed after 2026. Get Form W-9. No correct TIN means twenty-four percent backup withholding.
+ACE: And ACA employer rules. An applicable large employer averaged fifty or more full-time employees, including full-time equivalents, in the prior year. Full-time is thirty hours a week or 130 hours a month. FTEs are part-timers' monthly hours divided by 120. An ALE must offer affordable, minimum value coverage to ninety-five percent of full-timers, or risk the shared responsibility payment, and it files Forms 1094-C and 1095-C.
+ROSA: I have six employees and Rolly. I'm not an ALE.
+MILO: Rolly counts as at least two employees. Have you SEEN this costume?
+[stamp]
+MILO: Episode 2.7! The Ghost of Losses Past! Penny closed the books on 2025 and found something scary.
+PENNY: A loss. Bertha's bonus depreciation made the bakery's 2025 a big loss on paper.
+MILO: So I dressed up as the NOL ghost. In a bedsheet.
+(Milo puts on a bedsheet with eyeholes.)
+MILO: Ooooh. I am the net operating loss. Ooooh.
+HOOT: That is my bedsheet.
+MILO: It was on the line outside.
+HOOT: It is my good bedsheet, Milo Marsh. It is beige.
+ACE: Owner-level loss limits apply in order. One: basis. Two: at-risk, under section 465, on Form 6198, which counts money and property contributed, recourse debt, and qualified nonrecourse real estate financing. Three: passive activity, section 469, Form 8582. Four: the excess business loss limit, section 461(l), Form 461. Disallowed amounts carry forward under each rule.
+PENNY: Basis, at-risk, passive, then excess loss.
+HOOT: The excess business loss. For noncorporate taxpayers, a net business loss over $313,000 single, or $626,000 married filing jointly, for 2025, is disallowed and becomes an NOL carryforward. It's applied after the basis, at-risk and passive limits. Made permanent by the One Big Beautiful Bill Act. Not for C corporations. Form 461.
+ACE: A net operating loss is business deductions over income; individuals exclude nonbusiness deductions. NOLs from after 2020 have no carryback, except farming, two years back, and they carry forward indefinitely. NOLs from after 2017 are limited to eighty percent of taxable income figured without the NOL. Pre-2018 NOLs have no eighty percent limit. Form 172.
+HOOT: QBI at the business level. Up to twenty percent of qualified business income from pass-throughs, not C corporations, limited to twenty percent of taxable income minus net capital gain. Excludes wages, guaranteed payments, S corporation reasonable compensation, and investment income. 2025 threshold: $197,300, or $394,600 joint, with a phase-in of $50,000 or $100,000, where the W-2 wage and UBIA limit applies and specified service businesses phase out.
+ACE: And the general business credit, Form 3800, combines credits like the research credit, the work opportunity credit, the pension plan startup credit, the small employer health insurance credit and the disabled access credit. It's limited to net income tax minus the greater of tentative minimum tax or twenty-five percent of net regular tax over $25,000. Unused credits carry back one year and forward twenty.
+MILO: Oooooh. I am also the general business credit. Ooooh.
+PENNY: Milo, please return the bedsheet.
+[ding]
+MILO: Episode 2.8! Book club! Ace needs Rosa's books to file the partnership return, so Lulu started a book club.
+LULU: Hello. I am Lulu. Schedule L Book Club meets Tuesdays. Snacks are provided. Reading is mandatory.
+ACE: The balance sheet shows a moment: assets equal liabilities plus equity. The income statement covers a period: revenue minus expenses is net income, which increases equity, as retained earnings or capital. Distributions and dividends reduce it. You read the books for new assets, owner loans and nondeductible items.
+LULU: Books say profit. M-1 says taxable.
+HOOT: Permanent differences never reverse: fines and penalties, fifty percent of meals, key-person life insurance premiums, tax-exempt interest, and federal income tax expense for a C corporation. Temporary differences reverse: tax versus book depreciation, including 179 and bonus, a bad debt allowance versus direct write-off, and prepaid income.
+ACE: Schedule M-1 reconciles book income to taxable income. M-2 rolls forward equity: retained earnings on the 1120, partners' capital on the 1065, and the AAA on the 1120-S. M-3 replaces M-1 for corporations with total assets of $10 million or more. For partnerships, assets of $10 million or more, receipts of $35 million or more, or a large reportable partner. It separates permanent and temporary differences.
+HOOT: Schedule L is the balance sheet per books, beginning and end of year, on the 1120, 1120-S and 1065, and its equity ties to M-2. Corporations with total receipts AND year-end assets both under $250,000 can skip L, M-1 and M-2. Partnerships: receipts under $250,000 and assets under $1 million, plus other conditions.
+ACE: And on the K-1, ordinary business income is one line: sales, cost of goods sold, wages, rent and regular depreciation. Separately stated items include capital gains and losses, section 1231, charitable contributions, section 179, interest, dividends, foreign taxes and guaranteed payments. Partnership K-1 capital accounts use the tax basis method. And K-1s are due with the return, March 15 for a calendar year.
+MILO: I cried at the retained earnings.
+LULU: He did. It was embarrassing for everyone.
+MILO: They just kept growing, Lulu! Year after year! It was beautiful!
+[stamp]
+MILO: Final episode! Milo Sees the Future. Rosa wants a plan for 2026. And I have a crystal ball.
+PENNY: It's the disco ball, Milo.
+MILO: It sees in many directions, Penny.
+ACE: Choosing an entity. A sole proprietorship: Schedule C, and self-employment tax on all profit. A partnership: Form 1065 and K-1s, and general partners pay self-employment tax. An S corporation: Form 1120-S and K-1s, payroll tax only on wages, up to one hundred shareholders, one class of stock. A C corporation: twenty-one percent, plus tax on dividends, losses stay inside, and no QBI deduction. A single-member LLC is disregarded unless it elects.
+HOOT: Reasonable compensation. S corporation shareholder-employees must receive market pay for their services before distributions. Wages get FICA, FUTA, withholding and a W-2. Distributions have no employment tax. Too little salary, and the IRS recharacterizes distributions as wages. And the owner's wages are NOT QBI.
+ROSA: Salary first, and make it reasonable.
+ACE: Record retention. Three years generally. Six years if more than twenty-five percent of gross income was omitted. Seven years for bad debts or worthless securities. Indefinitely if no return was filed or there was fraud. Employment tax records for four years after the tax is due or paid, whichever is later. And property records until the limitations period closes for the year you dispose of the property. Electronic records are fine.
+HOOT: Corporate estimated tax, if the tax is $500 or more. The fifteenth day of months four, six, nine and twelve: April 15, June 15, September 15 and December 15 for a calendar year. Safe harbor: one hundred percent of the current year, or one hundred percent of the prior year if it was a twelve-month year with tax. A large corporation, with $1 million or more of taxable income in any of the three prior years, can use the prior year only for the first installment. Forms 1120-W and 2220. Pass-through owners pay through 1040-ES.
+ACE: And planning. Timing income and deductions, like section 179 and bonus. A child under eighteen employed by a parent's sole proprietorship, or a partnership owned only by the parents, has no FICA, and no FUTA under twenty-one, but the work must be real. An accountable plan, with a business connection, substantiation and return of any excess, means reimbursements aren't wages. And retirement plans: SEP, SIMPLE and 401(k).
+LULU: I'd like to be employed by Penny's sole proprietorship.
+PENNY: I don't have a sole proprietorship, sweetie.
+LULU: Then I'd like you to start one.
+[theme]
+MILO: Lightning round! Hoot, from inside Bertha, apparently.
+HOOT: It is warm in here. I am comfortable. Cash over $10,000 for a cake. Form 8300 within how many days?
+ROSA: Fifteen!
+HOOT: Correct. The disco ball. Deductible?
+ROSA: Fine. No. It's personal.
+HOOT: Correct. Business meals?
+PENNY: Fifty percent. Entertainment, zero.
+HOOT: Correct. Bertha bought in March 2025. Bonus percentage?
+ACE: One hundred percent, acquired after January 19, 2025.
+HOOT: Correct. Van for van, section 1031?
+MILO: Wheels aren't like-kind! Only land and buildings!
+HOOT: Correct. Rosa controls how Rolly waves. Employee or contractor?
+ROSA: Employee!
+HOOT: Correct. The loss limits, in order.
+PENNY: Basis, at-risk, passive, excess business loss.
+HOOT: Correct. Corporate total receipts and assets both under $250,000. Schedule L?
+LULU: Not required. Neither are M-1 and M-2. Book club still meets.
+HOOT: Correct. Everyone correct. Nine episodes, and not one penalty. Bertha, I am sorry. I will not find anything in you today.
+[timer]
+ROSA: She says you're welcome, Hoot.
+HOOT: Tell her I appreciated the warmth. Professionally. Next time: Unit 3, specialized returns. Good day.
+[pop]
+MILO: Did he just go back INTO the oven?
+ROSA: Leave him. He'll come out when the rolls are done. They always do.
+[theme]

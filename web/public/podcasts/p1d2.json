@@ -1,0 +1,782 @@
+{
+"id": "p1d2",
+"title": "Unit 2: The Raffle, the Rental and Grandpa's IRA",
+"seconds": 1447,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 1. Summer 2025 in the story. Studio A, the hall closet, now with a second mop for a second microphone."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Welcome back to Ledger Falls Unplugged! I'm Milo Marsh, host, producer, and head of marketing. We have a new microphone. It's a mop."
+},
+{
+"t": 10.54,
+"who": "Penny",
+"text": "It's the same mop, Milo. You turned it around."
+},
+{
+"t": 13.46,
+"who": "Milo",
+"text": "Rebranding, Penny. This is Unit 2: income. Everything that comes in. Ace Okafor, enrolled agent, is here, holding a laminated list."
+},
+{
+"t": 22.51,
+"who": "Ace",
+"text": "It's a list of the seven topics. Everyday income, rentals and K-1s, retirement, foreign income, basis, special sales and adjustments. I color-coded it."
+},
+{
+"t": 34.16,
+"who": "Penny",
+"text": "What color is \"special sales\"?"
+},
+{
+"t": 36.06,
+"who": "Ace",
+"text": "Burnt sienna. It's a very special color."
+},
+{
+"t": 39.01,
+"who": "Milo",
+"text": "Let's start with Penny's big win. Penny won the raffle at the Ledger Falls Fair!"
+},
+{
+"t": 43.58,
+"who": "Penny",
+"text": "A riding lawn mower! And a year of free car washes!"
+},
+{
+"t": 46.91,
+"who": "Ace",
+"text": "Congratulations. And gross income means all income from whatever source, unless a law specifically excludes it. Noncash income, like prizes or barter, counts at fair market value."
+},
+{
+"t": 60.4,
+"who": "Penny",
+"text": "So the mower is income?"
+},
+{
+"t": 61.98,
+"who": "Ace",
+"text": "At its fair market value. And winnings and prizes are fully taxable."
+},
+{
+"t": 66.8,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 67.2,
+"stage": "The fridge door swings open. Examiner Hoot steps out of the vegetable drawer, holding a clipboard and a cucumber."
+},
+{
+"t": 67.2,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. I will be appraising the mower."
+},
+{
+"t": 70.8,
+"who": "Penny",
+"text": "Were you in our FRIDGE?"
+},
+{
+"t": 72.27,
+"who": "Hoot",
+"text": "Examiner Hoot. I was keeping the file cool. Your crisper drawer is out of compliance. This cucumber is from 2024."
+},
+{
+"t": 81.58,
+"who": "Milo",
+"text": "Hooty! Welcome back!"
+},
+{
+"t": 82.85,
+"who": "Hoot",
+"text": "Do not. Call me. Hooty. Now. Gambling. Winnings are taxable. Gambling losses are an itemized deduction only, and for 2025 they're limited to your winnings. You may NOT net them."
+},
+{
+"t": 96.47,
+"who": "Milo",
+"text": "What does \"no netting\" mean?"
+},
+{
+"t": 98.01,
+"who": "Ace",
+"text": "You report all the winnings as income, and the losses, if you itemize, go on Schedule A, up to the amount of the winnings. You don't just report the difference."
+},
+{
+"t": 108.9,
+"who": "Milo",
+"text": "So my slot machine strategy..."
+},
+{
+"t": 110.97,
+"who": "Penny",
+"text": "Milo, you don't have a slot machine strategy. You have a dream and a coupon for the buffet."
+},
+{
+"t": 116.26,
+"who": "Ace",
+"text": "Next, wages. Tips and overtime are still wages. But for 2025 through 2028, there's a new deduction for qualified tips up to $25,000, and for the overtime premium up to $12,500, or $25,000 married filing jointly. Both phase out above $150,000 of modified AGI, or $300,000 joint. And Social Security and Medicare taxes still apply."
+},
+{
+"t": 149.51,
+"who": "Hoot",
+"text": "Interest. Bank, corporate and Treasury interest is taxable. Municipal bond interest is exempt from federal tax, but it is still REPORTED. And Schedule B is required when interest or ordinary dividends exceed $1,500."
+},
+{
+"t": 168.08,
+"who": "Ace",
+"text": "Dividends. Qualified dividends get the 0, 15 or 20 percent rates, if the stock was held more than sixty days during the 121-day period around the ex-dividend date. A return of capital isn't income; it reduces basis, and anything beyond basis is capital gain. And mutual fund capital gain distributions are always long-term."
+},
+{
+"t": 193.23,
+"who": "Milo",
+"text": "What about when the bank forgives a debt? My credit card company canceled $900 I owed!"
+},
+{
+"t": 199.19,
+"who": "Ace",
+"text": "Canceled debt is income, usually reported on Form 1099-C, unless an exclusion applies: bankruptcy, insolvency up to the amount you were insolvent, qualified principal residence debt through 2025, or qualified farm or real property business debt. Those go on Form 982."
+},
+{
+"t": 221.49,
+"who": "Hoot",
+"text": "Unemployment compensation: fully taxable. And state tax refunds are taxable only if you itemized last year and the deduction gave you a tax benefit. Took the standard deduction last year? The state refund is not taxable."
+},
+{
+"t": 238.42,
+"who": "Penny",
+"text": "I took the standard deduction! My state refund is free!"
+},
+{
+"t": 241.84,
+"who": "Hoot",
+"text": "Your state refund is not federally taxable. Nothing is free, Penny Pocket. I am a government owl."
+},
+{
+"t": 249.59,
+"who": "Milo",
+"text": "The rule of the segment: if it came in, it counts, unless a law says it doesn't."
+},
+{
+"t": 254.2,
+"cue": "Ding!"
+},
+{
+"t": 255.25,
+"who": "Milo",
+"text": "Segment two! My old condo. I moved in with Penny, so the condo's empty, and I'm renting it out! Landlord Milo!"
+},
+{
+"t": 262.25,
+"who": "Penny",
+"text": "He bought a tiny landlord hat."
+},
+{
+"t": 264.24,
+"who": "Milo",
+"text": "It's a fedora, Penny. It says \"trust me.\""
+},
+{
+"t": 266.71,
+"who": "Ace",
+"text": "Rental income includes rent, advance rent in the year you receive it, lease-cancellation fees, and expenses the tenant pays for you. A refundable security deposit isn't income, unless you keep it or apply it as rent."
+},
+{
+"t": 282.24,
+"who": "Milo",
+"text": "And I deduct everything, right? The fedora?"
+},
+{
+"t": 284.73,
+"who": "Ace",
+"text": "On Schedule E you deduct mortgage interest, property taxes, repairs, insurance, and management fees. Improvements are capitalized. And the building is depreciated: residential rental property uses 27.5-year straight-line, with a mid-month convention. Land isn't depreciable."
+},
+{
+"t": 305.51,
+"who": "Hoot",
+"text": "The fedora is not a repair, Milo Marsh. Nor is it an improvement. It is a cry for help."
+},
+{
+"t": 312.52,
+"who": "Ace",
+"text": "Now the vacation home rules. If you rent a home fewer than fifteen days a year, you don't report the rent, and you don't deduct rental expenses. Mortgage interest and taxes can stay itemized as usual."
+},
+{
+"t": 326.69,
+"who": "Penny",
+"text": "So Milo could rent the condo for the Ledger Falls Fair, fourteen days, and keep the rent?"
+},
+{
+"t": 331.86,
+"who": "Ace",
+"text": "Fourteen days or fewer, the rent is invisible. But that's not Milo's situation. He's renting it all year. Then there's the residence test for a place you use personally: it's your residence if personal use is more than the greater of fourteen days or ten percent of the days it's rented at fair rental. You allocate expenses by days, and if it's a residence, rental deductions are limited to rental income. No loss."
+},
+{
+"t": 358.66,
+"who": "Milo",
+"text": "And if the condo loses money?"
+},
+{
+"t": 360.5,
+"who": "Ace",
+"text": "Rentals are passive. Passive losses only offset passive income, and the rest carries forward. But if you actively participate, you can deduct up to $25,000 of rental losses against other income. That's reduced by fifty percent of modified AGI over $100,000, and it's gone at $150,000."
+},
+{
+"t": 385.03,
+"who": "Hoot",
+"text": "Royalties. Most owners report them on Schedule E, with no self-employment tax. A self-employed creator in the business of creating reports them on Schedule C, WITH self-employment tax."
+},
+{
+"t": 399.4,
+"who": "Milo",
+"text": "I wrote a song once. \"Kazoo Heart.\""
+},
+{
+"t": 401.66,
+"who": "Penny",
+"text": "It has no royalties, Milo. It has a restraining order from the neighbors."
+},
+{
+"t": 406.1,
+"who": "Ace",
+"text": "And K-1s. Penny owns ten percent of Rosa's Rolls, the partnership. Partnership and S corporation K-1 income is taxed when it's earned, whether or not it's distributed. Distributions reduce your basis and are taxable only beyond basis. And trust or estate beneficiaries are taxed on income that's distributed or required to be distributed, up to distributable net income."
+},
+{
+"t": 431.9,
+"who": "Penny",
+"text": "So I'm taxed on my share of the bakery's profit, even if Aunt Rosa paid me in cinnamon rolls?"
+},
+{
+"t": 437.54,
+"who": "Ace",
+"text": "Even if she paid you in nothing. Taxed when earned."
+},
+{
+"t": 440.93,
+"who": "Hoot",
+"text": "The cinnamon rolls are a separate matter. I am still investigating the cinnamon rolls."
+},
+{
+"t": 447.49,
+"cue": "Hoot stamps something"
+},
+{
+"t": 447.94,
+"who": "Milo",
+"text": "Segment three, and this one's a little sad. Grandpa Walt passed away in August, and Penny inherited his IRA. Penny, you okay?"
+},
+{
+"t": 456.38,
+"who": "Penny",
+"text": "I'm okay. Grandpa always said, \"Penny, the government will get its share, so make them work for it.\""
+},
+{
+"t": 462.35,
+"who": "Hoot",
+"text": "I respect him. I resent him. Both."
+},
+{
+"t": 465.62,
+"who": "Ace",
+"text": "Distributions from traditional IRAs and plans are ordinary income, less any basis. If you're under fifty-nine and a half, there's an extra ten percent tax unless an exception applies. Exceptions include death, disability, substantially equal periodic payments, medical expenses over seven point five percent of AGI, and up to $5,000 for a birth or adoption. IRA-only exceptions include up to $10,000 for a first home and higher education. A plan-only exception is separation from service at fifty-five or older."
+},
+{
+"t": 504.36,
+"who": "Penny",
+"text": "And Grandpa's IRA? I'm not his spouse."
+},
+{
+"t": 507.2,
+"who": "Ace",
+"text": "A spouse can treat an inherited IRA as their own. A non-spouse beneficiary sets up an inherited IRA by direct transfer. No sixty-day rollover for a non-spouse. And there's no ten percent tax on distributions after death."
+},
+{
+"t": 524.4,
+"who": "Hoot",
+"text": "The 10-year rule. Beneficiaries who are not eligible designated beneficiaries must empty the account within ten years. And if the owner had already begun required distributions, annual RMDs are also required during those ten years. Eligible designated beneficiaries can stretch."
+},
+{
+"t": 546.14,
+"who": "Penny",
+"text": "Grandpa was seventy-eight, so he'd started his RMDs. So I take yearly withdrawals and empty it within ten years."
+},
+{
+"t": 553.48,
+"who": "Ace",
+"text": "That's right. And RMDs start at seventy-three. The first one is due by April 1 of the following year, then each one by December 31. Roth IRA owners have no RMDs. And if you miss one, the excise tax is twenty-five percent of the shortfall, or ten percent if it's corrected in time."
+},
+{
+"t": 575.63,
+"who": "Milo",
+"text": "Ace. Rollovers. I want to understand rollovers. I used to be a rollerblading instructor."
+},
+{
+"t": 581.07,
+"who": "Penny",
+"text": "For two days."
+},
+{
+"t": 582.39,
+"who": "Milo",
+"text": "It was an intense two days."
+},
+{
+"t": 584.06,
+"who": "Ace",
+"text": "A sixty-day rollover keeps a distribution tax-free if it's redeposited within sixty days. If a plan pays the check to you, there's twenty percent mandatory withholding, so you have to make up that twenty percent from other money to roll over the full amount. A direct rollover has no withholding. And you get just one IRA-to-IRA sixty-day rollover per twelve months."
+},
+{
+"t": 608.17,
+"who": "Hoot",
+"text": "Qualified charitable distributions. Age seventy and a half or older. The IRA trustee pays the charity directly, up to $108,000 for 2025. It is excluded from income, it counts toward the RMD, and there is no double charitable deduction."
+},
+{
+"t": 628.87,
+"who": "Ace",
+"text": "And Roth distributions. A qualified distribution meets the five-year rule and is made after fifty-nine and a half, at death, on disability, or for a first home. It's tax-free. For other distributions, the ordering rule says contributions come out first, tax-free, then conversions, then earnings."
+},
+{
+"t": 649.07,
+"who": "Milo",
+"text": "And Social Security! Aunt Rosa gets Social Security."
+},
+{
+"t": 652.85,
+"who": "Ace",
+"text": "Provisional income is modified AGI plus tax-exempt interest plus half of the benefits. Above $25,000 single or $32,000 joint, up to fifty percent of benefits are taxable. Above $34,000 single or $44,000 joint, up to eighty-five percent. Married filing separately and living together: up to eighty-five percent starting from zero. And never more than eighty-five percent."
+},
+{
+"t": 681.97,
+"who": "Penny",
+"text": "Fifty-nine and a half to skip the toll, seventy-three to start the clock."
+},
+{
+"t": 686.28,
+"cue": "Ding!"
+},
+{
+"t": 687.33,
+"who": "Milo",
+"text": "Segment four! Dee's on the line from the oil rig!"
+},
+{
+"t": 690.09,
+"who": "Dee",
+"text": "Can you hear me now? I got a raise! And my boss says I don't pay tax because I live abroad!"
+},
+{
+"t": 695.58,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it."
+},
+{
+"t": 697.24,
+"who": "Ace",
+"text": "U.S. citizens and residents are taxed on worldwide income, wherever they live. The filing requirement uses gross income before any exclusion, and you have to file to claim it."
+},
+{
+"t": 710.02,
+"who": "Dee",
+"text": "Oh no. So what's the exclusion?"
+},
+{
+"t": 712.59,
+"who": "Ace",
+"text": "The foreign earned income exclusion. You need a tax home in a foreign country, plus either bona fide residence for a full tax year, or physical presence: 330 full days in a foreign country during any twelve consecutive months."
+},
+{
+"t": 729.53,
+"who": "Hoot",
+"text": "Note: \"foreign country\" includes its land, territorial waters, airspace, and its continental shelf for natural resource work. International waters and Antarctica do NOT count."
+},
+{
+"t": 742.76,
+"who": "Dee",
+"text": "My rig is on the Norwegian continental shelf!"
+},
+{
+"t": 746.18,
+"who": "Ace",
+"text": "Then those days count. For 2025, the exclusion is up to $130,000 per qualifying person, prorated by qualifying days. Spouses each get their own limit, and they can't share it."
+},
+{
+"t": 761.08,
+"who": "Dee",
+"text": "What about my housing? My bunk costs a fortune and it has a seagull."
+},
+{
+"t": 765.32,
+"who": "Ace",
+"text": "The housing exclusion or deduction covers costs over the base amount, $20,800 for 2025, up to a cap that's generally $39,000, more in high-cost cities. Employees take an exclusion; the self-employed take a deduction. Both on Form 2555."
+},
+{
+"t": 787.62,
+"who": "Hoot",
+"text": "ONLY foreign EARNED income. Wages, fees, self-employment income. NOT interest, dividends, gains, pensions, Social Security, or U.S. government pay."
+},
+{
+"t": 800.13,
+"who": "Ace",
+"text": "And trade-offs. If you take the exclusion, you can't take the earned income credit, you can't take a foreign tax credit on the excluded income, the stacking rule taxes your other income at the higher rates, if you revoke it you can't use it again for five years without IRS consent, and self-employment tax still applies."
+},
+{
+"t": 821.76,
+"who": "Dee",
+"text": "And when do I file?"
+},
+{
+"t": 823.67,
+"who": "Ace",
+"text": "If you're living abroad on April 15, you get an automatic extension to June 15, but interest still runs from April 15. Form 2350 extends the time if you need to meet the tests first."
+},
+{
+"t": 838.28,
+"who": "Dee",
+"text": "Three hundred and thirty days, $130,000, and only what I..."
+},
+{
+"t": 843.66,
+"cue": "The video call glitches"
+},
+{
+"t": 844.31,
+"who": "Penny",
+"text": "Earned. She was going to say earned."
+},
+{
+"t": 846.34,
+"who": "Dee",
+"text": "...earned! I said earned!"
+},
+{
+"t": 848.43,
+"cue": "Hoot stamps something"
+},
+{
+"t": 848.88,
+"who": "Milo",
+"text": "Segment five! Basis! Grandpa Walt left Penny his stock, and Aunt Rosa gives gifts with the price tag still on!"
+},
+{
+"t": 855.78,
+"who": "Penny",
+"text": "She gave me a lamp with a tag that said $40. And a card that said \"this was $90 when Bert bought it in 1997.\""
+},
+{
+"t": 864.32,
+"who": "Ace",
+"text": "Basis starts as what you paid, plus the costs of buying: commission, sales tax, freight and installation. Adjusted basis adds improvements, and subtracts depreciation, allowed or allowable, casualty losses and insurance reimbursements."
+},
+{
+"t": 881.21,
+"who": "Hoot",
+"text": "Gain or loss equals amount realized minus adjusted basis. Amount realized is cash, plus property, plus debt relief, minus selling costs."
+},
+{
+"t": 892.86,
+"who": "Ace",
+"text": "Holding period. Long-term means held MORE than one year. You count from the day after you bought it, and the sale day counts."
+},
+{
+"t": 900.9,
+"who": "Penny",
+"text": "And Grandpa's stock?"
+},
+{
+"t": 902.43,
+"who": "Ace",
+"text": "Inherited property gets a basis equal to fair market value at the date of death, or the alternate valuation date. And it's always long-term, no matter how soon you sell."
+},
+{
+"t": 914.4,
+"who": "Hoot",
+"text": "Gifts. The donor's adjusted basis carries over, plus gift tax on the appreciation. The donor's holding period tacks on. And the special rule: if the gift was worth LESS than the donor's basis, gain uses the donor's basis, loss uses fair market value at the time of the gift, and a sale in between is no gain and no loss."
+},
+{
+"t": 937.55,
+"who": "Penny",
+"text": "Gift? The tag travels. Inherit? The tag resets."
+},
+{
+"t": 941.05,
+"who": "Ace",
+"text": "Then netting. Short-term against short-term, long-term against long-term, then combine. A net capital loss offsets up to $3,000 a year of other income, $1,500 if married filing separately. The rest carries forward with no time limit. And losses on personal-use property don't count."
+},
+{
+"t": 963.51,
+"who": "Milo",
+"text": "So when I sold my old car at a loss..."
+},
+{
+"t": 965.93,
+"who": "Ace, Hoot and Penny",
+"text": "Nothing to deduct."
+},
+{
+"t": 967.88,
+"who": "Milo",
+"text": "I feel like you rehearsed that."
+},
+{
+"t": 969.61,
+"who": "Ace",
+"text": "Long-term capital gains rates for 2025 are 0, 15 and 20 percent. Single: the zero percent rate goes up to $48,350 of taxable income, and twenty percent starts over $533,400. Married filing jointly: $96,700 and $600,050. Collectibles max out at twenty-eight percent, and unrecaptured section 1250 gain at twenty-five."
+},
+{
+"t": 1004.79,
+"who": "Hoot",
+"text": "Home sale. Exclude up to $250,000 of gain, $500,000 married filing jointly, if you owned AND used the home as your main home for two of the last five years. Once every two years. A loss on a home sale is not deductible."
+},
+{
+"t": 1024.1,
+"cue": "Ding!"
+},
+{
+"t": 1025.15,
+"who": "Milo",
+"text": "Segment six! Milo's Swap Meet! I traded my van for a better van. Tax-free swap!"
+},
+{
+"t": 1030.43,
+"who": "Ace",
+"text": "Since 2018, section 1031 like-kind exchanges apply only to business or investment real property, swapped for business or investment real property. Not personal property, like vans, not your main home, not dealer property, and not U.S. property for foreign property. Form 8824."
+},
+{
+"t": 1053.09,
+"who": "Milo",
+"text": "Swap land for land, not vans for vans. Got it."
+},
+{
+"t": 1056.27,
+"who": "Ace",
+"text": "You must identify the replacement within forty-five days and receive it within 180 days, or by the return due date if earlier. If you receive boot, like cash, gain is recognized up to the boot. No losses are recognized. And new basis equals old basis, plus boot paid, plus gain recognized, minus boot received."
+},
+{
+"t": 1079.31,
+"who": "Hoot",
+"text": "Installment sales. Gain on each payment equals principal received times the gross profit percentage, gross profit divided by contract price. Interest is separate. Depreciation recapture is taxed in the year of sale. Not available for inventory, dealers, or publicly traded stock. Form 6252."
+},
+{
+"t": 1102.42,
+"who": "Milo",
+"text": "My friend Gus borrowed $2,000 and vanished. Bad debt deduction?"
+},
+{
+"t": 1107.01,
+"who": "Ace",
+"text": "A nonbusiness bad debt has to be a real, bona fide loan, and totally worthless. It's a short-term capital loss on Form 8949, with a statement. A business bad debt is ordinary, and it can be partly worthless. And you need basis: there's no deduction for services you were never paid for."
+},
+{
+"t": 1128.54,
+"who": "Lulu",
+"text": "And options! I sold Penny an option on my bike."
+},
+{
+"t": 1131.69,
+"who": "Penny",
+"text": "Lulu charged me $5 for the right to buy her bike for $50."
+},
+{
+"t": 1136.43,
+"who": "Lulu",
+"text": "And Penny never used it. So it lapsed. I have a short-term capital gain."
+},
+{
+"t": 1140.48,
+"who": "Ace",
+"text": "Right. The writer of a lapsed option has a short-term capital gain. The buyer has a capital loss, with the option's holding period. If a call is exercised, the buyer adds the premium to basis and the writer adds it to the amount realized."
+},
+{
+"t": 1157.57,
+"who": "Hoot",
+"text": "Wash sales. Sell stock at a loss, and buy substantially identical stock within thirty days before or after, and the loss is disallowed. It is added to the basis of the new shares."
+},
+{
+"t": 1171.51,
+"who": "Ace",
+"text": "And investor versus trader. An investor has capital gains and losses, and no deduction for investment expenses. A trader trades substantially, regularly and continuously, and deducts expenses on Schedule C. Gains are still capital unless the trader makes a section 475(f) mark-to-market election, which makes them ordinary, with no wash sale rule and no $3,000 limit."
+},
+{
+"t": 1198.67,
+"cue": "Hoot stamps something"
+},
+{
+"t": 1199.12,
+"who": "Milo",
+"text": "Final segment! Above the line, where everybody's invited!"
+},
+{
+"t": 1202.6,
+"who": "Ace",
+"text": "Adjustments on Schedule 1 reduce gross income to AGI, and you get them even with the standard deduction. A lower AGI also helps with AGI-based limits and phase-outs."
+},
+{
+"t": 1215.32,
+"who": "Hoot",
+"text": "The health savings account. Eligibility: a high-deductible health plan with a minimum deductible of $1,650 self-only or $3,300 family for 2025, no other coverage, not on Medicare, and not anyone's dependent. Limits: $4,300 self-only, $8,550 family, plus $1,000 at age fifty-five or older. Contribute by April 15. Form 8889."
+},
+{
+"t": 1252.1,
+"who": "Ace",
+"text": "HSA distributions for qualified medical expenses are tax-free. Non-medical distributions are income plus twenty percent, but no twenty percent after sixty-five, disability or death. And balances carry over."
+},
+{
+"t": 1268.1,
+"who": "Penny",
+"text": "IRAs. Can I put in $7,000?"
+},
+{
+"t": 1271.18,
+"who": "Ace",
+"text": "For 2025, the IRA limit is $7,000, plus $1,000 at fifty or older, up to your taxable compensation. A spouse with little or no income can use a spousal IRA on a joint return. The deduction may phase out if you're covered by a workplace plan. And you can contribute by April 15."
+},
+{
+"t": 1293.9,
+"who": "Milo",
+"text": "And me, the self-employed legend?"
+},
+{
+"t": 1295.79,
+"who": "Ace",
+"text": "You deduct half of your self-employment tax. Self-employed health insurance, but not for months you're eligible for an employer plan, and limited to net profit. A SEP, up to twenty-five percent of compensation, which works out to about twenty percent of net self-employment earnings, with a $70,000 maximum for 2025. And a 401(k) deferral of $23,500."
+},
+{
+"t": 1323.07,
+"who": "Hoot",
+"text": "Student loan interest. Up to $2,500. You must be legally obligated to pay it. Not married filing separately. Not a dependent. For 2025 it phases out between $85,000 and $100,000 of modified AGI, $170,000 to $200,000 joint."
+},
+{
+"t": 1347.66,
+"who": "Ace",
+"text": "Educators: $300 each for K-12 teachers who work at least 900 hours. Alimony is deductible by the payer and taxable to the recipient only for agreements before 2019. Child support, never. And the penalty on early withdrawal of savings is an adjustment."
+},
+{
+"t": 1367.95,
+"who": "Milo",
+"text": "Ms. Wren, Lulu's teacher, gets $300?"
+},
+{
+"t": 1371.09,
+"who": "Lulu",
+"text": "Ms. Wren spends $300 on glitter by October."
+},
+{
+"t": 1374.48,
+"cue": "Theme music"
+},
+{
+"t": 1376.33,
+"who": "Milo",
+"text": "Lightning round! Hoot, take it away."
+},
+{
+"t": 1378.34,
+"who": "Hoot",
+"text": "The raffle mower. Taxable at?"
+},
+{
+"t": 1381.03,
+"who": "Penny",
+"text": "Fair market value!"
+},
+{
+"t": 1382.47,
+"who": "Hoot",
+"text": "Correct. A house rented for fourteen days. Report the rent?"
+},
+{
+"t": 1387.16,
+"who": "Milo",
+"text": "No! Invisible rent!"
+},
+{
+"t": 1388.68,
+"who": "Hoot",
+"text": "Correct, which pains me. Inherited stock sold one week later. Short- or long-term?"
+},
+{
+"t": 1395.19,
+"who": "Lulu",
+"text": "Long-term. Inherited is always long-term."
+},
+{
+"t": 1397.88,
+"who": "Hoot",
+"text": "Correct. Vans for vans under section 1031?"
+},
+{
+"t": 1402.09,
+"who": "Milo",
+"text": "Not since 2018. Land for land."
+},
+{
+"t": 1404.59,
+"who": "Hoot",
+"text": "Correct. Dee, 330 days in what period?"
+},
+{
+"t": 1408.87,
+"who": "Dee",
+"text": "Any twelve consecutive..."
+},
+{
+"t": 1411.2,
+"cue": "The video call glitches"
+},
+{
+"t": 1411.85,
+"who": "Dee",
+"text": "...months!"
+},
+{
+"t": 1413.07,
+"who": "Hoot",
+"text": "Correct. All correct. My penalty pad is still empty. My doctor says I need to get out more."
+},
+{
+"t": 1420.15,
+"who": "Penny",
+"text": "Hoot, you have a doctor?"
+},
+{
+"t": 1421.74,
+"who": "Hoot",
+"text": "I have an auditor. It is the same thing."
+},
+{
+"t": 1425.04,
+"who": "Milo",
+"text": "That's our show! Thank you to Ace, Penny, Lulu, Dee, and Examiner Hoot, who lives in our fridge."
+},
+{
+"t": 1430.39,
+"who": "Hoot",
+"text": "I do not live in your fridge. I visit your fridge. Report everything that came in. See you in Unit 3."
+},
+{
+"t": 1438.07,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 1438.47,
+"who": "Penny",
+"text": "He took the cucumber."
+},
+{
+"t": 1440.05,
+"who": "Milo",
+"text": "Let him have the cucumber, Penny. It's from 2024. It's basically his now."
+},
+{
+"t": 1444.89,
+"cue": "Theme music"
+}
+]
+}

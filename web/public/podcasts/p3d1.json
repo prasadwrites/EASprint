@@ -1,0 +1,624 @@
+{
+"id": "p3d1",
+"title": "Season 3, Unit 1: Ace Hangs His Shingle",
+"seconds": 811,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 3. 2026. Unplugged now records in Okafor Tax Defense, Ace's tiny office above Rosa's Rolls. The rent is paid in cinnamon rolls. Every stair is labeled."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Ledger Falls, welcome to Season 3 of Unplugged! We're broadcasting from Okafor Tax Defense, Ace's brand-new office, above Rosa's Rolls. I'm Milo Marsh, host, producer, and self-appointed head of marketing for Okafor Tax Defense."
+},
+{
+"t": 17.17,
+"who": "Ace",
+"text": "Nobody appointed you, Milo."
+},
+{
+"t": 19.28,
+"who": "Milo",
+"text": "That's what \"self-appointed\" means, Ace."
+},
+{
+"t": 21.4,
+"who": "Ace",
+"text": "I'm Ace Okafor, enrolled agent, and this is my office. Please don't touch the label maker."
+},
+{
+"t": 28.16,
+"who": "Penny",
+"text": "I'm Penny Pocket. Ace labeled the stairs. All fourteen."
+},
+{
+"t": 31.77,
+"who": "Ace",
+"text": "Thirteen. The fourteenth is a landing. It has a different label."
+},
+{
+"t": 36.21,
+"who": "Penny",
+"text": "What does it say?"
+},
+{
+"t": 37.36,
+"who": "Ace",
+"text": "\"Landing.\""
+},
+{
+"t": 38.65,
+"who": "Rosa",
+"text": "And I'm Rosa, downstairs, the landlord. I brought up rolls. Ace, I'm docking your rent if you don't eat one."
+},
+{
+"t": 45.26,
+"who": "Ace",
+"text": "Rosa, my rent IS rolls."
+},
+{
+"t": 47.39,
+"who": "Rosa",
+"text": "Then eat your rent, dear."
+},
+{
+"t": 49.54,
+"who": "Milo",
+"text": "Season 3 is Part 3 of the exam: representation, practices and procedures. Episode 1.1! Ace hangs his shingle. Ace, who can practice before the IRS?"
+},
+{
+"t": 60.87,
+"who": "Ace",
+"text": "Attorneys, CPAs and enrolled agents have unlimited practice before the IRS. They can represent any taxpayer on any matter before any office of the IRS. Enrolled actuaries and enrolled retirement plan agents have limited practice, in their areas. And participants in the Annual Filing Season Program have limited representation, for returns they prepared and signed."
+},
+{
+"t": 87.24,
+"who": "Penny",
+"text": "Attorneys, CPAs, EAs: anyone, anything, anywhere in the IRS."
+},
+{
+"t": 92.3,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 92.7,
+"stage": "The bottom drawer of Ace's new filing cabinet slides open. Examiner Hoot unfolds himself from it."
+},
+{
+"t": 92.7,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. Who authorized this filing cabinet?"
+},
+{
+"t": 96.82,
+"who": "Ace",
+"text": "Hoot! I bought it yesterday! It was empty!"
+},
+{
+"t": 99.77,
+"who": "Hoot",
+"text": "Examiner Hoot. It was empty. Now it has me. You are welcome. It is a very good cabinet. Full extension drawers. Ball-bearing slides. I would like to be buried in it."
+},
+{
+"t": 111.87,
+"who": "Rosa",
+"text": "Hoot, don't be morbid. Have a roll."
+},
+{
+"t": 114.48,
+"who": "Hoot",
+"text": "Special appearances. People who may appear WITHOUT a license. Yourself. Your immediate family. Your employer, if you are a regular full-time employee. A partnership, if you are a general partner or employee. A corporation, if you are an officer or employee. And a fiduciary, for the estate or trust."
+},
+{
+"t": 135.91,
+"who": "Milo",
+"text": "So I can represent Penny?"
+},
+{
+"t": 137.5,
+"who": "Ace",
+"text": "As her spouse, you could appear for her as immediate family. Whether that's a good idea is a separate question."
+},
+{
+"t": 144.67,
+"who": "Penny",
+"text": "It is not a good idea."
+},
+{
+"t": 146.33,
+"who": "Milo",
+"text": "I'd wear a tie."
+},
+{
+"t": 147.53,
+"who": "Penny",
+"text": "You'd wear the fedora, Milo."
+},
+{
+"t": 149.37,
+"who": "Ace",
+"text": "The enrolled agent path. You get a PTIN, pass all three parts of the Special Enrollment Examination within three years, and apply on Form 23, which includes a tax compliance check. Or you can qualify through technical IRS work experience."
+},
+{
+"t": 167.56,
+"who": "Hoot",
+"text": "Renewal every three years on Form 8554. Continuing education: seventy-two hours per three-year cycle, a minimum of sixteen hours each year, including two hours of ethics every year, from IRS-approved providers. Keep CE records for four years."
+},
+{
+"t": 187.72,
+"who": "Milo",
+"text": "Seventy-two hours! Ace, how do you have time?"
+},
+{
+"t": 190.37,
+"who": "Ace",
+"text": "I do my CE at 5 AM, Milo. With tea. And a highlighter."
+},
+{
+"t": 195.35,
+"who": "Penny",
+"text": "Ace's idea of a wild Friday night is a webinar on Circular 230."
+},
+{
+"t": 200.34,
+"who": "Ace",
+"text": "It was a very good webinar. There was a poll."
+},
+{
+"t": 203.46,
+"who": "Ace",
+"text": "The Annual Filing Season Program is voluntary. It takes eighteen hours a year: a six-hour Annual Federal Tax Refresher course with a test, ten hours of federal tax law, and two hours of ethics. Participants get limited representation rights: only for returns they prepared and signed, and only before revenue agents, customer service and the Taxpayer Advocate Service. Not Appeals, and not Collection."
+},
+{
+"t": 230.96,
+"who": "Milo",
+"text": "My cousin Rudy is in the AFSP!"
+},
+{
+"t": 233.24,
+"who": "Ace",
+"text": "And he can represent clients on returns he prepared and signed, but not in Appeals or Collection."
+},
+{
+"t": 239.62,
+"who": "Milo",
+"text": "He makes sandwiches, too."
+},
+{
+"t": 241.35,
+"who": "Hoot",
+"text": "The sandwiches are not covered by the program."
+},
+{
+"t": 245.06,
+"who": "Ace",
+"text": "And the PTIN. Anyone paid to prepare, or help prepare, all or substantially all of a federal tax return needs one. You renew it every year, and it expires December 31. A PTIN alone gives no representation rights."
+},
+{
+"t": 261.57,
+"cue": "Ding!"
+},
+{
+"t": 262.62,
+"who": "Milo",
+"text": "Episode 1.2! Milo's Billboard! I'm head of marketing, so I bought a billboard on the highway."
+},
+{
+"t": 268.7,
+"who": "Ace",
+"text": "Milo. What does it say."
+},
+{
+"t": 270.67,
+"who": "Milo",
+"text": "\"Ace Okafor, IRS-Certified Tax Wizard. We Win or You Don't Pay!\""
+},
+{
+"t": 275.66,
+"stage": "Silence. Ace slowly puts down his tea."
+},
+{
+"t": 275.66,
+"who": "Hoot",
+"text": "Hoo. Hoo. Hoo-hoo-HOLD IT. I have never been so happy."
+},
+{
+"t": 279.86,
+"who": "Ace",
+"text": "Milo, that billboard breaks two rules of Circular 230. Advertising, section 10.30, says no false or misleading claims. An enrolled agent may say \"enrolled to practice before the Internal Revenue Service.\" Never \"IRS-certified.\" Never \"wizard.\""
+},
+{
+"t": 299.34,
+"who": "Milo",
+"text": "The wizard part is just branding."
+},
+{
+"t": 301.35,
+"who": "Ace",
+"text": "The wizard part is false, Milo. I'm not a wizard. I'm an enrolled agent with a label maker."
+},
+{
+"t": 308.07,
+"who": "Hoot",
+"text": "Also, under section 10.30, keep a copy of broadcast ads and the list of anyone solicited for thirty-six months. And published fees must be honored for at least thirty days."
+},
+{
+"t": 321.69,
+"who": "Ace",
+"text": "The second problem is \"we win or you don't pay.\" That's a contingent fee. Section 10.27 allows contingent fees only for an IRS examination or challenge to an original return, or an amended return or claim filed within 120 days of receiving the exam notice; a refund claim solely for interest or penalties; and judicial proceedings. And never an unconscionable fee."
+},
+{
+"t": 349.58,
+"who": "Penny",
+"text": "\"Enrolled,\" never \"certified.\" Results-based fees only for exams, penalty refunds and court."
+},
+{
+"t": 355.87,
+"who": "Milo",
+"text": "Okay, but I already printed the wizard hats."
+},
+{
+"t": 358.58,
+"who": "Ace",
+"text": "Section 10.29, conflicts of interest. If representing one client would be directly adverse to another, or there's a significant risk your responsibilities to someone else would materially limit it, you can continue only if you reasonably believe you can represent each client competently and diligently, it isn't prohibited by law, and each affected client gives informed consent, confirmed in writing, within thirty days. Keep the consents for thirty-six months after the engagement ends."
+},
+{
+"t": 391.52,
+"who": "Rosa",
+"text": "What if Penny and I both want Ace? We're partners."
+},
+{
+"t": 395.06,
+"who": "Ace",
+"text": "If your interests line up, it's fine. If they ever conflict, I'd need both of you to consent in writing."
+},
+{
+"t": 402.12,
+"who": "Rosa",
+"text": "I'll consent to anything if you eat that roll, dear."
+},
+{
+"t": 405.51,
+"who": "Hoot",
+"text": "Section 10.21. When a practitioner learns a client made an error, or didn't comply with the law, the practitioner must promptly advise the client of the noncompliance, error or omission, and its consequences. The practitioner has no duty to fix it or to tell the IRS. Section 10.22: due diligence on everything you prepare or represent."
+},
+{
+"t": 430.71,
+"who": "Ace",
+"text": "Section 10.28: you must return the client's records on request, even if there's a fee dispute. And section 10.31: a practitioner can't endorse, cash or redirect a client's federal refund check."
+},
+{
+"t": 446.37,
+"who": "Milo",
+"text": "Okay, I'll fix the billboard. What should it say?"
+},
+{
+"t": 449.04,
+"who": "Ace",
+"text": "\"Ace Okafor, Enrolled Agent. Enrolled to practice before the Internal Revenue Service.\""
+},
+{
+"t": 455.72,
+"who": "Milo",
+"text": "That's very long, Ace. Can I add a wizard?"
+},
+{
+"t": 458.16,
+"who": "Ace",
+"text": "No wizard."
+},
+{
+"t": 459.48,
+"who": "Milo",
+"text": "A small wizard?"
+},
+{
+"t": 460.66,
+"who": "Ace, Hoot and Penny",
+"text": "No wizard."
+},
+{
+"t": 462.21,
+"cue": "Hoot stamps something"
+},
+{
+"t": 462.66,
+"who": "Milo",
+"text": "Episode 1.3! Quick Refund Rex! Ace's billboard now says \"enrolled.\" But across the street, a much bigger billboard just went up."
+},
+{
+"t": 471.75,
+"who": "Penny",
+"text": "It says \"Quick Refund Rex! Biggest Refunds in Town! Guaranteed!\""
+},
+{
+"t": 476.04,
+"who": "Milo",
+"text": "And he's got a radio ad. Listen."
+},
+{
+"t": 478.26,
+"who": "Rex",
+"text": "Hey, Ledger Falls! It's Quick Refund Rex! Biggest refunds, guaranteed! I sign nothing, I keep nothing, and I never ask questions! Come on down!"
+},
+{
+"t": 487.18,
+"stage": "The radio clicks off."
+},
+{
+"t": 487.18,
+"who": "Hoot",
+"text": "I have been waiting all season for Quick Refund Rex. I have a binder. It is red."
+},
+{
+"t": 493.34,
+"who": "Ace",
+"text": "Rex just confessed to about six violations in fifteen seconds. Disreputable conduct, under section 10.51, includes conviction of tax crimes or felonies involving dishonesty, giving false information to the IRS, willfully failing to file or pay your own taxes, misappropriating client funds, false or reckless opinions, signing a return you know is false, and improper disclosure of tax information."
+},
+{
+"t": 522.42,
+"who": "Hoot",
+"text": "Circular 230 sanctions, imposed by the Office of Professional Responsibility. Censure. Suspension of up to five years. Disbarment. And a monetary penalty up to the gross income derived from the conduct, which can also be imposed on the firm. After notice and a hearing before an administrative law judge. Expedited suspension in limited cases."
+},
+{
+"t": 548.07,
+"who": "Penny",
+"text": "And the preparer penalties?"
+},
+{
+"t": 549.72,
+"who": "Ace",
+"text": "Section 6694. An understatement due to an unreasonable position: the greater of $1,000 or fifty percent of the preparer's income from that return. Due to willful or reckless conduct: the greater of $5,000 or seventy-five percent."
+},
+{
+"t": 569.03,
+"who": "Penny",
+"text": "Unreasonable: $1,000 or fifty percent. Willful: $5,000 or seventy-five percent. Whichever is greater."
+},
+{
+"t": 577.56,
+"who": "Hoot",
+"text": "Section 6695. Per-failure penalties. Failing to give the taxpayer a copy. Failing to sign. Failing to furnish a PTIN. Failing to keep a copy or a list. Due diligence failures on Form 8867, for the EITC, the child tax credit and credit for other dependents, the AOTC, and head of household. And negotiating a client's refund check."
+},
+{
+"t": 603.89,
+"who": "Ace",
+"text": "Paid preparers must sign the return, show their PTIN, give the taxpayer a copy, and keep a copy or a list for three years. Section 6701, aiding and abetting an understatement: $1,000 per return, or $10,000 for corporate returns. And section 7407 lets the government seek an injunction against a preparer."
+},
+{
+"t": 628.72,
+"who": "Rex",
+"text": "It's Quick Refund Rex again! New this week: I'll cash your refund check FOR you!"
+},
+{
+"t": 633.42,
+"who": "Hoot",
+"text": "Section 10.31 and section 6695. Thank you, Rex. Thank you so much."
+},
+{
+"t": 641.05,
+"who": "Milo",
+"text": "Hoot, are you smiling?"
+},
+{
+"t": 642.36,
+"who": "Hoot",
+"text": "I do not smile. My beak is experiencing joy."
+},
+{
+"t": 646.5,
+"who": "Rosa",
+"text": "Has anyone ever seen Rex?"
+},
+{
+"t": 648.85,
+"who": "Penny",
+"text": "No. Nobody has ever seen Rex. There's only billboards and the radio."
+},
+{
+"t": 653.21,
+"who": "Milo",
+"text": "Some say Rex isn't a man. He's an idea."
+},
+{
+"t": 655.92,
+"who": "Ace",
+"text": "He's a preparer without a PTIN, Milo."
+},
+{
+"t": 658.86,
+"who": "Milo",
+"text": "That's what an idea would say."
+},
+{
+"t": 660.57,
+"cue": "Ding!"
+},
+{
+"t": 661.62,
+"who": "Milo",
+"text": "Okay, bonus segment! Ace, give us a day in the life. Ace's office rules."
+},
+{
+"t": 666.23,
+"who": "Ace",
+"text": "Rule one: every client signs an engagement letter. Rule two: every return gets a second look. Rule three: highlighters are color-coded. Teal for deadlines, orange for money, purple for questions."
+},
+{
+"t": 680.35,
+"who": "Penny",
+"text": "What's green?"
+},
+{
+"t": 681.45,
+"who": "Ace",
+"text": "Green is for Hoot."
+},
+{
+"t": 683.24,
+"who": "Hoot",
+"text": "I am honored."
+},
+{
+"t": 684.88,
+"who": "Ace",
+"text": "It's because green is for warnings."
+},
+{
+"t": 687.38,
+"who": "Hoot",
+"text": "I remain honored."
+},
+{
+"t": 689.22,
+"who": "Rosa",
+"text": "And what's pink?"
+},
+{
+"t": 690.8,
+"who": "Ace",
+"text": "Pink is for cinnamon rolls, Rosa."
+},
+{
+"t": 693.36,
+"who": "Rosa",
+"text": "Finally. Somebody in this town has their priorities straight."
+},
+{
+"t": 697.35,
+"who": "Milo",
+"text": "Rule four: no wizards?"
+},
+{
+"t": 698.82,
+"who": "Ace",
+"text": "Rule four is no wizards, Milo."
+},
+{
+"t": 701.56,
+"cue": "Theme music"
+},
+{
+"t": 703.41,
+"who": "Milo",
+"text": "Lightning round! Hoot, from the filing cabinet."
+},
+{
+"t": 706.1,
+"who": "Hoot",
+"text": "It has excellent acoustics. Who has unlimited practice before the IRS?"
+},
+{
+"t": 711.9,
+"who": "Penny",
+"text": "Attorneys, CPAs and enrolled agents!"
+},
+{
+"t": 714.72,
+"who": "Hoot",
+"text": "Correct. An AFSP participant wants to represent a client in Collection. Allowed?"
+},
+{
+"t": 721.5,
+"who": "Milo",
+"text": "No! Not Appeals, not Collection. Sorry, Rudy."
+},
+{
+"t": 724.45,
+"who": "Hoot",
+"text": "Correct. How many CE hours every three years for an EA, and how many in ethics each year?"
+},
+{
+"t": 731.22,
+"who": "Ace",
+"text": "Seventy-two per cycle, at least sixteen a year, two hours of ethics every year."
+},
+{
+"t": 736.69,
+"who": "Hoot",
+"text": "Correct. Can an EA advertise as \"IRS-certified\"?"
+},
+{
+"t": 741.26,
+"who": "Rosa",
+"text": "Never. \"Enrolled to practice before the Internal Revenue Service.\""
+},
+{
+"t": 745.54,
+"who": "Hoot",
+"text": "Correct. A contingent fee for preparing an original return. Allowed?"
+},
+{
+"t": 751.14,
+"who": "Penny",
+"text": "No. Exams, penalty and interest refunds, and court only."
+},
+{
+"t": 755.02,
+"who": "Hoot",
+"text": "Correct. A preparer takes an unreasonable position and earned $4,000 on the return. Section 6694 penalty?"
+},
+{
+"t": 765.68,
+"who": "Ace",
+"text": "The greater of $1,000 or fifty percent of $4,000. So $2,000."
+},
+{
+"t": 772.88,
+"who": "Hoot",
+"text": "Correct. Everyone correct. Except Rex, who is not here, which is also correct."
+},
+{
+"t": 779.03,
+"who": "Milo",
+"text": "That's Unit 1 of Season 3! Thank you to Ace, Penny, Aunt Rosa, and Examiner Hoot, who lives in Ace's filing cabinet now."
+},
+{
+"t": 787.07,
+"who": "Hoot",
+"text": "Examiner Hoot. I do not live in the filing cabinet. I am stored in it. There is a difference. See you in Unit 2. I have a surprise for the Pockets."
+},
+{
+"t": 797.59,
+"who": "Penny",
+"text": "What kind of surprise?"
+},
+{
+"t": 799.02,
+"who": "Hoot",
+"text": "The kind with a letter."
+},
+{
+"t": 801.37,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 801.77,
+"stage": "The filing cabinet drawer slams shut."
+},
+{
+"t": 801.77,
+"who": "Penny",
+"text": "Ace. What kind of letter?"
+},
+{
+"t": 803.33,
+"who": "Ace",
+"text": "Penny, let's not panic."
+},
+{
+"t": 805.25,
+"who": "Penny",
+"text": "I'm not panicking. I'm laminating my panic."
+},
+{
+"t": 808.2,
+"cue": "Theme music"
+}
+]
+}
