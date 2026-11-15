@@ -1,0 +1,185 @@
+# Unit 1 Hot Seat: Birthdays, Juice Boxes and the Ten-Grand Rule
+(Season 1. A Saturday in January 2026. The front porch of Penny and Milo's house on Maple Street, which is also the busiest street in Ledger Falls. Milo has set up a folding table, a bell, and a lawn chair with a plug-in seat warmer.)
+[hotseat]
+[applause]
+MILO: Welcome, welcome, welcome to the very first episode of The Hot Seat! The quiz show where Ace and Hoot ask the questions, and the rest of us sweat.
+ACE: Hi, everyone. I'm Ace Okafor, enrolled agent. Here's how it works. Every question is the kind you'll see on Part 1 of the Special Enrollment Examination. One of the cast takes the hot seat and answers. Then Hoot and I explain what's really going on, and we give you a trick to remember it on exam day.
+MILO: And the hot seat is a real seat. It's a lawn chair with a heated cushion. I bought it from a man in a parking lot.
+PENNY: It smells like toast, Milo.
+MILO: That's the warmth, babe.
+[pop]
+(The lid of the porch mailbox flips open. Examiner Hoot climbs out, straightening his green eyeshade.)
+HOOT: Hoo-hoo-HOLD the applause. Examiner Hoot is present. I will be keeping score, and I will be keeping it strictly.
+PENNY: Hoot, were you inside our MAILBOX?
+HOOT: Where else would the IRS make first contact? By mail. Always by mail. Remember that, listeners. It is on the exam.
+LULU: Do we win prizes?
+HOOT: The winner receives three Hoot points and a laminated certificate.
+ACE: I laminated it.
+LULU: What are Hoot points worth?
+HOOT: Nothing. That is what makes them pure.
+[car]
+MILO: That's the Saturday traffic. Very authentic. Okay. Our first contestant: Aunt Rosa!
+ROSA: I brought scones. If I get one wrong, the scones were a bribe. If I get one right, they're a celebration.
+HOOT: I am writing down "bribe." Just in case.
+[q]
+ACE: Rosa, here's your first question. A taxpayer was born on January 1, 1961. For tax year 2025, is she considered age sixty-five or older for the additional standard deduction? A, no, because she turns sixty-five in 2026. B, yes, because you reach an age on the day before your birthday. C, only if she's also blind. D, only if she files jointly.
+ROSA: Well, I was born on January 1, 1961, so I hope it's B, or I'm about to be very insulted.
+[correct]
+HOOT: Correct. Aunt Rosa is officially old a whole year early. Congratulations, I suppose.
+ROSA: Thank you, Hoot. I think.
+ACE: Here's the deeper part. For tax purposes, you reach an age on the day before your birthday. Rosa turned sixty-five on December 31, 2025, so she's sixty-five for all of 2025. For 2025, an unmarried taxpayer who's sixty-five or older adds $2,000 to the standard deduction. A married spouse who's sixty-five or older adds $1,600 each.
+HOOT: So Rosa's 2025 standard deduction, filing single, is $15,750 plus $2,000. That is $17,750.
+ACE: Memory trick: New Year's babies age on New Year's Eve. If the birthday is January 1, they're a year older for the year that just ended.
+HOOT: Trap alert: the exam will put "2026" in the wrong answer and hope you do the birthday math like a normal person. Do not be a normal person. Be an examiner.
+PENNY: That's the scariest thing you've ever said.
+[q]
+HOOT: Question two. Milo. In the hot seat.
+MILO: Ow. It's very warm now. The parking lot man was right.
+HOOT: A married couple marries on December 31 at 11:59 PM. Which filing statuses can they use for that year? A, single only. B, married filing jointly or married filing separately. C, head of household. D, single for the first eleven months and married for December.
+MILO: Penny and I got married at 11:59 PM on New Year's Eve! And I remember Ace saying it counts as married for the whole year. B!
+[correct]
+ACE: Right. Marital status is decided on the last day of the year. Married on December 31, even at one minute to midnight, means married for the whole year. The flip side is a final decree of divorce or separate maintenance by December 31, which means unmarried for the whole year. And if a spouse died during the year, the survivor is still treated as married for that year and can file jointly.
+HOOT: Answer D is my favorite wrong answer. There is no such thing as being married for one month. Marriage is a December 31 snapshot.
+ACE: Memory trick: the tax year asks one question on New Year's Eve. "Who are you holding hands with right now?" That's your status for the whole year.
+PENNY: Aww. Milo, you were holding a sparkler and a burrito.
+MILO: And your hand, babe. With my third hand.
+[horn]
+LULU: Somebody honked at you, Uncle Milo.
+MILO: They're fans.
+[q]
+ACE: Penny, your turn. Penny, this one's a classic. Under the substantial presence test, which days count for 2025? A, all days in 2025, 2024 and 2023 added together. B, all days in 2025, one-third of the days in 2024, and one-sixth of the days in 2023, with at least thirty-one days in 2025. C, only days in 2025, with at least 183. D, one-half of every year.
+PENNY: Ooh. I made flashcards for this. B. All of this year, a third of last year, a sixth of the year before, and you need at least thirty-one days this year, and the total has to be at least 183.
+[correct]
+HOOT: Correct, and with the thirty-one-day part, which most people forget. Two Hoot points.
+PENNY: Why two?
+HOOT: The flashcards were laminated. I respect that.
+ACE: Let's do the math the exam will make you do. Sven was in the U.S. 120 days in 2025, 150 in 2024 and 180 in 2023. 120, plus one-third of 150, which is 50, plus one-sixth of 180, which is 30. That's 200. He also has more than thirty-one days this year. So he's a resident alien for 2025.
+HOOT: And here is the trap. Days as an exempt individual, such as many students on F or J visas, do not count. And a person with a green card at any time during the year is a resident alien under the green card test, even if they spent only three days here. Do not run the day count when the green card already answered the question.
+ACE: Memory trick: think "one, a third, a sixth". The years fade like a photo. This year is full color. Last year is a third. The year before is barely a ghost.
+MILO: Speaking of ghosts, Hoot, your eyeshade is on backwards.
+HOOT: It is on in the precise direction the regulations allow.
+[q]
+HOOT: Question four. Lulu. Sit.
+LULU: The chair is toasty. I'm keeping it.
+HOOT: A person who can't get a Social Security number needs a taxpayer identification number to file a return. What does he apply for? A, a PTIN. B, an ATIN. C, an ITIN, on Form W-7. D, a library card.
+LULU: D is a joke. Hoot made a joke!
+HOOT: I did no such thing.
+LULU: It's C. An ITIN. Ace has a poster.
+[correct]
+ACE: Right. An ITIN, an Individual Taxpayer Identification Number, is for someone who needs a taxpayer number but can't get an SSN. They apply on Form W-7. An ATIN, on Form W-7A, is a temporary number for a child in a pending U.S. adoption. And a PTIN is for paid tax preparers, not taxpayers.
+HOOT: And the trap: an ITIN is for tax filing only. It does not authorize work in the United States, and it does not make anyone eligible for Social Security benefits.
+ACE: Memory trick: the "I" in ITIN is for "I just need to file." The "A" in ATIN is for "adoption." And the "P" in PTIN is for "preparer," which is me.
+LULU: What's the "H" in Hoot for?
+HOOT: Honesty.
+PENNY: And hiding in mailboxes.
+[q]
+ACE: Lulu, stay put, this one is about you. Penny and Milo want to claim a nine-year-old girl who lived with them all of 2025. She's the daughter of Penny's cousin. Her gross income was $4,000 and they paid more than half her support. How can they claim her? A, as a qualifying child. B, as a qualifying relative. C, they can't claim her at all. D, as head of household.
+LULU: It's B. Qualifying RELATIVE. I've been saying it for a year. Nobody listens.
+[correct]
+LULU: Thank you. I'll take my Hoot points in cash.
+HOOT: Hoot points do not come in cash. They come in dignity.
+ACE: Here's why. A qualifying child must pass the relationship test: your child, stepchild, foster child, sibling, half-sibling or step-sibling, or a descendant of any of them, like a grandchild, niece or nephew. A cousin isn't on that list, and neither is a cousin's child. So Lulu fails the relationship test as a qualifying child.
+HOOT: Then she goes to the other club. A qualifying relative must not be anyone's qualifying child. Lulu did not live with her mother, Dee, so she is not Dee's qualifying child. She must either live with the taxpayer all year as a member of the household, or be on the relative list. Lulu lived there all year. Her gross income must be under $5,200 for 2025. Four thousand is under. And the taxpayer must provide more than half her support. They did.
+ACE: Memory trick for the qualifying child tests: Really Annoying Relatives Steal Juice. Relationship, Age, Residency, Support, Joint return.
+LULU: I am not annoying. I'm a qualifying relative.
+HOOT: Trap alert: the $5,200 gross income test applies only to a qualifying relative. A qualifying child can earn any amount. The exam will dangle a child with a big paycheck. Do not bite.
+[ring]
+MILO: Ooh, a phone-a-friend! It's Dee on the oil rig!
+DEE: Hi, Lulu! Hi, everyone! Is this the quiz show? Can I play?
+HOOT: The rig is not on the porch. However, you may attempt one question.
+[q]
+HOOT: Dee. Question six. A U.S. person had two foreign bank accounts in 2025. One reached a high of $6,000. The other reached a high of $5,500. Neither was ever above $10,000 on its own. Must she file an FBAR? A, no, because each account stayed under $10,000. B, yes, because the combined maximum values were more than $10,000. C, only if the accounts earned interest. D, only if she lives in the U.S.
+DEE: Oh, I think it's A, because each one was under ten...
+[glitch]
+DEE: ...thousand, so I'm totally fine. Right?
+[buzzer]
+HOOT: Wrong. Bzzt. Zero Hoot points. And your signal cut out on the only important word.
+DEE: That's my whole life, Hoot.
+ACE: It's B. The FBAR test adds up the highest value of every foreign account during the year. Six thousand plus fifty-five hundred is $11,500. That's more than $10,000, so a U.S. person must file. The FBAR is FinCEN Form 114. It's filed electronically with FinCEN, not with the IRS, and it's not attached to the tax return.
+HOOT: Due April 15, with an automatic extension to October 15. No request is needed. And here is the twist the exam adores: signature authority counts. Penny can sign on Dee's Norwegian account to pay Lulu's bills. So Penny files an FBAR for it too, even though none of the money belongs to her.
+PENNY: I did file! I set four alarms.
+ACE: Memory trick: ten grand, all added up, even if you just sign.
+HOOT: Exam tip: the FBAR and Form 8938 are different animals. Form 8938 is attached to the 1040, has much higher thresholds, starting at $50,000 at year end for a single filer living in the U.S., and signature authority alone does not count. If both apply, file both.
+DEE: Sorry, Lulu. Mommy got zero dignity points.
+LULU: It's okay, Mom. I'll share mine.
+[truck]
+MILO: That's the bread truck. Aunt Rosa, is that your bread truck?
+ROSA: That's Gerald's cousin's truck. Long story.
+[q]
+ACE: Milo, back in the seat. A man who isn't married, under sixty-five, earned only $900 of net self-employment income walking dogs in 2025. That's his only income. Must he file a 2025 return? A, no, his income is way below the $15,750 filing threshold. B, yes, because his net self-employment earnings are $400 or more. C, only if he received a Form 1099-NEC. D, only if he wants a refund.
+MILO: This is a trick. I walked dogs! Milo's Mutts! Nine hundred dollars! And I think the answer is A, because nine hundred is way less than fifteen thousand.
+[buzzer]
+HOOT: Wrong, Milo Marsh. Exactly as the Mutts predicted.
+ACE: It's B. Some people must file no matter how small their gross income is. Net earnings from self-employment of $400 or more is one, because self-employment tax may be due. Others are: advance payments of the premium tax credit for you or a family member, owing a special tax like the extra tax on an IRA or HSA or household employment taxes, and church employee income of $108.28 or more.
+HOOT: And answer C is a classic distractor. Whether or not a 1099 shows up does not change what is taxable or who must file. Income is income, from whatever source.
+ACE: Memory trick: "Four hundred, file it, buddy." Self-employment of $400 or more means a return.
+MILO: Four hundred, file it, buddy. I'm putting it on a mug.
+PENNY: Your mugs leak.
+MILO: Then it'll be a leaky reminder.
+[q]
+HOOT: Penny. Married filing separately. What is the gross income filing threshold for 2025, for a separate filer of any age? A, $15,750. B, $31,500. C, $5. D, the same as single.
+PENNY: C. Five dollars. It's always the weird one.
+[correct]
+HOOT: Correct. Penny Pocket has studied. Another Hoot point.
+ACE: Here are the 2025 numbers the exam loves. Standard deduction: $15,750 for single and married filing separately, $23,625 for head of household, and $31,500 for married filing jointly and qualifying surviving spouse. For people under sixty-five, those same amounts are the gross income filing lines, except married filing separately, where just $5 of gross income triggers a return.
+HOOT: And if one spouse filing separately itemizes, the other spouse's standard deduction is zero. They must itemize too. Separate filers also cannot take the education credits or the student loan interest deduction.
+ACE: Memory trick: married filing separately is the five-dollar club. Five bucks in, you file.
+PENNY: Like Milo's Mutts. Five bucks in, Milo spends it on kazoos.
+MILO: That was an INVESTMENT.
+[q]
+ACE: Rosa, a hard one. A woman's husband died in 2022. She hasn't remarried, and her dependent son lived with her all year, every year. She paid all the costs of the home. What's her best filing status for 2025? A, married filing jointly. B, qualifying surviving spouse. C, head of household. D, single.
+ROSA: My Bert passed in 2023, so I've thought about this. I'll say B, qualifying surviving spouse, because it gives you the joint rates.
+[buzzer]
+HOOT: Close, but wrong for this lady. Zero points. The scones remain a bribe.
+ROSA: Oh, phooey.
+ACE: Count the years. In the year the spouse dies, 2022 here, the survivor can usually file jointly. Then qualifying surviving spouse is available for the next two years only, 2023 and 2024, if she has a dependent child living with her all year and hasn't remarried. By 2025 that window has closed. She's unmarried, she paid more than half the cost of the home, and a qualifying person lived with her. So her best status is head of household.
+HOOT: Trap alert: QSS lasts two years after the year of death. Not three. Not forever. The exam will hand you a widow in year three and wait for you to pick QSS.
+ACE: Memory trick: "Joint, two, then HOH." Joint in the year of death, two years of QSS, then head of household or single.
+ROSA: Joint, two, then HOH. That sounds like a dance.
+[bikebell]
+LULU: That's Ms. Wren on her bike! Hi, Ms. Wren!
+[q]
+HOOT: Lulu. Since you love being a dependent. In 2025, a ten-year-old girl had $4,000 of dividends and no other income. Both parents are alive. How much of her income is taxed at a parent's rate? A, none, kids are tax-free. B, all $4,000. C, $1,300. D, $2,700.
+LULU: Hmm. I had dividends! From my very own stocks. I think it's... C? Because some of it is free and some of it is my rate.
+[correct]
+HOOT: Correct. This is the kiddie tax.
+ACE: For 2025, the first $1,350 of a child's unearned income is covered by the child's standard deduction. The next $1,350 is taxed at the child's own rate. Everything above $2,700 is taxed at a parent's rate, on Form 8615. So $4,000 minus $2,700 is $1,300 at a parent's rate.
+HOOT: Exam tip: it is always a parent's rate. Not a guardian's. Not an aunt's. Not Penny's, even though Lulu lives with Penny. And only a parent can elect to report the child's interest and dividends on their own return, on Form 8814.
+ACE: Memory trick: thirteen fifty free, thirteen fifty at the kid's rate, the rest goes to a parent's tab.
+LULU: So the government charges my mom for my stock?
+DEE: Hi, sweetie, Mom's signal is...
+[glitch]
+DEE: ...breaking up. Love you!
+[q]
+ACE: Milo, last one for you. You get a letter from the IRS called a CP2000. What is it? A, a bill you must pay immediately. B, a notice that you're being arrested. C, a proposed change because income reported to the IRS doesn't match your return, which you should agree with or explain by the deadline. D, junk mail.
+MILO: I've gotten one of these. I think. Penny opened it. It's C!
+[correct]
+ACE: Right. A CP2000 is an underreporter notice. Every 1099 and W-2 has a twin copy at the IRS. When the twins don't match the return, the IRS proposes a change. It's not a bill and it's not an audit, but you have to respond by the date on the notice. Agree and follow its instructions, or disagree and explain in writing with documents. Keep a copy.
+HOOT: The other notices. A CP14 is a bill: a balance is due. A CP12 says the IRS corrected an error on your return and your refund changed. Letter 5071C asks you to verify your identity before the return is processed.
+HOOT: And the scam test. The IRS does not start contact by text, email or social media. It does not demand gift cards or wire transfers. It does not threaten to have you arrested. If someone calls you and does that, hang up.
+ACE: Memory trick: CP2000 is the "two thousand questions" letter. It asks; it doesn't bill. CP14 is the bill, fourteen days to feel bad about it.
+HOOT: That is not in the regulations.
+ACE: It's a memory trick, Hoot. It doesn't have to be in the regulations.
+HOOT: Everything should be in the regulations.
+[q]
+HOOT: Final question. Lightning round. Anyone may shout. A taxpayer has an Identity Protection PIN. True or false: she can reuse last year's PIN on this year's e-filed return.
+PENNY+LULU: False!
+[correct]
+HOOT: Correct. An IP PIN is six digits, it is new every year, and anyone who can verify their identity may opt in. If one has been issued, the current one must be on the return, or the e-filed return is rejected.
+ACE: Memory trick: an IP PIN is like a toothbrush. Personal, and you get a new one every year.
+MILO: I've had my toothbrush since 2019.
+PENNY: We know, Milo.
+[drumroll]
+HOOT: The final scores. Lulu, three Hoot points. Penny, four Hoot points, including the laminated bonus. Rosa, one Hoot point and one bribe. Milo, two Hoot points. Dee, zero Hoot points and a signal problem.
+DEE: Story of my...
+[glitch]
+HOOT: Penny Pocket is today's champion of The Hot Seat.
+[applause]
+PENNY: Thank you! I'd like to thank my flashcards, my coupon binder, and the man who sold Milo this chair.
+ACE: Let's recap the tips. Birthdays count the day before. Marital status is a December 31 snapshot. Substantial presence is one, a third, a sixth, with thirty-one days this year. Really Annoying Relatives Steal Juice for a qualifying child. Under $5,200 for a qualifying relative. Ten grand added up for the FBAR, even if you just sign. Four hundred, file it, buddy. Married filing separately is the five-dollar club. Joint, two, then HOH. And a CP2000 asks, it doesn't bill.
+HOOT: And I will be in the mailbox. Waiting.
+[car]
+MILO: That's our show! Thanks for listening to The Hot Seat. Next time, Unit 2, all about income. I'm Milo, I'm head of marketing, and my seat is now too hot to sit on.
+PENNY: Milo, unplug it.
+MILO: I can't. The plug is also hot.
+[hotseat]

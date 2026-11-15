@@ -1,0 +1,809 @@
+{
+"id": "p1d2-hotseat",
+"title": "Unit 2 Hot Seat: Raffles, Rollovers and the Wash Sale Trap",
+"seconds": 1415,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 1. February 2026. Penny and Milo's driveway on Maple Street, during Milo's yard sale. Every item is labeled by Ace. The heated lawn chair is back."
+},
+{
+"t": 0.3,
+"cue": "The Hot Seat theme"
+},
+{
+"t": 2.49,
+"cue": "Applause"
+},
+{
+"t": 4.84,
+"who": "Milo",
+"text": "Welcome back to The Hot Seat! Recorded live at the Maple Street Mega Yard Sale, where everything must go, including eleven kazoos."
+},
+{
+"t": 13.16,
+"who": "Penny",
+"text": "Nobody has bought a kazoo, Milo."
+},
+{
+"t": 15.38,
+"who": "Milo",
+"text": "They're building suspense."
+},
+{
+"t": 16.94,
+"who": "Ace",
+"text": "Hi, everyone. Ace Okafor, enrolled agent. Today is Unit 2: income. Wages, interest, dividends, prizes, rentals, retirement money, foreign income, property sales and adjustments. The rules are the same as last time. One contestant in the hot seat, one exam-style question, then Hoot and I dig deeper and give you a trick for exam day."
+},
+{
+"t": 41.65,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 42.05,
+"stage": "A cardboard box marked FREE bursts open. Examiner Hoot rises out of it."
+},
+{
+"t": 42.05,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD the sale. Nothing in this driveway is free. Everything is income to somebody."
+},
+{
+"t": 48.7,
+"who": "Penny",
+"text": "Hoot, you were in the free box!"
+},
+{
+"t": 50.58,
+"who": "Hoot",
+"text": "I was evaluating the fair market value of your merchandise. It is low. Very low."
+},
+{
+"t": 57.08,
+"who": "Milo",
+"text": "Hooty! Our scorekeeper!"
+},
+{
+"t": 58.54,
+"who": "Hoot",
+"text": "Examiner Hoot. And for calling me Hooty, Milo Marsh begins today with negative one Hoot point."
+},
+{
+"t": 66.1,
+"who": "Milo",
+"text": "Can you even have negative Hoot points?"
+},
+{
+"t": 68.22,
+"who": "Hoot",
+"text": "You can now."
+},
+{
+"t": 69.72,
+"cue": "A car drives past"
+},
+{
+"t": 73.07,
+"cue": "Question 1",
+"q": 1
+},
+{
+"t": 73.9,
+"who": "Ace",
+"text": "Penny, take the seat. You won a riding lawn mower in the church raffle. The mower is worth $4,000. Your ticket cost $20. You take the standard deduction. How much income do you report from the raffle? A, nothing, prizes are gifts. B, $3,980, the prize minus the ticket. C, $4,000, and the ticket gives you no deduction because you don't itemize. D, only what you'd get if you sold it."
+},
+{
+"t": 102.53,
+"who": "Penny",
+"text": "I LOVE that mower. I named it Gloria. And I think it's C. Prizes count at fair market value, and you can't net the ticket against it."
+},
+{
+"t": 110.75,
+"cue": "Correct-answer chime"
+},
+{
+"t": 111.54,
+"who": "Hoot",
+"text": "Correct. Gloria is income."
+},
+{
+"t": 114.13,
+"who": "Ace",
+"text": "Gross income is all income from whatever source, unless a specific law excludes it. That includes prizes, raffle and lottery winnings, and property, which counts at its fair market value. The $20 ticket is a wagering loss. For 2025, gambling losses are deductible only as an itemized deduction, and only up to winnings. You can't net them against the winnings. With the standard deduction, the loss gets you nothing."
+},
+{
+"t": 141.5,
+"who": "Hoot",
+"text": "Exam tip: answer B is the banana peel. Netting is forbidden. Winnings go on the return in full. Losses live somewhere else, if they live at all. And starting in 2026, deductible gambling losses are limited to ninety percent.",
+"tip": true
+},
+{
+"t": 159.32,
+"who": "Ace",
+"text": "Memory trick: \"If it came in, it counts.\" Then ask, is there a law that says it doesn't?",
+"tip": true
+},
+{
+"t": 165.26,
+"cue": "Question 2",
+"q": 2
+},
+{
+"t": 166.09,
+"who": "Hoot",
+"text": "Question two. Aunt Rosa, sit."
+},
+{
+"t": 168.95,
+"who": "Rosa",
+"text": "I'm sitting, I'm sitting. Oh, that's warm. That's very warm."
+},
+{
+"t": 172.85,
+"who": "Hoot",
+"text": "A baker trades a cake worth $500 to a plumber for $500 of plumbing work. What does the baker report? A, nothing, no money changed hands. B, $500, the fair market value of the services she received. C, $250, split the difference. D, only what the plumber reports."
+},
+{
+"t": 195.19,
+"who": "Rosa",
+"text": "When Bert was alive we traded pies for everything. Haircuts, a tuba lesson, a goat. Nobody reported anything. So, A?"
+},
+{
+"t": 202.79,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 203.54,
+"who": "Hoot",
+"text": "Wrong. And I am making a note about the goat."
+},
+{
+"t": 206.9,
+"who": "Rosa",
+"text": "The goat was a long time ago."
+},
+{
+"t": 209.29,
+"who": "Hoot",
+"text": "The goat will be in my file forever."
+},
+{
+"t": 212.54,
+"who": "Ace",
+"text": "The answer is B. Bartering is income to both sides. Each person reports the fair market value of what they received. Rosa reports $500 for the plumbing. The plumber reports $500 for the cake."
+},
+{
+"t": 228.07,
+"who": "Ace",
+"text": "Memory trick: a barter is two sales wearing a trench coat. Each side has income.",
+"tip": true
+},
+{
+"t": 233.92,
+"cue": "Question 3",
+"q": 3
+},
+{
+"t": 234.75,
+"who": "Ace",
+"text": "Milo. Hot seat. Milo, a credit card company canceled $3,000 of your debt. Right before that, your liabilities were $10,000 and your assets were worth $9,000. You're not in bankruptcy. How much of the canceled debt is income? A, $3,000. B, $0. C, $2,000. D, $1,000."
+},
+{
+"t": 259.03,
+"who": "Milo",
+"text": "Okay. My total debts were ten thousand, my stuff was worth nine thousand, so I was underwater by one thousand. So I can skip one thousand? So, C. Two thousand is income."
+},
+{
+"t": 269.95,
+"cue": "Correct-answer chime"
+},
+{
+"t": 270.74,
+"who": "Milo",
+"text": "YES. That cancels my negative point!"
+},
+{
+"t": 272.84,
+"who": "Hoot",
+"text": "It does. Milo Marsh is now at zero. A historic climb."
+},
+{
+"t": 277.66,
+"who": "Ace",
+"text": "Canceled debt is generally income, usually reported on Form 1099-C. But there are exclusions: debt canceled in bankruptcy, debt canceled while insolvent, qualified principal residence debt discharged by the end of 2025, and qualified farm and real property business debt. Insolvency means your liabilities were more than the fair market value of your assets just before the cancellation. And you can exclude only up to the amount you were insolvent. Milo was insolvent by $1,000, so he excludes $1,000 on Form 982, and the other $2,000 is income."
+},
+{
+"t": 320.17,
+"who": "Hoot",
+"text": "Trap alert: the exam will offer you $0, because insolvency sounds like a magic word. It is not magic. It is math.",
+"tip": true
+},
+{
+"t": 330.16,
+"who": "Ace",
+"text": "Memory trick: insolvent? Only as deep as the hole.",
+"tip": true
+},
+{
+"t": 334.26,
+"cue": "A delivery truck rumbles by"
+},
+{
+"t": 338.41,
+"who": "Milo",
+"text": "That's the big box store truck. Corporate yard sales. I hate them."
+},
+{
+"t": 342.35,
+"cue": "Question 4",
+"q": 4
+},
+{
+"t": 343.18,
+"who": "Hoot",
+"text": "Lulu. In the seat. You may bring your juice box."
+},
+{
+"t": 347.0,
+"who": "Lulu",
+"text": "I always bring my juice box."
+},
+{
+"t": 349.31,
+"who": "Hoot",
+"text": "A taxpayer lived in her home all year, and rented it out for twelve days during the town's big festival for $3,000. How does she treat the $3,000? A, as rental income on Schedule E. B, as other income on Schedule 1. C, she doesn't report it, and she doesn't deduct any rental expenses. D, she reports half."
+},
+{
+"t": 371.89,
+"who": "Lulu",
+"text": "That's the Penny and Milo festival thing! Ace said if you rent it less than fifteen days it's invisible. So C!"
+},
+{
+"t": 378.09,
+"cue": "Correct-answer chime"
+},
+{
+"t": 378.88,
+"who": "Hoot",
+"text": "Correct. Lulu continues to be a dangerous contestant."
+},
+{
+"t": 383.2,
+"who": "Ace",
+"text": "If a dwelling unit is used as a home and rented fewer than fifteen days in the year, none of the rent is reported and no rental expenses are deducted. Mortgage interest and property taxes are still deductible as itemized deductions, as they would be for any home."
+},
+{
+"t": 401.2,
+"who": "Hoot",
+"text": "Exam tip: fourteen days is the magic number twice in this topic. Rent it fourteen days or fewer, the rent is invisible. Use it personally more than the greater of fourteen days or ten percent of the fair rental days, and it is a residence, which means rental expenses can't exceed rental income, so no rental loss.",
+"tip": true
+},
+{
+"t": 424.06,
+"who": "Ace",
+"text": "Memory trick: \"Fourteen days or fewer? The rent is invisible.\"",
+"tip": true
+},
+{
+"t": 428.56,
+"who": "Lulu",
+"text": "I charged forty-nine dollars to show people where the bathroom was."
+},
+{
+"t": 432.19,
+"who": "Penny",
+"text": "Lulu!"
+},
+{
+"t": 433.18,
+"who": "Hoot",
+"text": "That is a separate matter. Bring me a receipt."
+},
+{
+"t": 436.64,
+"cue": "Question 5",
+"q": 5
+},
+{
+"t": 437.47,
+"who": "Ace",
+"text": "Penny, next one is a three-parter, so get comfy. Penny and Milo rent out a condo. Their modified AGI is $120,000. Milo actively participates in managing the rental. They have a $12,000 rental loss and no passive income. How much of the loss can they deduct in 2025? A, nothing, passive losses only offset passive income. B, $25,000. C, $12,000. D, $5,000."
+},
+{
+"t": 471.04,
+"who": "Penny",
+"text": "Okay, there's the special twenty-five thousand allowance, but it shrinks over a hundred thousand. By half of the excess. So twenty thousand over, half is ten thousand, so the allowance is fifteen thousand. The loss is twelve. So all of it. C."
+},
+{
+"t": 485.74,
+"cue": "Correct-answer chime"
+},
+{
+"t": 486.53,
+"who": "Hoot",
+"text": "Correct. And she did the math out loud. Very transparent. Two Hoot points."
+},
+{
+"t": 492.21,
+"who": "Ace",
+"text": "Rental activities are generally passive, and passive losses can offset only passive income. Disallowed losses carry forward. But an individual who actively participates, meaning they own at least ten percent and take part in management decisions like approving tenants and setting rent, can deduct up to $25,000 of rental loss against other income. That allowance drops by fifty percent of modified AGI over $100,000, and it's gone at $150,000."
+},
+{
+"t": 527.08,
+"who": "Hoot",
+"text": "And the building: residential rental property is depreciated straight-line over 27.5 years, mid-month convention. Land is never depreciated. If the property cost $300,000 and the land is worth $60,000, only the $240,000 building is depreciated."
+},
+{
+"t": 550.35,
+"who": "Ace",
+"text": "Memory trick: twenty-five grand, minus half of everything over a hundred. Gone at one-fifty.",
+"tip": true
+},
+{
+"t": 556.8,
+"cue": "A bicycle bell"
+},
+{
+"t": 557.8,
+"cue": "Question 6",
+"q": 6
+},
+{
+"t": 558.63,
+"who": "Hoot",
+"text": "Rosa. You will redeem yourself. A taxpayer, age 45, takes $10,000 from his 401(k) plan. The plan withholds twenty percent and mails him a check for $8,000. Fifty days later he deposits only the $8,000 into an IRA. How much is taxable? A, nothing, he rolled it over within sixty days. B, $2,000. C, $10,000. D, $8,000."
+},
+{
+"t": 586.18,
+"who": "Rosa",
+"text": "Hmm. He rolled over what he got, eight thousand. He kept nothing in his pocket. But the two thousand went to the government. So the two thousand didn't get rolled. B, two thousand."
+},
+{
+"t": 596.88,
+"cue": "Correct-answer chime"
+},
+{
+"t": 597.67,
+"who": "Hoot",
+"text": "Correct. The goat is forgiven. Mostly."
+},
+{
+"t": 601.1,
+"who": "Ace",
+"text": "When an eligible plan distribution is paid to the participant, the plan must withhold twenty percent for income tax. To roll over the full $10,000 and pay no tax, he has to make up that $2,000 from other money within the sixty days. He didn't, so $2,000 is taxable. And since he's under fifty-nine and a half, the ten percent additional tax may apply to that $2,000 too. The $2,000 withheld counts as a tax payment on his return."
+},
+{
+"t": 633.53,
+"who": "Hoot",
+"text": "Trap alert: a direct rollover, trustee to trustee, has no withholding at all. And only one IRA-to-IRA sixty-day rollover is allowed in any twelve-month period, across all of a person's IRAs. Direct transfers don't count toward that limit.",
+"tip": true
+},
+{
+"t": 652.23,
+"who": "Ace",
+"text": "Memory trick: \"Sixty days, twenty percent, one per year.\" Sixty days to roll it, twenty percent withheld on plan checks, one IRA-to-IRA rollover per twelve months.",
+"tip": true
+},
+{
+"t": 664.27,
+"cue": "Question 7",
+"q": 7
+},
+{
+"t": 665.1,
+"who": "Ace",
+"text": "Milo. A man inherits a traditional IRA from his grandfather in 2025, and takes $5,000 out right away. He's thirty. How is the $5,000 taxed? A, tax-free, it's an inheritance. B, ordinary income plus the ten percent additional tax. C, ordinary income, but no ten percent additional tax. D, capital gain."
+},
+{
+"t": 689.4,
+"who": "Milo",
+"text": "Inheritances are tax-free! Everybody knows that! A!"
+},
+{
+"t": 692.62,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 693.37,
+"who": "Hoot",
+"text": "Wrong. Milo Marsh returns to the depths."
+},
+{
+"t": 696.81,
+"who": "Milo",
+"text": "But my uncle said..."
+},
+{
+"t": 698.24,
+"who": "Hoot",
+"text": "Your uncle is not in the Code."
+},
+{
+"t": 701.24,
+"who": "Ace",
+"text": "It's C. An inheritance itself isn't income, but money coming out of an inherited traditional IRA is taxable to the beneficiary, because nobody ever paid tax on it. But distributions made because of the owner's death are never subject to the ten percent additional tax, no matter how young the beneficiary is."
+},
+{
+"t": 722.96,
+"who": "Hoot",
+"text": "Exam tip: a non-spouse beneficiary cannot roll an inherited IRA into their own IRA or do a sixty-day rollover. It moves to an inherited IRA by direct transfer. And if they are not an eligible designated beneficiary, they must empty it by the end of the tenth year after the year of death. Grandpa dies in 2025, the account is empty by December 31, 2035.",
+"tip": true
+},
+{
+"t": 750.88,
+"who": "Ace",
+"text": "And only a surviving spouse can treat an inherited IRA as their own."
+},
+{
+"t": 755.85,
+"who": "Ace",
+"text": "Memory trick: \"Fifty-nine and a half to skip the toll, seventy-three to start the clock.\" Before fifty-nine and a half, the ten percent toll, unless an exception like death fits. At seventy-three, required minimum distributions start.",
+"tip": true
+},
+{
+"t": 771.66,
+"cue": "A car horn honks"
+},
+{
+"t": 772.64,
+"who": "Milo",
+"text": "Somebody wants a kazoo!"
+},
+{
+"t": 774.12,
+"who": "Penny",
+"text": "They're honking at you because you're standing in the street, Milo."
+},
+{
+"t": 777.49,
+"cue": "Phone rings"
+},
+{
+"t": 778.84,
+"who": "Dee",
+"text": "Hi! It's Dee! Is it question time? I studied this time! I'm on the rig, I'm basically an expert on foreign income."
+},
+{
+"t": 785.56,
+"who": "Hoot",
+"text": "Very well. Dee. Question eight."
+},
+{
+"t": 788.31,
+"cue": "Question 8",
+"q": 8
+},
+{
+"t": 789.14,
+"who": "Hoot",
+"text": "A U.S. citizen works on an oil rig on a foreign country's continental shelf, with her tax home abroad. She was physically present in foreign countries for 340 full days in a twelve-month period. Her 2025 wages were $150,000. How much can she exclude under the foreign earned income exclusion? A, $150,000. B, $130,000. C, nothing, because the rig is in the ocean. D, $120,000."
+},
+{
+"t": 826.24,
+"who": "Dee",
+"text": "Okay, I know this one. The rig is on the continental shelf, which counts as a foreign country for resource work. I had more than 330 days. So I exclude... B! A hundred and thirty thousand!"
+},
+{
+"t": 837.13,
+"cue": "Correct-answer chime"
+},
+{
+"t": 837.92,
+"who": "Dee",
+"text": "Lulu! Mommy got a point!"
+},
+{
+"t": 840.34,
+"who": "Lulu",
+"text": "Good job, Mom!"
+},
+{
+"t": 841.81,
+"who": "Ace",
+"text": "For 2025, a qualifying person can exclude up to $130,000 of foreign earned income. She qualifies with a foreign tax home plus either the bona fide residence test, a full tax year as a foreign resident, or the physical presence test, which is 330 full days in foreign countries during any twelve consecutive months. The other $20,000 is taxable, at the rates that would apply if the excluded income were included. That's the stacking rule."
+},
+{
+"t": 875.34,
+"who": "Hoot",
+"text": "Trap alert: international waters are not a foreign country, and neither is Antarctica. But a foreign country's continental shelf, for natural resource work, is. And only earned income qualifies. Interest, dividends, pensions and Social Security never do. Neither does pay from the U.S. government.",
+"tip": true
+},
+{
+"t": 896.97,
+"who": "Ace",
+"text": "And the trade-offs. Anyone who claims the exclusion on Form 2555 can't claim the earned income credit, and there's no foreign tax credit for tax on the excluded income."
+},
+{
+"t": 909.45,
+"who": "Ace",
+"text": "Memory trick: \"330 days, $130,000, and only what you earned.\"",
+"tip": true
+},
+{
+"t": 916.77,
+"who": "Dee",
+"text": "I'm writing that on my hard..."
+},
+{
+"t": 919.27,
+"cue": "The video call glitches"
+},
+{
+"t": 919.92,
+"who": "Dee",
+"text": "...hat. On my hard hat."
+},
+{
+"t": 922.12,
+"cue": "Question 9",
+"q": 9
+},
+{
+"t": 922.95,
+"who": "Ace",
+"text": "Penny. Back in the chair. Basis time. Your aunt bought stock for $4,000. When she gave it to you it was worth $9,000. You sell it for $12,000. What's your gain? A, $3,000. B, $8,000. C, $12,000. D, nothing, gifts are tax-free."
+},
+{
+"t": 943.96,
+"who": "Penny",
+"text": "Okay. Gifts carry the donor's basis. The tag travels. So twelve thousand minus four thousand, B, eight thousand."
+},
+{
+"t": 951.5,
+"cue": "Correct-answer chime"
+},
+{
+"t": 952.29,
+"who": "Rosa",
+"text": "I love being the aunt in the question."
+},
+{
+"t": 955.01,
+"who": "Ace",
+"text": "A gift keeps the donor's adjusted basis. That's carryover basis. And the donor's holding period carries over too. So Penny's gain is $12,000 minus Rosa's $4,000, which is $8,000."
+},
+{
+"t": 970.73,
+"who": "Hoot",
+"text": "But inherited property is different. It gets a new basis, its fair market value on the date of death, or on the alternate valuation date if the executor elects it. And inherited property is always long-term, even if you sell it the next week."
+},
+{
+"t": 988.83,
+"who": "Ace",
+"text": "Memory trick: \"Gift? The tag travels. Inherit? The tag resets.\"",
+"tip": true
+},
+{
+"t": 993.31,
+"who": "Hoot",
+"text": "And here is the hardest version. When a gift is worth less than the donor's basis at the time of the gift, there are two bases. Use the donor's basis to figure a gain, and the value at the gift to figure a loss. If you sell somewhere in between, there is no gain and no loss."
+},
+{
+"t": 1012.49,
+"who": "Penny",
+"text": "I love that one. It's like the stock went into witness protection."
+},
+{
+"t": 1016.33,
+"cue": "Question 10",
+"q": 10
+},
+{
+"t": 1017.16,
+"who": "Hoot",
+"text": "Lulu. A man sells stock at a $1,000 loss on March 1. On March 20 he buys the same stock again. What happens to the loss? A, he deducts it in full. B, it's gone forever. C, it's disallowed now and added to the basis of the new shares. D, it becomes a gain."
+},
+{
+"t": 1037.77,
+"who": "Lulu",
+"text": "Um. Is this the wash thing? Like washing a juice box?"
+},
+{
+"t": 1041.16,
+"who": "Hoot",
+"text": "It is the wash sale rule. Answer the question."
+},
+{
+"t": 1044.68,
+"who": "Lulu",
+"text": "C. Because Ace said it's not gone, it just goes in the new shares."
+},
+{
+"t": 1048.53,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1049.32,
+"who": "Ace",
+"text": "A wash sale happens when you sell stock or securities at a loss and buy substantially identical stock within thirty days before or after the sale. The loss is disallowed for now and added to the basis of the new shares, and the holding period carries over too."
+},
+{
+"t": 1067.45,
+"who": "Hoot",
+"text": "Exam tip: count both directions. Thirty days before and thirty days after. That is a sixty-one-day window, including the sale day.",
+"tip": true
+},
+{
+"t": 1077.83,
+"who": "Ace",
+"text": "Memory trick: a wash sale doesn't throw the loss away. It washes it into the new shares.",
+"tip": true
+},
+{
+"t": 1083.97,
+"cue": "Question 11",
+"q": 11
+},
+{
+"t": 1084.8,
+"who": "Ace",
+"text": "Rosa, a bit of property law. A taxpayer trades a delivery van for another delivery van, both used in her business, in 2025. Is it a like-kind exchange? A, yes, van for van. B, no, since 2018 only real property qualifies. C, only if the vans are the same color. D, yes, if she files Form 8824."
+},
+{
+"t": 1108.25,
+"who": "Rosa",
+"text": "It's a van for a van. Even Gerald could see they're alike. A!"
+},
+{
+"t": 1112.6,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 1113.35,
+"who": "Hoot",
+"text": "Wrong. And Gerald is a jar of sourdough."
+},
+{
+"t": 1116.94,
+"who": "Rosa",
+"text": "He's a very perceptive jar."
+},
+{
+"t": 1119.38,
+"who": "Ace",
+"text": "It's B. Since 2018, section 1031 like-kind treatment applies only to real property held for business or investment, exchanged for other real property held for business or investment. Vehicles, equipment and art don't qualify. A main home doesn't qualify, and neither does U.S. real property traded for foreign real property. A van-for-van trade is a taxable sale."
+},
+{
+"t": 1146.05,
+"who": "Hoot",
+"text": "And when real property does qualify, a deferred exchange has two clocks. Identify the replacement within forty-five days, and receive it within 180 days, or by the return due date with extensions, if that's earlier. And boot, meaning cash or net debt relief received, makes gain taxable up to the boot."
+},
+{
+"t": 1168.41,
+"who": "Ace",
+"text": "Memory trick: \"Swap land for land, not vans for vans.\" Forty-five to name it, 180 to close it.",
+"tip": true
+},
+{
+"t": 1176.56,
+"cue": "Question 12",
+"q": 12
+},
+{
+"t": 1177.39,
+"who": "Hoot",
+"text": "Milo. A comeback opportunity. A married couple filing jointly has modified AGI of $150,000 and paid $3,000 of interest on a qualified student loan in 2025. How much can they deduct? A, $3,000. B, $2,500. C, $0, they earn too much. D, $1,250."
+},
+{
+"t": 1203.31,
+"who": "Milo",
+"text": "Okay, okay. I remember a number. Twenty-five hundred! The cap! B!"
+},
+{
+"t": 1207.52,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1208.31,
+"who": "Milo",
+"text": "I'M BACK."
+},
+{
+"t": 1209.57,
+"who": "Hoot",
+"text": "You are at one Hoot point. Do not let it go to your fedora."
+},
+{
+"t": 1213.89,
+"who": "Ace",
+"text": "The student loan interest deduction is capped at $2,500 a year. For 2025, it phases out between $85,000 and $100,000 of modified AGI, or $170,000 to $200,000 on a joint return. At $150,000 they're below the joint phase-out, so they get the full $2,500. The taxpayer must be legally obligated on the loan, can't file married filing separately, and can't be claimed as someone else's dependent."
+},
+{
+"t": 1253.01,
+"who": "Hoot",
+"text": "Adjustments like this one are above the line. They reduce AGI whether you itemize or not. HSA contributions, half of self-employment tax, educator expenses up to $300, IRA contributions, the early withdrawal penalty on savings. And alimony, but only under agreements signed before 2019."
+},
+{
+"t": 1277.07,
+"who": "Ace",
+"text": "Memory trick: \"Above the line, everybody's invited.\" Itemizers and standard deduction people both get adjustments.",
+"tip": true
+},
+{
+"t": 1285.28,
+"cue": "Question 13",
+"q": 13
+},
+{
+"t": 1286.11,
+"who": "Ace",
+"text": "Final question, lightning round, anyone can shout. Someone enrolled in Medicare, with a high-deductible health plan. How much can she contribute to an HSA?"
+},
+{
+"t": 1297.11,
+"who": "Penny and Rosa",
+"text": "Zero!"
+},
+{
+"t": 1298.48,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1299.27,
+"who": "Hoot",
+"text": "Correct. Medicare enrollment ends HSA contributions, even with a high-deductible plan. For 2025, the limits are $4,300 self-only and $8,550 family, plus $1,000 for those fifty-five or older. Employer contributions count toward the limit."
+},
+{
+"t": 1322.56,
+"who": "Ace",
+"text": "Memory trick: once you're on Medicare, the HSA piggy bank still pays out, but it stops taking coins.",
+"tip": true
+},
+{
+"t": 1329.79,
+"cue": "Drumroll"
+},
+{
+"t": 1331.54,
+"who": "Hoot",
+"text": "Final scores. Dee, one point. Lulu, two points, and an open investigation into bathroom tours. Rosa, two points, plus a goat. Milo, one point, after starting below zero. Penny, five points."
+},
+{
+"t": 1346.98,
+"cue": "Applause"
+},
+{
+"t": 1349.33,
+"who": "Penny",
+"text": "Twice in a row! Gloria and I are very proud."
+},
+{
+"t": 1352.41,
+"who": "Ace",
+"text": "The recap. If it came in, it counts. A barter is income to both sides. Insolvent? Only as deep as the hole. Fourteen days or fewer, the rent is invisible. Twenty-five grand minus half of everything over a hundred. Sixty days, twenty percent, one per year. Death distributions skip the ten percent toll. 330 days, $130,000, only what you earned. Gift, the tag travels; inherit, the tag resets. Wash sales wash the loss into the new shares. Land for land, not vans for vans. And above the line, everybody's invited."
+},
+{
+"t": 1392.21,
+"who": "Hoot",
+"text": "And I will be in the free box. Which is not free."
+},
+{
+"t": 1396.16,
+"cue": "A car drives past"
+},
+{
+"t": 1399.51,
+"who": "Milo",
+"text": "That's our show! Next time on The Hot Seat, Unit 3: deductions and credits. And if you'd like a kazoo, they're still available."
+},
+{
+"t": 1406.9,
+"who": "Penny",
+"text": "Milo. Somebody stole the kazoos."
+},
+{
+"t": 1409.29,
+"who": "Milo",
+"text": "Then they're income to somebody!"
+},
+{
+"t": 1410.98,
+"who": "Hoot",
+"text": "Correct."
+},
+{
+"t": 1412.21,
+"cue": "The Hot Seat theme"
+}
+]
+}

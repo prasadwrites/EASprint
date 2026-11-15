@@ -1,0 +1,139 @@
+# Unit 5 Hot Seat: Old Basis, December Checks and the Injured Versus Innocent Showdown
+(Season 1. May 2026. The bus shelter on Main Street, where the number 4 bus is always late. Milo has brought the heated lawn chair and an extension cord that runs into the hardware store.)
+[hotseat]
+[applause]
+MILO: It's The Hot Seat! Live from the number 4 bus stop, where the bus is late and the questions are right on time!
+PENNY: Milo, did Mr. Hollis say you could plug into his store?
+MILO: He said, and I quote, "What?" Which I took as a yes.
+ACE: Hi, everyone. Ace Okafor, enrolled agent. Today is Unit 5: life events like marriage, divorce and saving for school, tax planning moves, and the relief that's available for spouses. Exam-style questions, the cast answers, and Hoot and I explain and give you the trick.
+[pop]
+(The trash can next to the bus shelter rattles. Examiner Hoot climbs out of it, holding a bus schedule.)
+HOOT: Hoo-hoo-HOLD the bus. Examiner Hoot is present.
+LULU: Hoot! You were in the TRASH!
+HOOT: It is a recycling bin. And I was reviewing this bus schedule for accuracy. It is a work of fiction.
+ROSA: That bus has been late since 1987.
+HOOT: Then it owes penalties going back thirty-nine years.
+[truck]
+MILO: Is that the bus?
+PENNY: That's a cement mixer, Milo.
+[q]
+ACE: Rosa, you start. As part of a 2025 divorce, a man transfers a house to his ex-wife. His adjusted basis is $180,000 and it's worth $260,000. What gain does he report, and what's her basis? A, $80,000 gain; her basis is $260,000. B, no gain; her basis is $260,000. C, no gain; her basis is $180,000. D, $40,000 gain each.
+ROSA: Oh, this is Dee and Vince. That house had a pink kitchen. Well, divorce shouldn't cost you taxes on top of everything, so no gain. And I think she gets his old basis, because Ace says the tag travels. C.
+[correct]
+HOOT: Correct. The pink kitchen is irrelevant, but noted.
+ACE: No gain or loss is recognized on a transfer of property to a spouse, or to a former spouse if it's incident to the divorce. That means within one year after the marriage ends, or within six years under the divorce instrument. The receiving spouse takes the transferring spouse's adjusted basis, not fair market value. So Dee's basis is $180,000, and the gain shows up only when she sells.
+ACE: Memory trick: "Divorce transfers: no tax, old basis." Same as a gift. The tag travels.
+[q]
+HOOT: Lulu. You are a child of divorce. Sit with confidence.
+LULU: I'm very confident. The chair is warm.
+HOOT: Under a divorce agreement signed in 2022, a man pays his ex-wife $1,000 a month in alimony and $500 a month in child support. How much does she include in her income for a full year? A, $18,000. B, $12,000. C, $6,000. D, $0.
+LULU: My dad Vince pays my mom. I know this. It's zero. Ace told us the new alimony isn't income. And child support never is. D.
+[correct]
+DEE: That's my girl!
+PENNY: Dee? Where are you?
+DEE: I'm on speaker in Lulu's backpack.
+ACE: For a divorce or separation agreement executed after 2018, alimony isn't deductible by the payer and isn't income to the recipient. For older agreements, it's still deductible and taxable, unless the agreement is modified to adopt the new rules. And child support is never deductible and never income. If a payment drops when a child reaches a certain age, that part is treated as child support.
+HOOT: Trap alert: the year the agreement was executed is the whole question. 2018 or earlier, old rules. 2019 or later, nobody touches it.
+ACE: Memory trick: "New alimony: no deduction, no income. Child support: never, ever."
+[q]
+ACE: Dee, since you're in the backpack. A divorced mother has custody of her son for more nights during the year, and signs Form 8332 releasing her claim to the father. What can the father claim? A, the dependency claim and the child tax credit. B, head of household. C, the earned income credit. D, everything.
+DEE: Hmm. If I sign the form, I give him everything about the kid. D!
+[glitch]
+DEE: Wait, was that clear? D!
+[buzzer]
+HOOT: It was clear. It was also wrong.
+DEE: Of course it was.
+ACE: It's A. The custodial parent is the one the child lived with for more nights. If the parents are divorced or separated and together provided over half the child's support, the custodial parent can sign Form 8332 to release the claim. The noncustodial parent attaches it. That release covers the dependency claim and the child tax credit, or the credit for other dependents. But head of household, the earned income credit and the dependent care credit stay with the custodial parent.
+HOOT: Exam tip: the form moves the dependency and the child credit. It never moves the household. The parent who has the child for more nights keeps head of household, the EITC and the care credit.
+ACE: Memory trick: "8332 hands over the kid's paperwork, not the kid's bedroom." The bedroom credits stay where the kid sleeps.
+[horn]
+MILO: Is THAT the bus?
+PENNY: That's Mrs. Ferris again. She honks at everyone.
+[q]
+HOOT: Milo. Sit. Your uncle gave Lulu money for college.
+MILO: He did not, he's still mad about the kazoos.
+HOOT: Hypothetically. In 2025, an aunt contributes $2,000 to a Coverdell education savings account for her niece. Then the niece's other relative wants to contribute $2,000 to a different Coverdell for the same girl. How much can he contribute for 2025? A, $2,000. B, $1,000. C, $0. D, unlimited.
+MILO: Two thousand each! Everybody gets two thousand! Coverdell, Coverdell, Coverdell! A!
+[buzzer]
+HOOT: Wrong. One beneficiary. One limit.
+ACE: It's C. A Coverdell education savings account takes up to $2,000 a year in total for each beneficiary, from all contributors combined, across all accounts. If Rosa already put in $2,000 for Lulu, nobody else can add more for 2025. The contributor's limit also phases out with modified AGI between $95,000 and $110,000, or $190,000 to $220,000 joint. Contributions must be made before the beneficiary turns eighteen, and the account generally must be used or rolled to another family member by age thirty.
+HOOT: And a 529 plan is different. No federal deduction for contributions, but tax-free growth and tax-free distributions for qualified higher education, up to $10,000 a year of K-12 tuition for 2025, and up to $10,000 lifetime for student loan payments. A 529 that's been open fifteen years or more can roll up to $35,000, lifetime, to the beneficiary's Roth IRA.
+ACE: Memory trick: "Coverdell: two grand, per kid, total." Think of it as one cookie jar per child, no matter how many aunts.
+ROSA: I'm the aunt who already filled the cookie jar.
+[q]
+ACE: Penny. A cash-method taxpayer receives a $1,200 check from a client on December 28, 2025. He doesn't deposit it until January 5, 2026. In what year is it income? A, 2026, when deposited. B, 2025, when received. C, half in each year. D, whichever year he chooses.
+PENNY: B. That's Milo's check! He left it in a drawer to "save taxes." I told him!
+MILO: I thought I was being clever.
+[correct]
+ACE: Under the cash method, income is reported in the year it's actually or constructively received. Constructive receipt means it's credited to your account, set apart, or otherwise made available to you without substantial restriction. A check you receive in December is December income, cashed or not. Choosing not to cash it doesn't push it into next year.
+HOOT: However. If you truly cannot get the money, if your control is substantially restricted, then it is not constructively received. A check you have in your hand is not restricted. It is just in a drawer.
+ACE: And real planning: if you expect the same or a lower rate next year, defer income and accelerate deductions. Bill late in December, pay deductible expenses before December 31. Bunching means stacking itemized deductions like two years of charitable gifts into one year to beat the standard deduction, then taking the standard deduction the next year.
+ACE: Memory trick: "A December check is December income, cashed or not."
+MILO: I'm going to embroider that on one of Penny's pillows.
+PENNY: Don't touch my pillows.
+[q]
+HOOT: Rosa. In 2025, a taxpayer has a $9,000 capital loss and a $2,000 capital gain. No other capital transactions. How much loss carries to 2026? A, $7,000. B, $4,000. C, $6,000. D, nothing, it's all used.
+ROSA: Ooh, numbers. Nine thousand loss, two thousand gain, that's seven thousand loss. Then you can use three thousand against other income. Seven minus three is four. B.
+[correct]
+HOOT: Correct. Rosa is having a very good bus stop.
+ACE: Capital losses first offset capital gains. Then a net capital loss offsets up to $3,000 of other income a year, $1,500 if married filing separately. The rest carries forward indefinitely. So $9,000 minus $2,000 is $7,000; $3,000 used against other income; $4,000 carries to 2026.
+HOOT: And other carryovers to plan around. Charitable contributions over the AGI limits carry forward five years. Net operating losses arising after 2020 carry forward indefinitely, but they can offset only eighty percent of taxable income.
+ACE: Memory trick: "Gains first, three grand next, the rest waits for next year." Capital losses never expire for an individual. They just wait. Like this bus.
+[q]
+ACE: Milo. Redemption. When is the second 2026 estimated tax payment due for an individual? A, June 15, 2026. B, July 15, 2026. C, May 15, 2026. D, June 30, 2026.
+MILO: The first one is April, everybody knows that. And then... they're every three months, so July! B!
+[buzzer]
+HOOT: Wrong. The estimated tax calendar is not every three months. It is a trick of the calendar.
+ACE: It's A. For individuals, estimated tax is due April 15, June 15 and September 15 of the year, and January 15 of the next year, moved to the next business day if one falls on a weekend or holiday. That's two months, three months, four months. Uneven on purpose.
+HOOT: And raising withholding late in the year also works, because withholding is treated as paid evenly through the year.
+ACE: Memory trick: "April, June, September, January. Tax, sun, school, snow." Tax day, summer starts, school starts, and snow.
+MILO: Tax, sun, school, snow. I'll never forget it.
+PENNY: You forgot our anniversary.
+MILO: That's not a tax deadline!
+[ring]
+DEE: It's me again. I'm out of the backpack now. I'm in Lulu's lunchbox. Can I try one more?
+HOOT: The lunchbox is irregular. Proceed.
+[q]
+HOOT: A woman filed a joint return with her husband for 2023. She later learns he left $40,000 of his consulting income off the return, and she had no idea. They divorced in 2025. The IRS is now proposing extra tax. What should she file to ask for relief? A, Form 8379, injured spouse. B, Form 8857, innocent spouse relief. C, Form 1040-X. D, nothing; the divorce decree says he pays.
+DEE: Okay. This is literally me and Vince. And I learned this one. It's B, Form 8857. Innocent spouse. Because I'm innocent.
+[correct]
+DEE: I'M INNOCENT AND CORRECT!
+LULU: Go Mom!
+ACE: Spouses who file a joint return are jointly and severally liable. The IRS can collect the whole tax from either one, even after divorce, and even if a decree says one spouse will pay. The decree doesn't bind the IRS. The way out is relief on Form 8857. Innocent spouse relief covers an understatement from the other spouse's erroneous items when the requesting spouse didn't know and had no reason to know. Separation of liability allocates the understatement, but only for spouses who are divorced, widowed, legally separated, or haven't lived together for twelve months. And equitable relief covers everything else, including tax that was reported but not paid.
+HOOT: Exam tip: innocent spouse and separation of liability must be requested within two years after the IRS's first collection activity against the requesting spouse.
+ACE: And here's the showdown. Injured spouse is completely different. Form 8379. That's when a joint refund was taken to pay the OTHER spouse's past-due debt, like back child support, a student loan or past-due tax. The injured spouse gets back their share of the refund.
+ACE: Memory trick: "Innocent spouse is about tax OWED. Injured spouse is about a REFUND taken." Innocent, 8857. Injured, 8379.
+HOOT: I would add: innocent spouses did not know. Injured spouses got robbed.
+[q]
+ACE: Penny, to finish. A taxpayer filed her 2023 return early, on February 10, 2024. What's the last day she can claim a refund on Form 1040-X? A, February 10, 2027. B, April 15, 2027. C, April 15, 2026. D, there's no deadline.
+PENNY: Three years from filing. But early counts as the due date. So April 15, 2027. B.
+[correct]
+HOOT: Correct. Penny Pocket, the early filer, understands that early does not help here.
+ACE: To claim a refund, file Form 1040-X within three years after the original return was filed, or two years after the tax was paid, whichever is later. A return filed early counts as filed on the due date. And the refund is limited to tax paid within the lookback period. Claims for a bad debt or worthless securities get seven years.
+HOOT: And every return is signed under penalties of perjury. The signer declares it is true, correct and complete to the best of their knowledge and belief. Both spouses sign a joint return. An unsigned return is not a valid return.
+ACE: Memory trick: "Three from filing, two from paying, and early is never early." The clock starts on April 15 no matter how keen you were.
+[bikebell]
+LULU: Ms. Wren! Ms. Wren, the bus is late again!
+[q]
+HOOT: Lightning round. Anyone may shout. Under a QDRO, a distribution from her ex-husband's 401(k) goes to a forty-year-old woman. Is she hit with the ten percent early distribution tax?
+PENNY+ROSA: No!
+[correct]
+HOOT: Correct. A qualified domestic relations order divides an employer plan. Distributions to a spouse or former spouse under a QDRO are taxed to that person, not the employee, and they are exempt from the ten percent additional tax. They can also be rolled over.
+ACE: But the trap: that exception is for employer plans. An IRA transferred under a divorce decree is tax-free, and then it belongs to the recipient, but if she takes money out of it before fifty-nine and a half, the QDRO exception doesn't help.
+ACE: Memory trick: "QDRO is for the job plan." IRAs don't get a quadro.
+[truck]
+MILO: THAT'S THE BUS! Everybody, that's the bus!
+PENNY: That's a garbage truck, Milo.
+HOOT: My ride.
+[drumroll]
+HOOT: Final scores. Milo, zero, and a borrowed extension cord. Dee, one point. Lulu, one point. Penny, three points. Rosa, three points.
+ROSA: A tie! Penny, we share the crown.
+PENNY: We share the crown.
+[applause]
+ACE: The recap. Divorce transfers: no tax, old basis. New alimony: no deduction, no income; child support never. Form 8332 hands over the paperwork, not the bedroom. Coverdell: two grand per kid, total. A December check is December income. Gains first, three grand next, the rest waits. April, June, September, January. Innocent is about tax owed; injured is about a refund taken. Three from filing, two from paying. And QDROs are for the job plan.
+HOOT: I am leaving on the garbage truck. Do not follow me.
+LULU: Bye, Hoot!
+[car]
+MILO: And that's our show. The bus never came, but knowledge did. Next time, the Season 1 finale of The Hot Seat: estates, gifts and foreign forms.
+ROSA: I'll bring a cake. With a gift tax return in it.
+[hotseat]

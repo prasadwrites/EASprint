@@ -9,7 +9,7 @@ import { canOpenLesson, canOpenUnit, episodes, isFreeLesson, LESSONS, nextEpisod
 import { STUDY_OUTLINE, topicCount } from "./outline";
 import { CAST_QUIZ_NOTES, quizLink, UNIT_QUIZ } from "./quiz";
 import { castCard, SEASON_CAST } from "./seasonCast";
-import { canPlayPodcast, lineAt, PODCASTS, type Transcript } from "./podcasts";
+import { canPlayPodcast, lineAt, PODCASTS, podcastFor, podcastsFor, type Transcript } from "./podcasts";
 
 // Pretend Firebase is configured, so plan checks apply (without it, the app opens everything).
 vi.mock("../lib/firebase", () => ({ db: {}, auth: null }));
@@ -189,10 +189,15 @@ describe("unit podcasts", () => {
   const pro = { plan: "pro" } as unknown as Parameters<typeof canOpenLesson>[1];
   const root = resolve(__dirname, "../../..");
 
-  it("has one podcast per unit, in every season", () => {
+  it("has one Ledger Falls Unplugged and one Hot Seat podcast per unit, in every season", () => {
     const units = Object.values(STUDY_OUTLINE).flat().map((d) => d.id).sort();
-    expect(PODCASTS.map((pc) => pc.domainId).sort()).toEqual(units);
-    for (const pc of PODCASTS) expect(STUDY_OUTLINE[pc.part].some((d) => d.id === pc.domainId)).toBe(true);
+    for (const show of ["unplugged", "hotseat"] as const) expect(PODCASTS.filter((pc) => pc.show === show).map((pc) => pc.domainId).sort()).toEqual(units);
+    for (const pc of PODCASTS) {
+      expect(STUDY_OUTLINE[pc.part].some((d) => d.id === pc.domainId)).toBe(true);
+      expect(pc.id).toBe(pc.show === "hotseat" ? `${pc.domainId}-hotseat` : pc.domainId);
+      expect(podcastFor(pc.id)).toBe(pc);
+    }
+    expect(podcastsFor("p1d1").map((pc) => pc.show)).toEqual(["unplugged", "hotseat"]);
   });
 
   it("plays only Season 1, Unit 1 on the free plan, and everything on Pro", () => {
@@ -203,15 +208,23 @@ describe("unit podcasts", () => {
   });
 
   for (const pc of PODCASTS) {
-    it(`${pc.domainId} has a script, audio and a transcript of at least 10 minutes`, () => {
-      const script = readFileSync(resolve(root, `podcasts/scripts/${pc.domainId}.txt`), "utf8");
+    it(`${pc.id} has a script, audio and a transcript of at least 10 minutes`, () => {
+      const script = readFileSync(resolve(root, `podcasts/scripts/${pc.id}.txt`), "utf8");
       const speakers = new Set([...script.matchAll(/^([A-Z+]+):/gm)].flatMap((m) => m[1].split("+")));
       expect(speakers.has("HOOT") && speakers.has("ACE")).toBe(true);
-      const t: Transcript = JSON.parse(readFileSync(resolve(root, `web/public/podcasts/${pc.domainId}.json`), "utf8"));
+      const t: Transcript = JSON.parse(readFileSync(resolve(root, `web/public/podcasts/${pc.id}.json`), "utf8"));
       expect(t.seconds).toBeGreaterThanOrEqual(600);
       expect(Math.round(t.seconds / 60)).toBe(pc.minutes);
-      expect(existsSync(resolve(root, `web/public/podcasts/${pc.domainId}.mp3`))).toBe(true);
+      expect(existsSync(resolve(root, `web/public/podcasts/${pc.id}.mp3`))).toBe(true);
       for (let i = 1; i < t.lines.length; i++) expect(t.lines[i].t).toBeGreaterThanOrEqual(t.lines[i - 1].t);
+      if (pc.show === "hotseat") {
+        // A quiz show: numbered questions, answered by the cast (not Ace or Hoot), with memory tricks.
+        const questions = t.lines.filter((l) => l.q);
+        expect(questions.length).toBeGreaterThanOrEqual(10);
+        expect(questions.map((l) => l.q)).toEqual(questions.map((_, i) => i + 1));
+        expect(t.lines.filter((l) => l.tip && /^Memory trick/.test(l.text ?? "")).length).toBeGreaterThanOrEqual(questions.length - 2);
+        expect([...speakers].filter((w) => !["ACE", "HOOT"].includes(w)).length).toBeGreaterThanOrEqual(4);
+      }
     });
   }
 

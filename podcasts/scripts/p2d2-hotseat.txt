@@ -1,0 +1,166 @@
+# Season 2, Unit 2 Hot Seat: Bertha, the Mileage Log and the Mid-Quarter Monster
+(Season 2. A weeknight after closing at Rosa's Rolls. The chairs are up on the tables, except the heated lawn chair, which sits in front of Bertha, the big $80,000 oven. Trucks rumble past the front window.)
+[hotseat]
+[applause]
+MILO: Welcome to The Hot Seat, Season 2, Unit 2! The biggest unit of the season, recorded in the warmest room in Ledger Falls. That's Bertha behind me. Say hi, Bertha.
+[timer]
+ROSA: She says hi.
+ACE: Hi, everyone. Ace Okafor, enrolled agent. Today's Unit 2 is the heart of Part 2: business income and cost of goods sold, business expenses, travel, meals and vehicles, depreciation, selling business assets, employment taxes, credits and losses, reading the books, and advising the business. That's nine topics, so we're doing a lot of questions.
+PENNY: How many is a lot?
+ACE: Sixteen.
+MILO: Sixteen! I'm going to need a snack.
+[pop]
+(Bertha's door swings open with a clang. Examiner Hoot steps out, eyeshade slightly toasted.)
+HOOT: Hoo-hoo-HOLD the snacks. Examiner Hoot has been in Bertha.
+ROSA: Hoot! She was on three hundred and fifty degrees!
+HOOT: I am very well insulated. And Bertha is a seven-year asset. I wanted to examine her from the inside.
+LULU: Is it hot in there?
+HOOT: It is regulated.
+[truck]
+[q]
+ACE: Penny, warm-up question. A bakery's beginning inventory is $4,000. It buys $60,000 of flour and supplies for resale during the year, and ending inventory is $3,000. What's the cost of goods sold? A, $67,000. B, $61,000. C, $60,000. D, $57,000.
+PENNY: Start plus bought minus left. Four plus sixty minus three. Sixty-one. B.
+[correct]
+ACE: Cost of goods sold is beginning inventory, plus purchases, plus labor, materials and other costs, minus ending inventory. Gross profit is net receipts minus cost of goods sold. And this year's ending inventory becomes next year's beginning inventory.
+HOOT: A small business taxpayer, average annual gross receipts of $31 million or less for 2025 and not a tax shelter, can use the cash method, skip formal inventories, and is exempt from the uniform capitalization rules. Changing an accounting method generally needs Form 3115.
+ACE: Memory trick: "Start plus bought minus left equals sold."
+[q]
+HOOT: Rosa. A customer pays the bakery $6,000 in cash for a wedding cake deposit, and then $5,000 in cash the next day for the balance. What must the bakery do? A, nothing, each payment is under $10,000. B, file Form 8300 within fifteen days. C, file a 1099-K. D, refuse the cash.
+ROSA: Oh, that was the Delgado wedding. Five tiers. I'll say A, because each one is under ten thousand.
+[buzzer]
+HOOT: Wrong. Related payments count together.
+ACE: It's B. A business that receives more than $10,000 in cash in one transaction, or in related transactions, must file Form 8300 within fifteen days. Related means within twenty-four hours, or otherwise connected, like a deposit and the balance for the same cake. The business also gives the payer written notice by January 31 of the next year, and keeps a copy for five years.
+HOOT: And gross receipts include all income, cash, checks, cards, barter, with or without a form. For 2025, third-party networks issue Form 1099-K over $20,000 and 200 transactions. Card payments are always reported. But no form does not mean no income.
+ACE: Memory trick: "Over ten grand in cash? Fifteen days to dash." Add up the related pieces first.
+[q]
+ACE: Milo. Start-up costs. In 2025, a man opens a dog-walking business after spending $52,000 of start-up costs. How much can he deduct immediately, before amortization? A, $5,000. B, $3,000. C, $52,000. D, $0.
+MILO: Milo's Mutts! The relaunch! Okay. The rule is five thousand. A!
+[buzzer]
+HOOT: Wrong. You forgot the shrink.
+ACE: It's B. A business can deduct up to $5,000 of start-up costs in the year it begins, but that $5,000 is reduced dollar for dollar by start-up costs over $50,000. $52,000 is $2,000 over, so the immediate deduction is $3,000. The rest is amortized over 180 months, starting with the month the business begins. Organizational costs for a corporation or partnership have their own separate, identical $5,000 and $50,000 rule. And if the business never begins, none of it is deductible as start-up costs.
+ACE: Memory trick: "Five grand now, shrinking past fifty, the rest over fifteen years." 180 months is fifteen years.
+[q]
+HOOT: Lulu. Home office. A self-employed woman uses a 300-square-foot room regularly and exclusively as her principal place of business. She uses the simplified method. What's her home office deduction? A, $1,500. B, $3,000. C, $500. D, nothing, homes are personal.
+LULU: Five dollars a square foot, up to three hundred. Five times three hundred. Fifteen hundred! A!
+[correct]
+LULU: I calculated my bedroom. If I made it an office, I'd get six hundred dollars.
+PENNY: You're not making your bedroom an office.
+ACE: The home office has to be used regularly and exclusively as the principal place of business, or a place to meet clients, or a separate structure. There are exceptions to the exclusive use rule for inventory storage and day care. The simplified method is $5 per square foot, up to 300 square feet, so up to $1,500. The regular method uses actual costs on Form 8829. Either way, it's limited to business income. And employees get no home office deduction at all.
+HOOT: Trap alert: a guest room that is also an office is not exclusive. The exam loves a room with a treadmill in it.
+ACE: Memory trick: "Regular plus exclusive, five dollars a foot, three hundred feet max."
+[q]
+ACE: Penny. Repairs versus improvements. A bakery replaces its entire roof for $30,000. How is it treated? A, deducted as a repair. B, capitalized and depreciated, because it restores the property. C, deducted under the de minimis safe harbor. D, half and half.
+PENNY: The whole roof? That's not fixing a leak. B.
+[correct]
+ACE: Repairs and maintenance that keep property in ordinary operating condition are deductible. Improvements are capitalized and depreciated: anything that's a betterment, a restoration, or an adaptation to a new use. Replacing a major component, like the whole roof, restores the property. The de minimis safe harbor lets a business expense items costing $2,500 or less per invoice or item, or $5,000 with an applicable financial statement, if it makes the annual election and expenses them on its books.
+HOOT: And for section 162, an expense must be ordinary, common in the trade, and necessary, helpful and appropriate. Fines paid to a government are never deductible.
+ACE: Memory trick: "Better, restore, adapt: capitalize. Keep it running: deduct." B, R, A: Big Repairs Add value.
+MILO: Big Repairs Add value. I'm putting it on a mug.
+[horn]
+[q]
+HOOT: Milo. Meals and entertainment. A business owner takes a client to dinner, $200, then to a concert, $300, and the concert tickets are separate from the food. How much can the business deduct? A, $500. B, $250. C, $100. D, $0.
+MILO: Dinner is fifty percent. Concert is... fun. Fun is good for business. So fifty percent of everything. B, two fifty.
+[buzzer]
+HOOT: Wrong. Fun is zero.
+ACE: It's C. Business meals are fifty percent deductible if they're not lavish, the taxpayer or an employee is present, and it's with a business contact. Fifty percent of $200 is $100. Entertainment, like the concert, isn't deductible at all. Food at an entertainment event is fifty percent only if it's separately stated.
+HOOT: But some meals are one hundred percent. Recreational and social events primarily for employees, like the holiday party. Meals sold to customers. And meals reported as compensation.
+ACE: Memory trick: "Sleep away is travel. Meals are half. Fun is zero." And the holiday party is the exception, a hundred percent, because you're nice to your staff.
+ROSA: Our holiday party has a polka band.
+HOOT: The polka band is one hundred percent deductible. I have no further comment on the polka band.
+[q]
+ACE: Rosa. Vehicles. A baker drives 600 business miles in 2025 using the standard mileage rate, and pays $30 for business parking. He also drives 2,000 miles commuting from home to the bakery. What's his car deduction? A, $1,820. B, $450. C, $420. D, $1,850.
+ROSA: The standard mileage is seventy cents. Six hundred times seventy cents is four hundred twenty. Plus parking. Four fifty. And commuting doesn't count, because Ace told me that when I tried to deduct my drive to the hair salon. B.
+[correct]
+ACE: For 2025, the standard mileage rate is seventy cents per business mile, plus business parking and tolls. 600 times seventy cents is $420, plus $30 is $450. Commuting between home and a regular workplace is never deductible. You must choose the standard rate in the car's first business year, and you can't use it for five or more cars at once, or after claiming MACRS, section 179 or bonus depreciation on the car.
+HOOT: And substantiation: for travel, meals, gifts and vehicles, record the amount, time, place and business purpose, at or near the time. Receipts for all lodging and any expense of $75 or more. And a mileage log.
+ACE: Memory trick: "Seventy cents a mile, but never the commute." And business gifts are $25 per person per year, with wrapping and shipping outside the limit.
+[ring]
+DEE: Hi from the rig! Ask me something with a vehicle! I drive a forklift now!
+HOOT: Very well. Depreciation. Dee, question nine.
+[q]
+HOOT: A business places a $10,000 piece of equipment, seven-year property, in service in 2025 and takes no section 179 or bonus depreciation. Using the half-year convention, what's the first-year MACRS depreciation? A, $1,429. B, $2,858. C, $1,000. D, $10,000.
+DEE: Seven years. So... ten thousand divided by seven is about fourteen hundred. A! Wait, do I double it? No. A.
+[correct]
+DEE: I got a depreciation question right! On a rig! Lulu!
+LULU: Good job, Mom!
+ACE: Under MACRS, most equipment and furniture is seven-year property, using the 200 percent declining balance method with the half-year convention. The first-year rate is 14.29 percent, so $10,000 times 14.29 percent is $1,429. Cars and computers are five-year. Land improvements are fifteen-year. Residential rental buildings are 27.5 years and nonresidential buildings 39, straight line, mid-month. And land is never depreciated.
+HOOT: Trap alert: if more than forty percent of the year's depreciable personal property is placed in service in the last quarter, the mid-quarter convention applies instead.
+ACE: Memory trick: "Five for cars and computers, seven for ovens and chairs. Over forty percent in the fourth quarter? Mid-quarter monster."
+[q]
+ACE: Penny. Section 179. A business buys $80,000 of equipment in 2025 and wants to expense all of it under section 179. Its business taxable income before section 179 is $60,000. How much section 179 can it deduct for 2025? A, $80,000. B, $60,000. C, $2,500,000. D, $20,000.
+PENNY: Section 179 can't make a loss. So it's capped at sixty thousand. The rest carries forward. B.
+[correct]
+ACE: For 2025, a business can elect to expense up to $2,500,000 under section 179, reduced dollar for dollar once purchases go over $4,000,000. But the deduction is limited to business taxable income, and the excess carries forward. The property must be used more than fifty percent for business.
+HOOT: Bonus depreciation is different. For 2025, it is one hundred percent for qualified property acquired after January 19, 2025. Property acquired before January 20, 2025, and placed in service in 2025 gets forty percent. And bonus has no income limit. It can create a loss.
+ACE: Memory trick: "179 first, bonus next, MACRS last." And "179 can't make you lose. Bonus can."
+[truck]
+[q]
+HOOT: Rosa. Business assets. The bakery trades in an old delivery van with an adjusted basis of $10,000 for a new van, getting an $18,000 trade-in allowance. The old van had $15,000 of depreciation taken. How is the result treated? A, a like-kind exchange, no gain. B, $8,000 of ordinary income. C, $8,000 of capital gain. D, $18,000 of income.
+ROSA: Oh, I know vans aren't like each other for taxes anymore. So it's a sale. Eighteen minus ten is eight. And it's a vehicle, so... capital gain. C.
+[buzzer]
+HOOT: Half right. Which means wrong.
+ACE: It's B. You're right that vehicles don't qualify for like-kind treatment after 2017, so the trade-in is a sale. The gain is $8,000. But on section 1245 property, like a van or equipment, gain up to the depreciation taken is recaptured as ordinary income. The van had $15,000 of depreciation, more than the $8,000 gain, so all of it is ordinary.
+HOOT: The rest of the story. Section 1231 property is business depreciable property and land held more than one year. Recapture comes out first as ordinary. A net section 1231 gain is treated as long-term capital gain, except it's ordinary to the extent of net section 1231 losses in the prior five years. A net section 1231 loss is ordinary. It's all on Form 4797.
+ACE: Memory trick: "Recapture first, ordinary always. Then 1231 gets the leftovers."
+[q]
+ACE: Milo. Related parties. A partner who owns sixty percent of a partnership sells it a lot she owns at a $5,000 loss. How much loss can she deduct? A, $5,000. B, $3,000. C, $0. D, $2,500.
+MILO: Ooh. Sixty percent. That's... she's mostly the partnership. You can't sell stuff to yourself and lose money. So C?
+[correct]
+MILO: I'M ON THE BOARD!
+HOOT: You are at one Hoot point. Enjoy it. Quietly.
+ACE: Under section 267, a loss on a sale between related persons is disallowed. Related persons include a spouse, siblings, ancestors and descendants, and an entity the person owns more than fifty percent of, directly or indirectly. Aunts, uncles, cousins and in-laws are not related for this rule. If the buyer later sells the property at a gain, it can use the disallowed loss to reduce that gain.
+HOOT: Trap alert: Rosa is Penny's aunt. Under section 267, an aunt is not a related person. The exam will put an aunt in a question and hope you panic.
+ROSA: I'm a trap?
+HOOT: You are a delightful trap.
+ACE: Memory trick: "Family is up, down and sideways, but not diagonal." Parents, kids, siblings: related. Aunts, uncles, cousins: not.
+[q]
+HOOT: Lulu. Workers. A bakery tells its cake decorator what hours to work, trains her, provides all her tools and pays her by the hour. She has no investment and no chance of profit or loss. The bakery calls her an independent contractor. What is she? A, an independent contractor, because that's what the contract says. B, an employee, because the bakery controls what she does and how she does it. C, a partner. D, a volunteer.
+LULU: It's B. The bakery is the boss of how she does it. So she's an employee.
+[correct]
+ACE: The common-law test is the right to control what work is done and how it's done. Evidence comes in three categories: behavioral, like instructions and training; financial, like investment, profit or loss, and how they're paid; and the relationship, like contracts, benefits and permanence. Labels don't decide it. Form SS-8 asks the IRS for a determination.
+HOOT: And the employer's taxes for 2025. FICA is 6.2 percent Social Security up to $176,100 plus 1.45 percent Medicare, from each side. Federal unemployment tax is employer only: six percent of the first $7,000 per employee, but with the full state credit of 5.4 percent, it is 0.6 percent, or $42 per employee.
+ACE: And Form W-2 and Form 1099-NEC are due January 31. For 2025 payments, the 1099-NEC threshold is $600. For payments after December 31, 2025, it's $2,000.
+ACE: Memory trick: "Control the how, and they're your employee." And "FUTA is forty-two bucks a head."
+[q]
+ACE: Penny. Losses. A single owner has a 2025 business loss of $400,000, after the basis, at-risk and passive rules. How is it treated? A, deduct all $400,000. B, deduct $313,000 and carry $87,000 forward as a net operating loss. C, deduct $3,000. D, carry all of it back two years.
+PENNY: The excess business loss rule. For 2025, single is three hundred thirteen thousand. The rest is an NOL. B.
+[correct]
+ACE: Owner-level loss limits apply in this order: basis, then at-risk on Form 6198, then passive activity on Form 8582, then the excess business loss limit on Form 461. For 2025, a noncorporate taxpayer's net business loss over $313,000 single, or $626,000 joint, is disallowed and becomes a net operating loss carryforward.
+HOOT: And NOLs. Losses arising after 2020 cannot be carried back, except farming losses, which go back two years. They carry forward indefinitely. And for losses after 2017, the NOL deduction is limited to eighty percent of taxable income figured without it.
+ACE: Memory trick: "Basis, at-risk, passive, then excess." Like doors in a hallway, in that order. And for NOLs: "No going back, forward forever, eighty percent at a time."
+[q]
+HOOT: Rosa. Reading the books. A C corporation's book income is $100,000. Its books include a $2,000 government fine, $15,000 of federal income tax expense, and $4,000 of tax-exempt interest. What is its taxable income? A, $100,000. B, $113,000. C, $121,000. D, $96,000.
+ROSA: Ooh, a math one. The fine you can't deduct, so add it back. The tax, add it back. The exempt interest, take it out. A hundred plus two plus fifteen minus four. A hundred thirteen. B!
+[correct]
+HOOT: Correct. Rosa has reconciled. I am moved.
+ACE: Schedule M-1 reconciles book income to taxable income. Permanent differences never reverse: fines and penalties, fifty percent of meals, tax-exempt interest, federal income tax expense. Temporary differences reverse over time: tax versus book depreciation, bad debt allowances. Corporations with total assets of $10 million or more file Schedule M-3 instead of M-1. And when total receipts and total assets are both under $250,000, a corporation can skip Schedules L, M-1 and M-2.
+ACE: Memory trick: "Books say profit. M-1 says taxable."
+[q]
+ACE: Milo. Advising the business. An S corporation's owner works full time but takes no salary, only $120,000 of distributions. What can the IRS do? A, nothing, distributions are tax-free. B, treat part of the distributions as wages subject to payroll taxes. C, revoke the S election. D, tax it as a C corporation.
+MILO: Rolly the cinnamon roll gets a salary! So the owner should too. B!
+[correct]
+HOOT: Correct, and I am disturbed that the mascot was the reason.
+ACE: S corporation shareholder-employees must receive reasonable compensation, market pay for their services, as W-2 wages before taking distributions. If the salary is too low, the IRS can recharacterize distributions as wages and assess employment taxes. And the owner's wages aren't qualified business income.
+HOOT: And corporate estimated tax, if the corporation expects to owe $500 or more: due the fifteenth of the fourth, sixth, ninth and twelfth months. April 15, June 15, September 15, December 15 for a calendar year.
+ACE: Memory trick: "Salary first, and make it reasonable." And corporations pay estimates in "four, six, nine, twelve."
+[q]
+HOOT: Lightning round, everyone. A sole proprietor hires his fifteen-year-old daughter to do real work for the business. Is her pay subject to Social Security and Medicare tax?
+PENNY+ROSA+LULU: No!
+[correct]
+ACE: Wages a sole proprietor pays a child under eighteen aren't subject to Social Security and Medicare tax, and aren't subject to federal unemployment tax until the child is twenty-one. That's also true for a partnership owned only by the child's parents. The work must be real, and the pay reasonable.
+HOOT: Exam tip: this does not work in a corporation. If the bakery is an S corporation, the child's wages are subject to payroll tax.
+ACE: Memory trick: "Kid under eighteen in Mom's sole prop: no FICA. Kid in Mom's corporation: FICA."
+[drumroll]
+HOOT: Final scores for the biggest unit. Dee, one point. Milo, two points. Lulu, three points. Rosa, three points. Penny, five points.
+[applause]
+PENNY: Five! Bertha, did you see that?
+[timer]
+ROSA: She saw.
+ACE: The recap. Start plus bought minus left equals sold. Over ten grand in cash, fifteen days. Start-up: five grand now, shrinking past fifty, fifteen years for the rest. Home office: regular plus exclusive, five dollars a foot. Better, restore, adapt: capitalize. Meals half, fun zero. Seventy cents a mile, never the commute. Seven-year equipment is 14.29 percent the first year. 179 can't make a loss; bonus can. Recapture first, ordinary always. No related-party losses, but aunts don't count. Control the how, it's an employee. Basis, at-risk, passive, then excess. Books say profit, M-1 says taxable. And salary first.
+HOOT: I am returning to Bertha. She is the only one who understands me.
+ROSA: She's still on, Hoot.
+HOOT: I am aware. It is part of the experience.
+[truck]
+MILO: That's our show! Next time on The Hot Seat, the Season 2 finale: trusts, charities, retirement plans, farms and rentals.
+LULU: And a hen named Deduction!
+[hotseat]

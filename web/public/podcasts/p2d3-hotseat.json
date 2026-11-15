@@ -1,0 +1,743 @@
+{
+"id": "p2d3-hotseat",
+"title": "Season 2, Unit 3 Hot Seat: Simple Trusts, the Coffee Cart and a Hen Named Deduction",
+"seconds": 1253,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 2 finale. Saturday morning at the Ledger Falls farmers market on the town square. The Rosa's Rolls stand is next to Pastor Gail's pantry coffee cart, where Milo volunteers. The heated lawn chair is between a pumpkin pile and a chicken coop."
+},
+{
+"t": 0.3,
+"cue": "The Hot Seat theme"
+},
+{
+"t": 2.49,
+"cue": "Applause"
+},
+{
+"t": 4.84,
+"who": "Milo",
+"text": "Welcome to the Season 2 finale of The Hot Seat! Live from the farmers market, where the vegetables are fresh, the coffee is free, and the hen is named Deduction."
+},
+{
+"t": 14.57,
+"who": "Lulu",
+"text": "Hi, Deduction!"
+},
+{
+"t": 16.0,
+"stage": "A hen clucks importantly."
+},
+{
+"t": 16.0,
+"who": "Penny",
+"text": "Milo, why did you bring the hen?"
+},
+{
+"t": 18.04,
+"who": "Milo",
+"text": "She's our studio audience. She's very supportive."
+},
+{
+"t": 20.96,
+"who": "Ace",
+"text": "Hi, everyone. Ace Okafor, enrolled agent. Today's Unit 3: trusts and estates, exempt organizations, business retirement plans, farmers, and rental property as a business. Exam-style questions, someone answers in the hot seat, and we explain and give you the memory trick."
+},
+{
+"t": 40.59,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 40.99,
+"stage": "The lid of a bushel basket of apples flies up. Examiner Hoot stands up inside it."
+},
+{
+"t": 40.99,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD the produce. Examiner Hoot is present."
+},
+{
+"t": 44.99,
+"who": "Rosa",
+"text": "Hoot! You were in the apples!"
+},
+{
+"t": 47.03,
+"who": "Hoot",
+"text": "I was evaluating them for section 1231 treatment. They do not qualify. They are apples."
+},
+{
+"t": 54.32,
+"cue": "Birds chirp"
+},
+{
+"t": 56.07,
+"who": "Lulu",
+"text": "The birds are excited you're here, Hoot."
+},
+{
+"t": 58.26,
+"who": "Hoot",
+"text": "The birds are filing late."
+},
+{
+"t": 60.77,
+"cue": "A car drives past"
+},
+{
+"t": 64.12,
+"cue": "Question 1",
+"q": 1
+},
+{
+"t": 64.95,
+"who": "Ace",
+"text": "Penny, you're the executor, so you're up. In 2025, Grandpa Walt's estate earned $450 of interest. No beneficiary is a nonresident alien. Must the executor file Form 1041? A, yes, any income means a return. B, no, because gross income is under $600. C, yes, because estates always file. D, only if the estate pays tax."
+},
+{
+"t": 91.29,
+"who": "Penny",
+"text": "Six hundred is the line for estates. Four fifty is under. B."
+},
+{
+"t": 95.71,
+"cue": "Correct-answer chime"
+},
+{
+"t": 96.5,
+"who": "Ace",
+"text": "An estate files Form 1041 if it has gross income of $600 or more for the year, or a beneficiary is a nonresident alien. A trust files if it has any taxable income, gross income of $600 or more, or a nonresident alien beneficiary. It's due the fifteenth day of the fourth month after year end, April 15 for a calendar year. Estates can choose a fiscal year. Trusts generally use the calendar year."
+},
+{
+"t": 125.2,
+"who": "Hoot",
+"text": "And there is no standard deduction. There are exemptions: $600 for an estate, $300 for a simple trust, $100 for a complex trust. And the brackets are brutal. For 2025, thirty-seven percent above $15,650."
+},
+{
+"t": 145.72,
+"who": "Ace",
+"text": "Memory trick: \"Six, three, one.\" Six hundred for the estate, three hundred for the simple trust, one hundred for the complex one. The simpler you are, the more you get.",
+"tip": true
+},
+{
+"t": 157.13,
+"cue": "Question 2",
+"q": 2
+},
+{
+"t": 157.96,
+"who": "Hoot",
+"text": "Rosa. A trust's document lets the trustee accumulate income, and it gave money to charity this year. What's its exemption? A, $600. B, $300. C, $100. D, $0."
+},
+{
+"t": 173.74,
+"who": "Rosa",
+"text": "Accumulating is complicated. Charity is complicated. So it's complex. The small one. C."
+},
+{
+"t": 180.22,
+"cue": "Correct-answer chime"
+},
+{
+"t": 181.01,
+"who": "Hoot",
+"text": "Correct. Rosa has learned to fear complexity."
+},
+{
+"t": 184.92,
+"who": "Ace",
+"text": "A simple trust must distribute all its income currently, makes no charitable contributions, and doesn't distribute principal. It gets a $300 exemption. Any other trust is complex, with $100. A grantor trust, like a revocable living trust, is ignored for income tax: the income is taxed to the grantor."
+},
+{
+"t": 208.02,
+"who": "Ace",
+"text": "Memory trick: \"Simple spends everything. Complex keeps some, or gives to charity.\"",
+"tip": true
+},
+{
+"t": 213.59,
+"cue": "Question 3",
+"q": 3
+},
+{
+"t": 214.42,
+"who": "Ace",
+"text": "Milo. A trust distributes $10,000 of interest income to its beneficiary. Its distributable net income is $10,000. Who pays tax on that interest? A, the trust. B, the beneficiary, from a Schedule K-1. C, both, it's taxed twice. D, nobody."
+},
+{
+"t": 233.86,
+"who": "Milo",
+"text": "The trust earned it, so the trust pays! A!"
+},
+{
+"t": 236.3,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 237.05,
+"who": "Hoot",
+"text": "Wrong. The trust is a conduit. A tube. Money goes through."
+},
+{
+"t": 241.88,
+"who": "Milo",
+"text": "Like a water slide?"
+},
+{
+"t": 243.17,
+"who": "Hoot",
+"text": "If you must."
+},
+{
+"t": 244.72,
+"who": "Ace",
+"text": "It's B. Estates and trusts are conduits. They're taxed on income they keep. Distributions are deducted, up to the lesser of the amount distributed or distributable net income, and the beneficiary is taxed on them through the Schedule K-1 from Form 1041. And the character carries through: interest stays interest. Capital gains usually go to corpus and aren't in DNI."
+},
+{
+"t": 270.11,
+"who": "Hoot",
+"text": "And the 65-day rule. A trust or estate can elect to treat distributions made in the first sixty-five days of the year as made in the prior year."
+},
+{
+"t": 281.85,
+"who": "Ace",
+"text": "Memory trick: \"Distribute it, deduct it, K-1 it.\" The income goes down the water slide to the beneficiary.",
+"tip": true
+},
+{
+"t": 289.08,
+"who": "Milo",
+"text": "See? Water slide."
+},
+{
+"t": 290.42,
+"cue": "Question 4",
+"q": 4
+},
+{
+"t": 291.25,
+"who": "Hoot",
+"text": "Lulu. Exempt organizations. Lulu's Juice for Charity is a 501(c)(3) with gross receipts that are normally $30,000 a year. What annual return may it file? A, Form 990. B, Form 990-EZ. C, Form 990-N, the e-Postcard. D, nothing."
+},
+{
+"t": 312.52,
+"who": "Lulu",
+"text": "It's a postcard! Small charities send postcards! C!"
+},
+{
+"t": 315.59,
+"cue": "Correct-answer chime"
+},
+{
+"t": 316.38,
+"who": "Ace",
+"text": "An organization with gross receipts normally $50,000 or less may file Form 990-N, the e-Postcard. Form 990-EZ is for gross receipts under $200,000 and total assets under $500,000. Larger organizations file Form 990, and every private foundation files 990-PF. Churches don't have to file. They're due the fifteenth day of the fifth month, May 15 for a calendar year, and Form 8868 extends them six months, but not the 990-N."
+},
+{
+"t": 355.55,
+"who": "Hoot",
+"text": "Trap alert: an organization that fails to file a required 990-series return for three consecutive years automatically loses its exemption, effective on the due date of the third return.",
+"tip": true
+},
+{
+"t": 371.98,
+"who": "Ace",
+"text": "Memory trick: \"Fifty, two hundred, five hundred.\" Postcard up to fifty thousand. EZ under two hundred thousand of receipts and five hundred thousand of assets. \"Skip three years and the exemption's gone.\"",
+"tip": true
+},
+{
+"t": 386.45,
+"cue": "Question 5",
+"q": 5
+},
+{
+"t": 387.28,
+"who": "Ace",
+"text": "Penny. Pastor Gail's church charity runs a coffee shop every weekday, staffed by paid baristas, and it sells to the public. It's not related to the charity's exempt purpose. Gross income from it is $8,000 this year. What must it file for that income? A, nothing; charities are exempt. B, Form 990-T. C, Form 1120. D, Form 990-N."
+},
+{
+"t": 412.33,
+"who": "Penny",
+"text": "Hmm, regular, paid staff, unrelated, over a thousand dollars. B. Form 990-T."
+},
+{
+"t": 418.45,
+"cue": "Correct-answer chime"
+},
+{
+"t": 419.24,
+"who": "Milo",
+"text": "Wait, I'm a volunteer at the coffee cart."
+},
+{
+"t": 421.63,
+"who": "Ace",
+"text": "And that's the twist, Milo. Unrelated business income comes from a trade or business that's regularly carried on and not substantially related to the exempt purpose. If gross unrelated business income is $1,000 or more, the organization files Form 990-T. There's a $1,000 specific deduction, and corporations pay twenty-one percent. But there are exceptions. A business where substantially all the work is done by volunteers isn't unrelated business. Neither is selling donated merchandise, or a business run for the convenience of members, students, patients or employees."
+},
+{
+"t": 464.02,
+"who": "Hoot",
+"text": "So Pastor Gail's coffee cart, run by volunteers like Milo, is excepted. A coffee shop run by paid baristas every weekday is not."
+},
+{
+"t": 474.73,
+"who": "Ace",
+"text": "Memory trick: \"Regular, a trade, unrelated: UBI. Volunteers or donated goods: exception.\" And Form 990-T at a thousand dollars.",
+"tip": true
+},
+{
+"t": 486.04,
+"who": "Milo",
+"text": "My volunteering saves the church money! I'm a tax shelter!"
+},
+{
+"t": 489.65,
+"who": "Hoot",
+"text": "Do not say that word near me."
+},
+{
+"t": 492.2,
+"cue": "Question 6",
+"q": 6
+},
+{
+"t": 493.03,
+"who": "Hoot",
+"text": "Rosa. A donor pays $100 for a charity dinner ticket. The dinner is worth $40. How much can she deduct if she itemizes? A, $100. B, $60. C, $40. D, $0."
+},
+{
+"t": 509.69,
+"who": "Rosa",
+"text": "I've been to that dinner. The chicken was dry. Worth twenty dollars, tops. But you said forty. So a hundred minus forty. Sixty. B."
+},
+{
+"t": 517.93,
+"cue": "Correct-answer chime"
+},
+{
+"t": 518.72,
+"who": "Ace",
+"text": "Only the amount over the value of what the donor received is deductible: $100 minus $40 is $60. And because she paid more than $75, it's a quid pro quo contribution, and the charity must tell her in writing that only the excess is deductible. The penalty for not disclosing is $10 per contribution, up to $5,000 per event. And any single gift of $250 or more needs a contemporaneous written acknowledgment from the charity."
+},
+{
+"t": 554.15,
+"who": "Ace",
+"text": "Memory trick: \"Seventy-five, the charity tells you. Two-fifty, the charity writes you.\"",
+"tip": true
+},
+{
+"t": 559.97,
+"cue": "A car horn honks"
+},
+{
+"t": 560.95,
+"who": "Milo",
+"text": "That's the tractor parade! There's a tractor parade!"
+},
+{
+"t": 563.65,
+"who": "Penny",
+"text": "It's one tractor, Milo."
+},
+{
+"t": 565.44,
+"who": "Milo",
+"text": "It's a parade of one."
+},
+{
+"t": 566.87,
+"cue": "Question 7",
+"q": 7
+},
+{
+"t": 567.7,
+"who": "Ace",
+"text": "Milo. Retirement plans. A business owner has a SEP and contributes ten percent of her own compensation. Her one eligible employee earns $40,000. What must she contribute for the employee? A, nothing; SEPs are optional for employees. B, $4,000. C, $7,000. D, whatever the employee chooses."
+},
+{
+"t": 591.27,
+"who": "Milo",
+"text": "Ten percent of forty thousand. Four thousand. B. I can do percentages when there's no fedora involved."
+},
+{
+"t": 598.04,
+"cue": "Correct-answer chime"
+},
+{
+"t": 598.83,
+"who": "Hoot",
+"text": "Correct. The fedora is noted."
+},
+{
+"t": 601.67,
+"who": "Ace",
+"text": "In a SEP, only the employer contributes, into SEP-IRAs, and it must be the same percentage of compensation for every eligible employee. For 2025, the limit is the lesser of twenty-five percent of compensation, with a compensation cap of $350,000, or $70,000. Contributions are discretionary each year. Eligibility can require at most age twenty-one, three of the last five years of service, and $750 of compensation for 2025. A SEP can be set up and funded up to the return due date, including extensions."
+},
+{
+"t": 643.5,
+"who": "Hoot",
+"text": "And for the self-employed owner herself, twenty-five percent becomes about twenty percent of net profit after half of self-employment tax, because the contribution comes out of its own base."
+},
+{
+"t": 657.58,
+"who": "Ace",
+"text": "Memory trick: \"SEP: same percent for everybody, and only the boss pays in.\"",
+"tip": true
+},
+{
+"t": 663.12,
+"cue": "Question 8",
+"q": 8
+},
+{
+"t": 663.95,
+"who": "Hoot",
+"text": "Penny. A SIMPLE IRA participant withdraws money one year after first participating. She's forty. What additional tax applies? A, ten percent. B, twenty percent. C, twenty-five percent. D, none."
+},
+{
+"t": 679.28,
+"who": "Penny",
+"text": "SIMPLE has the scary one. Two years. Twenty-five percent. C."
+},
+{
+"t": 683.4,
+"cue": "Correct-answer chime"
+},
+{
+"t": 684.19,
+"who": "Ace",
+"text": "A SIMPLE IRA is for employers with one hundred or fewer employees and no other plan. For 2025, employees can defer $16,500, plus a $3,500 catch-up at fifty or older, or $5,250 at ages sixty to sixty-three. The employer either matches up to three percent, or makes a two percent nonelective contribution for everyone eligible. A new SIMPLE generally must be set up by October 1. And withdrawals within two years of first participating face a twenty-five percent additional tax instead of ten."
+},
+{
+"t": 727.21,
+"who": "Hoot",
+"text": "And the 401(k), for 2025: $23,500 of elective deferrals, a $7,500 catch-up at fifty or older, and $11,250 at ages sixty to sixty-three. Total contributions, not counting catch-up, are capped at the lesser of one hundred percent of compensation or $70,000."
+},
+{
+"t": 753.41,
+"who": "Ace",
+"text": "Memory trick: \"SEP twenty-five percent, SIMPLE sixteen-five, 401(k) twenty-three-five.\" And SIMPLE's \"two years, twenty-five percent\" sounds like a warning label.",
+"tip": true
+},
+{
+"t": 765.18,
+"cue": "Phone rings"
+},
+{
+"t": 766.53,
+"who": "Dee",
+"text": "Hi! It's Dee! Is Deduction there? I want to say hi to the hen."
+},
+{
+"t": 770.65,
+"who": "Lulu",
+"text": "She's right here, Mom!"
+},
+{
+"t": 772.22,
+"stage": "The hen clucks."
+},
+{
+"t": 772.22,
+"who": "Dee",
+"text": "Hi, Deduction! Okay, ask me a farm question. I'm basically a farmer. I farm oil."
+},
+{
+"t": 777.87,
+"who": "Hoot",
+"text": "That is not farming. But very well."
+},
+{
+"t": 780.87,
+"cue": "Question 9",
+"q": 9
+},
+{
+"t": 781.7,
+"who": "Hoot",
+"text": "A farmer gets at least two-thirds of her gross income from farming. She made no estimated tax payments for 2025. By what date can she file her return and pay all the tax to avoid an estimated tax penalty? A, April 15, 2026. B, January 15, 2026. C, March 1, 2026. D, June 15, 2026."
+},
+{
+"t": 807.62,
+"who": "Dee",
+"text": "Ooh. Farmers get a special one. I think it's... March?"
+},
+{
+"t": 811.26,
+"cue": "The video call glitches"
+},
+{
+"t": 811.91,
+"who": "Dee",
+"text": "March first! C!"
+},
+{
+"t": 813.94,
+"cue": "Correct-answer chime"
+},
+{
+"t": 814.73,
+"who": "Dee",
+"text": "Deduction, did you hear? Mommy's a farmer now!"
+},
+{
+"t": 817.96,
+"who": "Ace",
+"text": "A qualified farmer, with at least two-thirds of gross income from farming in the current or prior year, has two options. Make one estimated payment by January 15, covering the lesser of sixty-six and two-thirds percent of this year's tax or one hundred percent of last year's. Or file and pay in full by March 1, with no penalty. The same rule applies to fishermen."
+},
+{
+"t": 843.03,
+"who": "Hoot",
+"text": "And more farm rules. Schedule F. Farm income averaging on Schedule J. Farming losses can be carried back two years. Agricultural employers file the annual Form 943, not Form 941. Farm wages are subject to Social Security and Medicare if a worker gets $150 or more in cash in the year, or total farm labor expenses are $2,500 or more."
+},
+{
+"t": 870.74,
+"who": "Ace",
+"text": "Memory trick: \"Two-thirds farming? Pay by January 15, or file by March 1.\"",
+"tip": true
+},
+{
+"t": 877.06,
+"cue": "Question 10",
+"q": 10
+},
+{
+"t": 877.89,
+"who": "Ace",
+"text": "Lulu. Livestock. A farmer raised breeding hens and sold one, held for ten months, at a gain. How is the gain treated? A, section 1231 gain. B, long-term capital gain. C, ordinary income. D, tax-free, because it's a hen."
+},
+{
+"t": 895.62,
+"who": "Lulu",
+"text": "Not Deduction!"
+},
+{
+"t": 897.01,
+"who": "Ace",
+"text": "A different hen. A hypothetical hen."
+},
+{
+"t": 900.0,
+"who": "Lulu",
+"text": "Okay. Hens aren't horses. And ten months is short. C, ordinary."
+},
+{
+"t": 903.89,
+"cue": "Correct-answer chime"
+},
+{
+"t": 904.68,
+"who": "Ace",
+"text": "Livestock held for draft, breeding, dairy or sporting purposes is section 1231 property if held at least twenty-four months for cattle and horses, or at least twelve months for other livestock. Poultry isn't included at all. Raised animals have zero basis. So a hen sold at a gain is ordinary income."
+},
+{
+"t": 926.59,
+"who": "Hoot",
+"text": "Trap alert: poultry is never section 1231 livestock. Deduction the hen is ordinary.",
+"tip": true
+},
+{
+"t": 934.36,
+"who": "Lulu",
+"text": "She is NOT ordinary."
+},
+{
+"t": 936.07,
+"who": "Hoot",
+"text": "For tax purposes, she is ordinary. Emotionally, she is extraordinary."
+},
+{
+"t": 941.5,
+"who": "Ace",
+"text": "Memory trick: \"Cattle and horses, twenty-four months. Other livestock, twelve. Chickens, never.\"",
+"tip": true
+},
+{
+"t": 948.03,
+"cue": "Question 11",
+"q": 11
+},
+{
+"t": 948.86,
+"who": "Hoot",
+"text": "Rosa. Rentals. Instead of paying $500 a month in rent, a tenant fixes up the landlord's building for a year, services worth $6,000. How much rental income does the landlord report? A, nothing, no cash. B, $6,000. C, $3,000. D, only if the work was done."
+},
+{
+"t": 970.77,
+"who": "Rosa",
+"text": "Oh, I did this with my upstairs tenant once. He painted, I let him stay. I didn't report it, because, well, paint. A."
+},
+{
+"t": 978.33,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 979.08,
+"who": "Hoot",
+"text": "Wrong. I am writing \"paint\" in my file."
+},
+{
+"t": 982.31,
+"who": "Ace",
+"text": "It's B. Rental income includes rent, advance rent when received, deposits kept or applied as final rent, expenses the tenant pays for the landlord, and the fair market value of property or services received instead of rent. Services worth $6,000 are $6,000 of rental income. A refundable security deposit isn't income unless it's kept."
+},
+{
+"t": 1007.57,
+"who": "Ace",
+"text": "Memory trick: \"Paid in paint is still paid.\"",
+"tip": true
+},
+{
+"t": 1010.79,
+"cue": "Question 12",
+"q": 12
+},
+{
+"t": 1011.62,
+"who": "Ace",
+"text": "Penny. A landlord with modified AGI of $120,000 actively participates in her rental, and has a $30,000 rental loss and no passive income. How much can she deduct in 2025? A, $30,000. B, $25,000. C, $15,000. D, $0."
+},
+{
+"t": 1035.45,
+"who": "Penny",
+"text": "The twenty-five thousand allowance, cut by half of everything over a hundred thousand. Twenty thousand over, half is ten. Fifteen thousand. C."
+},
+{
+"t": 1044.67,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1045.46,
+"who": "Ace",
+"text": "Rental activities are passive, regardless of participation, unless an exception applies. Passive losses offset only passive income and carry forward indefinitely, and they're all released when the whole interest is sold in a fully taxable sale to an unrelated party. The special allowance lets someone who actively participates, at least ten percent ownership and making management decisions, deduct up to $25,000 against other income. It's reduced by fifty percent of modified AGI over $100,000, and it's zero at $150,000. So she deducts $15,000, and $15,000 carries forward."
+},
+{
+"t": 1090.58,
+"who": "Hoot",
+"text": "Exam tip: married filing separately and living together at any time in the year: no allowance at all.",
+"tip": true
+},
+{
+"t": 1097.98,
+"who": "Ace",
+"text": "Memory trick: \"Rent is passive. Twenty-five grand if you manage it.\"",
+"tip": true
+},
+{
+"t": 1102.63,
+"cue": "Question 13",
+"q": 13
+},
+{
+"t": 1103.46,
+"who": "Hoot",
+"text": "Final question of Season 2. Lightning round. A woman works 800 hours a year in her rental real estate business, and 1,800 hours as a nurse. Is she a real estate professional?"
+},
+{
+"t": 1118.43,
+"who": "Milo",
+"text": "Yes! Eight hundred is more than seven fifty!"
+},
+{
+"t": 1120.94,
+"who": "Penny and Rosa",
+"text": "No!"
+},
+{
+"t": 1122.27,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1123.06,
+"who": "Hoot",
+"text": "Penny and Rosa are correct."
+},
+{
+"t": 1125.76,
+"who": "Ace",
+"text": "A real estate professional must meet both tests: more than 750 hours in real property trades or businesses where she materially participates, and more than half of all her personal services in those businesses. 800 out of 2,600 total hours is not more than half. On a joint return, one spouse has to meet both tests alone."
+},
+{
+"t": 1150.32,
+"who": "Ace",
+"text": "Memory trick: \"Seven fifty AND more than half.\" Two locks on the same door.",
+"tip": true
+},
+{
+"t": 1155.35,
+"who": "Milo",
+"text": "I only had the one key."
+},
+{
+"t": 1156.91,
+"cue": "Drumroll"
+},
+{
+"t": 1158.66,
+"who": "Hoot",
+"text": "The Season 2 final scores. Milo, one point and a water slide. Dee, one point and a hen. Lulu, two points. Rosa, two points. Penny, five points."
+},
+{
+"t": 1170.63,
+"who": "Hoot",
+"text": "Penny Pocket is the Season 2 champion of The Hot Seat."
+},
+{
+"t": 1175.17,
+"cue": "Applause"
+},
+{
+"t": 1177.52,
+"who": "Penny",
+"text": "Two seasons in a row! Deduction, you're my lucky hen."
+},
+{
+"t": 1180.87,
+"stage": "Deduction clucks."
+},
+{
+"t": 1180.87,
+"who": "Ace",
+"text": "The recap. Six, three, one: estate, simple trust, complex trust. Distribute it, deduct it, K-1 it. Postcard up to fifty thousand, and skip three years and the exemption's gone. Regular, a trade, unrelated: UBI, unless volunteers run it. Seventy-five, the charity tells you; two-fifty, it writes you. SEP: same percent for everybody. SIMPLE: two years, twenty-five percent. Two-thirds farming: January 15 or March 1. Chickens, never 1231. Paid in paint is still paid. Twenty-five grand if you manage it. And real estate pros need seven fifty AND more than half."
+},
+{
+"t": 1224.32,
+"who": "Hoot",
+"text": "I will now return to the apples. Next season, I will be visiting Ace's new office."
+},
+{
+"t": 1230.73,
+"who": "Ace",
+"text": "Wait, I don't have a new office."
+},
+{
+"t": 1232.97,
+"who": "Hoot",
+"text": "You will."
+},
+{
+"t": 1234.29,
+"cue": "A delivery truck rumbles by"
+},
+{
+"t": 1238.44,
+"who": "Milo",
+"text": "That's the end of Season 2 of The Hot Seat! Next season, it's all about representation, ethics and audits. Penny's going to be nervous."
+},
+{
+"t": 1246.83,
+"who": "Penny",
+"text": "Why would I be nervous?"
+},
+{
+"t": 1248.31,
+"who": "Hoot",
+"text": "See you in Season 3."
+},
+{
+"t": 1250.76,
+"cue": "The Hot Seat theme"
+}
+]
+}

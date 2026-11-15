@@ -176,7 +176,7 @@ export default function App() {
           {(["part1", "part2", "part3"] as const).map((p) => (
             <Route key={p} path={`/study/${p}`} element={<Season part={p} />} />
           ))}
-          <Route path="/study/podcast/:domainId" element={<PodcastPage />} />
+          <Route path="/study/podcast/:id" element={<PodcastPage />} />
           <Route path="/study/:lessonId" element={<LessonPage />} />
           {auth && <Route path="/upgrade" element={<Upgrade />} />}
           {admin && <Route path="/admin" element={<Admin />} />}

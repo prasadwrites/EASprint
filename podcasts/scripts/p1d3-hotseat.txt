@@ -1,0 +1,147 @@
+# Unit 3 Hot Seat: Schedule A, the Juice Box Credit and the Last Sunny Year
+(Season 1. March 2026. Penny and Milo's front porch after a snowstorm. A snowplow keeps going by. The heated lawn chair is, for once, very popular.)
+[hotseat]
+[applause]
+MILO: It's The Hot Seat! The only quiz show where the seat is the warmest thing in Ledger Falls. I'm Milo Marsh, head of marketing and head of snow shoveling, which I have not done.
+PENNY: The driveway is a glacier, Milo.
+MILO: It's a natural ice rink. That's a feature.
+ACE: Hi, everyone. Ace Okafor, enrolled agent, wearing three scarves. Today is Unit 3: deductions and credits. Standard versus itemized, the QBI deduction, family credits, education credits, the earned income credit and the energy and foreign tax credits. Exam-style questions, the cast answers, then we explain and give you a memory trick.
+[pop]
+(The snowman in the front yard tips over. Examiner Hoot steps out of it, brushing off snow.)
+HOOT: Hoo-hoo-HOLD it. I have been inside that snowman since six A.M.
+LULU: Hoot! You're the snowman's insides!
+HOOT: I was conducting a cold-weather observation. Also, the door was locked.
+PENNY: You could have knocked.
+HOOT: Examiners do not knock. Examiners appear.
+[truck]
+MILO: Snowplow! Everybody wave! Hi, Earl!
+[q]
+ACE: Penny, you're up. A married couple filing jointly, both under sixty-five, has $28,000 of itemized deductions for 2025. Which deduction should they take? A, itemized, $28,000. B, standard, $31,500. C, both, $59,500. D, half of each.
+PENNY: I made a slideshow about our itemized deductions. Forty slides. And it was for nothing. B. The standard deduction is bigger.
+[correct]
+HOOT: Correct. And I have seen the slideshow. Slide twenty-three was excellent.
+ACE: For 2025, the standard deduction is $15,750 for single and married filing separately, $23,625 for head of household, and $31,500 for married filing jointly and qualifying surviving spouse. You itemize on Schedule A only when your itemized total is bigger. Each taxpayer who's sixty-five or older or blind adds $1,600 if married, or $2,000 if single or head of household.
+HOOT: And new for 2025 through 2028: each taxpayer sixty-five or older can deduct an additional $6,000, whether they itemize or not. It phases out by six percent of modified AGI over $75,000, or $150,000 on a joint return, it needs a valid SSN, and married couples must file jointly.
+ACE: Memory trick: "Add up Schedule A. Beat thirty-one-five or don't bother."
+[q]
+HOOT: Milo. Sit.
+MILO: Gladly. It's like a toaster for your whole body.
+HOOT: A couple has AGI of $80,000 and $9,000 of unreimbursed medical expenses. If they itemize, how much is their medical deduction? A, $9,000. B, $6,000. C, $3,000. D, $600.
+MILO: Okay. Medical. All of it, right? Doctors are expensive. A. Nine thousand.
+[buzzer]
+HOOT: Wrong. As predicted by the snowman.
+MILO: The snowman was you!
+HOOT: Exactly.
+ACE: It's C. Unreimbursed medical and dental expenses are deductible only to the extent they're more than 7.5 percent of AGI. 7.5 percent of $80,000 is $6,000. So $9,000 minus $6,000 is $3,000.
+HOOT: And what counts: doctors, hospitals, prescriptions, insulin, after-tax health insurance and Medicare premiums, and medical travel at twenty-one cents a mile for 2025. What does not count: cosmetic surgery, over-the-counter drugs other than insulin, gym memberships, and anything reimbursed or paid with pre-tax money from an HSA or FSA.
+ACE: Memory trick: "Seven and a half percent is the cover charge." You only deduct what gets past the bouncer.
+MILO: I've never gotten past a bouncer.
+PENNY: We know, Milo.
+[q]
+ACE: Rosa. Your turn. For 2025, what's the most a taxpayer filing married filing separately can deduct for state and local taxes, if her modified AGI is $90,000? A, $10,000. B, $40,000. C, $20,000. D, $5,000.
+ROSA: Ooh. They raised the cap this year. I heard about it at the beauty parlor. Forty thousand! B!
+[buzzer]
+HOOT: Wrong. The beauty parlor is not a primary source.
+ROSA: Mildred said it with such confidence.
+ACE: It's C. For 2025, the SALT cap is $40,000, but it's $20,000 for married filing separately. That cap covers state and local income taxes, or general sales taxes instead, plus real estate taxes and personal property taxes, all combined. The cap is reduced by thirty percent of modified AGI over $500,000, or $250,000 for separate filers, but never below $10,000, or $5,000 for separate filers.
+HOOT: Exam tip: federal taxes are never deductible here. Foreign real property taxes are not deductible. And fees for services, like trash pickup, are not taxes at all.
+ACE: Memory trick: "Forty for the house, twenty for half a house." Separate filers get half of everything.
+[horn]
+LULU: That's Mrs. Ferris! She's stuck in the snow!
+MILO: I'll go help! After the next question.
+[q]
+HOOT: Lulu. Sit. A married couple filing jointly claims a nine-year-old girl who is their qualifying relative, not their qualifying child. She has a valid SSN. Which credit can they claim for her? A, the $2,200 child tax credit. B, the $500 credit for other dependents. C, the earned income credit. D, no credit at all.
+LULU: It's me again! I'm the question! And it's B, because I'm a qualifying RELATIVE. I'm worth five hundred dollars.
+PENNY: You're worth way more than that, sweetie.
+LULU: Not to the IRS.
+[correct]
+ACE: For 2025, the child tax credit is $2,200 for each qualifying child who is under seventeen at the end of the year, claimed as a dependent, and has an SSN valid for employment issued by the due date of the return. Up to $1,700 of it is refundable as the additional child tax credit. Lulu is a qualifying relative, not a qualifying child, so she doesn't qualify. She gets the $500 credit for other dependents, which covers qualifying relatives, qualifying children who are seventeen or older, and children with an ITIN instead of an SSN.
+HOOT: Trap alert: age is tested on December 31. A child who turns seventeen on any day of the year is seventeen for the credit. Five hundred dollars, not twenty-two hundred.
+ACE: And both credits phase out together: $50 for each $1,000 of modified AGI over $200,000, or $400,000 on a joint return.
+ACE: Memory trick: "Qualifying child, twenty-two hundred. Everyone else you claim, five hundred."
+[q]
+ACE: Penny. A couple with two children under thirteen paid $9,000 for daycare in 2025 so they could both work. Their AGI is $70,000. What's their child and dependent care credit? A, $1,800. B, $1,200. C, $2,100. D, $3,150.
+PENNY: Okay. Two kids, so the expense limit is six thousand. And with AGI over forty-three thousand, the rate is twenty percent. Six thousand times twenty percent. B. Twelve hundred.
+[correct]
+HOOT: Correct. Penny Pocket would make a frightening examiner.
+PENNY: Thank you! Wait. Is that a compliment?
+HOOT: It is the highest I give.
+ACE: The credit on Form 2441 covers care so the taxpayer, and the spouse, can work or look for work. A qualifying person is a qualifying child under thirteen claimed as a dependent, or a spouse or dependent who can't care for themselves and lived with the taxpayer more than half the year. Up to $3,000 of expenses for one person, or $6,000 for two or more, times a rate from thirty-five percent down to twenty percent for AGI over $43,000. And expenses can't exceed the earned income of the lower-earning spouse.
+HOOT: Exam tip: day camp counts. Overnight camp does not. Kindergarten tuition does not. Paying your own child under nineteen does not. And employer dependent care benefits that are excluded from wages, up to $5,000, reduce the expense limit dollar for dollar.
+ACE: Memory trick: "Day camp, yes. Sleepaway, no." If the kid sleeps there, the credit doesn't.
+[q]
+HOOT: Rosa. Redemption. A married couple's son is a sophomore in college, enrolled full time in a degree program. They paid $3,000 of tuition in 2025. Their modified AGI is $120,000. What's their American opportunity credit? A, $2,500. B, $3,000. C, $2,250. D, $600.
+ROSA: My Bert went to college for one semester. He studied tuba. But I'll try. The first two thousand dollars counts all of it, and then a quarter of the next part. Two thousand plus a quarter of one thousand. Two thousand two hundred and fifty. C!
+[correct]
+ROSA: Bert would be so proud. He'd play the tuba.
+HOOT: Please do not bring a tuba.
+ACE: The American opportunity credit is 100 percent of the first $2,000 of qualified expenses plus twenty-five percent of the next $2,000, for a maximum of $2,500 per eligible student. Up to forty percent, as much as $1,000, is refundable. The student must be in a degree program at least half-time for at least one academic period, must not have finished the first four years of college at the start of the year, and the credit can be claimed for only four tax years.
+HOOT: The lifetime learning credit is different. Twenty percent of up to $10,000 of expenses, a maximum of $2,000 per return, not per student. Nonrefundable. Unlimited years, and even one course to improve job skills counts. Both credits phase out between $80,000 and $90,000 of modified AGI, or $160,000 to $180,000 joint. And neither is allowed on a separate return.
+ACE: Trap alert: room and board never count, even when paid to the school.
+ACE: Memory trick: "AOTC per student, LLC per return." And for the AOTC, think four: four years, $4,000 of expenses for the max, and forty percent refundable.
+[ring]
+DEE: Hi! Hi everybody! It's Dee! It's snowing on the rig too! Actually it's not. It's very hot. Can I have a question?
+HOOT: You may. Dee. Question seven.
+[q]
+HOOT: A U.S. citizen working overseas claims the foreign earned income exclusion on Form 2555. Her daughter lived with relatives in the U.S. all year. Can she claim the earned income credit? A, yes, with one qualifying child. B, yes, but only the no-child amount. C, no. D, only if she earns less than $20,000.
+DEE: Ooh. I think it's A, because Lulu's my daughter, and daughters are the best qualifying...
+[glitch]
+DEE: ...children!
+[buzzer]
+HOOT: Wrong.
+DEE: Ugh. My signal is fine, my answers are the problem.
+ACE: It's C. Anyone who files Form 2555 can't claim the earned income credit at all. And separately, an EITC qualifying child has to live with the taxpayer in the U.S. for more than half the year. Lulu lived with Penny and Milo, not with Dee.
+HOOT: And Penny and Milo cannot use Lulu for the EITC either. The EITC qualifying child has four tests: relationship, age, residency and joint return. A cousin's child fails relationship. Qualifying relatives never count for the EITC.
+ACE: Exam tip: the EITC qualifying child has no support test, and the child doesn't have to be the taxpayer's dependent. A grandmother can claim her grandson for the EITC even if his parents pay most of his support, as long as he lived with her more than half the year.
+ACE: Memory trick: "Four tests for the child: Relationship, Age, Residency, Joint return. No Support." The EITC kid drinks juice, but nobody checks who paid for it.
+LULU: Everybody's always talking about my juice.
+[q]
+ACE: Milo. Back in the warm seat. A twenty-two-year-old single man, not a student, with no children, earned $9,000 in 2025, and nobody can claim him as a dependent. Can he claim the earned income credit? A, yes, the full $649. B, no, he's under twenty-five. C, yes, because he has earned income. D, only if he files jointly.
+MILO: That's my cousin Rudy! He makes sandwiches. He's twenty-two. I think... he's young and poor, so... C! He has earned income!
+[buzzer]
+HOOT: Wrong. Cousin Rudy remains uncredited.
+ACE: It's B. Without a qualifying child, the taxpayer, or one spouse on a joint return, must be at least twenty-five but under sixty-five at the end of the year. He also needs a main home in the U.S. for more than half the year and can't be anyone's dependent. For 2025, that credit maxes out at $649. With one child, it's up to $4,328, with two $7,152, and with three or more $8,046.
+HOOT: And everyone needs a valid SSN, and investment income can't be over $11,950 for 2025.
+ACE: Memory trick: "No kids? Twenty-five to sixty-four." Too young to rent a car, too young for the credit.
+MILO: Rudy can't rent a car either! It all makes sense now!
+[q]
+HOOT: Penny. The preparer's question. A paid preparer is doing a return that claims the earned income credit. The client is twenty-one and claims three children. Which is true? A, the preparer must audit the client's bank records. B, the preparer can just enter what the client says, no questions. C, the preparer must ask reasonable questions about how each child is related and where they lived, and document the answers. D, the preparer can't prepare the return.
+PENNY: C. Ace asks me everything. He asked me how long Lulu's juice boxes last.
+ACE: That was for a different reason.
+[correct]
+ACE: Paid preparers have four due diligence requirements for returns claiming the EITC, the child tax credit, the additional child tax credit, the credit for other dependents, the American opportunity credit, or head of household status. One, complete Form 8867 and submit it with the return. Two, compute the credits and keep the worksheets. Three, the knowledge requirement. Four, keep records for three years.
+HOOT: The knowledge requirement: do not ignore what you know. When information appears incorrect, inconsistent or incomplete, make reasonable inquiries and document the questions and answers at the time. A young client with three children is exactly that. And the penalty is per failure, per return.
+ACE: And after the EITC is denied for any reason other than a math error, the taxpayer must attach Form 8862 the next time they claim it. Reckless or intentional disregard of the rules means a two-year ban. Fraud means ten years.
+ACE: Memory trick: "Four tests for the child, four duties for the preparer." Form, figures, knowledge, keep.
+[car]
+[q]
+ACE: Rosa. Last one for you. A homeowner had solar panels installed on her home, finished in November 2025, for $20,000. What credit can she claim? A, $1,200. B, $2,000. C, $6,000. D, nothing.
+ROSA: I put solar panels on the bakery roof and they cooked the pigeons' feet. But on the house? I'll say A. Twelve hundred, because there's a cap.
+[buzzer]
+HOOT: Wrong cap. The pigeons are noted.
+ACE: It's C. The residential clean energy credit is thirty percent of the cost, including installation, with no annual dollar cap. Thirty percent of $20,000 is $6,000. And under the 2025 law, no credit is allowed for expenditures made after December 31, 2025. An expenditure is made when the installation is complete.
+HOOT: The $1,200 cap is a different credit: the energy efficient home improvement credit. Thirty percent of improvements like insulation, windows and doors to an existing main home, capped at $1,200 a year, plus a separate $2,000 a year for heat pumps. It also ended after 2025. And the clean vehicle credits ended for vehicles acquired after September 30, 2025.
+ACE: Memory trick: "Solar has no ceiling, because it's on the roof." The home improvement credit has caps, because it's inside the house.
+[q]
+HOOT: Lightning round. Anyone may shout. Below the income threshold, does an accountant's sole proprietorship get the qualified business income deduction?
+MILO: No! Accountants are a specified service!
+PENNY+LULU: Yes!
+[correct]
+HOOT: Penny and Lulu are correct. Milo is not.
+ACE: The QBI deduction is up to twenty percent of qualified business income from a sole proprietorship, partnership or S corporation. A specified service trade or business, like health, law, accounting or consulting, gets the full deduction below the threshold. For 2025, that's taxable income of $197,300, or $394,600 joint. Above that, it phases out, and above $247,300, or $494,600 joint, a specified service business gets nothing.
+HOOT: And the deduction is the smaller of twenty percent of QBI or twenty percent of taxable income minus net capital gain. It does not reduce AGI or self-employment tax. And employee wages are never QBI.
+ACE: Memory trick: "Twenty percent, but the smaller of two twenties."
+[drumroll]
+HOOT: Final scores. Dee, zero. Milo, zero. Rosa, one point and some pigeons. Lulu, two points. Penny, four points.
+[applause]
+PENNY: Three in a row! I'm going to need a trophy shelf.
+MILO: I'll build one.
+PENNY: Please don't.
+ACE: The recap. Beat thirty-one-five or don't bother. Seven and a half percent is the cover charge. Forty for the house, twenty for half a house. Qualifying child, twenty-two hundred; everyone else, five hundred. Day camp yes, sleepaway no. AOTC per student, LLC per return. EITC: no Form 2555, no support test, twenty-five to sixty-four without kids. Four duties for the preparer. Solar has no ceiling. And QBI is the smaller of two twenties.
+HOOT: I will now return to the snowman.
+LULU: The snowman fell over, Hoot.
+HOOT: Then I will build a new one and get inside it. That is called a fresh start.
+[truck]
+MILO: That's the plow again! Earl! Earl, plow our driveway! Earl!
+PENNY: Next time on The Hot Seat, Unit 4: other taxes and penalties.
+[hotseat]

@@ -1,0 +1,608 @@
+{
+"id": "p3d4-hotseat",
+"title": "Season 3, Unit 4 Hot Seat: The E-File Gauntlet and the Locked Filing Cabinet",
+"seconds": 949,
+"lines": [
+{
+"t": 0.3,
+"stage": "Series finale. A Friday evening in the Okafor Tax Defense office above Rosa's Rolls. There are balloons. The heated lawn chair has a party hat. Main Street is busy with Friday night traffic."
+},
+{
+"t": 0.3,
+"cue": "The Hot Seat theme"
+},
+{
+"t": 2.49,
+"cue": "Applause"
+},
+{
+"t": 4.84,
+"who": "Milo",
+"text": "It's the series finale of The Hot Seat! Three seasons, thirteen units, and one heated lawn chair that has never once been unplugged."
+},
+{
+"t": 13.05,
+"who": "Penny",
+"text": "Milo, it's a fire hazard."
+},
+{
+"t": 15.04,
+"who": "Milo",
+"text": "It's a fire FEATURE."
+},
+{
+"t": 16.41,
+"who": "Ace",
+"text": "Hi, everyone. Ace Okafor, enrolled agent. Today's the last unit of Part 3: e-file rules, and accuracy, records and data security. Exam-style questions, someone takes the hot seat, and Hoot and I explain and give you one last batch of memory tricks."
+},
+{
+"t": 35.52,
+"who": "Lulu",
+"text": "Where's Hoot? He's always here by now."
+},
+{
+"t": 37.81,
+"cue": "Doorbell"
+},
+{
+"t": 39.41,
+"who": "Rosa",
+"text": "That's the downstairs door. I'll get it."
+},
+{
+"t": 42.33,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 42.73,
+"stage": "A big gift box on Ace's desk bursts open. Examiner Hoot rises out of it, wearing a tiny party hat over his eyeshade."
+},
+{
+"t": 42.73,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD the party. Examiner Hoot is present. I mailed myself."
+},
+{
+"t": 48.25,
+"who": "Penny",
+"text": "You MAILED yourself?"
+},
+{
+"t": 49.58,
+"who": "Hoot",
+"text": "Certified mail. With return receipt. Somebody had to sign for me."
+},
+{
+"t": 55.03,
+"who": "Rosa",
+"text": "I signed. I thought it was cupcakes."
+},
+{
+"t": 57.67,
+"cue": "A car drives past"
+},
+{
+"t": 61.02,
+"cue": "Question 1",
+"q": 1
+},
+{
+"t": 61.85,
+"who": "Ace",
+"text": "Penny, first question of the finale. An enrolled agent who's an electronic return originator prepares a joint return for a married couple. What's required before he transmits it? A, nothing, he has a 2848. B, the couple signs Form 8879 before he transmits. C, he signs Form 8879 for them. D, they sign it after it's accepted."
+},
+{
+"t": 87.53,
+"who": "Penny",
+"text": "We sign first. Ace makes us read it out loud, too. B."
+},
+{
+"t": 91.01,
+"cue": "Correct-answer chime"
+},
+{
+"t": 91.8,
+"who": "Ace",
+"text": "Form 8879, the IRS e-file signature authorization, is signed by the taxpayers after they review the return and before the ERO transmits it. The ERO keeps it for three years from the later of the return's due date or the date the IRS received the return, and doesn't send it to the IRS unless asked. Form 8453 is different: it's used to send required paper documents that go with an e-filed return."
+},
+{
+"t": 122.1,
+"who": "Hoot",
+"text": "Trap alert: an ERO who transmits first and collects signatures later has transmitted an unsigned return. That is not a shortcut. That is a violation.",
+"tip": true
+},
+{
+"t": 134.36,
+"who": "Ace",
+"text": "Memory trick: \"Sign first. Send second.\" And keep the 8879 three years.",
+"tip": true
+},
+{
+"t": 140.86,
+"cue": "Question 2",
+"q": 2
+},
+{
+"t": 141.69,
+"who": "Hoot",
+"text": "Milo. Sit. A brand-new firm has PTINs for every preparer, but no EFIN yet. What can't the firm do? A, prepare returns for pay. B, transmit returns electronically for clients. C, sign returns. D, advertise."
+},
+{
+"t": 158.74,
+"who": "Milo",
+"text": "PTIN is the person. EFIN is the... e-file... firm-thingy. So without the EFIN, they can't e-file. B!"
+},
+{
+"t": 165.38,
+"cue": "Correct-answer chime"
+},
+{
+"t": 166.17,
+"who": "Milo",
+"text": "Firm-thingy! That's the official term!"
+},
+{
+"t": 168.16,
+"who": "Ace",
+"text": "A PTIN is required for anyone paid to prepare, or substantially help prepare, a federal return, including EAs, CPAs and attorneys. It's renewed every year, it expires December 31, and it goes on every return they sign. An EFIN, an Electronic Filing Identification Number, comes from the IRS e-file application in e-Services, after a suitability check. Enrolled agents, CPAs and attorneys provide their professional credentials instead of fingerprints. The firm updates its application within thirty days of changes."
+},
+{
+"t": 208.54,
+"who": "Ace",
+"text": "Memory trick: \"PTIN is the person. EFIN is the e-file firm.\"",
+"tip": true
+},
+{
+"t": 213.26,
+"who": "Hoot",
+"text": "Or, as Milo says, the firm-thingy. That is not on the exam."
+},
+{
+"t": 218.26,
+"cue": "Question 3",
+"q": 3
+},
+{
+"t": 219.09,
+"who": "Ace",
+"text": "Rosa. An ERO transmits a client's return and it's rejected. What must the ERO do to keep it timely? A, nothing; a rejected return is still filed. B, tell the client within twenty-four hours, and retransmit the corrected return within five calendar days. C, wait for the IRS to call. D, file it again next year."
+},
+{
+"t": 242.96,
+"who": "Rosa",
+"text": "Twenty-four hours sounds right. Anything important in a bakery happens in twenty-four hours, or the bread goes stale. B."
+},
+{
+"t": 250.88,
+"cue": "Correct-answer chime"
+},
+{
+"t": 251.67,
+"who": "Ace",
+"text": "When a return is rejected, the ERO notifies the taxpayer within twenty-four hours, with the reject code and an explanation. Then there's the perfection period: if the corrected return is retransmitted within five calendar days, or filed on paper within ten calendar days with an explanation, it's treated as timely filed."
+},
+{
+"t": 274.57,
+"who": "Ace",
+"text": "Memory trick: \"Reject? Twenty-four hours to tell, five days to fix, ten days if it's paper.\"",
+"tip": true
+},
+{
+"t": 281.33,
+"who": "Rosa",
+"text": "Like a sourdough schedule."
+},
+{
+"t": 283.45,
+"cue": "A car horn honks"
+},
+{
+"t": 284.43,
+"cue": "Question 4",
+"q": 4
+},
+{
+"t": 285.26,
+"who": "Hoot",
+"text": "Lulu. A preparer reasonably expects to file thirty individual returns this year. One client insists on paper. What does the preparer do? A, refuse the client. B, file on paper with Form 8948 attached, and keep the client's signed statement. C, e-file it anyway. D, file Form 8944."
+},
+{
+"t": 308.01,
+"who": "Lulu",
+"text": "You have to let them have paper if they want it. Some people like paper. Penny likes paper. B."
+},
+{
+"t": 313.47,
+"cue": "Correct-answer chime"
+},
+{
+"t": 314.26,
+"who": "Ace",
+"text": "A specified tax return preparer who reasonably expects to file eleven or more individual or trust returns in a calendar year must e-file them. The count is firm-wide. Exceptions include the taxpayer's choice to file on paper, returns that can't be e-filed, and a hardship waiver on Form 8944. When a return is filed on paper by a specified preparer, Form 8948 is attached, explaining why. For a taxpayer's choice, the preparer keeps the client's signed statement."
+},
+{
+"t": 350.1,
+"who": "Ace",
+"text": "Memory trick: \"Eleven or more, e-file the score.\" If the client wants paper, 8948 explains it.",
+"tip": true
+},
+{
+"t": 359.19,
+"cue": "Question 5",
+"q": 5
+},
+{
+"t": 360.02,
+"who": "Ace",
+"text": "Penny. Records. Under section 6107, a paid preparer signed a return in March 2026. Until when must he keep a copy of the return, or a list entry for it? A, March 2029. B, December 31, 2028. C, June 30, 2029. D, forever."
+},
+{
+"t": 380.91,
+"who": "Penny",
+"text": "Oh, this is the weird one. The return period runs July to June. So March 2026 is in the period ending June 30, 2026. Then three years. June 30, 2029. C."
+},
+{
+"t": 394.43,
+"cue": "Correct-answer chime"
+},
+{
+"t": 395.22,
+"who": "Hoot",
+"text": "Correct. Penny Pocket knows the strange July calendar. I am almost proud."
+},
+{
+"t": 401.29,
+"who": "Ace",
+"text": "Section 6107 requires a paid preparer to give the taxpayer a copy of the return, and to keep a copy, or a list with the taxpayer's name, identification number, tax year and type of return, for three years after the close of the return period. The return period runs July 1 through June 30. The penalty is $50 per failure, up to $25,000 per period. Section 6060 also requires keeping a list of preparers employed, for three years."
+},
+{
+"t": 436.76,
+"who": "Ace",
+"text": "Memory trick: \"The preparer's year ends in June. Then count three.\"",
+"tip": true
+},
+{
+"t": 441.52,
+"cue": "Question 6",
+"q": 6
+},
+{
+"t": 442.35,
+"who": "Hoot",
+"text": "Milo. Due diligence. A preparer files a return claiming head of household status, but no earned income credit or child credits. Does he need to complete Form 8867? A, no, Form 8867 is only for the earned income credit. B, yes, head of household is covered. C, only if the client asks. D, only for refunds over $5,000."
+},
+{
+"t": 467.82,
+"who": "Milo",
+"text": "Form 8867 is the EITC form. I remember Lulu's juice. So A."
+},
+{
+"t": 473.94,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 474.69,
+"who": "Hoot",
+"text": "Wrong. The juice is not the whole story."
+},
+{
+"t": 477.94,
+"who": "Ace",
+"text": "It's B. Form 8867 due diligence covers the earned income credit, the child tax credit, the additional child tax credit, the credit for other dependents, the American opportunity credit, and head of household filing status. There are four requirements: submit Form 8867 with the return, compute the credits and keep the worksheets, meet the knowledge requirement with reasonable, documented inquiries, and keep records for three years. The penalty is per failure."
+},
+{
+"t": 512.26,
+"who": "Ace",
+"text": "Memory trick: \"Kids, college, and the household.\" The EITC, child credits, AOTC and head of household all need an 8867.",
+"tip": true
+},
+{
+"t": 524.36,
+"who": "Milo",
+"text": "Kids, college, and the household. Like the sitcom of my life."
+},
+{
+"t": 528.09,
+"cue": "Phone rings"
+},
+{
+"t": 529.44,
+"who": "Dee",
+"text": "Hi, it's Dee! I'm calling for the finale! I wanted to answer the last question of the whole series!"
+},
+{
+"t": 535.04,
+"who": "Hoot",
+"text": "You will not get the last question. You will get this one."
+},
+{
+"t": 538.95,
+"who": "Dee",
+"text": "That's fair."
+},
+{
+"t": 540.29,
+"cue": "Question 7",
+"q": 7
+},
+{
+"t": 541.12,
+"who": "Hoot",
+"text": "A tax preparer with three employees asks whether he needs a written information security plan under the FTC Safeguards Rule. A, no, only large firms do. B, yes, tax preparers of any size need one. C, only if he's had a breach. D, only if he e-files."
+},
+{
+"t": 560.62,
+"who": "Dee",
+"text": "Any size! Even if you're tiny! B!"
+},
+{
+"t": 563.36,
+"cue": "Correct-answer chime"
+},
+{
+"t": 564.15,
+"who": "Dee",
+"text": "I got one in the finale! I'm going to celebrate with a sandwich!"
+},
+{
+"t": 568.25,
+"who": "Ace",
+"text": "Under the Gramm-Leach-Bliley Act, tax preparers of any size are financial institutions, and the FTC Safeguards Rule requires a written information security plan. That includes a qualified individual in charge, a risk assessment, multifactor authentication, encryption, access controls, training and testing. IRS Publication 4557 is the guide, and Publication 5708 has a template."
+},
+{
+"t": 597.29,
+"who": "Hoot",
+"text": "And when data is stolen, report it quickly to the IRS Stakeholder Liaison, to state agencies, and to law enforcement. If five hundred or more consumers' unencrypted information is involved, notify the FTC within thirty days of discovery."
+},
+{
+"t": 616.61,
+"who": "Ace",
+"text": "Memory trick: \"Every preparer needs a WISP, a written information security plan.\" Small office, big lock.",
+"tip": true
+},
+{
+"t": 624.31,
+"cue": "Question 8",
+"q": 8
+},
+{
+"t": 625.14,
+"who": "Ace",
+"text": "Rosa. Disclosure. A preparer sold sixty clients' names and refund amounts to a marketing company without their consent. What's the civil penalty under section 6713? A, $15,000. B, $10,000. C, $250. D, $60,000."
+},
+{
+"t": 646.56,
+"who": "Rosa",
+"text": "Two hundred fifty per person. Sixty people. Fifteen thousand. A!"
+},
+{
+"t": 651.29,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 652.04,
+"who": "Hoot",
+"text": "Wrong. Your math is perfect. Your cap is missing."
+},
+{
+"t": 656.02,
+"who": "Ace",
+"text": "It's B. Return information can be used or disclosed only to prepare the return, under a specific exception, or with the taxpayer's prior written, signed consent. Section 6713 is the civil penalty: $250 per disclosure, but capped at $10,000 per year. Sixty times $250 would be $15,000, so the cap applies. And section 7216 makes knowing or reckless misuse a crime: up to $1,000 and up to one year in prison."
+},
+{
+"t": 692.62,
+"who": "Ace",
+"text": "Memory trick: \"Two-fifty a leak, ten grand a year.\" And \"Keep it three years. Lock it up. Share it only with consent.\"",
+"tip": true
+},
+{
+"t": 700.28,
+"who": "Rosa",
+"text": "I'll never share anything again. Except rolls."
+},
+{
+"t": 703.56,
+"cue": "Question 9",
+"q": 9
+},
+{
+"t": 704.39,
+"who": "Hoot",
+"text": "Penny. A preparer finds out after filing that his client left income off a return. What does Circular 230 require him to do? A, amend the return himself. B, report the client to the IRS. C, promptly tell the client about the omission and its consequences. D, nothing."
+},
+{
+"t": 724.77,
+"who": "Penny",
+"text": "Tell the client. Not the IRS. That one's from Unit 1. C."
+},
+{
+"t": 728.87,
+"cue": "Correct-answer chime"
+},
+{
+"t": 729.66,
+"who": "Ace",
+"text": "Section 10.21 says a practitioner who knows a client made an error or omission must promptly advise the client of it and its consequences. There's no duty to amend it or report it to the IRS. But if the client refuses to fix it, the practitioner should think about whether to keep preparing their returns."
+},
+{
+"t": 751.64,
+"who": "Ace",
+"text": "Memory trick: \"Tell the client, not the cops.\"",
+"tip": true
+},
+{
+"t": 754.9,
+"cue": "Question 10",
+"q": 10
+},
+{
+"t": 755.73,
+"who": "Hoot",
+"text": "Lulu. The last real question of the series. Ready?"
+},
+{
+"t": 759.77,
+"who": "Lulu",
+"text": "I was born ready. Well, I was born in 2016. But I've been ready since then."
+},
+{
+"t": 764.61,
+"who": "Hoot",
+"text": "Which identification number goes on every return a paid preparer signs? A, the preparer's EFIN. B, the preparer's PTIN. C, the preparer's Social Security number. D, the firm's EIN only."
+},
+{
+"t": 780.23,
+"who": "Lulu",
+"text": "The PTIN! Because P is for preparer! B!"
+},
+{
+"t": 782.73,
+"cue": "Correct-answer chime"
+},
+{
+"t": 783.52,
+"who": "Hoot",
+"text": "Correct. Lulu, champion of the final question."
+},
+{
+"t": 787.45,
+"who": "Lulu",
+"text": "I AM the qualifying relative of champions."
+},
+{
+"t": 790.3,
+"who": "Ace",
+"text": "Every paid preparer enters their PTIN on every return they sign. Not their Social Security number. The EFIN identifies the e-file firm. And a firm's EIN may also go on the return, but it never replaces the preparer's PTIN."
+},
+{
+"t": 807.31,
+"who": "Ace",
+"text": "Memory trick: \"P for preparer.\" On every return, every time.",
+"tip": true
+},
+{
+"t": 811.83,
+"cue": "Question 11",
+"q": 11
+},
+{
+"t": 812.66,
+"who": "Hoot",
+"text": "Lightning round. The final one. Anyone may shout. True or false: After this series, Examiner Hoot is closing the file on the Pockets."
+},
+{
+"t": 822.77,
+"who": "Penny and Milo",
+"text": "True!"
+},
+{
+"t": 823.67,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD on."
+},
+{
+"t": 825.54,
+"cue": "Drumroll"
+},
+{
+"t": 827.29,
+"who": "Hoot",
+"text": "True."
+},
+{
+"t": 828.43,
+"cue": "Applause"
+},
+{
+"t": 830.78,
+"who": "Milo",
+"text": "We're free!"
+},
+{
+"t": 831.74,
+"who": "Hoot",
+"text": "Until next tax year."
+},
+{
+"t": 833.95,
+"who": "Penny, Milo, Rosa and Lulu",
+"text": "NO!"
+},
+{
+"t": 835.28,
+"cue": "Ba-dum-tss"
+},
+{
+"t": 836.18,
+"who": "Hoot",
+"text": "The final scores of the series. Dee, one point, on a rig. Milo, one point and a firm-thingy. Rosa, one point and a box of not-cupcakes. Lulu, two points and the final question. Penny, four points."
+},
+{
+"t": 850.75,
+"who": "Hoot",
+"text": "Across thirteen units, Penny Pocket is the all-time champion of The Hot Seat."
+},
+{
+"t": 856.52,
+"cue": "Applause"
+},
+{
+"t": 858.87,
+"who": "Penny",
+"text": "I want to thank Ace for the lamination, Rosa for the rolls, Lulu for the juice, Milo for this chair, which really is a fire hazard, and Hoot, for always showing up where we least expected him."
+},
+{
+"t": 870.84,
+"who": "Hoot",
+"text": "That is my job. Showing up is the whole job."
+},
+{
+"t": 874.87,
+"who": "Ace",
+"text": "The final recap. Sign first, send second, and keep the 8879 three years. PTIN is the person; EFIN is the e-file firm. Reject? Twenty-four hours to tell, five days to fix. Eleven or more, e-file the score. The preparer's year ends in June, then count three. Kids, college and the household need an 8867. Every preparer needs a WISP. Two-fifty a leak, ten grand a year. Tell the client, not the cops. And P is for preparer."
+},
+{
+"t": 909.83,
+"who": "Ace",
+"text": "And one more for exam day. Read the whole question. Find the trap word: \"greater,\" \"only,\" \"except,\" \"before.\" Then answer the question they asked, not the one you studied."
+},
+{
+"t": 920.94,
+"who": "Hoot",
+"text": "That is the best memory trick of all. I would laminate it."
+},
+{
+"t": 925.33,
+"who": "Ace",
+"text": "I already did."
+},
+{
+"t": 926.93,
+"cue": "A car drives past"
+},
+{
+"t": 930.28,
+"who": "Milo",
+"text": "That's the end of The Hot Seat! Thanks for listening to all thirteen units. Good luck on the exam! And remember: if you pass, you can say you're enrolled to practice before the IRS."
+},
+{
+"t": 940.95,
+"who": "Penny",
+"text": "Never certified."
+},
+{
+"t": 942.36,
+"who": "Milo, Penny, Rosa and Lulu",
+"text": "Enrolled, never certified!"
+},
+{
+"t": 944.73,
+"who": "Hoot",
+"text": "Correct."
+},
+{
+"t": 945.96,
+"cue": "The Hot Seat theme"
+}
+]
+}
