@@ -1,0 +1,740 @@
+{
+"id": "p1d4-hotseat",
+"title": "Unit 4 Hot Seat: The AMT, Both Halves and the Five Percent Month",
+"seconds": 1424,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 1. April 2026. The parking lot of Pastor Gail's church, during the youth group car wash. The heated lawn chair is set up next to a bucket of suds. Cars come and go all episode."
+},
+{
+"t": 0.3,
+"cue": "The Hot Seat theme"
+},
+{
+"t": 2.49,
+"cue": "Applause"
+},
+{
+"t": 4.84,
+"who": "Milo",
+"text": "Welcome to The Hot Seat, coming to you live from the Ledger Falls Community Church car wash! Five dollars a car, ten for a car that's been near Biscuit."
+},
+{
+"t": 14.08,
+"who": "Penny",
+"text": "Milo, you're supposed to be washing cars."
+},
+{
+"t": 16.64,
+"who": "Milo",
+"text": "I'm washing cars with my voice."
+},
+{
+"t": 18.54,
+"who": "Ace",
+"text": "Hi, everyone. Ace Okafor, enrolled agent, standing well back from the hoses. Today is Unit 4: the alternative minimum tax, self-employment and household employment taxes, the extra Medicare and investment income taxes, special taxpayers like ministers, the military and people who've passed away, and penalties. The rules: exam-style question, a cast member answers, then Hoot and I explain and give you a memory trick."
+},
+{
+"t": 47.15,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 47.55,
+"stage": "A soapy sponge bucket tips over. Examiner Hoot climbs out, dripping, eyeshade still perfectly straight."
+},
+{
+"t": 47.55,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD the hoses. Examiner Hoot is present. Also damp."
+},
+{
+"t": 52.71,
+"who": "Lulu",
+"text": "Hoot! You were in the BUCKET!"
+},
+{
+"t": 54.53,
+"who": "Hoot",
+"text": "I was examining the bubbles. Each bubble is a tiny unreported tip. This lot is full of them."
+},
+{
+"t": 61.7,
+"who": "Rosa",
+"text": "Hoot, honey, let me get you a towel."
+},
+{
+"t": 64.22,
+"who": "Hoot",
+"text": "I do not need a towel. I need a ruling."
+},
+{
+"t": 67.66,
+"cue": "A car drives past"
+},
+{
+"t": 71.01,
+"cue": "Question 1",
+"q": 1
+},
+{
+"t": 71.84,
+"who": "Ace",
+"text": "Penny, you're up first. A taxpayer exercised incentive stock options in 2025, with a spread of $50,000, and she still held the shares on December 31. What's the effect for 2025? A, $50,000 of wages on her W-2. B, nothing at all for regular tax or the AMT. C, no regular tax income, but a $50,000 AMT adjustment. D, a $50,000 long-term capital gain."
+},
+{
+"t": 101.53,
+"who": "Penny",
+"text": "My coworker at Gadget Works did this! She cried in the break room. I think it's C. No regular tax, but the AMT gets you."
+},
+{
+"t": 109.39,
+"cue": "Correct-answer chime"
+},
+{
+"t": 110.18,
+"who": "Hoot",
+"text": "Correct. The break room tears were justified."
+},
+{
+"t": 113.65,
+"who": "Ace",
+"text": "Exercising an incentive stock option isn't a regular tax event. But for the AMT, the spread, which is fair market value minus the exercise price, is added to alternative minimum taxable income in the year of exercise if the stock is still held at year end. And the stock gets a higher AMT basis."
+},
+{
+"t": 135.95,
+"who": "Hoot",
+"text": "If she had sold the shares in the same year she exercised, that is a disqualifying disposition. The spread is ordinary income for regular tax, and there is no AMT adjustment. And to get long-term treatment for regular tax, she must hold the shares at least two years from grant and one year from exercise."
+},
+{
+"t": 157.88,
+"who": "Ace",
+"text": "Here's the good news. AMT caused by timing items, like the ISO spread or depreciation differences, creates a minimum tax credit on Form 8801. It can reduce regular tax in later years, and it carries forward indefinitely. AMT caused by exclusion items, like state and local taxes or the standard deduction, never comes back."
+},
+{
+"t": 182.45,
+"who": "Ace",
+"text": "Memory trick: \"Two tax systems. You pay the higher one.\" And \"exercise and hold, the AMT gets told.\"",
+"tip": true
+},
+{
+"t": 189.75,
+"cue": "Question 2",
+"q": 2
+},
+{
+"t": 190.58,
+"who": "Hoot",
+"text": "Milo. Sit."
+},
+{
+"t": 192.22,
+"who": "Milo",
+"text": "It's wet."
+},
+{
+"t": 193.2,
+"who": "Hoot",
+"text": "That is your problem. Question two. Which of these is NOT allowed when figuring alternative minimum taxable income? A, home mortgage interest on acquisition debt. B, charitable contributions. C, state and local taxes. D, medical expenses over 7.5 percent of AGI."
+},
+{
+"t": 214.54,
+"who": "Milo",
+"text": "Okay. Mortgage interest is the big one. Rich people have big houses. The AMT is for rich people. So A! No mortgage interest!"
+},
+{
+"t": 222.91,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 223.66,
+"who": "Hoot",
+"text": "Wrong. Milo Marsh's house is safe. His answer is not."
+},
+{
+"t": 228.27,
+"who": "Ace",
+"text": "It's C. State and local taxes aren't deductible for the AMT, and neither is the standard deduction. Other add-backs include the ISO bargain element, interest on specified private activity bonds, and refigured depreciation, depletion and net operating losses. But mortgage interest on acquisition debt, charitable contributions and medical expenses over 7.5 percent of AGI are still allowed."
+},
+{
+"t": 256.86,
+"who": "Hoot",
+"text": "For 2025, the AMT exemption is $88,100 for single and head of household, $137,000 for married filing jointly, and $68,500 for married filing separately. The rates are twenty-six percent and twenty-eight percent."
+},
+{
+"t": 279.06,
+"who": "Ace",
+"text": "Memory trick: the AMT takes away your SALT and your standard. \"No salt, no standard, no stock-option secrets.\" But it lets you keep your house, your church and your doctor.",
+"tip": true
+},
+{
+"t": 291.16,
+"cue": "A car horn honks"
+},
+{
+"t": 292.14,
+"who": "Milo",
+"text": "That's Mr. Pruitt! He wants the deluxe wash! Lulu, get the sponge!"
+},
+{
+"t": 296.09,
+"who": "Lulu",
+"text": "I charge extra for deluxe."
+},
+{
+"t": 298.4,
+"cue": "Question 3",
+"q": 3
+},
+{
+"t": 299.23,
+"who": "Ace",
+"text": "Rosa. A sole proprietor has net profit of $40,000 in 2025 and no wages. About how much is his self-employment tax? A, $6,120. B, $3,060. C, $5,652. D, $0, because he takes the standard deduction."
+},
+{
+"t": 323.16,
+"who": "Rosa",
+"text": "Well, self-employment tax is fifteen percent and a bit. Fifteen point three. Times forty thousand is six thousand one hundred and twenty. A!"
+},
+{
+"t": 332.27,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 333.02,
+"who": "Hoot",
+"text": "Wrong. So close. Like a cake that's raw in the middle."
+},
+{
+"t": 336.98,
+"who": "Rosa",
+"text": "Don't you talk about my cakes."
+},
+{
+"t": 339.25,
+"who": "Ace",
+"text": "It's C. You don't apply the 15.3 percent to the whole net profit. First, net earnings from self-employment are 92.35 percent of net profit. $40,000 times 92.35 percent is $36,940. Then times 15.3 percent is about $5,652. And half of that, about $2,826, is deductible as an adjustment to income."
+},
+{
+"t": 374.6,
+"who": "Hoot",
+"text": "The 15.3 percent is 12.4 percent Social Security, up to the 2025 wage base of $176,100, plus 2.9 percent Medicare on all of it. Wages from a job count first toward that $176,100. And self-employment tax applies at $400 of net earnings, even if no income tax is owed at all."
+},
+{
+"t": 402.31,
+"who": "Ace",
+"text": "Trap alert: the QBI deduction, the standard deduction and itemized deductions don't reduce self-employment tax. Only the business expenses do.",
+"tip": true
+},
+{
+"t": 413.35,
+"who": "Ace",
+"text": "Memory trick: \"Ninety-two thirty-five, then fifteen three.\" First you shrink it, then you tax it. \"Be your own boss, pay both halves.\"",
+"tip": true
+},
+{
+"t": 422.37,
+"cue": "Question 4",
+"q": 4
+},
+{
+"t": 423.2,
+"who": "Hoot",
+"text": "Lulu. A family pays their sixteen-year-old babysitter, who is a high school student, $3,000 in 2025. Do they owe Social Security and Medicare tax on her wages? A, yes, because it's more than $2,800. B, no, because she's under eighteen and babysitting isn't her main job. C, yes, but only Medicare. D, only if she asks."
+},
+{
+"t": 448.69,
+"who": "Lulu",
+"text": "That's Tess! Tess is my babysitter! She's sixteen and she's a student! And she lets me stay up until eight thirty. So B."
+},
+{
+"t": 455.19,
+"cue": "Correct-answer chime"
+},
+{
+"t": 455.98,
+"who": "Hoot",
+"text": "Correct. And I am noting the eight thirty."
+},
+{
+"t": 459.23,
+"who": "Ace",
+"text": "For 2025, a household employer owes Social Security and Medicare if they pay one household employee cash wages of $2,800 or more. But wages paid to anyone under eighteen at any time in the year are exempt, unless household work is their principal occupation. Being a student means it isn't. Wages paid to your spouse, your child under twenty-one, or usually your parent are also exempt."
+},
+{
+"t": 487.26,
+"who": "Hoot",
+"text": "A household employee is someone where the family controls not only what work is done, but how. A nanny, a housekeeper, a private caretaker. For 2025, $2,800 or more of cash wages to one household employee triggers Social Security and Medicare. $1,000 or more in total cash wages in any calendar quarter, this year or last, triggers federal unemployment tax. Income tax withholding is only by agreement."
+},
+{
+"t": 517.18,
+"who": "Ace",
+"text": "And it's all reported on Schedule H with the family's Form 1040. They need an EIN, and they give the employee a W-2 by January 31."
+},
+{
+"t": 528.38,
+"who": "Ace",
+"text": "Memory trick: \"Twenty-eight hundred for the nanny, a thousand a quarter for FUTA, and teens who are students are free.\"",
+"tip": true
+},
+{
+"t": 536.08,
+"cue": "Question 5",
+"q": 5
+},
+{
+"t": 536.91,
+"who": "Ace",
+"text": "Penny. A married couple files jointly. She earns $210,000 in wages, and her employer withheld the 0.9 percent Additional Medicare Tax on the $10,000 above $200,000. Her husband has no income. What happens? A, they owe the 0.9 percent on $10,000. B, they owe nothing, and the withholding is credited back on Form 8959. C, they owe the 0.9 percent on all $210,000. D, the employer should have withheld nothing, so it's fined."
+},
+{
+"t": 576.48,
+"who": "Penny",
+"text": "Hmm. Joint threshold is two fifty. They're at two ten. So they owe nothing. But the employer had to withhold anyway, because it only looks at its own wages. B."
+},
+{
+"t": 586.98,
+"cue": "Correct-answer chime"
+},
+{
+"t": 587.77,
+"who": "Hoot",
+"text": "Correct. Penny Pocket understands employers. Disturbing."
+},
+{
+"t": 592.47,
+"who": "Ace",
+"text": "The Additional Medicare Tax is 0.9 percent of wages and self-employment income above $250,000 for married filing jointly, $125,000 for married filing separately, and $200,000 for everyone else. Those thresholds aren't indexed for inflation. There's no employer match. An employer must withhold it on wages it pays over $200,000, regardless of filing status, and it's reconciled on Form 8959."
+},
+{
+"t": 627.33,
+"who": "Hoot",
+"text": "And its cousin, the net investment income tax. 3.8 percent of the lesser of net investment income, or modified AGI over the same thresholds: $250,000 joint, $125,000 separate, $200,000 others. Form 8960. It covers interest, dividends, capital gains, rents, royalties and passive business income. It does not cover wages, self-employment income, IRA and retirement plan distributions, tax-exempt interest, or Social Security."
+},
+{
+"t": 667.13,
+"who": "Ace",
+"text": "Memory trick: \"Point nine on pay, three point eight on investments, same thresholds.\" Two fifty, one twenty-five, two hundred. And they never grow up.",
+"tip": true
+},
+{
+"t": 677.5,
+"cue": "A delivery truck rumbles by"
+},
+{
+"t": 681.65,
+"who": "Rosa",
+"text": "Oh, look, the fire truck came to get washed! Hi, boys!"
+},
+{
+"t": 685.32,
+"who": "Milo",
+"text": "That's going to be a lot of sponge."
+},
+{
+"t": 687.2,
+"cue": "Phone rings"
+},
+{
+"t": 688.55,
+"who": "Dee",
+"text": "Hi! Hi! It's Dee! I have bars! I have actual bars! Ask me something!"
+},
+{
+"t": 692.93,
+"who": "Hoot",
+"text": "Dee. Question six. Make it count."
+},
+{
+"t": 695.95,
+"cue": "Question 6",
+"q": 6
+},
+{
+"t": 696.78,
+"who": "Hoot",
+"text": "In 2025, a woman worked for two employers. Together they withheld $11,780 of Social Security tax. The 2025 maximum Social Security tax for one employee is $10,918.20. What can she do? A, nothing, it's gone. B, claim the $861.80 excess as a refundable credit on her return. C, ask each employer for a refund. D, deduct it on Schedule A."
+},
+{
+"t": 733.59,
+"who": "Dee",
+"text": "B! Two employers, too much, get it back on the return. I know this because Penny did it last year and bought a waffle maker!"
+},
+{
+"t": 740.53,
+"cue": "Correct-answer chime"
+},
+{
+"t": 741.32,
+"who": "Dee",
+"text": "I GOT ONE! Lulu! Did you hear that? Mommy got one!"
+},
+{
+"t": 744.76,
+"who": "Lulu",
+"text": "I heard! Good job, Mom!"
+},
+{
+"t": 746.62,
+"who": "Ace",
+"text": "For 2025, the most Social Security tax any employee owes is 6.2 percent of $176,100, which is $10,918.20. If two or more employers together withheld more, the excess is a refundable credit on Schedule 3. But if a single employer withheld too much, the employee has to get it back from that employer, not on the return. On a joint return, each spouse figures their own excess separately."
+},
+{
+"t": 781.62,
+"who": "Hoot",
+"text": "Exam tip: \"Two or more employers\" is the phrase to look for. One employer overwithholding is that employer's mistake to fix.",
+"tip": true
+},
+{
+"t": 791.38,
+"who": "Ace",
+"text": "Memory trick: \"Two bosses, too much? Credit. One boss, too much? Call the boss.\"",
+"tip": true
+},
+{
+"t": 796.65,
+"who": "Dee",
+"text": "I'm going to go celebrate before my..."
+},
+{
+"t": 799.58,
+"cue": "The video call glitches"
+},
+{
+"t": 800.23,
+"who": "Dee",
+"text": "...signal... goes."
+},
+{
+"t": 802.17,
+"cue": "Question 7",
+"q": 7
+},
+{
+"t": 803.0,
+"who": "Ace",
+"text": "Rosa, redemption round. A beneficiary receives a $2,000 final paycheck that her grandfather earned before he died, paid by his employer after his death. Who reports it as income? A, it goes on the grandfather's final Form 1040. B, the beneficiary, as income in respect of a decedent. C, nobody, it's an inheritance. D, the employer."
+},
+{
+"t": 827.41,
+"who": "Rosa",
+"text": "Oh, this is Walt. My brother Walt. His last paycheck from the bakery went to Penny. And Ace told us it's... the second thing. B. Income in respect of a, a..."
+},
+{
+"t": 836.86,
+"who": "Ace",
+"text": "Decedent."
+},
+{
+"t": 838.19,
+"who": "Rosa",
+"text": "Decedent. That's a sad word."
+},
+{
+"t": 840.62,
+"cue": "Correct-answer chime"
+},
+{
+"t": 841.41,
+"who": "Ace",
+"text": "It's B. Income in respect of a decedent, or IRD, is income the person had a right to but didn't receive before death. Final wages, traditional IRA and retirement plan balances, accrued interest, installment sale payments still due. It's taxed to whoever receives it, in the year they receive it, with the same character it would have had for the decedent. It's not on the final return."
+},
+{
+"t": 867.44,
+"who": "Hoot",
+"text": "And IRD gets no stepped-up basis. Inherited stock gets a new basis at death. An inherited traditional IRA does not. Every dollar out is taxable to the beneficiary. If the estate paid federal estate tax on the IRD, the recipient gets an itemized deduction for that estate tax."
+},
+{
+"t": 889.64,
+"who": "Ace",
+"text": "And the bakery reports the same-year wages on Walt's W-2 for Social Security and Medicare only, with no income tax withholding, and on a Form 1099-MISC to Penny."
+},
+{
+"t": 903.1,
+"who": "Ace",
+"text": "Memory trick: \"IRD: taxed to whoever gets it, never stepped up.\"",
+"tip": true
+},
+{
+"t": 907.97,
+"who": "Rosa",
+"text": "Walt would have liked that you said his name on the radio."
+},
+{
+"t": 911.29,
+"who": "Milo",
+"text": "It's a podcast, Aunt Rosa."
+},
+{
+"t": 913.06,
+"who": "Rosa",
+"text": "He wouldn't know the difference."
+},
+{
+"t": 915.23,
+"cue": "Question 8",
+"q": 8
+},
+{
+"t": 916.06,
+"who": "Hoot",
+"text": "Milo. A minister receives a $24,000 housing allowance designated in advance. His actual housing costs are $20,000, and the fair rental value of his home, furnished, plus utilities, is $22,000. How much is excluded from income tax, and what about self-employment tax? A, $24,000 excluded from both. B, $20,000 excluded from income tax, but all $24,000 included for self-employment tax. C, $22,000 excluded from both. D, nothing is excluded."
+},
+{
+"t": 957.38,
+"who": "Milo",
+"text": "Pastor Gail is going to hear this. Okay. Okay. Ministers get the lowest number? Twenty thousand? And then SE tax... Ministers are holy, so they don't pay SE tax? So... no. Wait. B. I'm going with B. Pastor Gail, I'm sorry if it's wrong."
+},
+{
+"t": 971.55,
+"cue": "Correct-answer chime"
+},
+{
+"t": 972.34,
+"who": "Milo",
+"text": "YES! Thank you, Lord. And thank you, Hoot."
+},
+{
+"t": 974.52,
+"who": "Hoot",
+"text": "Do not thank me. Thank the regulations."
+},
+{
+"t": 977.75,
+"who": "Ace",
+"text": "Ministers have dual status. For income tax, they're usually employees of the church. But for Social Security and Medicare, they're always self-employed for their ministerial services and pay self-employment tax. The housing allowance is excluded from income tax up to the least of three numbers: the amount designated, actual housing costs, or the fair rental value furnished plus utilities. Here that's $20,000. But the whole allowance is included in net earnings for self-employment tax."
+},
+{
+"t": 1012.54,
+"who": "Hoot",
+"text": "Exam tip: a minister who is conscientiously opposed, on religious principles, to public insurance can apply for an exemption from SE tax with Form 4361. It must be filed by the due date of the return for the second year with $400 or more of ministerial earnings. It is irrevocable. Economic reasons do not count.",
+"tip": true
+},
+{
+"t": 1037.37,
+"who": "Ace",
+"text": "And the military, quickly. Combat zone pay for enlisted members is fully excluded. For officers, it's capped. And combat zone service gives at least 180 days after leaving, plus the days served, to file and pay."
+},
+{
+"t": 1053.31,
+"who": "Ace",
+"text": "Memory trick: \"The pastor's house is tax-free for income tax, but Social Security still knocks on the parsonage door.\"",
+"tip": true
+},
+{
+"t": 1061.8,
+"cue": "A car drives past"
+},
+{
+"t": 1065.15,
+"cue": "Question 9",
+"q": 9
+},
+{
+"t": 1065.98,
+"who": "Ace",
+"text": "Penny. Penalties. A taxpayer files his 2025 return one month late, on May 10, 2026, and owes $2,000 that he didn't pay. What's his combined failure-to-file and failure-to-pay penalty for that month, before interest? A, $110. B, $100. C, $10. D, $90."
+},
+{
+"t": 1089.13,
+"who": "Penny",
+"text": "Five percent for filing, half a percent for paying. Five and a half percent is one hundred ten. A!"
+},
+{
+"t": 1095.34,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 1096.09,
+"who": "Hoot",
+"text": "Wrong. The great Penny Pocket stumbles."
+},
+{
+"t": 1099.23,
+"who": "Penny",
+"text": "No! I had it on a flashcard!"
+},
+{
+"t": 1101.18,
+"who": "Hoot",
+"text": "The flashcard was incomplete."
+},
+{
+"t": 1104.11,
+"who": "Ace",
+"text": "It's B. The failure-to-file penalty is five percent of the unpaid tax for each month or part of a month, up to twenty-five percent. The failure-to-pay penalty is half a percent a month, up to twenty-five percent. But in any month both apply, the failure-to-file penalty is reduced by the failure-to-pay penalty. So the combined rate is five percent a month. Five percent of $2,000 is $100."
+},
+{
+"t": 1131.14,
+"who": "Hoot",
+"text": "And interest is separate. It runs on unpaid tax from the original due date until it is paid."
+},
+{
+"t": 1138.63,
+"who": "Ace",
+"text": "Memory trick: \"Late filing hurts ten times more than late paying.\" Five versus half. And together, they're still five.",
+"tip": true
+},
+{
+"t": 1146.68,
+"who": "Penny",
+"text": "I'm adding that to the flashcard. In red."
+},
+{
+"t": 1149.35,
+"cue": "Question 10",
+"q": 10
+},
+{
+"t": 1150.18,
+"who": "Hoot",
+"text": "Rosa. A taxpayer's 2024 AGI was $200,000, and her 2024 tax was $40,000. Her 2025 tax is $60,000. What's the smallest total of 2025 withholding and timely estimated payments that avoids the estimated tax penalty? A, $40,000. B, $54,000. C, $44,000. D, $60,000."
+},
+{
+"t": 1178.73,
+"who": "Rosa",
+"text": "Ooh, this is about paying ahead. I always pay ahead. I pay the electric company two months ahead and they send me confused letters. Last year was forty thousand, so... A, forty thousand."
+},
+{
+"t": 1190.21,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 1190.96,
+"who": "Hoot",
+"text": "Wrong. The electric company is right to be confused."
+},
+{
+"t": 1195.12,
+"who": "Ace",
+"text": "It's C. Normally you avoid the estimated tax penalty by paying the smaller of ninety percent of this year's tax or one hundred percent of last year's tax. But if last year's AGI was over $150,000, or $75,000 married filing separately, the prior-year test is 110 percent. 110 percent of $40,000 is $44,000. Ninety percent of this year's $60,000 is $54,000. The smaller is $44,000."
+},
+{
+"t": 1234.54,
+"who": "Hoot",
+"text": "Also, no penalty if you owe less than $1,000 after withholding and credits. And withholding is treated as paid evenly through the year, even if it came in December."
+},
+{
+"t": 1247.77,
+"who": "Ace",
+"text": "Memory trick: \"Ninety this year, a hundred last year, a hundred ten if you're fancy.\" Fancy means AGI over one-fifty.",
+"tip": true
+},
+{
+"t": 1256.46,
+"cue": "Question 11",
+"q": 11
+},
+{
+"t": 1257.29,
+"who": "Ace",
+"text": "Lightning round! Anyone can shout. True or false: Form 4868 gives you six more months to pay."
+},
+{
+"t": 1265.44,
+"who": "Lulu, Penny and Rosa",
+"text": "False!"
+},
+{
+"t": 1266.75,
+"who": "Milo",
+"text": "True! Wait. False!"
+},
+{
+"t": 1268.01,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1268.8,
+"who": "Ace",
+"text": "False. Form 4868 extends the time to file to October 15, not the time to pay. Interest and the failure-to-pay penalty run from April 15 on any unpaid tax. But if you've paid at least ninety percent by April 15 and pay the rest with a return filed within the extension, there's no failure-to-pay penalty, just interest."
+},
+{
+"t": 1292.44,
+"who": "Hoot",
+"text": "And relief. Reasonable cause, such as serious illness or a disaster, when the taxpayer used ordinary care and prudence. Or first-time abatement: no significant penalties in the prior three years, all required returns filed, and the tax paid or arranged. First-time abatement covers failure to file, failure to pay and failure to deposit. It does not cover the accuracy-related penalty or the estimated tax penalty."
+},
+{
+"t": 1321.43,
+"who": "Ace",
+"text": "And the accuracy-related penalty is twenty percent of an underpayment from negligence, or from a substantial understatement, which is more than the larger of ten percent of the correct tax or $5,000. Fraud is seventy-five percent."
+},
+{
+"t": 1338.2,
+"who": "Ace",
+"text": "Memory trick: \"An extension buys time to file, never to pay.\"",
+"tip": true
+},
+{
+"t": 1342.74,
+"cue": "Drumroll"
+},
+{
+"t": 1344.49,
+"who": "Hoot",
+"text": "Final scores. Milo, one point and a moment of grace. Rosa, one point. Dee, one point, her first ever. Lulu, one point. Penny, two points and a damaged flashcard."
+},
+{
+"t": 1357.0,
+"who": "Milo",
+"text": "It's a five-way tie for... no, wait."
+},
+{
+"t": 1359.28,
+"who": "Hoot",
+"text": "Penny wins. Again."
+},
+{
+"t": 1361.49,
+"cue": "Applause"
+},
+{
+"t": 1363.84,
+"who": "Penny",
+"text": "I'll take it. But I'm still upset about the flashcard."
+},
+{
+"t": 1366.94,
+"who": "Ace",
+"text": "Recap. Two tax systems, you pay the higher one. No salt, no standard for the AMT. Ninety-two thirty-five, then fifteen three. Twenty-eight hundred for the nanny, and student teens are free. Point nine on pay, three point eight on investments, same thresholds. Two bosses, too much, it's a credit. IRD is taxed to whoever gets it, never stepped up. Pastors pay SE tax on the parsonage. Late filing hurts ten times more. A hundred ten if you're fancy. And an extension buys time to file, never to pay."
+},
+{
+"t": 1402.58,
+"who": "Hoot",
+"text": "I am returning to the bucket."
+},
+{
+"t": 1405.42,
+"who": "Rosa",
+"text": "Hoot, they're using that bucket."
+},
+{
+"t": 1407.88,
+"who": "Hoot",
+"text": "Then I will wait for it to be free. Like the bubbles."
+},
+{
+"t": 1411.76,
+"cue": "A car horn honks"
+},
+{
+"t": 1412.74,
+"who": "Milo",
+"text": "That's the last car! Five dollars! Lulu, did you collect?"
+},
+{
+"t": 1416.01,
+"who": "Lulu",
+"text": "I collected forty-nine dollars. For deluxe."
+},
+{
+"t": 1418.98,
+"who": "Hoot",
+"text": "Tips. I knew it."
+},
+{
+"t": 1420.85,
+"cue": "The Hot Seat theme"
+}
+]
+}

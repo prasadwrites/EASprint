@@ -1,0 +1,702 @@
+{
+"id": "p2d1-hotseat",
+"title": "Season 2, Unit 1 Hot Seat: Costumes, K-1s and Who Gets to Be an S Corporation",
+"seconds": 1171,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 2. Lunchtime on Main Street. The Rosa's Rolls van, which Milo painted with the words FOOD TRUCK, is parked by the curb with its side window open. The heated lawn chair is on the sidewalk, plugged into the van."
+},
+{
+"t": 0.3,
+"cue": "The Hot Seat theme"
+},
+{
+"t": 2.49,
+"cue": "Applause"
+},
+{
+"t": 4.84,
+"who": "Milo",
+"text": "Welcome to Season 2 of The Hot Seat! We've moved to the big time. We're broadcasting from the side of a food truck."
+},
+{
+"t": 11.77,
+"who": "Rosa",
+"text": "It's a delivery van, Milo. You painted FOOD TRUCK on it."
+},
+{
+"t": 15.63,
+"who": "Milo",
+"text": "And now it's a food truck. That's branding."
+},
+{
+"t": 18.02,
+"who": "Ace",
+"text": "Hi, everyone. Ace Okafor, enrolled agent. Season 2 is Part 2 of the exam: businesses. Today is Unit 1: picking an entity, partnerships, C corporations and S corporations. Same format. An exam-style question, someone in the hot seat answers, then Hoot and I explain and give you a memory trick."
+},
+{
+"t": 40.0,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 40.4,
+"stage": "The van's back doors fly open. Examiner Hoot climbs out from between two trays of cinnamon rolls."
+},
+{
+"t": 40.4,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD the rolls. Examiner Hoot has been in the van since the bakery opened."
+},
+{
+"t": 46.71,
+"who": "Penny",
+"text": "Hoot! Did you eat any?"
+},
+{
+"t": 48.21,
+"who": "Hoot",
+"text": "I do not eat on duty. I counted. There are three hundred and twelve. Rosa, your inventory records say three hundred and fourteen."
+},
+{
+"t": 57.72,
+"who": "Rosa",
+"text": "Gerald ate two."
+},
+{
+"t": 59.53,
+"who": "Hoot",
+"text": "Gerald is a jar of sourdough starter."
+},
+{
+"t": 63.15,
+"who": "Rosa",
+"text": "He has a big appetite."
+},
+{
+"t": 65.4,
+"cue": "A car drives past"
+},
+{
+"t": 68.75,
+"cue": "Question 1",
+"q": 1
+},
+{
+"t": 69.58,
+"who": "Ace",
+"text": "Penny, you're first. Milo forms a limited liability company with himself as the only member. He makes no elections. How is the LLC taxed? A, as a partnership. B, as a C corporation. C, it's disregarded, so Milo reports the business on his Schedule C. D, as an S corporation."
+},
+{
+"t": 90.26,
+"who": "Penny",
+"text": "Milo's Mutts all over again. One owner, no election, it's disregarded. C. It's just Milo with a fancy name."
+},
+{
+"t": 97.85,
+"who": "Milo",
+"text": "A VERY fancy name."
+},
+{
+"t": 99.31,
+"cue": "Correct-answer chime"
+},
+{
+"t": 100.1,
+"who": "Ace",
+"text": "An LLC is a state-law entity, not a tax category. By default, a single-member LLC is disregarded, which means a sole proprietorship if its owner is an individual. A multi-member LLC is a partnership by default. An LLC can elect to be taxed as a corporation on Form 8832, or as an S corporation on Form 2553. After a change by election, it generally can't change again for sixty months."
+},
+{
+"t": 130.9,
+"who": "Hoot",
+"text": "And the filing map. Sole proprietor, Schedule C. Partnership, Form 1065, with a K-1 for each partner. C corporation, Form 1120, and it pays a flat twenty-one percent itself. S corporation, Form 1120-S, with K-1s."
+},
+{
+"t": 149.83,
+"who": "Ace",
+"text": "Memory trick: \"An LLC is a body that picks a tax costume.\" One owner wears the Schedule C costume. Two or more wear the partnership costume. Unless they file a form to change.",
+"tip": true
+},
+{
+"t": 163.17,
+"cue": "Question 2",
+"q": 2
+},
+{
+"t": 164.0,
+"who": "Hoot",
+"text": "Milo. Sit."
+},
+{
+"t": 165.64,
+"who": "Milo",
+"text": "On the sidewalk? People are watching."
+},
+{
+"t": 167.86,
+"who": "Hoot",
+"text": "That is the point. A website offers to get a new business an EIN for $299, \"fast and official.\" What's true? A, that's the IRS's fee. B, the IRS issues EINs for free, online or on Form SS-4. C, only corporations need EINs. D, a sole proprietor must always have one."
+},
+{
+"t": 191.35,
+"who": "Milo",
+"text": "Two ninety-nine sounds official. I paid it once. For Milo's Mutts."
+},
+{
+"t": 195.51,
+"who": "Penny",
+"text": "Milo!"
+},
+{
+"t": 196.5,
+"who": "Milo",
+"text": "But I'm going to say... B. Because I learned from my mistakes."
+},
+{
+"t": 199.92,
+"cue": "Correct-answer chime"
+},
+{
+"t": 200.71,
+"who": "Hoot",
+"text": "Correct. And I am sorry about your two hundred and ninety-nine dollars."
+},
+{
+"t": 205.84,
+"who": "Ace",
+"text": "An EIN is free from the IRS, online in one session, or by fax or mail on Form SS-4. A business needs one if it has employees, operates as a partnership or corporation, or files employment, excise or certain other returns. A sole proprietor with no employees and none of those returns can use their SSN. And a new EIN is generally needed when ownership or structure changes, like a sole proprietorship incorporating."
+},
+{
+"t": 236.22,
+"who": "Ace",
+"text": "Memory trick: \"The EIN is free. If someone charges, it isn't the IRS.\"",
+"tip": true
+},
+{
+"t": 242.13,
+"cue": "A car horn honks"
+},
+{
+"t": 243.11,
+"who": "Milo",
+"text": "Customer! Honk if you love cinnamon!"
+},
+{
+"t": 245.12,
+"who": "Penny",
+"text": "That's a guy honking because you're on the sidewalk in a lawn chair."
+},
+{
+"t": 248.9,
+"cue": "Question 3",
+"q": 3
+},
+{
+"t": 249.73,
+"who": "Ace",
+"text": "Rosa. A married couple jointly owns a business. It's not an LLC or any other state-law entity. Both spouses materially participate, and they file a joint return. What can they elect so they don't have to file a partnership return? A, a C corporation. B, a qualified joint venture, so each spouse files a Schedule C for their share. C, a single Schedule C in one name. D, nothing; they must file Form 1065."
+},
+{
+"t": 277.59,
+"who": "Rosa",
+"text": "Bert and I ran the bakery together for thirty years. We filed one big form. Every spring Bert cried. So I'll say D. Form 1065, crying included."
+},
+{
+"t": 287.96,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 288.71,
+"who": "Hoot",
+"text": "Wrong. Although the crying is accurate."
+},
+{
+"t": 291.64,
+"who": "Ace",
+"text": "It's B. Spouses who co-own an unincorporated business, that's not an LLC or other state-law entity, both materially participate, and file a joint return, can elect to be a qualified joint venture. Each spouse files a Schedule C for their share, and each gets self-employment credit for Social Security. No Form 1065."
+},
+{
+"t": 315.94,
+"who": "Hoot",
+"text": "Trap alert: if the business is an LLC, the qualified joint venture election is not available under the general rule. The \"no state-law entity\" condition is the one examiners love to test.",
+"tip": true
+},
+{
+"t": 331.2,
+"who": "Ace",
+"text": "Memory trick: \"Married, joint return, both working, no LLC: two Schedules C, no 1065.\"",
+"tip": true
+},
+{
+"t": 338.84,
+"who": "Rosa",
+"text": "Bert could have stopped crying."
+},
+{
+"t": 341.05,
+"cue": "Question 4",
+"q": 4
+},
+{
+"t": 341.88,
+"who": "Hoot",
+"text": "Lulu. You run a lemonade stand."
+},
+{
+"t": 344.65,
+"who": "Lulu",
+"text": "A juice stand. It's called Lulu's Juice. It's very successful."
+},
+{
+"t": 348.24,
+"who": "Hoot",
+"text": "An activity made a profit in three of the last five years. What's true? A, it's presumed to be engaged in for profit. B, it's automatically a hobby. C, it's a C corporation. D, only the profitable years count."
+},
+{
+"t": 364.18,
+"who": "Lulu",
+"text": "A! Three out of five is a business. Lulu's Juice is a business."
+},
+{
+"t": 367.79,
+"cue": "Correct-answer chime"
+},
+{
+"t": 368.58,
+"who": "Ace",
+"text": "A business is carried on to make a profit. The IRS weighs factors like whether it's run in a businesslike way with good records, the time and effort, the owner's expertise, whether they depend on the income, the history of income and losses, and how much of it is personal pleasure. An activity is presumed to be for profit if it made a profit in at least three of the last five years. For horse breeding, training, showing or racing, it's two of seven."
+},
+{
+"t": 397.04,
+"who": "Hoot",
+"text": "And if it is a hobby, the income is still taxable as other income, but hobby expenses cannot be deducted at all."
+},
+{
+"t": 405.44,
+"who": "Ace",
+"text": "Memory trick: \"Three of five, it's alive. Two of seven for the horses in heaven.\"",
+"tip": true
+},
+{
+"t": 410.97,
+"who": "Lulu",
+"text": "I don't have horses. I have juice."
+},
+{
+"t": 413.31,
+"cue": "Question 5",
+"q": 5
+},
+{
+"t": 414.14,
+"who": "Ace",
+"text": "Penny. Partnerships. A partner starts 2025 with a $10,000 basis in her partnership interest. Her share of the partnership's income is $8,000, and she gets a $5,000 cash distribution. What's her basis at the end of 2025? A, $10,000. B, $18,000. C, $5,000. D, $13,000."
+},
+{
+"t": 439.61,
+"who": "Penny",
+"text": "Up by income, down by the distribution. Ten plus eight minus five. Thirteen. D."
+},
+{
+"t": 445.25,
+"cue": "Correct-answer chime"
+},
+{
+"t": 446.04,
+"who": "Hoot",
+"text": "Correct. Penny Pocket is now ten percent of a bakery and one hundred percent of a nuisance to examiners."
+},
+{
+"t": 454.21,
+"who": "Penny",
+"text": "Thank you!"
+},
+{
+"t": 455.24,
+"who": "Ace",
+"text": "A partner's outside basis goes up by contributions, the partner's share of income including tax-exempt income, and increases in their share of partnership liabilities. It goes down by distributions, their share of losses and nondeductible expenses, and decreases in their share of liabilities. It can't go below zero. Losses are deductible only up to basis, and the excess carries forward."
+},
+{
+"t": 482.38,
+"who": "Hoot",
+"text": "And a partner is taxed on her distributive share whether or not any cash is distributed. If the bakery earns, Penny is taxed, even if Rosa keeps every dollar in the cookie jar."
+},
+{
+"t": 495.75,
+"who": "Ace",
+"text": "Memory trick: \"Taxed on your share, paid or not.\" And for basis: \"Income and money in push it up. Payouts and losses pull it down. Never below the floor.\"",
+"tip": true
+},
+{
+"t": 506.66,
+"cue": "Question 6",
+"q": 6
+},
+{
+"t": 507.49,
+"who": "Hoot",
+"text": "Rosa. Redemption. A partnership pays a partner $40,000 for her work, a fixed amount, regardless of how the partnership does. How is it treated? A, a distribution, not taxable. B, a guaranteed payment, deductible by the partnership and self-employment income to the partner. C, W-2 wages. D, a dividend."
+},
+{
+"t": 530.84,
+"who": "Rosa",
+"text": "That's me! Rosa gets forty thousand to bake! And bakers get W-2s. C!"
+},
+{
+"t": 536.11,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 536.86,
+"who": "Hoot",
+"text": "Wrong. Partners do not get W-2s from their own partnership."
+},
+{
+"t": 541.79,
+"who": "Rosa",
+"text": "Then where's my W-2?"
+},
+{
+"t": 544.01,
+"who": "Hoot",
+"text": "It never existed. It was always a K-1."
+},
+{
+"t": 547.67,
+"who": "Ace",
+"text": "It's B. Payments to a partner for services or the use of capital, determined without regard to partnership income, are guaranteed payments. The partnership deducts them, and the partner reports them as ordinary income. When they're for services, they're subject to self-employment tax. A partner is never an employee of their own partnership."
+},
+{
+"t": 570.52,
+"who": "Hoot",
+"text": "Trap alert: the exam likes to call it \"salary.\" It is not salary. It is a guaranteed payment.",
+"tip": true
+},
+{
+"t": 577.74,
+"who": "Ace",
+"text": "Memory trick: \"Partners don't get paychecks. They get guaranteed payments and a K-1.\"",
+"tip": true
+},
+{
+"t": 583.67,
+"cue": "A delivery truck rumbles by"
+},
+{
+"t": 587.82,
+"who": "Milo",
+"text": "That's the flour truck! Hi, Doug!"
+},
+{
+"t": 589.73,
+"cue": "Question 7",
+"q": 7
+},
+{
+"t": 590.56,
+"who": "Ace",
+"text": "Milo. A partner with a $3,000 basis in her partnership interest receives a $5,000 cash distribution. What does she report? A, $5,000 of income. B, nothing. C, a $2,000 gain. D, a $3,000 loss."
+},
+{
+"t": 609.52,
+"who": "Milo",
+"text": "Okay. Distributions are tax-free. Ace says that all the time. B! Nothing!"
+},
+{
+"t": 613.92,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 614.67,
+"who": "Hoot",
+"text": "Wrong. Distributions are tax-free up to a point."
+},
+{
+"t": 618.26,
+"who": "Ace",
+"text": "It's C. A current distribution generally isn't taxable. It reduces basis. But when money is more than the partner's basis, the excess is recognized as gain. $5,000 minus $3,000 basis is a $2,000 gain."
+},
+{
+"t": 636.12,
+"who": "Hoot",
+"text": "And when a partner sells her interest, it's generally capital gain or loss, but the part from unrealized receivables and inventory, called hot assets, is ordinary."
+},
+{
+"t": 648.29,
+"who": "Ace",
+"text": "Memory trick: \"Cash beyond basis is gain.\" Basis is a bucket. Pour out more than it holds, and the overflow is taxed.",
+"tip": true
+},
+{
+"t": 656.76,
+"who": "Milo",
+"text": "My bucket has a hole."
+},
+{
+"t": 658.21,
+"who": "Penny",
+"text": "All your buckets have holes, Milo."
+},
+{
+"t": 660.33,
+"cue": "Question 8",
+"q": 8
+},
+{
+"t": 661.16,
+"who": "Hoot",
+"text": "Penny. The partnership audit. Under the centralized partnership audit regime, who can be the partnership representative? A, only a general partner. B, anyone with a substantial U.S. presence, partner or not. C, only a CPA. D, a jar of sourdough starter."
+},
+{
+"t": 680.95,
+"who": "Rosa",
+"text": "Gerald!"
+},
+{
+"t": 682.17,
+"who": "Penny",
+"text": "Not Gerald. B. It doesn't have to be a partner, but it has to be someone in the U.S. with a real presence."
+},
+{
+"t": 688.92,
+"cue": "Correct-answer chime"
+},
+{
+"t": 689.71,
+"who": "Ace",
+"text": "Under the centralized audit regime from the Bipartisan Budget Act, adjustments are determined at the partnership level, and any imputed underpayment is generally paid by the partnership, unless it elects to push the adjustments out to the partners. Each partnership designates a partnership representative, who needn't be a partner but must have a substantial U.S. presence, and who has sole authority to bind the partnership and the partners."
+},
+{
+"t": 717.21,
+"who": "Hoot",
+"text": "A partnership with one hundred or fewer partners, all of them eligible, can elect out every year on a timely filed return. Eligible partners include individuals, C and S corporations, and estates of deceased partners."
+},
+{
+"t": 733.82,
+"who": "Ace",
+"text": "Memory trick: \"One person speaks for the whole kitchen.\" The partnership representative binds everyone.",
+"tip": true
+},
+{
+"t": 740.67,
+"who": "Rosa",
+"text": "Gerald would have been very quiet. A perfect representative."
+},
+{
+"t": 744.71,
+"who": "Hoot",
+"text": "Gerald lacks a substantial U.S. presence. He lacks a presence of any kind."
+},
+{
+"t": 750.93,
+"cue": "Question 9",
+"q": 9
+},
+{
+"t": 751.76,
+"who": "Ace",
+"text": "Rosa. Corporations. Milo transfers a van with a basis of $8,000 and a value of $15,000 to a new corporation in exchange for all of its stock. What's Milo's basis in the stock? A, $15,000. B, $8,000. C, $7,000. D, $0."
+},
+{
+"t": 774.25,
+"who": "Rosa",
+"text": "Oh, Milo's corporation. It lasted a week. I'll say... the van's old number. Eight thousand. B."
+},
+{
+"t": 780.63,
+"cue": "Correct-answer chime"
+},
+{
+"t": 781.42,
+"who": "Ace",
+"text": "Under section 351, no gain or loss is recognized when people transfer property to a corporation solely for its stock and, right afterward, the transferors control the corporation: at least eighty percent of the voting power and eighty percent of each other class of stock. The stock's basis equals the basis of the property transferred, plus any gain recognized, minus any boot. So Milo's stock basis is $8,000."
+},
+{
+"t": 809.8,
+"who": "Hoot",
+"text": "Trap alert: section 351 covers property. Someone who receives stock for services has ordinary income equal to the stock's fair market value.",
+"tip": true
+},
+{
+"t": 821.56,
+"who": "Ace",
+"text": "Memory trick: \"Eighty percent to form. Twenty-one percent to pay. Dividends taxed twice.\"",
+"tip": true
+},
+{
+"t": 827.92,
+"cue": "Question 10",
+"q": 10
+},
+{
+"t": 828.75,
+"who": "Hoot",
+"text": "Lulu. Lulu's Juice Incorporated owns thirty percent of another corporation, and receives a $10,000 dividend from it. What's the dividends-received deduction? A, $5,000. B, $6,500. C, $10,000. D, nothing."
+},
+{
+"t": 847.82,
+"who": "Lulu",
+"text": "I own thirty percent? That's a lot of juice. Hmm. There's fifty, sixty-five and a hundred. Thirty is in the middle. So sixty-five. B!"
+},
+{
+"t": 854.79,
+"cue": "Correct-answer chime"
+},
+{
+"t": 855.58,
+"who": "Hoot",
+"text": "Correct. Lulu's Juice Incorporated may proceed."
+},
+{
+"t": 859.62,
+"who": "Ace",
+"text": "A C corporation that receives dividends from a domestic corporation can deduct fifty percent if it owns less than twenty percent of the payer, sixty-five percent if it owns twenty percent or more but less than eighty, and one hundred percent for affiliated group members, generally eighty percent or more. Individuals and S corporations don't get this deduction."
+},
+{
+"t": 882.75,
+"who": "Hoot",
+"text": "And distributions from a C corporation to shareholders: a dividend to the extent of current-year earnings and profits, then accumulated earnings and profits. After that, a tax-free return of stock basis. Anything beyond basis is capital gain."
+},
+{
+"t": 900.91,
+"who": "Ace",
+"text": "Memory trick: \"Fifty, sixty-five, a hundred: under twenty, under eighty, eighty and up.\" And for distributions, \"E and P, then basis, then gain.\"",
+"tip": true
+},
+{
+"t": 911.04,
+"cue": "Question 11",
+"q": 11
+},
+{
+"t": 911.87,
+"who": "Ace",
+"text": "Penny. S corporations. An S corporation's shares are owned by three individuals and one partnership. What happens? A, nothing, any shareholder is fine. B, the S election ends, because a partnership can't be a shareholder. C, the partnership's share is taxed as a C corporation. D, it becomes a partnership."
+},
+{
+"t": 932.93,
+"who": "Penny",
+"text": "B. Partnerships, corporations and nonresident aliens can't own S stock."
+},
+{
+"t": 938.16,
+"cue": "Correct-answer chime"
+},
+{
+"t": 938.95,
+"who": "Ace",
+"text": "An S corporation must be a domestic corporation with no more than one hundred shareholders, and family members can count as one. Shareholders must be U.S. citizen or resident individuals, estates, certain trusts and certain exempt organizations. And it can have only one class of stock, though differences in voting rights alone are allowed. If it stops qualifying, the S status ends on the day that happens. After termination or revocation, there's generally a five-year wait to re-elect."
+},
+{
+"t": 973.12,
+"who": "Hoot",
+"text": "And Form 2553. All shareholders sign. For a calendar year, it must be filed any time in the prior year or by March 15, two months and fifteen days into the year, to be effective that year. Filed later, it takes effect the next year, unless late election relief applies."
+},
+{
+"t": 993.69,
+"who": "Ace",
+"text": "Memory trick: \"One hundred people, one class, March 15, everybody signs.\"",
+"tip": true
+},
+{
+"t": 999.47,
+"cue": "Question 12",
+"q": 12
+},
+{
+"t": 1000.3,
+"who": "Hoot",
+"text": "Milo. Final question. Lightning. A shareholder has a $5,000 stock basis in an S corporation, lent the corporation $2,000 directly, and personally guaranteed a $10,000 bank loan to the corporation. Her share of the loss is $15,000. How much can she deduct this year, before the at-risk and passive limits?"
+},
+{
+"t": 1024.87,
+"who": "Milo",
+"text": "Five plus two plus ten! Seventeen thousand! Wait, the loss is only fifteen. Fifteen thousand!"
+},
+{
+"t": 1030.74,
+"cue": "Wrong-answer buzzer"
+},
+{
+"t": 1031.49,
+"who": "Penny",
+"text": "Seven thousand."
+},
+{
+"t": 1032.88,
+"cue": "Correct-answer chime"
+},
+{
+"t": 1033.67,
+"who": "Hoot",
+"text": "Penny is correct. Milo is enthusiastic."
+},
+{
+"t": 1037.42,
+"who": "Ace",
+"text": "S corporation losses pass through only up to stock basis plus debt basis. Debt basis comes only from loans the shareholder personally makes directly to the corporation. Guaranteeing the corporation's bank loan doesn't count, and neither do the corporation's own loans. So $5,000 plus $2,000 is $7,000. The rest carries forward. Shareholders track this on Form 7203."
+},
+{
+"t": 1064.97,
+"who": "Hoot",
+"text": "And unlike a partnership, an S corporation's own bank loans never add to a shareholder's basis. Also: shareholder-employees must be paid reasonable compensation as wages before taking distributions. If not, the IRS can treat distributions as wages."
+},
+{
+"t": 1085.15,
+"who": "Ace",
+"text": "Memory trick: \"Your stock, your loans, nobody else's.\" A guarantee is just a promise. Promises aren't basis.",
+"tip": true
+},
+{
+"t": 1093.19,
+"cue": "Drumroll"
+},
+{
+"t": 1094.94,
+"who": "Hoot",
+"text": "Final scores. Rosa, one point and Gerald, zero. Milo, one point. Lulu, two points. Penny, five points."
+},
+{
+"t": 1103.8,
+"who": "Penny",
+"text": "Season 2 starts like Season 1 ended!"
+},
+{
+"t": 1106.41,
+"cue": "Applause"
+},
+{
+"t": 1108.76,
+"who": "Ace",
+"text": "The recap. An LLC picks a tax costume. The EIN is free. Married, joint, both working, no LLC: two Schedules C. Three of five, it's alive. Taxed on your share, paid or not. Partners get guaranteed payments, not paychecks. Cash beyond basis is gain. One representative speaks for the whole kitchen. Eighty to form, twenty-one to pay. Fifty, sixty-five, a hundred. One hundred people, one class, March 15. And for S corporation losses, your stock and your loans, nobody else's."
+},
+{
+"t": 1145.08,
+"who": "Hoot",
+"text": "I am returning to the van. I have three hundred and twelve rolls to recount."
+},
+{
+"t": 1150.78,
+"who": "Rosa",
+"text": "Three hundred and eleven. Gerald's still hungry."
+},
+{
+"t": 1154.22,
+"cue": "A car drives past"
+},
+{
+"t": 1157.57,
+"who": "Milo",
+"text": "That's our show! Next time on The Hot Seat, Unit 2: everything about running the bakery. Bertha, the oven, will be there."
+},
+{
+"t": 1164.95,
+"who": "Hoot",
+"text": "As will I. Inside Bertha."
+},
+{
+"t": 1167.84,
+"cue": "The Hot Seat theme"
+}
+]
+}

@@ -570,3 +570,9 @@ a.cast-ep:hover { background: var(--good); color: var(--surface); }
 #why .steps-grid h2 { font-size: 20px; }
 #episode .steps-grid { align-items: start; }
 .hero-comic .comic-num { display: none; }
+/* The Hot Seat: the quiz-show podcasts */
+.unit-podcast.show-hotseat { border-color: var(--accent); }
+.tline.question button { background: var(--surface); border-color: var(--line); }
+.tline-q { font-family: var(--f-display); color: var(--accent); }
+.tline.tip:not(.now) button { background: var(--warn-soft); border-color: var(--warn); }
+.tline-tip { margin-right: 2px; }

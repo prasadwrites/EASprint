@@ -1,0 +1,151 @@
+# Season 2, Unit 3 Hot Seat: Simple Trusts, the Coffee Cart and a Hen Named Deduction
+(Season 2 finale. Saturday morning at the Ledger Falls farmers market on the town square. The Rosa's Rolls stand is next to Pastor Gail's pantry coffee cart, where Milo volunteers. The heated lawn chair is between a pumpkin pile and a chicken coop.)
+[hotseat]
+[applause]
+MILO: Welcome to the Season 2 finale of The Hot Seat! Live from the farmers market, where the vegetables are fresh, the coffee is free, and the hen is named Deduction.
+LULU: Hi, Deduction!
+(A hen clucks importantly.)
+PENNY: Milo, why did you bring the hen?
+MILO: She's our studio audience. She's very supportive.
+ACE: Hi, everyone. Ace Okafor, enrolled agent. Today's Unit 3: trusts and estates, exempt organizations, business retirement plans, farmers, and rental property as a business. Exam-style questions, someone answers in the hot seat, and we explain and give you the memory trick.
+[pop]
+(The lid of a bushel basket of apples flies up. Examiner Hoot stands up inside it.)
+HOOT: Hoo-hoo-HOLD the produce. Examiner Hoot is present.
+ROSA: Hoot! You were in the apples!
+HOOT: I was evaluating them for section 1231 treatment. They do not qualify. They are apples.
+[birds]
+LULU: The birds are excited you're here, Hoot.
+HOOT: The birds are filing late.
+[car]
+[q]
+ACE: Penny, you're the executor, so you're up. In 2025, Grandpa Walt's estate earned $450 of interest. No beneficiary is a nonresident alien. Must the executor file Form 1041? A, yes, any income means a return. B, no, because gross income is under $600. C, yes, because estates always file. D, only if the estate pays tax.
+PENNY: Six hundred is the line for estates. Four fifty is under. B.
+[correct]
+ACE: An estate files Form 1041 if it has gross income of $600 or more for the year, or a beneficiary is a nonresident alien. A trust files if it has any taxable income, gross income of $600 or more, or a nonresident alien beneficiary. It's due the fifteenth day of the fourth month after year end, April 15 for a calendar year. Estates can choose a fiscal year. Trusts generally use the calendar year.
+HOOT: And there is no standard deduction. There are exemptions: $600 for an estate, $300 for a simple trust, $100 for a complex trust. And the brackets are brutal. For 2025, thirty-seven percent above $15,650.
+ACE: Memory trick: "Six, three, one." Six hundred for the estate, three hundred for the simple trust, one hundred for the complex one. The simpler you are, the more you get.
+[q]
+HOOT: Rosa. A trust's document lets the trustee accumulate income, and it gave money to charity this year. What's its exemption? A, $600. B, $300. C, $100. D, $0.
+ROSA: Accumulating is complicated. Charity is complicated. So it's complex. The small one. C.
+[correct]
+HOOT: Correct. Rosa has learned to fear complexity.
+ACE: A simple trust must distribute all its income currently, makes no charitable contributions, and doesn't distribute principal. It gets a $300 exemption. Any other trust is complex, with $100. A grantor trust, like a revocable living trust, is ignored for income tax: the income is taxed to the grantor.
+ACE: Memory trick: "Simple spends everything. Complex keeps some, or gives to charity."
+[q]
+ACE: Milo. A trust distributes $10,000 of interest income to its beneficiary. Its distributable net income is $10,000. Who pays tax on that interest? A, the trust. B, the beneficiary, from a Schedule K-1. C, both, it's taxed twice. D, nobody.
+MILO: The trust earned it, so the trust pays! A!
+[buzzer]
+HOOT: Wrong. The trust is a conduit. A tube. Money goes through.
+MILO: Like a water slide?
+HOOT: If you must.
+ACE: It's B. Estates and trusts are conduits. They're taxed on income they keep. Distributions are deducted, up to the lesser of the amount distributed or distributable net income, and the beneficiary is taxed on them through the Schedule K-1 from Form 1041. And the character carries through: interest stays interest. Capital gains usually go to corpus and aren't in DNI.
+HOOT: And the 65-day rule. A trust or estate can elect to treat distributions made in the first sixty-five days of the year as made in the prior year.
+ACE: Memory trick: "Distribute it, deduct it, K-1 it." The income goes down the water slide to the beneficiary.
+MILO: See? Water slide.
+[q]
+HOOT: Lulu. Exempt organizations. Lulu's Juice for Charity is a 501(c)(3) with gross receipts that are normally $30,000 a year. What annual return may it file? A, Form 990. B, Form 990-EZ. C, Form 990-N, the e-Postcard. D, nothing.
+LULU: It's a postcard! Small charities send postcards! C!
+[correct]
+ACE: An organization with gross receipts normally $50,000 or less may file Form 990-N, the e-Postcard. Form 990-EZ is for gross receipts under $200,000 and total assets under $500,000. Larger organizations file Form 990, and every private foundation files 990-PF. Churches don't have to file. They're due the fifteenth day of the fifth month, May 15 for a calendar year, and Form 8868 extends them six months, but not the 990-N.
+HOOT: Trap alert: an organization that fails to file a required 990-series return for three consecutive years automatically loses its exemption, effective on the due date of the third return.
+ACE: Memory trick: "Fifty, two hundred, five hundred." Postcard up to fifty thousand. EZ under two hundred thousand of receipts and five hundred thousand of assets. "Skip three years and the exemption's gone."
+[q]
+ACE: Penny. Pastor Gail's church charity runs a coffee shop every weekday, staffed by paid baristas, and it sells to the public. It's not related to the charity's exempt purpose. Gross income from it is $8,000 this year. What must it file for that income? A, nothing; charities are exempt. B, Form 990-T. C, Form 1120. D, Form 990-N.
+PENNY: Hmm, regular, paid staff, unrelated, over a thousand dollars. B. Form 990-T.
+[correct]
+MILO: Wait, I'm a volunteer at the coffee cart.
+ACE: And that's the twist, Milo. Unrelated business income comes from a trade or business that's regularly carried on and not substantially related to the exempt purpose. If gross unrelated business income is $1,000 or more, the organization files Form 990-T. There's a $1,000 specific deduction, and corporations pay twenty-one percent. But there are exceptions. A business where substantially all the work is done by volunteers isn't unrelated business. Neither is selling donated merchandise, or a business run for the convenience of members, students, patients or employees.
+HOOT: So Pastor Gail's coffee cart, run by volunteers like Milo, is excepted. A coffee shop run by paid baristas every weekday is not.
+ACE: Memory trick: "Regular, a trade, unrelated: UBI. Volunteers or donated goods: exception." And Form 990-T at a thousand dollars.
+MILO: My volunteering saves the church money! I'm a tax shelter!
+HOOT: Do not say that word near me.
+[q]
+HOOT: Rosa. A donor pays $100 for a charity dinner ticket. The dinner is worth $40. How much can she deduct if she itemizes? A, $100. B, $60. C, $40. D, $0.
+ROSA: I've been to that dinner. The chicken was dry. Worth twenty dollars, tops. But you said forty. So a hundred minus forty. Sixty. B.
+[correct]
+ACE: Only the amount over the value of what the donor received is deductible: $100 minus $40 is $60. And because she paid more than $75, it's a quid pro quo contribution, and the charity must tell her in writing that only the excess is deductible. The penalty for not disclosing is $10 per contribution, up to $5,000 per event. And any single gift of $250 or more needs a contemporaneous written acknowledgment from the charity.
+ACE: Memory trick: "Seventy-five, the charity tells you. Two-fifty, the charity writes you."
+[horn]
+MILO: That's the tractor parade! There's a tractor parade!
+PENNY: It's one tractor, Milo.
+MILO: It's a parade of one.
+[q]
+ACE: Milo. Retirement plans. A business owner has a SEP and contributes ten percent of her own compensation. Her one eligible employee earns $40,000. What must she contribute for the employee? A, nothing; SEPs are optional for employees. B, $4,000. C, $7,000. D, whatever the employee chooses.
+MILO: Ten percent of forty thousand. Four thousand. B. I can do percentages when there's no fedora involved.
+[correct]
+HOOT: Correct. The fedora is noted.
+ACE: In a SEP, only the employer contributes, into SEP-IRAs, and it must be the same percentage of compensation for every eligible employee. For 2025, the limit is the lesser of twenty-five percent of compensation, with a compensation cap of $350,000, or $70,000. Contributions are discretionary each year. Eligibility can require at most age twenty-one, three of the last five years of service, and $750 of compensation for 2025. A SEP can be set up and funded up to the return due date, including extensions.
+HOOT: And for the self-employed owner herself, twenty-five percent becomes about twenty percent of net profit after half of self-employment tax, because the contribution comes out of its own base.
+ACE: Memory trick: "SEP: same percent for everybody, and only the boss pays in."
+[q]
+HOOT: Penny. A SIMPLE IRA participant withdraws money one year after first participating. She's forty. What additional tax applies? A, ten percent. B, twenty percent. C, twenty-five percent. D, none.
+PENNY: SIMPLE has the scary one. Two years. Twenty-five percent. C.
+[correct]
+ACE: A SIMPLE IRA is for employers with one hundred or fewer employees and no other plan. For 2025, employees can defer $16,500, plus a $3,500 catch-up at fifty or older, or $5,250 at ages sixty to sixty-three. The employer either matches up to three percent, or makes a two percent nonelective contribution for everyone eligible. A new SIMPLE generally must be set up by October 1. And withdrawals within two years of first participating face a twenty-five percent additional tax instead of ten.
+HOOT: And the 401(k), for 2025: $23,500 of elective deferrals, a $7,500 catch-up at fifty or older, and $11,250 at ages sixty to sixty-three. Total contributions, not counting catch-up, are capped at the lesser of one hundred percent of compensation or $70,000.
+ACE: Memory trick: "SEP twenty-five percent, SIMPLE sixteen-five, 401(k) twenty-three-five." And SIMPLE's "two years, twenty-five percent" sounds like a warning label.
+[ring]
+DEE: Hi! It's Dee! Is Deduction there? I want to say hi to the hen.
+LULU: She's right here, Mom!
+(The hen clucks.)
+DEE: Hi, Deduction! Okay, ask me a farm question. I'm basically a farmer. I farm oil.
+HOOT: That is not farming. But very well.
+[q]
+HOOT: A farmer gets at least two-thirds of her gross income from farming. She made no estimated tax payments for 2025. By what date can she file her return and pay all the tax to avoid an estimated tax penalty? A, April 15, 2026. B, January 15, 2026. C, March 1, 2026. D, June 15, 2026.
+DEE: Ooh. Farmers get a special one. I think it's... March?
+[glitch]
+DEE: March first! C!
+[correct]
+DEE: Deduction, did you hear? Mommy's a farmer now!
+ACE: A qualified farmer, with at least two-thirds of gross income from farming in the current or prior year, has two options. Make one estimated payment by January 15, covering the lesser of sixty-six and two-thirds percent of this year's tax or one hundred percent of last year's. Or file and pay in full by March 1, with no penalty. The same rule applies to fishermen.
+HOOT: And more farm rules. Schedule F. Farm income averaging on Schedule J. Farming losses can be carried back two years. Agricultural employers file the annual Form 943, not Form 941. Farm wages are subject to Social Security and Medicare if a worker gets $150 or more in cash in the year, or total farm labor expenses are $2,500 or more.
+ACE: Memory trick: "Two-thirds farming? Pay by January 15, or file by March 1."
+[q]
+ACE: Lulu. Livestock. A farmer raised breeding hens and sold one, held for ten months, at a gain. How is the gain treated? A, section 1231 gain. B, long-term capital gain. C, ordinary income. D, tax-free, because it's a hen.
+LULU: Not Deduction!
+ACE: A different hen. A hypothetical hen.
+LULU: Okay. Hens aren't horses. And ten months is short. C, ordinary.
+[correct]
+ACE: Livestock held for draft, breeding, dairy or sporting purposes is section 1231 property if held at least twenty-four months for cattle and horses, or at least twelve months for other livestock. Poultry isn't included at all. Raised animals have zero basis. So a hen sold at a gain is ordinary income.
+HOOT: Trap alert: poultry is never section 1231 livestock. Deduction the hen is ordinary.
+LULU: She is NOT ordinary.
+HOOT: For tax purposes, she is ordinary. Emotionally, she is extraordinary.
+ACE: Memory trick: "Cattle and horses, twenty-four months. Other livestock, twelve. Chickens, never."
+[q]
+HOOT: Rosa. Rentals. Instead of paying $500 a month in rent, a tenant fixes up the landlord's building for a year, services worth $6,000. How much rental income does the landlord report? A, nothing, no cash. B, $6,000. C, $3,000. D, only if the work was done.
+ROSA: Oh, I did this with my upstairs tenant once. He painted, I let him stay. I didn't report it, because, well, paint. A.
+[buzzer]
+HOOT: Wrong. I am writing "paint" in my file.
+ACE: It's B. Rental income includes rent, advance rent when received, deposits kept or applied as final rent, expenses the tenant pays for the landlord, and the fair market value of property or services received instead of rent. Services worth $6,000 are $6,000 of rental income. A refundable security deposit isn't income unless it's kept.
+ACE: Memory trick: "Paid in paint is still paid."
+[q]
+ACE: Penny. A landlord with modified AGI of $120,000 actively participates in her rental, and has a $30,000 rental loss and no passive income. How much can she deduct in 2025? A, $30,000. B, $25,000. C, $15,000. D, $0.
+PENNY: The twenty-five thousand allowance, cut by half of everything over a hundred thousand. Twenty thousand over, half is ten. Fifteen thousand. C.
+[correct]
+ACE: Rental activities are passive, regardless of participation, unless an exception applies. Passive losses offset only passive income and carry forward indefinitely, and they're all released when the whole interest is sold in a fully taxable sale to an unrelated party. The special allowance lets someone who actively participates, at least ten percent ownership and making management decisions, deduct up to $25,000 against other income. It's reduced by fifty percent of modified AGI over $100,000, and it's zero at $150,000. So she deducts $15,000, and $15,000 carries forward.
+HOOT: Exam tip: married filing separately and living together at any time in the year: no allowance at all.
+ACE: Memory trick: "Rent is passive. Twenty-five grand if you manage it."
+[q]
+HOOT: Final question of Season 2. Lightning round. A woman works 800 hours a year in her rental real estate business, and 1,800 hours as a nurse. Is she a real estate professional?
+MILO: Yes! Eight hundred is more than seven fifty!
+PENNY+ROSA: No!
+[correct]
+HOOT: Penny and Rosa are correct.
+ACE: A real estate professional must meet both tests: more than 750 hours in real property trades or businesses where she materially participates, and more than half of all her personal services in those businesses. 800 out of 2,600 total hours is not more than half. On a joint return, one spouse has to meet both tests alone.
+ACE: Memory trick: "Seven fifty AND more than half." Two locks on the same door.
+MILO: I only had the one key.
+[drumroll]
+HOOT: The Season 2 final scores. Milo, one point and a water slide. Dee, one point and a hen. Lulu, two points. Rosa, two points. Penny, five points.
+HOOT: Penny Pocket is the Season 2 champion of The Hot Seat.
+[applause]
+PENNY: Two seasons in a row! Deduction, you're my lucky hen.
+(Deduction clucks.)
+ACE: The recap. Six, three, one: estate, simple trust, complex trust. Distribute it, deduct it, K-1 it. Postcard up to fifty thousand, and skip three years and the exemption's gone. Regular, a trade, unrelated: UBI, unless volunteers run it. Seventy-five, the charity tells you; two-fifty, it writes you. SEP: same percent for everybody. SIMPLE: two years, twenty-five percent. Two-thirds farming: January 15 or March 1. Chickens, never 1231. Paid in paint is still paid. Twenty-five grand if you manage it. And real estate pros need seven fifty AND more than half.
+HOOT: I will now return to the apples. Next season, I will be visiting Ace's new office.
+ACE: Wait, I don't have a new office.
+HOOT: You will.
+[truck]
+MILO: That's the end of Season 2 of The Hot Seat! Next season, it's all about representation, ethics and audits. Penny's going to be nervous.
+PENNY: Why would I be nervous?
+HOOT: See you in Season 3.
+[hotseat]

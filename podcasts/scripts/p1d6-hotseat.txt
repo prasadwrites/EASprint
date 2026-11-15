@@ -1,0 +1,131 @@
+# Unit 6 Hot Seat: Grandpa's Estate, Rosa's Gifts and the Foreign Form Avalanche
+(Season 1 finale. June 2026. The patio tables outside Rosa's Rolls on Main Street. The heated lawn chair sits next to the cake display. Every time the bakery door opens, the bell jingles.)
+[hotseat]
+[applause]
+MILO: It's the Season 1 finale of The Hot Seat! Live from Rosa's Rolls, where the cinnamon rolls are hot, and so is this chair.
+ROSA: Everybody gets a roll! Except Hoot, because Hoot says it's a gift and gifts have to be reported.
+HOOT: Gifts under the annual exclusion do not have to be reported. I simply do not eat on duty.
+ACE: Hi, everyone. Ace Okafor, enrolled agent. Today's Unit 6: the estate tax, the gift tax, and international information returns. Same format: exam-style question, a cast member answers, then we explain and give you a trick for exam day.
+[shopbell]
+PENNY: Wait. Where's Hoot? He was just here.
+[pop]
+(The lid of a giant flour sack flips open. Examiner Hoot rises out of it, covered in flour from beak to claw.)
+HOOT: Hoo-hoo-HOLD the rolls. I am now in the flour sack.
+LULU: You were RIGHT THERE a second ago!
+HOOT: Examiners move in mysterious ways. And now I am white. Like an IRS form.
+MILO: You look like a ghost, Hooty.
+HOOT: Negative one Hoot point for "Hooty." Again.
+[car]
+[q]
+ACE: Penny, you're the executor of Grandpa Walt's estate, so you're first. A man died in 2025 owning a life insurance policy on his own life, payable to his daughter. Is the death benefit in his gross estate? A, no, because it's paid to his daughter, not to the estate. B, yes, because he owned the policy. C, only half. D, no, life insurance is always tax-free.
+PENNY: Life insurance proceeds aren't income to the beneficiary. But that's a different question. For the estate, if he owned the policy, it's in. B.
+[correct]
+HOOT: Correct. Penny Pocket separates income tax from estate tax. A rare and beautiful skill.
+ACE: The gross estate is the fair market value of everything the decedent owned, or had certain interests in, at death. Real estate, cash, securities, business interests, retirement accounts, and life insurance on their own life if they held incidents of ownership, meaning they owned the policy, or if it's payable to the estate, no matter who the beneficiary is. Property held jointly with a spouse is generally half included. And certain transfers within three years of death, like giving away a life insurance policy, are pulled back in.
+HOOT: Trap alert: "The beneficiary is the daughter" is a distractor. Ownership decides. Not the name on the beneficiary line.
+ACE: Memory trick: "If you owned it, it's in, even if it pays your kin."
+[q]
+HOOT: Rosa. Sit.
+ROSA: In my own bakery? This is outrageous. And very comfortable.
+HOOT: A man died on March 10, 2025. When is his estate's Form 706 due without an extension, and how much time does Form 4768 add? A, April 15, 2026, and six months. B, December 10, 2025, and six months to file. C, December 10, 2025, and six months to file and pay. D, nine months after the funeral.
+ROSA: Nine months after death. March, April, May... December. December tenth. And six months. But I think the six months is only for the paperwork, not the money, because Ace keeps saying that about everything. B.
+[correct]
+HOOT: Correct. Rosa has learned the Ace Pattern. Extensions are for paperwork.
+ACE: Form 706 is due nine months after the date of death. Form 4768 gives an automatic six-month extension to file. An extension of time to pay must be requested separately and needs a reason. For people who die in 2025, the basic exclusion amount is $13,990,000, and $15,000,000 for 2026. Form 706 is required when the gross estate plus adjusted taxable gifts is more than that. The top rate is forty percent.
+ACE: Memory trick: "706: nine months after death, plus six with 4768." And "seven oh six, nine plus six."
+[q]
+ACE: Rosa, stay. This one's personal. A husband died in 2023, leaving everything to his wife. His estate was small, so no Form 706 was filed. Can the wife still get his unused exclusion amount? A, no, the deadline passed. B, yes, the executor can file a Form 706 within five years of his death to elect portability. C, yes, it's automatic. D, only if she remarries.
+ROSA: My Bert. Bert left me everything, including his collection of tuba mouthpieces. I'll say C, because it should be automatic. He was my husband.
+[buzzer]
+HOOT: Wrong. Not automatic. Nothing is automatic. Except me.
+ACE: It's B. Portability lets a surviving spouse use the deceased spouse's unused exclusion amount, called the DSUE. But the executor has to elect it on a complete, timely filed Form 706, even when no 706 is otherwise required. If no 706 was required, Rev. Proc. 2022-32 lets the estate make the election up to five years after the date of death. Bert died in 2023, so Rosa has until 2028. Everything went to Rosa under the marital deduction, so his whole exclusion is unused.
+HOOT: Exam tip: "No 706 required" does not mean "no 706 needed." Without one, the surviving spouse loses portability.
+ACE: Memory trick: "Portability isn't automatic. It's a 706 with a bow on it."
+ROSA: Bert would want me to have his exclusion. And his mouthpieces.
+[q]
+HOOT: Milo. Alternate valuation.
+MILO: I don't know what that is.
+HOOT: You are about to. An executor elects alternate valuation. One stock was worth $100,000 at death, and the executor sold it four months later for $80,000. What value is used for that stock? A, $100,000. B, $80,000, the value on the date it was sold. C, its value six months after death. D, the average.
+MILO: Alternate means six months later. So the six-month value. C!
+[buzzer]
+HOOT: Wrong. Alternate does not always mean six months.
+ACE: It's B. The executor can elect alternate valuation, six months after death, but only if it reduces both the gross estate and the estate tax. Under alternate valuation, property sold or distributed within those six months is valued on the date it was sold or distributed. The election applies to all the property, and the beneficiaries' basis follows the value used.
+HOOT: Trap alert: alternate valuation is allowed only if it lowers both the gross estate and the tax. You cannot use it to raise basis for the heirs.
+ACE: Memory trick: "Six months later, unless it left early." If it was sold or handed out early, freeze it on that day.
+[shopbell]
+LULU: Customer! Aunt Rosa, customer!
+ROSA: Tell them the special is cinnamon. It's always cinnamon.
+[q]
+ACE: Lulu. A woman gives each of her three nieces $25,000 in cash in 2025. What does she report, and does she owe gift tax? A, nothing to report. B, Form 709 with $18,000 of taxable gifts, but no tax due because of her lifetime exemption. C, $75,000 of taxable gifts and tax due. D, the nieces each report $25,000 of income.
+LULU: Ooh. Aunt Rosa gives everyone money. I want to be a niece. Okay, nineteen thousand is free per person. So twenty-five minus nineteen is six. Times three is eighteen. B.
+[correct]
+HOOT: Correct. Lulu did multiplication in a heated chair. Two points.
+ACE: For 2025, a donor can give up to $19,000 to each of any number of people with no gift tax and no return. It has to be a present interest, meaning the recipient can use it now. Anything over $19,000 to one person is a taxable gift reported on Form 709. Each niece got $6,000 over, so $18,000 of taxable gifts. But tax is owed only after lifetime taxable gifts exceed the unified exemption, the same $13,990,000 as the estate tax for 2025. So no tax, just a return.
+HOOT: Exam tip: the DONOR files Form 709 and pays any gift tax. Never the recipient. And gifts are not income to the recipient. Answer D is a trap for people who think free money is income.
+ACE: Memory trick: "The giver files. The getter smiles."
+LULU: I'm smiling.
+[q]
+HOOT: Penny. A married couple, both U.S. citizens, wants to give their nephew $38,000 in 2025, all from the husband's bank account. Can they avoid a taxable gift? A, no, it's all from the husband. B, yes, by electing gift splitting on Form 709, so each is treated as giving $19,000. C, yes, and no form is needed. D, only if the nephew is under eighteen.
+PENNY: B. Gift splitting. And you still have to file the 709 to elect it, even with no tax. I remember because it's annoying.
+[correct]
+ACE: Gift splitting lets a married couple treat a gift by either spouse to a third party as made half by each. That's $38,000 per donee in 2025 without a taxable gift. Both spouses must be U.S. citizens or residents and married at the time, and both must consent on Form 709. A widowed or single donor can't split.
+HOOT: And two gifts that are excluded without limit: tuition paid directly to the school, and medical expenses paid directly to the provider. Pay the student or the patient instead, and the exclusion is gone. And tuition means tuition. Not books. Not the dorm.
+ACE: Memory trick: "Pay the school, not the kid." Tuition straight to the school is unlimited. Tuition handed to the kid is just a gift.
+[q]
+ACE: Milo. A comeback. A grandmother puts $95,000 into a 529 plan for her grandson in 2025 and makes the five-year election. How much is a taxable gift in 2025? A, $76,000. B, $95,000. C, $0. D, $19,000.
+MILO: Five years. Ninety-five divided by five is... nineteen. Every year is nineteen. Nineteen is free. So zero! C!
+[correct]
+MILO: I'M ON THE BOARD!
+HOOT: You are at zero, Milo. You were at negative one.
+MILO: That's a hundred percent improvement!
+HOOT: That is not how percentages work.
+ACE: A donor can elect to treat a 529 contribution of up to five times the annual exclusion, $95,000 in 2025, as made evenly over five years. That's $19,000 a year for 2025 through 2029, each within the annual exclusion. It's reported on Form 709. A married couple who split gifts can put in $190,000 per beneficiary. And if the donor dies during the five years, the portion for the remaining years is added back to the estate.
+ACE: Memory trick: "Five years of birthdays in one envelope." Nineteen times five.
+[ring]
+DEE: Hi from the rig! I'm calling about my foreign avalanche!
+HOOT: Ah. The avalanche. Dee, you will answer about yourself.
+[q]
+HOOT: A U.S. person receives a $150,000 gift from her Norwegian godmother, a nonresident alien, in 2025. How is it treated? A, $150,000 of taxable income. B, reported on Form 709. C, not income, but reported on Form 3520. D, nothing at all.
+DEE: Astrid! Astrid sent me money! It was so nice. And I'm guessing it's A because foreign money is always taxed and I...
+[glitch]
+DEE: ...am sad.
+[buzzer]
+HOOT: Wrong. And the signal did not save you.
+ACE: It's C. A U.S. person who receives gifts or bequests totaling more than $100,000 in a year from a nonresident alien individual or a foreign estate must report them on Form 3520. The gift itself isn't taxable income. Form 3520 is due on the due date of the income tax return, including extensions, and the penalty for not filing is five percent of the gift per month, up to twenty-five percent. Gifts from foreign corporations or partnerships have a much lower threshold.
+HOOT: And Form 709 is for the donor. Astrid is the donor, and she is not a U.S. person. Answer B is a trap.
+ACE: Memory trick: "Over a hundred grand from abroad? 3520 before you applaud."
+DEE: I applauded already. I'll file the form.
+[q]
+ACE: Penny, last one for you. A married couple filing jointly, living in the U.S., has foreign bank accounts worth $120,000 on December 31, 2025, and they were never higher than $130,000. Must they file Form 8938? A, no, they're under $150,000 at all times. B, yes, they're over $100,000 on the last day of the year. C, no, they only need an FBAR. D, only if one spouse is a foreign citizen.
+PENNY: Joint in the U.S. is a hundred thousand at year end or a hundred fifty any time. They're over the year-end number. So B. And they need an FBAR too, because ten thousand.
+[correct]
+HOOT: Correct, and with the FBAR bonus. Penny Pocket, you terrify me.
+ACE: Form 8938 reports specified foreign financial assets: foreign accounts plus things like foreign stock and partnership interests not held in an account. It's attached to the tax return. For 2025: unmarried living in the U.S., more than $50,000 on the last day or $75,000 at any time. Joint in the U.S., $100,000 or $150,000. Living abroad, $200,000 or $300,000 unmarried, $400,000 or $600,000 joint. Either test is enough.
+HOOT: And the FBAR, FinCEN Form 114: more than $10,000 aggregate at any time, filed with FinCEN, not the IRS, due April 15 with an automatic extension to October 15. Filing one never satisfies the other.
+ACE: Memory trick: "FBAR: over ten grand, to FinCEN. 8938: higher thresholds, to the IRS." And for 8938 thresholds, think "fifty, double for married, quadruple for abroad."
+[truck]
+ROSA: That's the flour delivery. Hoot, you'll want to move.
+HOOT: I am fine where I am.
+[q]
+HOOT: Rosa. The final question of the season. A taxpayer was required to file Form 8938 with her 2021 return but didn't, and there was no reasonable cause. When does the statute of limitations for assessing tax on her 2021 return close? A, three years after the 2021 return was filed. B, six years after it was filed. C, three years after the Form 8938 information is furnished. D, never, it stays open forever no matter what.
+ROSA: Oh dear. This one sounds like it never ends. But Ace says "forever" is usually wrong. So I'll say... C. Because once you send the form, the clock starts.
+[correct]
+HOOT: Correct. Rosa Pocket, the Season 1 finale champion of the hard question.
+ROSA: Hoot, I'm not a Pocket. I'm Penny's aunt.
+HOOT: Noted. Correcting the record. Aunt Rosa.
+ACE: If a taxpayer doesn't file a required international information return, such as Form 8938, 3520, 5471, 8865 or 8621, the statute of limitations for assessing tax on the entire return stays open until three years after the information is furnished. If the failure was due to reasonable cause, it stays open only for the items related to the missing information. And omitting more than $5,000 of income from specified foreign financial assets extends the assessment period to six years.
+HOOT: And the other forms. Form 5471, for certain U.S. officers, directors and ten-percent shareholders of foreign corporations. Form 8865, for foreign partnerships. Form 8621, for passive foreign investment companies, which include most foreign mutual funds and ETFs.
+ACE: Memory trick: "Miss a foreign form, and the whole return stays unlocked." The door closes three years after you finally send it.
+[drumroll]
+HOOT: The Season 1 final scores. Milo, zero, a hundred percent improvement that is not a percentage. Dee, zero. Lulu, two points. Rosa, two points. Penny, three points.
+PENNY: Four wins out of six! Does that make me the season champion?
+HOOT: It does. Penny Pocket is the Season 1 champion of The Hot Seat.
+[applause]
+PENNY: I'd like to thank Gloria the mower, my flashcards, Ace's laminator and Hoot, who is still covered in flour.
+HOOT: I am. It is in my feathers. It will be in my feathers until Season 2.
+ACE: The recap. If you owned it, it's in, even if it pays your kin. 706: nine months plus six to file. Portability is a 706 with a bow on it. Alternate valuation is six months later, unless it left early. Nineteen thousand per person; the giver files, the getter smiles. Gift splitting needs a 709. Pay the school, not the kid. Five years of birthdays in one 529 envelope. Over a hundred grand from abroad, 3520. FBAR to FinCEN, 8938 to the IRS. And miss a foreign form, and the whole return stays unlocked.
+MILO: That's the end of Season 1 of The Hot Seat! Next season, we're moving to the bakery for real, and the questions are all about business.
+ROSA: And you'll all have to buy rolls.
+HOOT: See you in Season 2.
+[shopbell]
+[hotseat]

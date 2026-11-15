@@ -1,0 +1,130 @@
+# Season 3, Unit 3 Hot Seat: Liens, Levies, Appeals and Other People's Money
+(Season 3. A busy weekday in the Okafor Tax Defense office above Rosa's Rolls. Milo is wearing his "Payment Plan Pal" sweater. Through the open window, the lunch rush honks its way down Main Street.)
+[hotseat]
+[applause]
+MILO: It's The Hot Seat! Season 3, Unit 3! I'm Milo Marsh, proud Payment Plan Pal, and I'm wearing the sweater to prove it.
+PENNY: Milo, you made that sweater yourself.
+MILO: Because nobody else would.
+ACE: Hi, everyone. Ace Okafor, enrolled agent. Today's Unit 3: collections, audits and appeals, fixing past returns and penalty relief, and the trust fund recovery penalty. Same format. An exam-style question, someone in the hot seat answers, and Hoot and I explain and give you a trick for exam day.
+[pop]
+(The paper shredder in the corner rattles and its lid pops off. Examiner Hoot climbs out, eyeshade dusted with confetti.)
+HOOT: Hoo-hoo-HOLD the shredding. Examiner Hoot is present.
+LULU: Hoot! You were in the SHREDDER!
+HOOT: I was inspecting it. Records must be destroyed properly. Not too early. Not too late.
+ACE: It was off, right?
+HOOT: It was mostly off.
+[horn]
+[q]
+ACE: Milo, it's your unit. A man owes $30,000 in individual income tax, penalties and interest combined. He wants to pay over five years without filling out a full financial statement. Which plan fits best? A, a guaranteed installment agreement. B, a streamlined installment agreement. C, an offer in compromise. D, currently not collectible.
+MILO: This is me! I'm a streamlined man. B!
+[correct]
+MILO: The sweater knows things.
+ACE: A short-term payment plan gives up to 180 days. A guaranteed installment agreement is for $10,000 or less of tax, with a clean five-year history, paid within three years. A streamlined installment agreement is for individuals who owe $50,000 or less combined, paid over up to seventy-two months, without a full financial statement. Interest and penalties keep running under any plan, but the failure-to-pay penalty drops to a quarter percent a month during an installment agreement if the return was filed on time.
+HOOT: Trap alert: an installment agreement does not stop interest. The meter keeps running. It just runs slower on the penalty side.
+ACE: Memory trick: "One-eighty days, ten thousand guaranteed, fifty thousand over seventy-two months." 180, 10, 50, 72.
+[q]
+HOOT: Penny. A lien and a levy. What's the difference? A, they're the same. B, a lien is a legal claim against property; a levy actually seizes it. C, a lien seizes property; a levy is a claim. D, a levy is only for businesses.
+PENNY: B. Lien is a claim. Levy is a grab. I have it on a pillow.
+[correct]
+ACE: A federal tax lien is the government's legal claim against a taxpayer's property. The Notice of Federal Tax Lien is a public notice, and it's released within thirty days after the tax is paid. A levy is the actual seizure of property. Before most levies, the IRS must send notice and demand for payment, and a Final Notice of Intent to Levy at least thirty days before. A bank holds levied funds for twenty-one days before sending them.
+HOOT: And the collection due process hearing. File Form 12153 within thirty days of the final levy notice, or of the lien notice's window. You get a hearing with Appeals, levy is generally suspended, and you can go to Tax Court. Miss the thirty days, and you can ask for an equivalent hearing within one year, but without Tax Court review.
+ACE: Memory trick: "Lien is a claim. Levy is a grab. Thirty days' warning before the grab, and thirty days to ask for a hearing."
+[q]
+ACE: Rosa. An offer in compromise. A taxpayer submits a lump-sum offer of $10,000 on Form 656. She doesn't qualify for low-income relief. What must she send with it? A, nothing. B, the $205 application fee and $2,000, which is twenty percent of the offer. C, the full $10,000. D, $205 only.
+ROSA: My friend Mildred did an offer. She sent a casserole. I don't think that's it. I'll say D, the fee.
+[buzzer]
+HOOT: Wrong. The casserole was also not accepted.
+ACE: It's B. An offer in compromise goes on Form 656, with Form 433-A or 433-B, the OIC versions. There's a $205 application fee, plus twenty percent of a lump-sum offer, or the first periodic payment for a periodic offer. Both are waived for low-income taxpayers. The IRS generally accepts an offer that meets the reasonable collection potential. All returns must be filed. No levy while it's pending, and the collection statute is suspended.
+ACE: Memory trick: "Six fifty-six, two-oh-five, and twenty percent down."
+[q]
+HOOT: Lulu. Currently not collectible. A taxpayer is placed in currently not collectible status. Next spring, she's due a $600 refund. What happens to the refund? A, she gets it. B, it's applied to her old tax debt. C, it's split in half. D, the debt is forgiven.
+LULU: Not collectible sounds like you don't have to pay. But Ace always says "pause, not erase." So the refund goes to the debt. B.
+[correct]
+ACE: Currently not collectible status pauses active collection. The debt remains, interest and penalties keep accruing, refunds are offset against the debt, and the ten-year collection statute keeps running. Form 1127 asks for an extension of time to pay for undue hardship.
+HOOT: And passports. Seriously delinquent tax debt, an inflation-adjusted amount over $60,000, can lead to passport denial or revocation, unless the taxpayer is in an installment agreement, an accepted offer, a collection due process hearing, or has an innocent spouse claim pending.
+ACE: Memory trick: "Not collectible means pause, not erase."
+[truck]
+[q]
+ACE: Penny. Appeals. You get a 30-day letter proposing $12,000 of additional tax for one year. You disagree. What do you file to go to Appeals? A, a formal written protest. B, a small case request. C, a Tax Court petition. D, Form 1040-X.
+PENNY: I've done this! For my mileage! Under twenty-five thousand, it's a small case request. B.
+[correct]
+HOOT: Correct. And for the record, Penny won her mileage in Appeals. I have accepted this. Mostly.
+ACE: After an exam, the IRS sends a 30-day letter. You can request Appeals, which is independent of Exam. If the amount for any period is more than $25,000, you file a formal written protest. If it's $25,000 or less per period, a small case request is enough.
+HOOT: If you don't settle, the IRS sends a notice of deficiency, the 90-day letter. You petition Tax Court within ninety days, or 150 days if the notice is addressed outside the U.S. No prepayment required. Miss it, and the tax is assessed.
+ACE: Memory trick: "Thirty days to Appeals. Ninety days to Tax Court." And over twenty-five thousand, write a protest.
+[q]
+HOOT: Milo. Tax Court. A taxpayer files a small tax case in Tax Court. What's true? A, the decision can be appealed to a Court of Appeals. B, the decision can't be appealed. C, she must pay the tax first. D, the amount can be any size.
+MILO: Small cases are friendly. Friendly things can be appealed. A!
+[buzzer]
+HOOT: Wrong. Small cases are friendly. They are also final.
+ACE: It's B. A small tax case, the S case, is for $50,000 or less per year, including penalties. It's informal, but the decision is final. Neither side can appeal, and it sets no precedent. Regular Tax Court decisions can be appealed to a U.S. Court of Appeals. And Tax Court is the one court where you don't have to pay first.
+HOOT: The other route is pay first. Pay the tax, file a refund claim, and then sue in U.S. District Court or the Court of Federal Claims after the claim is denied or six months pass with no action, and within two years of the notice of disallowance.
+ACE: Memory trick: "Small case, small rules, no appeal." And "Tax Court: talk first, pay later. District Court and Claims Court: pay first, talk later."
+[q]
+ACE: Rosa. Penalties. A taxpayer files her return three months late and owes $2,000 that she didn't pay. Roughly what's the combined late filing and late payment penalty before relief? A, $300. B, $330. C, $30. D, $500.
+ROSA: I was late too, from the hospital. My gallbladder, Gerald Two. Okay. Five percent a month for both together, because they share the month. Three months. Fifteen percent of two thousand. Three hundred. A.
+[correct]
+ROSA: Gerald Two would be proud.
+ACE: The failure-to-file penalty is five percent a month, up to twenty-five percent, and there's a minimum penalty if it's more than sixty days late. The failure-to-pay penalty is half a percent a month, up to twenty-five percent. It's a quarter percent during an installment agreement, and one percent after a levy notice. In a month when both apply, the filing penalty is reduced by the paying penalty, so the combined rate is five percent. Three months times five percent times $2,000 is $300. Interest is on top.
+HOOT: Exam tip: "file on time even if you can't pay." Filing late costs ten times more than paying late.
+ACE: Memory trick: "Five to file late. Half to pay late. Twenty if wrong. Seventy-five if fraud."
+[q]
+HOOT: Penny. Accuracy. A taxpayer reported $30,000 of tax. The correct tax was $40,000, so the understatement is $10,000. No disclosure, no reasonable cause. What's the accuracy-related penalty? A, $0. B, $1,000. C, $2,000. D, $7,500.
+PENNY: Substantial means more than ten percent of the correct tax, or five thousand, whichever is larger. Ten percent of forty is four, so the bar is five thousand. Ten thousand is over it. Twenty percent of ten thousand. Two thousand. C.
+[correct]
+ACE: The accuracy-related penalty is twenty percent of the underpayment caused by negligence, a substantial understatement, or a valuation misstatement, and forty percent for a gross valuation misstatement. For an individual, a substantial understatement is more than the larger of ten percent of the correct tax or $5,000. Defenses include reasonable cause and good faith, and adequate disclosure with a reasonable basis.
+HOOT: And civil fraud. Seventy-five percent of the underpayment due to fraud. The IRS must prove fraud by clear and convincing evidence. There is no time limit for assessment. And on a joint return, only the spouse who committed fraud is liable for it.
+ACE: Memory trick: "Ten percent or five grand, whichever is bigger, then twenty percent." The IRS proves fraud, not you.
+[ring]
+DEE: Hi, it's Dee! I have a question about abatements! Actually I have an answer! Ask me!
+HOOT: Very well. Question nine.
+[q]
+HOOT: A taxpayer filed and paid late for 2025. She had no penalties in the prior three years, all her returns are filed, and she's paid the tax. Which relief can she get without proving a reason? A, reasonable cause. B, first-time abatement. C, innocent spouse relief. D, an offer in compromise.
+DEE: First time! It's her first time! B!
+[correct]
+DEE: I KNEW it was the first-time thing!
+ACE: First-time abatement removes failure-to-file, failure-to-pay and failure-to-deposit penalties for one period, if the taxpayer had no significant penalties in the prior three years, has filed all required returns, and has paid or arranged to pay the tax. It doesn't cover the accuracy-related or fraud penalties. Reasonable cause relief needs a reason, like illness, a death, a disaster, or being unable to get records, showing ordinary business care and prudence. You can ask by phone, by letter, or on Form 843.
+HOOT: And interest on tax is abated only for IRS ministerial or managerial delay. Not because you were sad.
+ACE: Memory trick: "Clean three years? First-time abatement. Got a reason? Reasonable cause."
+DEE: I've never had a clean three years in my life.
+[q]
+ACE: Lulu. Amending. A taxpayer filed her 2023 return early, on February 20, 2024. What's the last day to claim a refund on Form 1040-X? A, February 20, 2027. B, April 15, 2027. C, April 15, 2026. D, February 20, 2026.
+LULU: Early is never early. April fifteenth, then three years. B!
+[correct]
+ACE: A refund claim is due by the later of three years from filing or two years from payment, and an early return counts as filed on the due date. The refund is limited to tax paid in the lookback period.
+ACE: Memory trick: "Three from filing, two from paying, and early is never early."
+[q]
+HOOT: Rosa. The trust fund recovery penalty. A bakery withheld $8,000 of income tax and $3,000 of employees' Social Security and Medicare, and didn't pay any of it in. The employer's matching share is also $3,000. What's the most the trust fund recovery penalty can be? A, $14,000. B, $11,000. C, $8,000. D, $3,000.
+ROSA: This is Bertha. I bought Bertha with the payroll money. I'm not proud. Okay. The employees' money is the trust. Eight plus three. Eleven. B.
+[correct]
+HOOT: Correct. And confessed. I will note both.
+ACE: Trust fund taxes are the income tax withheld from employees and the employees' share of Social Security and Medicare. The employer's matching share and federal unemployment tax aren't trust fund taxes. The trust fund recovery penalty is one hundred percent of unpaid trust fund taxes, assessed personally against each responsible person who acted willfully.
+HOOT: Responsible means status, duty and authority over which bills get paid. Willful means you knew the taxes were unpaid and paid other creditors instead, or recklessly disregarded it. No bad motive is needed. Buying an oven counts.
+ACE: Memory trick: "Their money, held in trust. Spend it, and it's a hundred percent on you."
+ROSA: I'm sorry, Bertha. It's not your fault.
+[q]
+ACE: Milo. Milo signed some payroll checks at Rosa's direction, but had no authority to decide which bills got paid. Is he likely a responsible person? A, yes, anyone who signs checks is responsible. B, no, he lacked real authority over payments. C, yes, because he's family. D, only if he's on payroll.
+MILO: I signed them! With a flourish! But Rosa told me which ones. So... B!
+[correct]
+MILO: Payment Plan Pal saves the day!
+ACE: Responsibility turns on duty and authority over which creditors get paid. Signing checks at someone else's direction usually isn't enough. The process: the IRS interviews potentially responsible people on Form 4180, then sends Letter 1153 proposing the assessment. The person has sixty days to appeal, or seventy-five if the letter is addressed outside the U.S. If they agree, they sign Form 2751.
+HOOT: And the penalty is joint and several among all responsible persons, but the IRS collects the total only once. Someone who pays can seek contribution from the others.
+ACE: Memory trick: "Form 4180, Letter 1153, sixty days." And "collected once, from anybody responsible."
+[q]
+HOOT: Lightning round. Anyone may shout. Does federal unemployment tax count as a trust fund tax?
+PENNY+ROSA+LULU: No!
+MILO: No! Yes? No!
+[correct]
+HOOT: No. FUTA is the employer's own tax. Never withheld from anyone. Not a trust fund tax.
+ACE: Memory trick: "If it came out of the employee's paycheck, it's trust fund. If the boss pays it from his own pocket, it isn't."
+[drumroll]
+HOOT: Final scores. Rosa, two points and one confession. Dee, one point. Lulu, two points. Milo, two points and a sweater. Penny, three points.
+PENNY: Three wins in Season 3!
+[applause]
+ACE: The recap. 180, 10, 50, 72 for payment plans. Lien is a claim, levy is a grab. Six fifty-six, two-oh-five, twenty percent down. Not collectible means pause, not erase. Thirty days to Appeals, ninety to Tax Court. Small case, no appeal. Five to file, half to pay, twenty if wrong, seventy-five if fraud. Clean three years, first-time abatement. Early is never early. And trust fund taxes are the employees' money: spend it, and it's a hundred percent on you.
+HOOT: I am returning to the shredder.
+ACE: Hoot, please don't turn it on.
+HOOT: I make no promises.
+[car]
+MILO: That's our show! Next time, the series finale of The Hot Seat: e-file rules, records and security.
+[hotseat]

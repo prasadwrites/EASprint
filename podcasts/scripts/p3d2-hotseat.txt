@@ -1,0 +1,123 @@
+# Season 3, Unit 2 Hot Seat: The 2848, the Code and the Three-Year Clock
+(Season 3. A rainy afternoon in the Okafor Tax Defense office above Rosa's Rolls. The window is cracked open to Main Street, where cars hiss through puddles. Biscuit the beagle is asleep under Ace's desk, next to a slightly chewed Form 2848.)
+[hotseat]
+[applause]
+MILO: It's The Hot Seat! Season 3, Unit 2. Today we're live from Ace's office, on a rainy day, with a beagle who has eaten one power of attorney.
+ACE: Hi, everyone. Ace Okafor, enrolled agent. Today's Unit 2: powers of attorney and the Centralized Authorization File, building the case, and deadlines and taxpayer protections. Exam-style questions, someone takes the hot seat, and Hoot and I dig deeper and give you the memory trick.
+[bark]
+PENNY: Biscuit agrees.
+[pop]
+(Ace's office coat rack wobbles. Examiner Hoot steps out from behind a raincoat.)
+HOOT: Hoo-hoo-HOLD the 2848s. Examiner Hoot is present. And the dog has eaten evidence.
+ACE: He ate a blank one.
+HOOT: Blank evidence is still evidence. It is evidence of blankness.
+[car]
+[q]
+ACE: Penny. Penny and Milo filed a joint return and want Ace to represent them both in an exam. What's needed? A, one Form 2848 signed by both spouses. B, each spouse files their own Form 2848. C, one Form 8821. D, nothing, an EA can represent anyone.
+PENNY: We did this! We filled out two. Biscuit ate one, and we did it again. B.
+[correct]
+HOOT: Correct. Though I note the beagle.
+ACE: For a joint return, each spouse files their own Form 2848. The taxpayer and the eligible representative both sign it, and it must list specific tax matters, form numbers and periods. You can't write "all years." Future periods can be listed, but only up to three years after the IRS receives the form.
+HOOT: Trap alert: if the IRS receives a 2848 in March 2026, the latest calendar tax year it can cover is 2028. Tax year 2029 ends too late.
+ACE: Memory trick: "One spouse, one 2848. Specific years, no forever, and the future only three years out."
+[q]
+HOOT: Milo. Sit. A taxpayer wants her bank's loan officer to be able to see her tax transcripts, but not to represent her. Which form fits? A, Form 2848. B, Form 8821. C, Form 4506-T only. D, Form 911.
+MILO: The bank just wants to look. Looking is the eight-something form. B!
+[correct]
+MILO: Two seasons of losing, and now I know forms!
+ACE: Form 8821, Tax Information Authorization, lets any person or organization the taxpayer names inspect and receive confidential tax information. It doesn't let them represent the taxpayer. It must reach the IRS within 120 days of the taxpayer signing it. Representation needs a Form 2848 and an eligible practitioner.
+HOOT: And the third party designee. That is the checkbox on the return itself. It lets that person discuss the processing of that one return, refunds, math errors, notices, and it ends at the due date, without extensions, of the next year's return. No representation.
+ACE: Memory trick: "2848 speaks for you. 8821 only looks. The checkbox only asks about one return."
+[q]
+ACE: Rosa. With a Form 2848 on file, a client's refund check arrives at Ace's office. What can Ace do with it? A, endorse it and deposit it into his trust account. B, cash it and deduct his fee. C, pass it to the client; he can't endorse or cash it. D, mail it back to the IRS.
+ROSA: Well, Ace is like family. I'd let him cash mine. A.
+[buzzer]
+HOOT: Wrong. Family feelings do not override Form 2848.
+ACE: It's C. A Form 2848 lets the representative receive confidential information and act for the taxpayer, including signing agreements, consents and statute extensions. But it doesn't let the representative endorse or cash a refund check, sign the return except in narrow situations, or add or substitute another representative unless the form says so. And Circular 230 separately bars practitioners from negotiating a client's refund check.
+HOOT: And the CAF, the Centralized Authorization File, records 2848s and 8821s. A new 2848 for the same matters revokes the earlier ones unless the taxpayer says to keep them. To revoke, the taxpayer sends a copy marked "REVOKE" and signs it. To withdraw, the representative sends a copy marked "WITHDRAW" and signs it.
+ACE: Memory trick: "The refund check passes through my hands, never through my bank."
+ROSA: Ace, you're a good boy.
+ACE: Thank you, Aunt Rosa.
+[truck]
+[q]
+HOOT: Lulu. Examinations. A taxpayer gets a letter asking her to come to an IRS office with her records to meet a tax compliance officer. What kind of exam is it? A, correspondence. B, office. C, field. D, a party.
+LULU: It's at the office. So it's an office exam. B. That's an easy one, Hoot.
+HOOT: Not every question is a trap. Some are simply a door.
+[correct]
+ACE: There are three kinds of exams. A correspondence exam is done by mail. An office exam takes place at an IRS office, usually with a tax compliance officer. A field exam is done by a revenue agent at the taxpayer's home, business or the representative's office. Records are requested on Form 4564, an Information Document Request. And with a 2848, the representative can attend instead of the taxpayer.
+HOOT: And the taxpayer carries the burden of substantiating deductions, credits and basis. Receipts. Statements. Logs. Not napkins.
+PENNY: That was ONE napkin.
+ACE: Memory trick: "Mail, office, field: letter, desk, doorstep." The further it travels, the more serious it is.
+[q]
+ACE: Penny. Legal authority. A client wants Ace to rely on something for a return position. Which is legal authority? A, an IRS publication. B, a private letter ruling issued to a different taxpayer. C, a Treasury regulation. D, a popular tax blog.
+PENNY: C. Ace says publications are helpful but they're not the law. And the blog is Milo's.
+MILO: It gets almost forty readers.
+[correct]
+ACE: The Internal Revenue Code comes first. Then Treasury regulations, final ones over temporary over proposed. Then revenue rulings and revenue procedures, and court decisions. The Supreme Court binds everyone. A private letter ruling binds only the taxpayer who requested it. And IRS publications explain the law, but they aren't authority.
+HOOT: And return positions under section 10.34. A position with substantial authority needs no disclosure. A position with only a reasonable basis must be disclosed, on Form 8275, or Form 8275-R if it's contrary to a regulation. Tax shelter items need more than that.
+ACE: Memory trick: "Code first. Then regs, rulings and cases. A blog is never authority." And "substantial, no disclosure. Reasonable basis, fill out 8275."
+[q]
+HOOT: Milo. Privilege. A client tells his enrolled agent about tax advice they discussed, and now the client is being criminally investigated. Does the section 7525 practitioner privilege protect those communications? A, yes, always. B, no, the privilege doesn't apply in criminal matters. C, yes, if the EA is also a notary. D, only if the client paid in cash.
+MILO: Privilege sounds fancy and permanent. A!
+[buzzer]
+HOOT: Wrong. Fancy, yes. Permanent, no.
+ACE: It's B. Section 7525 gives a privilege like attorney-client privilege for tax advice from federally authorized practitioners, like CPAs and EAs. But only in noncriminal tax matters before the IRS, or noncriminal tax proceedings in federal court. It doesn't apply in criminal cases, it doesn't cover written communications promoting tax shelters, and it doesn't cover information gathered to prepare a return.
+ACE: Memory trick: "The privilege covers tax advice, never crimes."
+MILO: Good thing I've never done a crime.
+HOOT: I have a file that says otherwise. Item fourteen. The parking lot chair.
+MILO: That was a LEGITIMATE purchase.
+[q]
+ACE: Rosa. Ability to pay. Which form does an individual use to show the IRS his income, expenses, assets and debts in a collection case? A, Form 433-A. B, Form 4564. C, Form 8275. D, Form 2848.
+ROSA: Four three three. I remember because Milo filled one out and cried at the line about his kazoos. A.
+[correct]
+ACE: Form 433-A is the collection information statement for individuals. Form 433-B is for businesses, and Form 433-F is a shorter version. They show income, expenses, assets, equity and debts. Allowable living expenses use the IRS's national and local standards.
+ACE: Memory trick: "433, show me what you've got." A for individuals, B for businesses.
+[q]
+HOOT: Penny. The clock. A taxpayer files her 2025 return early, on March 1, 2026. When does the IRS's normal time to assess additional tax end? A, March 1, 2029. B, April 15, 2029. C, April 15, 2028. D, never.
+PENNY: Early counts as the due date. Then three years. April 15, 2029. B.
+[correct]
+ACE: The assessment statute is generally three years after the return is filed, and an early return is treated as filed on the due date. It's six years if more than twenty-five percent of the gross income shown on the return is omitted. And it's unlimited for fraud, evasion, or no return at all. It can be extended only by agreement, on Form 872, and a taxpayer can limit or refuse that agreement.
+HOOT: The collection statute is ten years from the date of assessment. That's the CSED. It pauses while an offer in compromise or an installment agreement request is pending, during a collection due process hearing, during bankruptcy, and while the taxpayer is outside the U.S. for six months or more in a row.
+ACE: Memory trick: "Three years to assess. Ten years to collect." Six if you left out a quarter. Forever if you lied or never filed.
+[bikebell]
+LULU: That's the mail carrier on her bike! In the rain!
+HOOT: Correspondence exams wait for no weather.
+[ring]
+DEE: Hi, it's Dee! I'm at the rig, it's raining here too! Actually it's sunny. Ask me one.
+HOOT: Dee. Question nine.
+[q]
+HOOT: Someone filed a tax return using a woman's SSN before she did. Her e-filed return was rejected. She hasn't received any IRS identity verification letter. What should she do? A, stop filing until it's sorted out. B, file Form 14039, the Identity Theft Affidavit, and file her return on paper. C, file Form 911 only. D, call the scammer.
+DEE: This happened to me! I filed the... fourteen... something. And on paper. B!
+[correct]
+DEE: I'm on a streak! A streak of one!
+ACE: A victim who hasn't received an IRS identity verification letter files Form 14039 and keeps filing, on paper if the e-file is rejected. If the IRS has sent a verification letter, she follows that letter instead. And an Identity Protection PIN, six digits, new every year, is available to anyone who can verify their identity.
+HOOT: And the Taxpayer Advocate Service. An independent organization within the IRS. Free. It helps when a tax problem causes financial hardship, when the taxpayer faces an adverse action, or when normal channels have failed. Request help with Form 911. Low Income Taxpayer Clinics are separate and independent.
+ACE: Memory trick: "Stolen identity? 14039. Stuck with the IRS? Call 911." The Advocate is the emergency number.
+[q]
+ACE: Lulu. The Taxpayer Bill of Rights. Which of these is one of the ten rights? A, the right to a refund. B, the right to retain representation. C, the right to skip filing. D, the right to a free lawyer.
+LULU: B. Because Ace is your representation. And you can keep him. Like a pet.
+ACE: I'm not a pet.
+HOOT: He is a professional pet.
+[correct]
+ACE: The Taxpayer Bill of Rights, in Publication 1, has ten rights: to be informed, to quality service, to pay no more than the correct amount of tax, to challenge the IRS's position and be heard, to appeal in an independent forum, to finality, to privacy, to confidentiality, to retain representation, and to a fair and just tax system.
+ACE: Memory trick: "Inform me, serve me, charge me right, hear me, appeal for me, finish it, protect my privacy and secrets, let me bring help, and be fair." Ten in one breath.
+[q]
+HOOT: Lightning round. Anyone may shout. A representative keeps cancelling meetings and unreasonably delays an exam. Can the IRS bypass him and contact the taxpayer directly?
+PENNY+ROSA: Yes!
+MILO: No, that's rude!
+[correct]
+HOOT: Yes. With a supervisor's approval, the IRS can bypass a representative who unreasonably delays or hinders an exam or collection, and contact the taxpayer directly. Publication 216 also says the IRS will not discuss confidential information until a valid authorization is on file, and that representatives should be prepared, prompt and courteous.
+ACE: Memory trick: "Stall the exam, and the IRS walks around you."
+MILO: It's still rude.
+[drumroll]
+HOOT: Final scores. Milo, one point and an open file. Dee, one point. Rosa, one point. Lulu, two points and a pet. Penny, four points.
+[applause]
+PENNY: I'm going to frame my score sheet.
+ACE: The recap. One spouse, one 2848, specific years, and the future only three years out. 2848 speaks, 8821 looks, the checkbox asks about one return. The refund check never goes through the practitioner's bank. Mail, office, field. Code first, a blog is never authority. Reasonable basis means Form 8275. Privilege covers tax advice, never crimes. 433-A shows what you've got. Three to assess, ten to collect. Stolen identity is 14039, stuck is 911. And stall the exam, and the IRS walks around you.
+HOOT: I am returning to the coat rack. It is the driest place in the office.
+[bark]
+HOOT: The dog disagrees.
+[car]
+MILO: That's our show! Next time on The Hot Seat: collections, audits, appeals and the trust fund recovery penalty.
+ROSA: I'll bring scones. And a lawyer.
+[hotseat]

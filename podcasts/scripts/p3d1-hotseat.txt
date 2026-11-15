@@ -1,0 +1,136 @@
+# Season 3, Unit 1 Hot Seat: Enrolled, Not Certified
+(Season 3. Ace's new office, Okafor Tax Defense, in the room above Rosa's Rolls. The window is open to Main Street. Everything is labeled. The heated lawn chair has a label too. It says HOT SEAT.)
+[hotseat]
+[applause]
+MILO: Welcome to Season 3 of The Hot Seat! We're coming to you from the brand-new offices of Okafor Tax Defense, above the bakery, where the rent is paid in cinnamon rolls.
+ACE: Hi, everyone. Ace Okafor, enrolled agent, and now, a landlord's favorite tenant. Season 3 is Part 3 of the exam: representation, practices and procedures. Today's Unit 1: who can practice before the IRS, Circular 230 conduct, and what happens when things go wrong. Exam-style questions, the cast answers, then Hoot and I explain and give you a memory trick.
+PENNY: Ace, why did you label the window "window"?
+ACE: Clarity is a professional obligation.
+[pop]
+(The bottom drawer of Ace's brand-new filing cabinet slides open. Examiner Hoot climbs out.)
+HOOT: Hoo-hoo-HOLD the ribbon cutting. Examiner Hoot is present.
+ACE: Hoot! That cabinet was delivered this morning!
+HOOT: And I was delivered with it. I signed for myself. Your filing system is excellent, Ace. It is labeled in teal.
+ACE: Thank you.
+HOOT: It is suspiciously excellent.
+[car]
+[q]
+ACE: Penny, you're first. Which of these can represent a taxpayer at every level of the IRS, including Appeals and Collection? A, anyone with a PTIN. B, an attorney, a CPA or an enrolled agent. C, a participant in the Annual Filing Season Program. D, a tax preparer who's been in business for twenty years.
+PENNY: B. The big three. Attorneys, CPAs and EAs. Ace says it every morning in the mirror.
+ACE: I do not.
+ROSA: I've heard you through the ceiling, honey.
+[correct]
+ACE: Attorneys, CPAs and enrolled agents have unlimited practice rights before the IRS: any taxpayer, any tax matter, any IRS office. Enrolled actuaries and enrolled retirement plan agents have limited practice in their own areas. And Annual Filing Season Program participants have limited representation: only for returns they prepared and signed, only before revenue agents, customer service and the Taxpayer Advocate Service. Never Appeals or Collection.
+HOOT: Trap alert: a PTIN gives no representation rights at all. It is required for anyone paid to prepare all or substantially all of a federal return, and it must be renewed every year. It is a license to prepare, not to represent.
+ACE: Memory trick: "Attorneys, CPAs, EAs: anyone, anything, anywhere in the IRS."
+[q]
+HOOT: Milo. Sit. Your cousin Rudy.
+MILO: Rudy! He's an AFSP person! He makes great sandwiches.
+HOOT: An Annual Filing Season Program participant prepared and signed a client's return. The case has gone to Appeals. Can he represent the client in Appeals? A, yes, he prepared the return. B, no, AFSP rights don't extend to Appeals or Collection. C, yes, with a Form 8821. D, only if the client is family.
+MILO: Rudy is very persuasive. He once talked a parking ticket down to a sandwich. A!
+[buzzer]
+HOOT: Wrong. The sandwich does not create practice rights.
+ACE: It's B. AFSP is voluntary. Participants take eighteen hours a year: a six-hour Annual Federal Tax Refresher course with a test, ten hours of federal tax law, and two hours of ethics. In return they get limited representation: returns they prepared and signed, before revenue agents, customer service and the Taxpayer Advocate Service. Not Appeals. Not Collection.
+ACE: Memory trick: "AFSP: only their own returns, never Appeals or Collection." Think of it as a learner's permit. Good on local roads, not the highway.
+MILO: Rudy doesn't have a driver's license either.
+PENNY: Of course he doesn't.
+[q]
+ACE: Lulu. Special appearances. Can a woman with no license represent her brother before the IRS? A, no, only licensed practitioners can. B, yes, as a member of his immediate family. C, only with a PTIN. D, only if he's under eighteen.
+LULU: Hmm. Can I represent my mom?
+ACE: Yes. You're immediate family.
+LULU: Then B. If I can do Mom, she can do her brother.
+[correct]
+HOOT: Correct. Lulu, you are now authorized to represent Dee. Please do not.
+ACE: Circular 230 lets certain people appear without being practitioners. An individual for themselves, a member of their immediate family, their employer if they're a regular full-time employee, a general partner or employee for a partnership, an officer or employee for a corporation, and a fiduciary for an estate or trust. Friends and coworkers don't count.
+ACE: Memory trick: "No license? Only yourself, your family, your boss, or the thing you run."
+[horn]
+MILO: That's the Quick Refund Rex billboard truck. It drives up and down Main Street all day.
+HOOT: It is a menace. And its paint is very loud.
+[q]
+HOOT: Rosa. Enrolled agents. How many hours of continuing education must an enrolled agent take, and what's the yearly minimum? A, twenty-four hours a year. B, seventy-two hours per three-year cycle, at least sixteen hours each year, including two hours of ethics each year. C, eighteen hours a year. D, none, once you're enrolled you're done.
+ROSA: Ace is always at a class. He took a class on ethics and came back and apologized to my sourdough for no reason. So, B. Seventy-two.
+[correct]
+ACE: I did apologize to Gerald. It felt right.
+ACE: To become an enrolled agent, you get a PTIN, pass all three parts of the Special Enrollment Examination within three years, and apply on Form 23, which includes a tax compliance check. Or you can qualify through certain IRS work experience. Enrolled agents renew every three years on Form 8554. Continuing education is seventy-two hours per three-year cycle, with at least sixteen hours each year, and two of those sixteen must be ethics, every year. From IRS-approved providers. Keep the records four years.
+HOOT: Trap alert: an EA who takes seventy-two hours in the last year of a cycle has failed. Sixteen a year. Every year. With ethics.
+ACE: Memory trick: "Seventy-two, sixteen, two." Three numbers, three years.
+[q]
+ACE: Penny. Advertising. Which phrase may an enrolled agent use on a billboard? A, "IRS-certified tax expert." B, "Approved by the IRS." C, "Enrolled to practice before the Internal Revenue Service." D, "Former IRS insider."
+PENNY: Milo made a billboard. It said "Certified by the IRS, guaranteed refunds." Ace almost fainted. So C.
+MILO: It was a GREAT billboard.
+[correct]
+ACE: Circular 230 section 10.30 bans false or misleading advertising. An enrolled agent may say they're "enrolled to practice before the Internal Revenue Service," or "enrolled to represent taxpayers before the IRS." Never that the IRS certified, approved, or employs them. Broadcast ads and lists of people solicited are kept thirty-six months, and published fees must be honored for at least thirty days.
+HOOT: And "guaranteed refunds" is its own problem. No one can guarantee a refund.
+ACE: Memory trick: "Enrolled, never certified."
+MILO: Enrolled, never certified. I'll repaint it.
+ACE: Please don't paint anything.
+[q]
+HOOT: Milo. Redemption. A client offers Ace twenty percent of her refund as his fee for preparing her original 2025 return. Can he accept? A, yes, if she agrees in writing. B, no, that's a contingent fee for preparing an original return. C, yes, contingent fees are always allowed. D, only if the refund is over $10,000.
+MILO: Twenty percent of a refund. That's how Rex does it. And Rex is bad. So B!
+[correct]
+MILO: I learned from Rex! The enemy taught me!
+ACE: Under section 10.27, contingent fees are allowed only in three situations: for representing a client in an IRS examination or challenge of an original return, or an amended return or refund claim filed within 120 days of the exam notice; for a refund claim solely for interest or penalties; or in judicial proceedings. Never for preparing an original return. And never unconscionable fees.
+ACE: Memory trick: "Results-based fees only for exams, penalty refunds and court." Exam, penalty, court.
+[q]
+ACE: Rosa. Conflicts of interest. Ace is asked to represent two business partners who are now in a dispute with each other and with the IRS. What does he need to continue? A, nothing. B, each client's informed consent, confirmed in writing within thirty days, and a reasonable belief he can represent each of them competently. C, permission from the IRS. D, he can never represent both.
+ROSA: Oh, that's me and Penny. We fought about napkins. Ten thousand cocktail napkins. I'll say D, because people who fight shouldn't share a tax man.
+[buzzer]
+HOOT: Wrong. They may share a tax man. With paperwork.
+ACE: It's B. Under section 10.29, a practitioner with a conflict of interest can continue only if they reasonably believe they can competently and diligently represent each affected client, the representation isn't prohibited by law, and each client gives informed consent, confirmed in writing within a reasonable time, and no later than thirty days. The consents are kept thirty-six months after the engagement ends.
+ACE: Memory trick: "Conflicts: believe, legal, and consent in writing within thirty days."
+ROSA: We worked out the napkins. I'm keeping eight thousand.
+[q]
+HOOT: Lulu. A client fired Ace and hasn't paid her bill. She asks for her original records back. What must Ace do? A, keep them until she pays. B, return them promptly, though he may keep copies. C, shred them. D, send them to the IRS.
+LULU: B. If I lent you my crayons and you didn't pay me, I still want my crayons back.
+[correct]
+ACE: Section 10.28 requires a practitioner to promptly return a client's records needed for the client to comply with their tax obligations, on request, even during a fee dispute. The practitioner may keep copies.
+HOOT: And section 10.31: a practitioner may not endorse, cash or otherwise negotiate a client's federal refund check.
+ACE: And section 10.21: if a practitioner knows the client made an error or omission on a return, they must promptly advise the client of it and its consequences. There's no duty to fix it themselves or to tell the IRS.
+ACE: Memory trick: "Records go back, even if the bill doesn't." And "never touch a client's refund check."
+LULU: Ace, you still have my crayons.
+ACE: They're labeled and in the cabinet.
+HOOT: I was sitting on them.
+[ring]
+DEE: Hi! It's Dee, calling from the rig! I'm studying for my EA exam now. Ask me a penalty one!
+HOOT: Very well. Penalties. Dee, question nine.
+[q]
+HOOT: A paid preparer takes an unreasonable position on a return and earns $200 for preparing it. What's his penalty under section 6694? A, $100. B, $200. C, $1,000. D, $5,000.
+DEE: Hmm. Fifty percent of two hundred is a hundred. A!
+[glitch]
+DEE: A, I said A.
+[buzzer]
+HOOT: Wrong. You forgot the word "greater."
+ACE: It's C. Under section 6694, a preparer who takes an unreasonable position owes the greater of $1,000 or fifty percent of the income from the return. Fifty percent of $200 is $100, so the $1,000 floor applies. If the conduct is willful or reckless, it's the greater of $5,000 or seventy-five percent of the income.
+HOOT: And section 6695 adds per-failure penalties: failing to give the taxpayer a copy, failing to sign, failing to put a PTIN on the return, failing to keep a copy or list for three years, due diligence failures for the earned income credit and similar credits and head of household, and negotiating a client's refund check.
+ACE: Memory trick: "Unreasonable: a thousand or half. Willful: five thousand or three-quarters. Whichever is greater."
+DEE: I always forget the greater part.
+[q]
+ACE: Penny. Sanctions. Which of these can the Office of Professional Responsibility NOT impose under Circular 230? A, censure. B, suspension. C, disbarment. D, a prison sentence.
+PENNY: OPR isn't a court. D.
+[correct]
+ACE: Circular 230 sanctions are censure, which is a public reprimand; suspension for up to five years; disbarment; and a monetary penalty up to the gross income from the conduct, which can also be imposed on the firm. They come after notice and a hearing before an administrative law judge. Prison only comes from criminal prosecution in a court.
+HOOT: And disreputable conduct under section 10.51 includes tax crimes, giving false information to the IRS, willfully failing to file or pay your own taxes, misappropriating client funds, and signing a return you know is false.
+ACE: Memory trick: "Censure, suspend, disbar, fine. No jail time." OPR has a gavel, not handcuffs.
+[q]
+HOOT: Lightning round. True or false: Quick Refund Rex, a paid preparer, left his signature and PTIN off a client's return, but the return was perfectly accurate. So there's no penalty.
+PENNY+ROSA+LULU: False!
+MILO: True, because accurate... no, false! FALSE!
+[correct]
+HOOT: False. Failing to sign and failing to include a PTIN are each separate section 6695 penalties, whether or not the return is accurate. Paid preparers must sign, show their PTIN, give the taxpayer a copy, and keep a copy or list for three years.
+ACE: And aiding and abetting an understatement under section 6701 is $1,000 per return, or $10,000 for a corporate return.
+ACE: Memory trick: "Sign it, PTIN it, copy it, keep it."
+[horn]
+(Faintly, from a car radio on the street below.)
+REX: Quick Refund Rex! Biggest refunds in town! No signature needed!
+HOOT: There he is. I will be adding that to the file.
+[drumroll]
+HOOT: Final scores. Dee, zero. Rosa, one point and eight thousand napkins. Milo, one point and Rudy's sandwiches. Lulu, two points and her crayons. Penny, three points.
+PENNY: Season 3, here I come!
+[applause]
+ACE: The recap. Attorneys, CPAs, EAs: anyone, anything, anywhere. AFSP: only their own returns, never Appeals or Collection. A PTIN prepares; it doesn't represent. No license? Yourself, your family, your boss. Seventy-two, sixteen, two. Enrolled, never certified. Results-based fees only for exams, penalty refunds and court. Conflicts need written consent within thirty days. Records go back, even if the bill doesn't. Unreasonable, a thousand or half; willful, five thousand or three-quarters. OPR has a gavel, not handcuffs. And sign it, PTIN it, copy it, keep it.
+HOOT: I am returning to the filing cabinet.
+ACE: Please label yourself first.
+HOOT: I am already labeled. "Examiner."
+[car]
+MILO: That's our show! Next time on The Hot Seat: powers of attorney, building the case, and deadlines. Bring your 2848s!
+[hotseat]

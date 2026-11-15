@@ -1,6 +1,6 @@
-"""Render a Ledger Falls Unplugged podcast script to MP3 plus a timed transcript.
+"""Render a Study podcast script (Ledger Falls Unplugged or The Hot Seat) to MP3 plus a timed transcript.
 
-Usage: python render.py p1d1 [p1d2 ...]   (or "all")
+Usage: python render.py p1d1 [p1d1-hotseat ...]   (or "all", "unplugged", "hotseat")
 
 Needs kokoro-onnx, soundfile, numpy, scipy, num2words and ffmpeg, plus the Kokoro v1.0 model files
 (kokoro-v1.0.onnx and voices-v1.0.bin from github.com/thewh1teagle/kokoro-onnx releases) in KOKORO_DIR.
@@ -11,6 +11,9 @@ Script format, one entry per line:
   [pop]                           a sound cue (see SFX); shown in the transcript as a cue
   (Hoot climbs out of the oven.)  a stage direction: shown in the transcript, not spoken
 Text in {shown|spoken} braces is displayed one way and read another, for odd words.
+The Hot Seat scripts (<domainId>-hotseat.txt) add:
+  [q]                             the question sting; the transcript numbers it "Question 1", "Question 2"...
+  ACE: Memory trick: ...          a line that starts "Memory trick:", "Exam tip:" or "Trap alert:" is marked as a tip
 """
 
 import json
@@ -53,7 +56,7 @@ ACRONYMS = {
     "SSN": "S S N", "ITIN": "I tin", "IP": "I P", "PIN": "pin", "AFSP": "A F S P", "CPA": "C P A", "CPAs": "C P A's", "CE": "C E", "LTC": "L T C",
     "AOTC": "A O T C", "LLC's": "L L C's", "PTC": "P T C", "SALT": "salt", "E&P": "E and P", "TV": "T V", "OK": "okay", "PDF": "P D F", "FTC": "F T C",
     "MFJs": "M F J's", "SEE": "S E E", "SEP-IRAs": "sep I R A's", "SEP-IRA": "sep I R A", "EZ": "E Z", "PF": "P F", "SS-4": "S S four", "SS-8": "S S eight", "QSST": "Q S S T", "QSSTs": "Q S S T's", "ESBT": "E S B T", "ESBTs": "E S B T's", "WOTC": "W O T C", "TMT": "T M T", "OBBBA": "the One Big Beautiful Bill Act", "AFS": "A F S", "LCM": "L C M", "BBA": "B B A", "AAA": "triple A", "PSC": "P S C", "PSCs": "P S C's", "DRD": "D R D", "AET": "A E T", "SMLLC": "single-member L L C", "FTE": "F T E", "FTEs": "F T E's", "ALE": "A L E", "VCSP": "V C S P", "GDS": "G D S", "ADS": "A D S", "DB": "D B", "HVAC": "H vac", "SUV": "S U V", "SUVs": "S U V's", "M-1": "M one", "M-2": "M two", "M-3": "M three", "3D": "three D", "ETF": "E T F", "ETFs": "E T F's", "ATIN": "A tin", "ITINs": "I tins", "ISO": "I S O", "ISOs": "I S O's", "QDRO": "quadro", "QDOT": "Q dot", "DSUE": "D sue", "PFIC": "P-fick", "PFICs": "P-ficks", "QEF": "Q E F", "ESA": "E S A", "PCS": "P C S", "IRD": "I R D", "FRV": "F R V", "FTA": "F T A", "LTCG": "L T C G", "REIT": "reet", "PTP": "P T P", "SSTB": "S S T B", "SSTBs": "S S T B's", "UBIA": "U B I A", "HDHP": "H D H P", "SE": "S E", "SS": "S S", "FMV": "F M V", "SEPP": "S E P P", "TIN": "tin", "TINs": "tins", "DIV": "div", "INT": "I N T", "SSA": "S S A", "PM": "P M", "AM": "A M", "NR": "N R", "LP": "L P", "PTP": "P T P", "PO": "P O", "HR": "H R", "US": "U S", "USA": "U S A", "TV": "T V", "RV": "R V", "UK": "U K", "PhD": "P H D", "ID": "I D", "DIY": "D I Y", "ACH": "A C H", "BBQ": "barbecue", "ASAP": "A sap", "FAQ": "F A Q", "LIFO": "life-oh",
-    "FIFO": "fife-oh", "PAL": "pal", "PALs": "pals", "UNICAP": "you-nee-cap", "ESOP": "E sop", "ESOPs": "E sops", "SIMPLEs": "simples",
+    "FIFO": "fife-oh", "QDROs": "quadros", "EINs": "E I N's", "SEPs": "seps", "PAL": "pal", "PALs": "pals", "UNICAP": "you-nee-cap", "ESOP": "E sop", "ESOPs": "E sops", "SIMPLEs": "simples",
 }
 
 MONTHS = "January|February|March|April|May|June|July|August|September|October|November|December"
@@ -206,9 +209,120 @@ def oven():
     return seq([tone(880, 0.25, release=0.2, vol=0.25), np.zeros(int(0.05 * SR)), tone(880, 0.25, release=0.2, vol=0.25), np.zeros(int(0.05 * SR)), tone(880, 0.4, release=0.3, vol=0.25)])
 
 
-SFX = {"theme": theme, "pop": pop, "ding": ding, "buzzer": buzzer, "stamp": stamp, "drumroll": drumroll, "crash": crash, "glitch": glitch, "rimshot": rimshot, "timer": oven}
+def hotseat():
+    """The Hot Seat theme: a game-show fanfare over a brushed drum."""
+    notes = [(392, .12), (392, .12), (523, .24), (0, .06), (494, .12), (523, .12), (659, .24), (0, .06), (784, .12), (659, .12), (784, .12), (1047, .6)]
+    mel = seq([np.zeros(int(d * SR)) if f == 0 else tone(f, d, "square", release=0.15, vol=0.09) + tone(f, d, release=0.2, vol=0.18) for f, d in notes])
+    n = len(mel)
+    t = np.arange(n) / SR
+    brush = np.random.randn(n) * 0.04 * (0.5 + 0.5 * np.sign(np.sin(2 * np.pi * 4 * t)))
+    return mel + brush + 0.15 * np.sin(2 * np.pi * 98 * t) * env(n, release=1.5)
+
+
+def question():
+    """A rising three-note sting before each question."""
+    return seq([tone(f, .11, "square", release=0.1, vol=0.1) + tone(f, .11, release=0.12, vol=0.16) for f in (523, 659, 784)] + [tone(1047, .35, release=0.2, vol=0.22)])
+
+
+def correct():
+    return seq([tone(784, .12, release=0.12, vol=0.25), tone(1047, .12, release=0.12, vol=0.25), tone(1319, .4, release=0.25, vol=0.28)])
+
+
+def engine(dur, f0, f1, vol, horn_at=None):
+    """A vehicle passing by: rumble plus tire noise that swells, with a Doppler drop from f0 to f1."""
+    n = int(dur * SR)
+    t = np.arange(n) / SR
+    x = t / dur
+    gain = np.exp(-((x - 0.5) ** 2) / 0.03)
+    f = f0 + (f1 - f0) / (1 + np.exp(-(x - 0.5) * 14))
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    rumble = np.sin(ph) + 0.5 * np.sin(2 * ph) + 0.25 * np.sign(np.sin(3 * ph))
+    sos = butter(2, [200, 2500], btype="band", fs=SR, output="sos")
+    tires = sosfilt(sos, np.random.randn(n))
+    return vol * gain * (0.25 * rumble + 0.5 * tires)
+
+
+def car():
+    return engine(3.2, 95, 70, 0.32)
+
+
+def truck():
+    out = engine(4.0, 55, 40, 0.45)
+    n = int(0.9 * SR)
+    hiss = sosfilt(butter(2, 3000, btype="high", fs=SR, output="sos"), np.random.randn(n)) * env(n, attack=0.05, release=0.4) * 0.25
+    out[int(1.6 * SR): int(1.6 * SR) + n] += hiss
+    return out
+
+
+def horn():
+    """A car horn: two detuned tones, beep-beeeep."""
+    def honk(d):
+        n = int(d * SR)
+        t = np.arange(n) / SR
+        w = np.sign(np.sin(2 * np.pi * 415 * t)) + np.sign(np.sin(2 * np.pi * 349 * t))
+        w = sosfilt(butter(2, [250, 3000], btype="band", fs=SR, output="sos"), w)
+        return 0.09 * w * np.minimum(1, t / 0.01) * np.minimum(1, (d - t) / 0.02)
+    return seq([honk(0.18), np.zeros(int(0.1 * SR)), honk(0.55)])
+
+
+def bikebell():
+    return seq([tone(2400, .25, release=0.12, vol=0.2) + tone(3120, .25, release=0.1, vol=0.1), tone(2400, .6, release=0.3, vol=0.2) + tone(3120, .6, release=0.2, vol=0.1)])
+
+
+def doorbell():
+    return seq([tone(659, .55, release=0.4, vol=0.3), tone(523, .9, release=0.6, vol=0.3)])
+
+
+def shopbell():
+    return seq([tone(2637, .12, release=0.1, vol=0.18), tone(3136, .5, release=0.3, vol=0.15)])
+
+
+def ring():
+    n = int(0.5 * SR)
+    t = np.arange(n) / SR
+    burst = 0.15 * (np.sin(2 * np.pi * 440 * t) + np.sin(2 * np.pi * 480 * t)) * (np.sin(2 * np.pi * 20 * t) > 0)
+    return seq([burst, np.zeros(int(0.2 * SR)), burst])
+
+
+def birds():
+    out = np.zeros(int(1.6 * SR))
+    for start in (0.0, 0.25, 0.45, 0.9, 1.1):
+        n = int(0.12 * SR)
+        t = np.arange(n) / SR
+        f = 3200 + 1600 * np.sin(np.pi * t / 0.12)
+        chirp = 0.12 * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.sin(np.pi * t / 0.12)
+        i = int(start * SR)
+        out[i:i + n] += chirp
+    return out
+
+
+def applause():
+    n = int(2.2 * SR)
+    claps = np.zeros(n)
+    for _ in range(140):
+        i = np.random.randint(0, n - 2000)
+        claps[i:i + 1200] += np.random.randn(1200) * np.exp(-np.arange(1200) / 150)
+    claps = sosfilt(butter(2, [600, 5000], btype="band", fs=SR, output="sos"), claps)
+    return 0.12 * claps * np.minimum(1, np.arange(n) / (0.2 * SR)) * np.minimum(1, (n - np.arange(n)) / (0.8 * SR))
+
+
+def tick():
+    out = []
+    for i in range(6):
+        c = tone(1800 if i % 2 == 0 else 1500, 0.04, release=0.01, vol=0.3)
+        out += [c, np.zeros(int(0.46 * SR))]
+    return seq(out)
+
+
+SFX = {"hotseat": hotseat, "q": question, "correct": correct, "car": car, "truck": truck, "horn": horn, "bikebell": bikebell, "doorbell": doorbell, "shopbell": shopbell,
+       "ring": ring, "birds": birds, "applause": applause, "tick": tick,
+       "theme": theme, "pop": pop, "ding": ding, "buzzer": buzzer, "stamp": stamp, "drumroll": drumroll, "crash": crash, "glitch": glitch, "rimshot": rimshot, "timer": oven}
 SFX_LABEL = {"theme": "Theme music", "pop": "Pop! Hoot appears", "ding": "Ding!", "buzzer": "Wrong-answer buzzer", "stamp": "Hoot stamps something", "drumroll": "Drumroll",
-             "crash": "Crash", "glitch": "The video call glitches", "rimshot": "Ba-dum-tss", "timer": "Oven timer", "bark": "Biscuit barks"}
+             "crash": "Crash", "glitch": "The video call glitches", "rimshot": "Ba-dum-tss", "timer": "Oven timer", "bark": "Biscuit barks",
+             "hotseat": "The Hot Seat theme", "q": "Question", "correct": "Correct-answer chime", "car": "A car drives past", "truck": "A delivery truck rumbles by",
+             "horn": "A car horn honks", "bikebell": "A bicycle bell", "doorbell": "Doorbell", "shopbell": "The bakery door bell jingles", "ring": "Phone rings",
+             "birds": "Birds chirp", "applause": "Applause", "tick": "The clock ticks"}
+TIP = re.compile(r"^(Memory trick|Exam tip|Trap alert)\b")
 
 
 # ---------------------------------------------------------------- voices
@@ -243,6 +357,7 @@ def main(ids):
         pos = 0.3
         transcript = []
         words = 0
+        qn = 0
         for raw in lines[1:]:
             line = raw.strip()
             if not line:
@@ -251,7 +366,11 @@ def main(ids):
             if m:
                 cue = m.group(1)
                 clip = bark() if cue == "bark" else SFX[cue]()
-                transcript.append({"t": round(pos, 2), "cue": SFX_LABEL[cue]})
+                if cue == "q":
+                    qn += 1
+                    transcript.append({"t": round(pos, 2), "cue": f"Question {qn}", "q": qn})
+                else:
+                    transcript.append({"t": round(pos, 2), "cue": SFX_LABEL[cue]})
                 audio.append(clip)
                 audio.append(np.zeros(int(0.15 * SR)))
                 pos += (len(clip) / SR) + 0.15
@@ -278,7 +397,10 @@ def main(ids):
             for t in takes:
                 s[: len(t)] += t / (len(takes) ** 0.5)
             names = [NAMES[w] for w in whos]
-            transcript.append({"t": round(pos, 2), "who": " and ".join([", ".join(names[:-1]), names[-1]]) if len(names) > 1 else names[0], "text": shown})
+            entry = {"t": round(pos, 2), "who": " and ".join([", ".join(names[:-1]), names[-1]]) if len(names) > 1 else names[0], "text": shown}
+            if TIP.match(shown):
+                entry["tip"] = True
+            transcript.append(entry)
             gap = 0.22 if shown.endswith(("!", "?")) else 0.3
             audio.append(s)
             audio.append(np.zeros(int(gap * SR)))
@@ -290,7 +412,7 @@ def main(ids):
         sf.write(wav, mix, SR)
         mp3 = os.path.join(OUT, f"{pid}.mp3")
         subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-af", "loudnorm=I=-16:TP=-1.5:LRA=11", "-ac", "1", "-ar", "24000", "-b:a", "48k", "-metadata", f"title={title}",
-                        "-metadata", "artist=Ledger Falls Unplugged (EASprint)", mp3], check=True)
+                        "-metadata", f"artist={'The Hot Seat' if pid.endswith('-hotseat') else 'Ledger Falls Unplugged'} (EASprint)", mp3], check=True)
         dur = len(mix) / SR
         with open(os.path.join(OUT, f"{pid}.json"), "w", encoding="utf-8") as f:
             json.dump({"id": pid, "title": title, "seconds": round(dur), "lines": transcript}, f, ensure_ascii=False, indent=0)
@@ -299,6 +421,7 @@ def main(ids):
 
 if __name__ == "__main__":
     args = sys.argv[1:]
-    if args == ["all"]:
-        args = sorted(f[:-4] for f in os.listdir(SCRIPTS) if f.endswith(".txt"))
+    if args and args[0] in ("all", "unplugged", "hotseat"):
+        every = sorted(f[:-4] for f in os.listdir(SCRIPTS) if f.endswith(".txt"))
+        args = [a for a in every if args[0] == "all" or (a.endswith("-hotseat") == (args[0] == "hotseat"))]
     main(args)

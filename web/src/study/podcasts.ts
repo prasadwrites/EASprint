@@ -4,13 +4,30 @@ import type { CastMember } from "./cast";
 import { canOpenUnit } from ".";
 
 /**
- * Ledger Falls Unplugged: one podcast per Study unit, a funny cast conversation that walks through the unit's
- * rules. Scripts live in podcasts/scripts/<domainId>.txt at the repo root and are rendered by podcasts/render.py
- * into web/public/podcasts/<domainId>.mp3 plus <domainId>.json (the timed transcript the player reads).
+ * Two podcasts per Study unit, each a funny cast conversation:
+ * - Ledger Falls Unplugged: the cast talks through the unit's rules.
+ * - The Hot Seat: a quiz show. Ace and Hoot ask exam-style questions, the rest of the cast answers (sometimes
+ *   wrong), then Ace and Hoot explain the rule and give a memory trick or exam tip.
+ * Scripts live in podcasts/scripts/<id>.txt at the repo root and are rendered by podcasts/render.py into
+ * web/public/podcasts/<id>.mp3 plus <id>.json (the timed transcript the player reads).
  * Access follows the unit: free accounts get Season 1, Unit 1; Pro and Pro Max get every unit.
  */
+export type ShowId = "unplugged" | "hotseat";
+
+export const SHOWS: Record<ShowId, { name: string; icon: string; tagline: string }> = {
+  unplugged: { name: "Ledger Falls Unplugged", icon: "🎧", tagline: "The cast talks through the unit's rules." },
+  hotseat: {
+    name: "The Hot Seat",
+    icon: "🔥",
+    tagline: "Ace and Hoot quiz the cast with exam-style questions, explain every answer and give a memory trick for exam day.",
+  },
+};
+
 export interface Podcast {
-  /** The unit (exam domain id), also the file name of the audio and transcript. */
+  /** The audio and transcript file name, and the player URL: the unit id, plus "-hotseat" for The Hot Seat. */
+  id: string;
+  show: ShowId;
+  /** The unit (exam domain id). */
   domainId: string;
   part: PartId;
   title: string;
@@ -29,6 +46,10 @@ export interface TranscriptLine {
   text?: string;
   cue?: string;
   stage?: string;
+  /** The Hot Seat: a question sting, numbered from 1. */
+  q?: number;
+  /** The Hot Seat: a line that starts "Memory trick:", "Exam tip:" or "Trap alert:". */
+  tip?: boolean;
 }
 
 export interface Transcript {
@@ -38,7 +59,26 @@ export interface Transcript {
   lines: TranscriptLine[];
 }
 
-const p = (part: PartId, domainId: string, minutes: number, title: string, cast: CastMember[], blurb: string): Podcast => ({ part, domainId, minutes, title, cast, blurb });
+const p = (part: PartId, domainId: string, minutes: number, title: string, cast: CastMember[], blurb: string): Podcast => ({
+  id: domainId,
+  show: "unplugged",
+  part,
+  domainId,
+  minutes,
+  title,
+  cast,
+  blurb,
+});
+const h = (part: PartId, domainId: string, minutes: number, title: string, cast: CastMember[], blurb: string): Podcast => ({
+  id: `${domainId}-hotseat`,
+  show: "hotseat",
+  part,
+  domainId,
+  minutes,
+  title,
+  cast,
+  blurb,
+});
 
 export const PODCASTS: Podcast[] = [
   p("part1", "p1d1", 23, "Shoebox Day and the One-Minute Marriage", ["Milo", "Penny", "Ace", "Hoot", "Lulu", "Dee"],
@@ -67,12 +107,42 @@ export const PODCASTS: Podcast[] = [
     "Milo becomes a Payment Plan Pal, Penny wins in Appeals, Hoot comes out of the shredder and Rosa learns what trust fund money is."),
   p("part3", "p3d4", 12, "The E-File Gauntlet and Biscuit Ate the Records", ["Milo", "Penny", "Ace", "Rosa", "Hoot", "Lulu"],
     "The series finale: every return is accepted, Biscuit eats a folder, and Hoot finally closes his file on the Pockets. Or does he?"),
+
+  h("part1", "p1d1", 24, "Birthdays, Juice Boxes and the Ten-Grand Rule", ["Ace", "Hoot", "Penny", "Milo", "Lulu", "Rosa", "Dee"],
+    "Hoot climbs out of the mailbox to keep score on the front porch. Rosa ages a year early, Dee's signal cuts out on the FBAR, and Milo learns to file at $400."),
+  h("part1", "p1d2", 24, "Raffles, Rollovers and the Wash Sale Trap", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "A yard-sale quiz: Penny's prize mower is income, Rosa confesses to a bartered goat, and Milo starts on negative Hoot points."),
+  h("part1", "p1d3", 22, "Schedule A, the Juice Box Credit and the Last Sunny Year", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "Hoot steps out of a snowman to quiz the cast on deductions and credits, and Lulu learns she's worth exactly $500 to the IRS."),
+  h("part1", "p1d4", 24, "The AMT, Both Halves and the Five Percent Month", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "Live from the church car wash: the AMT, self-employment tax, the pastor's housing allowance, and the penalty question that breaks Penny's flashcard."),
+  h("part1", "p1d5", 19, "Old Basis, December Checks and Injured Versus Innocent", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "At the bus stop where the bus never comes: divorce, 529s, a December check in a drawer, and Dee finally knows she's innocent."),
+  h("part1", "p1d6", 20, "Grandpa's Estate, Rosa's Gifts and the Foreign Form Avalanche", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "The Season 1 finale at Rosa's Rolls: estates, gifts and foreign forms, with Hoot covered in flour."),
+  h("part2", "p2d1", 20, "Costumes, K-1s and Who Gets to Be an S Corporation", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu"],
+    "From the side of the FOOD TRUCK: entity choice, partner basis and S corporation rules, and Gerald the sourdough jar is not a partnership representative."),
+  h("part2", "p2d2", 27, "Bertha, the Mileage Log and the Mid-Quarter Monster", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "Sixteen questions in front of Bertha the oven: COGS, expenses, meals, mileage, depreciation, recapture, workers, losses and the books."),
+  h("part2", "p2d3", 21, "Simple Trusts, the Coffee Cart and a Hen Named Deduction", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "The Season 2 finale at the farmers market: trusts, charities, retirement plans, farm rules and rentals, judged by a hen."),
+  h("part3", "p3d1", 17, "Enrolled, Not Certified", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "Hoot is delivered with Ace's new filing cabinet. Who can practice, Circular 230, preparer penalties, and Quick Refund Rex on the radio."),
+  h("part3", "p3d2", 17, "The 2848, the Code and the Three-Year Clock", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "A rainy-day quiz with a beagle who ate a power of attorney: 2848s and 8821s, legal authority, privilege and the statute clocks."),
+  h("part3", "p3d3", 19, "Liens, Levies, Appeals and Other People's Money", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "Milo models his Payment Plan Pal sweater while the cast takes on collections, Appeals, penalty relief and the trust fund recovery penalty."),
+  h("part3", "p3d4", 16, "The E-File Gauntlet and the Locked Filing Cabinet", ["Ace", "Hoot", "Penny", "Milo", "Rosa", "Lulu", "Dee"],
+    "The series finale: Hoot mails himself to the party, the cast runs the e-file and data security gauntlet, and an all-time champion is crowned."),
 ];
 
-export const podcastFor = (domainId: string) => PODCASTS.find((x) => x.domainId === domainId);
+/** A podcast by its id ("p1d1" or "p1d1-hotseat"). */
+export const podcastFor = (id: string) => PODCASTS.find((x) => x.id === id);
+/** A unit's podcasts: Ledger Falls Unplugged first, then The Hot Seat. */
+export const podcastsFor = (domainId: string) => PODCASTS.filter((x) => x.domainId === domainId);
 
-export const audioUrl = (pc: Podcast) => `/podcasts/${pc.domainId}.mp3`;
-export const transcriptUrl = (pc: Podcast) => `/podcasts/${pc.domainId}.json`;
+export const audioUrl = (pc: Podcast) => `/podcasts/${pc.id}.mp3`;
+export const transcriptUrl = (pc: Podcast) => `/podcasts/${pc.id}.json`;
 
 /** Podcasts follow their unit's access: the free unit for everyone, the rest on Pro and Pro Max. */
 export const canPlayPodcast = (pc: Podcast, account: Account | null, admin: boolean) => canOpenUnit(pc.part, pc.domainId, account, admin);
