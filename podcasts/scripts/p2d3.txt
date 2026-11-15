@@ -1,0 +1,137 @@
+# Season 2, Unit 3: Grandpa Walt Gets Mail, Rolly Retires and a Hen Named Deduction
+(Season 2 finale. Rosa's Rolls after closing. Grandpa Walt's portrait hangs over the counter. A hen sits on Milo's lap.)
+[theme]
+MILO: Ledger Falls! This is Unplugged, the Season 2 finale! I'm Milo Marsh, and today I have a co-host. Her name is Deduction.
+PENNY: Milo bought a chicken.
+MILO: She's a hen, Penny. And she's my nest egg.
+[bark]
+MILO: Biscuit, be nice to Deduction.
+ROSA: I'm Rosa. Please keep the hen away from the flour.
+ACE: And I'm Ace Okafor, enrolled agent. This unit is specialized returns: trusts and estates, exempt organizations, retirement plans, farmers, and rental property.
+MILO: Ace, you look different.
+ACE: I got a new label maker. It prints in two colors.
+PENNY: Ace, you've mentioned it four times since you walked in.
+ACE: It prints in TWO colors, Penny.
+MILO: Episode 3.1! Grandpa Walt Gets Mail! Penny, as Walt's executor, has a pile of mail for a man who isn't here.
+PENNY: A dividend check, a 1099-R, a magazine about stamps, and a birthday card from his dentist.
+ACE: Grandpa's estate files Form 1041 if it has gross income of $600 or more, or a nonresident alien beneficiary. A trust files if it has any taxable income, gross income of $600 or more, or a nonresident alien beneficiary. It needs an EIN, and Form 56 tells the IRS who the fiduciary is. The return is due the fifteenth day of the fourth month, April 15 for a calendar year. Estates can choose a fiscal year; trusts generally use a calendar year. Estimated tax is required, except for an estate's first two years.
+[pop]
+(The portrait of Grandpa Walt swings open like a door. Examiner Hoot climbs out from behind it.)
+HOOT: Hoo-hoo-HOLD it. Is there a dentist's birthday card in the estate?
+PENNY: Hoot! You were behind GRANDPA?
+HOOT: Examiner Hoot. Your grandfather's portrait has excellent wall clearance. He and I have an understanding. He watches the bakery. I watch the bakery. We do not speak.
+ROSA: Walt never spoke to anyone before ten AM either.
+HOOT: Exemptions. An estate gets $600. A simple trust, $300. A complex trust, $100. There is NO standard deduction. And the 2025 brackets are very compressed. Ten percent up to $3,150. Twenty-four percent up to $11,450. Thirty-five percent up to $15,650. Thirty-seven percent above that. The net investment income tax of three point eight percent applies to undistributed net investment income over $15,650.
+ACE: And long-term capital gains for estates and trusts: zero percent up to $3,250, fifteen percent up to $15,900, twenty percent above.
+PENNY: So the estate hits the top bracket at $15,650?
+ACE: Yes. That's why the distributions matter so much. Estates and trusts are conduits. They're taxed on the income they keep. The income they distribute is deductible, up to the lesser of the amount distributed or distributable net income, DNI. Beneficiaries pay tax on it through a K-1 from Form 1041. The character is retained. Capital gains are usually allocated to corpus, so they're not in DNI. And in the final year, excess deductions and carryovers pass to the beneficiaries.
+PENNY: Distribute it, deduct it, K-1 it.
+HOOT: Types of trust. A simple trust must distribute all its income currently, makes no charitable contributions, and distributes no principal. That's the $300 exemption. Any other trust is complex, with $100. A grantor trust, like a revocable living trust, has its income taxed to the grantor. And after death, a section 645 election lets a qualified revocable trust be treated as part of the estate.
+ACE: Then IRD again. Income earned but not received before death, like final wages, IRA and retirement balances, accrued interest and installment payments. It's taxed to the recipient with the decedent's character, no step-up, and there's a section 691(c) deduction for estate tax paid on the IRD. And the section 663(b) sixty-five day election lets distributions made in the first sixty-five days of a year be treated as made in the prior year.
+ROSA: Walt would have loved the sixty-five day rule. He always paid his bills on day sixty-four.
+[ding]
+MILO: Episode 3.2! The Milo Foundation!
+PENNY: Oh no.
+MILO: Aunt Rosa gives day-old bread to Pastor Gail's food pantry. So I founded the Milo Foundation. It gives out... me. I'm the volunteer barista at the pantry coffee cart.
+ROSA: He makes a very good latte. Very foamy.
+MILO: The foam is my brand.
+ACE: For section 501(c)(3), an organization must be organized and operated exclusively for exempt purposes. No private inurement. No political campaign activity. And lobbying can't be a substantial part of its activities. It applies on Form 1023, or Form 1023-EZ if gross receipts are $50,000 or less and assets $250,000 or less. File within twenty-seven months of formation for exemption back to the start. Churches are exempt without applying.
+MILO: No private inurement? What if the Milo Foundation buys me a hat?
+HOOT: Then the Milo Foundation becomes the Milo Problem. No part of the net earnings may benefit a private individual, Milo Marsh. Not even a hat person.
+MILO: I am a hat person.
+HOOT: I know. I have seen the fedora. It is in my file.
+ACE: Annual returns. Form 990-N if gross receipts are normally $50,000 or less. Form 990-EZ if gross receipts are under $200,000 AND total assets are under $500,000. Form 990 for others. Form 990-PF for all private foundations. Churches don't have to file. They're due the fifteenth day of the fifth month, May 15 for a calendar year. Form 8868 extends six months, but not for the 990-N.
+HOOT: Skip three years and the exemption is gone. Fail to file a required 990, 990-EZ, 990-PF or 990-N for three consecutive years, and exempt status is automatically revoked, effective on the due date of the third return. The organization may owe income tax, and later donations generally aren't deductible. It must reapply. Retroactive reinstatement is possible in some cases.
+ACE: Unrelated business income has three parts: a trade or business, regularly carried on, and not substantially related to the exempt purpose. Form 990-T is required if gross UBI is $1,000 or more. There's a $1,000 specific deduction. Corporations pay twenty-one percent. Exceptions include work done by volunteers, sales of donated merchandise, and activities for the convenience of members, students, patients or employees. Passive income, like dividends, interest, royalties and most real property rent, is excluded unless it's debt-financed.
+MILO: My coffee cart is run by volunteers! Me!
+ACE: That's the volunteer labor exception. The pantry's coffee cart is legally fine.
+HOOT: And donor rules. For a single gift of $250 or more, the donor needs a contemporaneous written acknowledgment showing the amount and any goods or services received and their value, by the earlier of the filing date or due date. For a quid pro quo payment over $75, the charity must disclose that only the excess over the value received is deductible. The penalty is $10 per contribution, up to $5,000 per event.
+ROSA: Pastor Gail had a gala dinner. $100 a ticket, for a $40 dinner.
+ACE: So the pantry must tell guests that only $60 is deductible.
+ROSA: The dinner was lasagna. Mine. It was worth at least $60.
+HOOT: The lasagna is valued at fair market value, Rosa. Not at sentimental value. I have had your lasagna. It is not $60. It is $41.
+ROSA: Hoot, you came back for thirds.
+HOOT: For thoroughness.
+[stamp]
+MILO: Episode 3.3! Rolly Wants to Retire! As Rolly the cinnamon roll, I'd like to know about my future.
+PENNY: You've been a cinnamon roll for four months, Milo.
+MILO: Mascot years are like dog years, Penny. I'm basically sixty.
+ACE: Let's go through the plans. A SEP is employer-only contributions to SEP-IRAs. For 2025, the limit is the lesser of twenty-five percent of compensation, with a compensation cap of $350,000, or $70,000. The same percentage goes to all eligible employees, and contributions are discretionary each year. Eligibility can require at most age twenty-one, service in three of the last five years, and $750 of compensation for 2025. You can set it up and fund it by the return due date, including extensions.
+HOOT: SIMPLE IRA. One hundred or fewer employees, and no other plan. For 2025, the deferral limit is $16,500, with a $3,500 catch-up at fifty or older, and $5,250 at ages sixty through sixty-three. The employer either matches up to three percent, which may drop to one percent in two of five years, or makes a two percent nonelective contribution for all eligible employees. It must be set up by October 1. And an early withdrawal in the first two years of participation has a TWENTY-FIVE percent additional tax.
+ACE: The 401(k). For 2025, the deferral limit is $23,500, the catch-up is $7,500 at fifty or older, and $11,250 at ages sixty through sixty-three, under SECURE 2.0. The section 415(c) total limit, not counting catch-up, is the lesser of one hundred percent of compensation or $70,000. A solo 401(k) lets the owner contribute as both employee and employer. And there's nondiscrimination testing unless it's a safe harbor plan.
+ROSA: SEP twenty-five percent, SIMPLE $16,500, 401(k) $23,500.
+ACE: For a self-employed person, the contribution base is net self-employment earnings, minus half of SE tax, minus the contribution itself. So a twenty-five percent rate equals twenty percent of net profit minus half the SE tax. The owner's own contributions go on Schedule 1 of Form 1040. Contributions for employees go on Schedule C. And for an S corporation owner, contributions are based on W-2 wages only.
+HOOT: The startup credit. Form 8881. For employers with one hundred or fewer employees starting a new plan. A credit for startup costs for three years: fifty percent of costs, or one hundred percent with fifty or fewer employees, up to the greater of $500, or the lesser of $250 per eligible non-highly-compensated employee or $5,000. An auto-enrollment credit of $500 a year for three years. And an employer contribution credit for small employers. All part of the general business credit.
+ROSA: So the bakery could start a 401(k) and get a credit?
+ACE: Rosa's Rolls has six employees. You'd qualify.
+MILO: And Rolly?
+ROSA: Rolly is an employee. Rolly can defer.
+MILO: Rolly will defer! Rolly is going to retire to a beach!
+PENNY: A beach of what?
+MILO: Icing, Penny. Obviously.
+[ding]
+MILO: Episode 3.4! A Hen Named Deduction! Inspired by the words "nest egg," I bought a chicken.
+(Deduction clucks. It's Milo doing the clucking.)
+MILO: Bawk. That was Deduction.
+PENNY: That was you, Milo.
+MILO: She's shy on the mic.
+ACE: A farm run for profit reports on Schedule F, and pays self-employment tax on net profit. The cash method is generally allowed. Animals you raise have zero basis. If it's a hobby under section 183, income is reported but expenses aren't deductible. There's a presumption of profit with a profit in three of five years, or two of seven for horses. The factors include a businesslike manner, expertise, time and history.
+HOOT: One hen, Milo Marsh. One hen is not a farm. One hen is a pet with a job.
+MILO: She lays an egg a day! Above the line!
+HOOT: Eggs are not above the line. Nothing about this is above the line.
+ACE: For real farmers, estimated tax is special. A farmer is someone with at least two-thirds of gross income from farming in the current or prior year. They can make one estimated payment by January 15, with a required amount of the lesser of sixty-six and two-thirds percent of the current year's tax or one hundred percent of the prior year's. Or they can file and pay in full by March 1, with no penalty. Same for fishermen.
+PENNY: Two-thirds farming? Pay by January 15 or file by March 1.
+HOOT: Schedule J. Farm income averaging taxes elected farm income at the prior three years' rates. Income tax only, NOT self-employment tax. A farming loss can be carried back two years, unless the farmer elects to waive it; otherwise forward indefinitely, with the eighty percent limit on post-2017 NOLs.
+ACE: Livestock. Animals held for draft, breeding, dairy or sporting purposes are section 1231 property if held twenty-four months or more for cattle and horses, or twelve months or more for other livestock. Poultry is excluded. Livestock held for sale is ordinary. Excess sales because of weather conditions can be reported the next year, or deferred if the animals are replaced. And crop insurance and disaster payments may be deferred one year if the crop would normally be sold the next year.
+MILO: Poultry is excluded? Deduction, I'm so sorry.
+ACE: Farmworkers. FICA applies if you pay a worker $150 or more in cash wages in the year, OR total farm labor expenses are $2,500 or more. Noncash farm wages aren't subject to FICA. Farm employers file Form 943 annually, due January 31, not Form 941. Farm FUTA applies with $20,000 or more of cash wages in a quarter, or ten or more farmworkers in twenty or more weeks, on Form 940.
+LULU: I'd like to work on Milo's farm. I charge $150 cash.
+HOOT: Then FICA applies, young lady.
+LULU: I'll take $149.
+HOOT: ...That child is very dangerous.
+[stamp]
+MILO: Final episode! The Room Above the Bakery! Ace has news!
+ACE: I'm renting the room above Rosa's Rolls. For my practice.
+ROSA: And he pays rent in cinnamon rolls. Which he buys from me.
+PENNY: That's a closed loop.
+ACE: It's an economy, Penny.
+ACE: Rental income includes rent, advance rent in the year received, deposits you keep or apply as final rent, expenses the tenant pays, and the fair market value of property or services received as rent. Refundable deposits aren't income. Expenses include interest, taxes, insurance, repairs and depreciation: twenty-seven and a half years for residential, thirty-nine for nonresidential, straight line with mid-month. Improvements are capitalized. Schedule E.
+HOOT: Cinnamon rolls received as rent are income at fair market value, Rosa.
+ROSA: I'm the landlord, Hoot. I KNOW. I already counted them.
+HOOT: Passive activity. A business without material participation, or any rental activity, regardless of participation, unless there's an exception, is passive. Passive losses offset only passive income. Suspended losses carry forward indefinitely, and are all released on a fully taxable disposition of the entire interest to an unrelated party. If the average customer stay is seven days or less, it's not a rental activity. Form 8582.
+ACE: The special allowance. Up to $25,000 of rental real estate losses can offset nonpassive income with active participation, meaning ten percent or more ownership and involvement in management decisions. It's reduced by fifty percent of modified AGI over $100,000, and zero at $150,000. Married filing separately and living together, zero. Married filing separately and living apart all year, $12,500, with the phase-out at $50,000 to $75,000.
+ROSA: Rent is passive. $25,000 if you manage it.
+ACE: And real estate professionals. More than half of personal services in real property trades or businesses where you materially participate, AND more than 750 hours there. On a joint return, one spouse must meet both tests alone. Then rentals with material participation are nonpassive, and there's an election to aggregate them. Employee hours count only if you're a more than five percent owner.
+HOOT: And the home rules. Rented fewer than fifteen days, the rent is excluded and there are no rental deductions. It's used as a home if personal days are more than the greater of fourteen days or ten percent of fair-rental days. Allocate expenses by days. A home rented fifteen days or more has rental deductions limited to rental income, with the excess carried forward. And family use counts as personal unless it's fair rent for a main home.
+PENNY: Ace, you're going to live above a bakery. You'll smell cinnamon all day.
+ACE: That's the plan. My label maker is already up there. Labeling the stairs.
+MILO: What do the stairs say?
+ACE: "Stair one." "Stair two." "Stair three."
+ROSA: In two colors.
+ACE: In two colors, Rosa.
+[theme]
+MILO: The Season 2 final lightning round! Hoot, from behind Grandpa.
+HOOT: An estate's exemption?
+PENNY: $600!
+HOOT: Correct. A trust reaches the thirty-seven percent bracket above what amount for 2025?
+ACE: $15,650.
+HOOT: Correct. A charity skips its 990 for three years in a row. What happens?
+MILO: Automatic revocation! Skip three years and it's gone!
+HOOT: Correct. The 2025 SIMPLE IRA deferral limit?
+ROSA: $16,500!
+HOOT: Correct. A farmer with two-thirds of gross income from farming files and pays in full by what date to avoid the estimated tax penalty?
+LULU: March 1. And I'm still charging $149.
+HOOT: Correct. Rental loss, active participation, modified AGI of $150,000. Special allowance?
+PENNY: Zero!
+HOOT: Correct. Everyone correct. Season 2 is complete. And Rosa's Rolls, as an S corporation, is in good standing.
+ROSA: Thank you, Hoot. Have a roll.
+HOOT: I will take one roll. For the archive.
+ACE: You don't have an archive, Hoot.
+HOOT: I have a stomach. It is the same thing.
+MILO: That's Season 2 of Ledger Falls Unplugged! Thank you to Ace, Penny, Aunt Rosa, Gerald, Lulu, Biscuit, Deduction the hen, Grandpa Walt's portrait, and the owl who lives behind it.
+HOOT: Examiner Hoot. Distribute it, deduct it, K-1 it. And someone, please, take the hen home. See you in Season 3.
+[pop]
+MILO: Wait, he took Deduction!
+PENNY: Milo, the hen just walked out the front door by herself.
+MILO: She's free-range now. Like me.
+[theme]

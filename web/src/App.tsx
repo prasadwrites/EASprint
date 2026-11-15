@@ -23,6 +23,7 @@ import PublicLinks from "./pages/PublicLinks";
 import PublicTest from "./pages/PublicTest";
 import Results from "./pages/Results";
 import Season from "./pages/Season";
+import PodcastPage from "./pages/Podcast";
 import Study from "./pages/Study";
 import Terms, { TermsText } from "./pages/Terms";
 import ReviewDeck from "./pages/ReviewDeck";
@@ -175,6 +176,7 @@ export default function App() {
           {(["part1", "part2", "part3"] as const).map((p) => (
             <Route key={p} path={`/study/${p}`} element={<Season part={p} />} />
           ))}
+          <Route path="/study/podcast/:domainId" element={<PodcastPage />} />
           <Route path="/study/:lessonId" element={<LessonPage />} />
           {auth && <Route path="/upgrade" element={<Upgrade />} />}
           {admin && <Route path="/admin" element={<Admin />} />}

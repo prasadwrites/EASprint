@@ -13,6 +13,7 @@ import { PracticePortrait } from "../study/office";
 import { BakeryPortrait } from "../study/bakery";
 import { SEASONS, STUDY_OUTLINE } from "../study/outline";
 import { bestScore } from "../study/progress";
+import { podcastFor } from "../study/podcasts";
 import { quizLink, UNIT_QUIZ } from "../study/quiz";
 import { castCard, SEASON_CAST } from "../study/seasonCast";
 
@@ -144,6 +145,7 @@ export default function Season({ part }: { part: PartId }) {
                   );
                 })}
               </div>
+              <UnitPodcast domainId={d.id} unit={ui + 1} open={open} />
               {live.length > 0 && (open ? <UnitQuiz part={part} domainId={d.id} unit={ui + 1} complete={live.length === d.topics.length} /> : <LockedUnit unit={ui + 1} />)}
             </section>
           );
@@ -153,12 +155,43 @@ export default function Season({ part }: { part: PartId }) {
   );
 }
 
+/** The unit's Ledger Falls Unplugged podcast: the cast talking through the unit's rules. */
+function UnitPodcast({ domainId, unit, open }: { domainId: string; unit: number; open: boolean }) {
+  const pc = podcastFor(domainId);
+  if (!pc) return null;
+  return (
+    <Link to={`/study/podcast/${domainId}`} className={`panel unit-podcast${open ? "" : " locked-unit"}`} aria-labelledby={`pc-${domainId}`}>
+      <span className="unit-podcast-icon" aria-hidden>
+        🎧
+      </span>
+      <span className="stack" style={{ gap: 4, minWidth: 0 }}>
+        <span className="eyebrow">Unit {unit} podcast · Ledger Falls Unplugged</span>
+        <strong id={`pc-${domainId}`} className="episode-title">
+          {pc.title}
+        </strong>
+        <span className="muted" style={{ fontSize: 14 }}>
+          {pc.blurb}
+        </span>
+        <span className="row" style={{ gap: 6 }}>
+          <Chip>{pc.minutes} min</Chip>
+          {open ? <Chip tone="good">▶ Listen</Chip> : <Chip>🔒 Pro</Chip>}
+          <span className="row" style={{ gap: 0 }}>
+            {pc.cast.map((c) => (
+              <Face key={c} who={c} size={26} />
+            ))}
+          </span>
+        </span>
+      </span>
+    </Link>
+  );
+}
+
 /** The end of a unit a free account can't open: what Pro adds, and the way to get it. */
 function LockedUnit({ unit }: { unit: number }) {
   return (
     <aside className="panel row spread locked-unit">
       <span>
-        🔒 Unit {unit} is on <strong>Pro</strong>: every episode in full, the rule cards, Ace vs. Hoot cases, your notes and Hoot's Unit {unit} exam.
+        🔒 Unit {unit} is on <strong>Pro</strong>: every episode in full, the rule cards, Ace vs. Hoot cases, the unit podcast, your notes and Hoot's Unit {unit} exam.
       </span>
       <Link className="btn btn-primary" to="/upgrade">
         Unlock with Pro

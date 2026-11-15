@@ -3,12 +3,13 @@ import { getQuestions } from "../data";
 import { PARTS } from "../data/exam";
 import { SOURCES } from "../data/sources";
 import { appendLine, notesToMarkdown } from "../lib/studyNotes";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { canOpenLesson, canOpenUnit, episodes, isFreeLesson, LESSONS, nextEpisode } from ".";
 import { STUDY_OUTLINE, topicCount } from "./outline";
 import { CAST_QUIZ_NOTES, quizLink, UNIT_QUIZ } from "./quiz";
 import { castCard, SEASON_CAST } from "./seasonCast";
+import { canPlayPodcast, lineAt, PODCASTS, type Transcript } from "./podcasts";
 
 // Pretend Firebase is configured, so plan checks apply (without it, the app opens everything).
 vi.mock("../lib/firebase", () => ({ db: {}, auth: null }));
@@ -180,5 +181,45 @@ describe("free plan", () => {
     const rules = readFileSync(resolve(__dirname, "../../../firestore.rules"), "utf8");
     const listed = [...rules.match(/function freeLesson\(d\) \{[^}]*\}/)![0].matchAll(/"([a-z0-9-]+)"/g)].map((m) => m[1]).sort();
     expect(listed).toEqual(Object.values(LESSONS).filter(isFreeLesson).map((l) => l.id).sort());
+  });
+});
+
+describe("unit podcasts", () => {
+  const free = { plan: "free" } as unknown as Parameters<typeof canOpenLesson>[1];
+  const pro = { plan: "pro" } as unknown as Parameters<typeof canOpenLesson>[1];
+  const root = resolve(__dirname, "../../..");
+
+  it("has one podcast per unit, in every season", () => {
+    const units = Object.values(STUDY_OUTLINE).flat().map((d) => d.id).sort();
+    expect(PODCASTS.map((pc) => pc.domainId).sort()).toEqual(units);
+    for (const pc of PODCASTS) expect(STUDY_OUTLINE[pc.part].some((d) => d.id === pc.domainId)).toBe(true);
+  });
+
+  it("plays only Season 1, Unit 1 on the free plan, and everything on Pro", () => {
+    for (const pc of PODCASTS) {
+      expect(canPlayPodcast(pc, free, false)).toBe(pc.domainId === "p1d1");
+      expect(canPlayPodcast(pc, pro, false)).toBe(true);
+    }
+  });
+
+  for (const pc of PODCASTS) {
+    it(`${pc.domainId} has a script, audio and a transcript of at least 10 minutes`, () => {
+      const script = readFileSync(resolve(root, `podcasts/scripts/${pc.domainId}.txt`), "utf8");
+      const speakers = new Set([...script.matchAll(/^([A-Z+]+):/gm)].flatMap((m) => m[1].split("+")));
+      expect(speakers.has("HOOT") && speakers.has("ACE")).toBe(true);
+      const t: Transcript = JSON.parse(readFileSync(resolve(root, `web/public/podcasts/${pc.domainId}.json`), "utf8"));
+      expect(t.seconds).toBeGreaterThanOrEqual(600);
+      expect(Math.round(t.seconds / 60)).toBe(pc.minutes);
+      expect(existsSync(resolve(root, `web/public/podcasts/${pc.domainId}.mp3`))).toBe(true);
+      for (let i = 1; i < t.lines.length; i++) expect(t.lines[i].t).toBeGreaterThanOrEqual(t.lines[i - 1].t);
+    });
+  }
+
+  it("finds the line playing at a given time", () => {
+    const lines = [{ t: 0 }, { t: 5 }, { t: 9 }];
+    expect(lineAt(lines, -1)).toBe(-1);
+    expect(lineAt(lines, 0)).toBe(0);
+    expect(lineAt(lines, 7)).toBe(1);
+    expect(lineAt(lines, 100)).toBe(2);
   });
 });

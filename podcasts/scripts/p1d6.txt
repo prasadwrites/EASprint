@@ -1,0 +1,127 @@
+# Unit 6: Grandpa's Estate, Rosa's Generosity and Dee's Avalanche
+(Season 1 finale. Recorded at Rosa's Rolls after closing, because Milo locked himself out of the closet.)
+[theme]
+MILO: Ledger Falls! Welcome to the Season 1 finale of Unplugged! I'm Milo Marsh, and we're recording at Rosa's Rolls, because the closet door locked behind me.
+PENNY: With the microphone mop inside.
+MILO: The mop is fine, Penny. The mop is a survivor.
+ROSA: And I'm Rosa. Welcome to my bakery, everyone. Sit, sit. Eat something. Ace, you look thin.
+ACE: I'm Ace Okafor, enrolled agent, and I'm the same weight as last week, Rosa.
+ROSA: Last week you looked thin too. Have a roll.
+ACE: Thank you. Unit 6 is estate tax, gift tax, and international information returns. Big numbers, big forms.
+MILO: And very small napkins. Rosa, these are cocktail napkins.
+ROSA: Bert bought ten thousand of them in 1994. We are still getting through them.
+MILO: Episode 6.1: Grandpa's Estate. Grandpa Walt's portrait is worried the tax world has overlooked his stamp collection.
+PENNY: Grandpa had four thousand stamps. He called them his "paper babies."
+ACE: Let's start with the gross estate. It's the fair market value of everything the decedent owned at death. That includes retirement accounts, life insurance the decedent owned or that's payable to the estate, and half of joint property with a spouse. And life insurance the decedent gave away within three years of death is pulled back in.
+[pop]
+(The flour sack in the corner explodes into a white cloud. Examiner Hoot emerges, completely white, except for his green eyeshade.)
+HOOT: Hoo-hoo-HOLD it. Nobody has valued the stamps.
+ROSA: Hoot! You were in my flour!
+HOOT: Examiner Hoot. I was in the flour for purposes of the file. Your flour is very fine. I respect that.
+MILO: Hooty, you look like a ghost.
+HOOT: I am the ghost of estates past, Milo Marsh, and do NOT call me Hooty. Valuation. Property is valued at the date of death. Or the executor can elect the alternate valuation date, six months later, but ONLY if it reduces BOTH the gross estate AND the estate tax. Property sold or distributed before the six months is valued on that date. And the heirs' basis follows the value used.
+ACE: Then the taxable estate. Start with the gross estate and subtract the marital deduction, which is unlimited for a U.S. citizen spouse, or uses a QDOT for a noncitizen spouse. The charitable deduction, also unlimited. Debts, mortgages, funeral and administration expenses. And state death taxes. Then you add back adjusted taxable gifts.
+PENNY: Grandpa's estate was about $600,000, including the stamps.
+HOOT: For deaths in 2025, the basic exclusion amount is $13,990,000. For 2026, $15,000,000. The top rate is forty percent. Form 706 is required when the gross estate plus adjusted taxable gifts is more than the exclusion. It is due nine months after death. Form 4768 gives a six-month extension to FILE. Paying is separate.
+PENNY: So no Form 706 for Grandpa.
+ACE: Not required, since $600,000 is well under $13,990,000. Nine months after death, plus six with Form 4768.
+ROSA: And my Bert? Bert died in 2023, and I never filed anything for him. We didn't have much. A bakery, a van, and ten thousand cocktail napkins.
+ACE: That's where portability comes in, Rosa. A surviving spouse can get the deceased spouse's unused exclusion amount, called DSUE, by electing it on a timely filed Form 706, even if a 706 wasn't otherwise required. And if no 706 was required, Revenue Procedure 2022-32 allows the election up to five years after the date of death.
+ROSA: Five years! Bert died in 2023. So I still have time!
+ACE: You do. You could file a 706 for Bert just to elect portability, and save his unused exclusion for you.
+ROSA: Bert, you wonderful man. Even dead, you're helping.
+HOOT: The flour is getting in my eyes. That is the only reason my eyes are watering.
+PENNY: Hoot, are you crying?
+HOOT: I am NOT crying. I am experiencing compliance.
+ACE: Last, the estate's income after death. An estate files Form 1041 if it has gross income of $600 or more. Estates can use a fiscal year. Distributions are taxed to beneficiaries through a K-1. And Form 56 notifies the IRS of the fiduciary.
+PENNY: I'm the executor. I filed Form 56. I filed it so fast.
+MILO: She was so proud. She framed the copy.
+PENNY: It's a good frame. It was on clearance.
+[ding]
+MILO: Segment two! Aunt Rosa's Generosity Problem! Aunt Rosa found out about Bert's exclusion and decided she's rich.
+ROSA: I'm giving everyone money! Penny, Milo, Lulu, Dee, Pastor Gail, the mailman, that nice boy who fixes my oven...
+HOOT: Hoo-hoo-HOLD it.
+ACE: For 2025, the gift tax annual exclusion is $19,000 per donee. You can give that to an unlimited number of people. It applies only to gifts of present interests. And anything over $19,000 to any one person is a taxable gift, reported on Form 709.
+ROSA: I gave Penny $50,000 for a new kitchen.
+ACE: Then $31,000 is a taxable gift. Rosa files Form 709.
+ROSA: Me? Penny's the one who got the money!
+HOOT: The DONOR files the 709 and pays any tax. Gifts are NOT income to the recipient.
+PENNY: The donor files. Gifts aren't the recipient's income.
+ACE: Form 709 is due April 15 of the year after the gift, and an extension of the donor's 1040 also extends it. Taxable gifts use up part of the unified exemption, $13,990,000 for 2025. There's no gift tax to pay until that exemption is used up.
+ROSA: So I don't actually pay tax on the kitchen money?
+ACE: Not unless you've given away more than about fourteen million dollars over your lifetime.
+ROSA: Ace, I sell cinnamon rolls.
+ACE: Then you're probably fine.
+HOOT: Gift splitting. Spouses can treat a gift to a third person as made half by each. That's $38,000 per donee for 2025. Both spouses must consent on Form 709, which is filed even when no tax is due. They must be married, and U.S. citizens or residents.
+ACE: And some gifts are unlimited and don't count at all. Tuition paid directly to the school, tuition only, not books or housing. Medical expenses paid directly to the provider. Gifts to a U.S. citizen spouse. Gifts to charity. Gifts to political organizations. And for a noncitizen spouse, the annual exclusion for 2025 is $190,000.
+ROSA: So if I pay Lulu's science camp tuition directly to the camp...
+ACE: A camp usually isn't a qualifying educational organization, Rosa. The unlimited exclusion is for tuition paid directly to a school with a regular faculty, curriculum and enrolled students. For Lulu, a 529 might be better.
+LULU: Did someone say 529? I've been waiting all season.
+HOOT: The 529 five-year election. You can contribute up to five times the annual exclusion, $95,000 for 2025, or $190,000 if split with a spouse, and elect on Form 709 to spread it over five years. If the donor dies within the five years, the unused years are pulled back into the estate.
+ROSA: Lulu, sweetheart, I'll put $19,000 in a 529 for you.
+LULU: Thank you, Aunt Rosa. I'll invest it in science.
+MILO: And maybe a little bit in... Milo's Mugs?
+LULU: No, Milo.
+PENNY: No, Milo.
+HOOT: No, Milo Marsh.
+ROSA: No, honey.
+[bark]
+MILO: Even Biscuit said no.
+[stamp]
+MILO: Final segment! Cousin Dee is finally home from the rig! In person!
+DEE: Hi, everyone! Can you hear me now? I'm right here. I can hear me now.
+PENNY: Dee! You're in 3D!
+LULU: Mom!
+DEE: Lulu, baby! I brought presents. And paperwork. So much paperwork.
+ACE: Let's start with the FBAR. That's FinCEN Form 114. A U.S. person with a financial interest in, or signature authority over, foreign financial accounts whose combined maximum values exceeded $10,000 at any time during the year. It's e-filed with FinCEN, not the IRS. Due April 15, with an automatic extension to October 15.
+DEE: I have my Norwegian account and signature authority on Astrid's. Combined, over $10,000.
+ACE: Then you file the FBAR. And Form 8938 reports specified foreign financial assets, attached to the 1040. The thresholds, year-end or any time during the year: living in the U.S., single $50,000 or $75,000, married filing jointly $100,000 or $150,000. Living abroad, single $200,000 or $300,000, married filing jointly $400,000 or $600,000. The penalty for failing to file is $10,000.
+HOOT: FBAR: FinCEN, over $10,000 aggregate, accounts including signature authority. Form 8938: the IRS with the return, higher thresholds, accounts PLUS other foreign financial assets. Filing one NEVER satisfies the other.
+DEE: And Astrid gave me a gift. $150,000. She's my godmother in Norway.
+ACE: That's Form 3520. You report gifts or bequests totaling more than $100,000 in a year from a nonresident alien or a foreign estate. The threshold is lower for gifts from foreign corporations and partnerships. Form 3520 also covers foreign trust transactions. The gift is not income. It's due with your return, and the penalty is five percent per month, up to twenty-five percent of the gift.
+DEE: Not income! Astrid, you angel.
+HOOT: Not income, but REPORTED. A gift you hide is a gift I find.
+DEE: And I own twelve percent of a Norwegian fishing company. And I put money into a Norwegian mutual fund.
+ACE: Form 5471 is for U.S. officers, directors and shareholders of ten percent or more in foreign corporations. Form 8865 is for foreign partnerships. And Form 8621 is for PFICs, passive foreign investment companies. Most foreign mutual funds and ETFs are PFICs, and they get a special tax regime unless you make a QEF or mark-to-market election. All of these are filed with the return.
+MILO: Dee, how much paperwork did you bring?
+DEE: It's in the van. All of the van.
+PENNY: The paperwork avalanche.
+HOOT: And here is the quiet danger. If an international information return is missing, Forms 8938, 3520, 5471, 8865 or 8621, the statute of limitations for the WHOLE return stays open until three years after the form is filed. If the failure had reasonable cause, only the related items stay open. And if omitted income from foreign assets is more than $5,000, the assessment period is six years.
+DEE: So if I skip a form, the IRS can come back forever?
+HOOT: Not forever. Until three years after you file it. Which, if you never file it, is a very long time. I am patient, Dee. I have a filing cabinet and nothing but time.
+ACE: Dee, we'll file everything. One form at a time. I have tabs.
+DEE: Ace, you're amazing. And I'm going to bake you that casserole. In person this time.
+ACE: Thank you.
+DEE: It's a tuna casserole.
+ACE: I'll laminate the recipe.
+[theme]
+MILO: The final lightning round of Season 1! Hoot, the floor is yours. Literally, you're covering it in flour.
+HOOT: Walt's estate is $600,000. Form 706 required?
+PENNY: No. The 2025 exclusion is $13,990,000.
+HOOT: Correct. Bert died in 2023 with no 706 required. Can Rosa still elect portability?
+ROSA: Yes! Up to five years after his death!
+HOOT: Correct. Rosa gives Penny $50,000. Who files Form 709?
+ROSA: Me, the donor. And it's not Penny's income.
+HOOT: Correct. Tuition paid directly to a college. Annual exclusion or unlimited?
+LULU: Unlimited, but tuition only, and paid directly to the school.
+HOOT: Correct. Dee files the FBAR. Does that satisfy Form 8938?
+DEE: Never! File both when both apply!
+HOOT: Correct. Astrid's $150,000 gift. Income?
+DEE: Not income, but Form 3520, because it's over $100,000 from a nonresident alien.
+HOOT: Correct. Everyone has passed. Season 1 is over. Penny Pocket and Milo Marsh, your first joint return has been accepted.
+PENNY: Really?
+HOOT: Really. I stamped it myself.
+[stamp]
+MILO: Hoot, I think that's the nicest thing you've ever done.
+HOOT: It was procedure. It brought me no joy. ...It brought me a small amount of joy.
+ROSA: Have a roll, Hoot. You've earned it.
+HOOT: I will take one roll. For the file.
+ACE: Hoot, that's your fifth roll.
+HOOT: It is a large file.
+MILO: That's Season 1 of Ledger Falls Unplugged! Thank you to Ace, Penny, Aunt Rosa, Gerald, Lulu, Cousin Dee, Biscuit, Grandpa Walt's portrait, and Examiner Hoot, who is now ninety percent flour.
+HOOT: Examiner Hoot. Value everything. Report every foreign form. And keep your records. See you in Season 2.
+[pop]
+ROSA: He took the whole tray of rolls.
+PENNY: And the cocktail napkins.
+ROSA: Oh, thank goodness. Only nine thousand to go.
+[theme]

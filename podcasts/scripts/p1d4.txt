@@ -1,0 +1,140 @@
+# Unit 4: The Other Tax, the Surtaxes and Hoot's Calculator
+(Season 1. Studio A. Milo has added a "live studio audience": Biscuit, on a beanbag.)
+[theme]
+MILO: Ledger Falls! It's Unplugged, Unit 4, and today we have a live studio audience!
+[bark]
+PENNY: It's Biscuit. On a beanbag.
+MILO: He's very engaged, Penny. I'm Milo Marsh, host, producer, head of marketing and now dog walker of the year, according to me.
+PENNY: I'm Penny Pocket, and this unit is the taxes nobody sees coming. The alternative minimum tax, self-employment tax, surtaxes, special taxpayers and penalties.
+ACE: And I'm Ace Okafor, enrolled agent. I brought a calendar. Every penalty in this unit is about time.
+MILO: Ace has a calendar for his calendars.
+ACE: It's a meta-calendar, Milo. It tells me when to update the other calendars.
+MILO: Episode 4.1! The Other Tax. Penny's employer, Gadget Works, gave her stock options!
+PENNY: Incentive stock options! I'm basically a tycoon.
+ACE: Then let's talk about the alternative minimum tax. Form 6251. You start with taxable income, add certain adjustments and preferences to get AMTI, subtract the exemption, and multiply by twenty-six or twenty-eight percent. That's the tentative minimum tax. If it's more than your regular tax, the difference is the AMT.
+PENNY: Two tax systems. You pay the higher one.
+[pop]
+(The beanbag deflates. Examiner Hoot rises out of it, beans sliding off his eyeshade.)
+HOOT: Hoo-hoo-HOLD it. Somebody said "stock options."
+PENNY: Hoot! You were in the BEANBAG? Biscuit was sitting on you!
+HOOT: Examiner Hoot. Biscuit was sitting on a federal investigation. It was very warm. I am not going to discuss it.
+[bark]
+HOOT: The add-backs. For AMT, you add back the standard deduction, state and local taxes, the bargain element of incentive stock options you exercise and hold, private activity bond interest, and certain depreciation, depletion and NOL differences. Still allowed: acquisition mortgage interest, charity, and medical expenses over seven point five percent.
+ACE: The 2025 AMT exemption is $88,100 single or head of household, $137,000 married filing jointly, and $68,500 married filing separately. It phases out at twenty-five percent of AMTI over $626,350, or $1,252,700 joint. The rates are twenty-six percent up to $239,100 of AMTI after the exemption, $119,550 for married filing separately, and twenty-eight percent above. And capital gain rates still apply under AMT.
+PENNY: So my options?
+ACE: If you exercise incentive stock options and hold the shares past year-end, there's no regular tax, but the spread, fair market value minus the exercise price, is an AMT adjustment. You also get a higher AMT basis in the shares. If you sell in the same year you exercise, it's ordinary income and there's no AMT adjustment. And a qualifying sale needs two years from the grant and one year from exercise.
+HOOT: And the minimum tax credit. Form 8801. AMT caused by deferral items, like ISOs and depreciation, can offset regular tax in later years, carried forward indefinitely. AMT from exclusion items, like SALT and the standard deduction, creates NO credit.
+MILO: Hoot, you're kind of an AMT yourself. You show up, add things back, and charge us the higher number.
+HOOT: Thank you.
+MILO: It wasn't a compliment.
+HOOT: I accepted it as one. I keep a file of compliments. It is very thin.
+[ding]
+MILO: Segment two! Milo pays himself! My dog-walking business had its best year ever. Net profit, $40,000!
+PENNY: Before you bought the dog-walking golf cart.
+MILO: The Mutt Mobile is a business asset, Penny.
+ACE: Then you owe self-employment tax on Schedule SE. It applies when net earnings from self-employment are $400 or more. Sole proprietors, independent contractors and general partners, including guaranteed payments. Even if there's no income tax due.
+MILO: How much?
+ACE: Net profit times ninety-two point three five percent, times fifteen point three percent. That's twelve point four percent Social Security, on earnings up to $176,100 for 2025, reduced by any W-2 Social Security wages, plus two point nine percent Medicare with no limit.
+HOOT: Be your own boss, pay both halves.
+MILO: Both halves? I only have one half. I'm one guy.
+HOOT: You are the employer AND the employee, Milo Marsh. You pay both halves.
+ACE: The good news: you deduct half of the self-employment tax as an adjustment on Schedule 1. But the QBI deduction and the standard and itemized deductions don't reduce self-employment earnings.
+PENNY: Now household employees. We have a nanny, Joy.
+ACE: A household employee is someone the family controls, both what work is done and how. A nanny, a housekeeper, a caretaker. A worker from an agency, or an independent self-employed worker who controls their own work, isn't your household employee.
+HOOT: 2025 thresholds. Cash wages of $2,800 or more to one household employee, and you owe Social Security and Medicare taxes. $1,000 or more in total wages in any calendar quarter, this year or last, and you owe FUTA. Income tax withholding happens only if you and the worker agree.
+ACE: Some workers aren't subject to Social Security and Medicare taxes as household employees: your spouse, your child under twenty-one, your parent in most cases, and workers under eighteen whose main job isn't household work, like students. The employer needs an EIN, files Form W-2 and W-3 by January 31, and files Schedule H with the 1040.
+PENNY: What about Tess, our sixteen-year-old sitter? She's in high school.
+ACE: A student under eighteen whose main occupation isn't household work. No Social Security or Medicare taxes on her wages.
+MILO: And if I pay Biscuit in treats?
+HOOT: Biscuit is not a household employee. Biscuit is household management. He has made that very clear to me.
+[bark]
+[stamp]
+MILO: Segment three! The Surtax Surprise! Penny got a big promotion AND took a weekend job!
+PENNY: Gadget Works made me Director of Gadgets. And on weekends I teach coupon classes at the library.
+MILO: She's a coupon influencer.
+PENNY: I have nine followers.
+MILO: Eleven, if you count me twice. I made a second account.
+ACE: Two surtaxes. The Additional Medicare Tax is nine-tenths of a percent on wages and self-employment income over $250,000 married filing jointly, $125,000 married filing separately, and $200,000 for everyone else. These thresholds aren't indexed for inflation. For a joint return, the spouses' income is combined. There's no employer share. Form 8959.
+HOOT: Note: the EMPLOYER withholds the nine-tenths of a percent only on wages it pays over $200,000, regardless of your filing status. Over- or under-withholding gets reconciled on Form 8959.
+PENNY: So if I make $190,000 and Milo makes $70,000...
+ACE: Neither employer withholds, because neither pays over $200,000. But your combined $260,000 is over the $250,000 joint threshold, so you owe nine-tenths of a percent on $10,000, on Form 8959.
+ACE: The other surtax is the net investment income tax. Three point eight percent of the lesser of net investment income or modified AGI over the same thresholds: $250,000 joint, $125,000 separate, $200,000 for others. Also not indexed. Form 8960.
+HOOT: Net investment income: interest, dividends, capital gains, rents, royalties, nonqualified annuities, and passive business income. NOT included: wages, self-employment income, IRA and plan distributions, tax-exempt interest, Social Security, and home sale gain you excluded.
+PENNY: Nine-tenths on pay, three point eight on investments, same thresholds.
+ACE: And excess Social Security. The 2025 maximum Social Security tax is $10,918.20. That's six point two percent of $176,100. If two or more employers withheld more than that in total, the excess is a refundable credit on Schedule 3. If one employer over-withheld, that employer fixes it. And each spouse is figured separately.
+HOOT: Uncollected Social Security and Medicare. If your W-2 shows codes A or B in box 12, on tips, or codes M or N on group-term life insurance for former employees, you pay that on Schedule 2. Unreported tips go on Form 4137.
+MILO: So many forms. Ace, do you ever dream about forms?
+ACE: Only the good ones. Last night it was Form 8959. It was beautifully balanced.
+PENNY: Ace needs a vacation.
+ACE: I took one. I went to a museum of filing cabinets.
+HOOT: I have been to that museum. I was an exhibit for six weeks. Nobody knew.
+[ding]
+MILO: Segment four, and this one has a guest. Sort of. Grandpa Walt's portrait, at Rosa's Rolls, has a complaint about his old part-time job.
+PENNY: Grandpa worked part-time at the bakery, and Aunt Rosa paid his last paycheck after he died.
+ACE: That's income in respect of a decedent, or IRD. Income the decedent earned or had a right to but hadn't received before death. Final pay, IRAs and 401(k)s, accrued interest, installment payments. It's taxed to whoever receives it, when they receive it, with the same character it would have had.
+HOOT: IRD gets NO stepped-up basis. And if estate tax was paid on the IRD, the recipient gets an itemized deduction for that estate tax, under section 691(c).
+ACE: Wages paid after death. If they're paid in the same year as the death, Social Security and Medicare go on the decedent's W-2, there's no income tax withholding, and the recipient gets a 1099-MISC. In a later year, it's a 1099-MISC only. Either way, it's taxed to the recipient as IRD.
+PENNY: And I filed Grandpa's final return.
+ACE: The final 1040 covers income through the date of death. It's due April 15 of the next year, signed by the personal representative. A surviving spouse may file jointly. Form 1310 claims a refund for a decedent, unless it's a surviving spouse on a joint return or a court-appointed representative. And Form 56 notifies the IRS of the fiduciary.
+ROSA: Penny, honey, I want it known I paid Walt in cash AND in cinnamon rolls.
+PENNY: Aunt Rosa! When did you get in the closet?
+ROSA: I've been here the whole time, dear. I brought scones. Gerald came too.
+MILO: Gerald is Aunt Rosa's sourdough starter. He has googly eyes. He's family.
+HOOT: Gerald is not on any return.
+ROSA: Gerald doesn't need a return, Hoot. Gerald needs love and flour.
+HOOT: The scones are... adequate.
+ROSA: You've had four.
+HOOT: I was testing for consistency.
+ACE: Next, special taxpayers. Pastor Gail is a minister. For income tax, a minister is an employee. For self-employment tax, ministerial pay is self-employment income. A housing allowance is excluded from income tax, limited to the least of the amount designated, the actual costs, or the fair rental value plus utilities. But it's included for self-employment tax.
+HOOT: Form 4361. A minister who is conscientiously opposed, on religious grounds, to public insurance can apply for an exemption from self-employment tax. File it by the due date of the second year with $400 or more of ministerial self-employment earnings. It's irrevocable, and it covers ministerial earnings only.
+ACE: Military. Combat zone pay is excluded: fully for enlisted members, capped for officers. Service members can elect to include it to figure the EITC. If you serve in a combat zone, you get 180 days after leaving, plus the days you served there, to file and pay. Moving expenses are deductible only for active duty members moving under a permanent change of station, on Form 3903. And reservists who travel more than 100 miles from home get a travel adjustment.
+PENNY: Ace's sister Nia is in the Army.
+ACE: Sergeant Nia Okafor. She files on time every year, even from a combat zone. She says it's because she's scared of me.
+MILO: Everyone's scared of you, Ace. You laminate things that don't need laminating.
+ACE: Everything needs laminating, Milo. That's the point.
+ROSA: IRD: taxed to whoever gets it, never stepped up. Bert used to say that. Well, he said, "Rosa, never step up on a wobbly chair." Close enough.
+[stamp]
+MILO: Final segment! Hoot's Calculator! Hoot bought a new toy.
+HOOT: It is not a toy. It is a penalty calculator. It has a printer. It prints in red.
+MILO: Because I filed my own return a month late.
+HOOT: You did. I have been waiting for this moment all season. Failure to file: five percent of the unpaid tax for each month or part of a month, up to twenty-five percent. Failure to pay: one-half of one percent per month, up to twenty-five percent. That drops to one-quarter percent per month during an installment agreement on a timely filed return.
+ACE: When both apply for the same month, the filing penalty is reduced by the paying penalty, so the combined total is five percent a month. And interest is charged on top.
+PENNY: Late filing hurts ten times more than late paying.
+HOOT: The extension. Form 4868 gives more time to FILE, to October 15, NOT to pay. Interest and the failure-to-pay penalty run from April 15. But if you paid at least ninety percent of the tax by April 15, and the rest with the return by the extended due date, there's no failure-to-pay penalty.
+MILO: Okay, okay. And estimated tax? For my dog walking?
+ACE: There's no estimated tax penalty if you owe less than $1,000, or if you paid the lesser of ninety percent of this year's tax or one hundred percent of last year's tax. That second one is one hundred ten percent if last year's AGI was over $150,000, or $75,000 married filing separately. Withholding is treated as paid evenly through the year. Form 2210.
+HOOT: The accuracy-related penalty. Twenty percent, for negligence or a substantial understatement, which is an understatement greater than ten percent of the correct tax or $5,000. Fraud: seventy-five percent. Reasonable cause and good faith can avoid the twenty percent.
+ACE: And relief. Reasonable cause means you used ordinary business care and prudence and still couldn't comply. Or first-time abatement: no penalties in the prior three years, all required returns filed, and the tax paid or arranged to be paid. First-time abatement covers failure to file, failure to pay and failure to deposit. Not accuracy-related or estimated tax penalties.
+MILO: First-time abatement! Hoot, I've never had a penalty before!
+HOOT: Hoo. Hoo. That is... technically correct. Your prior three years are clean.
+MILO: So I qualify?
+HOOT: You may qualify. I need to calculate.
+(Hoot types furiously. The calculator beeps, smokes, and prints six feet of red paper.)
+[crash]
+PENNY: Hoot, your calculator's on fire.
+HOOT: It is not on fire. It is processing with enthusiasm.
+ACE: Milo, you also paid most of the tax with your extension... wait, you didn't file an extension.
+MILO: I filed a feeling of an extension.
+HOOT: There is no form for a feeling, Milo Marsh.
+[theme]
+MILO: Lightning round! Hoot, if your calculator still works.
+HOOT: It does not. I will use my brain, which never crashes. AMT from SALT and the standard deduction. Does it create a minimum tax credit?
+PENNY: No! Only deferral items, like ISOs!
+HOOT: Correct. Net self-employment earnings of $350. Schedule SE?
+MILO: No, the line is $400!
+HOOT: Correct. A babysitter, sixteen, in high school, paid $3,000. Social Security and Medicare?
+PENNY: No. A student under eighteen whose main job isn't household work.
+HOOT: Correct. Employer withholds the Additional Medicare Tax starting at what wage?
+ACE: $200,000 of wages it pays, regardless of filing status.
+HOOT: Correct. Rosa. Is IRD stepped up?
+ROSA: Never, dear. Have a scone.
+HOOT: Correct. And I will. File late, combined penalty per month?
+MILO: Five percent! Which I know personally!
+HOOT: Correct. All correct. My penalty paper is useless. I will use it to wrap the scones.
+ROSA: That's the most sensible thing you've ever said, Hoot.
+MILO: That's Unit 4! Thanks to Ace, Penny, Aunt Rosa, Gerald, Biscuit, and the owl in the beanbag.
+HOOT: Examiner Hoot. File on time. If you cannot pay, file anyway. See you in Unit 5.
+[pop]
+PENNY: Milo, there's an owl-shaped hole in the beanbag.
+MILO: Call it a home office.
+[theme]

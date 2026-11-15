@@ -1,0 +1,683 @@
+{
+"id": "p3d2",
+"title": "Season 3, Unit 2: Hoot Audits the Pockets",
+"seconds": 792,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 3. Okafor Tax Defense, above Rosa's Rolls. A letter from the IRS sits on the desk, unopened. Penny is staring at it."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Ledger Falls, this is Unplugged, Season 3, Unit 2. I'm Milo Marsh, and today's episode is brought to you by fear."
+},
+{
+"t": 10.02,
+"who": "Penny",
+"text": "I'm Penny Pocket. I got a letter. Hoot is auditing our 2025 return. Our FIRST joint return. The one he STAMPED."
+},
+{
+"t": 17.7,
+"who": "Ace",
+"text": "I'm Ace Okafor, enrolled agent. Penny, breathe. An exam is not an accusation. It's a conversation with paperwork."
+},
+{
+"t": 26.62,
+"who": "Penny",
+"text": "A conversation with Hoot is a deposition, Ace."
+},
+{
+"t": 29.61,
+"who": "Rosa",
+"text": "And I'm Rosa. I'm here for moral support, and I brought stress rolls."
+},
+{
+"t": 34.09,
+"who": "Milo",
+"text": "What's a stress roll?"
+},
+{
+"t": 35.35,
+"who": "Rosa",
+"text": "It's a regular cinnamon roll, but you eat it faster."
+},
+{
+"t": 38.81,
+"who": "Milo",
+"text": "Episode 2.1! Hoot Audits the Pockets! Ace, how do we let you talk to Hoot for us?"
+},
+{
+"t": 44.09,
+"who": "Ace",
+"text": "Form 2848, power of attorney and declaration of representative. The taxpayer and an eligible representative both sign. It lists the specific tax matters, forms and periods. Future periods can go up to three years after the IRS receives it. You can't write \"all years.\" And spouses each file their own 2848, even on a joint return."
+},
+{
+"t": 69.73,
+"who": "Penny",
+"text": "So we need two 2848s. One for me, one for Milo."
+},
+{
+"t": 73.93,
+"who": "Milo",
+"text": "I signed mine already."
+},
+{
+"t": 75.47,
+"who": "Ace",
+"text": "Milo, it's chewed."
+},
+{
+"t": 77.18,
+"who": "Milo",
+"text": "Biscuit was helping."
+},
+{
+"t": 78.52,
+"cue": "Biscuit barks"
+},
+{
+"t": 79.19,
+"who": "Ace",
+"text": "It's still legible. Barely. There's a tooth mark through \"Milo.\""
+},
+{
+"t": 83.28,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 83.68,
+"stage": "The roof of Biscuit's doghouse, which Milo carried upstairs for the episode, pops open. Examiner Hoot climbs out."
+},
+{
+"t": 83.68,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. The chewed 2848 is acceptable. I have reviewed the bite pattern."
+},
+{
+"t": 90.5,
+"who": "Penny",
+"text": "Hoot! You were in BISCUIT'S HOUSE?"
+},
+{
+"t": 92.34,
+"who": "Hoot",
+"text": "Examiner Hoot. Biscuit offered. We have an arrangement. He does not eat my files, and I do not audit his treats."
+},
+{
+"t": 100.63,
+"cue": "Biscuit barks"
+},
+{
+"t": 101.29,
+"who": "Hoot",
+"text": "He says the arrangement is under review."
+},
+{
+"t": 104.68,
+"who": "Ace",
+"text": "With a 2848, a representative can receive confidential information and act for the taxpayer, including signing agreements, consents and statute extensions. What a representative can't do: endorse or cash a refund check, sign the return except in narrow cases, or add or substitute representatives unless the 2848 authorizes it."
+},
+{
+"t": 129.53,
+"who": "Hoot",
+"text": "Form 8821, tax information authorization. Any person or organization can be named to inspect or receive tax information. NO representation. It must reach the IRS within 120 days of the taxpayer signing it."
+},
+{
+"t": 149.19,
+"who": "Rosa",
+"text": "So if I want to see Penny's tax information, to worry properly..."
+},
+{
+"t": 153.31,
+"who": "Ace",
+"text": "Penny could sign an 8821 for you. You could look, but not represent her."
+},
+{
+"t": 158.88,
+"who": "Rosa",
+"text": "Looking is all I need, dear. Worrying is a spectator sport."
+},
+{
+"t": 163.0,
+"who": "Hoot",
+"text": "The CAF. The Centralized Authorization File records 2848s and 8821s, and representatives get a CAF number. A new 2848 for the same matters revokes prior ones, unless you check the box to retain them. To revoke, the taxpayer sends a copy marked \"REVOKE,\" signed. To withdraw, the representative sends a copy marked \"WITHDRAW,\" signed."
+},
+{
+"t": 189.11,
+"who": "Ace",
+"text": "And the third party designee checkbox on the return. It lets someone discuss that one return's processing, like refunds, math errors and notices. It ends at the due date, without extensions, of next year's return. No representation."
+},
+{
+"t": 205.64,
+"who": "Penny",
+"text": "2848 speaks for you. 8821 only looks. The checkbox only asks about one return."
+},
+{
+"t": 213.02,
+"who": "Hoot",
+"text": "Publication 216. A representative must have a valid authorization on file before discussing confidential information, and be prepared, prompt and courteous. A representative who unreasonably delays can be bypassed, with supervisor approval, and the IRS contacts the taxpayer directly."
+},
+{
+"t": 235.54,
+"who": "Ace",
+"text": "I'm never late, Hoot."
+},
+{
+"t": 237.27,
+"who": "Hoot",
+"text": "I know. It is very annoying."
+},
+{
+"t": 239.89,
+"cue": "Ding!"
+},
+{
+"t": 240.94,
+"who": "Milo",
+"text": "Episode 2.2! The Shoebox Strikes Back! Hoot wants proof of my business expenses. I have a box."
+},
+{
+"t": 247.42,
+"who": "Penny",
+"text": "It's my old shoebox. He stole my shoebox."
+},
+{
+"t": 250.26,
+"who": "Milo",
+"text": "I borrowed it. With love."
+},
+{
+"t": 251.84,
+"who": "Ace",
+"text": "First, the types of exams. Correspondence exams are by mail. Office exams are at an IRS office. Field exams have a revenue agent at your home or business. Hoot sends requests for records on Form 4564, an information document request. With a 2848, I can attend instead of you."
+},
+{
+"t": 275.05,
+"who": "Milo",
+"text": "Can I come anyway?"
+},
+{
+"t": 276.3,
+"who": "Ace",
+"text": "Please don't."
+},
+{
+"t": 277.64,
+"who": "Penny",
+"text": "He'll bring snacks and say something."
+},
+{
+"t": 279.67,
+"who": "Milo",
+"text": "I'll bring snacks and say NOTHING."
+},
+{
+"t": 281.47,
+"who": "Penny",
+"text": "Milo, you narrate your own sandwiches."
+},
+{
+"t": 283.83,
+"who": "Hoot",
+"text": "Burden of proof. The TAXPAYER carries the burden of substantiating deductions, credits and basis, with receipts, statements and logs. Milo Marsh, where is your mileage log?"
+},
+{
+"t": 296.95,
+"who": "Milo",
+"text": "It's in the box!"
+},
+{
+"t": 298.06,
+"who": "Hoot",
+"text": "This is a napkin. It says \"drove places. a lot.\""
+},
+{
+"t": 302.36,
+"who": "Milo",
+"text": "That's a summary."
+},
+{
+"t": 303.59,
+"who": "Ace",
+"text": "We organize by issue and answer exactly what the IDR asks. Keep copies of everything we send."
+},
+{
+"t": 310.49,
+"who": "Hoot",
+"text": "Ability to pay. If it comes to that: Form 433-A for individuals, 433-B for businesses, and 433-F, the short form. Income, expenses, assets, equity and debts. Allowable expenses use IRS national and local standards."
+},
+{
+"t": 331.78,
+"who": "Ace",
+"text": "And then authority. When I argue a position, the Internal Revenue Code comes first. Then Treasury regulations, where final beats temporary, and temporary beats proposed. Then revenue rulings and revenue procedures. And court decisions; the Supreme Court binds everyone. A private letter ruling binds only the taxpayer who requested it. And IRS publications aren't authority."
+},
+{
+"t": 357.32,
+"who": "Milo",
+"text": "What about a blog? I found a great blog. \"Deduct Your Dog dot com.\""
+},
+{
+"t": 361.63,
+"who": "Ace",
+"text": "Code first. Then regs, rulings and cases. A blog is never authority."
+},
+{
+"t": 367.3,
+"who": "Hoot",
+"text": "\"Deduct Your Dog dot com\" is run by Quick Refund Rex. I have a file on it."
+},
+{
+"t": 373.75,
+"cue": "Biscuit barks"
+},
+{
+"t": 374.42,
+"who": "Hoot",
+"text": "Biscuit has also read it. He was very disappointed."
+},
+{
+"t": 378.57,
+"who": "Ace",
+"text": "Section 7525 gives a confidentiality privilege, like attorney-client privilege, for tax advice from federally authorized practitioners, like CPAs and enrolled agents, in noncriminal matters before the IRS or in federal court. It doesn't cover criminal matters, tax shelter promotion, or information for preparing a return."
+},
+{
+"t": 403.73,
+"who": "Hoot",
+"text": "And return positions, Circular 230 section 10.34. A position with substantial authority needs no disclosure. A position with only a reasonable basis must be disclosed, on Form 8275, or 8275-R if it's contrary to a regulation. A tax shelter needs more likely than not. And you advise the client of possible penalties and the chance to avoid them by disclosing."
+},
+{
+"t": 433.49,
+"who": "Penny",
+"text": "Ace, do we have substantial authority for Milo's mileage?"
+},
+{
+"t": 437.08,
+"who": "Ace",
+"text": "We have a napkin, Penny."
+},
+{
+"t": 439.02,
+"who": "Penny",
+"text": "Is the napkin authority?"
+},
+{
+"t": 440.63,
+"who": "Ace",
+"text": "The napkin is a cry for help."
+},
+{
+"t": 443.04,
+"who": "Rosa",
+"text": "Have a stress roll, Penny."
+},
+{
+"t": 445.25,
+"who": "Penny",
+"text": "I'm having two."
+},
+{
+"t": 446.59,
+"cue": "Hoot stamps something"
+},
+{
+"t": 447.04,
+"who": "Milo",
+"text": "Episode 2.3! Ten Years of Hoot! Ace has the shoebox sorted by issue, and Hoot found a new toy. An hourglass."
+},
+{
+"t": 454.43,
+"who": "Hoot",
+"text": "It is not a toy. It is a statute of limitations visualizer."
+},
+{
+"t": 459.9,
+"stage": "Hoot sets a large hourglass on the desk. The sand begins to fall."
+},
+{
+"t": 459.9,
+"who": "Hoot",
+"text": "The assessment statute. Three years after the return is filed, and a return filed early is treated as filed on the due date. Six years if gross income is understated by more than twenty-five percent. And unlimited for fraud, evasion, or no return at all."
+},
+{
+"t": 479.6,
+"who": "Ace",
+"text": "The statute can be extended only by agreement, on Form 872. The agreement can be limited to certain issues, or the taxpayer can refuse. And the IRS will often issue a notice of deficiency if the taxpayer refuses."
+},
+{
+"t": 496.42,
+"who": "Hoot",
+"text": "The collection statute. Ten years from assessment. That date is the CSED. It is suspended while an offer in compromise or installment agreement request is pending, during a collection due process hearing, during bankruptcy, or while the taxpayer is outside the U.S. for six or more continuous months."
+},
+{
+"t": 518.23,
+"who": "Penny",
+"text": "Three years to assess. Ten years to collect."
+},
+{
+"t": 521.18,
+"who": "Milo",
+"text": "Ten years of Hoot."
+},
+{
+"t": 522.48,
+"who": "Hoot",
+"text": "Ten years of me. It sounds like a television series."
+},
+{
+"t": 526.64,
+"who": "Ace",
+"text": "It sounds like a horror series, Hoot."
+},
+{
+"t": 529.2,
+"who": "Hoot",
+"text": "A documentary. With me as the narrator."
+},
+{
+"t": 532.93,
+"who": "Ace",
+"text": "Now the good part. The Taxpayer Bill of Rights, in Publication 1. Ten rights. The right to be informed. To quality service. To pay no more than the correct amount of tax. To challenge the IRS's position and be heard. To appeal in an independent forum. To finality. To privacy. To confidentiality. To retain representation. And to a fair and just tax system."
+},
+{
+"t": 557.99,
+"who": "Milo",
+"text": "Penny, we have rights!"
+},
+{
+"t": 559.28,
+"who": "Penny",
+"text": "Ten of them!"
+},
+{
+"t": 560.31,
+"who": "Hoot",
+"text": "You have always had them. I keep a laminated copy in my eyeshade."
+},
+{
+"t": 565.35,
+"who": "Ace",
+"text": "You laminate?"
+},
+{
+"t": 566.71,
+"who": "Hoot",
+"text": "You are not the only one with a laminator, Ace Okafor."
+},
+{
+"t": 570.98,
+"stage": "A long, meaningful silence between Ace and Hoot."
+},
+{
+"t": 570.98,
+"who": "Ace",
+"text": "...What brand?"
+},
+{
+"t": 572.33,
+"who": "Hoot",
+"text": "We will discuss it at another time."
+},
+{
+"t": 575.35,
+"who": "Ace",
+"text": "The Taxpayer Advocate Service is an independent organization within the IRS. It's free. It helps with financial hardship, a threatened adverse action, or when the normal IRS channels have failed. You ask for help on Form 911. Low income taxpayer clinics are separate and independent."
+},
+{
+"t": 596.69,
+"who": "Hoot",
+"text": "And identity theft. A taxpayer who is a victim files Form 14039, the identity theft affidavit, unless they are responding to an IRS identity-verification letter. Keep filing, on paper if the e-file is rejected. And the IP PIN: six digits, new every year, available to anyone who can verify their identity."
+},
+{
+"t": 622.15,
+"who": "Dee",
+"text": "Can you hear me now? Penny, someone filed a return in my name! With a dog as a dependent!"
+},
+{
+"t": 627.45,
+"who": "Penny",
+"text": "Dee! You're back on the rig?"
+},
+{
+"t": 629.02,
+"who": "Dee",
+"text": "One more contract! And someone claimed a beagle named \"Biscuit Two\"!"
+},
+{
+"t": 633.12,
+"who": "Ace",
+"text": "Dee, file Form 14039, keep filing your own return, on paper if it's rejected, and get an IP PIN."
+},
+{
+"t": 642.51,
+"who": "Hoot",
+"text": "And tell Biscuit Two he is not a dependent."
+},
+{
+"t": 646.1,
+"cue": "Biscuit barks"
+},
+{
+"t": 646.76,
+"who": "Hoot",
+"text": "Biscuit agrees. He finds Biscuit Two offensive."
+},
+{
+"t": 650.67,
+"who": "Dee",
+"text": "Thanks, Ace! I'm getting the PIN right..."
+},
+{
+"t": 653.31,
+"cue": "The video call glitches"
+},
+{
+"t": 653.96,
+"who": "Dee",
+"text": "...now!"
+},
+{
+"t": 655.17,
+"cue": "Ding!"
+},
+{
+"t": 656.22,
+"who": "Milo",
+"text": "Bonus segment! While we wait for Hoot's report: Penny and Milo's audit survival tips!"
+},
+{
+"t": 661.34,
+"who": "Penny",
+"text": "Tip one. Open the letter. Don't put it in the freezer."
+},
+{
+"t": 664.42,
+"who": "Milo",
+"text": "That was one time."
+},
+{
+"t": 665.74,
+"who": "Penny",
+"text": "It was three times, Milo. Tip two. Call your enrolled agent."
+},
+{
+"t": 669.88,
+"who": "Ace",
+"text": "Tip three. Read what the letter actually asks for, and answer that."
+},
+{
+"t": 674.28,
+"who": "Milo",
+"text": "Tip four. Don't hire Quick Refund Rex."
+},
+{
+"t": 676.82,
+"who": "Rex",
+"text": "Did someone say Quick Refund Rex? Audit problems? I'll make 'em vanish! I don't do paperwork! I don't do PTINs! I barely do Tuesdays!"
+},
+{
+"t": 685.25,
+"stage": "Ace calmly unplugs the radio."
+},
+{
+"t": 685.25,
+"who": "Ace",
+"text": "Tip five. Unplug Rex."
+},
+{
+"t": 687.34,
+"who": "Hoot",
+"text": "Tip six. Never, ever ignore Examiner Hoot."
+},
+{
+"t": 691.3,
+"who": "Rosa",
+"text": "Tip seven. Eat something. You can't think on an empty stomach."
+},
+{
+"t": 695.31,
+"who": "Hoot",
+"text": "Rosa's tip is correct. It is not in the Internal Revenue Manual, but it is correct."
+},
+{
+"t": 701.87,
+"cue": "Theme music"
+},
+{
+"t": 703.72,
+"who": "Milo",
+"text": "Lightning round! Hoot, with the hourglass."
+},
+{
+"t": 705.98,
+"who": "Hoot",
+"text": "The sand is falling. Answer quickly. Married couple, joint return. How many 2848s?"
+},
+{
+"t": 713.33,
+"who": "Penny",
+"text": "Two! One each!"
+},
+{
+"t": 714.64,
+"who": "Hoot",
+"text": "Correct. Can a 2848 representative cash the client's refund check?"
+},
+{
+"t": 720.71,
+"who": "Ace",
+"text": "No. Never."
+},
+{
+"t": 722.08,
+"who": "Hoot",
+"text": "Correct. An 8821 gives representation rights. True or false?"
+},
+{
+"t": 727.95,
+"who": "Rosa",
+"text": "False. It only looks. Like me."
+},
+{
+"t": 730.36,
+"who": "Hoot",
+"text": "Correct. Is an IRS publication legal authority?"
+},
+{
+"t": 734.76,
+"who": "Milo",
+"text": "No! And neither is \"Deduct Your Dog dot com.\""
+},
+{
+"t": 737.66,
+"who": "Hoot",
+"text": "Correct. Gross income understated by thirty percent. Assessment statute?"
+},
+{
+"t": 743.53,
+"who": "Penny",
+"text": "Six years."
+},
+{
+"t": 744.81,
+"who": "Hoot",
+"text": "Correct. The collection statute?"
+},
+{
+"t": 747.37,
+"who": "Ace",
+"text": "Ten years from assessment, with suspensions."
+},
+{
+"t": 750.38,
+"who": "Hoot",
+"text": "Correct. Which form asks for help from the Taxpayer Advocate Service?"
+},
+{
+"t": 755.16,
+"who": "Dee",
+"text": "Form 911! The signal came back for that!"
+},
+{
+"t": 758.77,
+"who": "Hoot",
+"text": "Correct. Everyone has passed. The audit, however, continues."
+},
+{
+"t": 763.29,
+"who": "Penny",
+"text": "Hoot, how is it going? Just tell us."
+},
+{
+"t": 765.66,
+"who": "Hoot",
+"text": "I cannot discuss an open examination on a podcast. I can only say: it is going."
+},
+{
+"t": 772.54,
+"who": "Milo",
+"text": "Is it going well?"
+},
+{
+"t": 773.7,
+"who": "Hoot",
+"text": "It is going, Milo Marsh. Bring your mileage log next time. A real one. Not a napkin."
+},
+{
+"t": 780.72,
+"who": "Milo",
+"text": "What about a placemat?"
+},
+{
+"t": 782.09,
+"who": "Hoot",
+"text": "Good day. See you in Unit 3."
+},
+{
+"t": 784.87,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 785.27,
+"stage": "The doghouse roof slams shut."
+},
+{
+"t": 785.27,
+"who": "Penny",
+"text": "He's still in the doghouse."
+},
+{
+"t": 787.0,
+"who": "Milo",
+"text": "Honestly, Penny? That's where I usually end up, too."
+},
+{
+"t": 789.9,
+"cue": "Theme music"
+}
+]
+}

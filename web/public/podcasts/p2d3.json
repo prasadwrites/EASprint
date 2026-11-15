@@ -1,0 +1,674 @@
+{
+"id": "p2d3",
+"title": "Season 2, Unit 3: Grandpa Walt Gets Mail, Rolly Retires and a Hen Named Deduction",
+"seconds": 1288,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 2 finale. Rosa's Rolls after closing. Grandpa Walt's portrait hangs over the counter. A hen sits on Milo's lap."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Ledger Falls! This is Unplugged, the Season 2 finale! I'm Milo Marsh, and today I have a co-host. Her name is Deduction."
+},
+{
+"t": 10.26,
+"who": "Penny",
+"text": "Milo bought a chicken."
+},
+{
+"t": 11.88,
+"who": "Milo",
+"text": "She's a hen, Penny. And she's my nest egg."
+},
+{
+"t": 14.31,
+"cue": "Biscuit barks"
+},
+{
+"t": 14.98,
+"who": "Milo",
+"text": "Biscuit, be nice to Deduction."
+},
+{
+"t": 16.92,
+"who": "Rosa",
+"text": "I'm Rosa. Please keep the hen away from the flour."
+},
+{
+"t": 20.42,
+"who": "Ace",
+"text": "And I'm Ace Okafor, enrolled agent. This unit is specialized returns: trusts and estates, exempt organizations, retirement plans, farmers, and rental property."
+},
+{
+"t": 32.62,
+"who": "Milo",
+"text": "Ace, you look different."
+},
+{
+"t": 34.05,
+"who": "Ace",
+"text": "I got a new label maker. It prints in two colors."
+},
+{
+"t": 37.72,
+"who": "Penny",
+"text": "Ace, you've mentioned it four times since you walked in."
+},
+{
+"t": 40.75,
+"who": "Ace",
+"text": "It prints in TWO colors, Penny."
+},
+{
+"t": 43.08,
+"who": "Milo",
+"text": "Episode 3.1! Grandpa Walt Gets Mail! Penny, as Walt's executor, has a pile of mail for a man who isn't here."
+},
+{
+"t": 50.81,
+"who": "Penny",
+"text": "A dividend check, a 1099-R, a magazine about stamps, and a birthday card from his dentist."
+},
+{
+"t": 57.19,
+"who": "Ace",
+"text": "Grandpa's estate files Form 1041 if it has gross income of $600 or more, or a nonresident alien beneficiary. A trust files if it has any taxable income, gross income of $600 or more, or a nonresident alien beneficiary. It needs an EIN, and Form 56 tells the IRS who the fiduciary is. The return is due the fifteenth day of the fourth month, April 15 for a calendar year. Estates can choose a fiscal year; trusts generally use a calendar year. Estimated tax is required, except for an estate's first two years."
+},
+{
+"t": 98.87,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 99.27,
+"stage": "The portrait of Grandpa Walt swings open like a door. Examiner Hoot climbs out from behind it."
+},
+{
+"t": 99.27,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. Is there a dentist's birthday card in the estate?"
+},
+{
+"t": 104.05,
+"who": "Penny",
+"text": "Hoot! You were behind GRANDPA?"
+},
+{
+"t": 106.06,
+"who": "Hoot",
+"text": "Examiner Hoot. Your grandfather's portrait has excellent wall clearance. He and I have an understanding. He watches the bakery. I watch the bakery. We do not speak."
+},
+{
+"t": 118.21,
+"who": "Rosa",
+"text": "Walt never spoke to anyone before ten AM either."
+},
+{
+"t": 121.73,
+"who": "Hoot",
+"text": "Exemptions. An estate gets $600. A simple trust, $300. A complex trust, $100. There is NO standard deduction. And the 2025 brackets are very compressed. Ten percent up to $3,150. Twenty-four percent up to $11,450. Thirty-five percent up to $15,650. Thirty-seven percent above that. The net investment income tax of three point eight percent applies to undistributed net investment income over $15,650."
+},
+{
+"t": 164.89,
+"who": "Ace",
+"text": "And long-term capital gains for estates and trusts: zero percent up to $3,250, fifteen percent up to $15,900, twenty percent above."
+},
+{
+"t": 178.78,
+"who": "Penny",
+"text": "So the estate hits the top bracket at $15,650?"
+},
+{
+"t": 183.67,
+"who": "Ace",
+"text": "Yes. That's why the distributions matter so much. Estates and trusts are conduits. They're taxed on the income they keep. The income they distribute is deductible, up to the lesser of the amount distributed or distributable net income, DNI. Beneficiaries pay tax on it through a K-1 from Form 1041. The character is retained. Capital gains are usually allocated to corpus, so they're not in DNI. And in the final year, excess deductions and carryovers pass to the beneficiaries."
+},
+{
+"t": 219.19,
+"who": "Penny",
+"text": "Distribute it, deduct it, K-1 it."
+},
+{
+"t": 221.47,
+"who": "Hoot",
+"text": "Types of trust. A simple trust must distribute all its income currently, makes no charitable contributions, and distributes no principal. That's the $300 exemption. Any other trust is complex, with $100. A grantor trust, like a revocable living trust, has its income taxed to the grantor. And after death, a section 645 election lets a qualified revocable trust be treated as part of the estate."
+},
+{
+"t": 250.03,
+"who": "Ace",
+"text": "Then IRD again. Income earned but not received before death, like final wages, IRA and retirement balances, accrued interest and installment payments. It's taxed to the recipient with the decedent's character, no step-up, and there's a section 691(c) deduction for estate tax paid on the IRD. And the section 663(b) sixty-five day election lets distributions made in the first sixty-five days of a year be treated as made in the prior year."
+},
+{
+"t": 283.69,
+"who": "Rosa",
+"text": "Walt would have loved the sixty-five day rule. He always paid his bills on day sixty-four."
+},
+{
+"t": 289.23,
+"cue": "Ding!"
+},
+{
+"t": 290.28,
+"who": "Milo",
+"text": "Episode 3.2! The Milo Foundation!"
+},
+{
+"t": 293.11,
+"who": "Penny",
+"text": "Oh no."
+},
+{
+"t": 294.17,
+"who": "Milo",
+"text": "Aunt Rosa gives day-old bread to Pastor Gail's food pantry. So I founded the Milo Foundation. It gives out... me. I'm the volunteer barista at the pantry coffee cart."
+},
+{
+"t": 305.42,
+"who": "Rosa",
+"text": "He makes a very good latte. Very foamy."
+},
+{
+"t": 308.54,
+"who": "Milo",
+"text": "The foam is my brand."
+},
+{
+"t": 310.03,
+"who": "Ace",
+"text": "For section 501(c)(3), an organization must be organized and operated exclusively for exempt purposes. No private inurement. No political campaign activity. And lobbying can't be a substantial part of its activities. It applies on Form 1023, or Form 1023-EZ if gross receipts are $50,000 or less and assets $250,000 or less. File within twenty-seven months of formation for exemption back to the start. Churches are exempt without applying."
+},
+{
+"t": 347.53,
+"who": "Milo",
+"text": "No private inurement? What if the Milo Foundation buys me a hat?"
+},
+{
+"t": 351.53,
+"who": "Hoot",
+"text": "Then the Milo Foundation becomes the Milo Problem. No part of the net earnings may benefit a private individual, Milo Marsh. Not even a hat person."
+},
+{
+"t": 362.88,
+"who": "Milo",
+"text": "I am a hat person."
+},
+{
+"t": 364.27,
+"who": "Hoot",
+"text": "I know. I have seen the fedora. It is in my file."
+},
+{
+"t": 368.43,
+"who": "Ace",
+"text": "Annual returns. Form 990-N if gross receipts are normally $50,000 or less. Form 990-EZ if gross receipts are under $200,000 AND total assets are under $500,000. Form 990 for others. Form 990-PF for all private foundations. Churches don't have to file. They're due the fifteenth day of the fifth month, May 15 for a calendar year. Form 8868 extends six months, but not for the 990-N."
+},
+{
+"t": 403.9,
+"who": "Hoot",
+"text": "Skip three years and the exemption is gone. Fail to file a required 990, 990-EZ, 990-PF or 990-N for three consecutive years, and exempt status is automatically revoked, effective on the due date of the third return. The organization may owe income tax, and later donations generally aren't deductible. It must reapply. Retroactive reinstatement is possible in some cases."
+},
+{
+"t": 433.18,
+"who": "Ace",
+"text": "Unrelated business income has three parts: a trade or business, regularly carried on, and not substantially related to the exempt purpose. Form 990-T is required if gross UBI is $1,000 or more. There's a $1,000 specific deduction. Corporations pay twenty-one percent. Exceptions include work done by volunteers, sales of donated merchandise, and activities for the convenience of members, students, patients or employees. Passive income, like dividends, interest, royalties and most real property rent, is excluded unless it's debt-financed."
+},
+{
+"t": 474.95,
+"who": "Milo",
+"text": "My coffee cart is run by volunteers! Me!"
+},
+{
+"t": 477.75,
+"who": "Ace",
+"text": "That's the volunteer labor exception. The pantry's coffee cart is legally fine."
+},
+{
+"t": 483.34,
+"who": "Hoot",
+"text": "And donor rules. For a single gift of $250 or more, the donor needs a contemporaneous written acknowledgment showing the amount and any goods or services received and their value, by the earlier of the filing date or due date. For a quid pro quo payment over $75, the charity must disclose that only the excess over the value received is deductible. The penalty is $10 per contribution, up to $5,000 per event."
+},
+{
+"t": 512.58,
+"who": "Rosa",
+"text": "Pastor Gail had a gala dinner. $100 a ticket, for a $40 dinner."
+},
+{
+"t": 518.01,
+"who": "Ace",
+"text": "So the pantry must tell guests that only $60 is deductible."
+},
+{
+"t": 522.58,
+"who": "Rosa",
+"text": "The dinner was lasagna. Mine. It was worth at least $60."
+},
+{
+"t": 526.99,
+"who": "Hoot",
+"text": "The lasagna is valued at fair market value, Rosa. Not at sentimental value. I have had your lasagna. It is not $60. It is $41."
+},
+{
+"t": 538.23,
+"who": "Rosa",
+"text": "Hoot, you came back for thirds."
+},
+{
+"t": 540.62,
+"who": "Hoot",
+"text": "For thoroughness."
+},
+{
+"t": 542.14,
+"cue": "Hoot stamps something"
+},
+{
+"t": 542.59,
+"who": "Milo",
+"text": "Episode 3.3! Rolly Wants to Retire! As Rolly the cinnamon roll, I'd like to know about my future."
+},
+{
+"t": 549.46,
+"who": "Penny",
+"text": "You've been a cinnamon roll for four months, Milo."
+},
+{
+"t": 552.24,
+"who": "Milo",
+"text": "Mascot years are like dog years, Penny. I'm basically sixty."
+},
+{
+"t": 556.23,
+"who": "Ace",
+"text": "Let's go through the plans. A SEP is employer-only contributions to SEP-IRAs. For 2025, the limit is the lesser of twenty-five percent of compensation, with a compensation cap of $350,000, or $70,000. The same percentage goes to all eligible employees, and contributions are discretionary each year. Eligibility can require at most age twenty-one, service in three of the last five years, and $750 of compensation for 2025. You can set it up and fund it by the return due date, including extensions."
+},
+{
+"t": 597.97,
+"who": "Hoot",
+"text": "SIMPLE IRA. One hundred or fewer employees, and no other plan. For 2025, the deferral limit is $16,500, with a $3,500 catch-up at fifty or older, and $5,250 at ages sixty through sixty-three. The employer either matches up to three percent, which may drop to one percent in two of five years, or makes a two percent nonelective contribution for all eligible employees. It must be set up by October 1. And an early withdrawal in the first two years of participation has a TWENTY-FIVE percent additional tax."
+},
+{
+"t": 642.59,
+"who": "Ace",
+"text": "The 401(k). For 2025, the deferral limit is $23,500, the catch-up is $7,500 at fifty or older, and $11,250 at ages sixty through sixty-three, under SECURE 2.0. The section 415(c) total limit, not counting catch-up, is the lesser of one hundred percent of compensation or $70,000. A solo 401(k) lets the owner contribute as both employee and employer. And there's nondiscrimination testing unless it's a safe harbor plan."
+},
+{
+"t": 683.71,
+"who": "Rosa",
+"text": "SEP twenty-five percent, SIMPLE $16,500, 401(k) $23,500."
+},
+{
+"t": 691.84,
+"who": "Ace",
+"text": "For a self-employed person, the contribution base is net self-employment earnings, minus half of SE tax, minus the contribution itself. So a twenty-five percent rate equals twenty percent of net profit minus half the SE tax. The owner's own contributions go on Schedule 1 of Form 1040. Contributions for employees go on Schedule C. And for an S corporation owner, contributions are based on W-2 wages only."
+},
+{
+"t": 720.79,
+"who": "Hoot",
+"text": "The startup credit. Form 8881. For employers with one hundred or fewer employees starting a new plan. A credit for startup costs for three years: fifty percent of costs, or one hundred percent with fifty or fewer employees, up to the greater of $500, or the lesser of $250 per eligible non-highly-compensated employee or $5,000. An auto-enrollment credit of $500 a year for three years. And an employer contribution credit for small employers. All part of the general business credit."
+},
+{
+"t": 759.96,
+"who": "Rosa",
+"text": "So the bakery could start a 401(k) and get a credit?"
+},
+{
+"t": 763.84,
+"who": "Ace",
+"text": "Rosa's Rolls has six employees. You'd qualify."
+},
+{
+"t": 767.64,
+"who": "Milo",
+"text": "And Rolly?"
+},
+{
+"t": 768.59,
+"who": "Rosa",
+"text": "Rolly is an employee. Rolly can defer."
+},
+{
+"t": 771.67,
+"who": "Milo",
+"text": "Rolly will defer! Rolly is going to retire to a beach!"
+},
+{
+"t": 774.81,
+"who": "Penny",
+"text": "A beach of what?"
+},
+{
+"t": 776.12,
+"who": "Milo",
+"text": "Icing, Penny. Obviously."
+},
+{
+"t": 777.95,
+"cue": "Ding!"
+},
+{
+"t": 779.0,
+"who": "Milo",
+"text": "Episode 3.4! A Hen Named Deduction! Inspired by the words \"nest egg,\" I bought a chicken."
+},
+{
+"t": 785.47,
+"stage": "Deduction clucks. It's Milo doing the clucking."
+},
+{
+"t": 785.47,
+"who": "Milo",
+"text": "Bawk. That was Deduction."
+},
+{
+"t": 787.01,
+"who": "Penny",
+"text": "That was you, Milo."
+},
+{
+"t": 788.48,
+"who": "Milo",
+"text": "She's shy on the mic."
+},
+{
+"t": 789.82,
+"who": "Ace",
+"text": "A farm run for profit reports on Schedule F, and pays self-employment tax on net profit. The cash method is generally allowed. Animals you raise have zero basis. If it's a hobby under section 183, income is reported but expenses aren't deductible. There's a presumption of profit with a profit in three of five years, or two of seven for horses. The factors include a businesslike manner, expertise, time and history."
+},
+{
+"t": 818.84,
+"who": "Hoot",
+"text": "One hen, Milo Marsh. One hen is not a farm. One hen is a pet with a job."
+},
+{
+"t": 825.33,
+"who": "Milo",
+"text": "She lays an egg a day! Above the line!"
+},
+{
+"t": 827.45,
+"who": "Hoot",
+"text": "Eggs are not above the line. Nothing about this is above the line."
+},
+{
+"t": 832.52,
+"who": "Ace",
+"text": "For real farmers, estimated tax is special. A farmer is someone with at least two-thirds of gross income from farming in the current or prior year. They can make one estimated payment by January 15, with a required amount of the lesser of sixty-six and two-thirds percent of the current year's tax or one hundred percent of the prior year's. Or they can file and pay in full by March 1, with no penalty. Same for fishermen."
+},
+{
+"t": 859.85,
+"who": "Penny",
+"text": "Two-thirds farming? Pay by January 15 or file by March 1."
+},
+{
+"t": 864.33,
+"who": "Hoot",
+"text": "Schedule J. Farm income averaging taxes elected farm income at the prior three years' rates. Income tax only, NOT self-employment tax. A farming loss can be carried back two years, unless the farmer elects to waive it; otherwise forward indefinitely, with the eighty percent limit on post-2017 NOLs."
+},
+{
+"t": 887.87,
+"who": "Ace",
+"text": "Livestock. Animals held for draft, breeding, dairy or sporting purposes are section 1231 property if held twenty-four months or more for cattle and horses, or twelve months or more for other livestock. Poultry is excluded. Livestock held for sale is ordinary. Excess sales because of weather conditions can be reported the next year, or deferred if the animals are replaced. And crop insurance and disaster payments may be deferred one year if the crop would normally be sold the next year."
+},
+{
+"t": 922.08,
+"who": "Milo",
+"text": "Poultry is excluded? Deduction, I'm so sorry."
+},
+{
+"t": 925.2,
+"who": "Ace",
+"text": "Farmworkers. FICA applies if you pay a worker $150 or more in cash wages in the year, OR total farm labor expenses are $2,500 or more. Noncash farm wages aren't subject to FICA. Farm employers file Form 943 annually, due January 31, not Form 941. Farm FUTA applies with $20,000 or more of cash wages in a quarter, or ten or more farmworkers in twenty or more weeks, on Form 940."
+},
+{
+"t": 961.21,
+"who": "Lulu",
+"text": "I'd like to work on Milo's farm. I charge $150 cash."
+},
+{
+"t": 965.61,
+"who": "Hoot",
+"text": "Then FICA applies, young lady."
+},
+{
+"t": 968.56,
+"who": "Lulu",
+"text": "I'll take $149."
+},
+{
+"t": 971.2,
+"who": "Hoot",
+"text": "...That child is very dangerous."
+},
+{
+"t": 973.95,
+"cue": "Hoot stamps something"
+},
+{
+"t": 974.4,
+"who": "Milo",
+"text": "Final episode! The Room Above the Bakery! Ace has news!"
+},
+{
+"t": 977.95,
+"who": "Ace",
+"text": "I'm renting the room above Rosa's Rolls. For my practice."
+},
+{
+"t": 982.24,
+"who": "Rosa",
+"text": "And he pays rent in cinnamon rolls. Which he buys from me."
+},
+{
+"t": 986.14,
+"who": "Penny",
+"text": "That's a closed loop."
+},
+{
+"t": 987.61,
+"who": "Ace",
+"text": "It's an economy, Penny."
+},
+{
+"t": 989.45,
+"who": "Ace",
+"text": "Rental income includes rent, advance rent in the year received, deposits you keep or apply as final rent, expenses the tenant pays, and the fair market value of property or services received as rent. Refundable deposits aren't income. Expenses include interest, taxes, insurance, repairs and depreciation: twenty-seven and a half years for residential, thirty-nine for nonresidential, straight line with mid-month. Improvements are capitalized. Schedule E."
+},
+{
+"t": 1019.36,
+"who": "Hoot",
+"text": "Cinnamon rolls received as rent are income at fair market value, Rosa."
+},
+{
+"t": 1025.15,
+"who": "Rosa",
+"text": "I'm the landlord, Hoot. I KNOW. I already counted them."
+},
+{
+"t": 1028.51,
+"who": "Hoot",
+"text": "Passive activity. A business without material participation, or any rental activity, regardless of participation, unless there's an exception, is passive. Passive losses offset only passive income. Suspended losses carry forward indefinitely, and are all released on a fully taxable disposition of the entire interest to an unrelated party. If the average customer stay is seven days or less, it's not a rental activity. Form 8582."
+},
+{
+"t": 1059.59,
+"who": "Ace",
+"text": "The special allowance. Up to $25,000 of rental real estate losses can offset nonpassive income with active participation, meaning ten percent or more ownership and involvement in management decisions. It's reduced by fifty percent of modified AGI over $100,000, and zero at $150,000. Married filing separately and living together, zero. Married filing separately and living apart all year, $12,500, with the phase-out at $50,000 to $75,000."
+},
+{
+"t": 1099.16,
+"who": "Rosa",
+"text": "Rent is passive. $25,000 if you manage it."
+},
+{
+"t": 1103.32,
+"who": "Ace",
+"text": "And real estate professionals. More than half of personal services in real property trades or businesses where you materially participate, AND more than 750 hours there. On a joint return, one spouse must meet both tests alone. Then rentals with material participation are nonpassive, and there's an election to aggregate them. Employee hours count only if you're a more than five percent owner."
+},
+{
+"t": 1130.63,
+"who": "Hoot",
+"text": "And the home rules. Rented fewer than fifteen days, the rent is excluded and there are no rental deductions. It's used as a home if personal days are more than the greater of fourteen days or ten percent of fair-rental days. Allocate expenses by days. A home rented fifteen days or more has rental deductions limited to rental income, with the excess carried forward. And family use counts as personal unless it's fair rent for a main home."
+},
+{
+"t": 1159.37,
+"who": "Penny",
+"text": "Ace, you're going to live above a bakery. You'll smell cinnamon all day."
+},
+{
+"t": 1163.34,
+"who": "Ace",
+"text": "That's the plan. My label maker is already up there. Labeling the stairs."
+},
+{
+"t": 1168.52,
+"who": "Milo",
+"text": "What do the stairs say?"
+},
+{
+"t": 1169.9,
+"who": "Ace",
+"text": "\"Stair one.\" \"Stair two.\" \"Stair three.\""
+},
+{
+"t": 1172.76,
+"who": "Rosa",
+"text": "In two colors."
+},
+{
+"t": 1174.43,
+"who": "Ace",
+"text": "In two colors, Rosa."
+},
+{
+"t": 1176.31,
+"cue": "Theme music"
+},
+{
+"t": 1178.16,
+"who": "Milo",
+"text": "The Season 2 final lightning round! Hoot, from behind Grandpa."
+},
+{
+"t": 1182.41,
+"who": "Hoot",
+"text": "An estate's exemption?"
+},
+{
+"t": 1184.6,
+"who": "Penny",
+"text": "$600!"
+},
+{
+"t": 1186.06,
+"who": "Hoot",
+"text": "Correct. A trust reaches the thirty-seven percent bracket above what amount for 2025?"
+},
+{
+"t": 1193.38,
+"who": "Ace",
+"text": "$15,650."
+},
+{
+"t": 1196.95,
+"who": "Hoot",
+"text": "Correct. A charity skips its 990 for three years in a row. What happens?"
+},
+{
+"t": 1203.57,
+"who": "Milo",
+"text": "Automatic revocation! Skip three years and it's gone!"
+},
+{
+"t": 1206.69,
+"who": "Hoot",
+"text": "Correct. The 2025 SIMPLE IRA deferral limit?"
+},
+{
+"t": 1211.54,
+"who": "Rosa",
+"text": "$16,500!"
+},
+{
+"t": 1214.25,
+"who": "Hoot",
+"text": "Correct. A farmer with two-thirds of gross income from farming files and pays in full by what date to avoid the estimated tax penalty?"
+},
+{
+"t": 1224.7,
+"who": "Lulu",
+"text": "March 1. And I'm still charging $149."
+},
+{
+"t": 1228.61,
+"who": "Hoot",
+"text": "Correct. Rental loss, active participation, modified AGI of $150,000. Special allowance?"
+},
+{
+"t": 1238.11,
+"who": "Penny",
+"text": "Zero!"
+},
+{
+"t": 1239.08,
+"who": "Hoot",
+"text": "Correct. Everyone correct. Season 2 is complete. And Rosa's Rolls, as an S corporation, is in good standing."
+},
+{
+"t": 1247.75,
+"who": "Rosa",
+"text": "Thank you, Hoot. Have a roll."
+},
+{
+"t": 1249.96,
+"who": "Hoot",
+"text": "I will take one roll. For the archive."
+},
+{
+"t": 1253.33,
+"who": "Ace",
+"text": "You don't have an archive, Hoot."
+},
+{
+"t": 1255.35,
+"who": "Hoot",
+"text": "I have a stomach. It is the same thing."
+},
+{
+"t": 1258.54,
+"who": "Milo",
+"text": "That's Season 2 of Ledger Falls Unplugged! Thank you to Ace, Penny, Aunt Rosa, Gerald, Lulu, Biscuit, Deduction the hen, Grandpa Walt's portrait, and the owl who lives behind it."
+},
+{
+"t": 1269.74,
+"who": "Hoot",
+"text": "Examiner Hoot. Distribute it, deduct it, K-1 it. And someone, please, take the hen home. See you in Season 3."
+},
+{
+"t": 1278.34,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 1278.74,
+"who": "Milo",
+"text": "Wait, he took Deduction!"
+},
+{
+"t": 1280.22,
+"who": "Penny",
+"text": "Milo, the hen just walked out the front door by herself."
+},
+{
+"t": 1283.53,
+"who": "Milo",
+"text": "She's free-range now. Like me."
+},
+{
+"t": 1285.56,
+"cue": "Theme music"
+}
+]
+}

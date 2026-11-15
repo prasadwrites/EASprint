@@ -9,6 +9,12 @@
     "predeploy": [
       "npm --prefix web run build"
     ],
+    "headers": [
+      {
+        "source": "/podcasts/**",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }]
+      }
+    ],
     "rewrites": [
       {
         "source": "**",

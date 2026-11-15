@@ -1,0 +1,677 @@
+{
+"id": "p1d5",
+"title": "Unit 5: The Year in Review, Penny Plans Ahead and Dee's Plea",
+"seconds": 848,
+"lines": [
+{
+"t": 0.3,
+"stage": "Season 1. December 2025 in the story. Studio A has a tiny Christmas tree made of rolled-up W-2s."
+},
+{
+"t": 0.3,
+"cue": "Theme music"
+},
+{
+"t": 2.15,
+"who": "Milo",
+"text": "Happy holidays, Ledger Falls! This is Unplugged, Unit 5, and the closet is festive! I'm Milo Marsh."
+},
+{
+"t": 8.89,
+"who": "Penny",
+"text": "And I'm Penny Pocket. The tree is made of old W-2s. Milo, those are from 2019. You need those... actually, no. You don't. Three years."
+},
+{
+"t": 18.64,
+"who": "Ace",
+"text": "Unless there's an open issue. I'm Ace Okafor, enrolled agent. This unit is life events, tax planning, and spouse relief. And it's December, so I'm hosting my annual year-in-review."
+},
+{
+"t": 32.11,
+"who": "Milo",
+"text": "Ace's year-in-review is famous. There are snacks, and handouts, and a laser pointer."
+},
+{
+"t": 37.12,
+"who": "Ace",
+"text": "There's a pop quiz too."
+},
+{
+"t": 39.0,
+"who": "Penny",
+"text": "At a party?"
+},
+{
+"t": 40.12,
+"who": "Ace",
+"text": "It's a festive pop quiz. The questions have little hats on."
+},
+{
+"t": 44.21,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 44.61,
+"stage": "The W-2 Christmas tree shakes. Examiner Hoot climbs out of the top, wearing it like a cone."
+},
+{
+"t": 44.61,
+"who": "Hoot",
+"text": "Hoo-hoo-HOLD it. This tree contains personal information."
+},
+{
+"t": 49.13,
+"who": "Milo",
+"text": "Hooty! You're the angel on top!"
+},
+{
+"t": 50.89,
+"who": "Hoot",
+"text": "I am NOT an angel. I am an examiner. Angels do not carry clipboards. And do not call me Hooty during the holidays. Or the other days."
+},
+{
+"t": 60.77,
+"who": "Penny",
+"text": "Are you staying for the party, Hoot?"
+},
+{
+"t": 62.69,
+"who": "Hoot",
+"text": "I do not attend parties. I attend events, for monitoring purposes. Is there eggnog?"
+},
+{
+"t": 69.0,
+"who": "Ace",
+"text": "There's eggnog."
+},
+{
+"t": 70.45,
+"who": "Hoot",
+"text": "Then I will monitor the eggnog."
+},
+{
+"t": 73.43,
+"who": "Milo",
+"text": "Episode 5.1, the Year in Review! Dee's divorce from Vince was final this year. Dee, you there?"
+},
+{
+"t": 79.64,
+"who": "Dee",
+"text": "Can you hear me now? I'm here! Vince is keeping the boat, and I'm keeping the house!"
+},
+{
+"t": 84.17,
+"who": "Ace",
+"text": "Then that's a transfer incident to divorce. Property transfers between spouses, or incident to a divorce, have no gain or loss. The person who receives the property takes a carryover basis: the transferor's adjusted basis."
+},
+{
+"t": 100.3,
+"who": "Dee",
+"text": "So I don't pay tax on getting the house?"
+},
+{
+"t": 103.08,
+"who": "Ace",
+"text": "No tax, and you keep the old basis."
+},
+{
+"t": 105.75,
+"who": "Hoot",
+"text": "Alimony. For divorce agreements after 2018, alimony is NOT deductible by the payer and NOT income to the recipient. For agreements before 2019, it is deductible by the payer and income to the recipient. Child support is never deductible and never income."
+},
+{
+"t": 125.84,
+"who": "Dee",
+"text": "My agreement is from 2025! So Vince can't deduct his alimony! Ha!"
+},
+{
+"t": 130.9,
+"who": "Penny",
+"text": "Dee, that's a very happy thing to say about alimony."
+},
+{
+"t": 133.97,
+"who": "Dee",
+"text": "Vince took the boat, Penny. Let me have this."
+},
+{
+"t": 136.96,
+"who": "Ace",
+"text": "Divorce transfers: no tax, old basis. New alimony: no deduction, no income."
+},
+{
+"t": 143.23,
+"who": "Ace",
+"text": "Now, kids after divorce. The custodial parent is the one the child spent more nights with. Form 8332 lets the custodial parent release the dependency claim, along with the child tax credit or the $500 credit, to the noncustodial parent. But head of household, the EITC, and the dependent care credit stay with the custodial parent."
+},
+{
+"t": 168.17,
+"who": "Dee",
+"text": "So Vince could claim our kid if I sign Form 8332?"
+},
+{
+"t": 172.47,
+"who": "Ace",
+"text": "He could get the dependency and the child tax credit. Not head of household, not the EITC, not the dependent care credit."
+},
+{
+"t": 181.24,
+"who": "Lulu",
+"text": "I'd like to point out that I live with Penny. Not Vince. Not even Mom."
+},
+{
+"t": 185.47,
+"who": "Dee",
+"text": "Lulu, baby, Mommy's on an oil rig."
+},
+{
+"t": 188.51,
+"who": "Lulu",
+"text": "I'm aware. I made a diorama."
+},
+{
+"t": 190.59,
+"who": "Hoot",
+"text": "Retirement plans in divorce. A QDRO, a qualified domestic relations order, for an employer plan. Payments to the ex-spouse are taxed to the ex-spouse, there is no ten percent early-distribution tax, and they can be rolled over. An IRA transferred under a divorce decree is tax-free. BUT, the QDRO exception to the ten percent tax does NOT apply to IRAs."
+},
+{
+"t": 216.24,
+"who": "Ace",
+"text": "Then education savings. A 529 plan has no federal deduction, but growth and qualified distributions are tax-free. That includes K-12 tuition, up to $10,000 a year for 2025. A nonqualified distribution's earnings are taxed, plus ten percent. And if the account has been open fifteen years, up to $35,000, over the beneficiary's lifetime, can roll to the beneficiary's Roth IRA."
+},
+{
+"t": 246.17,
+"who": "Hoot",
+"text": "The Coverdell ESA. $2,000 a year per beneficiary, from all contributors combined. It phases out between $95,000 and $110,000 of modified AGI, $190,000 to $220,000 joint. Contributions before the beneficiary turns eighteen. Use it by thirty. Tax-free for K-12 and college costs."
+},
+{
+"t": 273.5,
+"who": "Lulu",
+"text": "Can I have a 529? For science camp?"
+},
+{
+"t": 276.72,
+"who": "Penny",
+"text": "We'll talk about it, sweetie."
+},
+{
+"t": 278.36,
+"who": "Lulu",
+"text": "That's what adults say when the answer is no."
+},
+{
+"t": 280.85,
+"who": "Ace",
+"text": "And retirement planning. A spouse with little or no income can contribute to a spousal IRA on a joint return, as long as combined compensation covers both contributions. For 2025, $7,000 each, or $8,000 at fifty or older."
+},
+{
+"t": 300.22,
+"who": "Milo",
+"text": "Penny, we should both do IRAs!"
+},
+{
+"t": 302.32,
+"who": "Penny",
+"text": "With what money, Milo? You bought a golf cart for dogs."
+},
+{
+"t": 305.78,
+"who": "Milo",
+"text": "The Mutt Mobile is an investment."
+},
+{
+"t": 307.72,
+"who": "Penny",
+"text": "It's an investment in being honked at."
+},
+{
+"t": 309.92,
+"cue": "Ding!"
+},
+{
+"t": 310.97,
+"who": "Milo",
+"text": "Segment two! Penny Plans Ahead! For the first time in recorded history!"
+},
+{
+"t": 315.18,
+"who": "Penny",
+"text": "Excuse me. I plan. I plan coupon routes."
+},
+{
+"t": 318.23,
+"who": "Milo",
+"text": "But you've never planned taxes before December 31."
+},
+{
+"t": 321.67,
+"who": "Penny",
+"text": "That's... fair."
+},
+{
+"t": 323.05,
+"who": "Ace",
+"text": "Most individuals use the cash method. Income counts when it's actually or constructively received. Constructive receipt means it's credited to your account, set apart, or made available without substantial restriction. Holding a check until January doesn't defer the income."
+},
+{
+"t": 341.81,
+"who": "Milo",
+"text": "Wait, so my client paid me with a check on December 28, and I put it in a drawer until January..."
+},
+{
+"t": 348.17,
+"who": "Hoot",
+"text": "A December check is December income, cashed or not, Milo Marsh. Putting it in a drawer is not tax planning. It is furniture."
+},
+{
+"t": 357.7,
+"who": "Penny",
+"text": "A December check is December income, cashed or not."
+},
+{
+"t": 361.12,
+"who": "Ace",
+"text": "The basic cash-method strategy: defer income and accelerate deductions when rates will be the same or lower next year. Reverse it when rates are going up. And check phase-outs for both years."
+},
+{
+"t": 374.03,
+"who": "Hoot",
+"text": "Bunching. Stack itemized deductions into one year to beat the standard deduction, then take the standard deduction the next year. And note, for 2026: a charitable deduction for non-itemizers of $1,000, or $2,000 married filing jointly. And for itemizers, a floor of one-half of one percent of AGI on charitable gifts."
+},
+{
+"t": 399.56,
+"who": "Penny",
+"text": "So I could give two years of church donations in December and itemize, then take the standard deduction next year?"
+},
+{
+"t": 406.16,
+"who": "Ace",
+"text": "That's bunching. Your property tax, mortgage interest and two years of giving might beat $31,500 in one year."
+},
+{
+"t": 415.53,
+"who": "Penny",
+"text": "Oh, I'm going to make a spreadsheet. With conditional formatting."
+},
+{
+"t": 419.35,
+"who": "Ace",
+"text": "Penny, that's the most beautiful thing anyone's said all season."
+},
+{
+"t": 423.3,
+"who": "Milo",
+"text": "Are you two having a moment over a spreadsheet?"
+},
+{
+"t": 425.78,
+"who": "Ace",
+"text": "We are."
+},
+{
+"t": 426.97,
+"who": "Penny",
+"text": "We absolutely are."
+},
+{
+"t": 428.45,
+"who": "Ace",
+"text": "Tax-loss harvesting. Capital losses offset gains, then up to $3,000 of ordinary income, or $1,500 married filing separately. The excess carries forward indefinitely. But watch the wash sale rule: if you buy substantially identical stock within thirty days before or after the loss sale, the loss is disallowed and added to the new shares' basis."
+},
+{
+"t": 455.33,
+"who": "Hoot",
+"text": "Filing status comparison. Married filing jointly usually wins. Married filing separately loses the education credits and the student loan interest deduction, and the EITC and the dependent care credit except in narrow cases. And if one spouse itemizes, the other must. Filing separately CAN help when one spouse has big medical costs, or to avoid joint liability."
+},
+{
+"t": 482.11,
+"who": "Milo",
+"text": "Should we file separately, babe?"
+},
+{
+"t": 483.93,
+"who": "Penny",
+"text": "Do you have big medical costs?"
+},
+{
+"t": 485.84,
+"who": "Milo",
+"text": "No."
+},
+{
+"t": 486.67,
+"who": "Penny",
+"text": "Are you hiding a debt?"
+},
+{
+"t": 488.11,
+"who": "Milo",
+"text": "Just Gus's debt. He still owes ME money."
+},
+{
+"t": 490.65,
+"who": "Penny",
+"text": "Then we're filing jointly."
+},
+{
+"t": 492.4,
+"who": "Ace",
+"text": "Carryovers. Capital losses carry forward indefinitely. Excess charitable gifts carry forward five years. NOLs from after 2020 carry forward indefinitely, limited to eighty percent of taxable income. And estimated tax payments are due April 15, June 15, September 15 and January 15."
+},
+{
+"t": 515.35,
+"who": "Milo",
+"text": "Those dates are weird. Why is there a two-month quarter?"
+},
+{
+"t": 518.37,
+"who": "Hoot",
+"text": "Because the calendar does not consult with me, Milo Marsh. If it did, every month would end on the fifteenth."
+},
+{
+"t": 526.23,
+"who": "Penny",
+"text": "And every day would be April 15."
+},
+{
+"t": 528.49,
+"who": "Hoot",
+"text": "A man can dream."
+},
+{
+"t": 530.56,
+"who": "Milo",
+"text": "You're an owl."
+},
+{
+"t": 531.61,
+"who": "Hoot",
+"text": "An owl can also dream."
+},
+{
+"t": 533.99,
+"cue": "Hoot stamps something"
+},
+{
+"t": 534.44,
+"who": "Milo",
+"text": "Final segment. Dee's Plea. Dee got an IRS letter about her ex-husband Vince."
+},
+{
+"t": 539.71,
+"who": "Dee",
+"text": "Can you hear me now? Okay. Vince didn't report $30,000 from his boat business on our 2023 joint return, and now the IRS wants me to pay it!"
+},
+{
+"t": 549.36,
+"who": "Ace",
+"text": "I'm sorry, Dee. A joint return means joint and several liability. Each spouse owes the full tax, interest and penalties. Even after divorce. And even if the divorce decree says the other spouse will pay."
+},
+{
+"t": 564.21,
+"who": "Dee",
+"text": "The decree says Vince pays everything!"
+},
+{
+"t": 567.01,
+"who": "Hoot",
+"text": "The decree binds Vince and you. It does not bind the IRS. I was not at your divorce. I was not invited."
+},
+{
+"t": 575.51,
+"who": "Dee",
+"text": "Nobody invited you, Hoot. It was a divorce."
+},
+{
+"t": 578.88,
+"who": "Hoot",
+"text": "I would have brought a gift. A highlighter."
+},
+{
+"t": 581.95,
+"who": "Ace",
+"text": "But there's relief, Dee. You request it on Form 8857. There are three kinds. Innocent spouse relief: for an understatement of tax on the joint return, where you didn't know and had no reason to know. Separation of liability: if you're divorced, widowed, legally separated, or have lived apart for twelve months, it allocates the understatement between you. And equitable relief, for anything else, including tax that was reported but never paid."
+},
+{
+"t": 610.41,
+"who": "Hoot",
+"text": "The first two must be requested within two years after the IRS's first collection activity against you."
+},
+{
+"t": 618.18,
+"who": "Dee",
+"text": "I didn't know about the boat business! Vince told me it was a \"fishing hobby\"!"
+},
+{
+"t": 622.73,
+"who": "Ace",
+"text": "That's exactly the kind of fact that goes on Form 8857."
+},
+{
+"t": 627.61,
+"who": "Penny",
+"text": "Dee, make sure you're not confusing it with injured spouse."
+},
+{
+"t": 630.81,
+"who": "Dee",
+"text": "Oh, I'm definitely injured. Emotionally."
+},
+{
+"t": 634.06,
+"who": "Ace",
+"text": "Injured spouse is different. That's Form 8379. It's for when a joint refund was taken to pay the OTHER spouse's past-due debt, like back taxes, child support, a student loan, or state unemployment debt. The injured spouse gets their share of the refund back."
+},
+{
+"t": 653.75,
+"who": "Hoot",
+"text": "Innocent spouse: about tax OWED. Injured spouse: about a REFUND taken."
+},
+{
+"t": 659.68,
+"who": "Dee",
+"text": "Innocent, owed. Injured, refund. Got it."
+},
+{
+"t": 662.84,
+"who": "Ace",
+"text": "Then refund claims. You claim a refund on Form 1040-X within three years of filing the return, or two years of paying the tax, whichever is later. A return filed early counts as filed on the due date. The refund is limited to tax paid within that lookback period. And there's seven years for bad debts and worthless securities."
+},
+{
+"t": 685.71,
+"who": "Hoot",
+"text": "And penalties of perjury. Every return is signed under penalties of perjury, declaring it true, correct and complete. Both spouses sign a joint return. An unsigned return is not a valid return. A preparer's declaration is based on all information the preparer knows."
+},
+{
+"t": 706.52,
+"who": "Milo",
+"text": "So when I signed our return with a smiley face..."
+},
+{
+"t": 709.28,
+"who": "Penny",
+"text": "Milo, you did not."
+},
+{
+"t": 710.84,
+"who": "Milo",
+"text": "I added a smiley face NEXT to my signature."
+},
+{
+"t": 713.55,
+"who": "Hoot",
+"text": "The smiley face is not the issue. The smiley face is noted."
+},
+{
+"t": 718.59,
+"who": "Ace",
+"text": "Dee, you'll get through this. Your facts are good."
+},
+{
+"t": 721.71,
+"who": "Dee",
+"text": "Thanks, Ace. You're the best. When I'm back from the rig, I'm going to bake you..."
+},
+{
+"t": 726.02,
+"cue": "The video call glitches"
+},
+{
+"t": 726.67,
+"who": "Dee",
+"text": "...a casserole."
+},
+{
+"t": 728.44,
+"who": "Penny",
+"text": "The signal cut out at the exact moment of a casserole. That's the most Dee thing ever."
+},
+{
+"t": 733.41,
+"cue": "Theme music"
+},
+{
+"t": 735.26,
+"who": "Milo",
+"text": "Lightning round! Ace's festive pop quiz! Questions wearing little hats!"
+},
+{
+"t": 739.66,
+"who": "Ace",
+"text": "Hoot, you want to read them?"
+},
+{
+"t": 741.61,
+"who": "Hoot",
+"text": "I will read them. I will not wear a hat."
+},
+{
+"t": 744.93,
+"who": "Ace",
+"text": "There's a hat for you."
+},
+{
+"t": 746.64,
+"who": "Hoot",
+"text": "...It is beige. Very well. Question one. Dee keeps the house in the divorce. Her basis?"
+},
+{
+"t": 753.3,
+"who": "Dee",
+"text": "Vince's old basis! Carryover!"
+},
+{
+"t": 756.02,
+"who": "Hoot",
+"text": "Correct. Alimony under a 2025 agreement. Deductible?"
+},
+{
+"t": 760.89,
+"who": "Penny",
+"text": "No, and not income either!"
+},
+{
+"t": 762.73,
+"who": "Hoot",
+"text": "Correct. A client gets a check on December 28 and holds it until January 3. Which year's income?"
+},
+{
+"t": 771.08,
+"who": "Milo",
+"text": "The drawer year! I mean, 2025. December."
+},
+{
+"t": 774.06,
+"who": "Hoot",
+"text": "Correct, eventually. Your refund was taken to pay your spouse's old student loan. Which form?"
+},
+{
+"t": 781.16,
+"who": "Lulu",
+"text": "Form 8379. Injured spouse. I've been listening."
+},
+{
+"t": 785.01,
+"who": "Hoot",
+"text": "Correct. The QDRO ten percent exception. Does it apply to IRAs?"
+},
+{
+"t": 790.5,
+"who": "Ace",
+"text": "No. Employer plans only."
+},
+{
+"t": 792.65,
+"who": "Hoot",
+"text": "Correct. Estimated tax payment dates?"
+},
+{
+"t": 795.75,
+"who": "Penny",
+"text": "April 15, June 15, September 15, January 15!"
+},
+{
+"t": 800.22,
+"who": "Hoot",
+"text": "Correct. Everyone has passed. It is the worst holiday I have ever had."
+},
+{
+"t": 805.53,
+"who": "Rosa",
+"text": "Then have some eggnog, Hoot. I made it with nutmeg."
+},
+{
+"t": 809.03,
+"who": "Hoot",
+"text": "Aunt Rosa. When did you arrive?"
+},
+{
+"t": 811.89,
+"who": "Rosa",
+"text": "I'm always here when there's eggnog, dear. Gerald, say hello."
+},
+{
+"t": 815.9,
+"who": "Hoot",
+"text": "Gerald is a jar."
+},
+{
+"t": 818.24,
+"who": "Rosa",
+"text": "Gerald is a jar who loves you, Hoot. Drink your eggnog."
+},
+{
+"t": 821.92,
+"who": "Hoot",
+"text": "...It is excellent eggnog. I will deny saying that."
+},
+{
+"t": 826.01,
+"who": "Milo",
+"text": "That's Unit 5! Happy holidays from Ace, Penny, Lulu, Dee, Aunt Rosa, Gerald, and the owl who lives in our Christmas tree!"
+},
+{
+"t": 833.78,
+"who": "Hoot",
+"text": "Examiner Hoot. Plan before December 31. A drawer is not a deferral. See you in Unit 6."
+},
+{
+"t": 841.62,
+"cue": "Pop! Hoot appears"
+},
+{
+"t": 842.02,
+"who": "Penny",
+"text": "Milo, he took the tree."
+},
+{
+"t": 843.79,
+"who": "Milo",
+"text": "Good. It was a security risk."
+},
+{
+"t": 845.6,
+"cue": "Theme music"
+}
+]
+}
