@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAccount, useUser } from "../App";
 import TopBar, { Chip } from "../components/TopBar";
@@ -13,7 +13,7 @@ import { PracticePortrait } from "../study/office";
 import { BakeryPortrait } from "../study/bakery";
 import { SEASONS, STUDY_OUTLINE } from "../study/outline";
 import { bestScore } from "../study/progress";
-import { initialOpenUnits, saveOpenUnits } from "../study/unitAccordion";
+import { CAST_SECTION, initialOpenUnits, saveOpenUnits } from "../study/unitAccordion";
 import { podcastsFor, SHOWS } from "../study/podcasts";
 import { quizLink, UNIT_QUIZ } from "../study/quiz";
 import { castCard, SEASON_CAST } from "../study/seasonCast";
@@ -31,18 +31,9 @@ export default function Season({ part }: { part: PartId }) {
 
   const anyOpen = unlocked || part === FREE_UNIT.part;
   const units = STUDY_OUTLINE[part];
-  const defaultOpenUnits = () =>
-    initialOpenUnits(part, units, (lessonId) => bestScore(lessonId) !== null, (unitId) => canOpenUnit(part, unitId, account, admin), window.location.hash, (lessonId) => !!LESSONS[lessonId]);
-  const [openUnits, setOpenUnits] = useState<Set<string>>(defaultOpenUnits);
-  const touched = useRef(false);
-  // The account loads after the page; until the learner picks, re-place the default once we know which units they can open.
-  useEffect(() => {
-    if (!touched.current) setOpenUnits(defaultOpenUnits());
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [unlocked]);
+  const [openUnits, setOpenUnits] = useState<Set<string>>(() => initialOpenUnits(part, [CAST_SECTION, ...units.map((d) => d.id)], window.location.hash));
   const toggleUnit = (id: string) =>
     setOpenUnits((prev) => {
-      touched.current = true;
       const next = new Set(prev);
       if (next.has(id)) next.delete(id);
       else next.add(id);
@@ -50,8 +41,8 @@ export default function Season({ part }: { part: PartId }) {
       return next;
     });
   const setAll = (open: boolean) => {
-    touched.current = true;
     const next = new Set(open ? units.map((d) => d.id) : []);
+    if (openUnits.has(CAST_SECTION)) next.add(CAST_SECTION);
     saveOpenUnits(part, next);
     setOpenUnits(next);
   };
@@ -111,19 +102,19 @@ export default function Season({ part }: { part: PartId }) {
           </div>
         )}
 
-        <MeetTheCast part={part} />
+        <MeetTheCast part={part} expanded={openUnits.has(CAST_SECTION)} onToggle={() => toggleUnit(CAST_SECTION)} />
 
         {units.length > 1 && (
           <div className="row spread unit-toolbar">
             <h2 style={{ fontSize: 20 }}>{units.length} units</h2>
             <span className="row" style={{ gap: 4 }}>
-              <button type="button" className="btn-link" onClick={() => setAll(true)} disabled={openUnits.size === units.length}>
+              <button type="button" className="btn-link" onClick={() => setAll(true)} disabled={units.every((d) => openUnits.has(d.id))}>
                 Expand all
               </button>
               <span className="muted" aria-hidden>
                 ·
               </span>
-              <button type="button" className="btn-link" onClick={() => setAll(false)} disabled={openUnits.size === 0}>
+              <button type="button" className="btn-link" onClick={() => setAll(false)} disabled={!units.some((d) => openUnits.has(d.id))}>
                 Collapse all
               </button>
             </span>
@@ -306,7 +297,7 @@ function UnitQuiz({ part, domainId, unit, complete }: { part: PartId; domainId: 
 }
 
 /** "Meet the cast" before a season's first unit: who's who this season, with links to each character's big episodes. */
-function MeetTheCast({ part }: { part: PartId }) {
+function MeetTheCast({ part, expanded, onToggle }: { part: PartId; expanded: boolean; onToggle: () => void }) {
   const sc = SEASON_CAST[part];
   if (!sc) return null;
   const byNumber = new Map(episodes(part).map((l) => [l.number, l]));
@@ -324,12 +315,29 @@ function MeetTheCast({ part }: { part: PartId }) {
       );
     });
   return (
-    <section className="panel stack meet-cast" aria-labelledby="cast-h">
-      <div className="stack" style={{ gap: 4 }}>
-        <span className="eyebrow">Before episode 1.1</span>
-        <h2 id="cast-h">Meet the cast</h2>
-        <p className="muted">{sc.intro}</p>
-      </div>
+    <section id={`unit-${CAST_SECTION}`} className={`unit meet-cast${expanded ? " open" : ""}`} aria-labelledby="cast-h">
+      <h2 id="cast-h" className="unit-head-h">
+        <button type="button" className="unit-head" aria-expanded={expanded} aria-controls="cast-body" onClick={onToggle}>
+          <span className="stack" style={{ gap: 4, minWidth: 0 }}>
+            <span className="eyebrow">Before episode 1.1</span>
+            <span className="unit-title">Meet the cast</span>
+            <span className="row" style={{ gap: 6 }}>
+              <span className="row" style={{ gap: 0 }}>
+                {sc.cast.map((m) => {
+                  const who = castCard(m).who;
+                  return <Face key={who} who={who} size={28} />;
+                })}
+              </span>
+              <Chip>{sc.cast.length} characters</Chip>
+            </span>
+          </span>
+          <span className="unit-caret" aria-hidden>
+            ▾
+          </span>
+        </button>
+      </h2>
+      <div id="cast-body" className="unit-body stack" hidden={!expanded}>
+      <p className="muted">{sc.intro}</p>
       <div className="cast-grid">
         {sc.cast.map((m) => {
           const c = castCard(m);
@@ -363,6 +371,7 @@ function MeetTheCast({ part }: { part: PartId }) {
           </ul>
         </div>
       )}
+      </div>
     </section>
   );
 }
