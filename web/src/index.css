@@ -576,3 +576,22 @@ a.cast-ep:hover { background: var(--good); color: var(--surface); }
 .tline-q { font-family: var(--f-display); color: var(--accent); }
 .tline.tip:not(.now) button { background: var(--warn-soft); border-color: var(--warn); }
 .tline-tip { margin-right: 2px; }
+
+/* Season page: each unit is a collapsible section */
+.unit-toolbar { gap: 8px; }
+.unit-toolbar .btn-link:disabled { color: var(--muted); cursor: default; }
+.unit { display: flex; flex-direction: column; gap: 16px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.unit.open { padding-bottom: 16px; }
+.unit-head-h { margin: 0; font-size: inherit; }
+.unit-head { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; border: none; border-radius: 14px; background: transparent; padding: 16px; font-weight: inherit; }
+.unit-head:hover .unit-title { color: var(--accent); }
+.unit-title { font-family: var(--f-display); font-size: 24px; line-height: 1.2; font-weight: 700; }
+.unit-caret { flex: none; display: grid; place-items: center; width: 36px; height: 36px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); font-size: 18px; transition: transform .2s; }
+.unit.open .unit-caret { transform: rotate(180deg); }
+.unit-body { padding: 0 16px; }
+.unit-body[hidden] { display: none; }
+@media (max-width: 560px) {
+  .unit-head { padding: 14px 12px; }
+  .unit-body { padding: 0 12px; }
+  .unit-title { font-size: 20px; }
+}

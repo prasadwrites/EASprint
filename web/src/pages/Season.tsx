@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useAccount, useUser } from "../App";
 import TopBar, { Chip } from "../components/TopBar";
@@ -13,6 +13,7 @@ import { PracticePortrait } from "../study/office";
 import { BakeryPortrait } from "../study/bakery";
 import { SEASONS, STUDY_OUTLINE } from "../study/outline";
 import { bestScore } from "../study/progress";
+import { initialOpenUnits, saveOpenUnits } from "../study/unitAccordion";
 import { podcastsFor, SHOWS } from "../study/podcasts";
 import { quizLink, UNIT_QUIZ } from "../study/quiz";
 import { castCard, SEASON_CAST } from "../study/seasonCast";
@@ -29,6 +30,31 @@ export default function Season({ part }: { part: PartId }) {
   const total = STUDY_OUTLINE[part].reduce((n, d) => n + d.topics.length, 0);
 
   const anyOpen = unlocked || part === FREE_UNIT.part;
+  const units = STUDY_OUTLINE[part];
+  const defaultOpenUnits = () =>
+    initialOpenUnits(part, units, (lessonId) => bestScore(lessonId) !== null, (unitId) => canOpenUnit(part, unitId, account, admin), window.location.hash, (lessonId) => !!LESSONS[lessonId]);
+  const [openUnits, setOpenUnits] = useState<Set<string>>(defaultOpenUnits);
+  const touched = useRef(false);
+  // The account loads after the page; until the learner picks, re-place the default once we know which units they can open.
+  useEffect(() => {
+    if (!touched.current) setOpenUnits(defaultOpenUnits());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [unlocked]);
+  const toggleUnit = (id: string) =>
+    setOpenUnits((prev) => {
+      touched.current = true;
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      saveOpenUnits(part, next);
+      return next;
+    });
+  const setAll = (open: boolean) => {
+    touched.current = true;
+    const next = new Set(open ? units.map((d) => d.id) : []);
+    saveOpenUnits(part, next);
+    setOpenUnits(next);
+  };
 
   useEffect(() => {
     if (!anyOpen) return;
@@ -87,18 +113,51 @@ export default function Season({ part }: { part: PartId }) {
 
         <MeetTheCast part={part} />
 
-        {STUDY_OUTLINE[part].map((d, ui) => {
+        {units.length > 1 && (
+          <div className="row spread unit-toolbar">
+            <h2 style={{ fontSize: 20 }}>{units.length} units</h2>
+            <span className="row" style={{ gap: 4 }}>
+              <button type="button" className="btn-link" onClick={() => setAll(true)} disabled={openUnits.size === units.length}>
+                Expand all
+              </button>
+              <span className="muted" aria-hidden>
+                ·
+              </span>
+              <button type="button" className="btn-link" onClick={() => setAll(false)} disabled={openUnits.size === 0}>
+                Collapse all
+              </button>
+            </span>
+          </div>
+        )}
+
+        {units.map((d, ui) => {
           const live = d.topics.filter((t) => t.lessonId && LESSONS[t.lessonId]);
           const open = canOpenUnit(part, d.id, account, admin);
+          const expanded = openUnits.has(d.id);
+          const played = live.filter((t) => bestScore(t.lessonId!) !== null).length;
+          const minutes = live.reduce((n, t) => n + LESSONS[t.lessonId!].minutes, 0);
           return (
-            <section key={d.id} className="stack" aria-labelledby={`unit-${d.id}`}>
-              <div className="stack" style={{ gap: 2 }}>
-                <span className="eyebrow">Unit {ui + 1}</span>
-                <h2 id={`unit-${d.id}`} className="row" style={{ gap: 8 }}>
-                  {domainName(d.id)}
-                  {!unlocked && (open ? <Chip tone="good">Free</Chip> : <Chip>Pro</Chip>)}
-                </h2>
-              </div>
+            <section key={d.id} id={`unit-${d.id}`} className={`unit${expanded ? " open" : ""}`} aria-labelledby={`unit-h-${d.id}`}>
+              <h2 id={`unit-h-${d.id}`} className="unit-head-h">
+                <button type="button" className="unit-head" aria-expanded={expanded} aria-controls={`unit-body-${d.id}`} onClick={() => toggleUnit(d.id)}>
+                  <span className="stack" style={{ gap: 4, minWidth: 0 }}>
+                    <span className="eyebrow">Unit {ui + 1}</span>
+                    <span className="unit-title">{domainName(d.id)}</span>
+                    <span className="row" style={{ gap: 6 }}>
+                      <Chip>
+                        {live.length === d.topics.length ? `${d.topics.length} episodes` : `${live.length} of ${d.topics.length} episodes ready`}
+                      </Chip>
+                      {minutes > 0 && <Chip>{minutes} min</Chip>}
+                      {played > 0 && <Chip tone="good">🏆 {played} played</Chip>}
+                      {!unlocked && (open ? <Chip tone="good">Free</Chip> : <Chip>🔒 Pro</Chip>)}
+                    </span>
+                  </span>
+                  <span className="unit-caret" aria-hidden>
+                    ▾
+                  </span>
+                </button>
+              </h2>
+              <div id={`unit-body-${d.id}`} className="unit-body stack" hidden={!expanded}>
               <div className="episode-grid">
                 {d.topics.map((t) => {
                   const l = t.lessonId ? LESSONS[t.lessonId] : undefined;
@@ -147,6 +206,7 @@ export default function Season({ part }: { part: PartId }) {
               </div>
               <UnitPodcast domainId={d.id} unit={ui + 1} open={open} />
               {live.length > 0 && (open ? <UnitQuiz part={part} domainId={d.id} unit={ui + 1} complete={live.length === d.topics.length} /> : <LockedUnit unit={ui + 1} />)}
+              </div>
             </section>
           );
         })}
